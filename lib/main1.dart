@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 255, 217, 0)),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Animal Restaurant Progress Tracker'), 
     );
   }
 }
