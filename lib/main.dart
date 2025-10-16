@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
     'Otter',
     'One‑Eyed Papillon',
     'Fox',
-    'Raccoon', // all good till at least here
+    'Raccoon', 
     'Terrier',
     'Field Dog',
     'Shiba',
@@ -343,6 +343,18 @@ class _MyHomePageState extends State<MyHomePage> {
     'DJ Wolf',
   ];
 
+  final List<String> staff = [
+    'Messenger Hedwig',
+    'Fisherman Rabbit Ding',
+    'Jiji the Waiter',
+    'Chef Gumi',
+    'Timmy the Server',
+    'Prince the Gardener',
+    'Temp Worker Yolky',
+    'Eggy the Handyman',
+  ];
+
+
   List<String> allCustomers = [];
   Map<String, bool> _checked = {};
 
@@ -352,7 +364,8 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     _checked ??= {};
     
-    // Combine all customer categories into one list for the "All" subsection.
+    // Combine all customer categories into
+    //one list for the "All" subsection.
     allCustomers = [
       ...regularCustomers,
       ...specialCustomers,
