@@ -239,7 +239,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   /// Names for booth owners【625433312635769†L530-L606】.  These customers run booths
   /// in the town area and include stall owners like food vendors, artisans and
-  /// shopkeepers.
+  /// shopkeepers. 
   final List<String> boothOwners = [
     'Traditional Popcorn',
     'Old Joe',
@@ -311,37 +311,36 @@ class _MyHomePageState extends State<MyHomePage> {
     'Tom',
     'Duke Swallow',
     'Mister Gecko',
-
+    'Sheepie',
+    'Little Beagle',
+    'Platypus',
+    'Bigmouth Bird',
+    'Penniless Toad',
+    'Little Turtle',
+    'Fashionable Zebra',
+    'Tapir',
+    'Old Gene',
+    'Greedy Hedgehog',
+    'Goober',
+    'Uncle Marty',
+    'Hamster',
+    'Devil Squirrel',
+    'Wandering Bard',
+    'Prawny',
+    'Leopard',
+    'Binturong',
+    'Donkey',
+    'Cher',
+    'Lady Snow Fox',
+    'Mister Tibetan Fox',
+    'Seal Pup',
+    'Upturned-Brows Penguin',
+    'Arctic Wolf',
+    'Mole'
   ];
 
-  /// Names for performers【625433312635769†L617-L663】.  These characters are
-  /// musicians or entertainers who play in bands or singing groups.
-  final List<String> performers = [
-    'Cutie White Bunny',
-    'Cutie Hamster',
-    'Cutie Goose',
-    'Cutie Guru',
-    'Little Piggy Angel',
-    'Little Turtle Angel',
-    'Little Yorkie Angel',
-    'Little Shiba Angel',
-    'Bassist Toad',
-    'Guitarist Toad',
-    'Vocalist Toad',
-    'Drummer Toad',
-    'Vocalist Samoyed',
-    'Guitarist Husky',
-    'Bassist Border Collie',
-    'Accompanist Penguin',
-    'Lead Dancer Slim White Dog',
-    'Lead Singer Dalmatian',
-    'Rapper Bean',
-    'Leader Scotch Collie',
-    'Leader Pug',
-    'Guitarist Jackal',
-    'Bassist Brown Wolf',
-    'DJ Wolf',
-  ];
+
+
 
   final List<String> staff = [
     'Messenger Hedwig',
@@ -356,13 +355,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
   List<String> allCustomers = [];
-  Map<String, bool> _checked = {};
+  final Map<String, bool> _checked = {};
 
 
   @override
   void initState() {
     super.initState();
-    _checked ??= {};
     
     // Combine all customer categories into
     //one list for the "All" subsection.
@@ -485,6 +483,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: isChecked
+                          // ignore: deprecated_member_use
                           ? Colors.green.withOpacity(0.6)
                           : Colors.yellow[100],
                       borderRadius: BorderRadius.circular(15),
