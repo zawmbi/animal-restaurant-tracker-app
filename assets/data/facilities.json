@@ -1,0 +1,19 @@
+[
+  {
+    "id": "tip_jar",
+    "name": "Tip Jar",
+    "prices": [{ "currency": "cod", "amount": 1200 }],
+    "yields": [
+      { "type": "one_time", "currency": "cod", "amount": 300 },
+      { "type": "per_minute", "currency": "cod", "amount": 15, "goesToTips": true }
+    ]
+  },
+  {
+    "id": "busking_stage",
+    "name": "Busking Stage",
+    "prices": [{ "currency": "bells", "amount": 500 }],
+    "yields": [
+      { "type": "interval_range", "currency": "film", "amount": 2, "maxAmount": 19, "intervalMinutes": 30 }
+    ]
+  }
+]

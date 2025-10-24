@@ -1,0 +1,31 @@
+[
+  {
+    "id": "poster_courtyard_intro",
+    "name": "Courtyard Poster – Intro",
+    "description": "Hidden until Courtyard is unlocked.",
+    "stars": 0,
+    "requirement": "Unlock Courtyard.",
+    "tags": ["poster", "hidden"],
+    "source": "poster",
+    "event": null
+  },
+  {
+    "id": "code_spring_bundle",
+    "name": "Spring Redemption Gift",
+    "description": "Redeem a seasonal code.",
+    "stars": 0,
+    "requirement": "Use Redemption Code SPRING202X.",
+    "tags": ["redemption_code"],
+    "source": "redemption_code",
+    "event": "Spring"
+  },
+  {
+    "id": "wwell_lucky_coin",
+    "name": "Lucky Coin",
+    "description": "A wish rewarded from the well.",
+    "stars": 10,
+    "requirement": "Obtain from Wishing Well.",
+    "tags": ["wishing_well"],
+    "source": "wishing_well"
+  }
+]

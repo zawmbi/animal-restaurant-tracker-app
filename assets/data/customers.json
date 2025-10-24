@@ -1,0 +1,37 @@
+[
+  {
+    "id": "white_bunny",
+    "name": "White Bunny",
+    "tags": ["customer", "restaurant", "very_common", "nearby"],
+    "livesIn": "Nearby",
+    "appearanceWeight": 10000,
+    "requiredFoodId": "Taiyaki",
+    "dishesOrderedIds": ["Taiyaki"],
+    "mementos": [
+        {
+        "id": "purse",
+        "name": "Purse",
+        "stars": 5,
+        "description": "Looks very light, as if there is nothing inside.",
+        "requirement": "Serve White Bunny 350 times.",
+        "tags": ["customer_gift", "logbook_default"],
+        "source": "customer_gift",
+        "shareReward": 5000
+        },
+      {
+        "id": "calculator",
+        "name": "Calculator",
+        "stars": 30,
+        "description": "Continuously pressing buttons will produce cool robotic sounds.",
+        "requirement": "Serve White Bunny 1500 times. Sell 2000 Taiyaki."
+      },
+      {
+        "id": "rabbit_hat",
+        "name": "Rabbit Hat",
+        "stars": 15,
+        "description": "Knitted from the fur that Rabbit gave to the chef. It's very warm.",
+        "requirement": "Serve White Bunny 3000 times. Sell 3500 Taiyaki."
+      }
+    ]
+  }
+]
