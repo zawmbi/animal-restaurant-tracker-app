@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'features/customers/ui/customers_page.dart';
+import 'home/ui/home_page.dart'; // <-- use HomePage, not CustomersPage
 
 class ARTrackerApp extends StatelessWidget {
   const ARTrackerApp({super.key});
@@ -7,14 +7,15 @@ class ARTrackerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // <-- hides the red "DEBUG" banner
-      title: 'Animal Restaurant Progress Tracker',
+      debugShowCheckedModeBanner: false,
+      title: 'Animal Restaurant Tracker',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 255, 0, 242)),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(255, 255, 0, 242),
+        ),
         useMaterial3: true,
       ),
-      home: const CustomersPage(),
+      home: const HomePage(), // <-- start on Home
     );
-
   }
 }

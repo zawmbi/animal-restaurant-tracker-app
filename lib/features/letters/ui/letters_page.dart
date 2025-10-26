@@ -3,6 +3,7 @@ import '../../shared/widgets/entity_chip.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../data/letters_repository.dart';
 import '../model/letter.dart';
+import '../../search/ui/global_search_page.dart';
 
 class LettersPage extends StatelessWidget {
   const LettersPage({super.key});
@@ -11,7 +12,17 @@ class LettersPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final store = UnlockedStore.instance;
     return Scaffold(
-      appBar: AppBar(title: const Text('Letters')),
+      appBar: AppBar(
+        title: const Text('Letters'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const GlobalSearchPage()),
+            ),
+          ),
+        ],
+      ),
       body: FutureBuilder<List<Letter>>(
         future: LettersRepository.instance.all(),
         builder: (context, snap) {
@@ -32,6 +43,8 @@ class LettersPage extends StatelessWidget {
                     return EntityChip(
                       label: l.name,
                       checked: unlocked,
+                      showCheckbox: true,
+                      onCheckChanged: (v) => store.setUnlocked('letter', l.id, v ?? false),
                       onTap: () => store.toggle('letter', l.id),
                     );
                   }).toList(),

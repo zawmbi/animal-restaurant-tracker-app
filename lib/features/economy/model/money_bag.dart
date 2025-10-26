@@ -1,30 +1,42 @@
-import 'currency.dart';
+import '../../facilities/model/facility.dart';
 
+/// Simple typed accumulator for currency totals.
+/// Uses double internally to handle per-minute math cleanly.
 class MoneyBag {
-  final Map<Currency, int> _m = {};
+  final Map<MoneyCurrency, double> _totals = {
+    for (final c in MoneyCurrency.values) c: 0.0,
+  };
 
-  MoneyBag();
-  MoneyBag.from(Map<Currency, int> values) { _m.addAll(values); }
-
-  int operator [](Currency c) => _m[c] ?? 0;
-  void add(Currency c, int amount) => _m[c] = this[c] + amount;
-
-  MoneyBag plus(MoneyBag other) {
-    final r = MoneyBag.from(_m);
-    for (final e in other._m.entries) { r.add(e.key, e.value); }
-    return r;
+  void add(MoneyCurrency c, double amount) {
+    _totals[c] = (_totals[c] ?? 0) + amount;
   }
 
-  MoneyBag times(num k) {
-    final r = MoneyBag();
-    for (final e in _m.entries) { r._m[e.key] = (e.value * k).floor(); }
-    return r;
+  void addBag(MoneyBag other) {
+    for (final c in MoneyCurrency.values) {
+      add(c, other._totals[c] ?? 0);
+    }
   }
 
-  Map<String, int> toJson() =>
-      _m.map((k, v) => MapEntry(k.key, v));
+  double get(MoneyCurrency c) => _totals[c] ?? 0;
+
+  bool get isZero => _totals.values.every((v) => v == 0);
 
   @override
-  String toString() =>
-      _m.entries.map((e) => '${e.value} ${e.key.key}').join(', ');
+  String toString() {
+    String fmt(MoneyCurrency c) {
+      final v = _totals[c] ?? 0;
+      if (v.abs() < 0.0001) return '0';
+      return v.toStringAsFixed(v == v.roundToDouble() ? 0 : 2);
+    }
+
+    return [
+      'Cod: ${fmt(MoneyCurrency.cod)}',
+      'Plates: ${fmt(MoneyCurrency.plates)}',
+      'Bells: ${fmt(MoneyCurrency.bells)}',
+      'Film: ${fmt(MoneyCurrency.film)}',
+      'Buttons: ${fmt(MoneyCurrency.buttons)}',
+    ].join('  •  ');
+  }
+
+  operator /(double other) {}
 }

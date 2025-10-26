@@ -1,19 +1,58 @@
 [
   {
-    "id": "tip_jar",
-    "name": "Tip Jar",
-    "prices": [{ "currency": "cod", "amount": 1200 }],
-    "yields": [
-      { "type": "one_time", "currency": "cod", "amount": 300 },
-      { "type": "per_minute", "currency": "cod", "amount": 15, "goesToTips": true }
-    ]
+    "id": "tip_desk_stone_bowl",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Stone Bowl",
+    "description": "Patrons, show some love...",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 1000 }],
+    "effects": [
+      { "type": "incomePerMinute", "currency": "cod", "amount": 5 },
+      { "type": "tipCapIncrease", "capIncrease": 10000 },
+      { "type": "ratingBonus", "amount": 3 }
+    ],
+    "series": "Log Scenery"
   },
   {
-    "id": "busking_stage",
-    "name": "Busking Stage",
-    "prices": [{ "currency": "bells", "amount": 500 }],
-    "yields": [
-      { "type": "interval_range", "currency": "film", "amount": 2, "maxAmount": 19, "intervalMinutes": 30 }
-    ]
+    "id": "tip_desk_savings_jar",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Savings Jar",
+    "description": "Watch your savings grow!",
+    "requirementsStars": 130,
+    "price": [{ "currency": "cod", "amount": 14000 }],
+    "effects": [
+      { "type": "incomePerMinute", "currency": "cod", "amount": 6 },
+      { "type": "tipCapIncrease", "capIncrease": 25000 }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "table1_small_stump",
+    "area": "restaurant",
+    "group": "Table 1",
+    "name": "Small Stump",
+    "description": "A cozy table",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 150 }],
+    "effects": [
+      { "type": "incomePerMinute", "currency": "cod", "amount": 4 }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "table1_elegant_table",
+    "area": "restaurant",
+    "group": "Table 1",
+    "name": "Elegant Table",
+    "description": "An elegant, impressive round table",
+    "requirementsStars": 260,
+    "price": [{ "currency": "cod", "amount": 62000 }],
+    "effects": [
+      { "type": "incomePerMinute", "currency": "cod", "amount": 7 },
+      { "type": "ratingBonus", "amount": 8 }
+    ],
+    "series": "Forest Humming"
   }
 ]

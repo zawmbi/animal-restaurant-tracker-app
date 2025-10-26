@@ -4,6 +4,7 @@ import '../../shared/data/unlocked_store.dart';
 import '../data/customers_repository.dart';
 import '../model/customer.dart';
 import 'customer_detail_page.dart';
+import '../../search/ui/global_search_page.dart';
 
 class CustomersPage extends StatefulWidget {
   const CustomersPage({super.key});
@@ -18,7 +19,17 @@ class _CustomersPageState extends State<CustomersPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Customers')),
+      appBar: AppBar(
+        title: const Text('Customers'),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const GlobalSearchPage()),
+            ),
+          ),
+        ],
+      ),
       body: FutureBuilder<List<Customer>>(
         future: repo.all(),
         builder: (context, snap) {
@@ -71,6 +82,8 @@ class _CustomersPageState extends State<CustomersPage> {
               return EntityChip(
                 label: c.name,
                 checked: isUnlocked,
+                showCheckbox: true,
+                onCheckChanged: (v) => store.setUnlocked('customer', c.id, v!),
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
