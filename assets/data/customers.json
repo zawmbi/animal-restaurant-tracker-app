@@ -7,6 +7,7 @@
     "appearanceWeight": 10000,
     "requiredFoodId": "Taiyaki",
     "dishesOrderedIds": ["Taiyaki"],
+    "customerDescription":"Little white bunny, ever so white; with two pointy ears, that stand upright.",
     "mementos": [
         {
         "id": "purse",
@@ -23,7 +24,7 @@
         "name": "Calculator",
         "stars": 30,
         "description": "Continuously pressing buttons will produce cool robotic sounds.",
-        "requirement": "Serve White Bunny 1500 times. Sell 2000 Taiyaki."
+        "requirement": "Serve White Bunny 1500 times. blahr\nSell 2000 Taiyaki."
       },
       {
         "id": "rabbit_hat",
