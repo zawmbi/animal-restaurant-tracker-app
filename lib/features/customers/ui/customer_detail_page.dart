@@ -33,7 +33,7 @@ class CustomerDetailPage extends StatelessWidget {
               const SizedBox(height: 12),
               if (customer.requiredFoodId != null) ...[
                 const Text('Required Food', style: TextStyle(fontWeight: FontWeight.bold)),
-                const SizedBox(height: 6),
+                const SizedBox(height: 12),
                 _dishChip(context, customer.requiredFoodId!),
                 const SizedBox(height: 12),
               ],

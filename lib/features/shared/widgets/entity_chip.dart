@@ -1,13 +1,13 @@
-// lib/features/shared/widgets/entity_chip.dart
 import 'package:flutter/material.dart';
 
-/// Compact clickable chip with optional checkbox and a small check badge when checked.
+/// Whole bordered chip opens details (onTap).
+/// Only the checkbox toggles unlocked (onCheckChanged).
 class EntityChip extends StatelessWidget {
   final String label;
-  final VoidCallback? onTap;
-  final bool checked;
-  final bool showCheckbox;
-  final ValueChanged<bool?>? onCheckChanged; // <-- bool? matches Checkbox
+  final VoidCallback? onTap;              // open profile/details
+  final bool checked;                     // current unlocked state
+  final bool showCheckbox;                // show checkbox?
+  final ValueChanged<bool>? onCheckChanged;
 
   const EntityChip({
     super.key,
@@ -20,56 +20,51 @@ class EntityChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final chip = Chip(
-      label: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          if (showCheckbox)
-            Checkbox(
-              value: checked,
-              visualDensity: VisualDensity.compact,
-              materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-              onChanged: onCheckChanged, // <-- signatures now match
-            ),
-          Flexible(
-            child: Text(
-              label,
-              overflow: TextOverflow.ellipsis,
-            ),
-          ),
-        ],
-      ),
-      side: const BorderSide(width: 1),
-    );
+    final theme = Theme.of(context);
+    final radius = BorderRadius.circular(20);
 
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
+    return Material(
+      color: Colors.transparent,
       child: InkWell(
-        borderRadius: BorderRadius.circular(20),
-        hoverColor: Theme.of(context).colorScheme.primary.withOpacity(0.06),
+        // Make the WHOLE bordered chip clickable for details:
         onTap: onTap,
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            chip,
-            // Small check badge in the top-right when checked
-            Positioned(
-              top: 6,
-              right: 6,
-              child: IgnorePointer(
-                ignoring: true,
-                child: AnimatedOpacity(
-                  duration: const Duration(milliseconds: 150),
-                  opacity: checked ? 1.0 : 0.0,
-                  child: Icon(
-                    Icons.check_circle,
-                    size: 16,
-                    color: Theme.of(context).colorScheme.primary,
+        customBorder: RoundedRectangleBorder(borderRadius: radius),
+        overlayColor: MaterialStateProperty.resolveWith((states) {
+          if (states.contains(MaterialState.hovered)) {
+            return theme.colorScheme.primary.withOpacity(0.06);
+          }
+          return null;
+        }),
+        child: Ink(
+          decoration: BoxDecoration(
+            color: theme.colorScheme.surface,
+            borderRadius: radius,
+            border: Border.all(color: theme.dividerColor, width: 1),
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              if (showCheckbox)
+                // Checkbox ONLY toggles state; it won’t navigate.
+                Checkbox(
+                  value: checked,
+                  visualDensity: VisualDensity.compact,
+                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  onChanged: (v) => onCheckChanged?.call(v ?? false),
+                ),
+              Flexible(
+                child: Padding(
+                  // Small gap between checkbox and label (or left edge)
+                  padding: EdgeInsets.only(left: showCheckbox ? 4 : 2, right: 2),
+                  child: Text(
+                    label,
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

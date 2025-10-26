@@ -7,9 +7,9 @@
     "appearanceWeight": 10000,
     "requiredFoodId": "Taiyaki",
     "dishesOrderedIds": ["Taiyaki"],
-    "customerDescription":"Little white bunny, ever so white; with two pointy ears, that stand upright.",
+    "customerDescription": "Little white bunny, ever so white; with two pointy ears, that stand upright.",
     "mementos": [
-        {
+      {
         "id": "purse",
         "name": "Purse",
         "stars": 5,
@@ -18,7 +18,7 @@
         "tags": ["customer_gift", "logbook_default"],
         "source": "customer_gift",
         "shareReward": 5000
-        },
+      },
       {
         "id": "calculator",
         "name": "Calculator",
@@ -32,6 +32,58 @@
         "stars": 15,
         "description": "Knitted from the fur that Rabbit gave to the chef. It's very warm.",
         "requirement": "Serve White Bunny 3000 times. Sell 3500 Taiyaki."
+      }
+    ]
+  },
+  {
+    "id": "brown_bunny",
+    "name": "Brown Bunny",
+    "tags": ["customer", "restaurant", "very_common", "nearby", "no_requirements"],
+    "livesIn": "Nearby",
+    "appearanceWeight": 9836,
+    "requiredFoodId": null,
+    "dishesOrderedIds": ["Seaweed Rice Ball", "Purple Sweet Potato Bun"],
+    "customerDescription": "Common wild rabbits that are good at digging holes.",
+    "mementos": [
+      {
+        "id": "carrot_cellphone",
+        "name": "Carrot Cellphone",
+        "stars": 10,
+        "description": "Although it's a cellphone, it looks like it's only good for eating.",
+        "requirement": "Serve Brown Bunny 500 times.",
+        "tags": ["customer_gift"],
+        "source": "customer_gift",
+        "shareReward": 6000
+      },
+      {
+        "id": "sturdy_flower",
+        "name": "Sturdy Flower",
+        "stars": 25,
+        "description": "This flower was dug out of nowhere, but it has survived and thrived.",
+        "requirement": "Serve Brown Bunny 1330 times.",
+        "tags": ["customer_gift"],
+        "source": "customer_gift"
+      }
+    ]
+  },
+  {
+    "id": "deer",
+    "name": "Deer",
+    "tags": ["customer", "restaurant", "very_common", "nearby", "picky", "big_spender"],
+    "livesIn": "Nearby",
+    "appearanceWeight": 9585,
+    "requiredFoodId": null,
+    "dishesOrderedIds": ["Seaweed Rice Ball", "Purple Sweet Potato Bun", "Americano"],
+    "customerDescription": "The most common deer in the area. I wonder when they'll get those spots on their brown fur? Picky: Rating must reach 9. Ability — Big Spender: Has a 5% chance to give x8 the amount of Cod.",
+    "mementos": [
+      {
+        "id": "deers_cracker",
+        "name": "Deer's Cracker",
+        "stars": 10,
+        "description": "It will bestow you with Deer's good fortune.",
+        "requirement": "Serve Deer 700 times.",
+        "tags": ["customer_gift"],
+        "source": "customer_gift"
       }
     ]
   }

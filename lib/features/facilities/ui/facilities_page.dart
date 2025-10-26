@@ -104,7 +104,7 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                     shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
+                      crossAxisCount: 4,
                       crossAxisSpacing: 10,
                       mainAxisSpacing: 10,
                       childAspectRatio: 3,
@@ -118,7 +118,7 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                         checked: purchased,
                         showCheckbox: true,
                         onCheckChanged: (v) =>
-                            store.setUnlocked('facility_purchased', f.id, v ?? false),
+                            store.setUnlocked('facility_purchased', f.id, v),
                         onTap: () => Navigator.of(context).push(
                           MaterialPageRoute(builder: (_) => FacilityDetailPage(facility: f)),
                         ),
