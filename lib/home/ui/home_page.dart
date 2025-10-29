@@ -211,7 +211,7 @@ class _HomePageState extends State<HomePage> {
               _navCard(context, Icons.people, 'Customers', const CustomersPage()),
               _navCard(context, Icons.store, 'Facilities', fac.FacilitiesPage()),
               _navCard(context, Icons.mail, 'Letters', const LettersPage()),
-              _navCard(context, Icons.restaurant, 'Dishes', const DishesPage()),
+              _navCard(context, Icons.menu_book, 'Recipes', const DishesPage()),
               _navCard(context, Icons.card_giftcard, 'Mementos', const MementosPage()),
             ],
           ),

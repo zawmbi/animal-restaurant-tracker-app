@@ -58,6 +58,7 @@ class CustomerDetailPage extends StatelessWidget {
                       subtitle: Text(m.requirement),
                     )),
               ],
+
               const SizedBox(height: 24),
               Wrap(
                 spacing: 6,
@@ -86,7 +87,7 @@ class CustomerDetailPage extends StatelessWidget {
     return FutureBuilder(
       future: DishesRepository.instance.byId(dishId),
       builder: (context, snap) {
-        final label = snap.data?.name ?? dishId; // fallback to id until loaded
+        final label = snap.data?.name ?? dishId; // fallback to id until loaded 
         final checked = store.isUnlocked('dish', dishId);
         return EntityChip(
           label: label,
@@ -94,6 +95,7 @@ class CustomerDetailPage extends StatelessWidget {
           onTap: () {
             Navigator.of(context).push(
               MaterialPageRoute(
+
                 builder: (_) => DishDetailPage(dishId: dishId),
               ),
             );
