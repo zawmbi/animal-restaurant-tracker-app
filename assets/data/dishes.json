@@ -1,3 +1,200 @@
 [
-  { "id": "taiyaki", "name": "Taiyaki", "category": "dessert" }
+  {
+    "id": "taiyaki",
+    "name": "Taiyaki",
+    "sections": ["Freshly Made"],
+    "description": "A favorite of cats.",
+    "time_s": 2,
+    "earnings_max": 3300,
+    "requirement": "",
+    "cost": "Free"
+  },
+  {
+    "id": "seaweed_rice_ball",
+    "name": "Seaweed Rice Ball",
+    "sections": ["Freshly Made"],
+    "description": "Keepin' it simple!",
+    "time_s": 3,
+    "earnings_max": 3400,
+    "requirement": "",
+    "cost": "Free"
+  },
+  {
+    "id": "purple_sweet_potato_bun",
+    "name": "Purple Sweet Potato Bun",
+    "sections": ["Freshly Made"],
+    "description": "Sweet potato is very good for you.",
+    "time_s": 4,
+    "earnings_max": 3500,
+    "requirement": "400★",
+    "cost": "400 Cod"
+  },
+  {
+    "id": "americano",
+    "name": "Americano",
+    "sections": ["Freshly Made"],
+    "description": "Espresso with water.",
+    "time_s": 6,
+    "earnings_max": 3800,
+    "requirement": "15★",
+    "cost": "900 Cod"
+  },
+  {
+    "id": "steamed_clams",
+    "name": "Steamed Clams",
+    "sections": ["Freshly Made"],
+    "description": "Found all over the stream. Steam them a bit and they'll be bursting with flavor!",
+    "time_s": 8,
+    "earnings_max": 3900,
+    "requirement": "25★",
+    "cost": "1000 Cod"
+  },
+  {
+    "id": "adzuki_bean_dumpling",
+    "name": "Adzuki Bean Dumpling",
+    "sections": ["Freshly Made"],
+    "description": "The chickens' hometown always adds adzuki bean to their dumplings.",
+    "time_s": 10,
+    "earnings_max": 4000,
+    "requirement": "40★",
+    "cost": "1100 Cod"
+  },
+  {
+    "id": "bagel",
+    "name": "Bagel",
+    "sections": ["Freshly Made"],
+    "description": "The pure taste of wheat goes with anything!",
+    "time_s": 12,
+    "earnings_max": 800,
+    "requirement": "60★",
+    "cost": "2500 Cod"
+  },
+
+  {
+    "id": "strawberry_daifuku",
+    "name": "Strawberry Daifuku",
+    "sections": ["Buffet"],
+    "description": "Round and sticky. Oh, it's also mildly sweet!",
+    "earnings_per_hour": "+3,000/h",
+    "requirement": "",
+    "cost": "Free"
+  },
+  {
+    "id": "soymilk",
+    "name": "Soymilk",
+    "sections": ["Buffet"],
+    "description": "It only takes 30 seconds from milk production to processing.",
+    "earnings_per_hour": "+3,100/h",
+    "requirement": "50★",
+    "cost": "50 Plates"
+  },
+  {
+    "id": "sushi_roll",
+    "name": "Sushi Roll",
+    "sections": ["Buffet"],
+    "description": "You can get really full from eating sushi!",
+    "earnings_per_hour": "+3,200/h",
+    "requirement": "100★",
+    "cost": "100 Plates"
+  },
+  {
+    "id": "sea_urchin_sushi",
+    "name": "Sea Urchin Sushi",
+    "sections": ["Buffet"],
+    "description": "I smell a faint ocean scent.",
+    "earnings_per_hour": "+3,300/h",
+    "requirement": "2000★",
+    "cost": "200 Plates"
+  },
+  {
+    "id": "conveyor_sushi_roll",
+    "name": "Conveyor Sushi Roll",
+    "sections": ["Buffet"],
+    "description": "Handmade food imbued with the spirit of craftsmanship.",
+    "earnings_per_hour": "+3,400/h",
+    "requirement": "2200★",
+    "cost": "300 Plates"
+  },
+  {
+    "id": "eel_sushi",
+    "name": "Eel Sushi",
+    "sections": ["Buffet"],
+    "description": "A masterpiece made of eel and plenty of rice.",
+    "earnings_per_hour": "+3,500/h",
+    "requirement": "2400★",
+    "cost": "400 Plates"
+  },
+
+  {
+    "id": "teddy_biscuit",
+    "name": "Teddy Biscuit",
+    "sections": ["Takeout"],
+    "description": "Bite-sized crackers that are perfect for children.",
+    "earnings_range": "+14~56",
+    "requirement": "C: 3,500★ + 1,000 Cod | B: 100 Likes + 10,000 Cod | A: 20,000★ + 30,000 Cod | S: 1,000 Likes + 1,000,000 Cod",
+    "cost": "Variable"
+  },
+  {
+    "id": "fresh_milk",
+    "name": "Fresh Milk",
+    "sections": ["Takeout"],
+    "description": "Fresh and healthy milk from a quality source.",
+    "earnings_range": "+15~60",
+    "requirement": "C: 3,800★ + 20,000 Cod | B: 100 Likes + 120,000 Cod | A: 520★ + 350,000 Cod | S: 52,000 Likes + 1,100,000 Cod",
+    "cost": "Variable"
+  },
+  {
+    "id": "strawberry_cone",
+    "name": "Strawberry Cone",
+    "sections": ["Takeout"],
+    "description": "A crispy cone filled with sweet and tart strawberry ice cream that is too wonderful for words.",
+    "earnings_range": "+17~64",
+    "requirement": "C: 4,100★ + 30,000 Cod | B: 11,500 Likes + 140,000 Cod | A: 22,000★ + 400,000 Cod | S: 1,200 Likes + 1,200,000 Cod",
+    "cost": "Variable"
+  },
+
+  {
+    "id": "tomatoes_in_mashed_potatoes",
+    "name": "Tomatoes in Mashed Potatoes",
+    "sections": ["Food Truck Recipes"],
+    "description": "Soft and creamy, sweet and sour... This dish simply melts in the mouth.",
+    "refined_rating": 350,
+    "ingredients": "Potato (6); Tomato (4)",
+    "perfect_dishes": 35,
+    "prep_time_s": 26,
+    "flavor": "Sour"
+  },
+  {
+    "id": "tofu_pudding",
+    "name": "Tofu Pudding in Sweet Rice Wine",
+    "sections": ["Food Truck Recipes"],
+    "description": "The flavor of Jiangnan all in one bowl.",
+    "refined_rating": 250,
+    "ingredients": "Soybean (4); Rice (8)",
+    "perfect_dishes": 15,
+    "prep_time_s": 24,
+    "flavor": "Sweet"
+  },
+  {
+    "id": "mushroom_fried_rice",
+    "name": "Mushroom Fried Rice",
+    "sections": ["Food Truck Recipes"],
+    "description": "This dish of juicy mushrooms and fragrant rice will leave you begging for more!",
+    "refined_rating": 400,
+    "ingredients": "Rice (8); Mushroom (5); Corn (3)",
+    "perfect_dishes": 35,
+    "prep_time_s": 42,
+    "flavor": "Salty"
+  },
+  {
+    "id": "kitty_crepe",
+    "name": "Kitty Crepe",
+    "sections": ["Food Truck Recipes"],
+    "description": "Gear up for a new gustatory experience with this fluffy crepe and chilled strawberry mochi combination!",
+    "refined_rating": 150,
+    "ingredients": "Wheat (4); Rice (3)",
+    "perfect_dishes": 10,
+    "prep_time_s": 24,
+    "flavor": "Sweet"
+  }
 ]

@@ -1,5 +1,3 @@
-import 'package:animal_restaurant_tracker/features/shared/json_loader.dart';
-
 import '../../shared/json_loader.dart';
 import '../model/dish.dart';
 

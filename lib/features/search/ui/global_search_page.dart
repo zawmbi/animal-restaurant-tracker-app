@@ -36,7 +36,7 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Search Everything')),
+      appBar: AppBar(title: const Text('Global Search')),
       body: Column(
         children: [
           Padding(

@@ -1,17 +1,7 @@
-
-import 'package:flutter/material.dart';
-import '../../shared/widgets/entity_chip.dart';
-import '../../shared/data/unlocked_store.dart';
-import '../data/dishes_repository.dart';
-import '../model/dish.dart';
-import 'dish_detail_page.dart';
-import '../../search/ui/global_search_page.dart';
-
 import 'package:flutter/material.dart';
 import '../data/dishes_repository.dart';
 import '../model/dish.dart';
 import '../../shared/data/unlocked_store.dart';
-
 
 class DishDetailPage extends StatelessWidget {
   const DishDetailPage({super.key, required this.dishId});
@@ -33,7 +23,7 @@ class DishDetailPage extends StatelessWidget {
           }
           if (snap.hasError) {
             return Center(
-              child: Text('Failed to load dish:${snap.error}', textAlign: TextAlign.center),
+              child: Text('Failed to load dish:\n${snap.error}', textAlign: TextAlign.center),
             );
           }
 
@@ -64,7 +54,6 @@ class _DishDetailBody extends StatelessWidget {
         return ListView(
           padding: const EdgeInsets.all(16),
           children: [
-            // Header + checkmark
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -89,7 +78,7 @@ class _DishDetailBody extends StatelessWidget {
                 children: dish.sections.map((s) => Chip(label: Text(s))).toList(),
               ),
 
-            if ((dish.description).isNotEmpty) ...[
+            if (dish.description.isNotEmpty) ...[
               const SizedBox(height: 12),
               Text(dish.description),
             ],
@@ -128,11 +117,8 @@ class _DishDetailBody extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 12),
-
-            // Category-specific fields using your Dish model
             ..._buildFieldsForCategory(cat, d),
 
-            // Food-truck extras (if present)
             if (d.refinedRating != null || (d.ingredients?.isNotEmpty ?? false) || d.perfectDishes != null || d.prepTimeSeconds != null || (d.flavor?.isNotEmpty ?? false))
               const Divider(height: 24),
             if (d.refinedRating != null) _kv('Refined Rating', d.refinedRating!.toString()),
@@ -176,7 +162,6 @@ class _DishDetailBody extends StatelessWidget {
         break;
       case DishCategory.takeout:
         addKV('Earnings', d.earningsRange);
-        // Tiered requirements aren’t modeled yet; show whatever text we have.
         addKV('Requirement', d.requirement);
         addKV('Cost', _formatCost(d.costText));
         break;
@@ -187,14 +172,12 @@ class _DishDetailBody extends StatelessWidget {
         addKV('Cost', _formatCost(d.costText));
         break;
       case DishCategory.foodTruck:
-        // Base line + extras below
         addKV('Time', d.timeSeconds != null ? _secondsToString(d.timeSeconds!) : (d.prepTimeSeconds != null ? _secondsToString(d.prepTimeSeconds!) : null));
         addKV('Earnings (Max)', d.earningsMax != null ? _formatInt(d.earningsMax!) : null);
         addKV('Requirement', d.requirement);
         addKV('Cost', _formatCost(d.costText));
         break;
       case DishCategory.unknown:
-        // Show whatever is available
         addKV('Time', d.timeSeconds != null ? _secondsToString(d.timeSeconds!) : null);
         addKV('Earnings (Max)', d.earningsMax != null ? _formatInt(d.earningsMax!) : null);
         addKV('Earnings', d.earningsPerHour ?? d.earningsRange);
@@ -237,7 +220,7 @@ class _DishDetailBody extends StatelessWidget {
 
   static String _formatCost(String? costText) {
     if (costText == null || costText.isEmpty) return '—';
-    return costText; // already normalized in model
+    return costText;
   }
 
   static List<String> _formatIngredients(String raw) {
@@ -245,7 +228,7 @@ class _DishDetailBody extends StatelessWidget {
     final semi = raw.split(';');
     final parts = <String>[];
     for (final p in semi) {
-      for (final q in p.split('')) {
+      for (final q in p.split('\n')) {
         final t = q.trim();
         if (t.isNotEmpty) parts.add(t);
       }
@@ -266,7 +249,7 @@ class _DishDetailBody extends StatelessWidget {
   IconData _iconFor(DishCategory cat) {
     switch (cat) {
       case DishCategory.freshlyMade: return Icons.restaurant;
-      case DishCategory.buffet: return Icons.table_bar; // buffet-y
+      case DishCategory.buffet: return Icons.table_bar;
       case DishCategory.takeout: return Icons.shopping_bag_outlined;
       case DishCategory.vegGarden: return Icons.grass;
       case DishCategory.foodTruck: return Icons.local_shipping;
@@ -287,3 +270,4 @@ DishCategory _inferCategory(Dish d) {
   if (has('Food Truck') || has('Food Truck Recipes')) return DishCategory.foodTruck;
   return DishCategory.unknown;
 }
+

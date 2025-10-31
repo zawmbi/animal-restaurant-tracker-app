@@ -86,5 +86,17 @@
         "source": "customer_gift"
       }
     ]
+  },
+
+  {
+    "id": "gloomy",
+    "name": "Gloomy",
+    "tags": ["customer", "restaurant", "very_rare", "city", "halloween"],
+    "livesIn": "City",
+    "appearanceWeight": 100,
+    "requiredFoodId": null,
+    "dishesOrderedIds": ["Banana Boat", "Blueberry Pancake", "Cold Watermelon", "Log Cake", "Raspberry Yogurt", "Pineapple Rice", "Planet Cake"],
+    "customerDescription": "",
+    "mementos": []
   }
 ]

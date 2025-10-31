@@ -1,7 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
-import '../../features/facilities/model/data/facilities_repository.dart';
+import 'package:animal_restaurant_tracker/features/bank/ui/bank_page.dart';
+import 'package:animal_restaurant_tracker/features/facilities/model/data/facilities_repository.dart';
+
 import '../../features/search/data/search_index.dart';
 import '../../features/shared/data/unlocked_store.dart';
 
@@ -12,11 +15,10 @@ import '../../features/facilities/ui/facility_detail_page.dart' as facdetail;
 
 import '../../features/letters/ui/letters_page.dart';
 import '../../features/mementos/ui/mementos_page.dart';
-import '../../features/dishes/ui/dishes_page.dart';
-import '../../features/dishes/ui/dish_detail_page.dart';
+import '../../features/dishes/ui/dishes_page.dart' as recipes;      // ← alias
+import '../../features/dishes/ui/dish_detail_page.dart' as detail;  // ← alias
 
 import '../../features/customers/data/customers_repository.dart';
-import '../../features/facilities/data/facilities_repository.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -72,7 +74,7 @@ class _HomePageState extends State<HomePage> {
       case HitType.dish:
         if (!mounted) return;
         Navigator.of(context).push(
-          MaterialPageRoute(builder: (_) => DishDetailPage(dishId: h.id)),
+          MaterialPageRoute(builder: (_) => detail.DishDetailPage(dishId: h.id)),
         );
         break;
 
@@ -107,30 +109,18 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          Material(
-            elevation: 1,
-            borderRadius: BorderRadius.circular(12),
+          // Search card uses global CardTheme (cream bg, green border, radius)
+          Card(
             child: Column(
               children: [
                 TextField(
                   controller: _searchCtrl,
                   focusNode: _focus,
-                  decoration: InputDecoration(
-                    hintText: 'Search customers, letters, dishes, facilities, mementos…',
-                    prefixIcon: const Icon(Icons.search),
-                    suffixIcon: _searchCtrl.text.isEmpty
-                        ? null
-                        : IconButton(
-                            icon: const Icon(Icons.clear),
-                            onPressed: () {
-                              setState(() {
-                                _searchCtrl.clear();
-                                _suggestions = const [];
-                              });
-                            },
-                          ),
+                  decoration: const InputDecoration(
+                    hintText: 'Search customers, letters, recipes, facilities, mementos…',
+                    prefixIcon: Icon(Icons.search),
                     border: InputBorder.none,
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+                    contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 14),
                   ),
                   onChanged: _onChanged,
                 ),
@@ -139,7 +129,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     constraints: const BoxConstraints(maxHeight: 280),
                     decoration: BoxDecoration(
-                      border: Border(top: BorderSide(color: Theme.of(context).dividerColor)),
+                      border: Border(top: BorderSide(color: Colors.black12)),
                     ),
                     child: ListView.builder(
                       shrinkWrap: true,
@@ -172,7 +162,6 @@ class _HomePageState extends State<HomePage> {
 
                         return InkWell(
                           mouseCursor: SystemMouseCursors.click,
-                          hoverColor: Theme.of(context).hoverColor.withOpacity(0.15),
                           onTap: () => _openHit(h),
                           child: ListTile(
                             leading: Icon(_iconFor(h.type)),
@@ -198,44 +187,36 @@ class _HomePageState extends State<HomePage> {
           ),
           const SizedBox(height: 20),
 
-          _sectionTitle('Browse'),
+          Text('Browse', style: Theme.of(context).textTheme.titleLarge),
           const SizedBox(height: 8),
+
+          // Fixed 3-per-row, square nav tiles using global CardTheme
           GridView.count(
-            crossAxisCount: MediaQuery.of(context).size.width > 700 ? 3 : 2,
+            crossAxisCount: 3, // ← EXACTLY 3 per row
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             crossAxisSpacing: 12,
             mainAxisSpacing: 12,
-            childAspectRatio: 1.3,
+            childAspectRatio: 1.0, // ← square tiles
             children: [
-              _navCard(context, Icons.people, 'Customers', const CustomersPage()),
-              _navCard(context, Icons.store, 'Facilities', fac.FacilitiesPage()),
-              _navCard(context, Icons.mail, 'Letters', const LettersPage()),
-              _navCard(context, Icons.menu_book, 'Recipes', const DishesPage()),
-              _navCard(context, Icons.card_giftcard, 'Mementos', const MementosPage()),
+              _navTile(context, Icons.people, 'Customers', const CustomersPage()),
+              _navTile(context, Icons.store, 'Facilities', fac.FacilitiesPage()),
+              _navTile(context, Icons.mail, 'Letters', const LettersPage()),
+              _navTile(context, Icons.menu_book, 'Recipes', const recipes.DishesPage()),
+              _navTile(context, Icons.attach_money, 'Bank', const BankPage()),
+              _navTile(context, Icons.card_giftcard, 'Mementos', const MementosPage()),
             ],
           ),
-
         ],
       ),
     );
   }
 
-  Widget _sectionTitle(String text) {
-    return Text(text, style: Theme.of(context).textTheme.titleLarge);
-  }
-
-  Widget _navCard(BuildContext context, IconData icon, String label, Widget page) {
-    return _HoverCard(
+  Widget _navTile(BuildContext context, IconData icon, String label, Widget page) {
+    return _NavTile(
+      icon: icon,
+      label: label,
       onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => page)),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(icon, size: 36),
-          const SizedBox(height: 10),
-          Text(label, style: Theme.of(context).textTheme.titleMedium),
-        ],
-      ),
     );
   }
 
@@ -246,7 +227,7 @@ class _HomePageState extends State<HomePage> {
       case HitType.letter:
         return Icons.mail;
       case HitType.dish:
-        return Icons.restaurant;
+        return Icons.menu_book;
       case HitType.facility:
         return Icons.store;
       case HitType.memento:
@@ -255,38 +236,55 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-class _HoverCard extends StatefulWidget {
-  final Widget child;
+class _NavTile extends StatelessWidget {
+  const _NavTile({
+    required this.icon,
+    required this.label,
+    required this.onTap,
+  });
+
+  final IconData icon;
+  final String label;
   final VoidCallback onTap;
-  const _HoverCard({required this.child, required this.onTap});
-
-  @override
-  State<_HoverCard> createState() => _HoverCardState();
-}
-
-class _HoverCardState extends State<_HoverCard> {
-  bool _hover = false;
 
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      onEnter: (_) => setState(() => _hover = true),
-      onExit: (_) => setState(() => _hover = false),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 150),
-        transform: _hover ? (Matrix4.identity()..scale(1.02)) : Matrix4.identity(),
-        child: Material(
-          elevation: _hover ? 6 : 2,
-          borderRadius: BorderRadius.circular(16),
-          clipBehavior: Clip.antiAlias,
-          child: InkWell(
-            mouseCursor: SystemMouseCursors.click,
-            onTap: widget.onTap,
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: widget.child,
-            ),
-          ),
+    // Card picks up border/radius/background from global CardTheme (app_theme.dart)
+    return Card(
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: onTap,
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            // Scale icon to available height so we never overflow a square tile
+            final iconSize = constraints.maxHeight * 0.38; // ~38% of tile height
+
+            return Padding(
+              padding: const EdgeInsets.all(10),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  // Icon scales with tile size
+                  Icon(icon, size: iconSize),
+                  const SizedBox(height: 8),
+                  // Text can wrap and shrink 1pt at a time; Flexible prevents overflow
+                  Flexible(
+                    child: Center(
+                      child: AutoSizeText(
+                        label,
+                        maxLines: 2,
+                        wrapWords: true,
+                        minFontSize: 8,
+                        stepGranularity: 1,
+                        textAlign: TextAlign.center,
+                        style: Theme.of(context).textTheme.titleMedium,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          },
         ),
       ),
     );
