@@ -1,4 +1,4 @@
-enum Currency { cod, plates, bells, film, buttons }
+enum Currency { cod, plates, bells, film, buttons, diamonds }
 
 extension CurrencyCodec on Currency {
   static Currency fromString(String s) {
@@ -8,6 +8,7 @@ extension CurrencyCodec on Currency {
       case 'bells': return Currency.bells;
       case 'film': return Currency.film;
       case 'buttons': return Currency.buttons;
+      case 'diamonds': return Currency.diamonds;
       default: throw ArgumentError('Unknown currency: $s');
     }
   }

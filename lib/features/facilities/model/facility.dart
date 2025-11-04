@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 
-/// Five payment types seen across AR: Cod, Plates, Bells, Film, Buttons.
-enum MoneyCurrency { cod, plates, bells, film, buttons }
+/// Payment types seen across AR.
+enum MoneyCurrency { cod, plates, bells, film, buttons, diamonds }
 
 extension MoneyCurrencyKey on MoneyCurrency {
   String get key => describeEnum(this);
@@ -38,7 +38,7 @@ class Price {
 
   factory Price.fromJson(Map<String, dynamic> j) => Price(
         currency: MoneyCurrency.values.firstWhere((e) => e.key == j['currency']),
-        amount: j['amount'] as int,
+        amount: (j['amount'] as num).toInt(),
       );
 
   Map<String, dynamic> toJson() => {
@@ -51,7 +51,7 @@ class Price {
 class FacilityEffect {
   final FacilityEffectType type;
 
-  // For income effects.
+  /// Currency for income effects.
   final MoneyCurrency? currency;
 
   /// General numeric value:
@@ -90,16 +90,19 @@ class FacilityEffect {
     if (j['currency'] != null) {
       cur = MoneyCurrency.values.firstWhere((e) => e.key == j['currency']);
     }
+    final amtField = j['amount'];
+    final amt = amtField == null
+        ? null
+        : (amtField is num ? amtField.toDouble() : double.tryParse(amtField.toString()));
+
     return FacilityEffect(
       type: t,
       currency: cur,
-      amount: (j['amount'] is int)
-          ? (j['amount'] as int).toDouble()
-          : j['amount'] as double?,
-      intervalMinutes: j['intervalMinutes'] as int?,
-      capIncrease: j['capIncrease'] as int?,
-      min: j['min'] as int?,
-      max: j['max'] as int?,
+      amount: amt,
+      intervalMinutes: (j['intervalMinutes'] as num?)?.toInt(),
+      capIncrease: (j['capIncrease'] as num?)?.toInt(),
+      min: (j['min'] as num?)?.toInt(),
+      max: (j['max'] as num?)?.toInt(),
       eventKey: j['eventKey'] as String?,
     );
   }
@@ -128,7 +131,7 @@ class Facility {
   final String? description;
 
   /// Star requirement to buy/unlock (if applicable).
-  final int? requirementStars;
+  final int? requirementStars; // JSON key is "requirementsStars"
 
   final List<Price> price;
 
@@ -137,6 +140,9 @@ class Facility {
 
   /// Set/series name (e.g., “Log Scenery”).
   final String? series;
+
+  /// Event/limited-time/prereq labels (e.g., "Sold During Christmas Event").
+  final List<String>? specialRequirements;
 
   Facility({
     required this.id,
@@ -148,6 +154,7 @@ class Facility {
     required this.price,
     required this.effects,
     this.series,
+    this.specialRequirements,
   });
 
   factory Facility.fromJson(Map<String, dynamic> j) => Facility(
@@ -156,7 +163,8 @@ class Facility {
         area: FacilityArea.values.firstWhere((e) => e.name == j['area']),
         group: j['group'] as String,
         description: j['description'] as String?,
-        requirementStars: j['requirementsStars'] as int?,
+        // Keep compatibility with your JSON key
+        requirementStars: (j['requirementsStars'] as num?)?.toInt(),
         price: (j['price'] as List<dynamic>)
             .map((e) => Price.fromJson(e as Map<String, dynamic>))
             .toList(),
@@ -164,6 +172,9 @@ class Facility {
             .map((e) => FacilityEffect.fromJson(e as Map<String, dynamic>))
             .toList(),
         series: j['series'] as String?,
+        specialRequirements: (j['specialRequirements'] as List?)
+            ?.map((e) => e.toString())
+            .toList(),
       );
 
   Map<String, dynamic> toJson() => {
@@ -176,5 +187,7 @@ class Facility {
         'price': price.map((e) => e.toJson()).toList(),
         'effects': effects.map((e) => e.toJson()).toList(),
         if (series != null) 'series': series,
+        if (specialRequirements != null && specialRequirements!.isNotEmpty)
+          'specialRequirements': specialRequirements,
       };
 }

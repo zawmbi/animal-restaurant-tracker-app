@@ -35,6 +35,8 @@ class MoneyBag {
       'Bells: ${fmt(MoneyCurrency.bells)}',
       'Film: ${fmt(MoneyCurrency.film)}',
       'Buttons: ${fmt(MoneyCurrency.buttons)}',
+      'Diamonds: ${fmt(MoneyCurrency.diamonds)}',
+
     ].join('  •  ');
   }
 

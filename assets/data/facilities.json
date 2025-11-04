@@ -1,6 +1,6 @@
 [
   {
-    "id": "tip_desk_stone_bowl",
+    "id": "stone_bowl",
     "area": "restaurant",
     "group": "Tip Desk",
     "name": "Stone Bowl",
@@ -15,7 +15,7 @@
     "series": "Log Scenery"
   },
   {
-    "id": "tip_desk_savings_jar",
+    "id": "savings_jar",
     "area": "restaurant",
     "group": "Tip Desk",
     "name": "Savings Jar",
@@ -23,11 +23,429 @@
     "requirementsStars": 130,
     "price": [{ "currency": "cod", "amount": 14000 }],
     "effects": [
-      { "type": "incomePerMinute", "currency": "cod", "amount": 6 },
+      { "type": "ratingBonus", "amount": 6 },
       { "type": "tipCapIncrease", "capIncrease": 25000 }
     ],
     "series": "Lattice Story"
   },
+
+  {
+    "id": "piggy_bank",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Piggy Bank",
+    "description": "The more you save, the fatter he gets!",
+    "requirementsStars": 240,
+    "price": [{ "currency": "cod", "amount": 88000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 12 },
+      { "type": "tipCapIncrease", "capIncrease": 40000 }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "cash_register",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Cash Register",
+    "description": "You'll be counting cash till your hand cramps",
+    "requirementsStars": 900,
+    "price": [{ "currency": "cod", "amount": 200000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 32 },
+      { "type": "tipCapIncrease", "capIncrease": 65000 }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "reverie_register",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Reverie Register",
+    "description": "I hear it can scan QR codes!",
+    "requirementsStars": 6600,
+    "price": [{ "currency": "cod", "amount": 1520000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 140 },
+      { "type": "tipCapIncrease", "capIncrease": 180000 }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "pumpkin_tip_desk",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Pumpkin Tip Desk",
+    "description": "Quickly take away the cod or they'll be eaten by the jack-o'-lantern.",
+    "requirementsStars": 3000,
+    "price": [{ "currency": "cod", "amount": 540000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 32 },
+      { "type": "tipCapIncrease", "capIncrease": 80000 }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "chimney_counter",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Chimney Counter",
+    "description": "Seems like it's bottomless.",
+    "requirementsStars": 30000,
+    "specialRequirements": ["Sold During Christmas Event"],
+    "price": [{ "currency": "cod", "amount": 4500000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 35 },
+      { "type": "tipCapIncrease", "capIncrease": 200000 }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "abacus_counter",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Abacus Counter",
+    "description": "This abacus has weathered many storms.",
+    "requirementsStars": 35000,
+    "price": [{ "currency": "cod", "amount": 5000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 50 },
+      { "type": "tipCapIncrease", "capIncrease": 200000 }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "seashell_counter",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Seashell Counter",
+    "description": "The pearl in the seashell has been replaced by cod.",
+    "requirementsStars": 80000,
+    "price": [{ "currency": "cod", "amount": 21000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 160 },
+      { "type": "tipCapIncrease", "capIncrease": 220000 }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "cod_under_the_sun",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Cod under the Sun",
+    "description": "It is said that excess cod will be taken away by a hot air balloon if it's not collected on time.",
+    "specialRequirements": ["Sold During Children's Day Event"],
+    "price": [{ "currency": "cod", "amount": 1000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 38 },
+      { "type": "tipCapIncrease", "capIncrease": 100000 }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "cashier_cart",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Cashier Cart",
+    "description": "Keep your balance at all times.",
+    "specialRequirements": ["Could be won in the Bread Maker during Anniversary Event 2020"],
+    "price": [{ "currency": "cod", "amount": 2000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 25 },
+      { "type": "tipCapIncrease", "capIncrease": 30000 }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "celestial_scales",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Celestial Scales",
+    "description": "Absolute justice!",
+    "requirementsStars": 120000,
+    "price": [{ "currency": "cod", "amount": 35000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 220 },
+      { "type": "tipCapIncrease", "capIncrease": 300000 }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "precious_collection",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Precious Collection",
+    "description": "Each and every cod deserves to be treasured.",
+    "price": [{ "currency": "cod", "amount": 1800000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 10 },
+      { "type": "tipCapIncrease", "capIncrease": 25000 }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "ghost_treasure_chest",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Ghost Treasure Chest",
+    "description": "The ghost cries loudly, 'This is my cod! Mine!'",
+    "price": [{ "currency": "cod", "amount": 5000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 40 },
+      { "type": "tipCapIncrease", "capIncrease": 100000 }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "treasure_pot",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Treasure Pot",
+    "description": "The best method to attract wealth.",
+    "price": [{ "currency": "cod", "amount": 12000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 80 },
+      { "type": "tipCapIncrease", "capIncrease": 180000 }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "ding_dong_counter",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Ding Dong Counter",
+    "description": "The sound of the chime is so therapeutic.",
+    "specialRequirements": ["Complete Aromatic Acorn 1-star Judging"],
+    "price": [{ "currency": "diamonds", "amount": 145 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 16 },
+      { "type": "tipCapIncrease", "capIncrease": 50000 }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "treasure_cashier",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Treasure Cashier",
+    "description": "We only accept treasures!",
+    "price": [{ "currency": "cod", "amount": 1800000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 8 },
+      { "type": "tipCapIncrease", "capIncrease": 23000 }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "nocturnal_tip_desk",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Nocturnal Tip Desk",
+    "description": "Rests in the day, collects money at night.",
+    "price": [{ "currency": "cod", "amount": 800000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 42 },
+      { "type": "tipCapIncrease", "capIncrease": 85000 }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "ice_crystal_tip_desk",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Ice Crystal Tip Desk",
+    "description": "A mysterious little tune plays when a tip is received.",
+    "specialRequirements": ["Sold During Christmas Event"],
+    "price": [{ "currency": "cod", "amount": 1200000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 46 },
+      { "type": "tipCapIncrease", "capIncrease": 60000 }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "twisted_honeypot",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Twisted Honeypot",
+    "description": "The growing vines carry the honeypot higher and higher.",
+    "specialRequirements": ["Sold During Children's Day Event"],
+    "price": [{ "currency": "cod", "amount": 2200000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 46 },
+      { "type": "tipCapIncrease", "capIncrease": 180000 }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "dozing_dragon_treasure_trove",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Dozing Dragon Treasure Trove",
+    "description": "Hands off the cod! Unless you want a dragonling who got up on the wrong side of bed on your back.",
+    "specialRequirements": ["Complete Aromatic Acorn 1-Star Judging"],
+    "price": [{ "currency": "diamonds", "amount": 175 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 16 },
+      { "type": "tipCapIncrease", "capIncrease": 50000 }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "delicious_baskets_of_bread",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Delicious Baskets of Bread",
+    "description": "Take some of the delicious bread with you!",
+    "price": [{ "currency": "cod", "amount": 2100000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 10 },
+      { "type": "tipCapIncrease", "capIncrease": 23000 }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "magical_stars_counter",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Magical Stars Counter",
+    "description": "The little mouse will thank you if you put some cod inside.",
+    "price": [{ "currency": "cod", "amount": 3600000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 15 },
+      { "type": "tipCapIncrease", "capIncrease": 40000 }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "jade_dragons_treasure_cabinet",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Jade Dragon's Treasure Cabinet",
+    "description": "The tiny dragon stores all of its precious treasures here.",
+    "specialRequirements": ["Sold During Chinese New Year Event", "Sold only from 1/25 - 3/9"],
+    "price": [{ "currency": "cod", "amount": 1500000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 45 },
+      { "type": "tipCapIncrease", "capIncrease": 90000 }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "mysterious_droplets",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Mysterious Droplets",
+    "description": "Every drop is precious.",
+    "specialRequirements": [
+      "Complete Aromatic Acorn 1-Star Judging",
+      "Originally obtained from Deep-sea Ballad event"
+    ],
+    "price": [{ "currency": "diamonds", "amount": 180 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 16 },
+      { "type": "tipCapIncrease", "capIncrease": 50000 }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "aqua_tip_desk",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Aqua Tip Desk",
+    "description": "Is it only time who likes the 'clickety-clack' sounds that the buttons on a cash register makes?",
+    "price": [{ "currency": "cod", "amount": 2300000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 50 },
+      { "type": "tipCapIncrease", "capIncrease": 10000 }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "clairvoyant_tip_desk",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Clairvoyant Tip Desk",
+    "description": "I can see the future. A windfall is coming your way.",
+    "price": [{ "currency": "cod", "amount": 1000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 48 },
+      { "type": "tipCapIncrease", "capIncrease": 90000 }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "platform_tip_desk",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Platform Tip Desk",
+    "description": "Did this journey meet your expectations?",
+    "requirementsStars": 40000,
+    "specialRequirements": ["Sold during Christmas Event"],
+    "price": [{ "currency": "cod", "amount": 5800000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 52 },
+      { "type": "tipCapIncrease", "capIncrease": 400000 }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "festive_lantern_tip_desk",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Festive Lantern Tip Desk",
+    "description": "You can admire this exquisite lantern while you're tipping.",
+    "specialRequirements": ["Sold During Chinese New Year Event", "Sold only from 1/25 - 3/9"],
+    "price": [{ "currency": "cod", "amount": 15000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 92 },
+      { "type": "tipCapIncrease", "capIncrease": 250000 }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "horizon_receiver",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Horizon Receiver",
+    "description": "Signals received from across the cosmos have dyed the cod in the colors of the rainbow!",
+    "specialRequirements": ["Sold During Children's Day Event"],
+    "price": [{ "currency": "cod", "amount": 2800000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 55 },
+      { "type": "tipCapIncrease", "capIncrease": 230000 }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "birdy_jack_in_the_box",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Birdy Jack-in-the-box",
+    "description": "That's right, the kind birdy brought you an unexpected windfall.",
+    "specialRequirements": ["Obtained from Midsummer Birdsong event", "Price TBA"],
+    "price": [],
+    "effects": [
+      { "type": "ratingBonus", "amount": 16 },
+      { "type": "tipCapIncrease", "capIncrease": 50000 }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "abundant_wings",
+    "area": "restaurant",
+    "group": "Tip Desk",
+    "name": "Abundant Wings",
+    "description": "Each feather is imbued with the magic of abundance.",
+    "price": [{ "currency": "cod", "amount": 2600000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 55 },
+      { "type": "tipCapIncrease", "capIncrease": 110000 }
+    ],
+    "series": "Fleeting Feathers"
+  },
+
+
   {
     "id": "table1_small_stump",
     "area": "restaurant",

@@ -38,7 +38,7 @@
   {
     "id": "brown_bunny",
     "name": "Brown Bunny",
-    "tags": ["customer", "restaurant", "very_common", "nearby", "no_requirements"],
+    "tags": ["customer", "restaurant", "very_common", "nearby", "no_requirements","test"],
     "livesIn": "Nearby",
     "appearanceWeight": 9836,
     "requiredFoodId": null,
