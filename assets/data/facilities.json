@@ -472,5 +472,1224 @@
       { "type": "ratingBonus", "amount": 8 }
     ],
     "series": "Forest Humming"
-  }
-]
+  },
+
+
+  {
+    "id": "simple_carousel",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Simple Carousel",
+    "description": "At least it has a rotation function, but it has low efficiency.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 0 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 20 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 3200, "intervalMinutes": 60 }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "mechanical_carousel",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Mechanical Carousel",
+    "description": "Increases efficiency. Makes the meal enjoyable.",
+    "requirementsStars": 5000,
+    "price": [{ "currency": "cod", "amount": 760000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 66 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 3800, "intervalMinutes": 60 }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "modern_mechanical_carousel",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Modern Mechanical Carousel",
+    "description": "A conveyor belt with added decorations. Maybe it'll put customers in a good mood!",
+    "requirementsStars": 12000,
+    "price": [{ "currency": "cod", "amount": 1950000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 133 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 4200, "intervalMinutes": 60 }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "round_carousel",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Round Carousel",
+    "description": "Slightly shortens the food's traveled distance.",
+    "requirementsStars": 40000,
+    "price": [{ "currency": "cod", "amount": 4400000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 225 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 5000, "intervalMinutes": 60 }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "modern_round_carousel",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Modern Round Carousel",
+    "description": "Awesome! Be sure to maintain your image while eating.",
+    "requirementsStars": 70000,
+    "price": [{ "currency": "cod", "amount": 11600000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 600 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 6000, "intervalMinutes": 60 }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "spiderwebbed_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Spiderwebbed Conveyor Belt",
+    "description": "An old and spooky conveyor belt. Perhaps it can attract some special customers.",
+    "requirementsStars": 38000,
+    "price": [{ "currency": "cod", "amount": 8100000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 180 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 7000, "intervalMinutes": 60 }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "mushroom_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Mushroom Conveyor Belt",
+    "description": "A cozy and mysterious conveyor belt. Friends can chat here all night long.",
+    "requirementsStars": 85000,
+    "price": [{ "currency": "cod", "amount": 13000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 620 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 8000, "intervalMinutes": 60 }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "marine_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Marine Conveyor Belt",
+    "description": "The pink octopus strictly monitors the quality of each meal.",
+    "requirementsStars": 105000,
+    "price": [{ "currency": "cod", "amount": 27350000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 640 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 8600, "intervalMinutes": 60 }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "fruity_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Fruity Conveyor Belt",
+    "description": "The smell of fruits makes things more appetizing.",
+    "requirementsStars": 90000,
+    "price": [{ "currency": "cod", "amount": 10500000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 255 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 4000, "intervalMinutes": 60 }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "white_chocolate_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "White Chocolate Conveyor Belt",
+    "description": "Careful! It'll melt in high temperatures. Limited-time unlock: Jun 1st–Jun 30th.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 2000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 80 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 1800, "intervalMinutes": 60 }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "mechanical_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Mechanical Conveyor Belt",
+    "description": "It looks to be quite old. Green vines are climbing up the cold machinery.",
+    "requirementsStars": 100000,
+    "price": [{ "currency": "cod", "amount": 12000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 230 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 4000, "intervalMinutes": 60 }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "ghost_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Ghost Conveyor Belt",
+    "description": "It squeaks when the belt turns.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 8000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 160 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 3500, "intervalMinutes": 60 }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "snowball_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Snowball Conveyor Belt",
+    "description": "An exclusive set custom-made for Snowball. Limited-time unlock: Dec 6th–Jan 18th.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 5000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 150 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 2800, "intervalMinutes": 60 }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "sandalwood_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Sandalwood Conveyor Belt",
+    "description": "You can smell the faint scent of the sandalwood.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 15000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 220 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 4000, "intervalMinutes": 60 }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "magical_celestial_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Magical Celestial Conveyor Belt",
+    "description": "A jingle can be heard every time the stars collide.",
+    "requirementsStars": 170000,
+    "price": [{ "currency": "cod", "amount": 45000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 800 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 13000, "intervalMinutes": 60 }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "elegant_moments_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Elegant Moments Conveyor Belt",
+    "description": "Oh, do mind your dining etiquette.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 32000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 570 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 11000, "intervalMinutes": 60 }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "furry_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Furry Conveyor Belt",
+    "description": "This conveyor belt will never shed! Requirement: Complete Aromatic Acorn 2-Star Judging.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "diamonds", "amount": 150 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 80 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 4000, "intervalMinutes": 60 }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "flowing_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Flowing Conveyor Belt",
+    "description": "Let's drink and make merry, my friend. Limited-time unlock: Jan 4th–Feb 17th.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 18000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 240 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 4200, "intervalMinutes": 60 }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "four_leaf_clover_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Four-Leaf Clover Conveyor Belt",
+    "description": "Eating food blessed by four-leaf clovers is said to bring good luck. Limited-time unlock: May 17th–Jun 16th.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 10000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 160 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 3800, "intervalMinutes": 60 }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "cheesy_crunch",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Cheesy Crunch",
+    "description": "An appropriate amount of sweetness can enhance the flavor of food.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 38000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 680 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 11000, "intervalMinutes": 60 }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "magic_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Magic Conveyor Belt",
+    "description": "Rest assured that the magic spell is only used to transport things around on the belt. Requirement: Complete Aromatic Acorn 2-Star Judging. Originally obtained from Slumberous Nights event.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "diamonds", "amount": 180 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 80 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 4000, "intervalMinutes": 60 }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "bloody_night_feast",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Bloody Night Feast",
+    "description": "An invitation for midnight. Come attend this banquet!",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 30000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 600 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 9000, "intervalMinutes": 60 }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "snowfield_dinner",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Snowfield Dinner",
+    "description": "Bury the drinks in a pile of snow for ten minutes and they'll taste even better! Limited-time unlock: Dec 6th–Jan 18th.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 8600000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 190 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 3000, "intervalMinutes": 60 }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "imps_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Imp's Conveyor Belt",
+    "description": "I'm going to secretly devour your dishes!",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 15000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 250 }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "mint_chocolate_loop",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Mint Chocolate Loop",
+    "description": "Our table includes an endless loop of flowing chocolate!",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 50000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 260 }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "tidal_wave_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Tidal Wave Conveyor Belt",
+    "description": "The waves will carry delectable dishes to you. Requirement: Complete Aromatic Acorn 2-Star Judging. Originally obtained from Deep-sea Ballad event.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "diamonds", "amount": 185 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 80 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 4000, "intervalMinutes": 60 }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "halloween_memoirs",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Halloween Memoirs",
+    "description": "Let's have a blast tonight under the warm, orange light!",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 35000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 620 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 9200, "intervalMinutes": 60 }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "warm_peaceful_fruit",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Warm Peaceful Fruit",
+    "description": "No need to worry even if you're afraid of the cold! We've prepared some thick blankets! Limited-time unlock: Dec 6th–Jan 18th.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 13000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 220 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 3100, "intervalMinutes": 60 }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "butterfly_waltz",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Butterfly Waltz",
+    "description": "Little butterfly, little butterfly, why are you here? Obtained from Midsummer Birdsong event.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 0 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 80 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 4000, "intervalMinutes": 60 }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "gilded_conveyor_belt",
+    "area": "buffet",
+    "group": "Conveyor Belts",
+    "name": "Gilded Conveyor Belt",
+    "description": "Such magnificence! It is said to have been made by an accomplished craftsman.",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 53500000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 280 },
+      { "type": "incomePerInterval", "currency": "cod", "amount": 4500, "intervalMinutes": 60 }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "normal_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Normal Gachapon",
+    "description": "Has all kinds of capsules inside, but is not much different from the Gachapon machines available in the market.",
+    "requirementsStars": 850,
+    "price": [{ "currency": "cod", "amount": 920000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 45 },
+      { "type": "gachaDraws", "amount": 6 },
+      { "type": "gachaLevel", "level": 1 }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "pink_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Pink Gachapon",
+    "description": "From beneath the pink gachapon green grasses grow. Very popular with girls.",
+    "requirementsStars": 20000,
+    "price": [{ "currency": "cod", "amount": 2100000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 133 },
+      { "type": "gachaDraws", "amount": 8 },
+      { "type": "gachaLevel", "level": 2 }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "space_ssr",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Space SSR",
+    "description": "I hear that someone received Animal Restaurant's best reward from this kind of Gachapon—a cat teaser bitten by Chef Gumi.",
+    "requirementsStars": 70000,
+    "price": [{ "currency": "cod", "amount": 20000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 250 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 3 }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "retro_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Retro Gachapon",
+    "description": "Fashionistas have said that the most retro is the trendiest.",
+    "requirementsStars": 150000,
+    "price": [{ "currency": "cod", "amount": 50000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 400 },
+      { "type": "gachaDraws", "amount": 16 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "lighthouse_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Lighthouse Gachapon",
+    "description": "I want to touch the rounded roof!",
+    "requirementsStars": 150000,
+    "price": [{ "currency": "cod", "amount": 39000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 350 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "banana_peel_capsule_machine",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Banana Peel Capsule Machine",
+    "description": "Even banana peels can bring you good luck!",
+    "requirementsStars": 150000,
+    "price": [{ "currency": "cod", "amount": 45000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 500 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "cotton_candy_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Cotton Candy Gachapon",
+    "description": "Please do not rock this machine. Limited-time unlock: Jun 1st–Jun 30th.",
+    "price": [{ "currency": "cod", "amount": 8000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 180 },
+      { "type": "gachaDraws", "amount": 6 },
+      { "type": "gachaLevel", "level": 2 }
+    ],
+    "series": "Childhood Paradise",
+    "specialRequirements": ["Unlock from Jun 1st to Jun 30th"]
+  },
+  {
+    "id": "lightbulb_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Lightbulb Gachapon",
+    "description": "Why doesn't it light up?",
+    "requirementsStars": 150000,
+    "price": [{ "currency": "cod", "amount": 30000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 350 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "floating_spirit_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Floating Spirit Gachapon",
+    "description": "It's said that you can draw your desired reward after saying its name three times.",
+    "price": [{ "currency": "cod", "amount": 16000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 180 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "sparkly_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Sparkly Gachapon",
+    "description": "They say if you pinch its nose, you'll have good luck! Limited-time unlock: Dec 6th–Jan 18th.",
+    "price": [{ "currency": "cod", "amount": 8000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 150 },
+      { "type": "gachaDraws", "amount": 6 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Warm Winter Chimes",
+    "specialRequirements": ["Unlock from Dec 6th to Jan 18th"]
+  },
+  {
+    "id": "wooden_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Wooden Gachapon",
+    "description": "An expert made this by hand!",
+    "price": [{ "currency": "cod", "amount": 26000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 320 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "gem_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Gem Gachapon",
+    "description": "Shiny yellow gems! Looks like something good is about to happen!",
+    "requirementsStars": 300000,
+    "price": [{ "currency": "cod", "amount": 90000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 650 },
+      { "type": "gachaDraws", "amount": 12 },
+      { "type": "gachaLevel", "level": 5 }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "between_the_vines",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Between the Vines",
+    "description": "There's treasure hidden in these vines!",
+    "price": [{ "currency": "cod", "amount": 65000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 510 },
+      { "type": "gachaDraws", "amount": 16 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "waggly_ears",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Waggly Ears",
+    "description": "It's trying its best to shake left and right for a surprise present for you! Requirement: Complete Aromatic Acorn 2-Star Judging.",
+    "price": [{ "currency": "diamonds", "amount": 165 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 320 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "moonlit_universe",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Moonlit Universe",
+    "description": "What secrets does the gourd of treasures hold? Limited-time unlock: Jan 4th–Feb 17th.",
+    "price": [{ "currency": "cod", "amount": 22000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 270 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Pleasant Dreams",
+    "specialRequirements": ["Unlock from Jan 4th to Feb 17th"]
+  },
+  {
+    "id": "nectar_gathering_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Nectar-Gathering Gachapon",
+    "description": "Can you smell it? There's a floral scent coming from the capsules. Limited-time unlock: May 17th–Jun 16th.",
+    "price": [{ "currency": "cod", "amount": 17500000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 180 },
+      { "type": "gachaDraws", "amount": 6 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Buzzing Sweet Whispers",
+    "specialRequirements": ["Unlock from May 17th to Jun 16th"]
+  },
+  {
+    "id": "wispy_clouds",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Wispy Clouds",
+    "description": "Please be gentle with the machine as it's soft and fluffy.",
+    "price": [{ "currency": "cod", "amount": 78000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 610 },
+      { "type": "gachaDraws", "amount": 16 },
+      { "type": "gachaLevel", "level": 5 }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "wings_of_blessing",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Wings of Blessing",
+    "description": "Caress the wings before you turn the knob—Lady Luck may just smile upon you. Requirement: Complete Aromatic Acorn 2-Star Judging. Originally obtained from Slumberous Nights event.",
+    "price": [],
+    "effects": [
+      { "type": "ratingBonus", "amount": 320 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 5 }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "thorny_caged_bird",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Thorny Caged Bird",
+    "description": "I wonder if the bird imprisoned in this also longs for freedom.",
+    "requirementsStars": 15000,
+    "price": [{ "currency": "cod", "amount": 62500000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 550 },
+      { "type": "gachaDraws", "amount": 12 },
+      { "type": "gachaLevel", "level": 5 }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "snowman_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Snowman Gachapon",
+    "description": "You're guaranteed to receive something fabulous! Try it now! The snowman hollered. Limited-time unlock: Dec 6th–Jan 18th.",
+    "price": [{ "currency": "cod", "amount": 11000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 200 },
+      { "type": "gachaDraws", "amount": 8 },
+      { "type": "gachaLevel", "level": 3 }
+    ],
+    "series": "Aurora Fairy Tale",
+    "specialRequirements": ["Unlock from Dec 6th to Jan 18th"]
+  },
+  {
+    "id": "starry_butterfly_dreams",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Starry Butterfly Dreams",
+    "description": "The butterfly points at the lucky capsules.",
+    "requirementsStars": 160000,
+    "price": [{ "currency": "cod", "amount": 35000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 380 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "oatmeal_shaved_ice",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Oatmeal Shaved Ice",
+    "description": "The soft and fluffy dog ears will bring you good luck!",
+    "price": [{ "currency": "cod", "amount": 38000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 320 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 4 }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "bubble_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Bubble Gachapon",
+    "description": "Bloop, bloop, many treasures can be found inside. Requirement: Complete Aromatic Acorn 2-Star Judging. Originally obtained from Deep-sea Ballad event.",
+    "price": [{ "currency": "diamonds", "amount": 200 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 320 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 5 }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "gentleman_of_hearts",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Gentleman of Hearts",
+    "description": "A gentlemanly gachapon complete with a top hat, but then again, he secretly hides your capsules...",
+    "requirementsStars": 15000,
+    "price": [{ "currency": "cod", "amount": 68000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 580 },
+      { "type": "gachaDraws", "amount": 12 },
+      { "type": "gachaLevel", "level": 5 }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "lucky_sapling",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Lucky Sapling",
+    "description": "If the little bird's gaze turns sharp, you're more likely to draw an amazing item! Limited-time unlock: Dec 6th–Jan 18th.",
+    "price": [{ "currency": "cod", "amount": 18000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 220 },
+      { "type": "gachaDraws", "amount": 8 },
+      { "type": "gachaLevel", "level": 3 }
+    ],
+    "series": "Snowflake Journey",
+    "specialRequirements": ["Unlock from Dec 6th to Jan 18th"]
+  },
+  {
+    "id": "floral_gachapon",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Floral Gachapon",
+    "description": "Nurture these flowers well and they will shower you with endless fortune!",
+    "price": [],
+    "effects": [
+      { "type": "ratingBonus", "amount": 320 },
+      { "type": "gachaDraws", "amount": 10 },
+      { "type": "gachaLevel", "level": 5 }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "rose_goddess",
+    "area": "buffet",
+    "group": "Gachapon",
+    "name": "Rose Goddess",
+    "description": "May lady luck always be shining upon you.",
+    "price": [{ "currency": "cod", "amount": 41000000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 330 },
+      { "type": "gachaDraws", "amount": 12 },
+      { "type": "gachaLevel", "level": 5 }
+    ],
+    "series": "Fleeting Feathers"
+  },
+    {
+      "id": "hot_kettle_combo",
+      "name": "Hot Kettle Combo",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Remember to drink more warm water!",
+      "price": [{ "currency": "cod", "amount": 190000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 45 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 100, "intervalMinutes": 1440 }
+      ],
+      "series": "Log Scenery"
+    },
+    {
+      "id": "water_dispenser",
+      "name": "Water Dispenser",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "There are plenty of paper cups beside it.",
+      "price": [{ "currency": "plates", "amount": 9000 }, { "currency": "cod", "amount": 1600000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 133 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 120, "intervalMinutes": 1440 }
+      ],
+      "series": "Lattice Story"
+    },
+    {
+      "id": "cheerful_fountain",
+      "name": "Cheerful Fountain",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Lots of chubby animals like it!",
+      "price": [{ "currency": "plates", "amount": 20000 }, { "currency": "cod", "amount": 3100000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 250 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 140, "intervalMinutes": 1440 }
+      ],
+      "series": "Forest Humming"
+    },
+    {
+      "id": "vending_machine",
+      "name": "Vending Machine",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Make sure to put in exact change!",
+      "price": [{ "currency": "plates", "amount": 52000 }, { "currency": "cod", "amount": 7600000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 400 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 160, "intervalMinutes": 1440 }
+      ],
+      "series": "Supreme Seat of Honor"
+    },
+    {
+      "id": "mysterious_potion",
+      "name": "Mysterious Potion",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "We don't know when it appeared, but it seems the customers don't quite dare to try it.",
+      "price": [{ "currency": "plates", "amount": 45000 }, { "currency": "cod", "amount": 11800000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 380 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 180, "intervalMinutes": 1440 }
+      ],
+      "series": "Marvelous Midnight"
+    },
+    {
+      "id": "mushroom_beverage",
+      "name": "Mushroom Beverage",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "You never know whether the next cup will be sweet or bitter.",
+      "price": [{ "currency": "plates", "amount": 90000 }, { "currency": "cod", "amount": 29000000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 450 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 200, "intervalMinutes": 1440 }
+      ],
+      "series": "Alice's Dream"
+    },
+    {
+      "id": "beach_impression",
+      "name": "Beach Impression",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Has a limited supply of sweet coconut milk!",
+      "price": [{ "currency": "plates", "amount": 50000 }, { "currency": "cod", "amount": 13200000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 385 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 185, "intervalMinutes": 1440 }
+      ],
+      "series": "Of Coconut Trees and the Sea Breeze"
+    },
+    {
+      "id": "orange_juicer",
+      "name": "Orange Juicer",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "One cup a day keeps the doctor away.",
+      "price": [{ "currency": "plates", "amount": 60000 }, { "currency": "cod", "amount": 13500000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 275 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 185, "intervalMinutes": 1440 }
+      ],
+      "series": "Energy Fruit"
+    },
+    {
+      "id": "spinning_teacup_drink",
+      "name": "Spinning Teacup Drink",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Be careful when you step on. The teacups spin.",
+      "price": [{ "currency": "cod", "amount": 4200000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 150 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 100, "intervalMinutes": 1440 }
+      ],
+      "series": "Childhood Paradise",
+      "specialRequirements": ["Unlock from Jun 1st to Jun 30th"]
+    },
+    {
+      "id": "beep_beep_tea",
+      "name": "Beep-beep Tea",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Made by the robot Beep-beep.",
+      "price": [{ "currency": "plates", "amount": 80000 }, { "currency": "cod", "amount": 15000000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 260 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 185, "intervalMinutes": 1440 }
+      ],
+      "series": "Steam-powered"
+    },
+    {
+      "id": "bloody_feast",
+      "name": "Bloody Feast",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "It's sweet tomato juice!",
+      "price": [{ "currency": "cod", "amount": 10500000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 250 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 185, "intervalMinutes": 1440 }
+      ],
+      "series": "Marvelous Midnight"
+    },
+    {
+      "id": "sleepy_bear_tea_table",
+      "name": "Sleepy Bear Tea Table",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Shhh! Don't wake it up!",
+      "price": [{ "currency": "cod", "amount": 6200000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 180 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 160, "intervalMinutes": 1440 }
+      ],
+      "series": "Warm Winter Chimes",
+      "specialRequirements": ["Unlock from Dec 6th to Jan 18th"]
+    },
+    {
+      "id": "open_air_lidded_bowl_tea",
+      "name": "Open-Air Lidded Bowl Tea",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Remember to scrape the tea leaves before drinking.",
+      "price": [{ "currency": "cod", "amount": 20000000 }, { "currency": "plates", "amount": 20000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 340 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 180, "intervalMinutes": 1440 }
+      ],
+      "series": "Stovetop Blessings"
+    },
+    {
+      "id": "warm_summer_night_breeze",
+      "name": "Warm Summer Night Breeze",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Brew a pot of tea and enjoy the breeze.",
+      "price": [{ "currency": "plates", "amount": 190000 }, { "currency": "cod", "amount": 55000000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 580 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 300, "intervalMinutes": 1440 }
+      ],
+      "series": "Starry Rose"
+    },
+    {
+      "id": "sweetness_aplenty",
+      "name": "Sweetness Aplenty",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Would you like it sweet, sweeter, or sweetest?",
+      "price": [{ "currency": "cod", "amount": 9000000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 200 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 150, "intervalMinutes": 1440 }
+      ],
+      "series": "Childhood Paradise",
+      "specialRequirements": ["Unlock from Jun 1st to Jun 30th"]
+    },
+    {
+      "id": "afternoon_studio",
+      "name": "Afternoon Studio",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Careful, don't accidentally drink the paintbrush-cleaning liquid like it's a beverage!",
+      "price": [{ "currency": "cod", "amount": 26000000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 360 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 180, "intervalMinutes": 1440 }
+      ],
+      "series": "Fanciful Melody"
+    },
+    {
+      "id": "ladies_afternoon_tea",
+      "name": "Ladies' Afternoon Tea",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Let the exquisite afternoon tea set add a memorable moment to your life.",
+      "price": [{ "currency": "plates", "amount": 158 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 300 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 150, "intervalMinutes": 1440 }
+      ],
+      "series": "Fantastical Party",
+      "specialRequirements": ["Complete Aromatic Acorn 2-Star Judging"]
+    },
+    {
+      "id": "seven_star_corner",
+      "name": "Seven Star Corner",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Good medicine is bitter.",
+      "price": [{ "currency": "cod", "amount": 17500000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 230 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 160, "intervalMinutes": 1440 }
+      ],
+      "series": "Pleasant Dreams",
+      "specialRequirements": ["Unlock from Jan 4th to Feb 17th"]
+    },
+    {
+      "id": "floral_dew",
+      "name": "Floral Dew",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "An exclusive summer specialty drink brewed by the bees.",
+      "price": [{ "currency": "cod", "amount": 12200000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 165 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 120, "intervalMinutes": 1440 }
+      ],
+      "series": "Buzzing Sweet Whispers",
+      "specialRequirements": ["Unlock from May 17th to Jun 16th"]
+    },
+    {
+      "id": "sea_breeze_beverage",
+      "name": "Sea Breeze Beverage",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "The refreshing cactus juice dispels the sweetness in the air.",
+      "price": [{ "currency": "cod", "amount": 31000000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 430 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 180, "intervalMinutes": 1440 }
+      ],
+      "series": "Warm Bakery"
+    },
+    {
+      "id": "fantastical_drapes",
+      "name": "Fantastical Drapes",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Special drinks are sensitive to light, so they are kept covered by the drapes.",
+      "price": [{ "currency": "cod", "amount": 0 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 300 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 150, "intervalMinutes": 1440 }
+      ],
+      "series": "Slumberous Nights",
+      "specialRequirements": ["Complete Aromatic Acorn 2-Star Judging", "Originally obtained from Slumberous Nights event"]
+    },
+    {
+      "id": "night_drinking",
+      "name": "Night Drinking",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "The night is still young. Will you have a glass with me?",
+      "price": [{ "currency": "cod", "amount": 32000000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 450 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 185, "intervalMinutes": 1440 }
+      ],
+      "series": "Murmuring Dusk Rose"
+    },
+    {
+      "id": "free_flow_hot_tea",
+      "name": "Free-flow Hot Tea",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Have a cup of tea to warm your body!",
+      "price": [{ "currency": "cod", "amount": 13500000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 240 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 165, "intervalMinutes": 1440 }
+      ],
+      "series": "Aurora Fairy Tale",
+      "specialRequirements": ["Unlock from Dec 6th to Jan 18th"]
+    },
+    {
+      "id": "bottomless_refills",
+      "name": "Bottomless Refills",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Fills up as much as you want!",
+      "price": [{ "currency": "plates", "amount": 85000 }, { "currency": "cod", "amount": 18000000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 280 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 160, "intervalMinutes": 1440 }
+      ],
+      "series": "Rock'n'Roll Sweetheart"
+    },
+    {
+      "id": "afternoon_sweet_wine",
+      "name": "Afternoon Sweet Wine",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Just look at the daily recommendations on the blackboard if you aren't sure what to drink.",
+      "price": [{ "currency": "cod", "amount": 40000000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 280 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 160, "intervalMinutes": 1440 }
+      ],
+      "series": "Milky Mint Chocolate"
+    },
+    {
+      "id": "magical_aromatic_tea",
+      "name": "Magical Aromatic Tea",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Drink it all up and you'll experience a surprising effect!",
+      "price": [{ "currency": "cod", "amount": 0 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 300 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 150, "intervalMinutes": 1440 }
+      ],
+      "series": "Deep-sea Ballad",
+      "specialRequirements": ["Complete Aromatic Acorn 2-Star Judging"]
+    },
+
+  
+    {
+      "id": "all_night_drinking",
+      "name": "All-Night Drinking",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Don't stop, never stop! We'll keep drinking until dawn!",
+      "price": [{ "currency": "cod", "amount": 40000000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 480 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 190, "intervalMinutes": 1440 }
+      ],
+      "series": "Forgotten Fantasies Paradise"
+    },
+    {
+      "id": "snowy_kotatsu",
+      "name": "Snowy Kotatsu",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Serves a never-ending supply of warm drinks! However, be careful not to step on the slumbering birds!",
+      "price": [{ "currency": "cod", "amount": 25000000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 260 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 165, "intervalMinutes": 1440 }
+      ],
+      "series": "Snowflake Journey",
+      "specialRequirements": ["Unlock from Dec 6th to Jan 18th"]
+    },
+    {
+      "id": "luxurious_tea_table",
+      "name": "Luxurious Tea Table",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "A variety of floral teas are placed upon it. The flowers used to make the teas are all homegrown and emit faint fragrances.",
+      "price": [],
+      "effects": [
+        { "type": "ratingBonus", "amount": 300 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 150, "intervalMinutes": 1440 }
+      ],
+      "series": "Midsummer Birdsong",
+      "specialRequirements": ["Obtain from Midsummer Birdsong event"]
+    },
+    {
+      "id": "courtly_tea_party",
+      "name": "Courtly Tea Party",
+      "area": "buffet",
+      "group": "Self-serve Drinks",
+      "description": "Let's enjoy some floral tea together after the ball.",
+      "price": [{ "currency": "cod", "amount": 46000000 }],
+      "effects": [
+        { "type": "ratingBonus", "amount": 300 },
+        { "type": "incomePerInterval", "currency": "plates", "amount": 170, "intervalMinutes": 1440 }
+      ],
+      "series": "Fleeting Feathers"
+    }
+
+  ]

@@ -50,6 +50,12 @@ class EarningsCalculator {
           case FacilityEffectType.ratingBonus:
             // Non-monetary for earnings; ignored here.
             break;
+          case FacilityEffectType.gachaDraws:
+            // TODO: Handle this case.
+            throw UnimplementedError();
+          case FacilityEffectType.gachaLevel:
+            // TODO: Handle this case.
+            throw UnimplementedError();
         }
       }
     }

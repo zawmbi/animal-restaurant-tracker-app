@@ -21,8 +21,28 @@ class _BankPageState extends State<BankPage> {
             return const Center(child: CircularProgressIndicator());
           }
           if (snap.hasError) {
-            return Center(
-              child: Text('Failed to compute bank stats\n${snap.error}', textAlign: TextAlign.center),
+            return Padding(
+              padding: const EdgeInsets.all(16),
+              child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text('Failed to load bank stats',
+                          style: TextStyle(fontWeight: FontWeight.w700)),
+                      const SizedBox(height: 8),
+                      Text('${snap.error}'),
+                      const SizedBox(height: 12),
+                      FilledButton(
+                        onPressed: () => setState(() {}),
+                        child: const Text('Retry'),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             );
           }
 
@@ -64,7 +84,8 @@ class _BankPageState extends State<BankPage> {
               children: [
                 const Icon(Icons.savings),
                 const SizedBox(width: 8),
-                Text('Total per hour', style: Theme.of(context).textTheme.titleLarge),
+                Text('Total per hour',
+                    style: Theme.of(context).textTheme.titleLarge),
               ],
             ),
             const SizedBox(height: 8),
@@ -89,7 +110,8 @@ class _BankPageState extends State<BankPage> {
               children: [
                 const Icon(Icons.table_bar),
                 const SizedBox(width: 8),
-                Text('Buffet', style: Theme.of(context).textTheme.titleLarge),
+                Text('Buffet',
+                    style: Theme.of(context).textTheme.titleLarge),
               ],
             ),
             const SizedBox(height: 8),
@@ -99,7 +121,8 @@ class _BankPageState extends State<BankPage> {
               Padding(
                 padding: const EdgeInsets.only(top: 6),
                 child: Text(
-                  '+${_cod(s.buffetPerHourAll - s.buffetPerHourCurrent)} available by unlocking more buffet recipes',
+                  '+${_cod(s.buffetPerHourAll - s.buffetPerHourCurrent)} '
+                  'available by unlocking more buffet recipes',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
               ),
@@ -120,11 +143,17 @@ class _BankPageState extends State<BankPage> {
               children: [
                 const Icon(Icons.local_atm),
                 const SizedBox(width: 8),
-                Text('Tip Jar', style: Theme.of(context).textTheme.titleLarge),
+                Text('Tip Jar',
+                    style: Theme.of(context).textTheme.titleLarge),
               ],
             ),
             const SizedBox(height: 8),
-            _kv('Earnings per hour', s.tipJarPerHour != null ? _cod(s.tipJarPerHour!) : '— (not owned or unknown)'),
+            _kv(
+              'Earnings per hour',
+              s.tipJarPerHour != null
+                  ? _cod(s.tipJarPerHour!)
+                  : '— (not owned or unknown)',
+            ),
           ],
         ),
       ),
@@ -142,13 +171,17 @@ class _BankPageState extends State<BankPage> {
               children: [
                 const Icon(Icons.park),
                 const SizedBox(width: 8),
-                Text('Terrace', style: Theme.of(context).textTheme.titleLarge),
+                Text('Terrace',
+                    style: Theme.of(context).textTheme.titleLarge),
               ],
             ),
             const SizedBox(height: 8),
-            _kv('Range per hour', s.terraceRange != null
-                ? '${_cod(s.terraceRange!.min)} — ${_cod(s.terraceRange!.max)}'
-                : '— (facility not owned or unknown)'),
+            _kv(
+              'Range per hour',
+              s.terraceRange != null
+                  ? '${_cod(s.terraceRange!.min)} — ${_cod(s.terraceRange!.max)}'
+                  : '— (facility not owned or unknown)',
+            ),
           ],
         ),
       ),
@@ -166,13 +199,17 @@ class _BankPageState extends State<BankPage> {
               children: [
                 const Icon(Icons.yard),
                 const SizedBox(width: 8),
-                Text('Courtyard', style: Theme.of(context).textTheme.titleLarge),
+                Text('Courtyard',
+                    style: Theme.of(context).textTheme.titleLarge),
               ],
             ),
             const SizedBox(height: 8),
-            _kv('Range per hour', s.courtyardRange != null
-                ? '${_cod(s.courtyardRange!.min)} — ${_cod(s.courtyardRange!.max)}'
-                : '— (facility not owned or unknown)'),
+            _kv(
+              'Range per hour',
+              s.courtyardRange != null
+                  ? '${_cod(s.courtyardRange!.min)} — ${_cod(s.courtyardRange!.max)}'
+                  : '— (facility not owned or unknown)',
+            ),
           ],
         ),
       ),
@@ -204,7 +241,8 @@ class _BankPageState extends State<BankPage> {
 
   Widget _hint(BuildContext context) {
     return Text(
-      'Note: Terrace/Courtyard ranges currently use base values from BankConfig. Tie them to facilities and customer/performer counts when those fields are available.',
+      'Note: Terrace/Courtyard ranges currently use base values from BankConfig. '
+      'Tie them to facilities and customer/performer counts when those fields are available.',
       style: Theme.of(context).textTheme.bodySmall,
     );
   }

@@ -210,6 +210,17 @@ class FacilityDetailPage extends StatelessWidget {
         final r = eff.amount ?? 0;
         text = '+${_fmtNum(r)} rating';
         break;
+      case FacilityEffectType.gachaDraws:
+        // uses amount as number of draws
+        final draws = eff.amount?.toInt() ?? 0;
+        text = '+$draws draws';
+        break;
+      case FacilityEffectType.gachaLevel:
+        // If your model doesn’t parse a dedicated "level" field, store it in amount.
+        final lvl = eff.amount?.toInt();
+        text = 'Gachapon Level ${lvl ?? '-'}';
+        break;
+
     }
 
     return Padding(
@@ -252,14 +263,15 @@ class FacilityDetailPage extends StatelessWidget {
   }
 
   String _formatBagDivided(MoneyBag bag, int divisor) {
-    String fmt(double v) =>
-        v.abs() < 0.0001 ? '0' : (v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(2));
-    return [
-      'Cod: ${fmt(bag.get(MoneyCurrency.cod) / divisor)}',
-      'Plates: ${fmt(bag.get(MoneyCurrency.plates) / divisor)}',
-      'Bells: ${fmt(bag.get(MoneyCurrency.bells) / divisor)}',
-      'Film: ${fmt(bag.get(MoneyCurrency.film) / divisor)}',
-      'Buttons: ${fmt(bag.get(MoneyCurrency.buttons) / divisor)}',
-    ].join('  •  ');
-  }
+  String fmt(double v) =>
+      v.abs() < 0.0001 ? '0' : (v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(2));
+  return [
+    'Cod: ${fmt(bag.get(MoneyCurrency.cod) / divisor)}',
+    'Plates: ${fmt(bag.get(MoneyCurrency.plates) / divisor)}',
+    'Bells: ${fmt(bag.get(MoneyCurrency.bells) / divisor)}',
+    'Film: ${fmt(bag.get(MoneyCurrency.film) / divisor)}',
+    'Buttons: ${fmt(bag.get(MoneyCurrency.buttons) / divisor)}',
+  ].join('  •  ');
+}
+
 }

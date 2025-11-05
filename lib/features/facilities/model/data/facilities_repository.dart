@@ -5,9 +5,12 @@ class FacilitiesRepository {
   static const _asset = 'assets/data/facilities.json';
   FacilitiesRepository._();
   static final FacilitiesRepository instance = FacilitiesRepository._();
+
   List<Facility>? _cache;
+  List<Facility>? get cached => _cache;
 
   Future<List<Facility>> all() async {
+    // Return cache if already loaded
     if (_cache != null) return _cache!;
     try {
       final data = await JsonLoader.load(_asset) as List<dynamic>;
