@@ -445,7 +445,6 @@
     "series": "Fleeting Feathers"
   },
 
-
   {
     "id": "table1_small_stump",
     "area": "restaurant",
@@ -1690,6 +1689,201 @@
         { "type": "incomePerInterval", "currency": "plates", "amount": 170, "intervalMinutes": 1440 }
       ],
       "series": "Fleeting Feathers"
-    }
+    },
 
-  ]
+      {
+        "id": "four_squared_wall_hangings",
+        "name": "Four Squared Wall Hangings",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "The logo of Gumi's Kitchen is drawn on all four squares.",
+        "requirementsStars": 600,
+        "price": [{ "currency": "cod", "amount": 145000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 15 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 4000 }
+        ],
+        "series": "Log Scenery"
+      },
+      {
+        "id": "eternal_candle",
+        "name": "Eternal Candle",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "This candle may be short, but it never goes out!",
+        "requirementsStars": 6000,
+        "price": [{ "currency": "cod", "amount": 980000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 83 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 4500 }
+        ],
+        "series": "Lattice Story"
+      },
+      {
+        "id": "paper_lanterns",
+        "name": "Paper Lanterns",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "Emits a gentle glow and lights up with Gumi's paw prints.",
+        "requirementsStars": 14000,
+        "price": [{ "currency": "cod", "amount": 2500000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 156 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 5200 }
+        ],
+        "series": "Forest Humming"
+      },
+      {
+        "id": "classic_wall_lamps",
+        "name": "Classic Wall Lamps",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "Sometimes Gumi's Kitchen needs an antique feel too!",
+        "requirementsStars": 18000,
+        "price": [{ "currency": "cod", "amount": 5600000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 300 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 6400 }
+        ],
+        "series": "Supreme Sea of Honor"
+      },
+      {
+        "id": "witchs_broom",
+        "name": "Witch's Broom",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "They say that on the broom lives friends that the witch met.",
+        "requirementsStars": 30000,
+        "price": [{ "currency": "cod", "amount": 11000000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 380 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 7500 }
+        ],
+        "series": "Marvelous Midnight"
+      },
+      {
+        "id": "reverie_wall_lamp",
+        "name": "Reverie Wall Lamp",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "Shiny like a luminous pearl.",
+        "requirementsStars": 18000,
+        "price": [{ "currency": "cod", "amount": 9100000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 350 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 8000 }
+        ],
+        "series": "Alice's Dream"
+      },
+      {
+        "id": "message_bottle",
+        "name": "Message Bottle",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "A mystery person's letter has been stuffed inside.",
+        "requirementsStars": 15000,
+        "price": [{ "currency": "cod", "amount": 7600000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 280 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 6800 }
+        ],
+        "series": "Of Coconut Trees and the Sea Breeze"
+      },
+      {
+        "id": "grapes_chandelier",
+        "name": "Grapes Chandelier",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "The little lights are made from crystallized grape juice.",
+        "requirementsStars": 35000,
+        "price": [{ "currency": "cod", "amount": 10500000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 350 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 5000 }
+        ],
+        "series": "Energy Fruit"
+      },
+      {
+        "id": "mango_neon_lighting",
+        "name": "Mango Neon Lighting",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "A light that gives off the fragrance of mangoes.",
+        "price": [{ "currency": "cod", "amount": 3600000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 120 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 3000 }
+        ],
+        "series": "Childhood Paradise",
+        "specialRequirements": ["Unlock from Jun 1st to Jun 30th"]
+      },
+      {
+        "id": "lace_lightbulb",
+        "name": "Lace Lightbulb",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "The light shines down on the green plants. They miss the sunlight.",
+        "requirementsStars": 50000,
+        "price": [{ "currency": "cod", "amount": 11500000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 200 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 5000 }
+        ],
+        "series": "Steam-powered"
+      },
+      {
+        "id": "jingle_jangle",
+        "name": "Jingle-jangle",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "Lets out a melodious ring whenever it's touched.",
+        "price": [{ "currency": "cod", "amount": 6600000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 190 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 3500 }
+        ],
+        "series": "Warm Winter Chimes",
+        "specialRequirements": ["Unlock from Dec 6th to Jan 18th"]
+      },
+      {
+        "id": "great_harvest",
+        "name": "Great Harvest",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "We don't have to worry about the food for winter anymore!",
+        "price": [{ "currency": "cod", "amount": 16000000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 380 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 7000 }
+        ],
+        "series": "Stovetop Blessings"
+      },
+      {
+        "id": "classy_chandelier",
+        "name": "Classy Chandelier",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "It's beautiful but fragile. Please do not touch.",
+        "requirementsStars": 120000,
+        "price": [{ "currency": "cod", "amount": 25000000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 450 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 10000 }
+        ],
+        "series": "Starry Rose"
+      },
+      {
+        "id": "morning_glory_hanging_basket",
+        "name": "Morning Glory Hanging Basket",
+        "area": "buffet",
+        "group": "Wall Hangings",
+        "description": "The flowers exude a faint fragrance.",
+        "price": [{ "currency": "cod", "amount": 18000000 }],
+        "effects": [
+          { "type": "ratingBonus", "amount": 340 },
+          { "type": "incomePerMinute", "currency": "cod", "amount": 9000 }
+        ],
+        "series": "Fanciful Melody"
+      }
+    ]
+    
