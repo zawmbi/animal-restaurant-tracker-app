@@ -15,8 +15,8 @@ class AnimalRestaurantApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Animal Restaurant Tracker',
-      debugShowCheckedModeBanner: false,     // 👈 removes debug banner
-      theme: buildAppTheme(),                // 👈 your global theme
+      debugShowCheckedModeBanner: false,     // 
+      theme: buildAppTheme(),                // 
       home: const HomePage(),
     );
   }

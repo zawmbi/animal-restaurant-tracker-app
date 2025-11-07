@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+
 import '../../../theme/app_theme.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../model/facility.dart';
@@ -18,10 +19,10 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
   final repo = FacilitiesRepository.instance;
   final store = UnlockedStore.instance;
 
-  // Top-level always shows Areas
-  final Map<String, bool> _expandedAreas = {};
-  final Map<String, String> _areaSortMode = {}; // per-area sort
-  final Map<String, Map<String, bool>> _expandedGroups = {}; // area -> group -> expanded?
+  /// Per-area sort mode: 'Facility Type' (default) or 'Series'
+  final Map<String, String> _areaSortMode = {};
+  /// Per-area expanded state for groups: area -> (group -> expanded?)
+  final Map<String, Map<String, bool>> _expandedGroups = {};
 
   @override
   Widget build(BuildContext context) {
@@ -50,71 +51,116 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
             return const Center(child: CircularProgressIndicator());
           }
           if (snap.hasError) {
-            return Center(child: Text('Error: ${snap.error}'));
+            return Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text('Error: ${snap.error}', style: const TextStyle(color: Colors.red)),
+            );
           }
 
           final facilities = snap.data ?? const <Facility>[];
+          // Top-level: Areas
           final byArea = _groupBySingle(facilities, (f) => _pretty(f.area.name));
 
-          return AnimatedBuilder(
-            animation: store,
-            builder: (context, _) {
-              return ListView(
-                children: byArea.entries.map((e) {
-                  final area = e.key;
-                  final items = e.value;
-                  final expanded = _expandedAreas[area] ?? false;
-                  final sortMode = _areaSortMode[area] ?? 'Facility Type';
-                  final grouped = _sortWithinArea(items, sortMode);
-                  _expandedGroups.putIfAbsent(area, () => {for (final g in grouped.keys) g: true});
-
-                  return Theme(
-                    data: Theme.of(context).copyWith(
-                      dividerColor: Colors.transparent,
-                      expansionTileTheme: const ExpansionTileThemeData(
-                        backgroundColor: Colors.transparent,
-                        collapsedBackgroundColor: Colors.transparent,
-                        textColor: kBrownDark,
-                        collapsedTextColor: kBrownDark,
-                        iconColor: kBrownDark,
-                        collapsedIconColor: kBrownDark,
-                      ),
-                    ),
-                    child: ExpansionTile(
-                      initiallyExpanded: expanded,
-                      onExpansionChanged: (v) =>
-                          setState(() => _expandedAreas[area] = v),
-                      title: Text(
-                        area,
-                        style: const TextStyle(
-                          color: kBrownDark,
-                          fontWeight: FontWeight.w700,
-                          fontSize: 18,
-                        ),
-                      ),
-                      children: [
-                        _sortBar(context, area, sortMode),
-                        const Divider(height: 1, color: kBrownDark),
-                        for (final sub in grouped.entries)
-                          _groupSection(context, area, sub.key, sub.value),
-                        const SizedBox(height: 12),
-                      ],
-                    ),
-                  );
-                }).toList(),
-              );
-            },
+          return CustomScrollView(
+            slivers: [
+              for (final entry in byArea.entries)
+                ..._buildAreaSlivers(context, entry.key, entry.value),
+            ],
           );
         },
       ),
     );
   }
 
+  /// Build slivers for one Area: pinned area header + grouped sections
+  List<Widget> _buildAreaSlivers(
+    BuildContext context,
+    String areaLabel,
+    List<Facility> areaFacilities,
+  ) {
+    final mode = _areaSortMode[areaLabel] ?? 'Facility Type';
+    final grouped = _sortWithinArea(areaFacilities, mode).entries.toList();
+
+    // Ensure expansion state map exists for this area, default groups to open
+    final areaMap = _expandedGroups.putIfAbsent(areaLabel, () => {});
+    for (final e in grouped) {
+      areaMap.putIfAbsent(e.key, () => true);
+    }
+
+    return [
+      // Pinned Area header with Sort + Open/Close all
+      SliverPersistentHeader(
+        pinned: true,
+        delegate: _HeaderBarDelegate(
+          minHeight: 56,
+          maxHeight: 56,
+          child: Container(
+            color: kCreamDark,
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: Row(
+              children: [
+                Text(areaLabel,
+                    style: const TextStyle(
+                      color: kBrownDark,
+                      fontWeight: FontWeight.w700,
+                    )),
+                const SizedBox(width: 12),
+                const Text('•', style: TextStyle(color: kBrownDark)),
+                const SizedBox(width: 12),
+                const Text('Sort by:',
+                    style: TextStyle(
+                      color: kBrownDark,
+                      fontWeight: FontWeight.w600,
+                    )),
+                const SizedBox(width: 8),
+                DropdownButton<String>(
+                  value: mode,
+                  items: const [
+                    DropdownMenuItem(value: 'Facility Type', child: Text('Facility Type')),
+                    DropdownMenuItem(value: 'Series', child: Text('Series')),
+                  ],
+                  onChanged: (v) {
+                    if (v == null) return;
+                    setState(() => _areaSortMode[areaLabel] = v);
+                  },
+                  dropdownColor: kCreamLight,
+                  style: const TextStyle(color: kBrownDark),
+                  iconEnabledColor: kBrownDark,
+                  underline: const SizedBox.shrink(),
+                ),
+                const Spacer(),
+                TextButton(
+                  onPressed: () => setState(() {
+                    for (final e in grouped) {
+                      _expandedGroups[areaLabel]![e.key] = true;
+                    }
+                  }),
+                  child: const Text('Open all'),
+                ),
+                const SizedBox(width: 6),
+                TextButton(
+                  onPressed: () => setState(() {
+                    for (final e in grouped) {
+                      _expandedGroups[areaLabel]![e.key] = false;
+                    }
+                  }),
+                  child: const Text('Close all'),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+
+      // Each group inside the Area (sticky group header + grid)
+      for (final e in grouped) ..._buildGroupSlivers(context, areaLabel, e.key, e.value),
+    ];
+  }
+
   // ─────────────────────────────
   // Sorting logic within an Area
   // ─────────────────────────────
-  Map<String, List<Facility>> _sortWithinArea(
-      List<Facility> facilities, String mode) {
+  Map<String, List<Facility>> _sortWithinArea(List<Facility> facilities, String mode) {
     switch (mode) {
       case 'Series':
         return _groupBySingle(facilities, (f) => f.series ?? 'Uncategorized');
@@ -124,109 +170,69 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
     }
   }
 
-  Widget _sortBar(BuildContext context, String area, String selected) {
-    const sortOptions = ['Facility Type', 'Series'];
-    return Container(
-      color: kCreamDark,
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          const Text(
-            'Sort by:',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              color: kBrownDark,
-            ),
-          ),
-          DropdownButton<String>(
-            value: selected,
-            items: sortOptions
-                .map((s) => DropdownMenuItem<String>(
-                      value: s,
-                      child: Text(s, style: const TextStyle(color: kBrownDark)),
-                    ))
-                .toList(),
-            onChanged: (v) => setState(() => _areaSortMode[area] = v ?? 'Facility Type'),
-            dropdownColor: kCreamLight,
-            style: const TextStyle(color: kBrownDark),
-            iconEnabledColor: kBrownDark,
-          ),
-        ],
-      ),
-    );
-  }
+  // Sticky group section (header + grid when expanded)
+  List<Widget> _buildGroupSlivers(
+    BuildContext context,
+    String areaLabel,
+    String groupTitle,
+    List<Facility> list,
+  ) {
+    final expanded = _expandedGroups[areaLabel]?[groupTitle] ?? true;
 
-  // ─────────────────────────────
-  // Expandable group within an area
-  // ─────────────────────────────
-  Widget _groupSection(
-      BuildContext context, String area, String group, List<Facility> list) {
-    final expanded = _expandedGroups[area]?[group] ?? true;
-    return Theme(
-      data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-      child: ExpansionTile(
-        initiallyExpanded: expanded,
-        onExpansionChanged: (v) {
-          setState(() {
-            _expandedGroups[area]?[group] = v;
-          });
-        },
-        title: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 4.0),
-          child: Text(
-            group,
-            style: const TextStyle(
-              color: kBrownDark,
-              fontWeight: FontWeight.w600,
-              fontSize: 15,
-            ),
-          ),
+    return [
+      SliverPersistentHeader(
+        pinned: true,
+        delegate: _SectionHeaderDelegate(
+          minHeight: 44,
+          maxHeight: 44,
+          title: groupTitle,
+          expanded: expanded,
+          onTap: () => setState(() {
+            final current = _expandedGroups[areaLabel] ?? {};
+            current[groupTitle] = !(current[groupTitle] ?? true);
+            _expandedGroups[areaLabel] = current;
+          }),
         ),
-        children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
-                crossAxisSpacing: 8,
-                mainAxisSpacing: 8,
-                childAspectRatio: 1.0,
-              ),
-              itemCount: list.length,
-              itemBuilder: (context, i) {
-                final f = list[i];
-                final isUnlocked =
-                    store.isUnlocked('facility_purchased', f.id);
+      ),
+      if (expanded)
+        SliverPadding(
+          padding: const EdgeInsets.fromLTRB(12, 10, 12, 14),
+          sliver: SliverGrid(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 3,
+              crossAxisSpacing: 8,
+              mainAxisSpacing: 8,
+              childAspectRatio: 1.0,
+            ),
+            delegate: SliverChildBuilderDelegate(
+              (context, index) {
+                final f = list[index];
+                final isUnlocked = store.isUnlocked('facility_purchased', f.id);
                 return _FacilityTile(
                   f: f,
                   isUnlocked: isUnlocked,
-                  onCheckChanged: (v) =>
-                      store.setUnlocked('facility_purchased', f.id, v),
+                  onCheckChanged: (v) => store.setUnlocked('facility_purchased', f.id, v),
                   onTap: () {
                     Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (_) => FacilityDetailPage(facility: f),
-                      ),
+                      MaterialPageRoute(builder: (_) => FacilityDetailPage(facility: f)),
                     );
                   },
                 );
               },
+              childCount: list.length,
             ),
           ),
-          const SizedBox(height: 8),
-        ],
-      ),
-    );
+        ),
+    ];
   }
 
   // ─────────────────────────────
   // Utility grouping helpers
   // ─────────────────────────────
   Map<String, List<Facility>> _groupBySingle(
-      List<Facility> items, String Function(Facility) key) {
+    List<Facility> items,
+    String Function(Facility) key,
+  ) {
     final Map<String, List<Facility>> map = {};
     for (final f in items) {
       final k = key(f);
@@ -241,6 +247,84 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
       .split(' ')
       .map((w) => w.isEmpty ? w : '${w[0].toUpperCase()}${w.substring(1)}')
       .join(' ');
+}
+
+// ─────────────────────────────
+// Sliver header delegates
+// ─────────────────────────────
+class _HeaderBarDelegate extends SliverPersistentHeaderDelegate {
+  _HeaderBarDelegate({required this.minHeight, required this.maxHeight, required this.child});
+  final double minHeight;
+  final double maxHeight;
+  final Widget child;
+
+  @override
+  double get minExtent => minHeight;
+
+  @override
+  double get maxExtent => maxHeight >= minHeight ? maxHeight : minHeight; // guard
+
+  @override
+  Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
+    return SizedBox.expand( // <-- make it fill the header's extent
+      child: Material(
+        elevation: overlapsContent ? 2 : 0,
+        color: Colors.transparent,
+        child: child,
+      ),
+    );
+  }
+
+  @override
+  bool shouldRebuild(covariant _HeaderBarDelegate old) =>
+      old.minHeight != minHeight || old.maxHeight != maxHeight || old.child != child;
+}
+class _SectionHeaderDelegate extends SliverPersistentHeaderDelegate {
+  _SectionHeaderDelegate({
+    required this.minHeight,
+    required this.maxHeight,
+    required this.title,
+    required this.expanded,
+    required this.onTap,
+  });
+
+  final double minHeight;
+  final double maxHeight;
+  final String title;
+  final bool expanded;
+  final VoidCallback onTap;
+
+  @override
+  double get minExtent => minHeight;
+
+  @override
+  double get maxExtent => maxHeight >= minHeight ? maxHeight : minHeight; // guard
+
+  @override
+  Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
+    return SizedBox.expand( // <-- ensure full height
+      child: Container(
+        color: kCreamLight,
+        child: InkWell(
+          onTap: onTap,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: Row(
+              children: [
+                Text(title, style: const TextStyle(color: kBrownDark, fontWeight: FontWeight.w600)),
+                const Spacer(),
+                Icon(expanded ? Icons.expand_less : Icons.expand_more, color: kBrownDark),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  @override
+  bool shouldRebuild(covariant _SectionHeaderDelegate old) =>
+      old.title != title || old.expanded != expanded || old.minHeight != minHeight || old.maxHeight != maxHeight;
 }
 
 // ─────────────────────────────

@@ -2298,17 +2298,14 @@
   ],
   "series": "Fleeting Feathers"
 },
-[
   {
     "id": "simple_wooden_doors",
     "name": "Simple Wooden Doors",
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Be careful when you open and close them!",
-    "price": [
-      { "currency": "stars", "amount": 1500 },
-      { "currency": "cod", "amount": 230000 }
-    ],
+    "requirementsStars": 1500,
+    "price": [{ "currency": "cod", "amount": 230000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 35 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 4800 }
@@ -2321,10 +2318,8 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Everyone says solid wood is good, but I don't know what solid wood is.",
-    "price": [
-      { "currency": "stars", "amount": 8000 },
-      { "currency": "cod", "amount": 1380000 }
-    ],
+    "requirementsStars": 8000,
+    "price": [{ "currency": "cod", "amount": 1380000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 133 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 5400 }
@@ -2337,10 +2332,8 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "You can look through the glass and see what's behind the door.",
-    "price": [
-      { "currency": "stars", "amount": 18000 },
-      { "currency": "cod", "amount": 3300000 }
-    ],
+    "requirementsStars": 18000,
+    "price": [{ "currency": "cod", "amount": 3300000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 218 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 6200 }
@@ -2353,10 +2346,8 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Chef Gumi had an experienced artisan make it. It's so pretty!",
-    "price": [
-      { "currency": "stars", "amount": 49000 },
-      { "currency": "cod", "amount": 7100000 }
-    ],
+    "requirementsStars": 49000,
+    "price": [{ "currency": "cod", "amount": 7100000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 375 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 7600 }
@@ -2369,10 +2360,8 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Decorated with ribbons and full of festive cheer.",
-    "price": [
-      { "currency": "stars", "amount": 50000 },
-      { "currency": "cod", "amount": 14700000 }
-    ],
+    "requirementsStars": 50000,
+    "price": [{ "currency": "cod", "amount": 14700000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 390 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 8700 }
@@ -2385,10 +2374,8 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "It leads to a mysterious wonderland.",
-    "price": [
-      { "currency": "stars", "amount": 70000 },
-      { "currency": "cod", "amount": 22000000 }
-    ],
+    "requirementsStars": 70000,
+    "price": [{ "currency": "cod", "amount": 22000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 400 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 10500 }
@@ -2401,10 +2388,8 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Has a summer beach style.",
-    "price": [
-      { "currency": "stars", "amount": 100000 },
-      { "currency": "cod", "amount": 29000000 }
-    ],
+    "requirementsStars": 100000,
+    "price": [{ "currency": "cod", "amount": 29000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 420 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 11500 }
@@ -2417,10 +2402,8 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Putting strawberry prints on a glass door is a refreshing idea.",
-    "price": [
-      { "currency": "stars", "amount": 80000 },
-      { "currency": "cod", "amount": 16500000 }
-    ],
+    "requirementsStars": 80000,
+    "price": [{ "currency": "cod", "amount": 16500000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 305 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 6500 }
@@ -2433,9 +2416,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Please close the door lightly in case it crumbles.",
-    "price": [
-      { "currency": "cod", "amount": 4400000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 4400000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 160 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 3600 }
@@ -2449,10 +2430,8 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Made with old, discarded pipes. One man's trash is another man's treasure!",
-    "price": [
-      { "currency": "stars", "amount": 90000 },
-      { "currency": "cod", "amount": 17000000 }
-    ],
+    "requirementsStars": 90000,
+    "price": [{ "currency": "cod", "amount": 17000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 280 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 6500 }
@@ -2465,9 +2444,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Each ring brings friends from afar.",
-    "price": [
-      { "currency": "cod", "amount": 8500000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 8500000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 210 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 4500 }
@@ -2481,9 +2458,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Completely made by hand!",
-    "price": [
-      { "currency": "cod", "amount": 19000000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 19000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 340 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 8000 }
@@ -2496,10 +2471,8 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "The impressions of time enhance its beauty.",
-    "price": [
-      { "currency": "stars", "amount": 200000 },
-      { "currency": "cod", "amount": 60000000 }
-    ],
+    "requirementsStars": 200000,
+    "price": [{ "currency": "cod", "amount": 60000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 620 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 16000 }
@@ -2512,9 +2485,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "It feels like a beautiful dream with the gentle breeze blowing past.",
-    "price": [
-      { "currency": "cod", "amount": 22000000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 22000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 320 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 9500 }
@@ -2527,9 +2498,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "There are pure white daisies blooming on the light green wooden doors.",
-    "price": [
-      { "currency": "stars", "amount": 128 }
-    ],
+    "price": [{ "currency": "diamonds", "amount": 128 }],
     "effects": [
       { "type": "ratingBonus", "amount": 280 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 6200 }
@@ -2543,9 +2512,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Only in Jiangnan can one find such beautiful sights.",
-    "price": [
-      { "currency": "cod", "amount": 15000000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 15000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 210 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 3900 }
@@ -2559,9 +2526,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Only in Jiangnan can one find such beautiful sights.",
-    "price": [
-      { "currency": "cod", "amount": 9500000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 9500000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 145 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 3700 }
@@ -2575,9 +2540,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "A mere door cannot stop the intense aroma of the bread.",
-    "price": [
-      { "currency": "cod", "amount": 26000000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 26000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 380 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 9500 }
@@ -2590,9 +2553,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "It shuts out all the noise and voices that you'd rather not hear.",
-    "price": [
-      { "currency": "stars", "amount": 140 }
-    ],
+    "price": [{ "currency": "diamonds", "amount": 140 }],
     "effects": [
       { "type": "ratingBonus", "amount": 280 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 6200 }
@@ -2609,9 +2570,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "The flower strives to climb upward and touch the sapphire.",
-    "price": [
-      { "currency": "cod", "amount": 20500000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 20500000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 320 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 8000 }
@@ -2624,9 +2583,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Don't ask why you're able to view the snowscape from here, it's magic!",
-    "price": [
-      { "currency": "cod", "amount": 16500000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 16500000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 300 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 5000 }
@@ -2640,15 +2597,13 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "A poster of 3HUA's newest show has been put up on it.",
-    "price": [
-      { "currency": "stars", "amount": 95000 },
-      { "currency": "cod", "amount": 20000000 }
-    ],
+    "requirementsStars": 95000,
+    "price": [{ "currency": "cod", "amount": 20000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 300 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 6800 }
     ],
-    "series": "Rock'n'Roll Sweetheart"
+    "series": "Rock 'n' Roll Sweetheart"
   },
   {
     "id": "soft_center_white_chocolate",
@@ -2656,9 +2611,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "The puppy's bones will guard this place!",
-    "price": [
-      { "currency": "cod", "amount": 28000000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 28000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 280 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 4200 }
@@ -2671,9 +2624,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "It leads to a mysterious underwater world.",
-    "price": [
-      { "currency": "stars", "amount": 150 }
-    ],
+    "price": [{ "currency": "diamonds", "amount": 150 }],
     "effects": [
       { "type": "ratingBonus", "amount": 280 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 6200 }
@@ -2690,9 +2641,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "What's behind the curtains?! Wait, it doesn't look like there's anything?",
-    "price": [
-      { "currency": "cod", "amount": 28500000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 28500000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 350 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 8200 }
@@ -2705,9 +2654,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Please don't lick the door handle, kids! It's not edible!",
-    "price": [
-      { "currency": "cod", "amount": 22000000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 22000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 320 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 5200 }
@@ -2735,9 +2682,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Are you ready to uncover the story behind this door?",
-    "price": [
-      { "currency": "cod", "amount": 30000000 }
-    ],
+    "price": [{ "currency": "cod", "amount": 30000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 290 },
       { "type": "incomePerMinute", "currency": "cod", "amount": 4500 }
@@ -2745,14 +2690,3 @@
     "series": "Fleeting Feathers"
   }
 ]
-
-
-
-
-
-
-
-
-
-]
-    
