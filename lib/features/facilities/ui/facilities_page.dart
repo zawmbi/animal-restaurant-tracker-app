@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:auto_size_text/auto_size_text.dart';
 
 import '../../../theme/app_theme.dart';
 import '../../shared/data/unlocked_store.dart';
@@ -19,10 +18,19 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
   final repo = FacilitiesRepository.instance;
   final store = UnlockedStore.instance;
 
+  /// Cache the load so we don’t refetch on every rebuild.
+  late final Future<List<Facility>> _facilitiesFuture;
+
   /// Per-area sort mode: 'Facility Type' (default) or 'Series'
   final Map<String, String> _areaSortMode = {};
   /// Per-area expanded state for groups: area -> (group -> expanded?)
   final Map<String, Map<String, bool>> _expandedGroups = {};
+
+  @override
+  void initState() {
+    super.initState();
+    _facilitiesFuture = repo.all();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +53,7 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
         ],
       ),
       body: FutureBuilder<List<Facility>>(
-        future: repo.all(),
+        future: _facilitiesFuture,
         builder: (context, snap) {
           if (snap.connectionState != ConnectionState.done) {
             return const Center(child: CircularProgressIndicator());
@@ -202,16 +210,22 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
               crossAxisCount: 3,
               crossAxisSpacing: 8,
               mainAxisSpacing: 8,
-              childAspectRatio: 1.0,
+              childAspectRatio: 0.9, // a bit taller so labels have room
             ),
             delegate: SliverChildBuilderDelegate(
               (context, index) {
                 final f = list[index];
                 final isUnlocked = store.isUnlocked('facility_purchased', f.id);
                 return _FacilityTile(
+                  key: ValueKey(f.id),
                   f: f,
                   isUnlocked: isUnlocked,
-                  onCheckChanged: (v) => store.setUnlocked('facility_purchased', f.id, v),
+                  onCheckChanged: (v) async {
+                    final result = store.setUnlocked('facility_purchased', f.id, v);
+                    if (result is Future) await result;
+                    // Rebuild so this tile re-reads isUnlocked
+                    setState(() {});
+                  },
                   onTap: () {
                     Navigator.of(context).push(
                       MaterialPageRoute(builder: (_) => FacilityDetailPage(facility: f)),
@@ -260,13 +274,12 @@ class _HeaderBarDelegate extends SliverPersistentHeaderDelegate {
 
   @override
   double get minExtent => minHeight;
-
   @override
-  double get maxExtent => maxHeight >= minHeight ? maxHeight : minHeight; // guard
+  double get maxExtent => maxHeight >= minHeight ? maxHeight : minHeight;
 
   @override
   Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
-    return SizedBox.expand( // <-- make it fill the header's extent
+    return SizedBox.expand( // ensure geometry matches paint size
       child: Material(
         elevation: overlapsContent ? 2 : 0,
         color: Colors.transparent,
@@ -277,8 +290,11 @@ class _HeaderBarDelegate extends SliverPersistentHeaderDelegate {
 
   @override
   bool shouldRebuild(covariant _HeaderBarDelegate old) =>
-      old.minHeight != minHeight || old.maxHeight != maxHeight || old.child != child;
+      old.minHeight != minHeight ||
+      old.maxHeight != maxHeight ||
+      old.child != child;
 }
+
 class _SectionHeaderDelegate extends SliverPersistentHeaderDelegate {
   _SectionHeaderDelegate({
     required this.minHeight,
@@ -296,13 +312,12 @@ class _SectionHeaderDelegate extends SliverPersistentHeaderDelegate {
 
   @override
   double get minExtent => minHeight;
-
   @override
-  double get maxExtent => maxHeight >= minHeight ? maxHeight : minHeight; // guard
+  double get maxExtent => maxHeight >= minHeight ? maxHeight : minHeight;
 
   @override
   Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
-    return SizedBox.expand( // <-- ensure full height
+    return SizedBox.expand(
       child: Container(
         color: kCreamLight,
         child: InkWell(
@@ -311,7 +326,10 @@ class _SectionHeaderDelegate extends SliverPersistentHeaderDelegate {
             padding: const EdgeInsets.symmetric(horizontal: 12),
             child: Row(
               children: [
-                Text(title, style: const TextStyle(color: kBrownDark, fontWeight: FontWeight.w600)),
+                Text(
+                  title,
+                  style: const TextStyle(color: kBrownDark, fontWeight: FontWeight.w600),
+                ),
                 const Spacer(),
                 Icon(expanded ? Icons.expand_less : Icons.expand_more, color: kBrownDark),
               ],
@@ -324,7 +342,10 @@ class _SectionHeaderDelegate extends SliverPersistentHeaderDelegate {
 
   @override
   bool shouldRebuild(covariant _SectionHeaderDelegate old) =>
-      old.title != title || old.expanded != expanded || old.minHeight != minHeight || old.maxHeight != maxHeight;
+      old.title != title ||
+      old.expanded != expanded ||
+      old.minHeight != minHeight ||
+      old.maxHeight != maxHeight;
 }
 
 // ─────────────────────────────
@@ -332,6 +353,7 @@ class _SectionHeaderDelegate extends SliverPersistentHeaderDelegate {
 // ─────────────────────────────
 class _FacilityTile extends StatelessWidget {
   const _FacilityTile({
+    super.key,
     required this.f,
     required this.isUnlocked,
     required this.onCheckChanged,
@@ -346,37 +368,38 @@ class _FacilityTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const radius = BorderRadius.all(Radius.circular(12));
-    return Container(
-      decoration: BoxDecoration(
-        color: kCreamDark,
+
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
         borderRadius: radius,
-        border: Border.all(color: kGreen, width: 3),
-      ),
-      child: Material(
-        color: Colors.transparent,
-        borderRadius: radius,
-        clipBehavior: Clip.antiAlias,
-        child: InkWell(
-          onTap: onTap,
+        child: Ink(
+          decoration: BoxDecoration(
+            color: kCreamDark,
+            borderRadius: radius,
+            border: Border.all(color: kGreen, width: 3),
+          ),
           child: Stack(
             children: [
-              Positioned.fill(
+              // Name centered with safe padding
+              Center(
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 14, left: 8, right: 8),
-                  child: Center(
-                    child: AutoSizeText(
-                      f.name,
-                      textAlign: TextAlign.center,
-                      maxLines: 2,
-                      wrapWords: true,
-                      minFontSize: 10,
-                      stepGranularity: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: const TextStyle(color: kBrownDark),
+                  padding: const EdgeInsets.fromLTRB(8, 14, 8, 8),
+                  child: Text(
+                    f.name,
+                    maxLines: 2,
+                    textAlign: TextAlign.center,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      color: kBrownDark,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
                     ),
                   ),
                 ),
               ),
+              // Checkbox in the top-right
               Positioned(
                 top: 4,
                 right: 4,
@@ -387,7 +410,7 @@ class _FacilityTile extends StatelessWidget {
                     onChanged: (v) => onCheckChanged(v ?? false),
                     checkColor: Colors.white,
                     fillColor: MaterialStateProperty.resolveWith<Color>(
-                      (states) => isUnlocked ? kGreen : Colors.white,
+                      (states) => states.contains(MaterialState.selected) ? kGreen : Colors.white,
                     ),
                     side: const BorderSide(color: kGreen, width: 3),
                     materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
