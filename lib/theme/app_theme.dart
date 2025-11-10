@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use, duplicate_ignore
+
 import 'package:flutter/material.dart';
 
 // ===== Global Colors =====
@@ -33,12 +35,13 @@ ThemeData buildAppTheme() {
       fontFamily: 'Roboto',
     ),
     checkboxTheme: CheckboxThemeData(
-  fillColor: MaterialStateProperty.resolveWith((states) {
+  fillColor: WidgetStateProperty.resolveWith((states) {
     // Disabled look (optional, but nicer)
-    if (states.contains(MaterialState.disabled)) {
-      return states.contains(MaterialState.selected)
-          ? kGreen.withOpacity(0.5)
-          : Colors.white.withOpacity(0.5);
+    if (states.contains(WidgetState.disabled)) {
+      return !states.contains(WidgetState.selected)
+          // ignore: deprecated_member_use
+          ? Colors.white.withOpacity(0.5)
+          : kGreen.withOpacity(0.5);
     }
     // Checked → green, Unchecked → white
     return states.contains(MaterialState.selected) ? kGreen : Colors.white;

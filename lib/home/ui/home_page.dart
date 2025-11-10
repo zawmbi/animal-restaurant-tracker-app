@@ -156,9 +156,7 @@ class _HomePageState extends State<HomePage> {
                             break;
                         }
 
-                        final checked = bucket == null
-                            ? false
-                            : store.isUnlocked(bucket, h.key ?? h.id);
+                        final checked = store.isUnlocked(bucket, h.key ?? h.id);
 
                         return InkWell(
                           mouseCursor: SystemMouseCursors.click,
@@ -167,9 +165,7 @@ class _HomePageState extends State<HomePage> {
                             leading: Icon(_iconFor(h.type)),
                             title: Text(h.title),
                             subtitle: h.subtitle != null ? Text(h.subtitle!) : null,
-                            trailing: bucket == null
-                                ? null
-                                : Checkbox(
+                            trailing: Checkbox(
                                     value: checked,
                                     onChanged: (v) => store.setUnlocked(
                                       bucket!,

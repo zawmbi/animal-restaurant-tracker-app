@@ -1,8 +1,4 @@
-// ignore_for_file: unused_import
-
 import 'package:animal_restaurant_tracker/features/shared/json_loader.dart';
-import 'package:flutter/foundation.dart';
-import '../shared/data/json_loader.dart';
 import '../model/customer.dart';
 
 class CustomersRepository {

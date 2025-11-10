@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use, constant_identifier_names, unnecessary_cast
+
 import 'package:flutter/foundation.dart';
 
 /// Payment types seen across AR.

@@ -23,6 +23,8 @@
 //   writes will auto-init.
 // - You can register additional custom types at runtime via registerType().
 
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

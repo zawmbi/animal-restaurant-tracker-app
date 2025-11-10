@@ -1,41 +1,72 @@
+import 'package:flutter/foundation.dart';
 import 'memento.dart';
 
-/// Instead of a single classification, customers have **tags** so one
-/// customer can belong to multiple groups (e.g., restaurant + nearby + holiday).
+@immutable
 class Customer {
-  final String id; // slug id, e.g., "white_bunny"
+  final String id;
   final String name;
-  final List<String> tags; // e.g., ["restaurant","nearby","very_common"]
-  final String livesIn; // e.g., "Nearby"
-  final int appearanceWeight; // e.g., 10000
-  final String? requiredFoodId; // e.g., "taiyaki"
-  final List<String> dishesOrderedIds; // e.g., ["taiyaki"]
+  final List<String> tags;
+  final String? livesIn;
+
+  // ✅ this covers both your JSON "description" or "customerDescription"
+  final String? description;
+  String? get customerDescription => description;
+
+  final int? appearanceWeight;
+  final String? requiredFoodId;
+  final List<String>? dishesOrderedIds;
   final List<Memento> mementos;
 
   const Customer({
     required this.id,
     required this.name,
     required this.tags,
-    required this.livesIn,
-    required this.appearanceWeight,
-    required this.requiredFoodId,
-    required this.dishesOrderedIds,
-    required this.mementos,
+    this.livesIn,
+    this.description,
+    this.appearanceWeight,
+    this.requiredFoodId,
+    this.dishesOrderedIds,
+    this.mementos = const [],
   });
 
-  bool hasTag(String tag) => tags.contains(tag);
+  factory Customer.fromJson(Map<String, dynamic> json) {
+    return Customer(
+      id: json['id'] ?? '',
+      name: json['name'] ?? '',
+      tags: (json['tags'] as List? ?? const []).map((e) => e.toString()).toList(),
+      livesIn: json['livesIn']?.toString(),
+      // 👇 support both keys
+      description: (json['customerDescription'] ??
+              json['description'] ??
+              '')
+          .toString(),
+      appearanceWeight: json['appearanceWeight'] is int
+          ? json['appearanceWeight']
+          : int.tryParse('${json['appearanceWeight']}'),
+      requiredFoodId: json['requiredFoodId']?.toString(),
+      dishesOrderedIds: (json['dishesOrderedIds'] as List?)
+              ?.map((e) => e.toString())
+              .toList() ??
+          const [],
+      mementos: (json['mementos'] as List? ?? const [])
+          .whereType<Map<String, dynamic>>()
+          .map(Memento.fromJson)
+          .toList(),
+    );
+  }
 
-  factory Customer.fromJson(Map<String, dynamic> j) => Customer(
-        id: j['id'] as String,
-        name: j['name'] as String,
-        tags: (j['tags'] as List? ?? const []).cast<String>(),
-        livesIn: j['livesIn'] as String? ?? '',
-        appearanceWeight: j['appearanceWeight'] as int? ?? 0,
-        requiredFoodId: j['requiredFoodId'] as String?,
-        dishesOrderedIds: (j['dishesOrderedIds'] as List? ?? const [])
-            .cast<String>(),
-        mementos: (j['mementos'] as List? ?? const [])
-            .map((m) => Memento.fromJson(m))
-            .toList(),
-      );
+  Map<String, dynamic> toJson() => {
+        'id': id,
+        'name': name,
+        'tags': tags,
+        if (livesIn != null) 'livesIn': livesIn,
+        if (description != null) 'customerDescription': description,
+        if (appearanceWeight != null)
+          'appearanceWeight': appearanceWeight,
+        if (requiredFoodId != null) 'requiredFoodId': requiredFoodId,
+        if (dishesOrderedIds != null)
+          'dishesOrderedIds': dishesOrderedIds,
+      };
+
+  bool hasTag(String tag) => tags.contains(tag);
 }

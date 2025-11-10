@@ -17,9 +17,7 @@ class _DishesPageState extends State<DishesPage> {
   final repo = DishesRepository.instance;
   final store = UnlockedStore.instance; // bucket: 'dish'
 
-  // Normalize labels once (trim + lowercase).
   String _n(String s) => s.trim().toLowerCase();
-
   bool _inAnySection(Dish d, List<String> names) {
     final have = d.sections.map(_n).toSet();
     for (final n in names) {
@@ -28,7 +26,6 @@ class _DishesPageState extends State<DishesPage> {
     return false;
   }
 
-  // Aliases so old data keeps working.
   bool _isFreshlyMade(Dish d) =>
       _inAnySection(d, ['Freshly Made', 'Fresh Dishes']);
   bool _isBuffet(Dish d) => _inAnySection(d, ['Buffet']);
@@ -44,11 +41,9 @@ class _DishesPageState extends State<DishesPage> {
         actions: [
           IconButton(
             icon: const Icon(Icons.search),
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => const GlobalSearchPage()),
-              );
-            },
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const GlobalSearchPage()),
+            ),
           ),
         ],
       ),
@@ -59,12 +54,7 @@ class _DishesPageState extends State<DishesPage> {
             return const Center(child: CircularProgressIndicator());
           }
           if (snap.hasError) {
-            return Center(
-              child: Text(
-                'Failed to load recipes:\n${snap.error}',
-                textAlign: TextAlign.center,
-              ),
-            );
+            return Center(child: Text('Failed to load recipes:\n${snap.error}', textAlign: TextAlign.center));
           }
 
           final dishes = snap.data ?? const <Dish>[];
@@ -100,10 +90,7 @@ class _DishesPageState extends State<DishesPage> {
     if (list.isEmpty && !showEvenIfEmpty) return const SizedBox.shrink();
 
     return ExpansionTile(
-      title: Text(
-        title,
-        style: const TextStyle(fontWeight: FontWeight.w600),
-      ),
+      title: Text(title, style: const TextStyle(fontWeight: FontWeight.w600)),
       children: [
         if (list.isEmpty)
           Padding(
@@ -112,12 +99,7 @@ class _DishesPageState extends State<DishesPage> {
               children: [
                 const Icon(Icons.info_outline, size: 18),
                 const SizedBox(width: 8),
-                Expanded(
-                  child: Text(
-                    'No recipes in this section yet.',
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  ),
-                ),
+                Expanded(child: Text('No recipes in this section yet.', style: Theme.of(context).textTheme.bodyMedium)),
               ],
             ),
           )
@@ -127,28 +109,23 @@ class _DishesPageState extends State<DishesPage> {
             child: GridView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,      // ← EXACTLY 3 per row
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 160,
                 crossAxisSpacing: 12,
                 mainAxisSpacing: 12,
-                childAspectRatio: 1.0,  // ← square tiles
+                childAspectRatio: 1.0,
               ),
               itemCount: list.length,
               itemBuilder: (context, i) {
                 final d = list[i];
                 final checked = store.isUnlocked('dish', d.id);
-
                 return _RecipeTile(
                   label: d.name,
                   isUnlocked: checked,
                   onCheckChanged: (v) => store.setUnlocked('dish', d.id, v),
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (_) => DishDetailPage(dishId: d.id),
-                      ),
-                    );
-                  },
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => DishDetailPage(dishId: d.id)),
+                  ),
                 );
               },
             ),
@@ -173,14 +150,12 @@ class _RecipeTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Use Card so border/radius/background come from global CardTheme (app_theme.dart)
     return Card(
       clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: onTap,
         child: Stack(
           children: [
-            // Centered, autosizing label (wraps to 2 lines, shrinks by 1pt)
             Positioned.fill(
               child: Padding(
                 padding: const EdgeInsets.all(12),
@@ -188,8 +163,8 @@ class _RecipeTile extends StatelessWidget {
                   child: AutoSizeText(
                     label,
                     textAlign: TextAlign.center,
-                    maxLines: 6,
-                    wrapWords: false,
+                    maxLines: 4,
+                    wrapWords: true,
                     minFontSize: 10,
                     stepGranularity: 1,
                     overflow: TextOverflow.ellipsis,
@@ -198,7 +173,6 @@ class _RecipeTile extends StatelessWidget {
                 ),
               ),
             ),
-            // Checkbox (top-right) — styled by global CheckboxTheme
             Positioned(
               top: 4,
               right: 4,

@@ -29,8 +29,9 @@ class EntityChip extends StatelessWidget {
         // Make the WHOLE bordered chip clickable for details:
         onTap: onTap,
         customBorder: RoundedRectangleBorder(borderRadius: radius),
-        overlayColor: MaterialStateProperty.resolveWith((states) {
-          if (states.contains(MaterialState.hovered)) {
+        overlayColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.hovered)) {
+            // ignore: deprecated_member_use
             return theme.colorScheme.primary.withOpacity(0.06);
           }
           return null;

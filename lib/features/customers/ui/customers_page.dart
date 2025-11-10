@@ -19,7 +19,6 @@ class _CustomersPageState extends State<CustomersPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Background, AppBar colors, text colors, etc. come from app_theme.dart
       appBar: AppBar(
         title: const Text('Customers'),
         actions: [
@@ -64,13 +63,11 @@ class _CustomersPageState extends State<CustomersPage> {
     );
   }
 
-  // Convert snake_case tag → Title Case
   String _titleFromTag(String tag) => tag
       .split('_')
       .map((w) => w.isEmpty ? w : '${w[0].toUpperCase()}${w.substring(1)}')
       .join(' ');
 
-  // Decide section order and filter
   List<String> _orderedTags(Set<String> all) {
     const exclude = {'customer', 'logbook_default'};
     const preferred = [
@@ -101,21 +98,17 @@ class _CustomersPageState extends State<CustomersPage> {
   Widget _section(BuildContext context, String title, List<Customer> list) {
     if (list.isEmpty) return const SizedBox.shrink();
 
-    // ExpansionTile styles (colors, icons, padding) come from app_theme.dart
     return ExpansionTile(
-      title: Text(
-        title,
-        style: const TextStyle(fontWeight: FontWeight.w600),
-      ),
+      title: Text(title, style: const TextStyle(fontWeight: FontWeight.w600)),
       children: [
         GridView.builder(
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,     // EXACTLY 3 per row
+          gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+            maxCrossAxisExtent: 160,  // responsive columns
             crossAxisSpacing: 12,
             mainAxisSpacing: 12,
-            childAspectRatio: 1.0, // square tiles
+            childAspectRatio: 1.0,
           ),
           itemCount: list.length,
           itemBuilder: (context, i) {
@@ -127,9 +120,7 @@ class _CustomersPageState extends State<CustomersPage> {
               onCheckChanged: (v) => store.setUnlocked('customer', c.id, v),
               onTap: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => CustomerDetailPage(customer: c),
-                  ),
+                  MaterialPageRoute(builder: (_) => CustomerDetailPage(customer: c)),
                 );
               },
             );
@@ -155,14 +146,12 @@ class _CustomerTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Use Card so color/border/radius come from CardTheme in app_theme.dart
     return Card(
       clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: onTap,
         child: Stack(
           children: [
-            // Centered autosizing name (text color from TextTheme in app_theme.dart)
             Positioned.fill(
               child: Padding(
                 padding: const EdgeInsets.all(12),
@@ -180,7 +169,6 @@ class _CustomerTile extends StatelessWidget {
                 ),
               ),
             ),
-            // Checkbox (top-right) styled by CheckboxTheme in app_theme.dart
             Positioned(
               top: 4,
               right: 4,

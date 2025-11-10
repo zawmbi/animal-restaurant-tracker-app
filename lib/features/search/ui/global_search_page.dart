@@ -5,7 +5,6 @@ import '../../customers/ui/customer_detail_page.dart';
 import '../../dishes/ui/dish_detail_page.dart';
 import '../../facilities/ui/facility_detail_page.dart';
 import '../../customers/data/customers_repository.dart';
-import '../../facilities/data/facilities_repository.dart';
 import '../data/search_index.dart';
 
 class GlobalSearchPage extends StatefulWidget {
@@ -74,19 +73,18 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
                   case HitType.memento: bucket = 'memento_collected'; break;
                 }
 
-                final checked = bucket == null ? false : store.isUnlocked(bucket, h.key ?? h.id);
+                final checked = store.isUnlocked(bucket, h.key ?? h.id);
 
                 return InkWell(
                   mouseCursor: SystemMouseCursors.click,
+                  // ignore: deprecated_member_use
                   hoverColor: Theme.of(context).hoverColor.withOpacity(0.2),
                   onTap: () => _open(context, h),
                   child: ListTile(
                     leading: Icon(_iconFor(type)),
                     title: Text(h.title),
                     subtitle: h.subtitle != null ? Text(h.subtitle!) : null,
-                    trailing: bucket == null
-                        ? null
-                        : Checkbox(
+                    trailing: Checkbox(
                             value: checked,
                             onChanged: (v) => store.setUnlocked(bucket!, h.key ?? h.id, v ?? false),
                           ),
@@ -115,10 +113,12 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
       case HitType.customer:
         final c = await CustomersRepository.instance.byId(h.id);
         if (c == null) {
+          // ignore: use_build_context_synchronously
           if (!mounted) return; ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Customer not found')));
           return;
         }
         if (!mounted) return;
+        // ignore: use_build_context_synchronously
         Navigator.of(context).push(MaterialPageRoute(
           builder: (_) => CustomerDetailPage(customer: c),
         ));
@@ -132,10 +132,12 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
       case HitType.facility:
         final f = await FacilitiesRepository.instance.byId(h.id);
         if (f == null) {
+          // ignore: use_build_context_synchronously
           if (!mounted) return; ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Facility not found')));
           return;
         }
         if (!mounted) return;
+        // ignore: use_build_context_synchronously
         Navigator.of(context).push(MaterialPageRoute(
           builder: (_) => FacilityDetailPage(facility: f),
         ));

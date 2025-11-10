@@ -2,11 +2,11 @@
   {
     "id": "white_bunny",
     "name": "White Bunny",
-    "tags": ["customer", "restaurant", "very_common", "nearby"],
+    "tags": ["customer", "restaurant", "very_common"],
     "livesIn": "Nearby",
     "appearanceWeight": 10000,
     "requiredFoodId": "Taiyaki",
-    "dishesOrderedIds": ["Taiyaki"],
+    "dishesOrderedIds": ["taiyaki"],
     "customerDescription": "Little white bunny, ever so white; with two pointy ears, that stand upright.",
     "mementos": [
       {

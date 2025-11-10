@@ -1,0 +1,143 @@
+[
+  {
+    "id": "tomatoes_in_mashed_potatoes",
+    "name": "Tomatoes in Mashed Potatoes",
+    "sections": ["Food Truck Recipes"],
+    "description": "Soft and creamy, sweet and sour... This dish simply melts in the mouth.",
+    "refinedRating": 350,
+    "perfectDishes": 35,
+    "prepTimeSeconds": 26,
+    "flavor": "Sour",
+    "refinementRatingReward": 350,
+    "ingredients": [
+      { "item": "Potato", "amount": 6 },
+      { "item": "Tomato", "amount": 4 }
+    ]
+  },
+  {
+    "id": "tofu_pudding_in_sweet_rice_wine",
+    "name": "Tofu Pudding in Sweet Rice Wine",
+    "sections": ["Food Truck Recipes"],
+    "description": "The flavor of Jiangnan all in one bowl.",
+    "refinedRating": 250,
+    "perfectDishes": 15,
+    "prepTimeSeconds": 24,
+    "flavor": "Sweet",
+    "refinementRatingReward": 250,
+    "ingredients": [
+      { "item": "Soybean", "amount": 4 },
+      { "item": "Rice", "amount": 8 }
+    ]
+  },
+  {
+    "id": "mushroom_fried_rice",
+    "name": "Mushroom Fried Rice",
+    "sections": ["Food Truck Recipes"],
+    "description": "This dish of juicy mushrooms and fragrant rice will leave you begging for more!",
+    "refinedRating": 400,
+    "perfectDishes": 35,
+    "prepTimeSeconds": 42,
+    "flavor": "Salty",
+    "refinementRatingReward": 400,
+    "ingredients": [
+      { "item": "Rice", "amount": 8 },
+      { "item": "Mushroom", "amount": 5 },
+      { "item": "Corn", "amount": 3 }
+    ]
+  },
+  {
+    "id": "kitty_crepe",
+    "name": "Kitty Crepe",
+    "sections": ["Food Truck Recipes"],
+    "description": "Gear up for a new gustatory experience with this fluffy crepe and chilled strawberry mochi combination!",
+    "refinedRating": 150,
+    "perfectDishes": 10,
+    "prepTimeSeconds": 24,
+    "flavor": "Sweet",
+    "refinementRatingReward": 150,
+    "ingredients": [
+      { "item": "Wheat", "amount": 4 },
+      { "item": "Rice", "amount": 3 }
+    ]
+  },
+  {
+    "id": "hot_dog_and_fries",
+    "name": "Hot Dog & Fries",
+    "sections": ["Food Truck Recipes"],
+    "description": "It ain't no hotdog without em', fries!",
+    "refinedRating": 450,
+    "perfectDishes": 20,
+    "prepTimeSeconds": 54,
+    "flavor": "Salty",
+    "refinementRatingReward": 450,
+    "ingredients": [
+      { "item": "Wheat", "amount": 6 },
+      { "item": "Potato", "amount": 4 },
+      { "item": "Tomato", "amount": 6 },
+      { "item": "Leafy Greens", "amount": 4 }
+    ]
+  },
+  {
+    "id": "strange_tasting_cotton_candy",
+    "name": "Strange-tasting Cotton Candy",
+    "sections": ["Food Truck Recipes"],
+    "description": "What does the cotton candy taste like?",
+    "refinedRating": 480,
+    "perfectDishes": 25,
+    "prepTimeSeconds": 54,
+    "flavor": "Spicy",
+    "refinementRatingReward": 480,
+    "ingredients": [
+      { "item": "Wheat", "amount": null, "tba": true },
+      { "item": "Soybean", "amount": null, "tba": true },
+      { "item": "Mushroom", "amount": null, "tba": true },
+      { "item": "Onion", "amount": null, "tba": true }
+    ]
+  },
+  {
+    "id": "shepherds_pie",
+    "name": "Shepherd's Pie",
+    "sections": ["Food Truck Recipes"],
+    "description": "Spread mashed potato onto ragu and bake it to create a truly delicious dish!",
+    "refinedRating": 500,
+    "perfectDishes": 40,
+    "prepTimeSeconds": 42,
+    "flavor": "Salty",
+    "refinementRatingReward": 500,
+    "ingredients": [
+      { "item": "Potato", "amount": 5 },
+      { "item": "Tomato", "amount": 4 },
+      { "item": "Onion", "amount": 3 }
+    ]
+  },
+  {
+    "id": "chefs_burger",
+    "name": "Chef's Burger",
+    "sections": ["Food Truck Recipes"],
+    "description": "Bliss with every bite! Pumps you full of energy for the entire day.",
+    "refinedRating": 300,
+    "perfectDishes": 30,
+    "prepTimeSeconds": 28,
+    "flavor": "Spicy",
+    "refinementRatingReward": 300,
+    "ingredients": [
+      { "item": "Wheat", "amount": 8 },
+      { "item": "Onion", "amount": 3 }
+    ]
+  },
+  {
+    "id": "carrot_cake",
+    "name": "Carrot Cake",
+    "sections": ["Food Truck Recipes"],
+    "description": "You'll love this cake even if you dislike carrots.",
+    "refinedRating": 200,
+    "perfectDishes": 10,
+    "prepTimeSeconds": 26,
+    "flavor": "Sweet",
+    "refinementRatingReward": 200,
+    "ingredients": [
+      { "item": "Wheat", "amount": 5 },
+      { "item": "Carrot", "amount": 2 }
+    ]
+  }
+]

@@ -44,7 +44,7 @@ class LettersPage extends StatelessWidget {
                       label: l.name,
                       checked: unlocked,
                       showCheckbox: true,
-                      onCheckChanged: (v) => store.setUnlocked('letter', l.id, v ?? false),
+                      onCheckChanged: (v) => store.setUnlocked('letter', l.id, v),
                       onTap: () => store.toggle('letter', l.id),
                     );
                   }).toList(),

@@ -4,70 +4,70 @@
     "name": "Taiyaki",
     "sections": ["Freshly Made"],
     "description": "A favorite of cats.",
-    "time_s": 2,
-    "earnings_max": 3300,
-    "requirement": "",
-    "cost": "Free"
+    "timeSeconds": 2,
+    "earningsMax": 3300,
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 0 }]
   },
   {
     "id": "seaweed_rice_ball",
     "name": "Seaweed Rice Ball",
     "sections": ["Freshly Made"],
     "description": "Keepin' it simple!",
-    "time_s": 3,
-    "earnings_max": 3400,
-    "requirement": "",
-    "cost": "Free"
+    "timeSeconds": 3,
+    "earningsMax": 3400,
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 0 }]
   },
   {
     "id": "purple_sweet_potato_bun",
     "name": "Purple Sweet Potato Bun",
     "sections": ["Freshly Made"],
     "description": "Sweet potato is very good for you.",
-    "time_s": 4,
-    "earnings_max": 3500,
-    "requirement": "400★",
-    "cost": "400 Cod"
+    "timeSeconds": 4,
+    "earningsMax": 3500,
+    "requirementsStars": 400,
+    "price": [{ "currency": "cod", "amount": 400 }]
   },
   {
     "id": "americano",
     "name": "Americano",
     "sections": ["Freshly Made"],
     "description": "Espresso with water.",
-    "time_s": 6,
-    "earnings_max": 3800,
-    "requirement": "15★",
-    "cost": "900 Cod"
+    "timeSeconds": 6,
+    "earningsMax": 3800,
+    "requirementsStars": 15,
+    "price": [{ "currency": "cod", "amount": 900 }]
   },
   {
     "id": "steamed_clams",
     "name": "Steamed Clams",
     "sections": ["Freshly Made"],
     "description": "Found all over the stream. Steam them a bit and they'll be bursting with flavor!",
-    "time_s": 8,
-    "earnings_max": 3900,
-    "requirement": "25★",
-    "cost": "1000 Cod"
+    "timeSeconds": 8,
+    "earningsMax": 3900,
+    "requirementsStars": 25,
+    "price": [{ "currency": "cod", "amount": 1000 }]
   },
   {
     "id": "adzuki_bean_dumpling",
     "name": "Adzuki Bean Dumpling",
     "sections": ["Freshly Made"],
     "description": "The chickens' hometown always adds adzuki bean to their dumplings.",
-    "time_s": 10,
-    "earnings_max": 4000,
-    "requirement": "40★",
-    "cost": "1100 Cod"
+    "timeSeconds": 10,
+    "earningsMax": 4000,
+    "requirementsStars": 40,
+    "price": [{ "currency": "cod", "amount": 1100 }]
   },
   {
     "id": "bagel",
     "name": "Bagel",
     "sections": ["Freshly Made"],
     "description": "The pure taste of wheat goes with anything!",
-    "time_s": 12,
-    "earnings_max": 800,
-    "requirement": "60★",
-    "cost": "2500 Cod"
+    "timeSeconds": 12,
+    "earningsMax": 800,
+    "requirementsStars": 60,
+    "price": [{ "currency": "cod", "amount": 2500 }]
   },
 
   {
@@ -75,54 +75,54 @@
     "name": "Strawberry Daifuku",
     "sections": ["Buffet"],
     "description": "Round and sticky. Oh, it's also mildly sweet!",
-    "earnings_per_hour": "+3,000/h",
-    "requirement": "",
-    "cost": "Free"
+    "earningsPerHour": 3000,
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 0 }]
   },
   {
     "id": "soymilk",
     "name": "Soymilk",
     "sections": ["Buffet"],
     "description": "It only takes 30 seconds from milk production to processing.",
-    "earnings_per_hour": "+3,100/h",
-    "requirement": "50★",
-    "cost": "50 Plates"
+    "earningsPerHour": 3100,
+    "requirementsStars": 50,
+    "price": [{ "currency": "plates", "amount": 50 }]
   },
   {
     "id": "sushi_roll",
     "name": "Sushi Roll",
     "sections": ["Buffet"],
     "description": "You can get really full from eating sushi!",
-    "earnings_per_hour": "+3,200/h",
-    "requirement": "100★",
-    "cost": "100 Plates"
+    "earningsPerHour": 3200,
+    "requirementsStars": 100,
+    "price": [{ "currency": "plates", "amount": 100 }]
   },
   {
     "id": "sea_urchin_sushi",
     "name": "Sea Urchin Sushi",
     "sections": ["Buffet"],
     "description": "I smell a faint ocean scent.",
-    "earnings_per_hour": "+3,300/h",
-    "requirement": "2000★",
-    "cost": "200 Plates"
+    "earningsPerHour": 3300,
+    "requirementsStars": 2000,
+    "price": [{ "currency": "plates", "amount": 200 }]
   },
   {
     "id": "conveyor_sushi_roll",
     "name": "Conveyor Sushi Roll",
     "sections": ["Buffet"],
     "description": "Handmade food imbued with the spirit of craftsmanship.",
-    "earnings_per_hour": "+3,400/h",
-    "requirement": "2200★",
-    "cost": "300 Plates"
+    "earningsPerHour": 3400,
+    "requirementsStars": 2200,
+    "price": [{ "currency": "plates", "amount": 300 }]
   },
   {
     "id": "eel_sushi",
     "name": "Eel Sushi",
     "sections": ["Buffet"],
     "description": "A masterpiece made of eel and plenty of rice.",
-    "earnings_per_hour": "+3,500/h",
-    "requirement": "2400★",
-    "cost": "400 Plates"
+    "earningsPerHour": 3500,
+    "requirementsStars": 2400,
+    "price": [{ "currency": "plates", "amount": 400 }]
   },
 
   {
@@ -130,27 +130,45 @@
     "name": "Teddy Biscuit",
     "sections": ["Takeout"],
     "description": "Bite-sized crackers that are perfect for children.",
-    "earnings_range": "+14~56",
-    "requirement": "C: 3,500★ + 1,000 Cod | B: 100 Likes + 10,000 Cod | A: 20,000★ + 30,000 Cod | S: 1,000 Likes + 1,000,000 Cod",
-    "cost": "Variable"
+    "earningsRange": { "min": 14, "max": 56 },
+    "requirementsStars": 0,
+    "price": [],
+    "tiers": [
+      { "tier": "C", "requirementsStars": 3500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1000 }] },
+      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 100, "price": [{ "currency": "cod", "amount": 10000 }] },
+      { "tier": "A", "requirementsStars": 20000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 30000 }] },
+      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 1000, "price": [{ "currency": "cod", "amount": 1000000 }] }
+    ]
   },
   {
     "id": "fresh_milk",
     "name": "Fresh Milk",
     "sections": ["Takeout"],
     "description": "Fresh and healthy milk from a quality source.",
-    "earnings_range": "+15~60",
-    "requirement": "C: 3,800★ + 20,000 Cod | B: 100 Likes + 120,000 Cod | A: 520★ + 350,000 Cod | S: 52,000 Likes + 1,100,000 Cod",
-    "cost": "Variable"
+    "earningsRange": { "min": 15, "max": 60 },
+    "requirementsStars": 0,
+    "price": [],
+    "tiers": [
+      { "tier": "C", "requirementsStars": 3800, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 20000 }] },
+      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 100, "price": [{ "currency": "cod", "amount": 120000 }] },
+      { "tier": "A", "requirementsStars": 520, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 350000 }] },
+      { "tier": "S", "requirementsStars": 52000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1100000 }] }
+    ]
   },
   {
     "id": "strawberry_cone",
     "name": "Strawberry Cone",
     "sections": ["Takeout"],
     "description": "A crispy cone filled with sweet and tart strawberry ice cream that is too wonderful for words.",
-    "earnings_range": "+17~64",
-    "requirement": "C: 4,100★ + 30,000 Cod | B: 11,500 Likes + 140,000 Cod | A: 22,000★ + 400,000 Cod | S: 1,200 Likes + 1,200,000 Cod",
-    "cost": "Variable"
+    "earningsRange": { "min": 17, "max": 64 },
+    "requirementsStars": 0,
+    "price": [],
+    "tiers": [
+      { "tier": "C", "requirementsStars": 4100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 30000 }] },
+      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 11500, "price": [{ "currency": "cod", "amount": 140000 }] },
+      { "tier": "A", "requirementsStars": 22000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 400000 }] },
+      { "tier": "S", "requirementsStars": 1200, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1200000 }] }
+    ]
   },
 
   {
@@ -158,43 +176,64 @@
     "name": "Tomatoes in Mashed Potatoes",
     "sections": ["Food Truck Recipes"],
     "description": "Soft and creamy, sweet and sour... This dish simply melts in the mouth.",
-    "refined_rating": 350,
-    "ingredients": "Potato (6); Tomato (4)",
-    "perfect_dishes": 35,
-    "prep_time_s": 26,
-    "flavor": "Sour"
+    "refinedRating": 350,
+    "ingredients": [
+      { "item": "Potato", "amount": 6 },
+      { "item": "Tomato", "amount": 4 }
+    ],
+    "perfectDishes": 35,
+    "prepTimeSeconds": 26,
+    "flavor": "Sour",
+    "requirementsStars": 0,
+    "price": []
   },
   {
     "id": "tofu_pudding",
     "name": "Tofu Pudding in Sweet Rice Wine",
     "sections": ["Food Truck Recipes"],
     "description": "The flavor of Jiangnan all in one bowl.",
-    "refined_rating": 250,
-    "ingredients": "Soybean (4); Rice (8)",
-    "perfect_dishes": 15,
-    "prep_time_s": 24,
-    "flavor": "Sweet"
+    "refinedRating": 250,
+    "ingredients": [
+      { "item": "Soybean", "amount": 4 },
+      { "item": "Rice", "amount": 8 }
+    ],
+    "perfectDishes": 15,
+    "prepTimeSeconds": 24,
+    "flavor": "Sweet",
+    "requirementsStars": 0,
+    "price": []
   },
   {
     "id": "mushroom_fried_rice",
     "name": "Mushroom Fried Rice",
     "sections": ["Food Truck Recipes"],
     "description": "This dish of juicy mushrooms and fragrant rice will leave you begging for more!",
-    "refined_rating": 400,
-    "ingredients": "Rice (8); Mushroom (5); Corn (3)",
-    "perfect_dishes": 35,
-    "prep_time_s": 42,
-    "flavor": "Salty"
+    "refinedRating": 400,
+    "ingredients": [
+      { "item": "Rice", "amount": 8 },
+      { "item": "Mushroom", "amount": 5 },
+      { "item": "Corn", "amount": 3 }
+    ],
+    "perfectDishes": 35,
+    "prepTimeSeconds": 42,
+    "flavor": "Salty",
+    "requirementsStars": 0,
+    "price": []
   },
   {
     "id": "kitty_crepe",
     "name": "Kitty Crepe",
     "sections": ["Food Truck Recipes"],
     "description": "Gear up for a new gustatory experience with this fluffy crepe and chilled strawberry mochi combination!",
-    "refined_rating": 150,
-    "ingredients": "Wheat (4); Rice (3)",
-    "perfect_dishes": 10,
-    "prep_time_s": 24,
-    "flavor": "Sweet"
+    "refinedRating": 150,
+    "ingredients": [
+      { "item": "Wheat", "amount": 4 },
+      { "item": "Rice", "amount": 3 }
+    ],
+    "perfectDishes": 10,
+    "prepTimeSeconds": 24,
+    "flavor": "Sweet",
+    "requirementsStars": 0,
+    "price": []
   }
 ]
