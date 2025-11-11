@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 import 'package:animal_restaurant_tracker/features/bank/ui/bank_page.dart';
-import 'package:animal_restaurant_tracker/features/facilities/model/data/facilities_repository.dart';
+import 'package:animal_restaurant_tracker/features/facilities/data/facilities_repository.dart' as facrepo;
 
 import '../../features/search/data/search_index.dart';
 import '../../features/shared/data/unlocked_store.dart';
@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
         break;
 
       case HitType.facility:
-        final f = await FacilitiesRepository.instance.byId(h.id);
+        final f = await facrepo.FacilitiesRepository.instance.byId(h.id);
         if (f == null || !mounted) return;
         Navigator.of(context).push(
           MaterialPageRoute(builder: (_) => facdetail.FacilityDetailPage(facility: f)),

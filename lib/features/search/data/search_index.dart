@@ -1,6 +1,6 @@
 // ignore_for_file: unused_import
 
-import 'package:animal_restaurant_tracker/features/facilities/model/data/facilities_repository.dart';
+import 'package:animal_restaurant_tracker/features/facilities/data/facilities_repository.dart' as facrepo;
 import 'package:flutter/foundation.dart';
 
 import '../../customers/data/customers_repository.dart';
@@ -37,7 +37,7 @@ class SearchIndex {
     _customers ??= await CustomersRepository.instance.all();
     _letters ??= await LettersRepository.instance.all();
     try { _dishes ??= await DishesRepository.instance.all(); } catch (_) {}
-    try { _facilities ??= await FacilitiesRepository.instance.all(); } catch (_) {}
+    try { _facilities ??= await facrepo.FacilitiesRepository.instance.all(); } catch (_) {}
   }
 
   Future<List<SearchHit>> search(String query) async {

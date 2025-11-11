@@ -4,5 +4,174 @@
     "name": "White Bunny – Letter 1",
     "series": "White Bunny",
     "unlockRequirement": "Unlock White Bunny"
+  },
+  {
+    "id": "story_100k_fans_commemoration",
+    "name": "100,000 Fans Commemoration",
+    "category": "Story Letters",
+    "combinations": [
+      { "slot1": "Red Rose", "slot2": "*", "slot3": "*" },
+      { "slot1": "Red Rose", "slot2": "Sunflower", "slot3": "Bluebell" },
+      { "slot1": "Red Rose", "slot2": "Bluebell", "slot3": "White Rose" },
+      { "slot1": "Red Rose", "slot2": "Daisy", "slot3": "Iron Can" },
+      { "slot1": "Red Rose", "slot2": "Bluebell", "slot3": "Gold Can" },
+      { "slot1": "Red Rose", "slot2": "Gold Can", "slot3": "Seed" },
+      { "slot1": "Daisy", "slot2": "Daisy", "slot3": "Daisy" }
+    ],
+    "bonus": 60,
+    "unlocks": ["Lucky's Letter"],
+    "prerequisite": null,
+    "tags": ["story_letter"],
+    "notes": "Players received this letter in celebration of 100,000 fans on Facebook."
+  },
+  {
+    "id": "alice_storybook_1",
+    "name": "Alice's Storybook 1",
+    "category": "Alice's Storybooks",
+    "combinations": [
+      { "slot1": "Bluebell", "slot2": "Gold Can", "slot3": "*" },
+      { "slot1": "Red Rose", "slot2": "Gold Can", "slot3": "Seed" },
+      { "slot1": "Bluebell", "slot2": "Gold Can", "slot3": "Seed" },
+      { "slot1": "Bluebell", "slot2": "Gold Can", "slot3": "Red Rose" },
+      { "slot1": "Bluebell", "slot2": "Gold Can", "slot3": "Gold Can" }
+    ],
+    "bonus": 90,
+    "unlocks": ["Blue Folding Curtain", "Dreams of Tattered Leaves"],
+    "prerequisite": null,
+    "tags": ["story_letter"]
+  },
+  {
+    "id": "alice_storybook_2",
+    "name": "Alice's Storybook 2",
+    "category": "Alice's Storybooks",
+    "combinations": [
+      { "slot1": "Sunflower", "slot2": "Red Rose", "slot3": "White Rose" }
+    ],
+    "bonus": 140,
+    "unlocks": ["Candy Hearts Cabinet"],
+    "prerequisite": "Cheshire Cat",
+    "tags": ["story_letter"]
+  },
+  {
+    "id": "alicia_letter",
+    "name": "Alicia's Letter",
+    "category": "Alicia's Letter",
+    "combinations": [
+      { "slot1": "Red Rose", "slot2": "White Rose", "slot3": "*" }
+    ],
+    "bonus": 25,
+    "unlocks": [],
+    "prerequisite": "Alicia",
+    "tags": ["story_letter"]
+  },
+  {
+    "id": "alien_secrets_meery_diary",
+    "name": "Meery's Diary",
+    "category": "Alien Secrets",
+    "combinations": [
+      { "slot1": "Daisy", "slot2": "Copper Can", "slot3": "*" }
+    ],
+    "bonus": 35,
+    "unlocks": ["Squiddy's Message"],
+    "prerequisite": "Meery",
+    "tags": ["story_letter"]
+  },
+  {
+    "id": "alien_secrets_squiddy_message",
+    "name": "Squiddy's Message",
+    "category": "Alien Secrets",
+    "combinations": [
+      { "slot1": "Sunflower", "slot2": "Daisy", "slot3": "*" }
+    ],
+    "bonus": 25,
+    "unlocks": [],
+    "prerequisite": "Squiddy, Meery's Diary",
+    "tags": ["story_letter"]
+  },
+  {
+    "id": "anniversary_celebration_1",
+    "name": "Anniversary Celebration 1",
+    "category": "Anniversary Event",
+    "anyCombination": true,
+    "bonus": 10,
+    "unlocks": [],
+    "prerequisite": null,
+    "tags": ["anniversary_event_letter"]
+  },
+  {
+    "id": "staff_retreat",
+    "name": "Staff Retreat",
+    "category": "Anniversary Event",
+    "combinations": [
+      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "*" },
+      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Sunflower" },
+      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Bluebell" },
+      { "slot1": "Sunflower", "slot2": "Red Rose", "slot3": "Bluebell" }
+    ],
+    "bonus": 18,
+    "unlocks": [],
+    "prerequisite": null,
+    "tags": ["anniversary_event_letter"]
+  },
+  {
+    "id": "staff_retreat_2021",
+    "name": "2021 Staff Retreat",
+    "category": "Anniversary Event",
+    "combinations": [
+      { "slot1": "Daisy", "slot2": "Bluebell", "slot3": "*" }
+    ],
+    "bonus": 20,
+    "unlocks": [],
+    "prerequisite": "Higher probability during Anniversary Event",
+    "tags": ["anniversary_event_letter"]
+  },
+  {
+    "id": "staff_retreat_2022",
+    "name": "2022 Staff Retreat",
+    "category": "Anniversary Event",
+    "combinations": [
+      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Bluebell" },
+      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "*" }
+    ],
+    "bonus": 18,
+    "unlocks": [],
+    "prerequisite": "Higher probability during Anniversary Event",
+    "tags": ["anniversary_event_letter"]
+  },
+  {
+    "id": "staff_retreat_2023",
+    "name": "2023 Staff Retreat",
+    "category": "Anniversary Event",
+    "combinations": [
+      { "slot1": "White Rose", "slot2": "*", "slot3": "*" }
+    ],
+    "bonus": 22,
+    "unlocks": [],
+    "prerequisite": "Higher probability during Anniversary Event",
+    "tags": ["anniversary_event_letter"]
+  },
+  {
+    "id": "staff_retreat_2024",
+    "name": "2024 Staff Retreat",
+    "category": "Anniversary Event",
+    "combinations": [
+      { "slot1": "White Rose", "slot2": "Gold Can", "slot3": "*" }
+    ],
+    "bonus": 25,
+    "unlocks": [],
+    "prerequisite": "Higher probability during Anniversary Event",
+    "tags": ["anniversary_event_letter"]
+  },
+  {
+    "id": "fifth_anniversary_photo",
+    "name": "5th Anniversary Photo",
+    "category": "Anniversary Event",
+    "combinations": [
+      { "slot1": "Sunflower", "slot2": "Copper Can", "slot3": "*" }
+    ],
+    "bonus": null,
+    "unlocks": [],
+    "prerequisite": "Higher probability during Anniversary Event",
+    "tags": ["anniversary_event_letter"]
   }
 ]

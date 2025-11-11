@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_is_not_operator
+
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import '../model/facility.dart';

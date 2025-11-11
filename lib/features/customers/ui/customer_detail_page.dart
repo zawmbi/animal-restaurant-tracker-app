@@ -60,7 +60,7 @@ class CustomerDetailPage extends StatelessWidget {
           // Required Food
           if (requiredFood != null) _dishBlock(
             context: context,
-            title: 'Favorite / Required Dish',
+            title: 'Required Dish(s)',
             items: [requiredFood],
           ),
 
@@ -69,7 +69,7 @@ class CustomerDetailPage extends StatelessWidget {
             const SizedBox(height: 16),
             _dishBlock(
               context: context,
-              title: 'Often Orders',
+              title: 'All Possible Orders',
               items: ordered,
             ),
           ],
