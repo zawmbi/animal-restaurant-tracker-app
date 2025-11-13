@@ -3,7 +3,7 @@
     "id": "taiyaki",
     "name": "Taiyaki",
     "sections": ["Freshly Made"],
-    "description": "A favorite of cats.",
+    "description": "A favorite of cats",
     "timeSeconds": 2,
     "earningsMax": 3300,
     "requirementsStars": 0,

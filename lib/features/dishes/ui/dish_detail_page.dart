@@ -3,6 +3,11 @@ import '../data/dishes_repository.dart';
 import '../model/dish.dart';
 import '../../shared/data/unlocked_store.dart';
 
+// NEW: to link dishes ↔ customers
+import '../../customers/data/customers_repository.dart';
+import '../../customers/model/customer.dart';
+import '../../customers/ui/customer_detail_page.dart';
+
 class DishDetailPage extends StatelessWidget {
   const DishDetailPage({super.key, required this.dishId});
 
@@ -138,7 +143,120 @@ class _FreshDishDetailBody extends StatelessWidget {
         // ---------- Placeholder for other sections ----------
         if (!isFreshlyMade)
           const Text('Details for other recipe types coming soon.'),
+
+        const SizedBox(height: 16),
+
+        // ---------- NEW: customer sections ----------
+        _buildCustomerSections(context),
       ],
+    );
+  }
+
+  // ---------- NEW: "Required for" + "Can order" ----------
+  Widget _buildCustomerSections(BuildContext context) {
+    return FutureBuilder<List<Customer>>(
+      future: CustomersRepository.instance.all(),
+      builder: (context, snap) {
+        if (!snap.hasData) {
+          return const SizedBox.shrink();
+        }
+
+        final customers = snap.data!;
+        final dishIdLower = dish.id.toLowerCase();
+        final dishNameLower = dish.name.toLowerCase();
+
+        // Customers that REQUIRE this dish (requiredFoodId or requirements.recipes)
+        final requiredFor = customers.where((c) {
+          final requiredFood = c.requiredFoodId?.toLowerCase();
+          final recipesReq = c.requirements?.recipes ?? const [];
+          final recipesReqLower =
+              recipesReq.map((r) => r.toLowerCase()).toList();
+
+          final byRequiredFood =
+              requiredFood == dishIdLower || requiredFood == dishNameLower;
+          final byRecipes = recipesReqLower.contains(dishIdLower) ||
+              recipesReqLower.contains(dishNameLower);
+
+          return byRequiredFood || byRecipes;
+        }).toList();
+
+        // Customers who can order this dish
+        final canOrder = customers.where((c) {
+          final orderedLower =
+              c.dishesOrderedIds.map((d) => d.toLowerCase()).toList();
+          return orderedLower.contains(dishIdLower) ||
+              orderedLower.contains(dishNameLower);
+        }).toList();
+
+        if (requiredFor.isEmpty && canOrder.isEmpty) {
+          return const SizedBox.shrink();
+        }
+
+        final theme = Theme.of(context);
+        final children = <Widget>[];
+
+        if (requiredFor.isNotEmpty) {
+          children.addAll([
+            Text(
+              'Required for',
+              style: theme.textTheme.titleMedium,
+            ),
+            const SizedBox(height: 4),
+            Wrap(
+              spacing: 6,
+              runSpacing: 4,
+              children: requiredFor
+                  .map(
+                    (c) => ActionChip(
+                      label: Text(c.name),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => CustomerDetailPage(customer: c),
+                          ),
+                        );
+                      },
+                    ),
+                  )
+                  .toList(),
+            ),
+            const SizedBox(height: 16),
+          ]);
+        }
+
+        if (canOrder.isNotEmpty) {
+          children.addAll([
+            Text(
+              'Customers who can order this dish',
+              style: theme.textTheme.titleMedium,
+            ),
+            const SizedBox(height: 4),
+            Wrap(
+              spacing: 6,
+              runSpacing: 4,
+              children: canOrder
+                  .map(
+                    (c) => ActionChip(
+                      label: Text(c.name),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => CustomerDetailPage(customer: c),
+                          ),
+                        );
+                      },
+                    ),
+                  )
+                  .toList(),
+            ),
+          ]);
+        }
+
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: children,
+        );
+      },
     );
   }
 

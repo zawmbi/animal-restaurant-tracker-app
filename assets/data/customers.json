@@ -73,7 +73,7 @@
   {
     "id": "deer",
     "name": "Deer",
-    "tags": ["customer", "restaurant", "very_common", "nearby", "picky", "big_spender"],
+    "tags": ["customer", "restaurant", "very_common", "nearby", "big_spender"],
     "livesIn": "Nearby",
     "appearanceWeight": 9585,
     "requiredFoodId": null,
@@ -110,21 +110,44 @@
     "mementos": []
   },
 
-  {
+ {
   "id": "white_shiba",
   "name": "White Shiba",
   "tags": ["customer", "restaurant", "rare", "dog"],
-  "livesIn": "Nearby",
-  "appearanceWeight": 500,
+  "livesIn": "Village",
+  "appearanceWeight": 3921,
+
   "requiredFoodId": null,
-  "dishesOrderedIds": ["taiyaki", "coffee"],
-  "customerDescription": "A well-behaved white Shiba that loves cozy spaces.",
+
+  "dishesOrderedIds": [
+    "mushroom_pasta",
+    "kimbap",
+    "shaved_ice",
+    "scrambled_eggs_and_tomatoes",
+    "fragrant_flower_pastry"
+  ],
+
+  "customerDescription": "White, chubby foodies that only like sweets.",
+
   "requirements": {
+    "rating": 920,
     "letters": ["white_shiba_intro_letter"],
-    "facilities": ["dog_bed", "cozy_corner"],
-    "recipes": ["taiyaki", "coffee"],
+    "facilities": [],
+    "recipes": [],
     "flowers": ["white_rose"]
   },
-  "mementos": []
+
+  "mementos": [
+    {
+      "id": "kibble",
+      "name": "Kibble",
+      "stars": 10,
+      "description": "Crunchy dog food.",
+      "requirement": "Serve White Shiba 500 times.",
+      "tags": ["customer_gift"],
+      "source": "customer_gift"
+    }
+  ]
 }
+
 ]
