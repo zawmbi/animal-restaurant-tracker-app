@@ -31,12 +31,6 @@ dependencies:
   flutter:
     sdk: flutter
   auto_size_text: ^3.0.0
-  # Firebase for auth and cloud sync
-  firebase_core: ^2.24.2
-  firebase_auth: ^4.16.0
-  cloud_firestore: ^4.15.9
-  google_sign_in: ^6.2.1
-  sign_in_with_apple: ^6.1.0
   shared_preferences: ^2.2.2
 
   # The following adds the Cupertino Icons font to your application.
@@ -79,6 +73,8 @@ flutter:
   - assets/data/facilities_jsons/takeout_facilities.json
   - assets/data/facilities_jsons/terrace_facilities.json
   - assets/data/facilities_jsons/courtyard_facilities.json
+  # - assets/data/facilities.json       
+  - assets/data/facilities_jsons/      
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -25,6 +25,6 @@ class CustomersRepository {
 
   Future<List<Customer>> withTag(String tag) async {
     final list = await all();
-    return list.where((c) => c.hasTag(tag)).toList();
+  return list.where((c) => c.tags.contains(tag)).toList();
   }
 }

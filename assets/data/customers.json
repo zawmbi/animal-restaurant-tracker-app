@@ -8,6 +8,9 @@
     "requiredFoodId": "Taiyaki",
     "dishesOrderedIds": ["taiyaki"],
     "customerDescription": "Little white bunny, ever so white; with two pointy ears, that stand upright.",
+    "requirements": {
+      "recipes": ["taiyaki"]      
+    },
     "mementos": [
       {
         "id": "purse",
@@ -38,12 +41,13 @@
   {
     "id": "brown_bunny",
     "name": "Brown Bunny",
-    "tags": ["customer", "restaurant", "very_common", "nearby", "no_requirements","test"],
+    "tags": ["customer", "restaurant", "very_common", "nearby", "no_requirements", "test"],
     "livesIn": "Nearby",
     "appearanceWeight": 9836,
     "requiredFoodId": null,
     "dishesOrderedIds": ["Seaweed Rice Ball", "Purple Sweet Potato Bun"],
     "customerDescription": "Common wild rabbits that are good at digging holes.",
+    "requirements": {},            
     "mementos": [
       {
         "id": "carrot_cellphone",
@@ -75,6 +79,9 @@
     "requiredFoodId": null,
     "dishesOrderedIds": ["Seaweed Rice Ball", "Purple Sweet Potato Bun", "Americano"],
     "customerDescription": "The most common deer in the area. I wonder when they'll get those spots on their brown fur? Picky: Rating must reach 9. Ability — Big Spender: Has a 5% chance to give x8 the amount of Cod.",
+    "requirements": {
+      "facilities": ["star_rating_board"]   
+    },
     "mementos": [
       {
         "id": "deers_cracker",
@@ -87,7 +94,6 @@
       }
     ]
   },
-
   {
     "id": "gloomy",
     "name": "Gloomy",
@@ -97,6 +103,28 @@
     "requiredFoodId": null,
     "dishesOrderedIds": ["Banana Boat", "Blueberry Pancake", "Cold Watermelon", "Log Cake", "Raspberry Yogurt", "Pineapple Rice", "Planet Cake"],
     "customerDescription": "",
+    "requirements": {
+      "letters": ["halloween_invitation"],
+      "facilities": ["halloween_decorations"]
+    },
     "mementos": []
-  }
+  },
+
+  {
+  "id": "white_shiba",
+  "name": "White Shiba",
+  "tags": ["customer", "restaurant", "rare", "dog"],
+  "livesIn": "Nearby",
+  "appearanceWeight": 500,
+  "requiredFoodId": null,
+  "dishesOrderedIds": ["taiyaki", "coffee"],
+  "customerDescription": "A well-behaved white Shiba that loves cozy spaces.",
+  "requirements": {
+    "letters": ["white_shiba_intro_letter"],
+    "facilities": ["dog_bed", "cozy_corner"],
+    "recipes": ["taiyaki", "coffee"],
+    "flowers": ["white_rose"]
+  },
+  "mementos": []
+}
 ]

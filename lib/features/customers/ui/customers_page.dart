@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../data/customers_repository.dart';
 import '../model/customer.dart';
-import 'customer_detail_page.dart';
+import '../ui/customer_detail_page.dart';
 import '../../search/ui/global_search_page.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 

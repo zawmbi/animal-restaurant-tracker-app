@@ -5,6 +5,7 @@ import '../../shared/data/unlocked_store.dart';
 
 class DishDetailPage extends StatelessWidget {
   const DishDetailPage({super.key, required this.dishId});
+
   final String dishId;
 
   @override
@@ -22,8 +23,10 @@ class DishDetailPage extends StatelessWidget {
           }
           if (snap.hasError) {
             return Center(
-              child: Text('Failed to load recipe:\n${snap.error}',
-                  textAlign: TextAlign.center),
+              child: Text(
+                'Failed to load recipe:\n${snap.error}',
+                textAlign: TextAlign.center,
+              ),
             );
           }
 
@@ -35,7 +38,8 @@ class DishDetailPage extends StatelessWidget {
           // Rebuild details when unlock state changes so the checkbox updates.
           return AnimatedBuilder(
             animation: store,
-            builder: (context, _) => _FreshDishDetailBody(dish: dish, store: store),
+            builder: (context, _) =>
+                _FreshDishDetailBody(dish: dish, store: store),
           );
         },
       ),
@@ -45,6 +49,7 @@ class DishDetailPage extends StatelessWidget {
 
 class _FreshDishDetailBody extends StatelessWidget {
   const _FreshDishDetailBody({required this.dish, required this.store});
+
   final Dish dish;
   final UnlockedStore store;
 
@@ -72,7 +77,8 @@ class _FreshDishDetailBody extends StatelessWidget {
             ),
             Checkbox(
               value: checked,
-              onChanged: (v) => store.setUnlocked('dish', dish.id, v ?? false),
+              onChanged: (v) =>
+                  store.setUnlocked('dish', dish.id, v ?? false),
             ),
           ],
         ),
@@ -80,8 +86,10 @@ class _FreshDishDetailBody extends StatelessWidget {
 
         // ---------- Description ----------
         if (dish.description.isNotEmpty)
-          Text(dish.description,
-              style: Theme.of(context).textTheme.bodyMedium),
+          Text(
+            dish.description,
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
         const SizedBox(height: 16),
 
         // ---------- Freshly Made Details ----------
@@ -96,20 +104,32 @@ class _FreshDishDetailBody extends StatelessWidget {
                   if (dish.description.isNotEmpty)
                     _infoRow(context, 'Description', dish.description),
                   if (dish.timeSeconds != null)
-                    _infoRow(context, 'Time to cook',
-                        _formatSeconds(dish.timeSeconds!)),
-                  if (dish.earningsMax != null)
-                    _infoRow(context, 'Earnings per dish (Cod)',
-                        '🐟 ${_formatNumber(dish.earningsMax!)}'),
-                  _infoRow(
+                    _infoRow(
                       context,
-                      'Star requirement',
-                      dish.requirementsStars != null &&
-                              dish.requirementsStars! > 0
-                          ? '${dish.requirementsStars}★'
-                          : '—'),
-                  _infoRow(context, 'Cost of the recipe (Cod)',
-                      _firstCodCost(dish.price) ?? dish.costText ?? 'Free'),
+                      'Time to cook',
+                      _formatSeconds(dish.timeSeconds!),
+                    ),
+                  if (dish.earningsMax != null)
+                    _infoRow(
+                      context,
+                      'Earnings per dish (Cod)',
+                      '🐟 ${_formatNumber(dish.earningsMax!)}',
+                    ),
+                  _infoRow(
+                    context,
+                    'Star requirement',
+                    dish.requirementsStars != null &&
+                            dish.requirementsStars! > 0
+                        ? '${dish.requirementsStars}★'
+                        : '—',
+                  ),
+                  _infoRow(
+                    context,
+                    'Cost of the recipe (Cod)',
+                    _firstCodCost(dish.price) ??
+                        dish.costText ??
+                        'Free',
+                  ),
                 ],
               ),
             ),
@@ -129,9 +149,13 @@ class _FreshDishDetailBody extends StatelessWidget {
       child: Row(
         children: [
           Expanded(child: Text(label)),
-          Text(value,
-              style:
-                  const TextStyle(fontWeight: FontWeight.w600, fontSize: 15)),
+          Text(
+            value,
+            style: const TextStyle(
+              fontWeight: FontWeight.w600,
+              fontSize: 15,
+            ),
+          ),
         ],
       ),
     );
@@ -158,9 +182,10 @@ class _FreshDishDetailBody extends StatelessWidget {
 
   String? _firstCodCost(List<Price>? prices) {
     if (prices == null || prices.isEmpty) return null;
-    final codPrice =
-        prices.firstWhere((p) => p.currency.toLowerCase() == 'cod',
-            orElse: () => prices.first);
+    final codPrice = prices.firstWhere(
+      (p) => p.currency.toLowerCase() == 'cod',
+      orElse: () => prices.first,
+    );
     return '🐟 ${_formatNumber(codPrice.amount)}';
   }
 }
