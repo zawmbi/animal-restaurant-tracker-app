@@ -11,15 +11,20 @@ class CustomerRequirements {
   final List<String> customers;
   final List<String> flowers;
 
+  /// Restaurant rating requirement (e.g. 920 for White Shiba).
+  final int? rating;
+
   const CustomerRequirements({
     this.letters = const [],
     this.facilities = const [],
     this.recipes = const [],
     this.customers = const [],
     this.flowers = const [],
+    this.rating,
   });
 
   bool get hasAny =>
+      (rating != null && rating! > 0) ||
       letters.isNotEmpty ||
       facilities.isNotEmpty ||
       recipes.isNotEmpty ||
@@ -38,11 +43,13 @@ class CustomerRequirements {
       recipes: _asStringList(json['recipes']),
       customers: _asStringList(json['customers']),
       flowers: _asStringList(json['flowers']),
+      rating: (json['rating'] as num?)?.toInt(),
     );
   }
 
   Map<String, dynamic> toJson() {
     final map = <String, dynamic>{};
+    if (rating != null && rating! > 0) map['rating'] = rating;
     if (letters.isNotEmpty) map['letters'] = letters;
     if (facilities.isNotEmpty) map['facilities'] = facilities;
     if (recipes.isNotEmpty) map['recipes'] = recipes;
@@ -63,7 +70,7 @@ class Customer {
   final String customerDescription;
   final List<Memento> mementos;
 
-  /// New field: optional requirements for this customer.
+  /// Optional requirements for this customer.
   final CustomerRequirements? requirements;
 
   const Customer({
@@ -78,6 +85,9 @@ class Customer {
     required this.mementos,
     this.requirements,
   });
+
+  /// Helper used by repositories / filters.
+  bool hasTag(String tag) => tags.contains(tag);
 
   factory Customer.fromJson(Map<String, dynamic> json) {
     List<String> _asStringList(dynamic value) {
