@@ -54,6 +54,8 @@ class BankConfig {
   static const String tipJarFacilityId = 'tip_jar';
   static const String terraceFacilityId = 'terrace';
   static const String courtyardFacilityId = 'courtyard';
+  static const String buffetFacilityId = 'buffet';
+
 }
 
 class BankService {

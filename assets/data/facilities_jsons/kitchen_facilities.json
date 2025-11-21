@@ -1,0 +1,186 @@
+[
+  {
+    "id": "stove1_small_stone",
+    "name": "Small Stone Stove",
+    "area": "kitchen",
+    "group": "Stove 1",
+    "description": "The ancestors' way of cooking food",
+    "requirementsStars": 0,
+    "price": [{ "currency": "cod", "amount": 150 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 5 },
+      { "type": "cookingEfficiencyBonus", "amount": 5 }
+    ],
+    "series": "Log Scenery"
+  },
+
+  {
+    "id": "stove1_advanced",
+    "name": "Advanced Stove",
+    "area": "kitchen",
+    "group": "Stove 1",
+    "description": "More functions and more convenience!",
+    "requirementsStars": 1050,
+    "price": [{ "currency": "cod", "amount": 240000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 10 },
+      { "type": "cookingEfficiencyBonus", "amount": 15 }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "stove2_advanced",
+    "name": "Advanced Stove",
+    "area": "kitchen",
+    "group": "Stove 2",
+    "description": "More functions and more convenience!",
+    "requirementsStars": 1100,
+    "price": [{ "currency": "cod", "amount": 260000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 10 },
+      { "type": "cookingEfficiencyBonus", "amount": 15 }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "stove3_advanced",
+    "name": "Advanced Stove",
+    "area": "kitchen",
+    "group": "Stove 3",
+    "description": "More functions and more convenience!",
+    "requirementsStars": 1150,
+    "price": [{ "currency": "cod", "amount": 280000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 10 },
+      { "type": "cookingEfficiencyBonus", "amount": 15 }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "stove4_advanced",
+    "name": "Advanced Stove",
+    "area": "kitchen",
+    "group": "Stove 4",
+    "description": "More functions and more convenience!",
+    "requirementsStars": 1200,
+    "price": [{ "currency": "cod", "amount": 300000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 10 },
+      { "type": "cookingEfficiencyBonus", "amount": 15 }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "stove5_advanced",
+    "name": "Advanced Stove",
+    "area": "kitchen",
+    "group": "Stove 5",
+    "description": "More functions and more convenience!",
+    "requirementsStars": 1250,
+    "price": [{ "currency": "cod", "amount": 320000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 10 },
+      { "type": "cookingEfficiencyBonus", "amount": 15 }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "stove6_advanced",
+    "name": "Advanced Stove",
+    "area": "kitchen",
+    "group": "Stove 6",
+    "description": "More functions and more convenience!",
+    "requirementsStars": 1300,
+    "price": [{ "currency": "cod", "amount": 340000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 10 },
+      { "type": "cookingEfficiencyBonus", "amount": 15 }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+
+  {
+    "id": "stove1_beach_oven",
+    "name": "Beach Oven",
+    "area": "kitchen",
+    "group": "Stove 1",
+    "description": "Food made using this oven carries the scent of the beach.",
+    "requirementsStars": 30000,
+    "price": [{ "currency": "cod", "amount": 4600000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 45 },
+      { "type": "cookingEfficiencyBonus", "amount": 24 }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "stove2_beach_oven",
+    "name": "Beach Oven",
+    "area": "kitchen",
+    "group": "Stove 2",
+    "description": "Food made using this oven carries the scent of the beach.",
+    "requirementsStars": 30000,
+    "price": [{ "currency": "cod", "amount": 8900000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 55 },
+      { "type": "cookingEfficiencyBonus", "amount": 24 }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "stove3_beach_oven",
+    "name": "Beach Oven",
+    "area": "kitchen",
+    "group": "Stove 3",
+    "description": "Food made using this oven carries the scent of the beach.",
+    "requirementsStars": 35000,
+    "price": [{ "currency": "cod", "amount": 13500000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 62 },
+      { "type": "cookingEfficiencyBonus", "amount": 24 }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "stove4_beach_oven",
+    "name": "Beach Oven",
+    "area": "kitchen",
+    "group": "Stove 4",
+    "description": "Food made using this oven carries the scent of the beach.",
+    "requirementsStars": 28500,
+    "price": [{ "currency": "cod", "amount": 16500000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 70 },
+      { "type": "cookingEfficiencyBonus", "amount": 24 }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "stove5_beach_oven",
+    "name": "Beach Oven",
+    "area": "kitchen",
+    "group": "Stove 5",
+    "description": "Food made using this oven carries the scent of the beach.",
+    "requirementsStars": 34500,
+    "price": [{ "currency": "cod", "amount": 19500000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 80 },
+      { "type": "cookingEfficiencyBonus", "amount": 24 }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "stove6_beach_oven",
+    "name": "Beach Oven",
+    "area": "kitchen",
+    "group": "Stove 6",
+    "description": "Food made using this oven carries the scent of the beach.",
+    "requirementsStars": 45000,
+    "price": [{ "currency": "cod", "amount": 22500000 }],
+    "effects": [
+      { "type": "ratingBonus", "amount": 100 },
+      { "type": "cookingEfficiencyBonus", "amount": 24 }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  }
+]

@@ -83,7 +83,7 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                         const VerticalDivider(width: 1),
                         Expanded(
                           child: (groups.isEmpty)
-                              ? const Center(child: Text('No facilities match.'))
+                              ? const Center(child: Text('No facilities here!'))
                               : ListView.separated(
                                   padding: const EdgeInsets.fromLTRB(8, 0, 8, 16),
                                   itemCount: groups.length,

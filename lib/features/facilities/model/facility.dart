@@ -31,6 +31,7 @@ enum FacilityEffectType {
   ratingBonus,         // +3 (cosmetic)
   gachaDraws,          // number of draws unlocked
   gachaLevel,          // level of the gachapon
+  cookingEfficiencyBonus, // % faster cooking 
 }
 
 /// ---- helpers: tolerant enum parsing ------------------------------------------------
@@ -175,11 +176,13 @@ class FacilityEffect {
 
   /// For gachaLevel: level number
   final int? level;
+  final double? percent; // <-- NEW
 
   FacilityEffect({
     required this.type,
     this.currency,
     this.amount,
+    this.percent,        // <-- NEW
     this.intervalMinutes,
     this.capIncrease,
     this.min,
@@ -187,6 +190,7 @@ class FacilityEffect {
     this.eventKey,
     this.level,
   });
+
 
   factory FacilityEffect.fromJson(
       Map<String, dynamic> j, Map<String, dynamic> parent) {
@@ -205,10 +209,18 @@ class FacilityEffect {
             ? amtField.toDouble()
             : double.tryParse(amtField.toString()));
 
+    final pctField = j['percent'];                       // <-- NEW
+    final pct = pctField == null
+        ? null
+        : (pctField is num
+            ? pctField.toDouble()
+            : double.tryParse(pctField.toString()));
+
     return FacilityEffect(
       type: t,
       currency: cur,
       amount: amt,
+      percent: pct,                                      // <-- NEW
       intervalMinutes: (j['intervalMinutes'] as num?)?.toInt(),
       capIncrease: (j['capIncrease'] as num?)?.toInt(),
       min: (j['min'] as num?)?.toInt(),
@@ -218,10 +230,12 @@ class FacilityEffect {
     );
   }
 
+
   Map<String, dynamic> toJson() => {
         'type': type.name,
         if (currency != null) 'currency': currency!.key,
         if (amount != null) 'amount': amount,
+        if (percent != null) 'percent': percent,    // <-- NEW
         if (intervalMinutes != null) 'intervalMinutes': intervalMinutes,
         if (capIncrease != null) 'capIncrease': capIncrease,
         if (min != null) 'min': min,
@@ -229,6 +243,7 @@ class FacilityEffect {
         if (eventKey != null) 'eventKey': eventKey,
         if (level != null) 'level': level,
       };
+
 }
 
 /// One concrete buyable facility item (e.g. Tip Desk → “Stone Bowl”).
@@ -305,4 +320,21 @@ class Facility {
         if (specialRequirements != null && specialRequirements!.isNotEmpty)
           'specialRequirements': specialRequirements,
       };
+}
+
+extension FacilityCookingExtensions on Facility {
+  /// Sum of all cookingEfficiencyBonus % from effects.
+  double get cookingEfficiencyPercent {
+    return effects
+        .where((e) => e.type == FacilityEffectType.cookingEfficiencyBonus)
+        .fold<double>(0.0, (sum, e) => sum + (e.percent ?? e.amount ?? 0.0));
+  }
+
+  /// Given a dish base time in seconds, returns adjusted cook time.
+  double cookTimeFor(double baseSeconds) {
+    var factor = 1.0 - cookingEfficiencyPercent / 100.0;
+    if (factor < 0.0) factor = 0.0;
+    if (factor > 1.0) factor = 1.0;
+    return baseSeconds * factor;
+  }
 }

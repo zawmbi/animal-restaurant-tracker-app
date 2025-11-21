@@ -221,6 +221,9 @@ class FacilityDetailPage extends StatelessWidget {
         text = 'Gachapon Level ${lvl ?? '-'}';
         break;
 
+      case FacilityEffectType.cookingEfficiencyBonus:
+        // TODO: Handle this case.
+        throw UnimplementedError();
     }
 
     return Padding(

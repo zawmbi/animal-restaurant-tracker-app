@@ -56,6 +56,9 @@ class EarningsCalculator {
           case FacilityEffectType.gachaLevel:
             // TODO: Handle this case.
             throw UnimplementedError();
+          case FacilityEffectType.cookingEfficiencyBonus:
+            // TODO: Handle this case.
+            throw UnimplementedError();
         }
       }
     }
