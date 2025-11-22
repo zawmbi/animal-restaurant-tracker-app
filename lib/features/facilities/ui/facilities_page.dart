@@ -56,7 +56,10 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                 }
                 if (snap.hasError) {
                   return Center(
-                    child: Text('Failed to load facilities:\n${snap.error}', textAlign: TextAlign.center),
+                    child: Text(
+                      'Failed to load facilities:\n${snap.error}',
+                      textAlign: TextAlign.center,
+                    ),
                   );
                 }
 
@@ -64,11 +67,15 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                 final themes = _themesFor(all);
 
                 final filtered = all.where((f) {
-                  if (_selectedTheme != null && (f.series ?? '') != _selectedTheme) return false;
+                  if (_selectedTheme != null &&
+                      (f.series ?? '') != _selectedTheme) {
+                    return false;
+                  }
                   return true;
                 }).toList();
 
-                final groups = _groupBy<String, Facility>(filtered, (f) => f.group);
+                final groups =
+                    _groupBy<String, Facility>(filtered, (f) => f.group);
 
                 return AnimatedBuilder(
                   animation: store,
@@ -85,17 +92,24 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                           child: (groups.isEmpty)
                               ? const Center(child: Text('No facilities here!'))
                               : ListView.separated(
-                                  padding: const EdgeInsets.fromLTRB(8, 0, 8, 16),
+                                  padding: const EdgeInsets.fromLTRB(
+                                      8, 0, 8, 16),
                                   itemCount: groups.length,
-                                  separatorBuilder: (_, __) => const SizedBox(height: 8),
+                                  separatorBuilder: (_, __) =>
+                                      const SizedBox(height: 8),
                                   itemBuilder: (context, i) {
                                     final entry = groups[i];
-                                    final items = entry.value..sort((a, b) {
-                                      final ua = store.isUnlocked('facility', a.id);
-                                      final ub = store.isUnlocked('facility', b.id);
-                                      if (ua != ub) return ua ? -1 : 1;
-                                      return a.name.compareTo(b.name);
-                                    });
+                                    final items = entry.value
+                                      ..sort((a, b) {
+                                        final ua = store.isUnlocked(
+                                            'facility', a.id);
+                                        final ub = store.isUnlocked(
+                                            'facility', b.id);
+                                        if (ua != ub) {
+                                          return ua ? -1 : 1;
+                                        }
+                                        return a.name.compareTo(b.name);
+                                      });
                                     return _FacilityGroupSection(
                                       title: entry.key,
                                       items: items,
@@ -126,7 +140,8 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
     return list;
   }
 
-  List<MapEntry<K, List<V>>> _groupBy<K, V>(List<V> list, K Function(V) keyFn) {
+  List<MapEntry<K, List<V>>> _groupBy<K, V>(
+      List<V> list, K Function(V) keyFn) {
     final map = <K, List<V>>{};
     final order = <K>[];
     for (final v in list) {
@@ -143,7 +158,8 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
 // ------- UI bits (unchanged labels for enum -> title case) -------
 
 class _ScenesBar extends StatelessWidget {
-  const _ScenesBar({required this.scenes, required this.selected, required this.onSelect});
+  const _ScenesBar(
+      {required this.scenes, required this.selected, required this.onSelect});
   final List<FacilityArea> scenes;
   final FacilityArea selected;
   final ValueChanged<FacilityArea> onSelect;
@@ -177,7 +193,8 @@ class _ScenesBar extends StatelessWidget {
 }
 
 class _ThemeRail extends StatelessWidget {
-  const _ThemeRail({required this.themes, required this.selected, required this.onSelect});
+  const _ThemeRail(
+      {required this.themes, required this.selected, required this.onSelect});
   final List<String> themes;
   final String? selected;
   final ValueChanged<String?> onSelect;
@@ -190,7 +207,8 @@ class _ThemeRail extends StatelessWidget {
         children: [
           ListTile(
             dense: true,
-            title: const Text('All', style: TextStyle(fontWeight: FontWeight.w600)),
+            title: const Text('All',
+                style: TextStyle(fontWeight: FontWeight.w600)),
             selected: selected == null,
             onTap: () => onSelect(null),
           ),
@@ -217,7 +235,8 @@ class _ThemeRail extends StatelessWidget {
 }
 
 class _FacilityGroupSection extends StatelessWidget {
-  const _FacilityGroupSection({required this.title, required this.items, required this.store});
+  const _FacilityGroupSection(
+      {required this.title, required this.items, required this.store});
   final String title;
   final List<Facility> items;
   final UnlockedStore store;
@@ -233,7 +252,8 @@ class _FacilityGroupSection extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
             child: LayoutBuilder(
               builder: (context, c) {
-                final crossAxisCount = (c.maxWidth / 160).floor().clamp(1, 6);
+                final crossAxisCount =
+                    (c.maxWidth / 160).floor().clamp(1, 6);
                 return GridView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
@@ -250,7 +270,15 @@ class _FacilityGroupSection extends StatelessWidget {
                     return Card(
                       clipBehavior: Clip.antiAlias,
                       child: InkWell(
-                        onTap: () => store.setUnlocked('facility', f.id, !checked),
+                        // 👇 TAP = open detail page
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) =>
+                                  FacilityDetailPage(facility: f),
+                            ),
+                          );
+                        },
                         child: Stack(
                           children: [
                             Positioned.fill(
@@ -262,7 +290,9 @@ class _FacilityGroupSection extends StatelessWidget {
                                     textAlign: TextAlign.center,
                                     maxLines: 3,
                                     overflow: TextOverflow.ellipsis,
-                                    style: Theme.of(context).textTheme.titleMedium,
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .titleMedium,
                                   ),
                                 ),
                               ),
@@ -274,7 +304,9 @@ class _FacilityGroupSection extends StatelessWidget {
                                 scale: 0.9,
                                 child: Checkbox(
                                   value: checked,
-                                  onChanged: (v) => store.setUnlocked('facility', f.id, v ?? false),
+                                  // 👇 CHECKBOX = toggle unlocked
+                                  onChanged: (v) => store.setUnlocked(
+                                      'facility', f.id, v ?? false),
                                 ),
                               ),
                             ),
@@ -288,6 +320,148 @@ class _FacilityGroupSection extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// -------- Detail page for a single facility --------
+
+class FacilityDetailPage extends StatelessWidget {
+  final Facility facility;
+  const FacilityDetailPage({super.key, required this.facility});
+
+  String _prettyArea(FacilityArea area) => area.name
+      .split('_')
+      .map((w) => w.isEmpty ? w : '${w[0].toUpperCase()}${w.substring(1)}')
+      .join(' ');
+
+  String _formatEffect(FacilityEffect e) {
+    final typeName = e.type.name; // raw enum name
+    final prettyType = typeName
+        .replaceAllMapped(
+          RegExp(r'[A-Z]'),
+          (m) => ' ${m.group(0)}',
+        )
+        .trim();
+
+    String amountStr = '';
+    if (e.amount != null) {
+      final a = e.amount!;
+      amountStr = a % 1 == 0 ? a.toInt().toString() : a.toStringAsFixed(2);
+    }
+
+    switch (e.type) {
+      case FacilityEffectType.ratingBonus:
+        return '+$amountStr rating';
+      case FacilityEffectType.incomePerMinute:
+        final cur = e.currency?.key ?? '';
+        return '+$amountStr $cur / min';
+      case FacilityEffectType.tipCapIncrease:
+        final cap = e.capIncrease ?? (e.amount?.toInt() ?? 0);
+        return 'Tip cap +$cap';
+      case FacilityEffectType.incomePerInterval:
+        final cur = e.currency?.key ?? '';
+        final mins = e.intervalMinutes ?? 0;
+        return '+$amountStr $cur every $mins min';
+      case FacilityEffectType.incomePerEventRange:
+        final min = e.min ?? 0;
+        final max = e.max;
+        final cur = e.currency?.key ?? '';
+        final range =
+            max == null ? '$min' : '$min–$max';
+        final key = e.eventKey ?? 'event';
+        return '$range $cur per $key';
+      case FacilityEffectType.gachaDraws:
+        return '${e.amount?.toInt() ?? 0} gacha draws';
+      case FacilityEffectType.gachaLevel:
+        return 'Gachapon level ${e.level ?? e.amount?.toInt() ?? 0}';
+      case FacilityEffectType.cookingEfficiencyBonus:
+        // TODO: Handle this case.
+        throw UnimplementedError();
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final prices = facility.price;
+    final effects = facility.effects;
+    final specials = facility.specialRequirements ?? const [];
+
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(facility.name),
+      ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16),
+        child: DefaultTextStyle(
+          style: theme.textTheme.bodyMedium!,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                facility.group,
+                style: theme.textTheme.titleMedium!
+                    .copyWith(fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                _prettyArea(facility.area),
+                style: theme.textTheme.bodySmall,
+              ),
+              const SizedBox(height: 12),
+              if (facility.description != null &&
+                  facility.description!.trim().isNotEmpty)
+                Text(facility.description!),
+              const SizedBox(height: 16),
+              if (facility.series != null &&
+                  facility.series!.trim().isNotEmpty)
+                Text('Series: ${facility.series}'),
+              const SizedBox(height: 8),
+              Text(
+                'Stars required: '
+                '${facility.requirementStars != null ? facility.requirementStars.toString() : "N/A"}',
+              ),
+              const SizedBox(height: 16),
+              if (prices.isNotEmpty) ...[
+                Text(
+                  'Price',
+                  style: theme.textTheme.titleSmall!
+                      .copyWith(fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 4),
+                ...prices.map(
+                  (p) => Text(
+                    '${p.amount} ${p.currency.key}',
+                  ),
+                ),
+                const SizedBox(height: 16),
+              ],
+              if (effects.isNotEmpty) ...[
+                Text(
+                  'Effects',
+                  style: theme.textTheme.titleSmall!
+                      .copyWith(fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 4),
+                ...effects.map(
+                  (e) => Text('• ${_formatEffect(e)}'),
+                ),
+                const SizedBox(height: 16),
+              ],
+              if (specials.isNotEmpty) ...[
+                Text(
+                  'Special requirements',
+                  style: theme.textTheme.titleSmall!
+                      .copyWith(fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 4),
+                ...specials.map((s) => Text('• $s')),
+              ],
+            ],
+          ),
+        ),
       ),
     );
   }
