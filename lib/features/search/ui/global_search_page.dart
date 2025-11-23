@@ -1,10 +1,11 @@
-import 'package:animal_restaurant_tracker/features/facilities/model/data/facilities_repository.dart';
 import 'package:flutter/material.dart';
+
 import '../../shared/data/unlocked_store.dart';
 import '../../customers/ui/customer_detail_page.dart';
 import '../../dishes/ui/dish_detail_page.dart';
 import '../../facilities/ui/facility_detail_page.dart';
 import '../../customers/data/customers_repository.dart';
+import '../../facilities/data/facilities_repository.dart'; // ✅ fixed import
 import '../data/search_index.dart';
 
 class GlobalSearchPage extends StatefulWidget {
@@ -29,7 +30,10 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
     setState(() => _loading = true);
     final res = await SearchIndex.instance.search(q);
     if (!mounted) return;
-    setState(() { _hits = res; _loading = false; });
+    setState(() {
+      _hits = res;
+      _loading = false;
+    });
   }
 
   @override
@@ -44,11 +48,15 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
               controller: _ctrl,
               autofocus: true,
               decoration: InputDecoration(
-                hintText: 'Search customers, letters, dishes, facilities, mementos…',
+                hintText:
+                    'Search customers, letters, dishes, facilities, mementos…',
                 prefixIcon: const Icon(Icons.search),
                 suffixIcon: IconButton(
                   icon: const Icon(Icons.clear),
-                  onPressed: () { _ctrl.clear(); setState(() => _hits = const []); },
+                  onPressed: () {
+                    _ctrl.clear();
+                    setState(() => _hits = const []);
+                  },
                 ),
                 border: const OutlineInputBorder(),
               ),
@@ -66,11 +74,21 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
 
                 String? bucket;
                 switch (type) {
-                  case HitType.customer: bucket = 'customer'; break;
-                  case HitType.letter: bucket = 'letter'; break;
-                  case HitType.dish: bucket = 'dish'; break;
-                  case HitType.facility: bucket = 'facility_purchased'; break;
-                  case HitType.memento: bucket = 'memento_collected'; break;
+                  case HitType.customer:
+                    bucket = 'customer';
+                    break;
+                  case HitType.letter:
+                    bucket = 'letter';
+                    break;
+                  case HitType.dish:
+                    bucket = 'dish';
+                    break;
+                  case HitType.facility:
+                    bucket = 'facility_purchased';
+                    break;
+                  case HitType.memento:
+                    bucket = 'memento_collected';
+                    break;
                 }
 
                 final checked = store.isUnlocked(bucket, h.key ?? h.id);
@@ -78,16 +96,22 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
                 return InkWell(
                   mouseCursor: SystemMouseCursors.click,
                   // ignore: deprecated_member_use
-                  hoverColor: Theme.of(context).hoverColor.withOpacity(0.2),
+                  hoverColor:
+                      Theme.of(context).hoverColor.withOpacity(0.2),
                   onTap: () => _open(context, h),
                   child: ListTile(
                     leading: Icon(_iconFor(type)),
                     title: Text(h.title),
-                    subtitle: h.subtitle != null ? Text(h.subtitle!) : null,
+                    subtitle:
+                        h.subtitle != null ? Text(h.subtitle!) : null,
                     trailing: Checkbox(
-                            value: checked,
-                            onChanged: (v) => store.setUnlocked(bucket!, h.key ?? h.id, v ?? false),
-                          ),
+                      value: checked,
+                      onChanged: (v) => store.setUnlocked(
+                        bucket!,
+                        h.key ?? h.id,
+                        v ?? false,
+                      ),
+                    ),
                   ),
                 );
               },
@@ -100,11 +124,16 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
 
   IconData _iconFor(HitType t) {
     switch (t) {
-      case HitType.customer: return Icons.person;
-      case HitType.letter: return Icons.mail;
-      case HitType.dish: return Icons.restaurant;
-      case HitType.facility: return Icons.store;
-      case HitType.memento: return Icons.card_giftcard;
+      case HitType.customer:
+        return Icons.person;
+      case HitType.letter:
+        return Icons.mail;
+      case HitType.dish:
+        return Icons.restaurant;
+      case HitType.facility:
+        return Icons.store;
+      case HitType.memento:
+        return Icons.card_giftcard;
     }
   }
 
@@ -113,35 +142,50 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
       case HitType.customer:
         final c = await CustomersRepository.instance.byId(h.id);
         if (c == null) {
+          if (!mounted) return;
           // ignore: use_build_context_synchronously
-          if (!mounted) return; ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Customer not found')));
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Customer not found')),
+          );
           return;
         }
         if (!mounted) return;
         // ignore: use_build_context_synchronously
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => CustomerDetailPage(customer: c),
-        ));
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => CustomerDetailPage(customer: c),
+          ),
+        );
         break;
+
       case HitType.dish:
         if (!mounted) return;
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => DishDetailPage(dishId: h.id),
-        ));
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => DishDetailPage(dishId: h.id),
+          ),
+        );
         break;
+
       case HitType.facility:
         final f = await FacilitiesRepository.instance.byId(h.id);
         if (f == null) {
+          if (!mounted) return;
           // ignore: use_build_context_synchronously
-          if (!mounted) return; ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Facility not found')));
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Facility not found')),
+          );
           return;
         }
         if (!mounted) return;
         // ignore: use_build_context_synchronously
-        Navigator.of(context).push(MaterialPageRoute(
-          builder: (_) => FacilityDetailPage(facility: f),
-        ));
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => FacilityDetailPage(facilityId: f.id), // ✅ pass id, not object
+          ),
+        );
         break;
+
       case HitType.letter:
       case HitType.memento:
         // No dedicated screens yet; toggling via checkbox is the primary action.

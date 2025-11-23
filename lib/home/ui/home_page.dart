@@ -78,13 +78,16 @@ class _HomePageState extends State<HomePage> {
         );
         break;
 
-      case HitType.facility:
-        final f = await facrepo.FacilitiesRepository.instance.byId(h.id);
-        if (f == null || !mounted) return;
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (_) => facdetail.FacilityDetailPage(facility: f)),
-        );
-        break;
+case HitType.facility:
+  final f = await facrepo.FacilitiesRepository.instance.byId(h.id);
+  if (f == null || !mounted) return;
+  Navigator.of(context).push(
+    MaterialPageRoute(
+      builder: (_) => facdetail.FacilityDetailPage(facilityId: f.id),
+    ),
+  );
+  break;
+
 
       case HitType.letter:
         if (!mounted) return;

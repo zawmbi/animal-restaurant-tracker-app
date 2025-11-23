@@ -287,12 +287,14 @@ Future<void> _openEntityById(BuildContext context, String id) async {
   if (facility != null) {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => FacilityDetailPage(facility: facility!),
+      builder: (_) => FacilityDetailPage(facilityId: facility!.id),
+
       ),
     );
     return;
   }
 
+  
   // Try letters (no single-letter page yet, so open LettersPage)
   final letters = await LettersRepository.instance.all();
   Letter? letter;
@@ -302,6 +304,7 @@ Future<void> _openEntityById(BuildContext context, String id) async {
       break;
     }
   }
+
   if (letter != null) {
     Navigator.of(context).push(
       MaterialPageRoute(
@@ -309,7 +312,7 @@ Future<void> _openEntityById(BuildContext context, String id) async {
       ),
     );
     return;
-  }
+  } 
 
   // Nothing found – show a small message
   ScaffoldMessenger.of(context).showSnackBar(

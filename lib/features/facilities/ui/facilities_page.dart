@@ -324,145 +324,216 @@ class _FacilityGroupSection extends StatelessWidget {
     );
   }
 }
-
-/// -------- Detail page for a single facility --------
+// --- Keep everything above unchanged --- //
 
 class FacilityDetailPage extends StatelessWidget {
   final Facility facility;
   const FacilityDetailPage({super.key, required this.facility});
 
-  String _prettyArea(FacilityArea area) => area.name
-      .split('_')
-      .map((w) => w.isEmpty ? w : '${w[0].toUpperCase()}${w.substring(1)}')
-      .join(' ');
-
-  String _formatEffect(FacilityEffect e) {
-    final typeName = e.type.name; // raw enum name
-    final prettyType = typeName
-        .replaceAllMapped(
-          RegExp(r'[A-Z]'),
-          (m) => ' ${m.group(0)}',
-        )
-        .trim();
-
-    String amountStr = '';
-    if (e.amount != null) {
-      final a = e.amount!;
-      amountStr = a % 1 == 0 ? a.toInt().toString() : a.toStringAsFixed(2);
-    }
-
-    switch (e.type) {
-      case FacilityEffectType.ratingBonus:
-        return '+$amountStr rating';
-      case FacilityEffectType.incomePerMinute:
-        final cur = e.currency?.key ?? '';
-        return '+$amountStr $cur / min';
-      case FacilityEffectType.tipCapIncrease:
-        final cap = e.capIncrease ?? (e.amount?.toInt() ?? 0);
-        return 'Tip cap +$cap';
-      case FacilityEffectType.incomePerInterval:
-        final cur = e.currency?.key ?? '';
-        final mins = e.intervalMinutes ?? 0;
-        return '+$amountStr $cur every $mins min';
-      case FacilityEffectType.incomePerEventRange:
-        final min = e.min ?? 0;
-        final max = e.max;
-        final cur = e.currency?.key ?? '';
-        final range =
-            max == null ? '$min' : '$min–$max';
-        final key = e.eventKey ?? 'event';
-        return '$range $cur per $key';
-      case FacilityEffectType.gachaDraws:
-        return '${e.amount?.toInt() ?? 0} gacha draws';
-      case FacilityEffectType.gachaLevel:
-        return 'Gachapon level ${e.level ?? e.amount?.toInt() ?? 0}';
-      case FacilityEffectType.cookingEfficiencyBonus:
-        // TODO: Handle this case.
-        throw UnimplementedError();
-    }
+  @override
+  Widget build(BuildContext context) {
+    final store = UnlockedStore.instance;
+    return Scaffold(
+      appBar: AppBar(title: const Text('Facility Details')),
+      body: AnimatedBuilder(
+        animation: store,
+        builder: (context, _) {
+          return _FacilityDetailBody(facility: facility, store: store);
+        },
+      ),
+    );
   }
+}
+
+class _FacilityDetailBody extends StatelessWidget {
+  const _FacilityDetailBody({required this.facility, required this.store});
+  final Facility facility;
+  final UnlockedStore store;
 
   @override
   Widget build(BuildContext context) {
+    final checked = store.isUnlocked('facility', facility.id);
     final theme = Theme.of(context);
     final prices = facility.price;
     final effects = facility.effects;
     final specials = facility.specialRequirements ?? const [];
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(facility.name),
-      ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
-        child: DefaultTextStyle(
-          style: theme.textTheme.bodyMedium!,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                facility.group,
-                style: theme.textTheme.titleMedium!
-                    .copyWith(fontWeight: FontWeight.bold),
+    return ListView(
+      padding: const EdgeInsets.all(16),
+      children: [
+        // ---------- Title Row ----------
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Text(
+                facility.name,
+                style: theme.textTheme.headlineSmall,
               ),
-              const SizedBox(height: 8),
-              Text(
-                _prettyArea(facility.area),
-                style: theme.textTheme.bodySmall,
-              ),
-              const SizedBox(height: 12),
-              if (facility.description != null &&
-                  facility.description!.trim().isNotEmpty)
-                Text(facility.description!),
-              const SizedBox(height: 16),
-              if (facility.series != null &&
-                  facility.series!.trim().isNotEmpty)
-                Text('Series: ${facility.series}'),
-              const SizedBox(height: 8),
-              Text(
-                'Stars required: '
-                '${facility.requirementStars != null ? facility.requirementStars.toString() : "N/A"}',
-              ),
-              const SizedBox(height: 16),
-              if (prices.isNotEmpty) ...[
-                Text(
-                  'Price',
-                  style: theme.textTheme.titleSmall!
-                      .copyWith(fontWeight: FontWeight.bold),
+            ),
+            Checkbox(
+              value: checked,
+              onChanged: (v) =>
+                  store.setUnlocked('facility', facility.id, v ?? false),
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+
+        // ---------- Description ----------
+        if ((facility.description ?? '').isNotEmpty)
+          Text(
+            facility.description!,
+            style: theme.textTheme.bodyMedium,
+          ),
+        const SizedBox(height: 16),
+
+        // ---------- Info Card ----------
+        Card(
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _infoRow(context, 'Area',
+                    _prettyEnumName(facility.area.name)),
+                _infoRow(context, 'Group', facility.group),
+                if ((facility.series ?? '').isNotEmpty)
+                  _infoRow(context, 'Series', facility.series!),
+                _infoRow(
+                  context,
+                  'Star requirement',
+                  facility.requirementStars! > 0
+                      ? '${facility.requirementStars}★'
+                      : '—',
                 ),
-                const SizedBox(height: 4),
-                ...prices.map(
-                  (p) => Text(
-                    '${p.amount} ${p.currency.key}',
-                  ),
-                ),
-                const SizedBox(height: 16),
+                if (prices.isNotEmpty)
+                  _infoRow(context, 'Price', _formatPrice(prices.first)),
               ],
-              if (effects.isNotEmpty) ...[
-                Text(
-                  'Effects',
-                  style: theme.textTheme.titleSmall!
-                      .copyWith(fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(height: 4),
-                ...effects.map(
-                  (e) => Text('• ${_formatEffect(e)}'),
-                ),
-                const SizedBox(height: 16),
-              ],
-              if (specials.isNotEmpty) ...[
-                Text(
-                  'Special requirements',
-                  style: theme.textTheme.titleSmall!
-                      .copyWith(fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(height: 4),
-                ...specials.map((s) => Text('• $s')),
-              ],
-            ],
+            ),
           ),
         ),
+        const SizedBox(height: 16),
+
+        // ---------- Effects ----------
+        if (effects.isNotEmpty)
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Effects',
+                      style: theme.textTheme.titleMedium!
+                          .copyWith(fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 8),
+                  ...effects.map((e) => _infoRow(context, _effectLabel(e), _effectValue(e))),
+                ],
+              ),
+            ),
+          ),
+
+        // ---------- Special Requirements ----------
+        if (specials.isNotEmpty) ...[
+          const SizedBox(height: 16),
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Special requirements',
+                      style: theme.textTheme.titleMedium!
+                          .copyWith(fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 8),
+                  ...specials.map((s) => Text('• $s')),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+
+  // ---------- Helper Rows ----------
+  Widget _infoRow(BuildContext context, String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        children: [
+          Expanded(child: Text(label)),
+          Text(
+            value,
+            style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+          ),
+        ],
       ),
     );
+  }
+
+  String _formatPrice(Price price) {
+    final amt = _formatNumber(price.amount);
+    final cur = price.currency.key;
+    return '🐟 $amt $cur';
+  }
+
+  static String _formatNumber(int v) {
+    final s = v.toString();
+    final buf = StringBuffer();
+    for (int i = 0; i < s.length; i++) {
+      final fromEnd = s.length - i;
+      buf.write(s[i]);
+      if (fromEnd > 1 && fromEnd % 3 == 1) buf.write(',');
+    }
+    return buf.toString();
+  }
+
+  String _prettyEnumName(String raw) => raw
+      .split('_')
+      .map((w) => w.isEmpty ? w : '${w[0].toUpperCase()}${w.substring(1)}')
+      .join(' ');
+
+  String _effectLabel(FacilityEffect e) {
+    switch (e.type) {
+      case FacilityEffectType.ratingBonus:
+        return 'Rating Bonus';
+      case FacilityEffectType.cookingEfficiencyBonus:
+        return 'Cooking Efficiency';
+      case FacilityEffectType.incomePerMinute:
+        return 'Income / min';
+      case FacilityEffectType.tipCapIncrease:
+        return 'Tip Cap Increase';
+      case FacilityEffectType.incomePerInterval:
+        return 'Income per Interval';
+      case FacilityEffectType.incomePerEventRange:
+        return 'Income (Event Range)';
+      case FacilityEffectType.gachaDraws:
+        return 'Gacha Draws';
+      case FacilityEffectType.gachaLevel:
+        return 'Gacha Level';
+    }
+  }
+
+  String _effectValue(FacilityEffect e) {
+    final amt = e.amount?.toInt() ?? 0;
+    switch (e.type) {
+      case FacilityEffectType.ratingBonus:
+        return '+$amt';
+      case FacilityEffectType.cookingEfficiencyBonus:
+        return '+$amt%';
+      case FacilityEffectType.tipCapIncrease:
+        return '+${e.capIncrease ?? amt}';
+      case FacilityEffectType.incomePerMinute:
+        return '+$amt ${e.currency?.key ?? ''}/min';
+      case FacilityEffectType.incomePerInterval:
+        return '+$amt/${e.intervalMinutes ?? 0}min';
+      case FacilityEffectType.incomePerEventRange:
+        return '${e.min ?? 0}–${e.max ?? amt} ${e.currency?.key ?? ''}';
+      case FacilityEffectType.gachaDraws:
+        return '${e.amount?.toInt() ?? 0} draws';
+      case FacilityEffectType.gachaLevel:
+        return 'Lv. ${e.level ?? e.amount?.toInt() ?? 1}';
+    }
   }
 }
