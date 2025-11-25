@@ -13,6 +13,7 @@ ThemeData buildAppTheme() {
 
   return base.copyWith(
     scaffoldBackgroundColor: kCreamLight,
+    dividerColor: Colors.transparent,
     colorScheme: base.colorScheme.copyWith(
       primary: kGreen,
       secondary: kGreen,
@@ -32,7 +33,7 @@ ThemeData buildAppTheme() {
     textTheme: base.textTheme.apply(
       bodyColor: kBrownDark,
       displayColor: kBrownDark,
-      fontFamily: 'Roboto',
+      fontFamily: 'Quano',
     ),
     checkboxTheme: CheckboxThemeData(
   fillColor: WidgetStateProperty.resolveWith((states) {

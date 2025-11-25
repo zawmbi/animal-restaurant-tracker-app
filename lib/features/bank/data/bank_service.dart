@@ -14,29 +14,45 @@ class BankStats {
   /// Buffet cod per hour if all buffet facilities that make cod were checked.
   final int buffetPerHourAll;
 
-  /// Cod per hour from ALL checked facilities (any area) that make cod.
-  final int codPerHourFacilitiesCurrent;
+  /// Tip Jar cod per hour from checked NON-buffet facilities
+  /// (any facility with incomePerMinute cod).
+  final int tipJarPerHourCurrent;
 
-  /// Cod per hour from ALL facilities (any area) that make cod, ignoring checks.
-  final int codPerHourFacilitiesAll;
+  /// Tip Jar cod per hour if all NON-buffet cod facilities were checked.
+  final int tipJarPerHourAll;
+
+  /// Online-only cod per hour (incomePerInterval cod), checked facilities.
+  final int onlineCodPerHourCurrent;
+
+  /// Online-only cod per hour, all facilities.
+  final int onlineCodPerHourAll;
 
   /// Plates per day from checked facilities.
   final int platesPerDayCurrent;
 
-  /// Plates per day from all facilities that produce plates, ignoring checks.
+  /// Plates per day from all plate-making facilities.
   final int platesPerDayAll;
 
   const BankStats({
     required this.buffetPerHourCurrent,
     required this.buffetPerHourAll,
-    required this.codPerHourFacilitiesCurrent,
-    required this.codPerHourFacilitiesAll,
+    required this.tipJarPerHourCurrent,
+    required this.tipJarPerHourAll,
+    required this.onlineCodPerHourCurrent,
+    required this.onlineCodPerHourAll,
     required this.platesPerDayCurrent,
     required this.platesPerDayAll,
   });
 
-  int get totalCodPerHourCurrent => codPerHourFacilitiesCurrent;
-  int get totalCodPerHourAll => codPerHourFacilitiesAll;
+  int get totalCodPerHourCurrent =>
+      buffetPerHourCurrent +
+      tipJarPerHourCurrent +
+      onlineCodPerHourCurrent;
+
+  int get totalCodPerHourAll =>
+      buffetPerHourAll +
+      tipJarPerHourAll +
+      onlineCodPerHourAll;
 }
 
 class BankService {
@@ -45,6 +61,10 @@ class BankService {
 
   Future<BankStats> compute() async {
     final allFacilities = await _facilities.all();
+
+    bool _isUnlocked(Facility f) => _store.isUnlocked('facility', f.id);
+
+    // ----- Helpers -----
 
     int codPerMinute(Facility f) {
       return f.effects
@@ -55,8 +75,21 @@ class BankService {
           .sum;
     }
 
-    /// Some facilities might express plates as per-minute or per-interval.
-    /// We normalize to **per day** (24h).
+    int codPerHourFromInterval(Facility f) {
+      int total = 0;
+      for (final e in f.effects) {
+        if (e.type != FacilityEffectType.incomePerInterval) continue;
+        if (e.currency != MoneyCurrency.cod) continue;
+
+        final minutes = e.intervalMinutes ?? 0;
+        if (minutes <= 0) continue;
+        final amt = (e.amount ?? 0).toDouble();
+        final perHour = amt * (60.0 / minutes);
+        total += perHour.round();
+      }
+      return total;
+    }
+
     int platesPerDay(Facility f) {
       int total = 0;
       for (final e in f.effects) {
@@ -65,67 +98,81 @@ class BankService {
         switch (e.type) {
           case FacilityEffectType.incomePerMinute:
             final amt = (e.amount ?? 0).toDouble();
-            total += (amt * 60 * 24).round(); // 24h worth
+            // 24 hours * 60 minutes
+            total += (amt * 60 * 24).round();
             break;
           case FacilityEffectType.incomePerInterval:
-            final mins = e.intervalMinutes ?? 0;
-            if (mins > 0) {
-              final amt = (e.amount ?? 0).toDouble();
-              final intervalsPerDay = 1440 / mins;
-              total += (amt * intervalsPerDay).round();
-            }
+            final minutes = e.intervalMinutes ?? 0;
+            if (minutes <= 0) continue;
+            final amt = (e.amount ?? 0).toDouble();
+            final intervalsPerDay = 1440.0 / minutes;
+            total += (amt * intervalsPerDay).round();
             break;
           default:
-            // Other effect types (tip cap, gacha, etc.) don't affect plates/day.
             break;
         }
       }
       return total;
     }
 
-    // ----- COD from all facilities -----
+    // ----- Split buffet vs tip-jar vs online-only cod -----
 
-    final facilitiesWithCod =
-        allFacilities.where((f) => codPerMinute(f) > 0).toList();
+    final buffetFacilities = allFacilities
+        .where((f) =>
+            f.area == FacilityArea.buffet && codPerMinute(f) > 0)
+        .toList();
 
-    final allCodPerMinute =
-        facilitiesWithCod.map(codPerMinute).sum;
-    final currentCodPerMinute = facilitiesWithCod
-        .where((f) => _store.isUnlocked('facility', f.id))
-        .map(codPerMinute)
-        .sum;
+    final nonBuffetCodFacilities = allFacilities
+        .where((f) =>
+            f.area != FacilityArea.buffet && codPerMinute(f) > 0)
+        .toList();
 
-    // ----- Buffet cod only (for stacking rules) -----
+    final intervalCodFacilities = allFacilities
+        .where((f) => codPerHourFromInterval(f) > 0)
+        .toList();
 
-    final buffetFacilities =
-        facilitiesWithCod.where((f) => f.area == FacilityArea.buffet).toList();
-
+    // Buffet per hour
     final buffetAllPerMinute =
         buffetFacilities.map(codPerMinute).sum;
     final buffetCurrentPerMinute = buffetFacilities
-        .where((f) => _store.isUnlocked('facility', f.id))
+        .where(_isUnlocked)
         .map(codPerMinute)
         .sum;
 
-    // ----- Plates per day -----
+    // Tip Jar per hour (non-buffet cod-per-minute)
+    final tipAllPerMinute =
+        nonBuffetCodFacilities.map(codPerMinute).sum;
+    final tipCurrentPerMinute = nonBuffetCodFacilities
+        .where(_isUnlocked)
+        .map(codPerMinute)
+        .sum;
 
-    final facilitiesWithPlates =
-        allFacilities.where((f) => platesPerDay(f) > 0).toList();
+    // Online cod per hour from intervals
+    final onlineAllPerHour =
+        intervalCodFacilities.map(codPerHourFromInterval).sum;
+    final onlineCurrentPerHour = intervalCodFacilities
+        .where(_isUnlocked)
+        .map(codPerHourFromInterval)
+        .sum;
 
-    final allPlatesPerDay =
-        facilitiesWithPlates.map(platesPerDay).sum;
-    final currentPlatesPerDay = facilitiesWithPlates
-        .where((f) => _store.isUnlocked('facility', f.id))
+    // Plates per day
+    final platesAllPerDay =
+        allFacilities.map(platesPerDay).where((v) => v > 0).sum;
+    final platesCurrentPerDay = allFacilities
+        .where(_isUnlocked)
         .map(platesPerDay)
+        .where((v) => v > 0)
         .sum;
 
     return BankStats(
       buffetPerHourCurrent: buffetCurrentPerMinute * 60,
       buffetPerHourAll: buffetAllPerMinute * 60,
-      codPerHourFacilitiesCurrent: currentCodPerMinute * 60,
-      codPerHourFacilitiesAll: allCodPerMinute * 60,
-      platesPerDayCurrent: currentPlatesPerDay,
-      platesPerDayAll: allPlatesPerDay,
+      tipJarPerHourCurrent: tipCurrentPerMinute * 60,
+      tipJarPerHourAll: tipAllPerMinute * 60,
+      onlineCodPerHourCurrent: onlineCurrentPerHour,
+      onlineCodPerHourAll: onlineAllPerHour,
+      platesPerDayCurrent: platesCurrentPerDay,
+      platesPerDayAll: platesAllPerDay,
     );
   }
 }

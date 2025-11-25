@@ -25,8 +25,9 @@ class EntityChip extends StatelessWidget {
 
     return Material(
       color: Colors.transparent,
+      shape: RoundedRectangleBorder(borderRadius: radius),
+      clipBehavior: Clip.antiAlias,           
       child: InkWell(
-        // Make the WHOLE bordered chip clickable for details:
         onTap: onTap,
         customBorder: RoundedRectangleBorder(borderRadius: radius),
         overlayColor: WidgetStateProperty.resolveWith((states) {
@@ -36,37 +37,40 @@ class EntityChip extends StatelessWidget {
           }
           return null;
         }),
-        child: Ink(
-          decoration: BoxDecoration(
-            color: theme.colorScheme.surface,
-            borderRadius: radius,
-            border: Border.all(color: theme.dividerColor, width: 1),
-          ),
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              if (showCheckbox)
-                // Checkbox ONLY toggles state; it won’t navigate.
-                Checkbox(
-                  value: checked,
-                  visualDensity: VisualDensity.compact,
-                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                  onChanged: (v) => onCheckChanged?.call(v ?? false),
-                ),
-              Flexible(
-                child: Padding(
-                  // Small gap between checkbox and label (or left edge)
-                  padding: EdgeInsets.only(left: showCheckbox ? 4 : 2, right: 2),
-                  child: Text(
-                    label,
-                    overflow: TextOverflow.ellipsis,
-                  ),
-                ),
-              ),
-            ],
+        child:Ink(
+  decoration: BoxDecoration(
+    color: theme.colorScheme.surface,
+    borderRadius: radius,
+    border: Border.all(
+      color: Colors.transparent,
+      width: 0,
+    ),
+
+  ),
+  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+  child: Row(
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      if (showCheckbox)
+        Checkbox(
+          value: checked,
+          visualDensity: VisualDensity.compact,
+          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          onChanged: (v) => onCheckChanged?.call(v ?? false),
+        ),
+      Flexible(
+        child: Padding(
+          padding: EdgeInsets.only(left: showCheckbox ? 4 : 2, right: 2),
+          child: Text(
+            label,
+            overflow: TextOverflow.ellipsis,
           ),
         ),
+      ),
+    ],
+  ),
+)
+
       ),
     );
   }
