@@ -97,7 +97,7 @@ class _BankPageState extends State<BankPage> {
                 const Icon(Icons.local_atm),
                 const SizedBox(width: 8),
                 Text(
-                  'Tip Jar (from tips)',
+                  'Maximum Cod from Tips',
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
               ],
@@ -158,7 +158,7 @@ class _BankPageState extends State<BankPage> {
                 const Icon(Icons.table_bar),
                 const SizedBox(width: 8),
                 Text(
-                  'Buffet (stacks separately, up to 12 hours)',
+                  'Buffet (Up to 12 hours)',
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
               ],

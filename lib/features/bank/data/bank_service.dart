@@ -54,7 +54,6 @@ class BankStats {
       tipJarPerHourAll +
       onlineCodPerHourAll;
 }
-
 class BankService {
   final FacilitiesRepository _facilities = FacilitiesRepository.instance;
   final UnlockedStore _store = UnlockedStore.instance;
@@ -117,27 +116,40 @@ class BankService {
 
     // ----- Split buffet vs tip-jar vs online-only cod -----
 
+    // BUFFET: area == buffet, any cod income (per-minute OR interval)
     final buffetFacilities = allFacilities
-        .where((f) =>
-            f.area == FacilityArea.buffet && codPerMinute(f) > 0)
+        .where((f) => f.area == FacilityArea.buffet)
         .toList();
 
+    //  TIP JAR: NON-buffet, per-minute cod only (same as before)
     final nonBuffetCodFacilities = allFacilities
         .where((f) =>
             f.area != FacilityArea.buffet && codPerMinute(f) > 0)
         .toList();
 
+    //  ONLINE-ONLY: NON-buffet, interval-based cod
     final intervalCodFacilities = allFacilities
-        .where((f) => codPerHourFromInterval(f) > 0)
+        .where((f) =>
+            f.area != FacilityArea.buffet &&
+            codPerHourFromInterval(f) > 0)
         .toList();
 
-    // Buffet per hour
-    final buffetAllPerMinute =
-        buffetFacilities.map(codPerMinute).sum;
-    final buffetCurrentPerMinute = buffetFacilities
-        .where(_isUnlocked)
-        .map(codPerMinute)
-        .sum;
+    // Buffet per HOUR (now includes interval-based income!)
+    int buffetAllPerHour = 0;
+    int buffetCurrentPerHour = 0;
+
+    for (final f in buffetFacilities) {
+      final perMinute = codPerMinute(f); // might be 0 for your buffet JSON
+      final perHourFromMinute = perMinute * 60;
+      final perHourFromInterval = codPerHourFromInterval(f);
+
+      final perHourTotal = perHourFromMinute + perHourFromInterval;
+
+      buffetAllPerHour += perHourTotal;
+      if (_isUnlocked(f)) {
+        buffetCurrentPerHour += perHourTotal;
+      }
+    }
 
     // Tip Jar per hour (non-buffet cod-per-minute)
     final tipAllPerMinute =
@@ -147,7 +159,7 @@ class BankService {
         .map(codPerMinute)
         .sum;
 
-    // Online cod per hour from intervals
+    // Online cod per hour from intervals (non-buffet only now)
     final onlineAllPerHour =
         intervalCodFacilities.map(codPerHourFromInterval).sum;
     final onlineCurrentPerHour = intervalCodFacilities
@@ -165,8 +177,8 @@ class BankService {
         .sum;
 
     return BankStats(
-      buffetPerHourCurrent: buffetCurrentPerMinute * 60,
-      buffetPerHourAll: buffetAllPerMinute * 60,
+      buffetPerHourCurrent: buffetCurrentPerHour,
+      buffetPerHourAll: buffetAllPerHour,
       tipJarPerHourCurrent: tipCurrentPerMinute * 60,
       tipJarPerHourAll: tipAllPerMinute * 60,
       onlineCodPerHourCurrent: onlineCurrentPerHour,
