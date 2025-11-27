@@ -18,6 +18,7 @@ import '../../features/letters/ui/letters_page.dart';
 import '../../features/mementos/ui/mementos_page.dart';
 import '../../features/dishes/ui/dishes_page.dart' as recipes;      
 import '../../features/dishes/ui/dish_detail_page.dart' as detail;  
+import '../../features/settings/ui/settings_page.dart';
 
 import '../../features/customers/data/customers_repository.dart';
 
@@ -203,10 +204,11 @@ case HitType.facility:
               _navTile(context, Icons.store, 'Facilities', fac.FacilitiesPage()),
               _navTile(context, Icons.mail, 'Letters', const LettersPage()),
               _navTile(context, Icons.menu_book, 'Recipes', const recipes.DishesPage()),
-              _navTile(context, Icons.attach_money, 'Bank', const BankPage()),
               _navTile(context, Icons.card_giftcard, 'Mementos', const MementosPage()),
-              // 🆕 Timers tile
+              _navTile(context, Icons.attach_money, 'Bank', const BankPage()),
               _navTile(context, Icons.timer, 'Timers', const TimersPage()),
+              _navTile(context, Icons.settings, 'Settings', const SettingsPage()),
+
             ],
           ),
 
