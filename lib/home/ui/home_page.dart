@@ -12,11 +12,12 @@ import '../../features/customers/ui/customers_page.dart';
 
 import '../../features/facilities/ui/facilities_page.dart' as fac;
 import '../../features/facilities/ui/facility_detail_page.dart' as facdetail;
+import 'package:animal_restaurant_tracker/features/timers/ui/timers_page.dart';
 
 import '../../features/letters/ui/letters_page.dart';
 import '../../features/mementos/ui/mementos_page.dart';
-import '../../features/dishes/ui/dishes_page.dart' as recipes;      // ← alias
-import '../../features/dishes/ui/dish_detail_page.dart' as detail;  // ← alias
+import '../../features/dishes/ui/dishes_page.dart' as recipes;      
+import '../../features/dishes/ui/dish_detail_page.dart' as detail;  
 
 import '../../features/customers/data/customers_repository.dart';
 
@@ -191,12 +192,12 @@ case HitType.facility:
 
           // Fixed 3-per-row, square nav tiles using global CardTheme
           GridView.count(
-            crossAxisCount: 3, // ← EXACTLY 3 per row
+            crossAxisCount: 3,
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             crossAxisSpacing: 12,
             mainAxisSpacing: 12,
-            childAspectRatio: 1.0, // ← square tiles
+            childAspectRatio: 1.0,
             children: [
               _navTile(context, Icons.people, 'Customers', const CustomersPage()),
               _navTile(context, Icons.store, 'Facilities', fac.FacilitiesPage()),
@@ -204,8 +205,11 @@ case HitType.facility:
               _navTile(context, Icons.menu_book, 'Recipes', const recipes.DishesPage()),
               _navTile(context, Icons.attach_money, 'Bank', const BankPage()),
               _navTile(context, Icons.card_giftcard, 'Mementos', const MementosPage()),
+              // 🆕 Timers tile
+              _navTile(context, Icons.timer, 'Timers', const TimersPage()),
             ],
           ),
+
         ],
       ),
     );
