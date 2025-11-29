@@ -1,0 +1,74 @@
+[
+  {
+    "id": "purse",
+    "customerId": "white_bunny",
+    "name": "Purse",
+    "stars": 5,
+    "description": "Looks very light, as if there is nothing inside.",
+    "requirement": "Serve White Bunny 350 times.",
+    "tags": ["customer_gift", "logbook_default"],
+    "source": "customer_gift",
+    "shareReward": 5000
+  },
+  {
+    "id": "calculator",
+    "customerId": "white_bunny",
+    "name": "Calculator",
+    "stars": 30,
+    "description": "Continuously pressing buttons will produce cool robotic sounds.",
+    "requirement": "Serve White Bunny 1500 times. blahr\nSell 2000 Taiyaki.",
+    "tags": [],
+    "source": null
+  },
+  {
+    "id": "rabbit_hat",
+    "customerId": "white_bunny",
+    "name": "Rabbit Hat",
+    "stars": 15,
+    "description": "Knitted from the fur that Rabbit gave to the chef. It's very warm.",
+    "requirement": "Serve White Bunny 3000 times. Sell 3500 Taiyaki.",
+    "tags": [],
+    "source": null
+  },
+  {
+    "id": "carrot_cellphone",
+    "customerId": "brown_bunny",
+    "name": "Carrot Cellphone",
+    "stars": 10,
+    "description": "Although it's a cellphone, it looks like it's only good for eating.",
+    "requirement": "Serve Brown Bunny 500 times.",
+    "tags": ["customer_gift"],
+    "source": "customer_gift",
+    "shareReward": 6000
+  },
+  {
+    "id": "sturdy_flower",
+    "customerId": "brown_bunny",
+    "name": "Sturdy Flower",
+    "stars": 25,
+    "description": "This flower was dug out of nowhere, but it has survived and thrived.",
+    "requirement": "Serve Brown Bunny 1330 times.",
+    "tags": ["customer_gift"],
+    "source": "customer_gift"
+  },
+  {
+    "id": "deers_cracker",
+    "customerId": "deer",
+    "name": "Deer's Cracker",
+    "stars": 10,
+    "description": "It will bestow you with Deer's good fortune.",
+    "requirement": "Serve Deer 700 times.",
+    "tags": ["customer_gift"],
+    "source": "customer_gift"
+  },
+  {
+    "id": "kibble",
+    "customerId": "white_shiba",
+    "name": "Kibble",
+    "stars": 10,
+    "description": "Crunchy dog food.",
+    "requirement": "Serve White Shiba 500 times.",
+    "tags": ["customer_gift"],
+    "source": "customer_gift"
+  }
+]

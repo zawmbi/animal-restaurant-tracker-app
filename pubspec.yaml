@@ -67,6 +67,7 @@ flutter:
   - assets/data/facilities.json
   - assets/data/letters.json
   - assets/data/mementos_extra.json
+  - assets/data/mementos.json
   - assets/data/customers.json
   - assets/data/dishes.json
   - assets/data/facilities_jsons/restaurant_facilities.json
