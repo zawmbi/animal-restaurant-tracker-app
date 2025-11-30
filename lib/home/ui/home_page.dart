@@ -194,23 +194,24 @@ case HitType.facility:
 
           // Fixed 3-per-row, square nav tiles using global CardTheme
           GridView.count(
-            crossAxisCount: 3,
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            crossAxisSpacing: 12,
-            mainAxisSpacing: 12,
-            childAspectRatio: 1.0,
-            children: [
-              _navTile(context, Icons.people, 'Customers', const CustomersPage()),
-              _navTile(context, Icons.store, 'Facilities', fac.FacilitiesPage()),
-              _navTile(context, Icons.mail, 'Letters', const LettersPage()),
-              _navTile(context, Icons.menu_book, 'Recipes', const recipes.DishesPage()),
-              _navTile(context, Icons.attach_money, 'Bank', const BankPage()),
-              _navTile(context, Icons.card_giftcard, 'Mementos', const MementosPage()),
-              _navTile(context, Icons.redeem, 'Redemption Codes', const RedemptionCodesPage()),
-
-              ],
-          ),
+          crossAxisCount: 3,
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          crossAxisSpacing: 12,
+          mainAxisSpacing: 12,
+          childAspectRatio: 1.0,
+          children: [
+            _navTile(context, Icons.people, 'Customers', const CustomersPage()),
+            _navTile(context, Icons.store, 'Facilities', fac.FacilitiesPage()),
+            _navTile(context, Icons.mail, 'Letters', const LettersPage()),
+            _navTile(context, Icons.menu_book, 'Recipes', const recipes.DishesPage()),
+            _navTile(context, Icons.attach_money, 'Bank', const BankPage()),
+            _navTile(context, Icons.card_giftcard, 'Mementos', const MementosPage()),
+            _navTile(context, Icons.timer, 'Timers', const TimersPage()),
+            _navTile(context, Icons.settings, 'Settings', const SettingsPage()),
+            _navTile(context, Icons.redeem, 'Redemption Codes', const RedemptionCodesPage()),
+          ],
+        )
 
         ],
       ),

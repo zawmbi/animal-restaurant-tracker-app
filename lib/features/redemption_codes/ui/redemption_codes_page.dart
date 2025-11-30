@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../shared/data/unlocked_store.dart';
 import '../../shared/json_loader.dart';
@@ -222,12 +223,12 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                         Expanded(flex: 2, child: Text('Code')),
                         Expanded(
                           flex: 1,
-                          child: Center(child: Text('Valid now')),
+                          child: Center(child: Text('Valid?')),
                         ),
-                        Expanded(flex: 3, child: Text('Validity range')),
+                        Expanded(flex: 3, child: Text('Date Range')),
                         // We no longer show the reason in the table
                         // Expanded(flex: 3, child: Text('Reason')),
-                        Expanded(flex: 3, child: Text('Gift / Owned')),
+                        Expanded(flex: 3, child: Text('Owned')),
                       ],
                     ),
                   ),
@@ -272,17 +273,23 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                // Code
+
                                 Expanded(
                                   flex: 2,
-                                  child: Text(
-                                    c.code,
-                                    style: theme.textTheme.titleMedium
-                                        ?.copyWith(fontWeight: FontWeight.bold),
+                                  child: InkWell(
+                                    onTap: () => _copyCode(context, c.code),
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(right: 4),
+                                      child: Text(
+                                        c.code,
+                                        style: theme.textTheme.titleMedium?.copyWith(
+                                          fontWeight: FontWeight.bold,
+                                          decoration: TextDecoration.underline, // optional, just to hint it's clickable
+                                        ),
+                                      ),
+                                    ),
                                   ),
                                 ),
-
-                                // Valid now (icon)
                                 Expanded(
                                   flex: 1,
                                   child: Center(
@@ -360,4 +367,16 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
       ),
     );
   }
+  void _copyCode(BuildContext context, String code) {
+  Clipboard.setData(ClipboardData(text: code));
+  ScaffoldMessenger.of(context)
+    ..hideCurrentSnackBar()
+    ..showSnackBar(
+      const SnackBar(
+        content: Text('Copied to clipboard!'),
+        duration: Duration(seconds: 2),
+      ),
+    );
+}
+
 }
