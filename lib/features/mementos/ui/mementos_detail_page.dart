@@ -201,69 +201,35 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
   // ----- Dress-Up Mementos -----
 
   Widget _buildDressUpSection(BuildContext context, ThemeData theme) {
+    final hasSource = (memento.source ?? '').isNotEmpty;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         _sectionTitle(theme, 'Dress-Up'),
 
-        // Sub-type: Clothing
+        // Basic type info based on tags
         if (isClothing) ...[
-          Text('Type: Clothing'),
+          const Text('Type: Clothing'),
           const SizedBox(height: 8),
-          const Text('Obtained from: Vegetable Garden'),
-          const SizedBox(height: 4),
-          const Text('Costs BUTTONS.'),
-          const SizedBox(height: 12),
-
-          _sectionTitle(theme, 'Source of Inspiration'),
-          // Clickable – wire this to your vegetable garden recipe page later.
-          TextButton(
-            onPressed: () => _openRecipeFromMemento(context),
-            child: const Text('View vegetable garden recipe'),
-          ),
-          const SizedBox(height: 16),
-        ]
-
-        // Clothing Accessories
-        else if (isAccessory) ...[
-          Text('Type: Clothing Accessory'),
+        ] else if (isAccessory) ...[
+          const Text('Type: Clothing Accessory'),
           const SizedBox(height: 8),
-          const Text('Costs BUTTONS.'),
-          const SizedBox(height: 16),
-        ]
-
-        // Restaurant decorations / Fish pond boat / Takeout cart
-        else if (isRestaurantDecoration || isFishPondBoat || isTakeoutCart) ...[
-          if (isRestaurantDecoration) Text('Type: Restaurant Decoration'),
-          if (isFishPondBoat) Text('Type: Fish Pond Boat'),
-          if (isTakeoutCart) Text('Type: Takeout Cart'),
+        ] else if (isRestaurantDecoration) ...[
+          const Text('Type: Restaurant Decoration'),
           const SizedBox(height: 8),
-          const Text('Can be displayed in the restaurant'),
-          const SizedBox(height: 16),
+        ] else if (isFishPondBoat) ...[
+          const Text('Type: Fish Pond Boat'),
+          const SizedBox(height: 8),
+        ] else if (isTakeoutCart) ...[
+          const Text('Type: Takeout Cart'),
+          const SizedBox(height: 8),
         ],
 
-        // "Can be worn by" section
-        if (isTakeoutCart) ...[
-          _sectionTitle(theme, 'Can be worn by:'),
-          // Exactly what you specified:
-          const Text('Delivery Boy Tate'),
-          const Text('Delivery Girl Tate'),
-          const SizedBox(height: 16),
-        ] else ...[
-          // Placeholder section for other dress-up mementos.
-          // Once you add staff info to the model, replace this with real data.
-          _sectionTitle(theme, 'Can be worn by:'),
-          TextButton(
-            onPressed: () => _openStaffChooser(context),
-            style: TextButton.styleFrom(
-              padding: EdgeInsets.zero,
-              alignment: Alignment.centerLeft,
-            ),
-            child: const Text(
-              '(Staff member – to be linked from data)',
-              style: TextStyle(decoration: TextDecoration.underline),
-            ),
-          ),
+        // If the memento has a source in your JSON, show it.
+        // (For Golden Ponytail you'll set source: "redemption_code" or a nicer label.)
+        if (hasSource) ...[
+          Text('Obtained from: ${memento.source}'),
           const SizedBox(height: 16),
         ],
       ],

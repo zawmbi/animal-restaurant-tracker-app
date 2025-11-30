@@ -13,6 +13,7 @@ import '../../features/customers/ui/customers_page.dart';
 import '../../features/facilities/ui/facilities_page.dart' as fac;
 import '../../features/facilities/ui/facility_detail_page.dart' as facdetail;
 import 'package:animal_restaurant_tracker/features/timers/ui/timers_page.dart';
+import '../../features/redemption_codes/ui/redemption_codes_page.dart';
 
 import '../../features/letters/ui/letters_page.dart';
 import '../../features/mementos/ui/mementos_page.dart';
@@ -204,12 +205,11 @@ case HitType.facility:
               _navTile(context, Icons.store, 'Facilities', fac.FacilitiesPage()),
               _navTile(context, Icons.mail, 'Letters', const LettersPage()),
               _navTile(context, Icons.menu_book, 'Recipes', const recipes.DishesPage()),
-              _navTile(context, Icons.card_giftcard, 'Mementos', const MementosPage()),
               _navTile(context, Icons.attach_money, 'Bank', const BankPage()),
-              _navTile(context, Icons.timer, 'Timers', const TimersPage()),
-              _navTile(context, Icons.settings, 'Settings', const SettingsPage()),
+              _navTile(context, Icons.card_giftcard, 'Mementos', const MementosPage()),
+              _navTile(context, Icons.redeem, 'Redemption Codes', const RedemptionCodesPage()),
 
-            ],
+              ],
           ),
 
         ],

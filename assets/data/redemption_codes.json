@@ -1,0 +1,17 @@
+[{
+  "code": "HAPPYASACHILD",
+  "validFrom": "2022-06-01",
+  "validUntil": "2022-07-01",
+  "reason": "Children's Day Event 2022",
+  "giftMementoId": "golden_ponytail",
+  "giftLabel": null
+},
+{
+  "code": "AR999",
+  "validFrom": "2020-01-01",
+  "validUntil": "2099-12-31",
+  "reason": "Friendship gift code / Ads code",
+  "giftMementoId": null,
+  "giftLabel": "Cod +50,000"
+}
+]

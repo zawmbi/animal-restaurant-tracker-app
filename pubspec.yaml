@@ -78,7 +78,9 @@ flutter:
   - assets/data/facilities_jsons/takeout_facilities.json
   - assets/data/facilities_jsons/terrace_facilities.json
   - assets/data/facilities_jsons/courtyard_facilities.json
-  - assets/data/facilities_jsons/      
+  - assets/data/facilities_jsons/     
+  - assets/data/redemption_codes.json
+ 
 
   # To add assets to your application, add an assets section, like this:
   # assets:

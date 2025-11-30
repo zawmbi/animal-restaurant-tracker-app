@@ -70,5 +70,16 @@
     "requirement": "Serve White Shiba 500 times.",
     "tags": ["customer_gift"],
     "source": "customer_gift"
-  }
+  },
+{
+  "id": "golden_ponytail",
+  "name": "Golden Ponytail",
+  "stars": 10,
+  "description": "Gorgeous and exotic.",
+  "requirement": "Received via in-game Redemption Code. Limited time offer.",
+  "tags": ["dress_up", "wearable", "clothing", "redemption_code"],
+  "source": "Redemption Code"
+}
+
+
 ]
