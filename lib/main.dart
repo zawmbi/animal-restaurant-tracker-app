@@ -18,7 +18,7 @@ class AnimalRestaurantApp extends StatelessWidget {
       title: 'Animal Restaurant Tracker',
       debugShowCheckedModeBanner: false,
       theme: buildAppTheme(),
-      home: const HomePage(), // 👈 this is your starting screen
+      home: const HomePage(), 
     );
   }
 }
