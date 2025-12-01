@@ -18,7 +18,8 @@ import '../../letters/data/letters_repository.dart';
 import '../../letters/model/letter.dart';
 import '../../letters/ui/letters_page.dart';
 
-import '../../mementos/ui/mementos_page.dart';
+import '../../mementos/data/mementos_index.dart';
+import '../../mementos/ui/mementos_detail_page.dart';
 
 class CustomerDetailPage extends StatelessWidget {
   final Customer customer;
@@ -41,7 +42,7 @@ class CustomerDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // TAGS (just display, not links)
+            // TAGS
             if (customer.tags.isNotEmpty) ...[
               Wrap(
                 spacing: 6,
@@ -68,7 +69,7 @@ class CustomerDetailPage extends StatelessWidget {
               const SizedBox(height: 16),
             ],
 
-            // FAVORITE DISHES (clickable by ID)
+            // FAVORITE DISHES
             if (customer.dishesOrderedIds.isNotEmpty) ...[
               Text(
                 'Favorite Dishes',
@@ -96,7 +97,7 @@ class CustomerDetailPage extends StatelessWidget {
             _RequirementsSection(customer: customer),
             const SizedBox(height: 16),
 
-            // MEMENTOS (each card clickable -> open MementosPage)
+            // MEMENTOS (each opens specific MementoDetailPage)
             if (customer.mementos.isNotEmpty) ...[
               Text(
                 'Mementos',
@@ -109,7 +110,7 @@ class CustomerDetailPage extends StatelessWidget {
                   child: ListTile(
                     title: ActionChip(
                       label: Text(m.name),
-                      onPressed: () => _openMementos(context, m),
+                      onPressed: () => _openMemento(context, m),
                       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                       visualDensity: VisualDensity.compact,
                     ),
@@ -151,7 +152,6 @@ class _RequirementsSection extends StatelessWidget {
   Widget build(BuildContext context) {
     final req = customer.requirements;
     if (req == null || !req.hasAny) {
-      // No requirements, don't show the card at all
       return const SizedBox.shrink();
     }
 
@@ -199,7 +199,6 @@ class _RequirementsSection extends StatelessWidget {
     rows.add(buildRow('Customers', req.customers));
     rows.add(buildRow('Flowers', req.flowers));
 
-    // remove any completely empty rows
     rows = rows.where((w) => w is! SizedBox).toList();
     if (rows.isEmpty) {
       return const SizedBox.shrink();
@@ -248,7 +247,6 @@ Future<void> _openEntityById(BuildContext context, String id) async {
   }
 
   // Try dishes
-    // Try dishes
   final dishes = await DishesRepository.instance.all();
   Dish? dish;
   for (final d in dishes) {
@@ -266,15 +264,6 @@ Future<void> _openEntityById(BuildContext context, String id) async {
     return;
   }
 
-  if (dish != null) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-  builder: (_) => DishDetailPage(dishId: dish!.id),
-      ),
-    );
-    return;
-  }
-
   // Try facilities
   final facilities = await FacilitiesRepository.instance.all();
   Facility? facility;
@@ -287,14 +276,12 @@ Future<void> _openEntityById(BuildContext context, String id) async {
   if (facility != null) {
     Navigator.of(context).push(
       MaterialPageRoute(
-      builder: (_) => FacilityDetailPage(facilityId: facility!.id),
-
+        builder: (_) => FacilityDetailPage(facilityId: facility!.id),
       ),
     );
     return;
   }
 
-  
   // Try letters (no single-letter page yet, so open LettersPage)
   final letters = await LettersRepository.instance.all();
   Letter? letter;
@@ -312,7 +299,7 @@ Future<void> _openEntityById(BuildContext context, String id) async {
       ),
     );
     return;
-  } 
+  }
 
   // Nothing found – show a small message
   ScaffoldMessenger.of(context).showSnackBar(
@@ -320,11 +307,27 @@ Future<void> _openEntityById(BuildContext context, String id) async {
   );
 }
 
-void _openMementos(BuildContext context, Memento memento) {
-  // For now just open the global Mementos page.
+Future<void> _openMemento(BuildContext context, Memento memento) async {
+  // Look up the matching MementoEntry in MementosIndex by id
+  final all = await MementosIndex.instance.all();
+  MementoEntry? entry;
+  for (final e in all) {
+    if (e.id == memento.id) {
+      entry = e;
+      break;
+    }
+  }
+
+  if (entry == null) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text('Memento not found: ${memento.id}')),
+    );
+    return;
+  }
+
   Navigator.of(context).push(
     MaterialPageRoute(
-      builder: (_) => const MementosPage(),
+      builder: (_) => MementoDetailPage(memento: entry!),
     ),
   );
 }

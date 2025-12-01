@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+
 import '../../shared/data/unlocked_store.dart';
 import '../data/mementos_index.dart';
+import '../../customers/data/customers_repository.dart';
+import '../../customers/ui/customer_detail_page.dart';
 
 /// Detail page for a single memento.
 /// Navigate here from MementosPage with:
@@ -27,18 +30,13 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
 
   // Kinds
   bool get isPoster => _tags.contains('poster');
-
   bool get isDressUp => _tags.contains('dress_up') || _tags.contains('wearable');
 
   // Dress-up sub-types
   bool get isClothing => _tags.contains('clothing');
-
   bool get isAccessory => _tags.contains('clothing_accessory');
-
   bool get isRestaurantDecoration => _tags.contains('restaurant_decoration');
-
   bool get isFishPondBoat => _tags.contains('fish_pond_boat');
-
   bool get isTakeoutCart => _tags.contains('takeout_cart');
 
   bool get _collected => store.isUnlocked('memento_collected', memento.key);
@@ -59,12 +57,12 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Collected checkbox (like on other pages)
+                // Owned checkbox
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      'Collected',
+                      'Owned',
                       style: theme.textTheme.titleMedium,
                     ),
                     Checkbox(
@@ -79,23 +77,34 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
                 ),
                 const SizedBox(height: 16),
 
-                // Rating line – NOT clickable.
-                if (memento.stars > 0) ...[
-                  Text(
-                    'Increase Rating ★ +${memento.stars}',
-                    style: theme.textTheme.titleMedium,
-                  ),
-                  const SizedBox(height: 12),
-                ],
+                // ----- Memento Name -----
+                _sectionTitle(theme, 'Memento Name'),
+                Text(
+                  memento.name,
+                  style: theme.textTheme.bodyMedium,
+                ),
+                const SizedBox(height: 16),
 
+                // ----- Description -----
+                _sectionTitle(theme, 'Memento Description'),
                 if (memento.description.isNotEmpty) ...[
                   Text(
                     memento.description,
                     style: theme.textTheme.bodyMedium,
                   ),
-                  const SizedBox(height: 16),
+                ] else ...[
+                  Text(
+                    '(No description provided)',
+                    style: theme.textTheme.bodyMedium,
+                  ),
                 ],
+                const SizedBox(height: 16),
 
+                // ----- Requirements (right after description) -----
+                _buildRequirementsSection(theme),
+                const SizedBox(height: 24),
+
+                // Type-specific sections
                 if (!isDressUp && !isPoster)
                   _buildRegularMementoSection(context, theme),
 
@@ -106,7 +115,25 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
                   _buildPosterSection(context, theme),
 
                 const SizedBox(height: 24),
-                _buildRequirementsSection(theme),
+
+                // Rating line – NOT clickable.
+                if (memento.stars > 0) ...[
+                  _sectionTitle(theme, 'Rating Bonus'),
+                  Text(
+                    'Bonus Rating ★ +${memento.stars}',
+                    style: theme.textTheme.bodyMedium,
+                  ),
+                  const SizedBox(height: 12),
+
+                ],
+                                // ----- Hidden or not -----
+                _sectionTitle(theme, 'Hidden Memento'),
+                Text(
+                  memento.hidden ? 'Yes (hidden memento)' : 'No',
+                  style: theme.textTheme.bodyMedium,
+                ),
+                const SizedBox(height: 16),
+
               ],
             ),
           ),
@@ -143,9 +170,9 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _sectionTitle(theme, 'Memento'),
+        _sectionTitle(theme, 'Memento Details'),
 
-        // Customer: clickable
+        // Customer: clickable → specific customer page
         if (hasCustomer)
           TextButton(
             style: TextButton.styleFrom(
@@ -227,7 +254,6 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
         ],
 
         // If the memento has a source in your JSON, show it.
-        // (For Golden Ponytail you'll set source: "redemption_code" or a nicer label.)
         if (hasSource) ...[
           Text('Obtained from: ${memento.source}'),
           const SizedBox(height: 16),
@@ -267,19 +293,16 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
     );
   }
 
-  // ----- Requirements / How to obtain -----
+  // ----- Requirements / "Memento Requirements" -----
 
   Widget _buildRequirementsSection(ThemeData theme) {
     final req = memento.requirement.trim();
     if (req.isEmpty) return const SizedBox.shrink();
 
-    // Examples:
-    // "Serve White Bunny 350 times."
-    // "Serve White Bunny 1500 times. Sell 2000 Taiyaki."
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _sectionTitle(theme, 'How to obtain'),
+        _sectionTitle(theme, 'Memento Requirements'),
         Text(
           req,
           style: theme.textTheme.bodyMedium,
@@ -288,28 +311,27 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
     );
   }
 
-  // ----- Click handling stubs -----
-  // These compile now, and you can later wire them to real pages/routes.
+  // ----- Click handling -----
 
-  void _openCustomer(BuildContext context) {
-    if (memento.customerId == null) return;
+  void _openCustomer(BuildContext context) async {
+    final id = memento.customerId;
+    if (id == null) return;
 
-    // TODO: Replace with your real customer page navigation.
-    // Example:
-    // Navigator.of(context).push(
-    //   MaterialPageRoute(
-    //     builder: (_) => CustomerDetailPage(customerId: memento.customerId!),
-    //   ),
-    // );
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Open customer page: ${memento.customerName}')),
+    // Look up the specific customer by ID
+    final customer = await CustomersRepository.instance.byId(id);
+    if (!mounted || customer == null) return;
+
+    // Navigate to that customer's detail page
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => CustomerDetailPage(customer: customer),
+      ),
     );
   }
 
   void _openSource(BuildContext context) {
     if (memento.source == null || memento.source!.isEmpty) return;
 
-    // TODO: Route to wishing well / gachapon / etc. based on memento.source.
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text('Open source page: ${memento.source}')),
     );
@@ -318,14 +340,12 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
   void _openEvent(BuildContext context) {
     if (memento.event == null || memento.event!.isEmpty) return;
 
-    // TODO: Route to event / storyline view.
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text('Open event: ${memento.event}')),
     );
   }
 
   void _openRecipeFromMemento(BuildContext context) {
-    // TODO: Wire to your real vegetable garden recipe view.
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
         content: Text('Open vegetable garden recipe page (to be wired).'),
@@ -334,7 +354,6 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
   }
 
   void _openStaffChooser(BuildContext context) {
-    // TODO: When you have staff data on the memento, navigate to staff detail.
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
         content: Text('Open staff member(s) that can wear this (to be wired).'),
