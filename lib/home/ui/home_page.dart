@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 import 'package:animal_restaurant_tracker/features/bank/ui/bank_page.dart';
-import 'package:animal_restaurant_tracker/features/facilities/data/facilities_repository.dart' as facrepo;
+import 'package:animal_restaurant_tracker/features/facilities/data/facilities_repository.dart'
+    as facrepo;
 
 import '../../features/search/data/search_index.dart';
 import '../../features/shared/data/unlocked_store.dart';
@@ -14,11 +15,13 @@ import '../../features/facilities/ui/facilities_page.dart' as fac;
 import '../../features/facilities/ui/facility_detail_page.dart' as facdetail;
 import 'package:animal_restaurant_tracker/features/timers/ui/timers_page.dart';
 import '../../features/redemption_codes/ui/redemption_codes_page.dart';
+import 'package:animal_restaurant_tracker/features/courtyard/ui/courtyard_page.dart';
+import 'package:animal_restaurant_tracker/features/aromatic_acorn/ui/aromatic_acorn_page.dart';
 
 import '../../features/letters/ui/letters_page.dart';
 import '../../features/mementos/ui/mementos_page.dart';
-import '../../features/dishes/ui/dishes_page.dart' as recipes;      
-import '../../features/dishes/ui/dish_detail_page.dart' as detail;  
+import '../../features/dishes/ui/dishes_page.dart' as recipes;
+import '../../features/dishes/ui/dish_detail_page.dart' as detail;
 import '../../features/settings/ui/settings_page.dart';
 
 import '../../features/customers/data/customers_repository.dart';
@@ -77,20 +80,23 @@ class _HomePageState extends State<HomePage> {
       case HitType.dish:
         if (!mounted) return;
         Navigator.of(context).push(
-          MaterialPageRoute(builder: (_) => detail.DishDetailPage(dishId: h.id)),
+          MaterialPageRoute(
+            builder: (_) => detail.DishDetailPage(dishId: h.id),
+          ),
         );
         break;
 
-case HitType.facility:
-  final f = await facrepo.FacilitiesRepository.instance.byId(h.id);
-  if (f == null || !mounted) return;
-  Navigator.of(context).push(
-    MaterialPageRoute(
-      builder: (_) => facdetail.FacilityDetailPage(facilityId: f.id),
-    ),
-  );
-  break;
-
+      case HitType.facility:
+        final f = await facrepo.FacilitiesRepository.instance.byId(h.id);
+        if (f == null || !mounted) return;
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => facdetail.FacilityDetailPage(
+              facilityId: f.id,
+            ),
+          ),
+        );
+        break;
 
       case HitType.letter:
         if (!mounted) return;
@@ -115,7 +121,7 @@ case HitType.facility:
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // Search card uses global CardTheme (cream bg, green border, radius)
+          // Search card
           Card(
             child: Column(
               children: [
@@ -123,10 +129,12 @@ case HitType.facility:
                   controller: _searchCtrl,
                   focusNode: _focus,
                   decoration: const InputDecoration(
-                    hintText: 'Search customers, letters, recipes, facilities, mementos…',
+                    hintText:
+                        'Search customers, letters, recipes, facilities, mementos…',
                     prefixIcon: Icon(Icons.search),
                     border: InputBorder.none,
-                    contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+                    contentPadding:
+                        EdgeInsets.symmetric(horizontal: 12, vertical: 14),
                   ),
                   onChanged: _onChanged,
                 ),
@@ -134,8 +142,10 @@ case HitType.facility:
                 if (_focus.hasFocus && _suggestions.isNotEmpty)
                   Container(
                     constraints: const BoxConstraints(maxHeight: 280),
-                    decoration: BoxDecoration(
-                      border: Border(top: BorderSide(color: Colors.black12)),
+                    decoration: const BoxDecoration(
+                      border: Border(
+                        top: BorderSide(color: Colors.black12),
+                      ),
                     ),
                     child: ListView.builder(
                       shrinkWrap: true,
@@ -162,7 +172,8 @@ case HitType.facility:
                             break;
                         }
 
-                        final checked = store.isUnlocked(bucket, h.key ?? h.id);
+                        final checked =
+                            store.isUnlocked(bucket, h.key ?? h.id);
 
                         return InkWell(
                           mouseCursor: SystemMouseCursors.click,
@@ -170,15 +181,17 @@ case HitType.facility:
                           child: ListTile(
                             leading: Icon(_iconFor(h.type)),
                             title: Text(h.title),
-                            subtitle: h.subtitle != null ? Text(h.subtitle!) : null,
+                            subtitle: h.subtitle != null
+                                ? Text(h.subtitle!)
+                                : null,
                             trailing: Checkbox(
-                                    value: checked,
-                                    onChanged: (v) => store.setUnlocked(
-                                      bucket!,
-                                      h.key ?? h.id,
-                                      v ?? false,
-                                    ),
-                                  ),
+                              value: checked,
+                              onChanged: (v) => store.setUnlocked(
+                                bucket!,
+                                h.key ?? h.id,
+                                v ?? false,
+                              ),
+                            ),
                           ),
                         );
                       },
@@ -192,37 +205,103 @@ case HitType.facility:
           Text('Browse', style: Theme.of(context).textTheme.titleLarge),
           const SizedBox(height: 8),
 
-          // Fixed 3-per-row, square nav tiles using global CardTheme
+          // 3-per-row nav tiles
           GridView.count(
-          crossAxisCount: 3,
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          crossAxisSpacing: 12,
-          mainAxisSpacing: 12,
-          childAspectRatio: 1.0,
-          children: [
-            _navTile(context, Icons.people, 'Customers', const CustomersPage()),
-            _navTile(context, Icons.store, 'Facilities', fac.FacilitiesPage()),
-            _navTile(context, Icons.mail, 'Letters', const LettersPage()),
-            _navTile(context, Icons.menu_book, 'Recipes', const recipes.DishesPage()),
-            _navTile(context, Icons.attach_money, 'Bank', const BankPage()),
-            _navTile(context, Icons.card_giftcard, 'Mementos', const MementosPage()),
-            _navTile(context, Icons.timer, 'Timers', const TimersPage()),
-            _navTile(context, Icons.settings, 'Settings', const SettingsPage()),
-            _navTile(context, Icons.redeem, 'Redemption Codes', const RedemptionCodesPage()),
-          ],
-        )
-
+            crossAxisCount: 3,
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            crossAxisSpacing: 12,
+            mainAxisSpacing: 12,
+            childAspectRatio: 1.0,
+            children: [
+              _navTile(
+                context,
+                Icons.people,
+                'Customers',
+                const CustomersPage(),
+              ),
+              _navTile(
+                context,
+                Icons.yard_outlined,
+                'Courtyard',
+                const CourtyardPage(),
+              ),
+              _navTile(
+                context,
+                Icons.store,
+                'Facilities',
+                fac.FacilitiesPage(),
+              ),
+              _navTile(
+                context,
+                Icons.mail,
+                'Letters',
+                const LettersPage(),
+              ),
+              _navTile(
+                context,
+                Icons.menu_book,
+                'Recipes',
+                const recipes.DishesPage(),
+              ),
+              _navTile(
+                context,
+                Icons.attach_money,
+                'Bank',
+                const BankPage(),
+              ),
+              _navTile(
+                context,
+                Icons.card_giftcard,
+                'Mementos',
+                const MementosPage(),
+              ),
+              _navTile(
+                context,
+                Icons.timer,
+                'Timers',
+                const TimersPage(),
+              ),
+              _navTile(
+                context,
+                Icons.settings,
+                'Settings',
+                const SettingsPage(),
+              ),
+              _navTile(
+                context,
+                Icons.redeem,
+                'Redemption Codes',
+                const RedemptionCodesPage(),
+              ),
+              _navTile(
+                context,
+                Icons.emoji_events,
+                'Aromatic Acorn Judging',
+                // swap this Placeholder for your real page later
+                const _AromaticAcornPlaceholderPage(),
+                // or later:
+                // const AromaticAcornPage(),
+              ),
+            ],
+          ),
         ],
       ),
     );
   }
 
-  Widget _navTile(BuildContext context, IconData icon, String label, Widget page) {
+  Widget _navTile(
+    BuildContext context,
+    IconData icon,
+    String label,
+    Widget page,
+  ) {
     return _NavTile(
       icon: icon,
       label: label,
-      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => page)),
+      onTap: () => Navigator.of(context).push(
+        MaterialPageRoute(builder: (_) => page),
+      ),
     );
   }
 
@@ -255,25 +334,21 @@ class _NavTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Card picks up border/radius/background from global CardTheme (app_theme.dart)
     return Card(
       clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: onTap,
         child: LayoutBuilder(
           builder: (context, constraints) {
-            // Scale icon to available height so we never overflow a square tile
-            final iconSize = constraints.maxHeight * 0.38; // ~38% of tile height
+            final iconSize = constraints.maxHeight * 0.38;
 
             return Padding(
               padding: const EdgeInsets.all(10),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Icon scales with tile size
                   Icon(icon, size: iconSize),
                   const SizedBox(height: 8),
-                  // Text can wrap and shrink 1pt at a time; Flexible prevents overflow
                   Flexible(
                     child: Center(
                       child: AutoSizeText(
@@ -291,6 +366,25 @@ class _NavTile extends StatelessWidget {
               ),
             );
           },
+        ),
+      ),
+    );
+  }
+}
+
+// Temp page so the Aromatic Acorn tile works until you build the real one.
+class _AromaticAcornPlaceholderPage extends StatelessWidget {
+  const _AromaticAcornPlaceholderPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Aromatic Acorn Judging')),
+      body: const Center(
+        child: Text(
+          'Aromatic Acorn Judging.\n'
+          'Not done yet :D.',
+          textAlign: TextAlign.center,
         ),
       ),
     );

@@ -1,1 +1,577 @@
-[]
+[
+  {
+    "id": "friends_board_basic",
+    "area": "courtyard",
+    "group": "Friends Board",
+    "name": "Friends Board",
+    "description": "Add friends and visit their restaurants. Shows up in the Courtyard.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 0 }
+    ],
+    "effects": [
+      { "type": "friendLimitIncrease", "friendSlots": 10 },
+      { "type": "ratingBonus", "amount": 2 }
+    ],
+    "series": "Core Courtyard"
+  },
+  {
+    "id": "friends_board_expanded",
+    "area": "courtyard",
+    "group": "Friends Board",
+    "name": "Friends Board (Expanded)",
+    "description": "An upgraded Friends Board that lets you add even more friends.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 20000 }
+    ],
+    "effects": [
+      { "type": "friendLimitIncrease", "friendSlots": 20 },
+      { "type": "ratingBonus", "amount": 4 }
+    ],
+    "series": "Core Courtyard"
+  },
+
+  {
+    "id": "speaker_basic",
+    "area": "courtyard",
+    "group": "Speaker",
+    "name": "Speaker",
+    "description": "Courtyard facility that boosts promotion. Tap it to see detailed Speaker Upgrades.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 10000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 5 }
+    ],
+    "series": "Core Courtyard"
+  },
+  {
+    "id": "speaker_fancy",
+    "area": "courtyard",
+    "group": "Speaker",
+    "name": "Fancy Speaker",
+    "description": "An upgraded speaker with better sound and more effective promotions.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 50000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 10 }
+    ],
+    "series": "Core Courtyard"
+  },
+
+  {
+    "id": "game_machine_basic",
+    "area": "courtyard",
+    "group": "Game Machine",
+    "name": "Game Machine",
+    "description": "Lets customers play minigames for Cod, Rating, Film and Magnifying Glass.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 20000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 8 }
+    ],
+    "series": "Core Courtyard"
+  },
+  {
+    "id": "game_machine_retro",
+    "area": "courtyard",
+    "group": "Game Machine",
+    "name": "Retro Game Machine",
+    "description": "A retro-style console packed with classic minigames.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 60000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 12 }
+    ],
+    "series": "Core Courtyard"
+  },
+
+  {
+    "id": "house_type_tree_house",
+    "area": "courtyard",
+    "group": "House Type",
+    "name": "Tree House",
+    "description": "A pretty cozy house in a tree hole.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 0 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 2 },
+      { "type": "incomePerMinute", "currency": "cod", "amount": 95 }
+    ],
+    "series": "House Type"
+  },
+  {
+    "id": "house_type_burrow",
+    "area": "courtyard",
+    "group": "House Type",
+    "name": "Burrow",
+    "description": "Like a house from a fairy tale.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 7200 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 6 },
+      { "type": "incomePerMinute", "currency": "cod", "amount": 143 }
+    ],
+    "series": "House Type"
+  },
+
+  {
+    "id": "door_log_door",
+    "area": "courtyard",
+    "group": "Door",
+    "name": "Log Door",
+    "description": "Made with the simplest method from the most primitive material.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "cod", "amount": 0 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 1 },
+      { "type": "incomePerMinute", "currency": "cod", "amount": 95 }
+    ],
+    "series": "Door"
+  },
+  {
+    "id": "door_green_round",
+    "area": "courtyard",
+    "group": "Door",
+    "name": "Green Round Door",
+    "description": "'Knock, knock!' Will a dwarf open the door?",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "cod", "amount": 200000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 2 },
+      { "type": "incomePerMinute", "currency": "cod", "amount": 143 }
+    ],
+    "series": "Door"
+  },
+
+  {
+    "id": "window_simple",
+    "area": "courtyard",
+    "group": "Window",
+    "name": "Simple Window",
+    "description": "Open the window to start your simple happy day!",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "cod", "amount": 30000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 1 },
+      { "type": "incomePerMinute", "currency": "cod", "amount": 114 }
+    ],
+    "series": "Window"
+  },
+  {
+    "id": "window_green_flutter",
+    "area": "courtyard",
+    "group": "Window",
+    "name": "Green Flutter",
+    "description": "The gentle breeze flutters the curtain.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "cod", "amount": 250000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 2 },
+      { "type": "incomePerMinute", "currency": "cod", "amount": 171 }
+    ],
+    "series": "Window"
+  },
+
+  {
+    "id": "table_log",
+    "area": "courtyard",
+    "group": "Table",
+    "name": "Log Table",
+    "description": "Simple and sturdy.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "cod", "amount": 70000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 2 },
+      { "type": "incomePerMinute", "currency": "film", "amount": 1 }
+    ],
+    "series": "Table"
+  },
+  {
+    "id": "table_picnic_cloth",
+    "area": "courtyard",
+    "group": "Table",
+    "name": "Picnic Cloth",
+    "description": "It's a wonderful day. Let's have a picnic.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "cod", "amount": 300000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 4 },
+      { "type": "incomePerMinute", "currency": "film", "amount": 4 }
+    ],
+    "series": "Table"
+  },
+
+  {
+    "id": "stool_wooden",
+    "area": "courtyard",
+    "group": "Stool",
+    "name": "Wooden Stool",
+    "description": "It squeaks when you sit on it.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "cod", "amount": 80000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 1 },
+      { "type": "incomePerMinute", "currency": "cod", "amount": 48 }
+    ],
+    "series": "Stool"
+  },
+  {
+    "id": "stool_mushroom",
+    "area": "courtyard",
+    "group": "Stool",
+    "name": "Mushroom Stool",
+    "description": "It can grow bigger?!",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "cod", "amount": 550000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 2 },
+      { "type": "incomePerMinute", "currency": "cod", "amount": 95 }
+    ],
+    "series": "Stool"
+  },
+
+  {
+    "id": "short_fence_pine",
+    "area": "courtyard",
+    "group": "Short Fence",
+    "name": "Pine Fence (Short)",
+    "description": "Time for some space management.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 2500 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 2 },
+      { "type": "incomePerMinute", "currency": "film", "amount": 3 }
+    ],
+    "series": "Fence"
+  },
+  {
+    "id": "short_fence_stake",
+    "area": "courtyard",
+    "group": "Short Fence",
+    "name": "Stake Fence (Short)",
+    "description": "The moss on the wooden stakes smells like the forest.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 5000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 4 },
+      { "type": "incomePerMinute", "currency": "film", "amount": 7 }
+    ],
+    "series": "Fence"
+  },
+
+  {
+    "id": "long_fence_pine",
+    "area": "courtyard",
+    "group": "Long Fence",
+    "name": "Pine Fence (Long)",
+    "description": "A longer section of pine fence.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 5000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 4 },
+      { "type": "incomePerMinute", "currency": "film", "amount": 7 }
+    ],
+    "series": "Fence"
+  },
+  {
+    "id": "long_fence_stake",
+    "area": "courtyard",
+    "group": "Long Fence",
+    "name": "Stake Fence (Long)",
+    "description": "A longer version of the stake fence.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 10000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 8 },
+      { "type": "incomePerMinute", "currency": "film", "amount": 11 }
+    ],
+    "series": "Fence"
+  },
+
+  {
+    "id": "wall_decor_little_blackboard",
+    "area": "courtyard",
+    "group": "Wall Decor",
+    "name": "Little Blackboard",
+    "description": "Jiji wrote today's menu recommendations on it.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 800 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 2 }
+    ],
+    "series": "Wall Decor"
+  },
+  {
+    "id": "wall_decor_party_flag",
+    "area": "courtyard",
+    "group": "Wall Decor",
+    "name": "Party Flag",
+    "description": "Got to have a sweet party, right?",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 4000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 7 }
+    ],
+    "series": "Wall Decor"
+  },
+
+  {
+    "id": "plant_little_apple_tree_sapling",
+    "area": "courtyard",
+    "group": "Plants",
+    "name": "Little Apple Tree Sapling",
+    "description": "The apples look small, but they are crispy and sweet.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 3000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 4 },
+      { "type": "incomePerMinute", "currency": "film", "amount": 2 }
+    ],
+    "series": "Plants"
+  },
+  {
+    "id": "plant_fragrant_white_flowering_tree_sapling",
+    "area": "courtyard",
+    "group": "Plants",
+    "name": "Fragrant White Flowering Tree Sapling",
+    "description": "The fragrance of the blooming flowers can fill the whole yard.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 3000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 4 },
+      { "type": "incomePerMinute", "currency": "film", "amount": 2 }
+    ],
+    "series": "Plants"
+  },
+
+  {
+    "id": "table_decor_strawberry_cake",
+    "area": "courtyard",
+    "group": "Table Decor",
+    "name": "Strawberry Cake",
+    "description": "Strawberries and cream go together perfectly.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 2400 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 4 },
+      { "type": "incomePerMinute", "currency": "film", "amount": 1 }
+    ],
+    "series": "Table Decor"
+  },
+  {
+    "id": "table_decor_picnic_basket",
+    "area": "courtyard",
+    "group": "Table Decor",
+    "name": "Picnic Basket",
+    "description": "Take all that delicious food on a picnic!",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 3200 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 6 },
+      { "type": "incomePerMinute", "currency": "film", "amount": 1 }
+    ],
+    "series": "Table Decor"
+  },
+
+  {
+    "id": "carpet_woven",
+    "area": "courtyard",
+    "group": "Carpet",
+    "name": "Woven Carpet",
+    "description": "Granny's carefully-woven carpet. It's very warm.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 4500 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 4 }
+    ],
+    "series": "Carpet"
+  },
+  {
+    "id": "carpet_rose_long",
+    "area": "courtyard",
+    "group": "Carpet",
+    "name": "Rose Long Carpet",
+    "description": "The carpet's soft material is comfortable to step on.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 16600 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 16 }
+    ],
+    "series": "Carpet"
+  },
+
+  {
+    "id": "floor_decor_paper_light_box",
+    "area": "courtyard",
+    "group": "Floor Decor",
+    "name": "Paper Light Box",
+    "description": "Careful not to get it wet in the rain.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 1600 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 4 }
+    ],
+    "series": "Floor Decor"
+  },
+  {
+    "id": "floor_decor_little_yellow_flower",
+    "area": "courtyard",
+    "group": "Floor Decor",
+    "name": "Little Yellow Flower",
+    "description": "A very resilient flower that grows by the roadside.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 4000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 7 }
+    ],
+    "series": "Floor Decor"
+  },
+
+  {
+    "id": "certificate_aromatic_acorn_1_star",
+    "area": "courtyard",
+    "group": "Certificate of Honor",
+    "name": "Aromatic Acorn 1-Star Certificate",
+    "description": "A 1-Star Certificate from Aromatic Acorn Judging.",
+    "requirementsStars": 0,
+    "requirementNote": "Complete Aromatic Acorn 1-Star Judging",
+    "price": [],
+    "effects": [
+      { "type": "ratingBonus", "amount": 1 }
+    ],
+    "series": "Aromatic Acorn Certificates"
+  },
+  {
+    "id": "certificate_aromatic_acorn_2_star",
+    "area": "courtyard",
+    "group": "Certificate of Honor",
+    "name": "Aromatic Acorn 2-Star Certificate",
+    "description": "A 2-Star Certificate from Aromatic Acorn Judging.",
+    "requirementsStars": 0,
+    "requirementNote": "Complete Aromatic Acorn 2-Star Judging",
+    "price": [],
+    "effects": [
+      { "type": "ratingBonus", "amount": 2 }
+    ],
+    "series": "Aromatic Acorn Certificates"
+  },
+
+  {
+    "id": "pet_house_cozy_kennel",
+    "area": "courtyard",
+    "group": "Pet Houses",
+    "name": "Cozy Kennel",
+    "description": "A small but cozy kennel where pets can rest in the courtyard.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 15000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 5 }
+    ],
+    "series": "Pets"
+  },
+  {
+    "id": "pet_house_cat_tower",
+    "area": "courtyard",
+    "group": "Pet Houses",
+    "name": "Courtyard Cat Tower",
+    "description": "A tall cat tower that lets kitties survey the courtyard.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 30000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 8 }
+    ],
+    "series": "Pets"
+  },
+
+  {
+    "id": "pet_paradise_small_garden",
+    "area": "courtyard",
+    "group": "Pet Paradise",
+    "name": "Pet Paradise - Small Garden",
+    "description": "A small garden area where pets can play together.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 50000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 10 }
+    ],
+    "series": "Pets"
+  },
+  {
+    "id": "pet_paradise_large_playground",
+    "area": "courtyard",
+    "group": "Pet Paradise",
+    "name": "Pet Paradise - Large Playground",
+    "description": "A large playground filled with toys for all kinds of pets.",
+    "requirementsStars": 0,
+    "price": [
+      { "currency": "film", "amount": 100000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 20 }
+    ],
+    "series": "Pets"
+  }
+]
