@@ -173,5 +173,17 @@
     "unlocks": [],
     "prerequisite": "Higher probability during Anniversary Event",
     "tags": ["anniversary_event_letter"]
+  },
+    {
+    "id": "2025_staff_retreat",
+    "name": "2025 Staff Retreat",
+    "category": "Anniversary Event",
+    "combinations": [
+      { "slot1": "Bluebell", "slot2": "Gold Can", "slot3": "*" }
+    ],
+    "bonus": null,
+    "unlocks": [],
+    "prerequisite": "Higher probability during Anniversary Event",
+    "tags": ["anniversary_event_letter"]
   }
 ]
