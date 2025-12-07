@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import '/features/aromatic_acorn/ui/aromatic_acorn_page.dart ';
+import '/features/aromatic_acorn/ui/aromatic_acorn_page.dart';
 
 /// Price entry from JSON:
 /// {

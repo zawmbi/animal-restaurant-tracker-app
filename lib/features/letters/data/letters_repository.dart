@@ -1,10 +1,13 @@
+// lib/features/letters/data/letters_repository.dart
 import '../../shared/json_loader.dart';
 import '../model/letter.dart';
 
 class LettersRepository {
   static const _asset = 'assets/data/letters.json';
+
   LettersRepository._();
   static final LettersRepository instance = LettersRepository._();
+
   List<Letter>? _cache;
 
   Future<List<Letter>> all() async {

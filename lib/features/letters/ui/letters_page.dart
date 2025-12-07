@@ -4,6 +4,7 @@ import '../../shared/data/unlocked_store.dart';
 import '../data/letters_repository.dart';
 import '../model/letter.dart';
 import '../../search/ui/global_search_page.dart';
+import 'letter_detail_page.dart'; // ⬅️ add this
 
 class LettersPage extends StatelessWidget {
   const LettersPage({super.key});
@@ -44,8 +45,15 @@ class LettersPage extends StatelessWidget {
                       label: l.name,
                       checked: unlocked,
                       showCheckbox: true,
-                      onCheckChanged: (v) => store.setUnlocked('letter', l.id, v),
-                      onTap: () => store.toggle('letter', l.id),
+                      onCheckChanged: (v) =>
+                          store.setUnlocked('letter', l.id, v),
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => LetterDetailPage(letter: l),
+                          ),
+                        );
+                      },
                     );
                   }).toList(),
                 ),
