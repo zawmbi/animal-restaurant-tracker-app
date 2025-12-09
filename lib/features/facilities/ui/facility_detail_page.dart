@@ -588,6 +588,9 @@ class _FacilityDetailBody extends StatelessWidget {
       case FacilityEffectType.cookingEfficiencyBonus:
         // TODO: Handle this case.
         throw UnimplementedError();
+      case FacilityEffectType.friendLimitIncrease:
+        // TODO: Handle this case.
+        throw UnimplementedError();
     }
   }
 }

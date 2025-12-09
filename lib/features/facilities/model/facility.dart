@@ -24,13 +24,14 @@ enum FacilityArea {
 
 /// What kind of effect a facility gives.
 enum FacilityEffectType {
-  tipCapIncrease,      // +10,000 tip cap
-  incomePerMinute,     // +5 cod / min
-  incomePerInterval,   // +X every N minutes
-  incomePerEventRange, // 2–19 film per <eventKey>
-  ratingBonus,         // +3 (cosmetic)
-  gachaDraws,          // number of draws unlocked
-  gachaLevel,          // level of the gachapon
+  tipCapIncrease,         // +10,000 tip cap
+  friendLimitIncrease,    // +X to friends limit   <-- NEW
+  incomePerMinute,        // +5 cod / min
+  incomePerInterval,      // +X every N minutes
+  incomePerEventRange,    // 2–19 film per <eventKey>
+  ratingBonus,            // +3 (cosmetic)
+  gachaDraws,             // number of draws unlocked
+  gachaLevel,             // level of the gachapon
   cookingEfficiencyBonus, // % faster cooking 
 }
 
@@ -101,32 +102,44 @@ FacilityEffectType _parseEffectType(String raw, Map<String, dynamic> j) {
   if (found != null) return found;
 
   // Fallback aliases
-  switch (key) {
+    switch (key) {
     case 'income_per_minute':
     case 'incomeperminute':
       return FacilityEffectType.incomePerMinute;
+
     case 'income_per_interval':
     case 'incomeperinterval':
       return FacilityEffectType.incomePerInterval;
+
     case 'income_per_event_range':
     case 'incomepereventrange':
       return FacilityEffectType.incomePerEventRange;
+
     case 'tip_cap_increase':
     case 'tipcapincrease':
       return FacilityEffectType.tipCapIncrease;
+
+    case 'friend_limit_increase':        // <-- NEW
+    case 'friendlimitincrease':          // <-- NEW
+      return FacilityEffectType.friendLimitIncrease;
+
     case 'rating_bonus':
     case 'ratingbonus':
       return FacilityEffectType.ratingBonus;
+
     case 'gacha_draws':
     case 'gachadraws':
       return FacilityEffectType.gachaDraws;
+
     case 'gacha_level':
     case 'gachalevel':
       return FacilityEffectType.gachaLevel;
+
     default:
       throw FormatException(
           'Unknown effect type "$raw" for facility ${j['id'] ?? j['name']}');
   }
+
 }
 
 /// Price line (e.g. 14,000 cod).

@@ -512,6 +512,9 @@ class _FacilityDetailBody extends StatelessWidget {
         return 'Gacha Draws';
       case FacilityEffectType.gachaLevel:
         return 'Gacha Level';
+      case FacilityEffectType.friendLimitIncrease:
+        // TODO: Handle this case.
+        throw UnimplementedError();
     }
   }
 
@@ -534,6 +537,9 @@ class _FacilityDetailBody extends StatelessWidget {
         return '${e.amount?.toInt() ?? 0} draws';
       case FacilityEffectType.gachaLevel:
         return 'Lv. ${e.level ?? e.amount?.toInt() ?? 1}';
+      case FacilityEffectType.friendLimitIncrease:
+        // TODO: Handle this case.
+        throw UnimplementedError();
     }
   }
 }
