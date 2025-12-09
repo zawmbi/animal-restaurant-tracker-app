@@ -40,7 +40,6 @@ class DishDetailPage extends StatelessWidget {
             return const Center(child: Text('Recipe not found.'));
           }
 
-          // Rebuild details when unlock state changes so the checkbox updates.
           return AnimatedBuilder(
             animation: store,
             builder: (context, _) =>
@@ -99,48 +98,81 @@ class _FreshDishDetailBody extends StatelessWidget {
 
         // ---------- Freshly Made Details ----------
         if (isFreshlyMade)
-          Card(
+          Container(
+            decoration: BoxDecoration(
+              color: Colors
+                  .transparent, // ← removes white background from Card
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: Colors.brown.shade200.withOpacity(.4),
+                width: 1.2,
+              ),
+            ),
             child: Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _infoRow(context, 'Recipe Name', dish.name),
+                  _infoRow(context, 'Recipe Name', Text(dish.name)),
+
                   if (dish.description.isNotEmpty)
-                    _infoRow(context, 'Description', dish.description),
+                    _infoRow(context, 'Description', Text(dish.description)),
+
                   if (dish.timeSeconds != null)
                     _infoRow(
                       context,
                       'Time to cook',
-                      _formatSeconds(dish.timeSeconds!),
+                      Text(_formatSeconds(dish.timeSeconds!)),
                     ),
+
                   if (dish.earningsMax != null)
                     _infoRow(
                       context,
-                      'Earnings per dish (Cod)',
-                      '🐟 ${_formatNumber(dish.earningsMax!)}',
+                      'Earnings per dish',
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Image.asset(
+                            'assets/images/cod.png',
+                            width: 20,
+                            height: 20,
+                          ),
+                          const SizedBox(width: 4),
+                          Text(_formatNumber(dish.earningsMax!)),
+                        ],
+                      ),
                     ),
+
                   _infoRow(
                     context,
                     'Star requirement',
                     dish.requirementsStars != null &&
                             dish.requirementsStars! > 0
-                        ? '${dish.requirementsStars}★'
-                        : '—',
+                        ? Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Image.asset(
+                                'assets/images/star.png',
+                                width: 18,
+                                height: 18,
+                              ),
+                              const SizedBox(width: 4),
+                              Text('${dish.requirementsStars}'),
+                            ],
+                          )
+                        : const Text('—'),
                   ),
+
                   _infoRow(
                     context,
-                    'Cost of the recipe (Cod)',
-                    _firstCodCost(dish.price) ??
-                        dish.costText ??
-                        'Free',
+                    'Cost of the recipe',
+                    _buildCodCostValue(dish.price, dish.costText),
                   ),
                 ],
               ),
             ),
           ),
 
-        // ---------- Placeholder for other sections ----------
         if (!isFreshlyMade)
           const Text('Details for other recipe types coming soon.'),
 
@@ -157,30 +189,24 @@ class _FreshDishDetailBody extends StatelessWidget {
     return FutureBuilder<List<Customer>>(
       future: CustomersRepository.instance.all(),
       builder: (context, snap) {
-        if (!snap.hasData) {
-          return const SizedBox.shrink();
-        }
+        if (!snap.hasData) return const SizedBox.shrink();
 
         final customers = snap.data!;
         final dishIdLower = dish.id.toLowerCase();
         final dishNameLower = dish.name.toLowerCase();
 
-        // Customers that REQUIRE this dish (requiredFoodId or requirements.recipes)
         final requiredFor = customers.where((c) {
           final requiredFood = c.requiredFoodId?.toLowerCase();
-          final recipesReq = c.requirements?.recipes ?? const [];
-          final recipesReqLower =
-              recipesReq.map((r) => r.toLowerCase()).toList();
+          final recipesReq =
+              c.requirements?.recipes.map((r) => r.toLowerCase()).toList() ??
+                  const [];
 
-          final byRequiredFood =
-              requiredFood == dishIdLower || requiredFood == dishNameLower;
-          final byRecipes = recipesReqLower.contains(dishIdLower) ||
-              recipesReqLower.contains(dishNameLower);
-
-          return byRequiredFood || byRecipes;
+          return requiredFood == dishIdLower ||
+              requiredFood == dishNameLower ||
+              recipesReq.contains(dishIdLower) ||
+              recipesReq.contains(dishNameLower);
         }).toList();
 
-        // Customers who can order this dish
         final canOrder = customers.where((c) {
           final orderedLower =
               c.dishesOrderedIds.map((d) => d.toLowerCase()).toList();
@@ -197,10 +223,7 @@ class _FreshDishDetailBody extends StatelessWidget {
 
         if (requiredFor.isNotEmpty) {
           children.addAll([
-            Text(
-              'Required for',
-              style: theme.textTheme.titleMedium,
-            ),
+            Text('Required for', style: theme.textTheme.titleMedium),
             const SizedBox(height: 4),
             Wrap(
               spacing: 6,
@@ -226,10 +249,8 @@ class _FreshDishDetailBody extends StatelessWidget {
 
         if (canOrder.isNotEmpty) {
           children.addAll([
-            Text(
-              'Customers who can order this dish',
-              style: theme.textTheme.titleMedium,
-            ),
+            Text('Customers who can order this dish',
+                style: theme.textTheme.titleMedium),
             const SizedBox(height: 4),
             Wrap(
               spacing: 6,
@@ -260,26 +281,48 @@ class _FreshDishDetailBody extends StatelessWidget {
     );
   }
 
-  // ---------- Helper UI ----------
-  Widget _infoRow(BuildContext context, String label, String value) {
+  // ---------- Helper Row ----------
+  Widget _infoRow(BuildContext context, String label, Widget valueWidget) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
         children: [
           Expanded(child: Text(label)),
-          Text(
-            value,
+          DefaultTextStyle(
             style: const TextStyle(
               fontWeight: FontWeight.w600,
               fontSize: 15,
             ),
+            child: valueWidget,
           ),
         ],
       ),
     );
   }
 
-  // ---------- Formatting helpers ----------
+  // ---------- Cost Row with Icon ----------
+  Widget _buildCodCostValue(List<Price>? prices, String? costText) {
+    if (prices == null || prices.isEmpty) {
+      return Text(costText ?? 'Free');
+    }
+
+    final codPrice = prices.first;
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Image.asset(
+          'assets/images/cod.png',
+          width: 20,
+          height: 20,
+        ),
+        const SizedBox(width: 4),
+        Text(_formatNumber(codPrice.amount)),
+      ],
+    );
+  }
+
+  // ---------- Formatting ----------
   static String _formatSeconds(int s) {
     if (s < 60) return '${s}s';
     final m = s ~/ 60;
@@ -296,14 +339,5 @@ class _FreshDishDetailBody extends StatelessWidget {
       if (fromEnd > 1 && fromEnd % 3 == 1) buf.write(',');
     }
     return buf.toString();
-  }
-
-  String? _firstCodCost(List<Price>? prices) {
-    if (prices == null || prices.isEmpty) return null;
-    final codPrice = prices.firstWhere(
-      (p) => p.currency.toLowerCase() == 'cod',
-      orElse: () => prices.first,
-    );
-    return '🐟 ${_formatNumber(codPrice.amount)}';
   }
 }

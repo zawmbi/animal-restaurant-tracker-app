@@ -30,7 +30,8 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
 
   // Kinds
   bool get isPoster => _tags.contains('poster');
-  bool get isDressUp => _tags.contains('dress_up') || _tags.contains('wearable');
+  bool get isDressUp =>
+      _tags.contains('dress_up') || _tags.contains('wearable');
 
   // Dress-up sub-types
   bool get isClothing => _tags.contains('clothing');
@@ -57,83 +58,76 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Owned checkbox
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Owned',
-                      style: theme.textTheme.titleMedium,
+                // ---------- Top info: owned + basic details ----------
+                Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // Owned checkbox
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Owned',
+                              style: theme.textTheme.titleMedium,
+                            ),
+                            Checkbox(
+                              value: _collected,
+                              onChanged: (v) => store.setUnlocked(
+                                'memento_collected',
+                                memento.key,
+                                v ?? false,
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(height: 16),
+
+                        // ----- Memento Name -----
+                        _sectionTitle(theme, 'Memento Name'),
+                        Text(
+                          memento.name,
+                          style: theme.textTheme.bodyMedium,
+                        ),
+                        const SizedBox(height: 16),
+
+                        // ----- Description -----
+                        _sectionTitle(theme, 'Memento Description'),
+                        if (memento.description.isNotEmpty) ...[
+                          Text(
+                            memento.description,
+                            style: theme.textTheme.bodyMedium,
+                          ),
+                        ] else ...[
+                          Text(
+                            '(No description provided)',
+                            style: theme.textTheme.bodyMedium,
+                          ),
+                        ],
+                        const SizedBox(height: 16),
+
+                        // ----- Requirements -----
+                        _buildRequirementsSection(theme),
+                      ],
                     ),
-                    Checkbox(
-                      value: _collected,
-                      onChanged: (v) => store.setUnlocked(
-                        'memento_collected',
-                        memento.key,
-                        v ?? false,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 16),
-
-                // ----- Memento Name -----
-                _sectionTitle(theme, 'Memento Name'),
-                Text(
-                  memento.name,
-                  style: theme.textTheme.bodyMedium,
-                ),
-                const SizedBox(height: 16),
-
-                // ----- Description -----
-                _sectionTitle(theme, 'Memento Description'),
-                if (memento.description.isNotEmpty) ...[
-                  Text(
-                    memento.description,
-                    style: theme.textTheme.bodyMedium,
                   ),
-                ] else ...[
-                  Text(
-                    '(No description provided)',
-                    style: theme.textTheme.bodyMedium,
-                  ),
-                ],
-                const SizedBox(height: 16),
-
-                // ----- Requirements (right after description) -----
-                _buildRequirementsSection(theme),
+                ),
                 const SizedBox(height: 24),
 
-                // Type-specific sections
+                // ---------- Type-specific sections ----------
                 if (!isDressUp && !isPoster)
                   _buildRegularMementoSection(context, theme),
 
-                if (isDressUp)
-                  _buildDressUpSection(context, theme),
+                if (isDressUp) _buildDressUpSection(context, theme),
 
-                if (isPoster)
-                  _buildPosterSection(context, theme),
+                if (isPoster) _buildPosterSection(context, theme),
 
-                const SizedBox(height: 24),
+                if (!isDressUp && !isPoster) const SizedBox(height: 16),
 
-                // Rating line – NOT clickable.
-                if (memento.stars > 0) ...[
-                  _sectionTitle(theme, 'Rating Bonus'),
-                  Text(
-                    'Bonus Rating ★ +${memento.stars}',
-                    style: theme.textTheme.bodyMedium,
-                  ),
-                  const SizedBox(height: 12),
-
-                ],
-                                // ----- Hidden or not -----
-                _sectionTitle(theme, 'Hidden Memento'),
-                Text(
-                  memento.hidden ? 'Yes (hidden memento)' : 'No',
-                  style: theme.textTheme.bodyMedium,
-                ),
-                const SizedBox(height: 16),
-
+                // ---------- Rating + Hidden ----------
+                _buildRatingAndHiddenSection(theme),
               ],
             ),
           ),
@@ -149,8 +143,8 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
       padding: const EdgeInsets.only(bottom: 4),
       child: Text(
         text,
-        style: theme.textTheme.titleMedium!
-            .copyWith(fontWeight: FontWeight.bold),
+        style:
+            theme.textTheme.titleMedium!.copyWith(fontWeight: FontWeight.bold),
       ),
     );
   }
@@ -167,61 +161,64 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
       return const SizedBox.shrink();
     }
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        _sectionTitle(theme, 'Memento Details'),
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _sectionTitle(theme, 'Memento Details'),
 
-        // Customer: clickable → specific customer page
-        if (hasCustomer)
-          TextButton(
-            style: TextButton.styleFrom(
-              padding: EdgeInsets.zero,
-              alignment: Alignment.centerLeft,
-            ),
-            onPressed: () => _openCustomer(context),
-            child: Text(
-              'Customer: ${memento.customerName}',
-              style: theme.textTheme.bodyMedium!.copyWith(
-                decoration: TextDecoration.underline,
+            // Customer: clickable → specific customer page
+            if (hasCustomer)
+              TextButton(
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                  alignment: Alignment.centerLeft,
+                ),
+                onPressed: () => _openCustomer(context),
+                child: Text(
+                  'Customer: ${memento.customerName}',
+                  style: theme.textTheme.bodyMedium!.copyWith(
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
               ),
-            ),
-          ),
 
-        // Source: clickable stub
-        if (hasSource)
-          TextButton(
-            style: TextButton.styleFrom(
-              padding: EdgeInsets.zero,
-              alignment: Alignment.centerLeft,
-            ),
-            onPressed: () => _openSource(context),
-            child: Text(
-              'Source: ${memento.source}',
-              style: theme.textTheme.bodyMedium!.copyWith(
-                decoration: TextDecoration.underline,
+            // Source: clickable stub
+            if (hasSource)
+              TextButton(
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                  alignment: Alignment.centerLeft,
+                ),
+                onPressed: () => _openSource(context),
+                child: Text(
+                  'Source: ${memento.source}',
+                  style: theme.textTheme.bodyMedium!.copyWith(
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
               ),
-            ),
-          ),
 
-        // Event: clickable stub
-        if (hasEvent)
-          TextButton(
-            style: TextButton.styleFrom(
-              padding: EdgeInsets.zero,
-              alignment: Alignment.centerLeft,
-            ),
-            onPressed: () => _openEvent(context),
-            child: Text(
-              'Event: ${memento.event}',
-              style: theme.textTheme.bodyMedium!.copyWith(
-                decoration: TextDecoration.underline,
+            // Event: clickable stub
+            if (hasEvent)
+              TextButton(
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                  alignment: Alignment.centerLeft,
+                ),
+                onPressed: () => _openEvent(context),
+                child: Text(
+                  'Event: ${memento.event}',
+                  style: theme.textTheme.bodyMedium!.copyWith(
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
               ),
-            ),
-          ),
-
-        const SizedBox(height: 16),
-      ],
+          ],
+        ),
+      ),
     );
   }
 
@@ -230,35 +227,39 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
   Widget _buildDressUpSection(BuildContext context, ThemeData theme) {
     final hasSource = (memento.source ?? '').isNotEmpty;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        _sectionTitle(theme, 'Dress-Up'),
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _sectionTitle(theme, 'Dress-Up'),
 
-        // Basic type info based on tags
-        if (isClothing) ...[
-          const Text('Type: Clothing'),
-          const SizedBox(height: 8),
-        ] else if (isAccessory) ...[
-          const Text('Type: Clothing Accessory'),
-          const SizedBox(height: 8),
-        ] else if (isRestaurantDecoration) ...[
-          const Text('Type: Restaurant Decoration'),
-          const SizedBox(height: 8),
-        ] else if (isFishPondBoat) ...[
-          const Text('Type: Fish Pond Boat'),
-          const SizedBox(height: 8),
-        ] else if (isTakeoutCart) ...[
-          const Text('Type: Takeout Cart'),
-          const SizedBox(height: 8),
-        ],
+            // Basic type info based on tags
+            if (isClothing) ...[
+              const Text('Type: Clothing'),
+              const SizedBox(height: 8),
+            ] else if (isAccessory) ...[
+              const Text('Type: Clothing Accessory'),
+              const SizedBox(height: 8),
+            ] else if (isRestaurantDecoration) ...[
+              const Text('Type: Restaurant Decoration'),
+              const SizedBox(height: 8),
+            ] else if (isFishPondBoat) ...[
+              const Text('Type: Fish Pond Boat'),
+              const SizedBox(height: 8),
+            ] else if (isTakeoutCart) ...[
+              const Text('Type: Takeout Cart'),
+              const SizedBox(height: 8),
+            ],
 
-        // If the memento has a source in your JSON, show it.
-        if (hasSource) ...[
-          Text('Obtained from: ${memento.source}'),
-          const SizedBox(height: 16),
-        ],
-      ],
+            // If the memento has a source in your JSON, show it.
+            if (hasSource) ...[
+              Text('Obtained from: ${memento.source}'),
+            ],
+          ],
+        ),
+      ),
     );
   }
 
@@ -267,29 +268,33 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
   Widget _buildPosterSection(BuildContext context, ThemeData theme) {
     final hasEvent = (memento.event ?? '').isNotEmpty;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        _sectionTitle(theme, 'Poster'),
-        const Text('Category: Courtyard Poster'),
-        const SizedBox(height: 4),
-        const Text('Can be displayed in the courtyard'),
-        if (hasEvent)
-          TextButton(
-            style: TextButton.styleFrom(
-              padding: EdgeInsets.zero,
-              alignment: Alignment.centerLeft,
-            ),
-            onPressed: () => _openEvent(context),
-            child: Text(
-              'Event: ${memento.event}',
-              style: theme.textTheme.bodyMedium!.copyWith(
-                decoration: TextDecoration.underline,
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _sectionTitle(theme, 'Poster'),
+            const Text('Category: Courtyard Poster'),
+            const SizedBox(height: 4),
+            const Text('Can be displayed in the courtyard'),
+            if (hasEvent)
+              TextButton(
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                  alignment: Alignment.centerLeft,
+                ),
+                onPressed: () => _openEvent(context),
+                child: Text(
+                  'Event: ${memento.event}',
+                  style: theme.textTheme.bodyMedium!.copyWith(
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
               ),
-            ),
-          ),
-        const SizedBox(height: 16),
-      ],
+          ],
+        ),
+      ),
     );
   }
 
@@ -308,6 +313,45 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
           style: theme.textTheme.bodyMedium,
         ),
       ],
+    );
+  }
+
+  // ----- Rating + Hidden section -----
+
+  Widget _buildRatingAndHiddenSection(ThemeData theme) {
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (memento.stars > 0) ...[
+              _sectionTitle(theme, 'Rating Bonus'),
+              Row(
+                children: [
+                  Image.asset(
+                    'assets/images/star.png',
+                    width: 20,
+                    height: 20,
+                  ),
+                  const SizedBox(width: 6),
+                  Text(
+                    'Bonus Rating +${memento.stars}',
+                    style: theme.textTheme.bodyMedium,
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
+            ],
+
+            _sectionTitle(theme, 'Hidden Memento'),
+            Text(
+              memento.hidden ? 'Yes (hidden memento)' : 'No',
+              style: theme.textTheme.bodyMedium,
+            ),
+          ],
+        ),
+      ),
     );
   }
 

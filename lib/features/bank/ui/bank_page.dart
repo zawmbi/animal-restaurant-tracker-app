@@ -83,8 +83,7 @@ class _BankPageState extends State<BankPage> {
     final current = s.tipJarPerHourCurrent;
     final all = s.tipJarPerHourAll;
     final diff = all - current;
-
-    final currentAd = current * 2; // 2x via ad
+    final currentAd = current * 2;
 
     return Card(
       child: Padding(
@@ -94,7 +93,7 @@ class _BankPageState extends State<BankPage> {
           children: [
             Row(
               children: [
-                const Icon(Icons.local_atm),
+                Image.asset('assets/images/cod.png', width: 22, height: 22),
                 const SizedBox(width: 8),
                 Text(
                   'Maximum Cod from Tips',
@@ -102,18 +101,20 @@ class _BankPageState extends State<BankPage> {
                 ),
               ],
             ),
+
             const SizedBox(height: 8),
-            _kv('Cod per hour (checked facilities)', _codPerHour(current)),
-            _kv('Cod per hour (all possible)', _codPerHour(all)),
+            _kv('Cod per hour (checked facilities)', _codPerHourWidget(current)),
+            _kv('Cod per hour (all possible)', _codPerHourWidget(all)),
+
             if (diff > 0)
               Padding(
                 padding: const EdgeInsets.only(top: 4),
                 child: Text(
-                  '+${_formatNumber(diff)} cod/h available by '
-                  'checking more cod-making facilities',
+                  '+${_formatNumber(diff)} cod/h available by checking more cod-making facilities',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
               ),
+
             const SizedBox(height: 12),
             Text(
               'With ad bonus (2×)',
@@ -122,8 +123,9 @@ class _BankPageState extends State<BankPage> {
                   .titleMedium
                   ?.copyWith(fontWeight: FontWeight.w600),
             ),
+
             const SizedBox(height: 4),
-            _kv('Cod per hour (with ad)', _codPerHour(currentAd)),
+            _kv('Cod per hour (with ad)', _codPerHourWidget(currentAd)),
           ],
         ),
       ),
@@ -155,7 +157,7 @@ class _BankPageState extends State<BankPage> {
           children: [
             Row(
               children: [
-                const Icon(Icons.table_bar),
+                Image.asset('assets/images/cod.png', width: 22, height: 22),
                 const SizedBox(width: 8),
                 Text(
                   'Buffet (Up to 12 hours)',
@@ -163,13 +165,13 @@ class _BankPageState extends State<BankPage> {
                 ),
               ],
             ),
+
             const SizedBox(height: 8),
 
             if (perHour == 0)
-              const Text(
-                  'No buffet cod facilities are checked yet.')
+              const Text('No buffet cod facilities are checked yet.')
             else ...[
-              _kv('Buffet cod per hour', _codPerHour(perHour)),
+              _kv('Buffet cod per hour', _codPerHourWidget(perHour)),
               const SizedBox(height: 8),
 
               Text(
@@ -179,14 +181,14 @@ class _BankPageState extends State<BankPage> {
                     .titleMedium
                     ?.copyWith(fontWeight: FontWeight.w600),
               ),
+
               const SizedBox(height: 4),
-              _kv('1 hour', _codAmount(base1h)),
-              _kv('1 hour + ad (max +1,500,000)',
-                  _codAmount(base1hWithAd)),
+              _kv('1 hour', _codAmountWidget(base1h)),
+              _kv('1 hour + ad (max +1,500,000)', _codAmountWidget(base1hWithAd)),
+
               const SizedBox(height: 4),
-              _kv('12 hours (max stack)', _codAmount(base12h)),
-              _kv('12 hours + ad (max +1,500,000)',
-                  _codAmount(base12hWithAd)),
+              _kv('12 hours (max stack)', _codAmountWidget(base12h)),
+              _kv('12 hours + ad (max +1,500,000)', _codAmountWidget(base12hWithAd)),
 
               const SizedBox(height: 12),
               Text(
@@ -196,7 +198,9 @@ class _BankPageState extends State<BankPage> {
                     .titleMedium
                     ?.copyWith(fontWeight: FontWeight.w600),
               ),
+
               const SizedBox(height: 4),
+
               Row(
                 children: [
                   SizedBox(
@@ -204,8 +208,7 @@ class _BankPageState extends State<BankPage> {
                     child: TextField(
                       controller: _buffetHoursCtrl,
                       keyboardType:
-                          const TextInputType.numberWithOptions(
-                              decimal: true),
+                          const TextInputType.numberWithOptions(decimal: true),
                       decoration: const InputDecoration(
                         labelText: 'Hours',
                         isDense: true,
@@ -217,24 +220,22 @@ class _BankPageState extends State<BankPage> {
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
-                      'Using ${clampedHours.toStringAsFixed(2)} h '
-                      '(clamped between 1 and 12).',
+                      'Using ${clampedHours.toStringAsFixed(2)} h (clamped between 1 and 12)',
                       style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ),
                 ],
               ),
+
               const SizedBox(height: 8),
-              _kv('Custom', _codAmount(baseCustom)),
-              _kv('Custom + ad (max +1,500,000)',
-                  _codAmount(customWithAd)),
+              _kv('Custom', _codAmountWidget(baseCustom)),
+              _kv('Custom + ad (max +1,500,000)', _codAmountWidget(customWithAd)),
             ],
 
             if (perHourAll > perHour) ...[
               const SizedBox(height: 12),
               Text(
-                '+${_codPerHour(perHourAll - perHour)} per hour '
-                'available by checking more buffet facilities',
+                '+${_formatNumber(perHourAll - perHour)} cod/h available by checking more buffet facilities',
                 style: Theme.of(context).textTheme.bodySmall,
               ),
             ],
@@ -244,7 +245,7 @@ class _BankPageState extends State<BankPage> {
     );
   }
 
-  // ---------- Online-only cod ----------
+  // ---------- Online ----------
 
   Widget _onlineCodCard(BuildContext context, BankStats s) {
     final current = s.onlineCodPerHourCurrent;
@@ -259,7 +260,7 @@ class _BankPageState extends State<BankPage> {
           children: [
             Row(
               children: [
-                const Icon(Icons.flash_on),
+                Image.asset('assets/images/cod.png', width: 22, height: 22),
                 const SizedBox(width: 8),
                 Text(
                   'Online-only cod (non-tip, non-buffet)',
@@ -268,20 +269,15 @@ class _BankPageState extends State<BankPage> {
               ],
             ),
             const SizedBox(height: 8),
-            _kv('Cod per hour (checked)', _codPerHour(current)),
-            _kv('Cod per hour (all possible)', _codPerHour(all)),
-            const SizedBox(height: 4),
-            Text(
-              'These effects only apply while you’re online '
-              '(e.g. “+300 cod every 30 seconds”).',
-              style: Theme.of(context).textTheme.bodySmall,
-            ),
+
+            _kv('Cod per hour (checked)', _codPerHourWidget(current)),
+            _kv('Cod per hour (all possible)', _codPerHourWidget(all)),
+
             if (diff > 0)
               Padding(
                 padding: const EdgeInsets.only(top: 4),
                 child: Text(
-                  '+${_formatNumber(diff)} cod/h available by '
-                  'checking more online-only facilities',
+                  '+${_formatNumber(diff)} cod/h available by checking more online-only facilities',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
               ),
@@ -306,7 +302,7 @@ class _BankPageState extends State<BankPage> {
           children: [
             Row(
               children: [
-                const Icon(Icons.emoji_food_beverage),
+                Image.asset('assets/images/plate.png', width: 22, height: 22),
                 const SizedBox(width: 8),
                 Text(
                   'Daily Plates from facilities',
@@ -314,19 +310,28 @@ class _BankPageState extends State<BankPage> {
                 ),
               ],
             ),
+
             const SizedBox(height: 8),
-            Text(
-              _platesPerDay(current),
-              style: Theme.of(context).textTheme.headlineSmall,
+
+            Row(
+              children: [
+                Image.asset('assets/images/plate.png', width: 26, height: 26),
+                const SizedBox(width: 6),
+                Text(
+                  _formatNumber(current),
+                  style: Theme.of(context).textTheme.headlineSmall,
+                ),
+              ],
             ),
-            if (diff > 0) ...[
-              const SizedBox(height: 4),
-              Text(
-                '+${_formatNumber(diff)} plates/day available by '
-                'checking more plate-making facilities',
-                style: Theme.of(context).textTheme.bodySmall,
+
+            if (diff > 0)
+              Padding(
+                padding: const EdgeInsets.only(top: 4),
+                child: Text(
+                  '+${_formatNumber(diff)} plates/day available by checking more plate-making facilities',
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
               ),
-            ],
           ],
         ),
       ),
@@ -341,57 +346,63 @@ class _BankPageState extends State<BankPage> {
     return double.tryParse(txt);
   }
 
-  /// Buffet ad: 1.5x, but **extra** (0.5x) is capped at 1,500,000.
-  /// final = base + min(base * 0.5, 1_500_000).
   int _withBuffetAdBonus(int base) {
     if (base <= 0) return base;
     const cap = 1500000;
     final bonus = (base * 0.5).round();
-    final cappedBonus = bonus > cap ? cap : bonus;
-    return base + cappedBonus;
+    return base + (bonus > cap ? cap : bonus);
   }
 
-Widget _kv(String k, String v) {
-  return Padding(
-    padding: const EdgeInsets.symmetric(vertical: 2),
-    child: Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Expanded(
-          child: Text(
-            k,
-            softWrap: true,
-          ),
-        ),
-        const SizedBox(width: 8),
-        Flexible(
-          child: Text(
-            v,
-            textAlign: TextAlign.right,
-            overflow: TextOverflow.ellipsis,
-            maxLines: 2,
+  Widget _kv(String k, Widget vWidget) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 2),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(child: Text(k)),
+          const SizedBox(width: 8),
+          DefaultTextStyle(
             style: const TextStyle(fontWeight: FontWeight.w600),
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: vWidget,
+            ),
           ),
-        ),
+        ],
+      ),
+    );
+  }
+
+  Widget _codPerHourWidget(int v) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Image.asset('assets/images/cod.png', width: 20, height: 20),
+        const SizedBox(width: 4),
+        Text('${_formatNumber(v)}/h'),
       ],
-    ),
-  );
-}
+    );
+  }
+
+  Widget _codAmountWidget(int v) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Image.asset('assets/images/cod.png', width: 20, height: 20),
+        const SizedBox(width: 4),
+        Text(_formatNumber(v)),
+      ],
+    );
+  }
 
   String _formatNumber(int v) {
     final s = v.toString();
     final buf = StringBuffer();
     for (int i = 0; i < s.length; i++) {
-      final fromEnd = s.length - i;
+      final remaining = s.length - i;
       buf.write(s[i]);
-      if (fromEnd > 1 && fromEnd % 3 == 1) buf.write(',');
+      if (remaining > 1 && remaining % 3 == 1) buf.write(',');
     }
     return buf.toString();
   }
-
-  String _codPerHour(int v) => '${_formatNumber(v)} cod/h';
-
-  String _codAmount(int v) => '${_formatNumber(v)} cod';
-
-  String _platesPerDay(int v) => '${_formatNumber(v)} plates/day';
 }

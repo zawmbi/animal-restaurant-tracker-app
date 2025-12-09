@@ -8,6 +8,39 @@ enum MoneyCurrency { cod, plates, bells, film, buttons, diamonds }
 extension MoneyCurrencyKey on MoneyCurrency {
   String get key => describeEnum(this);
 }
+extension MoneyCurrencyIcon on MoneyCurrency {
+  String get assetPath {
+    switch (this) {
+      case MoneyCurrency.cod:
+        return 'assets/images/cod.png';
+      // case MoneyCurrency.plates:
+      //   return 'assets/images/currency_plates.png';
+      // case MoneyCurrency.bells:
+      //   return 'assets/images/currency_bells.png';
+      // case MoneyCurrency.film:
+      //   return 'assets/images/currency_film.png';
+      // case MoneyCurrency.buttons:
+      //   return 'assets/images/currency_buttons.png';
+      // case MoneyCurrency.diamonds:
+      //   return 'assets/images/currency_diamonds.png';
+      case MoneyCurrency.plates:
+        // TODO: Handle this case.
+        throw UnimplementedError();
+      case MoneyCurrency.bells:
+        // TODO: Handle this case.
+        throw UnimplementedError();
+      case MoneyCurrency.film:
+        // TODO: Handle this case.
+        throw UnimplementedError();
+      case MoneyCurrency.buttons:
+        // TODO: Handle this case.
+        throw UnimplementedError();
+      case MoneyCurrency.diamonds:
+        // TODO: Handle this case.
+        throw UnimplementedError();
+    }
+  }
+}
 
 /// Where the facility lives.
 enum FacilityArea {
