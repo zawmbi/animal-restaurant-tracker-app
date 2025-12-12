@@ -5,8 +5,8 @@ class FeedbackService {
   FeedbackService._();
   static final FeedbackService instance = FeedbackService._();
 
-  // TODO: replace this with your deployed backend URL
-  static const String _endpoint = 'https://your-backend-domain.com/api/feedback';
+static const String _endpoint =
+  'https://myapp-backend.vercel.app/api/feedback';
 
   Future<void> sendFeedback({
     required String message,
