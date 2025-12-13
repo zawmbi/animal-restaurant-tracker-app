@@ -89,11 +89,10 @@ class _SettingsPageState extends State<SettingsPage> {
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Failed to send feedback. Please try again.'),
-        ),
+        SnackBar(content: Text('Feedback failed: $e')),
       );
-    } finally {
+    }
+    finally {
       if (mounted) {
         setState(() => _sendingFeedback = false);
       }

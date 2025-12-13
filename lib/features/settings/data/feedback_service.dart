@@ -6,7 +6,7 @@ class FeedbackService {
   static final FeedbackService instance = FeedbackService._();
 
 static const String _endpoint =
-  'https://myapp-backend.vercel.app/api/feedback';
+  'https://backendfeedbackartracker-ld654l1wr-lindas-projects-8d7821fa.vercel.app';
 
   Future<void> sendFeedback({
     required String message,
@@ -21,8 +21,9 @@ static const String _endpoint =
       }),
     );
 
-    if (resp.statusCode != 200) {
-      throw Exception('Failed to send feedback (status ${resp.statusCode})');
+    if (resp.statusCode < 200 || resp.statusCode >= 300) {
+      throw Exception('Failed to send feedback (${resp.statusCode}): ${resp.body}');
     }
+
   }
 }

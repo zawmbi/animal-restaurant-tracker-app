@@ -1,10 +1,21 @@
+// lib/features/letters/ui/letter_detail_page.dart
 import 'package:flutter/material.dart';
+import 'package:collection/collection.dart';
+
 import '../model/letter.dart';
+import '../data/letters_repository.dart';
+
+import '../../customers/data/customers_repository.dart';
+import '../../customers/ui/customer_detail_page.dart';
 
 class LetterDetailPage extends StatelessWidget {
   final Letter letter;
 
   const LetterDetailPage({super.key, required this.letter});
+
+  // TODO: change this to the real path of YOUR star png asset.
+  // Example: 'assets/images/star.png' or 'assets/icons/star.png'
+  static const String _starAsset = 'assets/images/star.png';
 
   @override
   Widget build(BuildContext context) {
@@ -51,14 +62,179 @@ class LetterDetailPage extends StatelessWidget {
 
             const SizedBox(height: 16),
 
-            _InfoRow(label: 'Bonus', value: letter.bonus ?? '—'),
-            _InfoRow(label: 'Unlocks', value: letter.unlocks ?? '—'),
-            _InfoRow(label: 'Prerequisite', value: letter.prerequisite ?? '—'),
+            // Bonus row: render "+60" and use your star PNG instead of ★
+            _InfoRow(
+              label: 'Bonus',
+              valueWidget: _BonusValue(
+                raw: letter.bonus ?? '—',
+                starAsset: _starAsset,
+              ),
+            ),
+
+            // Unlocks row: clickable if it matches a Letter or Customer
+            _InfoRow(
+              label: 'Unlocks',
+              valueWidget: _LinkableValue(
+                raw: letter.unlocks ?? '—',
+                currentLetterId: letter.id,
+              ),
+            ),
+
+            // Prerequisite row: clickable if it matches a Letter or Customer
+            _InfoRow(
+              label: 'Prerequisite',
+              valueWidget: _LinkableValue(
+                raw: letter.prerequisite ?? '—',
+                currentLetterId: letter.id,
+              ),
+            ),
           ],
         ),
       ),
     );
   }
+}
+
+class _BonusValue extends StatelessWidget {
+  final String raw;
+  final String starAsset;
+
+  const _BonusValue({
+    required this.raw,
+    required this.starAsset,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final v = raw.trim();
+    if (v.isEmpty || v == '—') return Text(v.isEmpty ? '—' : v);
+
+    // Common formats:
+    // "+60★" / "+60 ★" / "60★" / "60 ★" / "+60"
+    final cleaned = v.replaceAll('★', '').trim();
+
+    final showsStar = v.contains('★');
+    if (!showsStar) return Text(v);
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(cleaned),
+        const SizedBox(width: 4),
+        Image.asset(
+          starAsset,
+          width: 16,
+          height: 16,
+          fit: BoxFit.contain,
+        ),
+      ],
+    );
+  }
+}
+
+class _LinkableValue extends StatelessWidget {
+  final String raw;
+  final String currentLetterId;
+
+  const _LinkableValue({
+    required this.raw,
+    required this.currentLetterId,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final text = raw.trim();
+
+    if (text.isEmpty || text == '—') {
+      return Text(text.isEmpty ? '—' : text);
+    }
+
+    return FutureBuilder<_ResolvedTarget?>(
+      future: _resolve(text, currentLetterId),
+      builder: (context, snap) {
+        final target = snap.data;
+
+        // Not resolved (or still loading) => just show plain text (keeps formatting consistent)
+        if (target == null) {
+          return Text(text);
+        }
+
+        return InkWell(
+          borderRadius: BorderRadius.circular(6),
+          onTap: () {
+            if (target is _LetterTarget) {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => LetterDetailPage(letter: target.letter),
+                ),
+              );
+            } else if (target is _CustomerTarget) {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => CustomerDetailPage(customer: target.customer),
+                ),
+              );
+            }
+          },
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 2),
+            child: Text(
+              text,
+              style: TextStyle(
+                color: theme.colorScheme.primary,
+                decoration: TextDecoration.underline,
+                decorationColor: theme.colorScheme.primary.withOpacity(0.7),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  Future<_ResolvedTarget?> _resolve(String value, String currentLetterId) async {
+    // 1) Try letters by name (e.g., "Lucky's Letter")
+    final letters = await LettersRepository.instance.all();
+    final letter = letters.firstWhere(
+      (l) => _eq(l.name, value),
+      orElse: () => const Letter(
+        id: '__none__',
+        name: '__none__',
+      ),
+    );
+    if (letter.id != '__none__' && letter.id != currentLetterId) {
+      return _LetterTarget(letter);
+    }
+
+    // 2) Try customers by name (in case prerequisite/unlocks is a customer)
+    final customers = await CustomersRepository.instance.all();
+    final customer = customers.firstWhereOrNull(
+      (c) => _eq(c.name, value),
+    );
+
+    // The hack above is to avoid requiring a dummy Customer constructor;
+    // so we only accept if it actually matched by name.
+    if (customer != null && _eq(customer.name, value)) {
+      return _CustomerTarget(customer);
+    }
+
+    return null;
+  }
+
+  bool _eq(String a, String b) => a.trim().toLowerCase() == b.trim().toLowerCase();
+}
+
+sealed class _ResolvedTarget {}
+
+class _LetterTarget extends _ResolvedTarget {
+  final Letter letter;
+  _LetterTarget(this.letter);
+}
+
+class _CustomerTarget extends _ResolvedTarget {
+  final dynamic customer; // keep flexible with your Customer model type
+  _CustomerTarget(this.customer);
 }
 
 class _CombinationTable extends StatelessWidget {
@@ -158,11 +334,13 @@ class _CombinationTable extends StatelessWidget {
 
 class _InfoRow extends StatelessWidget {
   final String label;
-  final String value;
+  final String? value;
+  final Widget? valueWidget;
 
   const _InfoRow({
     required this.label,
-    required this.value,
+    this.value,
+    this.valueWidget,
   });
 
   @override
@@ -186,7 +364,9 @@ class _InfoRow extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 8),
-          Expanded(child: Text(value)),
+          Expanded(
+            child: valueWidget ?? Text(value ?? '—'),
+          ),
         ],
       ),
     );
