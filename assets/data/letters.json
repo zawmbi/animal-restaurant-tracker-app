@@ -5,7 +5,7 @@
   "series": "Story Letters",
   "unlockRequirement": null,
   "description": "Players received this letter in celebration of 100,000 fans on Facebook.",
-  "bonus": "+60★",
+  "bonus": "+60",
   "unlocks": "Lucky's Letter",
   "prerequisite": "–",
   "imageAsset": "assets/images/letters/100k_fans_commemoration.png",
@@ -17,5 +17,19 @@
     { "slot1": "Red Rose", "slot2": "Bluebell",  "slot3": "Gold Can" },
     { "slot1": "Red Rose", "slot2": "Gold Can",  "slot3": "Seed" },
     { "slot1": "Daisy",    "slot2": "Daisy",     "slot3": "Daisy" }
+]},
+
+{
+  "id": "luckys_letter",
+  "name": "Lucky's Letter",
+  "series": "Story Letters",
+  "unlockRequirement": null,
+  "description": "Today, we had a show at Animal Restaurant. Hedwig and I performed a program that we had practiced for so long. I hope that everyone will stay happy and healthy! ",
+  "unlocks": "-",
+  "prerequisite": "–",
+  "imageAsset": "assets/images/letters/100k_fans_commemoration.png",
+  "combinations": [
+    { "slot1": "Sunflower", "slot2": "Bluebell", "slot3": "*" }
+ 
 ]}
 ]
