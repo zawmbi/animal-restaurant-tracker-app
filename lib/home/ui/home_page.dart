@@ -256,18 +256,8 @@ class _HomePageState extends State<HomePage> {
                 'Mementos',
                 const MementosPage(),
               ),
-              _navTile(
-                context,
-                Icons.timer,
-                'Timers',
-                const TimersPage(),
-              ),
-              _navTile(
-                context,
-                Icons.settings,
-                'Settings',
-                const SettingsPage(),
-              ),
+
+
               _navTile(
                 context,
                 Icons.redeem,
@@ -282,6 +272,19 @@ class _HomePageState extends State<HomePage> {
                 const _AromaticAcornPlaceholderPage(),
                 // or later:
                 // const AromaticAcornPage(),
+              ),
+
+              _navTile(
+                context,
+                Icons.timer,
+                'Timers',
+                const TimersPage(),
+              ),
+              _navTile(
+                context,
+                Icons.settings,
+                'Settings',
+                const SettingsPage(),
               ),
             ],
           ),
@@ -383,7 +386,7 @@ class _AromaticAcornPlaceholderPage extends StatelessWidget {
       body: const Center(
         child: Text(
           'Aromatic Acorn Judging.\n'
-          'Not done yet :D.',
+          'Not done yet.',
           textAlign: TextAlign.center,
         ),
       ),
