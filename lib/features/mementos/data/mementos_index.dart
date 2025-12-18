@@ -131,4 +131,13 @@ class MementosIndex {
     }
     return out.toList();
   }
+    Future<MementoEntry?> byId(String id) async {
+    final list = await all(hidden: null); // include hidden too
+    try {
+      return list.firstWhere((e) => e.id == id);
+    } catch (_) {
+      return null;
+    }
+  }
+
 }

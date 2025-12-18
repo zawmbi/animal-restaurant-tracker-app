@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:animal_restaurant_tracker/features/mementos/ui/mementos_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
@@ -18,6 +19,7 @@ import '../../features/redemption_codes/ui/redemption_codes_page.dart';
 import 'package:animal_restaurant_tracker/features/courtyard/ui/courtyard_page.dart';
 import 'package:animal_restaurant_tracker/features/aromatic_acorn/ui/aromatic_acorn_page.dart';
 
+
 import '../../features/letters/ui/letters_page.dart';
 import '../../features/mementos/ui/mementos_page.dart';
 import '../../features/dishes/ui/dishes_page.dart' as recipes;
@@ -25,6 +27,9 @@ import '../../features/dishes/ui/dish_detail_page.dart' as detail;
 import '../../features/settings/ui/settings_page.dart';
 
 import '../../features/customers/data/customers_repository.dart';
+import 'package:animal_restaurant_tracker/features/mementos/data/mementos_index.dart';
+
+// ^ if your file is named differently (ex: mementos_detail_page.dart), use that instead.
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -105,12 +110,17 @@ class _HomePageState extends State<HomePage> {
         );
         break;
 
-      case HitType.memento:
-        if (!mounted) return;
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (_) => const MementosPage()),
-        );
-        break;
+    case HitType.memento:
+      final entry = await MementosIndex.instance.byId(h.id);
+      if (entry == null || !mounted) return;
+
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (_) => MementoDetailPage(memento: entry),
+        ),
+      );
+      break;
+
     }
   }
 
@@ -268,10 +278,7 @@ class _HomePageState extends State<HomePage> {
                 context,
                 Icons.emoji_events,
                 'Aromatic Acorn Judging',
-                // swap this Placeholder for your real page later
-                const _AromaticAcornPlaceholderPage(),
-                // or later:
-                // const AromaticAcornPage(),
+                const AromaticAcornPage(),
               ),
 
               _navTile(
