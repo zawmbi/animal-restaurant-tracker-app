@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../data/aromatic_acorn_progress.dart';
 import '../model/aromatic_acorn_stage.dart';
+import '../../shared/utils/entity_linker.dart';
+import '../../shared/widgets/reward_icon.dart';
 
 class AromaticAcornStageDetailPage extends StatefulWidget {
   final AromaticAcornStage stage;
@@ -136,17 +138,18 @@ class _AromaticAcornStageDetailPageState extends State<AromaticAcornStageDetailP
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                for (final r in s.rewards)
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 6),
-                    child: Row(
-                      children: [
-                        const Icon(Icons.stars, size: 18),
-                        const SizedBox(width: 8),
-                        Expanded(child: Text(r)),
-                      ],
-                    ),
+              for (final r in s.rewards)
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 6),
+                  child: Row(
+                    children: [
+                      RewardIcon(rewardText: r, size: 18),
+                      const SizedBox(width: 8),
+                      Expanded(child: Text(r)),
+                    ],
                   ),
+                ),
+
               ],
             ),
           ),
@@ -155,7 +158,6 @@ class _AromaticAcornStageDetailPageState extends State<AromaticAcornStageDetailP
     );
   }
 }
-
 class _ChecklistTile extends StatelessWidget {
   final String text;
   final bool value;
@@ -169,13 +171,27 @@ class _ChecklistTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CheckboxListTile(
-      value: value,
-      onChanged: (v) => onChanged(v ?? false),
-      title: Text(text),
-      controlAffinity: ListTileControlAffinity.leading,
-      dense: true,
-      contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+    final linker = EntityLinker.instance;
+    final linkable = linker.looksLinkable(text);
+
+    return InkWell(
+      onTap: linkable ? () => linker.openFromLine(context, text) : null,
+      child: CheckboxListTile(
+        value: value,
+        onChanged: (v) => onChanged(v ?? false),
+        title: Row(
+          children: [
+            Expanded(child: Text(text)),
+            if (linkable) const Padding(
+              padding: EdgeInsets.only(left: 8),
+              child: Icon(Icons.open_in_new, size: 18),
+            ),
+          ],
+        ),
+        controlAffinity: ListTileControlAffinity.leading,
+        dense: true,
+        contentPadding: const EdgeInsets.symmetric(horizontal: 8),
+      ),
     );
   }
 }
