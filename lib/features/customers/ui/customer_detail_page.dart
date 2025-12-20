@@ -60,6 +60,31 @@ class CustomerDetailPage extends StatelessWidget {
               const SizedBox(height: 12),
             ],
 
+            // INFO (NEW: numeric appearance rate)
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(height: 8),
+                    _InfoRow(label: 'Lives In', value: customer.livesIn),
+                    const SizedBox(height: 6),
+                    _InfoRow(
+                      label: 'Appearance Rate',
+                      value: customer.appearanceWeight.toString(),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      '(Lower = rarer, higher = more common)',
+                      style: theme.textTheme.bodySmall,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 16),
+
             // DESCRIPTION
             if (customer.customerDescription.isNotEmpty) ...[
               Text(
@@ -69,29 +94,39 @@ class CustomerDetailPage extends StatelessWidget {
               const SizedBox(height: 16),
             ],
 
-            // FAVORITE DISHES
-            if (customer.dishesOrderedIds.isNotEmpty) ...[
-              Text(
-                'Favorite Dishes',
-                style: theme.textTheme.titleMedium,
-              ),
-              const SizedBox(height: 4),
-              Wrap(
-                spacing: 6,
-                runSpacing: 4,
-                children: customer.dishesOrderedIds
-                    .map(
-                      (d) => ActionChip(
-                        label: Text(d),
-                        onPressed: () => _openEntityById(context, d),
-                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                        visualDensity: VisualDensity.compact,
+          // FAVORITE DISHES (boxed like the others)
+          if (customer.dishesOrderedIds.isNotEmpty) ...[
+            SizedBox(
+              width: double.infinity,
+              child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Favorite Dishes', style: theme.textTheme.titleMedium),
+                      const SizedBox(height: 8),
+                      Wrap(
+                        spacing: 6,
+                        runSpacing: 4,
+                        children: customer.dishesOrderedIds
+                            .map(
+                              (d) => ActionChip(
+                                label: Text(d),
+                                onPressed: () => _openEntityById(context, d),
+                                materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                                visualDensity: VisualDensity.compact,
+                              ),
+                            )
+                            .toList(),
                       ),
-                    )
-                    .toList(),
+                    ],
+                  ),
+                ),
               ),
-              const SizedBox(height: 16),
-            ],
+            ),
+            const SizedBox(height: 16),
+          ],
 
             // REQUIREMENTS card (clickable chips)
             _RequirementsSection(customer: customer),
@@ -139,6 +174,41 @@ class CustomerDetailPage extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _InfoRow extends StatelessWidget {
+  final String label;
+  final String value;
+
+  const _InfoRow({
+    required this.label,
+    required this.value,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        SizedBox(
+          width: 130,
+          child: Text(
+            '$label:',
+            style: theme.textTheme.bodyMedium?.copyWith(
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ),
+        Expanded(
+          child: Text(
+            value,
+            style: theme.textTheme.bodyMedium,
+          ),
+        ),
+      ],
     );
   }
 }
@@ -200,9 +270,7 @@ class _RequirementsSection extends StatelessWidget {
     rows.add(buildRow('Flowers', req.flowers));
 
     rows = rows.where((w) => w is! SizedBox).toList();
-    if (rows.isEmpty) {
-      return const SizedBox.shrink();
-    }
+    if (rows.isEmpty) return const SizedBox.shrink();
 
     return Card(
       child: Padding(
@@ -210,10 +278,7 @@ class _RequirementsSection extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Requirements',
-              style: theme.textTheme.titleMedium,
-            ),
+            Text('Requirements', style: theme.textTheme.titleMedium),
             const SizedBox(height: 8),
             ...rows,
           ],
@@ -301,14 +366,12 @@ Future<void> _openEntityById(BuildContext context, String id) async {
     return;
   }
 
-  // Nothing found – show a small message
   ScaffoldMessenger.of(context).showSnackBar(
     SnackBar(content: Text('No entity found for "$id".')),
   );
 }
 
 Future<void> _openMemento(BuildContext context, Memento memento) async {
-  // Look up the matching MementoEntry in MementosIndex by id
   final all = await MementosIndex.instance.all();
   MementoEntry? entry;
   for (final e in all) {
