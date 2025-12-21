@@ -70,7 +70,7 @@
     "price": [{ "currency": "cod", "amount": 2500 }]
   },
   {
-    "id": "espressp",
+    "id": "espresso",
     "name": "Espresso",
     "sections": ["Freshly Made"],
     "description": "The tiny cup makes it hard to hold.",
