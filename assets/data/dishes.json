@@ -69,6 +69,16 @@
     "requirementsStars": 60,
     "price": [{ "currency": "cod", "amount": 2500 }]
   },
+  {
+    "id": "espressp",
+    "name": "Espresso",
+    "sections": ["Freshly Made"],
+    "description": "The tiny cup makes it hard to hold.",
+    "timeSeconds": 14,
+    "earningsMax": 900,
+    "requirementsStars": 65,
+    "price": [{ "currency": "cod", "amount": 2600 }]
+  },
 
   {
     "id": "strawberry_daifuku",
