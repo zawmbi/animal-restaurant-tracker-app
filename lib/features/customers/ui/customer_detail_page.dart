@@ -43,22 +43,22 @@ class CustomerDetailPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // TAGS
-            if (customer.tags.isNotEmpty) ...[
-              Wrap(
-                spacing: 6,
-                runSpacing: 4,
-                children: customer.tags
-                    .map(
-                      (e) => Chip(
-                        label: Text(e),
-                        materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                        visualDensity: VisualDensity.compact,
-                      ),
-                    )
-                    .toList(),
-              ),
-              const SizedBox(height: 12),
-            ],
+            // if (customer.tags.isNotEmpty) ...[
+            //   Wrap(
+            //     spacing: 6,
+            //     runSpacing: 4,
+            //     children: customer.tags
+            //         .map(
+            //           (e) => Chip(
+            //             label: Text(e),
+            //             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+            //             visualDensity: VisualDensity.compact,
+            //           ),
+            //         )
+            //         .toList(),
+            //   ),
+            //   const SizedBox(height: 12),
+            // ],
 
             // INFO (NEW: numeric appearance rate)
             Card(
@@ -87,6 +87,11 @@ class CustomerDetailPage extends StatelessWidget {
 
             // DESCRIPTION
             if (customer.customerDescription.isNotEmpty) ...[
+              Text(
+                'Customer Description',
+                style: theme.textTheme.titleMedium,
+              ),
+              const SizedBox(height: 4),
               Text(
                 customer.customerDescription,
                 style: theme.textTheme.bodyMedium,
