@@ -11,9 +11,17 @@ class TimerService {
 
   Future<void> init() async {
     const androidInit = AndroidInitializationSettings('@mipmap/ic_launcher');
+
+    const iosInit = DarwinInitializationSettings(
+      requestAlertPermission: true,
+      requestBadgePermission: true,
+      requestSoundPermission: true,
+    );
+
     const initSettings = InitializationSettings(
       android: androidInit,
-      // you can add iOS/macOS init later if you want
+      iOS: iosInit,
+      macOS: iosInit,
     );
 
     await _plugin.initialize(initSettings);
@@ -42,7 +50,10 @@ class TimerService {
       priority: Priority.high,
     );
 
-    const details = NotificationDetails(android: androidDetails);
+    const details = NotificationDetails(
+      android: androidDetails,
+      // If you want iOS styling later, we can add DarwinNotificationDetails here.
+    );
 
     await _plugin.zonedSchedule(
       notifId,
@@ -60,6 +71,4 @@ class TimerService {
   }
 
   Future<void> cancelAll() => _plugin.cancelAll();
-
-
 }
