@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:animal_restaurant_tracker/features/mementos/ui/mementos_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+import 'package:material_symbols_icons/material_symbols_icons.dart';
 
 import 'package:animal_restaurant_tracker/features/bank/ui/bank_page.dart';
 import 'package:animal_restaurant_tracker/features/facilities/data/facilities_repository.dart'
@@ -18,6 +19,7 @@ import 'package:animal_restaurant_tracker/features/timers/ui/timers_page.dart';
 import '../../features/redemption_codes/ui/redemption_codes_page.dart';
 import 'package:animal_restaurant_tracker/features/courtyard/ui/courtyard_page.dart';
 import 'package:animal_restaurant_tracker/features/aromatic_acorn/ui/aromatic_acorn_page.dart';
+import 'package:animal_restaurant_tracker/features/staff/ui/staff_page.dart';
 
 
 import '../../features/letters/ui/letters_page.dart';
@@ -212,9 +214,6 @@ class _HomePageState extends State<HomePage> {
           ),
           const SizedBox(height: 20),
 
-          Text('Browse', style: Theme.of(context).textTheme.titleLarge),
-          const SizedBox(height: 8),
-
           // 3-per-row nav tiles
           GridView.count(
             crossAxisCount: 3,
@@ -226,7 +225,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               _navTile(
                 context,
-                Icons.people,
+                Icons.cruelty_free,
                 'Customers',
                 const CustomersPage(),
               ),
@@ -250,7 +249,7 @@ class _HomePageState extends State<HomePage> {
               ),
               _navTile(
                 context,
-                Icons.menu_book,
+                Symbols.menu_book_2,
                 'Recipes',
                 const recipes.DishesPage(),
               ),
@@ -267,10 +266,15 @@ class _HomePageState extends State<HomePage> {
                 const MementosPage(),
               ),
 
-
               _navTile(
                 context,
-                Icons.redeem,
+                Symbols.owl,
+                'Staff',
+                const StaffPage(),
+              ),
+              _navTile(
+                context,
+                Symbols.menu_book,
                 'Redemption Codes',
                 const RedemptionCodesPage(),
               ),

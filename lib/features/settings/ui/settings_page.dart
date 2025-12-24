@@ -213,7 +213,7 @@ class _SettingsPageState extends State<SettingsPage> {
 
           const SizedBox(height: 16),
 
-          // ✅ Synced Versions (second-to-last section)
+          //  Synced Versions (second-to-last section)
           Card(
             child: ListTile(
               title: Text(

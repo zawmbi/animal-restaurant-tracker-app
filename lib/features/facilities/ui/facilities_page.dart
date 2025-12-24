@@ -42,7 +42,7 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
               setState(() {
                 _selectedScene = s;
                 _selectedTheme = null;
-                _future = repo.byArea(_selectedScene); // ✅ load only this shard
+                _future = repo.byArea(_selectedScene); // load only this shard
               });
             },
           ),

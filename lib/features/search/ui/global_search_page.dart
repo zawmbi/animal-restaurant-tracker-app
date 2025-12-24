@@ -5,7 +5,7 @@ import '../../customers/ui/customer_detail_page.dart';
 import '../../dishes/ui/dish_detail_page.dart';
 import '../../facilities/ui/facility_detail_page.dart';
 import '../../customers/data/customers_repository.dart';
-import '../../facilities/data/facilities_repository.dart'; // ✅ fixed import
+import '../../facilities/data/facilities_repository.dart'; 
 import '../data/search_index.dart';
 
 class GlobalSearchPage extends StatefulWidget {
@@ -181,7 +181,7 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
         // ignore: use_build_context_synchronously
         Navigator.of(context).push(
           MaterialPageRoute(
-            builder: (_) => FacilityDetailPage(facilityId: f.id), // ✅ pass id, not object
+            builder: (_) => FacilityDetailPage(facilityId: f.id), //  pass id, not object
           ),
         );
         break;

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "hedwig",
+    "name": "Messenger Hedwig",
+    "series": "Garden",
+    "blurb": "She has a habit of wandering about most of the time, but sometimes she brings back mysterious things.",
+    "unlocking": "Hedwig can be hired after unlocking the Mailbox in the Garden with 50,000 in the Staff menu.",
+    "job": "Hedwig will leave on an adventure then return. Hedwig is able to carry Flowers, Seeds and Watering Cans in her suitcase. Depending on what you send her with, she can bring back rewards and/or Letters. The Fortuneteller can make Hedwig come back sooner in exchange for watching an ad.",
+    "wearableMementos": [
+      { "mementoId": "pilot_hat", "bonusRating": 15, "requirements": "Serve Penguin 30 times." },
+      { "mementoId": "bamboo_copter", "bonusRating": 15, "requirements": "Serve Penniless Toad 10 times." },
+      { "mementoId": "question_mark_hat", "bonusRating": 105, "requirements": "Obtained via Gachapon." }
+    ],
+    "raiseUpgrades": [
+      {
+        "level": 0,
+        "required": "6hrs",
+        "ratingBonus": 50,
+        "cost": { "currency": "cod", "amount": 50000 },
+        "perks": { "Return Time": "8 ~ 20 hrs" }
+      },
+      {
+        "level": 1,
+        "required": "12hrs",
+        "ratingBonus": 80,
+        "cost": { "currency": "cod", "amount": 100000 },
+        "perks": { "Return Time": "8 ~ 19.5 hrs" }
+      },
+      {
+        "level": 2,
+        "required": "18hrs",
+        "ratingBonus": 110,
+        "cost": { "currency": "cod", "amount": 150000 },
+        "perks": { "Return Time": "8 ~ 19 hrs" }
+      }
+    ]
+  },
+  {
+    "id": "jiji",
+    "name": "Jiji the Waiter",
+    "series": "Restaurant",
+    "blurb": "The chef is especially good at making food with a spicy kick.",
+    "unlocking": "Jiji can be unlocked with 35,000 in the Staff menu.",
+    "job": "Jiji takes customers' orders for a certain amount of time, depending on his raise level, and then rests until his break is up. Note: Jiji will randomly disappear at some point in the game. This is normal and tied to a surprise event.",
+    "wearableMementos": [
+      { "mementoId": "paper_bag", "bonusRating": 15, "requirements": "Serve Paper Bagged Ostrich 190 times." },
+      { "mementoId": "star_glasses", "bonusRating": 15, "requirements": "Serve Party Puppy 28 times." },
+      { "mementoId": "trilby", "bonusRating": 15, "requirements": "Serve White Rabbit 45 times." }
+    ],
+    "raiseUpgrades": [
+      {
+        "level": 0,
+        "required": "20min",
+        "ratingBonus": 10,
+        "cost": { "currency": "cod", "amount": 35000 },
+        "perks": { "Work Time": "100 sec.", "Rest Time": "250 sec." }
+      },
+      {
+        "level": 1,
+        "required": "33min",
+        "ratingBonus": 15,
+        "cost": { "currency": "cod", "amount": 12000 },
+        "perks": { "Work Time": "120 sec.", "Rest Time": "250 sec." }
+      },
+      {
+        "level": 2,
+        "required": "46min",
+        "ratingBonus": 20,
+        "cost": { "currency": "cod", "amount": 19000 },
+        "perks": { "Work Time": "140 sec.", "Rest Time": "250 sec." }
+      }
+    ]
+  },
+  {
+    "id": "dori",
+    "name": "Dori",
+    "series": "Restaurant",
+    "blurb": "Dori attracts customers for a certain amount of time depending on his raise level, then rests.",
+    "unlocking": "Dori can be unlocked for 35,000 from the Staff menu.",
+    "job": "Dori attracts a certain amount of customers for a certain amount of time, depending on his raise level, and then rest for a period of time.",
+    "wearableMementos": [
+      { "mementoId": "knitted_beanie", "bonusRating": 15, "requirements": "Serve Sheep 200 times. Sell 500 Fries." },
+      { "mementoId": "engineers_helmet", "bonusRating": 15, "requirements": "Serve Beaver 800 times." },
+      { "mementoId": "oriental_cap", "bonusRating": 15, "requirements": "Serve Lucky Pig 30 times." }
+    ],
+    "raiseUpgrades": [
+      {
+        "level": 0,
+        "required": "25min",
+        "ratingBonus": 10,
+        "cost": { "currency": "cod", "amount": 35000 },
+        "perks": { "Customers Attracted": "4", "Rest Time": "400 sec.", "Promo": "Flyer 6.4 sec." }
+      },
+      {
+        "level": 1,
+        "required": "41min",
+        "ratingBonus": 15,
+        "cost": { "currency": "cod", "amount": 15000 },
+        "perks": { "Customers Attracted": "4", "Rest Time": "395 sec.", "Promo": "Flyer 6.2 sec." }
+      },
+      {
+        "level": 2,
+        "required": "58min",
+        "ratingBonus": 20,
+        "cost": { "currency": "cod", "amount": 19000 },
+        "perks": { "Customers Attracted": "4", "Rest Time": "390 sec.", "Promo": "Flyer 6.1 sec." }
+      }
+    ]
+  }
+]
