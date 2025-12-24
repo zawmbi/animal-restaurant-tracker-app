@@ -8,37 +8,12 @@ enum MoneyCurrency { cod, plates, bells, film, buttons, diamonds }
 extension MoneyCurrencyKey on MoneyCurrency {
   String get key => describeEnum(this);
 }
+
 extension MoneyCurrencyIcon on MoneyCurrency {
   String get assetPath {
-    switch (this) {
-      case MoneyCurrency.cod:
-        return 'assets/images/cod.png';
-      // case MoneyCurrency.plates:
-      //   return 'assets/images/currency_plates.png';
-      // case MoneyCurrency.bells:
-      //   return 'assets/images/currency_bells.png';
-      // case MoneyCurrency.film:
-      //   return 'assets/images/currency_film.png';
-      // case MoneyCurrency.buttons:
-      //   return 'assets/images/currency_buttons.png';
-      // case MoneyCurrency.diamonds:
-      //   return 'assets/images/currency_diamonds.png';
-      case MoneyCurrency.plates:
-        // TODO: Handle this case.
-        throw UnimplementedError();
-      case MoneyCurrency.bells:
-        // TODO: Handle this case.
-        throw UnimplementedError();
-      case MoneyCurrency.film:
-        // TODO: Handle this case.
-        throw UnimplementedError();
-      case MoneyCurrency.buttons:
-        // TODO: Handle this case.
-        throw UnimplementedError();
-      case MoneyCurrency.diamonds:
-        // TODO: Handle this case.
-        throw UnimplementedError();
-    }
+    // Use your PNGs: assets/images/<currencyKey>.png
+    // (If you haven't added all of these yet, add them later — no crashes.)
+    return 'assets/images/${key}.png';
   }
 }
 
@@ -55,17 +30,26 @@ enum FacilityArea {
   courtyard_pets,
 }
 
+/// Storage categories for Signature Store / storage facilities.
+/// (Used by FacilityEffectType.storageIncrease)
+enum StorageKind {
+  garden,
+  fishPond,
+  takeout,
+}
+
 /// What kind of effect a facility gives.
 enum FacilityEffectType {
-  tipCapIncrease,         // +10,000 tip cap
-  friendLimitIncrease,    // +X to friends limit   <-- NEW
-  incomePerMinute,        // +5 cod / min
-  incomePerInterval,      // +X every N minutes
-  incomePerEventRange,    // 2–19 film per <eventKey>
-  ratingBonus,            // +3 (cosmetic)
-  gachaDraws,             // number of draws unlocked
-  gachaLevel,             // level of the gachapon
-  cookingEfficiencyBonus, // % faster cooking 
+  tipCapIncrease, // +10,000 tip cap
+  friendLimitIncrease, // +X to friends limit
+  incomePerMinute, // +5 cod / min
+  incomePerInterval, // +X every N minutes
+  incomePerEventRange, // 2–19 film per <eventKey>
+  ratingBonus, // +3 (cosmetic)
+  gachaDraws, // number of draws unlocked
+  gachaLevel, // level of the gachapon
+  cookingEfficiencyBonus, // % faster cooking
+  storageIncrease, // for signature store facilities +30 storage (with storageKind)
 }
 
 /// ---- helpers: tolerant enum parsing ------------------------------------------------
@@ -135,7 +119,7 @@ FacilityEffectType _parseEffectType(String raw, Map<String, dynamic> j) {
   if (found != null) return found;
 
   // Fallback aliases
-    switch (key) {
+  switch (key) {
     case 'income_per_minute':
     case 'incomeperminute':
       return FacilityEffectType.incomePerMinute;
@@ -152,8 +136,8 @@ FacilityEffectType _parseEffectType(String raw, Map<String, dynamic> j) {
     case 'tipcapincrease':
       return FacilityEffectType.tipCapIncrease;
 
-    case 'friend_limit_increase':        // <-- NEW
-    case 'friendlimitincrease':          // <-- NEW
+    case 'friend_limit_increase':
+    case 'friendlimitincrease':
       return FacilityEffectType.friendLimitIncrease;
 
     case 'rating_bonus':
@@ -168,11 +152,37 @@ FacilityEffectType _parseEffectType(String raw, Map<String, dynamic> j) {
     case 'gachalevel':
       return FacilityEffectType.gachaLevel;
 
+    // IMPORTANT: accept variants for storageIncrease too
+    case 'storage_increase':
+    case 'storageincrease':
+      return FacilityEffectType.storageIncrease;
+
     default:
       throw FormatException(
           'Unknown effect type "$raw" for facility ${j['id'] ?? j['name']}');
   }
+}
 
+StorageKind _parseStorageKind(String raw, Map<String, dynamic> parent) {
+  final key = _normalizeEnumKey(raw);
+
+  final found = _firstWhereOrNull(
+    StorageKind.values,
+    (e) => _normalizeEnumKey(describeEnum(e)) == key,
+  );
+  if (found != null) return found;
+
+  // aliases
+  switch (key) {
+    case 'fishpond':
+    case 'fish_pond':
+    case 'fish_pond_storage':
+    case 'fishing_pond':
+      return StorageKind.fishPond;
+    default:
+      throw FormatException(
+          'Unknown storage kind "$raw" for facility ${parent['id'] ?? parent['name']}');
+  }
 }
 
 /// Price line (e.g. 14,000 cod).
@@ -205,6 +215,7 @@ class FacilityEffect {
   /// - incomePerMinute: amount per minute
   /// - incomePerInterval: amount each interval
   /// - ratingBonus / gachaDraws: flat amount
+  /// - storageIncrease: storage added (int-ish)
   final double? amount;
 
   /// For incomePerInterval: minutes in one interval.
@@ -222,21 +233,25 @@ class FacilityEffect {
 
   /// For gachaLevel: level number
   final int? level;
-  final double? percent; // <-- NEW
+
+  final double? percent; // NEW for cooking efficiency, etc.
+
+  /// For storageIncrease: which storage pool it affects.
+  final StorageKind? storageKind;
 
   FacilityEffect({
     required this.type,
     this.currency,
     this.amount,
-    this.percent,        // <-- NEW
+    this.percent,
     this.intervalMinutes,
     this.capIncrease,
     this.min,
     this.max,
     this.eventKey,
     this.level,
+    this.storageKind,
   });
-
 
   factory FacilityEffect.fromJson(
       Map<String, dynamic> j, Map<String, dynamic> parent) {
@@ -255,41 +270,61 @@ class FacilityEffect {
             ? amtField.toDouble()
             : double.tryParse(amtField.toString()));
 
-    final pctField = j['percent'];                       // <-- NEW
+    final pctField = j['percent'];
     final pct = pctField == null
         ? null
         : (pctField is num
             ? pctField.toDouble()
             : double.tryParse(pctField.toString()));
 
+    StorageKind? sk;
+    final skRaw = j['storageKind']?.toString();
+    if (skRaw != null && skRaw.trim().isNotEmpty) {
+      sk = _parseStorageKind(skRaw, parent);
+    } else {
+      // Allow alternate key name "storage_kind" etc.
+      final alt = j['storage_kind']?.toString();
+      if (alt != null && alt.trim().isNotEmpty) {
+        sk = _parseStorageKind(alt, parent);
+      }
+    }
+
+    // If it's storageIncrease and no storageKind is given, that's a data error.
+    if (t == FacilityEffectType.storageIncrease && sk == null) {
+      throw FormatException(
+        'storageIncrease effect requires "storageKind" (garden | fishPond | takeout) '
+        'for facility ${parent['id'] ?? parent['name']}',
+      );
+    }
+
     return FacilityEffect(
       type: t,
       currency: cur,
       amount: amt,
-      percent: pct,                                      // <-- NEW
+      percent: pct,
       intervalMinutes: (j['intervalMinutes'] as num?)?.toInt(),
       capIncrease: (j['capIncrease'] as num?)?.toInt(),
       min: (j['min'] as num?)?.toInt(),
       max: (j['max'] as num?)?.toInt(),
       eventKey: j['eventKey'] as String?,
       level: (j['level'] as num?)?.toInt(),
+      storageKind: sk,
     );
   }
-
 
   Map<String, dynamic> toJson() => {
         'type': type.name,
         if (currency != null) 'currency': currency!.key,
         if (amount != null) 'amount': amount,
-        if (percent != null) 'percent': percent,    // <-- NEW
+        if (percent != null) 'percent': percent,
         if (intervalMinutes != null) 'intervalMinutes': intervalMinutes,
         if (capIncrease != null) 'capIncrease': capIncrease,
         if (min != null) 'min': min,
         if (max != null) 'max': max,
         if (eventKey != null) 'eventKey': eventKey,
         if (level != null) 'level': level,
+        if (storageKind != null) 'storageKind': storageKind!.name,
       };
-
 }
 
 /// One concrete buyable facility item (e.g. Tip Desk → “Stone Bowl”).
@@ -374,6 +409,16 @@ extension FacilityCookingExtensions on Facility {
     return effects
         .where((e) => e.type == FacilityEffectType.cookingEfficiencyBonus)
         .fold<double>(0.0, (sum, e) => sum + (e.percent ?? e.amount ?? 0.0));
+  }
+
+  /// Sum of all storage increase for a specific storage kind.
+  /// (Only counts the facility's own effects — totals across unlocked items should be computed elsewhere.)
+  int storageIncreaseFor(StorageKind kind) {
+    return effects
+        .where((e) =>
+            e.type == FacilityEffectType.storageIncrease &&
+            e.storageKind == kind)
+        .fold<int>(0, (sum, e) => sum + ((e.amount ?? 0).toInt()));
   }
 
   /// Given a dish base time in seconds, returns adjusted cook time.

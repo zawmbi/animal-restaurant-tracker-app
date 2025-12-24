@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../shared/data/unlocked_store.dart';
+import '../../shared/json_loader.dart';
 import '../data/facilities_repository.dart';
 import '../model/facility.dart';
 
@@ -26,8 +27,29 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
   FacilityArea _selectedScene = FacilityArea.restaurant;
   String? _selectedTheme;
 
+  // Takeout sub-tab
+  bool _showSignatureStore = false;
+
   // current shard future
-  late Future<List<Facility>> _future = repo.byArea(_selectedScene);
+  late Future<List<Facility>> _future = _loadForSelected();
+
+  // Signature Store shard
+  static const String _signatureAsset =
+      'assets/data/facilities_jsons/signature_store_facilities.json';
+
+  Future<List<Facility>> _loadSignatureStore() async {
+    final data = await JsonLoader.load(_signatureAsset) as List<dynamic>;
+    return data
+        .map((e) => Facility.fromJson(e as Map<String, dynamic>))
+        .toList();
+  }
+
+  Future<List<Facility>> _loadForSelected() {
+    if (_selectedScene == FacilityArea.takeout && _showSignatureStore) {
+      return _loadSignatureStore();
+    }
+    return repo.byArea(_selectedScene);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,11 +64,53 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
               setState(() {
                 _selectedScene = s;
                 _selectedTheme = null;
-                _future = repo.byArea(_selectedScene); // load only this shard
+
+                // leaving takeout resets the takeout sub-tab
+                if (_selectedScene != FacilityArea.takeout) {
+                  _showSignatureStore = false;
+                }
+
+                _future = _loadForSelected();
               });
             },
           ),
+
+          // ✅ Takeout gets a second choice: Facilities vs Signature Store
+          if (_selectedScene == FacilityArea.takeout) ...[
+            const SizedBox(height: 8),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: ToggleButtons(
+                  isSelected: [
+                    !_showSignatureStore,
+                    _showSignatureStore,
+                  ],
+                  onPressed: (i) {
+                    setState(() {
+                      _showSignatureStore = i == 1;
+                      _selectedTheme = null;
+                      _future = _loadForSelected();
+                    });
+                  },
+                  children: const [
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: Text('Facilities'),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      child: Text('Signature Store'),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+
           const SizedBox(height: 8),
+
           Expanded(
             child: FutureBuilder<List<Facility>>(
               future: _future,
@@ -92,8 +156,8 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                           child: (groups.isEmpty)
                               ? const Center(child: Text('No facilities here!'))
                               : ListView.separated(
-                                  padding: const EdgeInsets.fromLTRB(
-                                      8, 0, 8, 16),
+                                  padding:
+                                      const EdgeInsets.fromLTRB(8, 0, 8, 16),
                                   itemCount: groups.length,
                                   separatorBuilder: (_, __) =>
                                       const SizedBox(height: 8),
@@ -101,15 +165,16 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                                     final entry = groups[i];
                                     final items = entry.value
                                       ..sort((a, b) {
-                                        final ua = store.isUnlocked(
-                                            'facility', a.id);
-                                        final ub = store.isUnlocked(
-                                            'facility', b.id);
+                                        final ua =
+                                            store.isUnlocked('facility', a.id);
+                                        final ub =
+                                            store.isUnlocked('facility', b.id);
                                         if (ua != ub) {
                                           return ua ? -1 : 1;
                                         }
                                         return a.name.compareTo(b.name);
                                       });
+
                                     return _FacilityGroupSection(
                                       title: entry.key,
                                       items: items,
@@ -140,8 +205,7 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
     return list;
   }
 
-  List<MapEntry<K, List<V>>> _groupBy<K, V>(
-      List<V> list, K Function(V) keyFn) {
+  List<MapEntry<K, List<V>>> _groupBy<K, V>(List<V> list, K Function(V) keyFn) {
     final map = <K, List<V>>{};
     final order = <K>[];
     for (final v in list) {
@@ -252,8 +316,7 @@ class _FacilityGroupSection extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
             child: LayoutBuilder(
               builder: (context, c) {
-                final crossAxisCount =
-                    (c.maxWidth / 160).floor().clamp(1, 6);
+                final crossAxisCount = (c.maxWidth / 160).floor().clamp(1, 6);
                 return GridView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
@@ -270,12 +333,11 @@ class _FacilityGroupSection extends StatelessWidget {
                     return Card(
                       clipBehavior: Clip.antiAlias,
                       child: InkWell(
-                        // 👇 TAP = open detail page
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (_) =>
-                                  FacilityDetailPage(facility: f),
+                                  FacilityDetailPage(facilityId: f.id),
                             ),
                           );
                         },
@@ -304,7 +366,6 @@ class _FacilityGroupSection extends StatelessWidget {
                                 scale: 0.9,
                                 child: Checkbox(
                                   value: checked,
-                                  // 👇 CHECKBOX = toggle unlocked
                                   onChanged: (v) => store.setUnlocked(
                                       'facility', f.id, v ?? false),
                                 ),
@@ -324,21 +385,46 @@ class _FacilityGroupSection extends StatelessWidget {
     );
   }
 }
-// --- Keep everything above unchanged --- //
+
+/// ========= Facility Detail Page =========
 
 class FacilityDetailPage extends StatelessWidget {
-  final Facility facility;
-  const FacilityDetailPage({super.key, required this.facility});
+  const FacilityDetailPage({super.key, required this.facilityId});
+
+  final String facilityId;
 
   @override
   Widget build(BuildContext context) {
+    final repo = FacilitiesRepository.instance;
     final store = UnlockedStore.instance;
+
     return Scaffold(
       appBar: AppBar(title: const Text('Facility Details')),
-      body: AnimatedBuilder(
-        animation: store,
-        builder: (context, _) {
-          return _FacilityDetailBody(facility: facility, store: store);
+      body: FutureBuilder<Facility?>(
+        future: repo.byId(facilityId),
+        builder: (context, snap) {
+          if (snap.connectionState != ConnectionState.done) {
+            return const Center(child: CircularProgressIndicator());
+          }
+          if (snap.hasError) {
+            return Center(
+              child: Text(
+                'Failed to load facility:\n${snap.error}',
+                textAlign: TextAlign.center,
+              ),
+            );
+          }
+
+          final facility = snap.data;
+          if (facility == null) {
+            return const Center(child: Text('Facility not found.'));
+          }
+
+          return AnimatedBuilder(
+            animation: store,
+            builder: (context, _) =>
+                _FacilityDetailBody(facility: facility, store: store),
+          );
         },
       ),
     );
@@ -346,22 +432,30 @@ class FacilityDetailPage extends StatelessWidget {
 }
 
 class _FacilityDetailBody extends StatelessWidget {
-  const _FacilityDetailBody({required this.facility, required this.store});
+  const _FacilityDetailBody({
+    required this.facility,
+    required this.store,
+  });
+
   final Facility facility;
   final UnlockedStore store;
+
+  // use your PNGs: assets/images/<currencyKey>.png
+  static String _currencyAsset(MoneyCurrency c) => 'assets/images/${c.key}.png';
+
+  String _prettyArea(FacilityArea area) => area.name
+      .split('_')
+      .map((w) => w.isEmpty ? w : '${w[0].toUpperCase()}${w.substring(1)}')
+      .join(' ');
 
   @override
   Widget build(BuildContext context) {
     final checked = store.isUnlocked('facility', facility.id);
     final theme = Theme.of(context);
-    final prices = facility.price;
-    final effects = facility.effects;
-    final specials = facility.specialRequirements ?? const [];
 
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
-        // ---------- Title Row ----------
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -380,62 +474,70 @@ class _FacilityDetailBody extends StatelessWidget {
         ),
         const SizedBox(height: 8),
 
-        // ---------- Description ----------
-        if ((facility.description ?? '').isNotEmpty)
+        if (facility.description != null &&
+            facility.description!.trim().isNotEmpty)
           Text(
             facility.description!,
             style: theme.textTheme.bodyMedium,
           ),
         const SizedBox(height: 16),
 
-        // ---------- Info Card ----------
         Card(
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _infoRow(context, 'Area',
-                    _prettyEnumName(facility.area.name)),
                 _infoRow(context, 'Group', facility.group),
-                if ((facility.series ?? '').isNotEmpty)
+                _infoRow(context, 'Area', _prettyArea(facility.area)),
+                if (facility.series != null &&
+                    facility.series!.trim().isNotEmpty)
                   _infoRow(context, 'Series', facility.series!),
                 _infoRow(
                   context,
                   'Star requirement',
-                  facility.requirementStars! > 0
+                  (facility.requirementStars != null &&
+                          facility.requirementStars! > 0)
                       ? '${facility.requirementStars}★'
                       : '—',
                 ),
-                if (prices.isNotEmpty)
-                  _infoRow(context, 'Price', _formatPrice(prices.first)),
+                _infoRowWidget(
+                  context,
+                  'Price',
+                  _pricePills(context, facility.price),
+                ),
               ],
             ),
           ),
         ),
+
         const SizedBox(height: 16),
 
-        // ---------- Effects ----------
-        if (effects.isNotEmpty)
+        if (facility.effects.isNotEmpty)
           Card(
             child: Padding(
               padding: const EdgeInsets.all(16),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Effects',
-                      style: theme.textTheme.titleMedium!
-                          .copyWith(fontWeight: FontWeight.bold)),
+                  Text('Effects', style: theme.textTheme.titleMedium),
                   const SizedBox(height: 8),
-                  ...effects.map((e) => _infoRow(context, _effectLabel(e), _effectValue(e))),
+                  ...facility.effects
+                      .map(
+                        (e) => Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 2),
+                          child: Text('• ${_formatEffect(e)}'),
+                        ),
+                      )
+                      .toList(),
                 ],
               ),
             ),
           ),
 
-        // ---------- Special Requirements ----------
-        if (specials.isNotEmpty) ...[
-          const SizedBox(height: 16),
+        const SizedBox(height: 16),
+
+        if ((facility.specialRequirements ?? const []).isNotEmpty)
           Card(
             child: Padding(
               padding: const EdgeInsets.all(16),
@@ -443,20 +545,24 @@ class _FacilityDetailBody extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('Special requirements',
-                      style: theme.textTheme.titleMedium!
-                          .copyWith(fontWeight: FontWeight.bold)),
+                      style: theme.textTheme.titleMedium),
                   const SizedBox(height: 8),
-                  ...specials.map((s) => Text('• $s')),
+                  ...facility.specialRequirements!
+                      .map(
+                        (s) => Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 2),
+                          child: Text('• $s'),
+                        ),
+                      )
+                      .toList(),
                 ],
               ),
             ),
           ),
-        ],
       ],
     );
   }
 
-  // ---------- Helper Rows ----------
   Widget _infoRow(BuildContext context, String label, String value) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
@@ -472,10 +578,58 @@ class _FacilityDetailBody extends StatelessWidget {
     );
   }
 
-  String _formatPrice(Price price) {
-    final amt = _formatNumber(price.amount);
-    final cur = price.currency.key;
-    return '🐟 $amt $cur';
+  Widget _infoRowWidget(BuildContext context, String label, Widget trailing) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(child: Text(label)),
+          const SizedBox(width: 12),
+          Flexible(
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: trailing,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _pricePills(BuildContext context, List<Price> prices) {
+    if (prices.isEmpty) {
+      return const Text(
+        'Free',
+        style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+      );
+    }
+
+    return Wrap(
+      spacing: 10,
+      runSpacing: 6,
+      alignment: WrapAlignment.end,
+      children: prices.map((p) {
+        return Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset(
+              p.currency.assetPath,
+              width: 18,
+              height: 18,
+              fit: BoxFit.contain,
+              errorBuilder: (_, __, ___) => const Icon(Icons.attach_money, size: 18),
+            ),
+
+            const SizedBox(width: 6),
+            Text(
+              '${_formatNumber(p.amount)} ${p.currency.key}',
+              style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+            ),
+          ],
+        );
+      }).toList(),
+    );
   }
 
   static String _formatNumber(int v) {
@@ -489,56 +643,42 @@ class _FacilityDetailBody extends StatelessWidget {
     return buf.toString();
   }
 
-  String _prettyEnumName(String raw) => raw
-      .split('_')
-      .map((w) => w.isEmpty ? w : '${w[0].toUpperCase()}${w.substring(1)}')
-      .join(' ');
-
-  String _effectLabel(FacilityEffect e) {
-    switch (e.type) {
-      case FacilityEffectType.ratingBonus:
-        return 'Rating Bonus';
-      case FacilityEffectType.cookingEfficiencyBonus:
-        return 'Cooking Efficiency';
-      case FacilityEffectType.incomePerMinute:
-        return 'Income / min';
-      case FacilityEffectType.tipCapIncrease:
-        return 'Tip Cap Increase';
-      case FacilityEffectType.incomePerInterval:
-        return 'Income per Interval';
-      case FacilityEffectType.incomePerEventRange:
-        return 'Income (Event Range)';
-      case FacilityEffectType.gachaDraws:
-        return 'Gacha Draws';
-      case FacilityEffectType.gachaLevel:
-        return 'Gacha Level';
-      case FacilityEffectType.friendLimitIncrease:
-        // TODO: Handle this case.
-        throw UnimplementedError();
+  String _formatEffect(FacilityEffect e) {
+    String amountStr = '';
+    if (e.amount != null) {
+      final a = e.amount!;
+      amountStr = a % 1 == 0 ? a.toInt().toString() : a.toStringAsFixed(2);
     }
-  }
 
-  String _effectValue(FacilityEffect e) {
-    final amt = e.amount?.toInt() ?? 0;
     switch (e.type) {
       case FacilityEffectType.ratingBonus:
-        return '+$amt';
-      case FacilityEffectType.cookingEfficiencyBonus:
-        return '+$amt%';
-      case FacilityEffectType.tipCapIncrease:
-        return '+${e.capIncrease ?? amt}';
+        return '+$amountStr rating';
       case FacilityEffectType.incomePerMinute:
-        return '+$amt ${e.currency?.key ?? ''}/min';
+        final cur = e.currency?.key ?? '';
+        return '+$amountStr $cur / min';
+      case FacilityEffectType.tipCapIncrease:
+        final cap = e.capIncrease ?? (e.amount?.toInt() ?? 0);
+        return 'Tip cap +$cap';
       case FacilityEffectType.incomePerInterval:
-        return '+$amt/${e.intervalMinutes ?? 0}min';
+        final cur = e.currency?.key ?? '';
+        final mins = e.intervalMinutes ?? 0;
+        return '+$amountStr $cur every $mins min';
       case FacilityEffectType.incomePerEventRange:
-        return '${e.min ?? 0}–${e.max ?? amt} ${e.currency?.key ?? ''}';
+        final min = e.min ?? 0;
+        final max = e.max;
+        final cur = e.currency?.key ?? '';
+        final range = max == null ? '$min' : '$min–$max';
+        final key = e.eventKey ?? 'event';
+        return '$range $cur per $key';
       case FacilityEffectType.gachaDraws:
-        return '${e.amount?.toInt() ?? 0} draws';
+        return '${e.amount?.toInt() ?? 0} gacha draws';
       case FacilityEffectType.gachaLevel:
-        return 'Lv. ${e.level ?? e.amount?.toInt() ?? 1}';
+        return 'Gachapon level ${e.level ?? e.amount?.toInt() ?? 0}';
+      case FacilityEffectType.cookingEfficiencyBonus:
+        throw UnimplementedError();
       case FacilityEffectType.friendLimitIncrease:
-        // TODO: Handle this case.
+        throw UnimplementedError();
+      case FacilityEffectType.storageIncrease:
         throw UnimplementedError();
     }
   }

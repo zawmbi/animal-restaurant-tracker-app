@@ -59,31 +59,12 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
-  assets: 
-  - assets/data/
-  - assets/images/
-  - assets/data/facilities.json
-  - assets/data/letters.json
-  - assets/data/mementos_extra.json
-  - assets/data/mementos.json
-  - assets/data/customers.json
-  - assets/data/dishes.json
-  - assets/data/facilities_jsons/restaurant_facilities.json
-  - assets/data/facilities_jsons/kitchen_facilities.json
-  - assets/data/facilities_jsons/garden_facilities.json
-  - assets/data/facilities_jsons/vegetable_garden_facilities.json
-  - assets/data/facilities_jsons/buffet_facilities.json
-  - assets/data/facilities_jsons/takeout_facilities.json
-  - assets/data/facilities_jsons/terrace_facilities.json
-  - assets/data/facilities_jsons/courtyard_facilities.json
-  - assets/data/facilities_jsons/     
-  - assets/data/redemption_codes.json
 
+  assets:
+    - assets/data/
+    - assets/data/facilities_jsons/
+    - assets/images/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -62,6 +62,9 @@ class EarningsCalculator {
           case FacilityEffectType.friendLimitIncrease:
             // TODO: Handle this case.
             throw UnimplementedError();
+          case FacilityEffectType.storageIncrease:
+            // TODO: Handle this case.
+            throw UnimplementedError();
         }
       }
     }

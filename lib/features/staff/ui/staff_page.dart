@@ -17,9 +17,7 @@ class _StaffPageState extends State<StaffPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Staff'),
-      ),
+      appBar: AppBar(title: const Text('Staff')),
       body: FutureBuilder<List<StaffMember>>(
         future: _repo.all(),
         builder: (context, snap) {
@@ -58,7 +56,8 @@ class _StaffPageState extends State<StaffPage> {
                 ),
               ),
               Expanded(
-                child: snap.connectionState != ConnectionState.done && snap.data == null
+                child: snap.connectionState != ConnectionState.done &&
+                        snap.data == null
                     ? const Center(child: CircularProgressIndicator())
                     : ListView.builder(
                         padding: const EdgeInsets.fromLTRB(12, 8, 12, 16),
@@ -89,26 +88,39 @@ class _StaffPageState extends State<StaffPage> {
                                     const SizedBox(width: 10),
                                     Expanded(
                                       child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
                                           Text(
                                             s.name,
-                                            style: Theme.of(context).textTheme.titleMedium,
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .titleMedium,
                                           ),
-                                          if ((s.series ?? '').trim().isNotEmpty)
+                                          if ((s.series ?? '')
+                                              .trim()
+                                              .isNotEmpty)
                                             Padding(
-                                              padding: const EdgeInsets.only(top: 2),
+                                              padding:
+                                                  const EdgeInsets.only(top: 2),
                                               child: Text(
                                                 s.series!,
-                                                style: Theme.of(context).textTheme.bodySmall,
+                                                style: Theme.of(context)
+                                                    .textTheme
+                                                    .bodySmall,
                                               ),
                                             ),
-                                          if ((s.blurb ?? '').trim().isNotEmpty)
+                                          if ((s.blurb ?? '')
+                                              .trim()
+                                              .isNotEmpty)
                                             Padding(
-                                              padding: const EdgeInsets.only(top: 8),
+                                              padding:
+                                                  const EdgeInsets.only(top: 8),
                                               child: Text(
                                                 s.blurb!,
-                                                style: Theme.of(context).textTheme.bodyMedium,
+                                                style: Theme.of(context)
+                                                    .textTheme
+                                                    .bodyMedium,
                                               ),
                                             ),
                                         ],

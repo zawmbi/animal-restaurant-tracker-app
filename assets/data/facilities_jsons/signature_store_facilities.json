@@ -1,0 +1,128 @@
+[
+  {
+    "id": "signature_sign_wooden",
+    "name": "Wooden Signboard",
+    "area": "takeout",
+    "group": "Signature Store Sign",
+    "series": "Signboard",
+    "description": "A simple wooden signboard that grants access to the Signature Store.",
+    "price": [
+      { "currency": "bells", "amount": 0 }
+    ],
+    "effects": [],
+    "specialRequirements": [],
+    "tags": ["signature_store", "signboard"]
+  },
+  {
+    "id": "signature_sign_blackboard",
+    "name": "Blackboard Signboard",
+    "area": "takeout",
+    "group": "Signature Store Sign",
+    "series": "Signboard",
+    "description": "A chalk-style signboard with a cozy café vibe.",
+    "price": [
+      { "currency": "bells", "amount": 500 }
+    ],
+    "effects": [],
+    "specialRequirements": [],
+    "tags": ["signature_store", "signboard"]
+  },
+
+  {
+    "id": "ss_wallpaper_simple_elegance_restaurant",
+    "name": "Simple Elegance Restaurant Wallpaper",
+    "area": "restaurant",
+    "group": "Signature Store Wallpaper",
+    "series": "Restaurant",
+    "description": "A reserved, low-key look for the restaurant.",
+    "price": [
+      { "currency": "bells", "amount": 4000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 50 }
+    ],
+    "specialRequirements": [],
+    "tags": ["signature_store", "wallpaper"]
+  },
+  {
+    "id": "ss_wallpaper_reverie_blue_restaurant",
+    "name": "Reverie Blue Restaurant Wallpaper",
+    "area": "restaurant",
+    "group": "Signature Store Wallpaper",
+    "series": "Restaurant",
+    "description": "It'll bring you into a blue dream.",
+    "price": [
+      { "currency": "bells", "amount": 12000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 100 }
+    ],
+    "specialRequirements": [],
+    "tags": ["signature_store", "wallpaper"]
+  },
+{
+  "id": "ss_garden_storage_rattan",
+  "name": "Rattan Flower Basket",
+  "area": "takeout",
+  "group": "Signature Store - Garden Storage",
+  "description": "A practical hand-woven flower basket.",
+  "requirementsStars": 3500,
+  "price": [{ "currency": "bells", "amount": 1000 }],
+  "effects": [
+    { "type": "ratingBonus", "amount": 30 },
+    { "type": "storageIncrease", "amount": 30, "storageKind": "garden" }
+  ],
+  "series": "Signature Store",
+  "specialRequirements": []
+},
+  {
+    "id": "ss_garden_storage_fresh_flower",
+    "name": "Fresh Flower Cupboard",
+    "area": "garden",
+    "group": "Signature Store Special Facility",
+    "series": "Garden Storage",
+    "description": "A cupboard designed to keep flowers fresh.",
+    "price": [
+      { "currency": "bells", "amount": 2000 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 60 },
+      { "type": "storageIncrease", "amount": 50, "storageKind": "garden"}
+    ],
+    "specialRequirements": [],
+    "tags": ["signature_store", "storage"]
+  },
+
+  {
+    "id": "ss_memento_airplane_cap",
+    "name": "Airplane Cap",
+    "area": "takeout",
+    "group": "Signature Store Memento",
+    "series": "Head Accessory",
+    "description": "A super cool airplane-themed cap.",
+    "price": [
+      { "currency": "bells", "amount": 200 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 5 }
+    ],
+    "specialRequirements": [],
+    "tags": ["signature_store", "memento"]
+  },
+  {
+    "id": "ss_memento_pirate_hat",
+    "name": "Pirate Hat",
+    "area": "takeout",
+    "group": "Signature Store Memento",
+    "series": "Head Accessory",
+    "description": "Whoever wears it becomes the captain.",
+    "price": [
+      { "currency": "bells", "amount": 400 }
+    ],
+    "effects": [
+      { "type": "ratingBonus", "amount": 10 }
+    ],
+    "specialRequirements": [],
+    "tags": ["signature_store", "memento"]
+  }
+]

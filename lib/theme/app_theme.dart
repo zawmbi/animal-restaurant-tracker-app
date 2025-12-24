@@ -14,10 +14,19 @@ ThemeData buildAppTheme() {
   return base.copyWith(
     scaffoldBackgroundColor: kCreamLight,
     dividerColor: Colors.transparent,
+    iconTheme: const IconThemeData(
+      color: kBrownDark,
+    ),
+    primaryIconTheme: const IconThemeData(
+      color: kBrownDark,
+    ),
     colorScheme: base.colorScheme.copyWith(
       primary: kGreen,
       secondary: kGreen,
       surface: kCreamDark,
+      onSurface: kBrownDark,
+      onPrimary: kBrownDark,
+      onSecondary: kBrownDark,
     ),
     appBarTheme: const AppBarTheme(
       backgroundColor: kCreamLight,
@@ -25,7 +34,7 @@ ThemeData buildAppTheme() {
       elevation: 0,
       scrolledUnderElevation: 0,
       titleTextStyle: TextStyle(
-        fontSize: 20,
+        fontSize: 30,
         fontWeight: FontWeight.w600,
         color: kBrownDark,
       ),
@@ -57,7 +66,7 @@ ThemeData buildAppTheme() {
       color: kCreamDark,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
-        side: const BorderSide(color: kGreen, width: 3),
+        side: const BorderSide(color: kGreen, width: 4),
       ),
       elevation: 0,
       margin: const EdgeInsets.all(2),

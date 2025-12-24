@@ -92,8 +92,8 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                           child: (groups.isEmpty)
                               ? const Center(child: Text('No facilities here!'))
                               : ListView.separated(
-                                  padding: const EdgeInsets.fromLTRB(
-                                      8, 0, 8, 16),
+                                  padding:
+                                      const EdgeInsets.fromLTRB(8, 0, 8, 16),
                                   itemCount: groups.length,
                                   separatorBuilder: (_, __) =>
                                       const SizedBox(height: 8),
@@ -101,15 +101,16 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                                     final entry = groups[i];
                                     final items = entry.value
                                       ..sort((a, b) {
-                                        final ua = store.isUnlocked(
-                                            'facility', a.id);
-                                        final ub = store.isUnlocked(
-                                            'facility', b.id);
+                                        final ua =
+                                            store.isUnlocked('facility', a.id);
+                                        final ub =
+                                            store.isUnlocked('facility', b.id);
                                         if (ua != ub) {
                                           return ua ? -1 : 1;
                                         }
                                         return a.name.compareTo(b.name);
                                       });
+
                                     return _FacilityGroupSection(
                                       title: entry.key,
                                       items: items,
@@ -140,8 +141,7 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
     return list;
   }
 
-  List<MapEntry<K, List<V>>> _groupBy<K, V>(
-      List<V> list, K Function(V) keyFn) {
+  List<MapEntry<K, List<V>>> _groupBy<K, V>(List<V> list, K Function(V) keyFn) {
     final map = <K, List<V>>{};
     final order = <K>[];
     for (final v in list) {
@@ -252,8 +252,7 @@ class _FacilityGroupSection extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
             child: LayoutBuilder(
               builder: (context, c) {
-                final crossAxisCount =
-                    (c.maxWidth / 160).floor().clamp(1, 6);
+                final crossAxisCount = (c.maxWidth / 160).floor().clamp(1, 6);
                 return GridView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
@@ -380,6 +379,9 @@ class _FacilityDetailBody extends StatelessWidget {
   final Facility facility;
   final UnlockedStore store;
 
+  //Use your PNGs: assets/images/<currencyKey>.png
+  static String _currencyAsset(MoneyCurrency c) => 'assets/images/${c.key}.png';
+
   String _prettyArea(FacilityArea area) => area.name
       .split('_')
       .map((w) => w.isEmpty ? w : '${w[0].toUpperCase()}${w.substring(1)}')
@@ -421,7 +423,7 @@ class _FacilityDetailBody extends StatelessWidget {
           ),
         const SizedBox(height: 16),
 
-        // ---------- Main info card (formatted like recipe card) ----------
+        // ---------- Main info card ----------
         Card(
           child: Padding(
             padding: const EdgeInsets.all(16),
@@ -441,10 +443,12 @@ class _FacilityDetailBody extends StatelessWidget {
                       ? '${facility.requirementStars}★'
                       : '—',
                 ),
-                _infoRow(
+
+                // ✅ Price row using your currency PNGs
+                _infoRowWidget(
                   context,
-                  'Price (Cod)',
-                  _firstCodCost(facility.price) ?? 'Free',
+                  'Price',
+                  _pricePills(context, facility.price),
                 ),
               ],
             ),
@@ -467,10 +471,12 @@ class _FacilityDetailBody extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   ...facility.effects
-                      .map((e) => Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 2),
-                            child: Text('• ${_formatEffect(e)}'),
-                          ))
+                      .map(
+                        (e) => Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 2),
+                          child: Text('• ${_formatEffect(e)}'),
+                        ),
+                      )
                       .toList(),
                 ],
               ),
@@ -493,10 +499,12 @@ class _FacilityDetailBody extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   ...facility.specialRequirements!
-                      .map((s) => Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 2),
-                            child: Text('• $s'),
-                          ))
+                      .map(
+                        (s) => Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 2),
+                          child: Text('• $s'),
+                        ),
+                      )
                       .toList(),
                 ],
               ),
@@ -506,7 +514,7 @@ class _FacilityDetailBody extends StatelessWidget {
     );
   }
 
-  // ---------- Helper UI (same pattern as recipes) ----------
+  // ---------- Helper UI ----------
 
   Widget _infoRow(BuildContext context, String label, String value) {
     return Padding(
@@ -526,15 +534,58 @@ class _FacilityDetailBody extends StatelessWidget {
     );
   }
 
-  String? _firstCodCost(List<Price> prices) {
-    if (prices.isEmpty) return null;
-    Price codPrice;
-    try {
-      codPrice = prices.firstWhere((p) => p.currency == MoneyCurrency.cod);
-    } catch (_) {
-      codPrice = prices.first;
+  Widget _infoRowWidget(BuildContext context, String label, Widget trailing) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(child: Text(label)),
+          const SizedBox(width: 12),
+          Flexible(
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: trailing,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _pricePills(BuildContext context, List<Price> prices) {
+    if (prices.isEmpty) {
+      return const Text(
+        'Free',
+        style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+      );
     }
-    return '🐟 ${_formatNumber(codPrice.amount)}';
+
+    return Wrap(
+      spacing: 10,
+      runSpacing: 6,
+      alignment: WrapAlignment.end,
+      children: prices.map((p) {
+        return Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset(
+              _currencyAsset(p.currency),
+              width: 18,
+              height: 18,
+              fit: BoxFit.contain,
+              errorBuilder: (_, __, ___) =>
+                  const Icon(Icons.attach_money, size: 18),
+            ),
+            const SizedBox(width: 6),
+            Text(
+              '${_formatNumber(p.amount)} ${p.currency.key}',
+              style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+            ),
+          ],
+        );
+      }).toList(),
+    );
   }
 
   static String _formatNumber(int v) {
@@ -549,12 +600,6 @@ class _FacilityDetailBody extends StatelessWidget {
   }
 
   String _formatEffect(FacilityEffect e) {
-    // base pretty name from enum
-    final typeName = e.type.name;
-    final prettyType = typeName
-        .replaceAllMapped(RegExp(r'[A-Z]'), (m) => ' ${m.group(0)}')
-        .trim();
-
     String amountStr = '';
     if (e.amount != null) {
       final a = e.amount!;
@@ -586,9 +631,10 @@ class _FacilityDetailBody extends StatelessWidget {
       case FacilityEffectType.gachaLevel:
         return 'Gachapon level ${e.level ?? e.amount?.toInt() ?? 0}';
       case FacilityEffectType.cookingEfficiencyBonus:
-        // TODO: Handle this case.
         throw UnimplementedError();
       case FacilityEffectType.friendLimitIncrease:
+        throw UnimplementedError();
+      case FacilityEffectType.storageIncrease:
         // TODO: Handle this case.
         throw UnimplementedError();
     }

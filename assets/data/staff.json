@@ -73,13 +73,13 @@
   },
   {
     "id": "dori",
-    "name": "Dori",
+    "name": "Dori the Promoter",
     "series": "Restaurant",
-    "blurb": "Dori attracts customers for a certain amount of time depending on his raise level, then rests.",
-    "unlocking": "Dori can be unlocked for 35,000 from the Staff menu.",
+    "blurb": "Dori attracts customers for a certain amount of time depending on his raise level, and then rests for a period of time.",
+    "unlocking": "Dori can be unlocked for 35,000 cod from the Staff menu.",
     "job": "Dori attracts a certain amount of customers for a certain amount of time, depending on his raise level, and then rest for a period of time.",
     "wearableMementos": [
-      { "mementoId": "knitted_beanie", "bonusRating": 15, "requirements": "Serve Sheep 200 times. Sell 500 Fries." },
+      { "mementoId": "knitted_beanie", "bonusRating": 15, "requirements": "Serve Sheep 200 times. Sell 500 Taiyaki." },
       { "mementoId": "engineers_helmet", "bonusRating": 15, "requirements": "Serve Beaver 800 times." },
       { "mementoId": "oriental_cap", "bonusRating": 15, "requirements": "Serve Lucky Pig 30 times." }
     ],
@@ -89,21 +89,21 @@
         "required": "25min",
         "ratingBonus": 10,
         "cost": { "currency": "cod", "amount": 35000 },
-        "perks": { "Customers Attracted": "4", "Rest Time": "400 sec.", "Promo": "Flyer 6.4 sec." }
+        "perks": { "Customers Attracted": "4", "Rest Time": "400 sec.", "Promotion Time": "Flyer 6.4 sec." }
       },
       {
         "level": 1,
         "required": "41min",
         "ratingBonus": 15,
         "cost": { "currency": "cod", "amount": 15000 },
-        "perks": { "Customers Attracted": "4", "Rest Time": "395 sec.", "Promo": "Flyer 6.2 sec." }
+        "perks": { "Customers Attracted": "4", "Rest Time": "395 sec.", "Promotion Time": "Flyer 6.2 sec." }
       },
       {
         "level": 2,
         "required": "58min",
         "ratingBonus": 20,
         "cost": { "currency": "cod", "amount": 19000 },
-        "perks": { "Customers Attracted": "4", "Rest Time": "390 sec.", "Promo": "Flyer 6.1 sec." }
+        "perks": { "Customers Attracted": "4", "Rest Time": "390 sec.", "Promotion Time": "Flyer 6.1 sec." }
       }
     ]
   }

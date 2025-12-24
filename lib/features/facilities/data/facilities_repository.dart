@@ -9,6 +9,7 @@ class FacilitiesRepository {
   static final FacilitiesRepository instance = FacilitiesRepository._();
 
   /// Shards per area. (Veg garden shards are treated as the same `garden` area.)
+  /// Signature Store lives inside Takeout, so we include it in the Takeout shard list.
   static const Map<FacilityArea, List<String>> _assetsForArea = {
     FacilityArea.restaurant: [
       'assets/data/facilities_jsons/restaurant_facilities.json',
@@ -25,6 +26,12 @@ class FacilitiesRepository {
     ],
     FacilityArea.takeout: [
       'assets/data/facilities_jsons/takeout_facilities.json',
+
+      // Signature Store facilities shard (TRY this path first)
+      'assets/data/facilities_jsons/signature_store_facilities.json',
+
+      // Fallback path (in case your folder is misspelled in assets)
+      'assets/data/facilities_jsons/signature_store_facilities.json',
     ],
     FacilityArea.terrace: [
       'assets/data/facilities_jsons/terrace_facilities.json',
@@ -43,12 +50,23 @@ class FacilitiesRepository {
   /// Load and merge shards for a single area (cached).
   Future<List<Facility>> byArea(FacilityArea area) async {
     if (_byArea.containsKey(area)) return _byArea[area]!;
+
     final paths = _assetsForArea[area] ?? const <String>[];
     final out = <Facility>[];
 
     for (final path in paths) {
-      final raw = await rootBundle.loadString(path);
-      final list = (jsonDecode(raw) as List).cast<Map<String, dynamic>>();
+      final raw = await _tryLoadString(path);
+      if (raw == null) {
+        // If a shard path doesn't exist (e.g., fallback not needed), skip quietly.
+        continue;
+      }
+
+      final decoded = jsonDecode(raw);
+      if (decoded is! List) {
+        throw FormatException('Facility shard is not a JSON list: $path');
+      }
+
+      final list = decoded.cast<Map<String, dynamic>>();
 
       // Ensure correct 'area' string in each row for Facility.fromJson
       for (final m in list) {
@@ -66,7 +84,7 @@ class FacilitiesRepository {
     return out;
   }
 
-  /// Merge all areas (cached). Still reads only from facilities_jsons/.
+  /// Merge all areas (cached). Includes Signature Store automatically via Takeout shards.
   Future<List<Facility>> all() async {
     if (_allCache != null) return _allCache!;
     final lists = await Future.wait(_assetsForArea.keys.map(byArea));
@@ -88,5 +106,15 @@ class FacilitiesRepository {
   Future<void> reload() async {
     _byArea.clear();
     _allCache = null;
+  }
+
+  /// Loads an asset string, but returns null if the asset doesn't exist.
+  /// This lets us include optional fallback paths safely.
+  Future<String?> _tryLoadString(String path) async {
+    try {
+      return await rootBundle.loadString(path);
+    } catch (_) {
+      return null;
+    }
   }
 }

@@ -214,6 +214,8 @@ class _HomePageState extends State<HomePage> {
           ),
           const SizedBox(height: 20),
 
+
+
           // 3-per-row nav tiles
           GridView.count(
             crossAxisCount: 3,
@@ -369,7 +371,7 @@ class _NavTile extends StatelessWidget {
                         label,
                         maxLines: 2,
                         wrapWords: true,
-                        minFontSize: 8,
+                        minFontSize: 12,
                         stepGranularity: 1,
                         textAlign: TextAlign.center,
                         style: Theme.of(context).textTheme.titleMedium,
