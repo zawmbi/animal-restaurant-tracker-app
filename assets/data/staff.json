@@ -4,36 +4,93 @@
     "name": "Messenger Hedwig",
     "series": "Garden",
     "blurb": "She has a habit of wandering about most of the time, but sometimes she brings back mysterious things.",
-    "unlocking": "Hedwig can be hired after unlocking the Mailbox in the Garden with 50,000 in the Staff menu.",
+    "unlocking": "Hedwig can be hired after unlocking the Mailbox in the Garden with 50,000 cod in the Staff menu.",
     "job": "Hedwig will leave on an adventure then return. Hedwig is able to carry Flowers, Seeds and Watering Cans in her suitcase. Depending on what you send her with, she can bring back rewards and/or Letters. The Fortuneteller can make Hedwig come back sooner in exchange for watching an ad.",
     "wearableMementos": [
       { "mementoId": "pilot_hat", "bonusRating": 15, "requirements": "Serve Penguin 30 times." },
       { "mementoId": "bamboo_copter", "bonusRating": 15, "requirements": "Serve Penniless Toad 10 times." },
       { "mementoId": "question_mark_hat", "bonusRating": 105, "requirements": "Obtained via Gachapon." }
     ],
-    "raiseUpgrades": [
-      {
-        "level": 0,
-        "required": "6hrs",
-        "ratingBonus": 50,
-        "cost": { "currency": "cod", "amount": 50000 },
-        "perks": { "Return Time": "8 ~ 20 hrs" }
-      },
-      {
-        "level": 1,
-        "required": "12hrs",
-        "ratingBonus": 80,
-        "cost": { "currency": "cod", "amount": 100000 },
-        "perks": { "Return Time": "8 ~ 19.5 hrs" }
-      },
-      {
-        "level": 2,
-        "required": "18hrs",
-        "ratingBonus": 110,
-        "cost": { "currency": "cod", "amount": 150000 },
-        "perks": { "Return Time": "8 ~ 19 hrs" }
-      }
-    ]
+      "raiseUpgrades": [
+        {
+          "level": 0,
+          "required": "6 hours",
+          "ratingBonus": 50,
+          "cost": { "currency": "cod", "amount": 50000 },
+          "perks": { "Return Time": "8 ~ 20 hours" }
+        },
+        {
+          "level": 1,
+          "required": "12 hours",
+          "ratingBonus": 80,
+          "cost": { "currency": "cod", "amount": 100000 },
+          "perks": { "Return Time": "8 ~ 19.5 hours" }
+        },
+        {
+          "level": 2,
+          "required": "18 hours",
+          "ratingBonus": 110,
+          "cost": { "currency": "cod", "amount": 150000 },
+          "perks": { "Return Time": "8 ~ 19 hours" }
+        },
+        {
+          "level": 3,
+          "required": "24 hours",
+          "ratingBonus": 140,
+          "cost": { "currency": "cod", "amount": 200000 },
+          "perks": { "Return Time": "8 ~ 18.5 hours" }
+        },
+        {
+          "level": 4,
+          "required": "30 hours",
+          "ratingBonus": 170,
+          "cost": { "currency": "cod", "amount": 250000 },
+          "perks": { "Return Time": "8 ~ 18 hours" }
+        },
+        {
+          "level": 5,
+          "required": "36 hours",
+          "ratingBonus": 200,
+          "cost": { "currency": "cod", "amount": 350000 },
+          "perks": { "Return Time": "7 ~ 17.5 hours" }
+        },
+        {
+          "level": 6,
+          "required": "42 hours",
+          "ratingBonus": 230,
+          "cost": { "currency": "cod", "amount": 450000 },
+          "perks": { "Return Time": "7 ~ 17 hours" }
+        },
+        {
+          "level": 7,
+          "required": "48 hours",
+          "ratingBonus": 260,
+          "cost": { "currency": "cod", "amount": 550000 },
+          "perks": { "Return Time": "7 ~ 16.5 hours" }
+        },
+        {
+          "level": 8,
+          "required": "54 hours",
+          "ratingBonus": 290,
+          "cost": { "currency": "cod", "amount": 650000 },
+          "perks": { "Return Time": "7 ~ 16 hours" }
+        },
+        {
+          "level": 9,
+          "required": "60 hours",
+          "ratingBonus": 320,
+          "cost": { "currency": "cod", "amount": 750000 },
+          "perks": { "Return Time": "7 ~ 15.5 hours" }
+        },
+        {
+          "level": 10,
+          "required": "66 hours",
+          "ratingBonus": 360,
+          "cost": { "currency": "cod", "amount": 900000 },
+          "perks": { "Return Time": "6 ~ 15 hours" }
+        }
+      ]
+
   },
   {
     "id": "jiji",
