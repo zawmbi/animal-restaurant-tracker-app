@@ -444,7 +444,7 @@ class _FacilityDetailBody extends StatelessWidget {
                       : '—',
                 ),
 
-                // ✅ Price row using your currency PNGs
+                //  Price row using your currency PNGs
                 _infoRowWidget(
                   context,
                   'Price',

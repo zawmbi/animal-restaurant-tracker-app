@@ -1,0 +1,824 @@
+{
+  "id": "fantastical_party",
+  "name": "Fantastical Party",
+  "introducedInVersion": "v9.7.0",
+  "seasonDays": 62,
+  "overview": "With Update v9.7.0 the battle pass system is introduced to the game. During a 62-day season, players can earn battle pass rewards by playing the game and finishing Daily Tasks.\n\nBy finishing the 5 Daily Tasks for Event EXP 6 each and 2 Long Term Tasks for Event EXP 200 each, players will slowly unlock levels to receive rewards. Diamond 100 can be exchanged for Event EXP 25 up to 20 times to speed up the progress.\n\nDuring Fantastical Party Phase 1, players can purchase all 3 phases for $12.99. After the conclusion of Phase 1, the remaining Phases will be available for $4.99 each. The prices will differ depending on the conversion rate and the operating system of the players' devices.\n\nDue to limitations in place, Snapchat iOS players will not be able to purchase the IAP for Super Rewards at the moment. It is advised that these players use an Android device to make the IAP purchase.",
+  "notes": [
+    "According to the announcement from the official Instagram, all limited furniture and mementos in the Fantastical Party event can be obtained by a small chance from Mysterious Merchant after the event. Some of them will require diamonds to purchase.",
+    "Customers from the event can only be earned from the paid version.",
+    "After the conclusion of each Phase, rewards from that Phase will not be listed in the Catalog until unlocked."
+  ],
+  "eventRule": "Purchasing Super Reward eligibility for Phase 1 of Fantastical Party will automatically unlock Super Reward eligibility for Phase 2 and Phase 3 of Fantastical Party. (This rule is only valid for Phase 1 of the Fantastical Party event.)\n\nComplete Today's Tasks and Long-Term Tasks during the event to gain EXP. Increasing EXP allows you to claim corresponding rewards.\nNormal Rewards can be obtained directly with EXP. Super Rewards can only be obtained with EXP after unlocking. Both Normal Rewards and Super Rewards can be claimed at the same time.\nYou can use Diamonds to redeem EXP. During this event, you only have 20 redemption attempts.",
+  "phases": [
+    {
+      "id": "phase_3",
+      "name": "Fantastical Party Phase 3",
+      "start": "January 11th 06:00",
+      "end": "March 14th 06:00",
+      "completionNote": "To complete the event without exchanging diamonds for EXP, players will need to complete all tasks for at least 40 out of 62 days or purchase the Super Rewards to reduce the requirement to 20 days.",
+      "tiers": [
+        { "exp": 0,
+          "normalRewards": [ { "type": "facility", "id": "big_eyes" } ],
+          "superRewards": [ { "type": "facility", "id": "floral_telescope" } ]
+        },
+        { "exp": 20,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "bear_cupboard" } ]
+        },
+        { "exp": 40,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 6000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 15000 } ]
+        },
+        { "exp": 60,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 100 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 200 } ]
+        },
+        { "exp": 80,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 8000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 18000 } ]
+        },
+        { "exp": 100,
+          "normalRewards": [ { "type": "facility", "id": "teddy_bear_stove" } ],
+          "superRewards": [
+            { "type": "facility", "id": "magical_counter" },
+            { "type": "memento", "id": "party_invite" }
+          ]
+        },
+        { "exp": 120,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 10000 } ],
+          "superRewards": [ { "type": "facility", "id": "little_sheep_phone_assistant" } ]
+        },
+        { "exp": 140,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "treasured_moment" } ]
+        },
+        { "exp": 160,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 150 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 300 } ]
+        },
+        { "exp": 180,
+          "normalRewards": [ { "type": "item", "id": "daisy", "itemType": "flower", "level": 2, "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "daisy", "itemType": "flower", "level": 4, "qty": 2 } ]
+        },
+        { "exp": 200,
+          "normalRewards": [ { "type": "facility", "id": "teddy_bear_stove" } ],
+          "superRewards": [ { "type": "facility", "id": "small_rotisserie" } ]
+        },
+        { "exp": 220,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 12000 } ],
+          "superRewards": [ { "type": "facility", "id": "cloudy_dreams" } ]
+        },
+        { "exp": 240,
+          "normalRewards": [ { "type": "facility", "id": "cat_ear_lamp" } ],
+          "superRewards": [ { "type": "facility", "id": "vintage_daisy_bin" } ]
+        },
+        { "exp": 260,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 200 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 500 } ]
+        },
+        { "exp": 280,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 14000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 30000 } ]
+        },
+        { "exp": 300,
+          "normalRewards": [ { "type": "facility", "id": "teddy_bear_stove" } ],
+          "superRewards": [ { "type": "facility", "id": "penguin_blast_chiller" } ]
+        },
+        { "exp": 320,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 16000 } ],
+          "superRewards": [ { "type": "memento", "id": "round_teddy_bear_hat" } ]
+        },
+        { "exp": 340,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "baby_veggie_basket" } ]
+        },
+        { "exp": 360,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 300 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 800 } ]
+        },
+        { "exp": 380,
+          "normalRewards": [ { "type": "item", "id": "sunflower", "itemType": "flower", "level": 2, "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "sunflower", "itemType": "flower", "level": 4, "qty": 2 } ]
+        },
+        { "exp": 400,
+          "normalRewards": [ { "type": "facility", "id": "teddy_bear_stove" } ],
+          "superRewards": [ { "type": "facility", "id": "fantastical_sewing_table" } ]
+        },
+        { "exp": 420,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 18000 } ],
+          "superRewards": [ { "type": "memento", "id": "buttoned_butterfly_bow" } ]
+        },
+        { "exp": 440,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "memento", "id": "fluffy_sheep_slippers" } ]
+        },
+        { "exp": 460,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 400 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 1000 } ]
+        },
+        { "exp": 480,
+          "normalRewards": [ { "type": "item", "id": "rose", "itemType": "flower", "level": 2, "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "rose", "itemType": "flower", "level": 4, "qty": 2 } ]
+        },
+        { "exp": 500,
+          "normalRewards": [ { "type": "facility", "id": "teddy_bear_stove" } ],
+          "superRewards": [ { "type": "facility", "id": "fantasy_collection" } ]
+        },
+        { "exp": 530,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 20000 } ],
+          "superRewards": [ { "type": "memento", "id": "snug_lamb_cap" } ]
+        },
+        { "exp": 560,
+          "normalRewards": [ { "type": "facility", "id": "flower_umbrella_rack" } ],
+          "superRewards": [ { "type": "facility", "id": "fantasy_daydream" } ]
+        },
+        { "exp": 590,
+          "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 100 } ],
+          "superRewards": [ { "type": "currency", "currency": "bells", "amount": 300 } ]
+        },
+        { "exp": 620,
+          "normalRewards": [ { "type": "item", "id": "bluebell", "itemType": "flower", "level": 2, "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "bluebell", "itemType": "flower", "level": 4, "qty": 2 } ]
+        },
+        { "exp": 650,
+          "normalRewards": [ { "type": "facility", "id": "teddy_bear_stove" } ],
+          "superRewards": [ { "type": "facility", "id": "giraffe_mailbox" } ]
+        },
+        { "exp": 680,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 25000 } ],
+          "superRewards": [ { "type": "memento", "id": "stylish_patchwork" } ]
+        },
+        { "exp": 710,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "of_flowers_and_pearls" } ]
+        },
+        { "exp": 740,
+          "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 150 } ],
+          "superRewards": [ { "type": "currency", "currency": "plates", "amount": 400 } ]
+        },
+        { "exp": 770,
+          "normalRewards": [ { "type": "item", "id": "clownfish", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "starfish", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 800,
+          "normalRewards": [ { "type": "facility", "id": "vibrant_flower_long" } ],
+          "superRewards": [ { "type": "facility", "id": "cute_party" } ]
+        },
+        { "exp": 830,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 30000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 80000 } ]
+        },
+        { "exp": 860,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "plushie_pair" } ]
+        },
+        { "exp": 890,
+          "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 200 } ],
+          "superRewards": [ { "type": "currency", "currency": "plates", "amount": 500 } ]
+        },
+        { "exp": 920,
+          "normalRewards": [ { "type": "item", "id": "flounder", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "pink_shell", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 950,
+          "normalRewards": [ { "type": "facility", "id": "flower_embroidery" } ],
+          "superRewards": [ { "type": "facility", "id": "shaggy_long_table" } ]
+        },
+        { "exp": 980,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 35000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 100000 } ]
+        },
+        { "exp": 1010,
+          "normalRewards": [ { "type": "facility", "id": "relaxing_moment" } ],
+          "superRewards": [ { "type": "facility", "id": "spring_cutlery_rack" } ]
+        },
+        { "exp": 1040,
+          "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 250 } ],
+          "superRewards": [ { "type": "currency", "currency": "plates", "amount": 600 } ]
+        },
+        { "exp": 1070,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 40000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 120000 } ]
+        },
+        { "exp": 1100,
+          "normalRewards": [ { "type": "facility", "id": "vibrant_flower_long" } ],
+          "superRewards": [ { "type": "facility", "id": "pink_memories" } ]
+        },
+        { "exp": 1130,
+          "normalRewards": [ { "type": "item", "id": "red_puffer", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "shark", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 1160,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "flavors_of_spring" } ]
+        },
+        { "exp": 1190,
+          "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 300 } ],
+          "superRewards": [ { "type": "currency", "currency": "plates", "amount": 800 } ]
+        },
+        { "exp": 1220,
+          "normalRewards": [ { "type": "item", "id": "bluebell", "itemType": "flower", "level": 4, "qty": 1 } ],
+          "superRewards": [
+            { "type": "item", "id": "white_rose", "itemType": "flower", "level": 4, "qty": 2 }
+          ]
+        },
+        { "exp": 1250,
+          "normalRewards": [ { "type": "facility", "id": "refreshing_table" } ],
+          "superRewards": [ { "type": "facility", "id": "polka_dot_path" } ]
+        },
+        { "exp": 1290,
+          "normalRewards": [ { "type": "item", "id": "pink_shell", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "ray", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 1330,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "teddy_bears_beautiful_dream" } ]
+        },
+        { "exp": 1370,
+          "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 350 } ],
+          "superRewards": [ { "type": "currency", "currency": "plates", "amount": 1000 } ]
+        },
+        { "exp": 1410,
+          "normalRewards": [ { "type": "item", "id": "bluebell", "itemType": "flower", "level": 4, "qty": 1 } ],
+          "superRewards": [
+            { "type": "item", "id": "white_rose", "itemType": "flower", "level": 4, "qty": 2 }
+          ]
+        },
+        { "exp": 1450,
+          "normalRewards": [ { "type": "facility", "id": "vibrant_flower_short" } ],
+          "superRewards": [ { "type": "facility", "id": "floral_snacks" } ]
+        },
+        { "exp": 1490,
+          "normalRewards": [ { "type": "item", "id": "crab", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "butterflyfish", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 1530,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "cute_birdhouse" } ]
+        },
+        { "exp": 1570,
+          "normalRewards": [ { "type": "facility", "id": "refreshing_table" } ],
+          "superRewards": [ { "type": "facility", "id": "baby_elephant_sink" } ]
+        },
+        { "exp": 1600,
+          "normalRewards": [ { "type": "facility", "id": "four_color_garland" } ],
+          "superRewards": [ { "type": "facility", "id": "duckling_gathering" } ]
+        },
+        {
+          "exp": 1700,
+          "normalRewards": [
+            { "type": "chest", "id": "fantastical_party_normal_reward_chest" },
+            { "type": "currency", "currency": "diamonds", "amount": 10 },
+            { "type": "gacha_draw", "amount": 1 },
+            { "type": "promote_free", "amount": 15 }
+          ],
+          "superRewards": [
+            { "type": "chest", "id": "fantastical_party_super_reward_chest" },
+            { "type": "currency", "currency": "diamonds", "amount": 20 },
+            { "type": "gacha_draw", "amount": 2 },
+            { "type": "promote_free", "amount": 30 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "phase_2",
+      "name": "Fantastical Party Phase 2",
+      "start": "November 4th 06:00",
+      "end": "January 5th 06:00",
+      "completionNote": "To complete the event without exchanging diamonds for EXP, players will need to complete all tasks for at least 40 out of 62 days or purchase the Super Rewards to reduce the requirement to 20 days.",
+      "tiers": [
+        { "exp": 0,
+          "normalRewards": [ { "type": "facility", "id": "swan_rocking_chair" } ],
+          "superRewards": [ { "type": "facility", "id": "sleepy_little_bear" } ]
+        },
+        { "exp": 20,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "teddy_cookie" } ]
+        },
+        { "exp": 40,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 6000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 15000 } ]
+        },
+        { "exp": 60,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 100 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 200 } ]
+        },
+        { "exp": 80,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 8000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 18000 } ]
+        },
+        { "exp": 100,
+          "normalRewards": [ { "type": "facility", "id": "flowering_vine_chair" } ],
+          "superRewards": [ { "type": "memento", "id": "party_invite" } ]
+        },
+        { "exp": 120,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 10000 } ],
+          "superRewards": [ { "type": "item", "id": "healing_night_act_1", "itemType": "movie_fragment", "qty": 1 } ]
+        },
+        { "exp": 140,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "sunny_afternoon" } ]
+        },
+        { "exp": 160,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 150 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 300 } ]
+        },
+        { "exp": 180,
+          "normalRewards": [ { "type": "item", "id": "daisy", "itemType": "flower", "level": 2, "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "daisy", "itemType": "flower", "level": 4, "qty": 2 } ]
+        },
+        { "exp": 200,
+          "normalRewards": [ { "type": "facility", "id": "flowering_vine_chair" } ],
+          "superRewards": [ { "type": "facility", "id": "racing_game_machine" } ]
+        },
+        { "exp": 220,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 12000 } ],
+          "superRewards": [ { "type": "memento", "id": "buttoned_collar" } ]
+        },
+        { "exp": 240,
+          "normalRewards": [ { "type": "facility", "id": "little_artist" } ],
+          "superRewards": [ { "type": "facility", "id": "antique_porcelain_plate" } ]
+        },
+        { "exp": 260,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 200 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 500 } ]
+        },
+        { "exp": 280,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 14000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 30000 } ]
+        },
+        { "exp": 300,
+          "normalRewards": [ { "type": "facility", "id": "flowering_vine_chair" } ],
+          "superRewards": [ { "type": "facility", "id": "needlework_ticket_booth" } ]
+        },
+        { "exp": 320,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 16000 } ],
+          "superRewards": [ { "type": "item", "id": "healing_night_act_2", "itemType": "movie_fragment", "qty": 1 } ]
+        },
+        { "exp": 340,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "whispers_of_spring" } ]
+        },
+        { "exp": 360,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 300 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 800 } ]
+        },
+        { "exp": 380,
+          "normalRewards": [ { "type": "item", "id": "sunflower", "itemType": "flower", "level": 2, "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "sunflower", "itemType": "flower", "level": 4, "qty": 2 } ]
+        },
+        { "exp": 400,
+          "normalRewards": [ { "type": "facility", "id": "flowering_vine_chair" } ],
+          "superRewards": [ { "type": "facility", "id": "iced_summer_beverage" } ]
+        },
+        { "exp": 420,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 18000 } ],
+          "superRewards": [ { "type": "memento", "id": "tulip_bib" } ]
+        },
+        { "exp": 440,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "woodsy_flavor" } ]
+        },
+        { "exp": 460,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 400 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 1000 } ]
+        },
+        { "exp": 480,
+          "normalRewards": [ { "type": "item", "id": "rose", "itemType": "flower", "level": 2, "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "rose", "itemType": "flower", "level": 4, "qty": 2 } ]
+        },
+        { "exp": 500,
+          "normalRewards": [ { "type": "facility", "id": "flowering_vine_chair" } ],
+          "superRewards": [ { "type": "facility", "id": "echoing_speaker" } ]
+        },
+        { "exp": 530,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 20000 } ],
+          "superRewards": [ { "type": "item", "id": "healing_night_act_3", "itemType": "movie_fragment", "qty": 1 } ]
+        },
+        { "exp": 560,
+          "normalRewards": [ { "type": "facility", "id": "bear_lease_notice" } ],
+          "superRewards": [ { "type": "facility", "id": "sunny_afternoon" } ]
+        },
+        { "exp": 590,
+          "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 100 } ],
+          "superRewards": [ { "type": "currency", "currency": "bells", "amount": 300 } ]
+        },
+        { "exp": 620,
+          "normalRewards": [ { "type": "item", "id": "bluebell", "itemType": "flower", "level": 2, "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "bluebell", "itemType": "flower", "level": 4, "qty": 2 } ]
+        },
+        { "exp": 650,
+          "normalRewards": [ { "type": "facility", "id": "flowering_vine_chair" } ],
+          "superRewards": [ { "type": "memento", "id": "patchwork_beret" } ]
+        },
+        { "exp": 680,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 25000 } ],
+          "superRewards": [ { "type": "item", "id": "healing_night_act_4", "itemType": "movie_fragment", "qty": 1 } ]
+        },
+        { "exp": 710,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "rainy_flower_bed" } ]
+        },
+        { "exp": 740,
+          "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 150 } ],
+          "superRewards": [ { "type": "currency", "currency": "plates", "amount": 400 } ]
+        },
+        { "exp": 770,
+          "normalRewards": [ { "type": "item", "id": "clownfish", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "starfish", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 800,
+          "normalRewards": [ { "type": "facility", "id": "kitty_hanging_clock" } ],
+          "superRewards": [ { "type": "facility", "id": "mori_mat" } ]
+        },
+        { "exp": 830,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 30000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 80000 } ]
+        },
+        { "exp": 860,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "vine_bar_stool" } ]
+        },
+        { "exp": 890,
+          "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 200 } ],
+          "superRewards": [ { "type": "currency", "currency": "plates", "amount": 500 } ]
+        },
+        { "exp": 920,
+          "normalRewards": [ { "type": "item", "id": "flounder", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "pink_shell", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 950,
+          "normalRewards": [ { "type": "facility", "id": "artsy_watch" } ],
+          "superRewards": [ { "type": "facility", "id": "tulip_flower_basket" } ]
+        },
+        { "exp": 980,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 35000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 100000 } ]
+        },
+        { "exp": 1010,
+          "normalRewards": [ { "type": "facility", "id": "of_flowers_and_the_sea_breeze" } ],
+          "superRewards": [ { "type": "facility", "id": "simple_flower_arrangement" } ]
+        },
+        { "exp": 1040,
+          "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 250 } ],
+          "superRewards": [ { "type": "currency", "currency": "plates", "amount": 600 } ]
+        },
+        { "exp": 1070,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 40000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 120000 } ]
+        },
+        { "exp": 1100,
+          "normalRewards": [ { "type": "facility", "id": "vibrant_flower_long_2" } ],
+          "superRewards": [ { "type": "facility", "id": "penguin_ice_spinner" } ]
+        },
+        { "exp": 1130,
+          "normalRewards": [ { "type": "item", "id": "red_puffer", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "shark", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 1160,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "sunny_afternoon" } ]
+        },
+        { "exp": 1190,
+          "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 300 } ],
+          "superRewards": [ { "type": "currency", "currency": "plates", "amount": 800 } ]
+        },
+        { "exp": 1220,
+          "normalRewards": [ { "type": "item", "id": "bluebell", "itemType": "flower", "level": 4, "qty": 1 } ],
+          "superRewards": [
+            { "type": "item", "id": "white_rose", "itemType": "flower", "level": 4, "qty": 2 }
+          ]
+        },
+        { "exp": 1250,
+          "normalRewards": [ { "type": "facility", "id": "vibrant_flower_long_2" } ],
+          "superRewards": [ { "type": "facility", "id": "ladies_afternoon_tea" } ]
+        },
+        { "exp": 1290,
+          "normalRewards": [ { "type": "item", "id": "pink_shell", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "ray", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 1330,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "daisy_sliding_doors" } ]
+        },
+        { "exp": 1370,
+          "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 350 } ],
+          "superRewards": [ { "type": "currency", "currency": "plates", "amount": 1000 } ]
+        },
+        { "exp": 1410,
+          "normalRewards": [ { "type": "item", "id": "bluebell", "itemType": "flower", "level": 4, "qty": 1 } ],
+          "superRewards": [
+            { "type": "item", "id": "white_rose", "itemType": "flower", "level": 4, "qty": 2 }
+          ]
+        },
+        { "exp": 1450,
+          "normalRewards": [ { "type": "facility", "id": "vibrant_flower_short_2" } ],
+          "superRewards": [ { "type": "memento", "id": "waggly_ears" } ]
+        },
+        { "exp": 1490,
+          "normalRewards": [ { "type": "item", "id": "crab", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "butterflyfish", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 1530,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "retro_fabric_lamp" } ]
+        },
+        { "exp": 1570,
+          "normalRewards": [ { "type": "facility", "id": "ducky_swim_ring" } ],
+          "superRewards": [ { "type": "facility", "id": "furry_conveyor_belt" } ]
+        },
+        { "exp": 1600,
+          "normalRewards": [ { "type": "facility", "id": "tranquil_field" } ],
+          "superRewards": [ { "type": "facility", "id": "fantastical_house" } ]
+        },
+        {
+          "exp": 1700,
+          "normalRewards": [
+            { "type": "chest", "id": "fantastical_party_normal_reward_chest" },
+            { "type": "currency", "currency": "diamonds", "amount": 10 },
+            { "type": "gacha_draw", "amount": 1 },
+            { "type": "promote_free", "amount": 15 }
+          ],
+          "superRewards": [
+            { "type": "chest", "id": "fantastical_party_super_reward_chest" },
+            { "type": "currency", "currency": "diamonds", "amount": 20 },
+            { "type": "gacha_draw", "amount": 2 },
+            { "type": "promote_free", "amount": 30 }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "phase_1",
+      "name": "Fantastical Party Phase 1",
+      "start": "August 18th 06:00",
+      "end": "October 19th 06:00",
+      "completionNote": "To complete the event without exchanging diamonds for EXP, players will need to complete all tasks for at least 40 out of 62 days or purchase the Super Rewards to reduce the requirement to 7 days.",
+      "tiers": [
+        { "exp": 0,
+          "normalRewards": [ { "type": "facility", "id": "secret_language_of_flowers" } ],
+          "superRewards": [ { "type": "memento", "id": "floral_sunglass" } ]
+        },
+        { "exp": 20,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "memento", "id": "little_apron" } ]
+        },
+        { "exp": 40,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 6000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 15000 } ]
+        },
+        { "exp": 60,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 100 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 200 } ]
+        },
+        { "exp": 80,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 8000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 18000 } ]
+        },
+        { "exp": 100,
+          "normalRewards": [ { "type": "facility", "id": "tulip_table" } ],
+          "superRewards": [ { "type": "facility", "id": "ding_dong_counter" } ]
+        },
+        { "exp": 120,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 10000 } ],
+          "superRewards": [ { "type": "item", "id": "miss_fawn_doll", "itemType": "event_item", "qty": 5 } ]
+        },
+        { "exp": 140,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "cute_disco" } ]
+        },
+        { "exp": 160,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 150 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 300 } ]
+        },
+        { "exp": 180,
+          "normalRewards": [ { "type": "item", "id": "daisy", "itemType": "flower", "level": 2, "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "daisy", "itemType": "flower", "level": 4, "qty": 2 } ]
+        },
+        { "exp": 200,
+          "normalRewards": [ { "type": "facility", "id": "tulip_table" } ],
+          "superRewards": [ { "type": "facility", "id": "bubble_party" } ]
+        },
+        { "exp": 220,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 12000 } ],
+          "superRewards": [ { "type": "item", "id": "miss_fawn_doll", "itemType": "event_item", "qty": 5 } ]
+        },
+        { "exp": 240,
+          "normalRewards": [ { "type": "memento", "id": "beaded_hat" } ],
+          "superRewards": [ { "type": "memento", "id": "polka_dot_scissors" } ]
+        },
+        { "exp": 260,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 200 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 500 } ]
+        },
+        { "exp": 280,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 14000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 30000 } ]
+        },
+        { "exp": 300,
+          "normalRewards": [ { "type": "facility", "id": "tulip_table" } ],
+          "superRewards": [ { "type": "facility", "id": "fawns_coffee_table" } ]
+        },
+        { "exp": 320,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 16000 } ],
+          "superRewards": [ { "type": "item", "id": "miss_fawn_doll", "itemType": "event_item", "qty": 5 } ]
+        },
+        { "exp": 340,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "cute_disco" } ]
+        },
+        { "exp": 360,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 300 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 800 } ]
+        },
+        { "exp": 380,
+          "normalRewards": [ { "type": "item", "id": "sunflower", "itemType": "flower", "level": 2, "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "sunflower", "itemType": "flower", "level": 4, "qty": 2 } ]
+        },
+        { "exp": 400,
+          "normalRewards": [ { "type": "facility", "id": "tulip_table" } ],
+          "superRewards": [ { "type": "facility", "id": "girls_worry" } ]
+        },
+        { "exp": 420,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 18000 } ],
+          "superRewards": [ { "type": "item", "id": "miss_fawn_doll", "itemType": "event_item", "qty": 5 } ]
+        },
+        { "exp": 440,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "memento", "id": "fluffy_keychain" } ]
+        },
+        { "exp": 460,
+          "normalRewards": [ { "type": "currency", "currency": "film", "amount": 400 } ],
+          "superRewards": [ { "type": "currency", "currency": "film", "amount": 1000 } ]
+        },
+        { "exp": 480,
+          "normalRewards": [ { "type": "item", "id": "rose", "itemType": "flower", "level": 2, "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "rose", "itemType": "flower", "level": 4, "qty": 2 } ]
+        },
+        { "exp": 500,
+          "normalRewards": [ { "type": "facility", "id": "tulip_table" } ],
+          "superRewards": [ { "type": "facility", "id": "midsummer_gate" } ]
+        },
+        { "exp": 530,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 20000 } ],
+          "superRewards": [ { "type": "item", "id": "miss_fawn_doll", "itemType": "event_item", "qty": 5 } ]
+        },
+        { "exp": 560,
+          "normalRewards": [ { "type": "memento", "id": "flower_hair_clip" } ],
+          "superRewards": [ { "type": "facility", "id": "cute_disco" } ]
+        },
+        { "exp": 590,
+          "normalRewards": [ { "type": "currency", "currency": "bells", "amount": 100 } ],
+          "superRewards": [ { "type": "currency", "currency": "bells", "amount": 300 } ]
+        },
+        { "exp": 620,
+          "normalRewards": [ { "type": "item", "id": "bluebell", "itemType": "flower", "level": 2, "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "bluebell", "itemType": "flower", "level": 4, "qty": 2 } ]
+        },
+        { "exp": 650,
+          "normalRewards": [ { "type": "facility", "id": "tulip_table" } ],
+          "superRewards": [ { "type": "memento", "id": "precious_wool_ball" } ]
+        },
+        { "exp": 680,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 25000 } ],
+          "superRewards": [ { "type": "item", "id": "miss_fawn_doll", "itemType": "event_item", "qty": 5 } ]
+        },
+        { "exp": 710,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "energetic_sweetness" } ]
+        },
+        { "exp": 740,
+          "normalRewards": [ { "type": "currency", "currency": "bells", "amount": 150 } ],
+          "superRewards": [ { "type": "currency", "currency": "bells", "amount": 400 } ]
+        },
+        { "exp": 770,
+          "normalRewards": [ { "type": "item", "id": "clownfish", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "starfish", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 800,
+          "normalRewards": [ { "type": "facility", "id": "patchwork_curtain" } ],
+          "superRewards": [ { "type": "facility", "id": "colorful_umbrella" } ]
+        },
+        { "exp": 830,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 30000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 80000 } ]
+        },
+        { "exp": 860,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "cute_disco" } ]
+        },
+        { "exp": 890,
+          "normalRewards": [ { "type": "currency", "currency": "bells", "amount": 200 } ],
+          "superRewards": [ { "type": "currency", "currency": "bells", "amount": 500 } ]
+        },
+        { "exp": 920,
+          "normalRewards": [ { "type": "item", "id": "flounder", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "pink_shell", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 950,
+          "normalRewards": [ { "type": "facility", "id": "beloved_item" } ],
+          "superRewards": [ { "type": "facility", "id": "tulip_floor_lamp" } ]
+        },
+        { "exp": 980,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 35000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 100000 } ]
+        },
+        { "exp": 1010,
+          "normalRewards": [ { "type": "facility", "id": "tulip_mirror" } ],
+          "superRewards": [ { "type": "facility", "id": "snow_top_orange_juice" } ]
+        },
+        { "exp": 1040,
+          "normalRewards": [ { "type": "currency", "currency": "bells", "amount": 250 } ],
+          "superRewards": [ { "type": "currency", "currency": "bells", "amount": 600 } ]
+        },
+        { "exp": 1070,
+          "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 40000 } ],
+          "superRewards": [ { "type": "currency", "currency": "cod", "amount": 120000 } ]
+        },
+        { "exp": 1100,
+          "normalRewards": [ { "type": "facility", "id": "flower_lace_snack_rack" } ],
+          "superRewards": [ { "type": "facility", "id": "gentle_sweet_dream" } ]
+        },
+        { "exp": 1130,
+          "normalRewards": [ { "type": "item", "id": "red_puffer", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "shark", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 1160,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "cow_cap" } ]
+        },
+        { "exp": 1190,
+          "normalRewards": [ { "type": "currency", "currency": "bells", "amount": 300 } ],
+          "superRewards": [ { "type": "currency", "currency": "bells", "amount": 800 } ]
+        },
+        { "exp": 1220,
+          "normalRewards": [ { "type": "item", "id": "bluebell", "itemType": "flower", "level": 4, "qty": 1 } ],
+          "superRewards": [
+            { "type": "item", "id": "white_rose", "itemType": "flower", "level": 4, "qty": 2 }
+          ]
+        },
+        { "exp": 1250,
+          "normalRewards": [ { "type": "facility", "id": "light_green_fruit_rack" } ],
+          "superRewards": [ { "type": "facility", "id": "happiness_phone" } ]
+        },
+        { "exp": 1290,
+          "normalRewards": [ { "type": "item", "id": "pink_shell", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "ray", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 1330,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "fawns_best_choice" } ]
+        },
+        { "exp": 1370,
+          "normalRewards": [ { "type": "currency", "currency": "bells", "amount": 350 } ],
+          "superRewards": [ { "type": "currency", "currency": "bells", "amount": 1000 } ]
+        },
+        { "exp": 1410,
+          "normalRewards": [ { "type": "item", "id": "bluebell", "itemType": "flower", "level": 4, "qty": 1 } ],
+          "superRewards": [
+            { "type": "item", "id": "white_rose", "itemType": "flower", "level": 4, "qty": 2 }
+          ]
+        },
+        { "exp": 1450,
+          "normalRewards": [ { "type": "facility", "id": "plush_refrigerator" } ],
+          "superRewards": [ { "type": "facility", "id": "handmade_flower_ladder" } ]
+        },
+        { "exp": 1490,
+          "normalRewards": [ { "type": "item", "id": "crab", "itemType": "fish", "qty": 1 } ],
+          "superRewards": [ { "type": "item", "id": "butterflyfish", "itemType": "fish", "qty": 2 } ]
+        },
+        { "exp": 1530,
+          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "superRewards": [ { "type": "facility", "id": "knitted_bag" } ]
+        },
+        { "exp": 1570,
+          "normalRewards": [ { "type": "facility", "id": "summer_drink_cabinet" } ],
+          "superRewards": [ { "type": "facility", "id": "wish_countdown_timer" } ]
+        },
+        { "exp": 1600,
+          "normalRewards": [ { "type": "facility", "id": "green_party_tree" } ],
+          "superRewards": [ { "type": "facility", "id": "wonder_takeout_counter" } ]
+        },
+        {
+          "exp": 1700,
+          "normalRewards": [
+            { "type": "chest", "id": "fantastical_party_normal_reward_chest" },
+            { "type": "currency", "currency": "diamonds", "amount": 10 },
+            { "type": "gacha_draw", "amount": 1 },
+            { "type": "promote_free", "amount": 15 }
+          ],
+          "superRewards": [
+            { "type": "chest", "id": "fantastical_party_super_reward_chest" },
+            { "type": "currency", "currency": "diamonds", "amount": 20 },
+            { "type": "gacha_draw", "amount": 2 },
+            { "type": "promote_free", "amount": 30 }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -63,6 +63,8 @@ flutter:
 
   assets:
     - assets/data/
+    - assets/data/battle_passes/
+
     - assets/data/facilities_jsons/
     - assets/images/
 

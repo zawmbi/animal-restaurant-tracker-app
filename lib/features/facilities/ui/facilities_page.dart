@@ -75,7 +75,7 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
             },
           ),
 
-          // ✅ Takeout gets a second choice: Facilities vs Signature Store
+          //  Takeout gets a second choice: Facilities vs Signature Store
           if (_selectedScene == FacilityArea.takeout) ...[
             const SizedBox(height: 8),
             Padding(
@@ -440,6 +440,8 @@ class _FacilityDetailBody extends StatelessWidget {
   final Facility facility;
   final UnlockedStore store;
 
+  static const String _starAsset = 'assets/images/star.png';
+
   // use your PNGs: assets/images/<currencyKey>.png
   static String _currencyAsset(MoneyCurrency c) => 'assets/images/${c.key}.png';
 
@@ -493,14 +495,19 @@ class _FacilityDetailBody extends StatelessWidget {
                 if (facility.series != null &&
                     facility.series!.trim().isNotEmpty)
                   _infoRow(context, 'Series', facility.series!),
-                _infoRow(
+
+                // ⭐ Star Requirement (with star png)
+                _infoRowWidget(
                   context,
-                  'Star requirement',
-                  (facility.requirementStars != null &&
-                          facility.requirementStars! > 0)
-                      ? '${facility.requirementStars}★'
-                      : '—',
+                  'Star Requirement',
+                  _starValue(
+                    value: (facility.requirementStars != null &&
+                            facility.requirementStars! > 0)
+                        ? facility.requirementStars!
+                        : null,
+                  ),
                 ),
+
                 _infoRowWidget(
                   context,
                   'Price',
@@ -522,11 +529,13 @@ class _FacilityDetailBody extends StatelessWidget {
                 children: [
                   Text('Effects', style: theme.textTheme.titleMedium),
                   const SizedBox(height: 8),
+
+                  // ⭐ Rating bonus effects show star png
                   ...facility.effects
                       .map(
                         (e) => Padding(
                           padding: const EdgeInsets.symmetric(vertical: 2),
-                          child: Text('• ${_formatEffect(e)}'),
+                          child: _effectRow(context, e),
                         ),
                       )
                       .toList(),
@@ -563,6 +572,8 @@ class _FacilityDetailBody extends StatelessWidget {
     );
   }
 
+  // ---------- Helper UI ----------
+
   Widget _infoRow(BuildContext context, String label, String value) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
@@ -597,6 +608,33 @@ class _FacilityDetailBody extends StatelessWidget {
     );
   }
 
+  Widget _starValue({required int? value}) {
+    if (value == null) {
+      return const Text(
+        '—',
+        style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+      );
+    }
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Image.asset(
+          _starAsset,
+          width: 18,
+          height: 18,
+          fit: BoxFit.contain,
+          errorBuilder: (_, __, ___) => const Icon(Icons.star, size: 18),
+        ),
+        const SizedBox(width: 6),
+        Text(
+          _formatNumber(value),
+          style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+        ),
+      ],
+    );
+  }
+
   Widget _pricePills(BuildContext context, List<Price> prices) {
     if (prices.isEmpty) {
       return const Text(
@@ -618,9 +656,9 @@ class _FacilityDetailBody extends StatelessWidget {
               width: 18,
               height: 18,
               fit: BoxFit.contain,
-              errorBuilder: (_, __, ___) => const Icon(Icons.attach_money, size: 18),
+              errorBuilder: (_, __, ___) =>
+                  const Icon(Icons.attach_money, size: 18),
             ),
-
             const SizedBox(width: 6),
             Text(
               '${_formatNumber(p.amount)} ${p.currency.key}',
@@ -630,6 +668,33 @@ class _FacilityDetailBody extends StatelessWidget {
         );
       }).toList(),
     );
+  }
+
+  Widget _effectRow(BuildContext context, FacilityEffect e) {
+    // Special case: rating bonus shows star icon
+    if (e.type == FacilityEffectType.ratingBonus) {
+      final a = (e.amount ?? 0);
+      final amountStr = a % 1 == 0 ? a.toInt().toString() : a.toStringAsFixed(2);
+
+      return Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text('• '),
+          Image.asset(
+            _starAsset,
+            width: 16,
+            height: 16,
+            fit: BoxFit.contain,
+            errorBuilder: (_, __, ___) => const Icon(Icons.star, size: 16),
+          ),
+          const SizedBox(width: 6),
+          Expanded(child: Text('+$amountStr')),
+        ],
+      );
+    }
+
+    // default: plain text bullet
+    return Text('• ${_formatEffect(e)}');
   }
 
   static String _formatNumber(int v) {
@@ -652,6 +717,7 @@ class _FacilityDetailBody extends StatelessWidget {
 
     switch (e.type) {
       case FacilityEffectType.ratingBonus:
+        // handled above, but keep safe fallback
         return '+$amountStr rating';
       case FacilityEffectType.incomePerMinute:
         final cur = e.currency?.key ?? '';

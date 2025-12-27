@@ -13,7 +13,7 @@ import '../../facilities/data/facilities_repository.dart' hide FacilitiesReposit
 import '../../facilities/model/facility.dart';
 import '../../mementos/data/mementos_index.dart';
 
-enum HitType { customer, letter, dish, facility, memento }
+enum HitType { customer, letter, dish, facility, memento, battlePass }
 
 class SearchHit {
   final HitType type;

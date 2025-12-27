@@ -8,6 +8,9 @@ import 'package:animal_restaurant_tracker/features/bank/ui/bank_page.dart';
 import 'package:animal_restaurant_tracker/features/facilities/data/facilities_repository.dart'
     as facrepo;
 
+//  Battle Pass
+import 'package:animal_restaurant_tracker/features/battle_pass/ui/battle_pass_page.dart';
+
 import '../../features/search/data/search_index.dart';
 import '../../features/shared/data/unlocked_store.dart';
 
@@ -20,7 +23,6 @@ import '../../features/redemption_codes/ui/redemption_codes_page.dart';
 import 'package:animal_restaurant_tracker/features/courtyard/ui/courtyard_page.dart';
 import 'package:animal_restaurant_tracker/features/aromatic_acorn/ui/aromatic_acorn_page.dart';
 import 'package:animal_restaurant_tracker/features/staff/ui/staff_page.dart';
-
 
 import '../../features/letters/ui/letters_page.dart';
 import '../../features/mementos/ui/mementos_page.dart';
@@ -74,6 +76,29 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  // Convert a display name -> your underscored id format.
+  // Example:
+  //   "Teddy Bear Stove" -> "teddy_bear_stove"
+  //   "Gumi's Custom Doors" -> "gumis_custom_doors"
+  //   "Vibrant Flower Long 2" -> "vibrant_flower_long_2"
+  String _idFromName(String name) {
+    var s = name.toLowerCase().trim();
+
+    // Replace apostrophes (including curly) with nothing
+    s = s.replaceAll(RegExp(r"[’']"), '');
+
+    // Replace any non-alphanumeric with underscores
+    s = s.replaceAll(RegExp(r'[^a-z0-9]+'), '_');
+
+    // Collapse multiple underscores
+    s = s.replaceAll(RegExp(r'_+'), '_');
+
+    // Trim underscores
+    s = s.replaceAll(RegExp(r'^_+|_+$'), '');
+
+    return s;
+  }
+
   void _openHit(SearchHit h) async {
     switch (h.type) {
       case HitType.customer:
@@ -112,17 +137,24 @@ class _HomePageState extends State<HomePage> {
         );
         break;
 
-    case HitType.memento:
-      final entry = await MementosIndex.instance.byId(h.id);
-      if (entry == null || !mounted) return;
+      case HitType.memento:
+        final entry = await MementosIndex.instance.byId(h.id);
+        if (entry == null || !mounted) return;
 
-      Navigator.of(context).push(
-        MaterialPageRoute(
-          builder: (_) => MementoDetailPage(memento: entry),
-        ),
-      );
-      break;
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => MementoDetailPage(memento: entry),
+          ),
+        );
+        break;
 
+      //  Battle Pass (if your SearchIndex supports it)
+      case HitType.battlePass:
+        if (!mounted) return;
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (_) => const BattlePassPage()),
+        );
+        break;
     }
   }
 
@@ -142,7 +174,7 @@ class _HomePageState extends State<HomePage> {
                   focusNode: _focus,
                   decoration: const InputDecoration(
                     hintText:
-                        'Search customers, letters, recipes, facilities, mementos…',
+                        'Search customers, letters, recipes, facilities, mementos, battle pass…',
                     prefixIcon: Icon(Icons.search),
                     border: InputBorder.none,
                     contentPadding:
@@ -182,6 +214,11 @@ class _HomePageState extends State<HomePage> {
                           case HitType.memento:
                             bucket = 'memento_collected';
                             break;
+
+                          //  Battle Pass progress tracking bucket (only if you want checkboxes here)
+                          case HitType.battlePass:
+                            bucket = 'battle_pass';
+                            break;
                         }
 
                         final checked =
@@ -193,9 +230,8 @@ class _HomePageState extends State<HomePage> {
                           child: ListTile(
                             leading: Icon(_iconFor(h.type)),
                             title: Text(h.title),
-                            subtitle: h.subtitle != null
-                                ? Text(h.subtitle!)
-                                : null,
+                            subtitle:
+                                h.subtitle != null ? Text(h.subtitle!) : null,
                             trailing: Checkbox(
                               value: checked,
                               onChanged: (v) => store.setUnlocked(
@@ -213,8 +249,6 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           const SizedBox(height: 20),
-
-
 
           // 3-per-row nav tiles
           GridView.count(
@@ -268,6 +302,14 @@ class _HomePageState extends State<HomePage> {
                 const MementosPage(),
               ),
 
+              //  Battle Pass tile
+              _navTile(
+                context,
+                Icons.confirmation_num,
+                'Battle Pass',
+                const BattlePassPage(),
+              ),
+
               _navTile(
                 context,
                 Symbols.owl,
@@ -286,7 +328,6 @@ class _HomePageState extends State<HomePage> {
                 'Aromatic Acorn Judging',
                 const AromaticAcornPage(),
               ),
-
               _navTile(
                 context,
                 Icons.timer,
@@ -333,6 +374,8 @@ class _HomePageState extends State<HomePage> {
         return Icons.store;
       case HitType.memento:
         return Icons.card_giftcard;
+      case HitType.battlePass:
+        return Icons.confirmation_num;
     }
   }
 }

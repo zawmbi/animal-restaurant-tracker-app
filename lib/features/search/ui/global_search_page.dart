@@ -89,6 +89,9 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
                   case HitType.memento:
                     bucket = 'memento_collected';
                     break;
+                  case HitType.battlePass:
+                    // TODO: Handle this case.
+                    throw UnimplementedError();
                 }
 
                 final checked = store.isUnlocked(bucket, h.key ?? h.id);
@@ -134,6 +137,9 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
         return Icons.store;
       case HitType.memento:
         return Icons.card_giftcard;
+      case HitType.battlePass:
+        // TODO: Handle this case.
+        throw UnimplementedError();
     }
   }
 
@@ -190,6 +196,9 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
       case HitType.memento:
         // No dedicated screens yet; toggling via checkbox is the primary action.
         break;
+      case HitType.battlePass:
+        // TODO: Handle this case.
+        throw UnimplementedError();
     }
   }
 }
