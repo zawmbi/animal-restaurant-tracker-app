@@ -194,5 +194,38 @@
         "perks": { "Customers Attracted": "4", "Rest Time": "390 sec.", "Promotion Time": "Flyer 6.1 sec." }
       }
     ]
+  },
+
+  {    
+    "id": "fisherman_ding",
+    "name": "Fisherman Rabbit Ding",
+    "series": "Fishing Pond",
+    "blurb": "Ding will dig up bait every day in the Fishing Pond and, when she has nothing to do, she fishes and then rests for a certain period of time, depending on her raise level.",
+    "unlocking": "Ding needs 1,500 star rating to be unlocked.",
+    "job": "Ding will dig up bait every day in the Fishing Pond and, when she has nothing to do, she fishes and then rests for a certain period of time, depending on her raise level."
+  },
+    {    
+    "id": "supper_chef_meow",
+    "name": "Support Chef Meow",
+    "series": "Fishing Pond",
+    "blurb": "Ding will dig up bait every day in the Fishing Pond and, when she has nothing to do, she fishes and then rests for a certain period of time, depending on her raise level.",
+    "unlocking": "Ding needs 1,500 star rating to be unlocked.",
+    "job": "Ding will dig up bait every day in the Fishing Pond and, when she has nothing to do, she fishes and then rests for a certain period of time, depending on her raise level."
+  },
+    {    
+    "id": "eggy",
+    "name": "Eggy the Handyman",
+    "series": "Fishing Pond",
+    "blurb": "Ding will dig up bait every day in the Fishing Pond and, when she has nothing to do, she fishes and then rests for a certain period of time, depending on her raise level.",
+    "unlocking": "Ding needs 1,500 star rating to be unlocked.",
+    "job": "Ding will dig up bait every day in the Fishing Pond and, when she has nothing to do, she fishes and then rests for a certain period of time, depending on her raise level."
+  },
+      {    
+    "id": "lucky",
+    "name": "Lucky the Cashier",
+    "series": "Fishing Pond",
+    "blurb": "Ding will dig up bait every day in the Fishing Pond and, when she has nothing to do, she fishes and then rests for a certain period of time, depending on her raise level.",
+    "unlocking": "Ding needs 1,500 star rating to be unlocked.",
+    "job": "Ding will dig up bait every day in the Fishing Pond and, when she has nothing to do, she fishes and then rests for a certain period of time, depending on her raise level."
   }
 ]
