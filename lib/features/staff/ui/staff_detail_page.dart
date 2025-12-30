@@ -160,6 +160,21 @@ class _StaffDetailPageState extends State<StaffDetailPage> {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(12, 12, 12, 18),
         children: [
+          if ((s.job ?? '').trim().isNotEmpty)
+            _SectionCard(
+              title: 'Job',
+              icon: Icons.work_outline,
+              child: _LinkedText(
+                text: s.job!,
+                linksLoaded: _linksLoaded,
+                customerNameToId: _customerNameToId,
+                facilityNameToId: _facilityNameToId,
+                dishNameToId: _dishNameToId,
+                onCustomerTap: _openCustomerById,
+                onFacilityTap: _openFacilityById,
+                onDishTap: _openDishById,
+              ),
+            ),
           _CollapsibleSectionCard(
             title: 'Raise Upgrades',
             icon: Icons.trending_up,
@@ -239,7 +254,7 @@ class _StaffDetailPageState extends State<StaffDetailPage> {
                                               if ((u.required ?? '').trim().isNotEmpty)
                                                 _InlineStat.icon(
                                                   icon: Icons.schedule,
-                                                  text: 'Req: ${u.required}',
+                                                  text: 'Required: ${u.required}',
                                                 ),
                                               if (u.ratingBonus != null)
                                                 _InlineStat.asset(
@@ -297,21 +312,7 @@ class _StaffDetailPageState extends State<StaffDetailPage> {
                 onDishTap: _openDishById,
               ),
             ),
-          if ((s.job ?? '').trim().isNotEmpty)
-            _SectionCard(
-              title: 'Job',
-              icon: Icons.work_outline,
-              child: _LinkedText(
-                text: s.job!,
-                linksLoaded: _linksLoaded,
-                customerNameToId: _customerNameToId,
-                facilityNameToId: _facilityNameToId,
-                dishNameToId: _dishNameToId,
-                onCustomerTap: _openCustomerById,
-                onFacilityTap: _openFacilityById,
-                onDishTap: _openDishById,
-              ),
-            ),
+          
           _SectionCard(
             title: 'Wearable Mementos',
             icon: Icons.checkroom_outlined,

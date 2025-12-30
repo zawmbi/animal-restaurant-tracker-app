@@ -25,33 +25,36 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
   BattlePass get pass => widget.pass;
   BattlePassPhase get phase => pass.phases[_phaseIndex];
 
+  /// Premium is scoped to THIS battle pass only.
+  bool get _hasPremium => store.isUnlocked('battle_pass_premium', pass.id);
+
   String _claimKey({
+    required String phaseId,
     required String track, // normal or super
     required int exp,
   }) =>
-      'bp:${pass.id}:${phase.id}:$track:$exp';
+      'bp:${pass.id}:$phaseId:$track:$exp';
 
   // Currency images: assets/images/<currencyKey>.png
   // Examples: assets/images/diamonds.png, cod.png, film.png, plate.png, bell.png
-// Currency images: assets/images/<currencyKey>.png
-// We normalize common variants from data -> your asset naming.
-static String _currencyAsset(String currencyKey) {
-  final k = currencyKey.trim().toLowerCase();
+  // We normalize common variants from data -> your asset naming.
+  static String _currencyAsset(String currencyKey) {
+    final k = currencyKey.trim().toLowerCase();
 
-  const aliases = <String, String>{
-    // plural -> singular
-    'plates': 'plate',
-    'bells': 'bell',
-    'diamonds': 'diamond',
+    const aliases = <String, String>{
+      // plural -> singular
+      'plates': 'plate',
+      'bells': 'bell',
+      'diamonds': 'diamond',
 
-    // if your data ever uses these variants
-    'films': 'film',
-    'codes': 'cod',
-  };
+      // if your data ever uses these variants
+      'films': 'film',
+      'codes': 'cod',
+    };
 
-  final normalized = aliases[k] ?? k;
-  return 'assets/images/$normalized.png';
-}
+    final normalized = aliases[k] ?? k;
+    return 'assets/images/$normalized.png';
+  }
 
   static const String _starAsset = 'assets/images/star.png';
 
@@ -60,7 +63,51 @@ static String _currencyAsset(String currencyKey) {
   static const String _promoteAsset = 'assets/images/promote.png';
 
   // Resolved names for the current phase only
-  late Future<_ResolvedNames> _namesFuture = _loadNamesForPhase(phase);
+  late Future<_ResolvedNames> _namesFuture;
+
+  @override
+  void initState() {
+    super.initState();
+
+    // ✅ Default to Phase 1 (by name) if it exists, else default to first phase.
+    _phaseIndex = _defaultPhaseIndex(pass);
+    _namesFuture = _loadNamesForPhase(pass.phases[_phaseIndex]);
+  }
+
+  int _defaultPhaseIndex(BattlePass pass) {
+    final idxByName = pass.phases.indexWhere(
+      (p) => p.name.toLowerCase().contains('phase 1'),
+    );
+    if (idxByName != -1) return idxByName;
+    return 0;
+  }
+
+  void _setTierClaimedForPhase({
+    required String phaseId,
+    required int exp,
+    required bool value,
+  }) {
+    final normalKey = _claimKey(phaseId: phaseId, track: 'normal', exp: exp);
+    final superKey = _claimKey(phaseId: phaseId, track: 'super', exp: exp);
+
+    store.setUnlocked('battle_pass_claimed', normalKey, value);
+    store.setUnlocked('battle_pass_claimed', superKey, value);
+  }
+
+  bool _tierClaimed({
+    required String phaseId,
+    required int exp,
+  }) {
+    final normalKey = _claimKey(phaseId: phaseId, track: 'normal', exp: exp);
+    final superKey = _claimKey(phaseId: phaseId, track: 'super', exp: exp);
+
+    final normalClaimed = store.isUnlocked('battle_pass_claimed', normalKey);
+    final superClaimed = store.isUnlocked('battle_pass_claimed', superKey);
+
+    // In premium mode, "claimed" for the big checkbox means BOTH tracks claimed.
+    // In non-premium mode, only Normal exists visually, so we treat "claimed" as normalClaimed.
+    return _hasPremium ? (normalClaimed && superClaimed) : normalClaimed;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -93,11 +140,13 @@ static String _currencyAsset(String currencyKey) {
                             const SizedBox(height: 12),
                             Text('Notes', style: theme.textTheme.titleMedium),
                             const SizedBox(height: 8),
-                            ...pass.notes.map((n) => Padding(
-                                  padding:
-                                      const EdgeInsets.symmetric(vertical: 2),
-                                  child: Text('• $n'),
-                                )),
+                            ...pass.notes.map(
+                              (n) => Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 2),
+                                child: Text('• $n'),
+                              ),
+                            ),
                           ],
                           if (pass.eventRule.trim().isNotEmpty) ...[
                             const SizedBox(height: 12),
@@ -108,6 +157,27 @@ static String _currencyAsset(String currencyKey) {
                           ],
                         ],
                       ),
+                    ),
+                  ),
+
+                  const SizedBox(height: 12),
+
+                  // ✅ Premium toggle (scoped to THIS pass only)
+                  // IMPORTANT: This now ONLY toggles visibility of Super rewards.
+                  // It does NOT change any claimed state.
+                  Card(
+                    child: SwitchListTile(
+                      title: const Text('Battle Pass Premium'),
+                      subtitle: Text(
+                        _hasPremium
+                            ? 'ON — Super rewards are visible.'
+                            : 'OFF — Super rewards are hidden.',
+                      ),
+                      value: _hasPremium,
+                      onChanged: (v) {
+                        store.setUnlocked('battle_pass_premium', pass.id, v);
+                        setState(() {});
+                      },
                     ),
                   ),
 
@@ -171,50 +241,94 @@ static String _currencyAsset(String currencyKey) {
 
                   // Rewards list
                   ...phase.tiers.map((tier) {
-                    final normalKey =
-                        _claimKey(track: 'normal', exp: tier.exp);
-                    final superKey = _claimKey(track: 'super', exp: tier.exp);
+                    final tierClaimed =
+                        _tierClaimed(phaseId: phase.id, exp: tier.exp);
 
-                    final normalClaimed =
-                        store.isUnlocked('battle_pass_claimed', normalKey);
-                    final superClaimed =
-                        store.isUnlocked('battle_pass_claimed', superKey);
-
+                    // If premium is ON: whole card is clickable and big checkbox toggles BOTH.
+                    // If premium is OFF: allow normal rewards checkbox only.
                     return Card(
-                      child: Padding(
-                        padding: const EdgeInsets.all(12),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text('Event EXP ${tier.exp}',
-                                style: theme.textTheme.titleMedium),
-                            const SizedBox(height: 10),
-                            _trackBox(
-                              context,
-                              title: 'Normal Rewards',
-                              claimed: normalClaimed,
-                              onToggle: (v) => store.setUnlocked(
-                                'battle_pass_claimed',
-                                normalKey,
-                                v,
+                      clipBehavior: Clip.antiAlias,
+                      child: InkWell(
+                        onTap: _hasPremium
+                            ? () {
+                                final next = !tierClaimed;
+                                _setTierClaimedForPhase(
+                                  phaseId: phase.id,
+                                  exp: tier.exp,
+                                  value: next,
+                                );
+                                setState(() {});
+                              }
+                            : null,
+                        child: Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                      '${tier.exp} Event Experience Points',
+                                      style: theme.textTheme.titleMedium,
+                                    ),
+                                  ),
+
+                                  // ✅ Big checkbox (only shown in premium mode)
+                                  if (_hasPremium)
+                                    Transform.scale(
+                                      scale: 1.15,
+                                      child: Checkbox(
+                                        value: tierClaimed,
+                                        onChanged: (v) {
+                                          final next = v ?? false;
+                                          _setTierClaimedForPhase(
+                                            phaseId: phase.id,
+                                            exp: tier.exp,
+                                            value: next,
+                                          );
+                                          setState(() {});
+                                        },
+                                      ),
+                                    ),
+                                ],
                               ),
-                              rewards: tier.normalRewards,
-                              resolved: resolved,
-                            ),
-                            const SizedBox(height: 10),
-                            _trackBox(
-                              context,
-                              title: 'Super Rewards',
-                              claimed: superClaimed,
-                              onToggle: (v) => store.setUnlocked(
-                                'battle_pass_claimed',
-                                superKey,
-                                v,
+                              const SizedBox(height: 10),
+
+                              // Normal rewards
+                              _trackBox(
+                                context,
+                                title: 'Normal Rewards',
+                                claimedKey: _claimKey(
+                                  phaseId: phase.id,
+                                  track: 'normal',
+                                  exp: tier.exp,
+                                ),
+                                showCheckbox: !_hasPremium,
+                                enabled: true,
+                                rewards: tier.normalRewards,
+                                resolved: resolved,
                               ),
-                              rewards: tier.superRewards,
-                              resolved: resolved,
-                            ),
-                          ],
+
+                              // Super rewards (only visible in premium mode)
+                              if (_hasPremium) ...[
+                                const SizedBox(height: 10),
+                                _trackBox(
+                                  context,
+                                  title: 'Super Rewards',
+                                  claimedKey: _claimKey(
+                                    phaseId: phase.id,
+                                    track: 'super',
+                                    exp: tier.exp,
+                                  ),
+                                  showCheckbox: false,
+                                  enabled: true,
+                                  rewards: tier.superRewards,
+                                  resolved: resolved,
+                                ),
+                              ],
+                            ],
+                          ),
                         ),
                       ),
                     );
@@ -231,12 +345,14 @@ static String _currencyAsset(String currencyKey) {
   Widget _trackBox(
     BuildContext context, {
     required String title,
-    required bool claimed,
-    required ValueChanged<bool> onToggle,
+    required String claimedKey,
+    required bool showCheckbox,
+    required bool enabled,
     required List<BattlePassReward> rewards,
     required _ResolvedNames resolved,
   }) {
     final theme = Theme.of(context);
+    final claimed = store.isUnlocked('battle_pass_claimed', claimedKey);
 
     return Container(
       decoration: BoxDecoration(
@@ -249,13 +365,21 @@ static String _currencyAsset(String currencyKey) {
         children: [
           Row(
             children: [
-              Expanded(
-                child: Text(title, style: theme.textTheme.titleSmall),
-              ),
-              Checkbox(
-                value: claimed,
-                onChanged: (v) => onToggle(v ?? false),
-              ),
+              Expanded(child: Text(title, style: theme.textTheme.titleSmall)),
+              if (showCheckbox)
+                Checkbox(
+                  value: claimed,
+                  onChanged: enabled
+                      ? (v) {
+                          store.setUnlocked(
+                            'battle_pass_claimed',
+                            claimedKey,
+                            v ?? false,
+                          );
+                          setState(() {});
+                        }
+                      : null,
+                ),
             ],
           ),
           if (rewards.isEmpty)
@@ -272,10 +396,13 @@ static String _currencyAsset(String currencyKey) {
     );
   }
 
-  //  Facility + Memento clickable + show real names.
-  //  Currency/consumables show PNG + amount only, NOT clickable.
+  // Facility + Memento clickable + show real names.
+  // Currency/consumables show PNG + amount only, NOT clickable.
   Widget _rewardChip(
-      BuildContext context, BattlePassReward r, _ResolvedNames resolved) {
+    BuildContext context,
+    BattlePassReward r,
+    _ResolvedNames resolved,
+  ) {
     final isClickable = r.type == BattlePassRewardType.facility ||
         r.type == BattlePassRewardType.memento;
 
@@ -296,7 +423,7 @@ static String _currencyAsset(String currencyKey) {
     );
   }
 
-  //  PNGs for currency/rating (and optional PNGs for gacha/promote)
+  // PNGs for currency/rating (and optional PNGs for gacha/promote)
   Widget _rewardAvatar(BattlePassReward r) {
     switch (r.type) {
       case BattlePassRewardType.currency: {
@@ -362,28 +489,23 @@ static String _currencyAsset(String currencyKey) {
       case BattlePassRewardType.facility: {
         final id = r.id ?? '';
         final name = resolved.facilityNameById[id];
-        return (name != null && name.trim().isNotEmpty) ? name : (id.isEmpty ? 'Facility' : id);
+        return (name != null && name.trim().isNotEmpty)
+            ? name
+            : (id.isEmpty ? 'Facility' : id);
       }
 
       case BattlePassRewardType.memento: {
         final id = r.id ?? '';
         final name = resolved.mementoNameById[id];
-        return (name != null && name.trim().isNotEmpty) ? name : (id.isEmpty ? 'Memento' : id);
+        return (name != null && name.trim().isNotEmpty)
+            ? name
+            : (id.isEmpty ? 'Memento' : id);
       }
 
-      //  Show amount only (image conveys currency)
-      // If currency image is missing, show "+amount currency" as fallback.
+      // Show amount only (image conveys currency)
       case BattlePassRewardType.currency: {
         final a = r.amount ?? 0;
-        final cur = (r.currency ?? '').trim();
-        final amountOnly = '+${_formatNumber(a)}';
-
-        // We can't know at label-time if the asset exists, but:
-        // If currency key is empty, show just amount.
-        if (cur.isEmpty) return amountOnly;
-
-        // Prefer amount only (you asked), currency image will show.
-        return amountOnly;
+        return '+${_formatNumber(a)}';
       }
 
       case BattlePassRewardType.rating:
@@ -454,8 +576,6 @@ static String _currencyAsset(String currencyKey) {
       );
       return;
     }
-
-    // Not clickable types shouldn't reach here now.
   }
 
   Future<_ResolvedNames> _loadNamesForPhase(BattlePassPhase phase) async {
@@ -464,12 +584,20 @@ static String _currencyAsset(String currencyKey) {
 
     for (final tier in phase.tiers) {
       for (final r in tier.normalRewards) {
-        if (r.type == BattlePassRewardType.facility && r.id != null) facIds.add(r.id!);
-        if (r.type == BattlePassRewardType.memento && r.id != null) memIds.add(r.id!);
+        if (r.type == BattlePassRewardType.facility && r.id != null) {
+          facIds.add(r.id!);
+        }
+        if (r.type == BattlePassRewardType.memento && r.id != null) {
+          memIds.add(r.id!);
+        }
       }
       for (final r in tier.superRewards) {
-        if (r.type == BattlePassRewardType.facility && r.id != null) facIds.add(r.id!);
-        if (r.type == BattlePassRewardType.memento && r.id != null) memIds.add(r.id!);
+        if (r.type == BattlePassRewardType.facility && r.id != null) {
+          facIds.add(r.id!);
+        }
+        if (r.type == BattlePassRewardType.memento && r.id != null) {
+          memIds.add(r.id!);
+        }
       }
     }
 

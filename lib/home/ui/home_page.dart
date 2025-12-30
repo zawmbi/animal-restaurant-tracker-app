@@ -1,3 +1,5 @@
+// ignore_for_file: unused_element
+
 import 'dart:async';
 import 'package:animal_restaurant_tracker/features/mementos/ui/mementos_detail_page.dart';
 import 'package:flutter/material.dart';
@@ -81,23 +83,6 @@ class _HomePageState extends State<HomePage> {
   //   "Teddy Bear Stove" -> "teddy_bear_stove"
   //   "Gumi's Custom Doors" -> "gumis_custom_doors"
   //   "Vibrant Flower Long 2" -> "vibrant_flower_long_2"
-  String _idFromName(String name) {
-    var s = name.toLowerCase().trim();
-
-    // Replace apostrophes (including curly) with nothing
-    s = s.replaceAll(RegExp(r"[’']"), '');
-
-    // Replace any non-alphanumeric with underscores
-    s = s.replaceAll(RegExp(r'[^a-z0-9]+'), '_');
-
-    // Collapse multiple underscores
-    s = s.replaceAll(RegExp(r'_+'), '_');
-
-    // Trim underscores
-    s = s.replaceAll(RegExp(r'^_+|_+$'), '');
-
-    return s;
-  }
 
   void _openHit(SearchHit h) async {
     switch (h.type) {
@@ -433,7 +418,7 @@ class _NavTile extends StatelessWidget {
 
 // Temp page so the Aromatic Acorn tile works until you build the real one.
 class _AromaticAcornPlaceholderPage extends StatelessWidget {
-  const _AromaticAcornPlaceholderPage({super.key});
+  const _AromaticAcornPlaceholderPage();
 
   @override
   Widget build(BuildContext context) {

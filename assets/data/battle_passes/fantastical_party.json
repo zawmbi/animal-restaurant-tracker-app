@@ -3,12 +3,6 @@
   "name": "Fantastical Party",
   "introducedInVersion": "v9.7.0",
   "seasonDays": 62,
-  "overview": "With Update v9.7.0 the battle pass system is introduced to the game. During a 62-day season, players can earn battle pass rewards by playing the game and finishing Daily Tasks.\n\nBy finishing the 5 Daily Tasks for Event EXP 6 each and 2 Long Term Tasks for Event EXP 200 each, players will slowly unlock levels to receive rewards. Diamond 100 can be exchanged for Event EXP 25 up to 20 times to speed up the progress.\n\nDuring Fantastical Party Phase 1, players can purchase all 3 phases for $12.99. After the conclusion of Phase 1, the remaining Phases will be available for $4.99 each. The prices will differ depending on the conversion rate and the operating system of the players' devices.\n\nDue to limitations in place, Snapchat iOS players will not be able to purchase the IAP for Super Rewards at the moment. It is advised that these players use an Android device to make the IAP purchase.",
-  "notes": [
-    "According to the announcement from the official Instagram, all limited furniture and mementos in the Fantastical Party event can be obtained by a small chance from Mysterious Merchant after the event. Some of them will require diamonds to purchase.",
-    "Customers from the event can only be earned from the paid version.",
-    "After the conclusion of each Phase, rewards from that Phase will not be listed in the Catalog until unlocked."
-  ],
   "eventRule": "Purchasing Super Reward eligibility for Phase 1 of Fantastical Party will automatically unlock Super Reward eligibility for Phase 2 and Phase 3 of Fantastical Party. (This rule is only valid for Phase 1 of the Fantastical Party event.)\n\nComplete Today's Tasks and Long-Term Tasks during the event to gain EXP. Increasing EXP allows you to claim corresponding rewards.\nNormal Rewards can be obtained directly with EXP. Super Rewards can only be obtained with EXP after unlocking. Both Normal Rewards and Super Rewards can be claimed at the same time.\nYou can use Diamonds to redeem EXP. During this event, you only have 20 redemption attempts.",
   "phases": [
     {
