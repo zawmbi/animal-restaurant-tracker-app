@@ -623,6 +623,7 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
   }
 }
 
+
 class _ResolvedNames {
   final Map<String, String> facilityNameById;
   final Map<String, String> mementoNameById;
