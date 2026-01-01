@@ -1,431 +1,435 @@
 [
   {
     "code": "ARXMASPARTY",
-    "validFrom": null,
+    "validFrom": "2025-12-25",
     "validUntil": "2026-01-23",
-    "reason": "Christmas / New Year event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Christmas Event 2025",
+    "giftMementoId": "apple_birdie",
+    "giftLabel": "Apple Birdie"
   },
   {
-    "code": "AR999",
-    "validFrom": "2020-01-01",
-    "validUntil": "2099-12-31",
-    "reason": "Permanent gift code",
-    "giftMementoId": null,
-    "giftLabel": "Cod +50,000"
+    "code": "GUMIPREPXMAS",
+    "validFrom": "2025-12-12",
+    "validUntil": "2026-01-10",
+    "reason": "Christmas Event 2025",
+    "giftMementoId": "gingerbread_wall_pockets",
+    "giftLabel": "Gingerbread Wall Pockets"
   },
-
   {
     "code": "PUMPKINBOO",
-    "validFrom": null,
+    "validFrom": "2025-10-31",
     "validUntil": "2025-11-29",
-    "reason": "Halloween / autumn event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Halloween Event 2025",
+    "giftMementoId": "spooky_pumpkin",
+    "giftLabel": "Spooky Pumpkin"
   },
   {
     "code": "GUMITREAT",
-    "validFrom": null,
+    "validFrom": "2025-10-17",
     "validUntil": "2025-11-15",
-    "reason": "Gumi event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Halloween Event 2025",
+    "giftMementoId": "pair_of_jokers",
+    "giftLabel": "Pair of Jokers"
   },
   {
     "code": "FULLMOON",
-    "validFrom": null,
+    "validFrom": "2025-10-06",
     "validUntil": "2025-11-04",
-    "reason": "Full Moon / Mid-Autumn event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Mid-Autumn Festival 2025",
+    "giftMementoId": "moon_rabbit_lamp",
+    "giftLabel": "Moon Rabbit Lamp"
   },
   {
     "code": "AR6THANNI",
-    "validFrom": null,
+    "validFrom": "2025-09-29",
     "validUntil": "2025-10-27",
-    "reason": "Anniversary event code (6th)",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Anniversary Event 2025",
+    "giftMementoId": "arrow_of_love",
+    "giftLabel": "Arrow of Love"
   },
   {
     "code": "PARTYTIME",
-    "validFrom": null,
+    "validFrom": "2025-09-12",
     "validUntil": "2025-10-10",
-    "reason": "Party / celebration event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Anniversary Event 2025",
+    "giftMementoId": "brilliant_fragrance",
+    "giftLabel": "Brilliant Fragrance"
   },
   {
     "code": "LOVEQIXI",
-    "validFrom": null,
+    "validFrom": "2025-08-29",
     "validUntil": "2025-09-27",
-    "reason": "Qixi Festival event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Qixi Festival 2025",
+    "giftMementoId": "joyful_pairing",
+    "giftLabel": "Joyful Pairing"
   },
   {
     "code": "FISHMASTER",
-    "validFrom": null,
+    "validFrom": "2025-08-18",
     "validUntil": "2025-09-03",
-    "reason": "Fishing-themed event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "App Store “Game of The Day” in Hong Kong, Macau, Taiwan",
+    "giftMementoId": "azure_sailor_cap",
+    "giftLabel": "Azure Sailor Cap"
+  },
+  {
+    "code": "SUMMERINAR",
+    "validFrom": "2025-08-08",
+    "validUntil": "2025-09-03",
+    "reason": null,
+    "giftMementoId": "sacred_sanctuary",
+    "giftLabel": "Sacred Sanctuary"
   },
   {
     "code": "NEWGARDEN",
-    "validFrom": null,
+    "validFrom": "2025-07-08",
     "validUntil": "2025-07-29",
-    "reason": "Garden update / event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Welcoming a new staff member, Paddy",
+    "giftMementoId": "natures_leaf",
+    "giftLabel": "Nature's Leaf"
   },
   {
     "code": "RAWRRR",
-    "validFrom": null,
+    "validFrom": "2025-06-01",
     "validUntil": "2025-06-29",
-    "reason": "Event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Children's Day Event 2025",
+    "giftMementoId": "dino_check_in_stand",
+    "giftLabel": "Dino Check-in Stand"
   },
   {
     "code": "STARDREAM",
-    "validFrom": null,
-    "validUntil": "2025-06-30",
-    "reason": "Star / dream event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "validFrom": "2025-05-16",
+    "validUntil": "2025-06-14",
+    "reason": "Children's Day Event 2025",
+    "giftMementoId": "big_cosmic_dream",
+    "giftLabel": "Big Cosmic Dream"
   },
   {
     "code": "BIGSECRET",
-    "validFrom": null,
+    "validFrom": "2025-04-01",
     "validUntil": "2025-04-29",
-    "reason": "Secret event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "April Fool's 2025",
+    "giftMementoId": "secret_mirror",
+    "giftLabel": "Secret Mirror"
   },
   {
     "code": "SWEETLOVEAR",
-    "validFrom": null,
+    "validFrom": "2025-02-14",
     "validUntil": "2025-03-13",
-    "reason": "Valentine / love event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Valentine's Day 2025",
+    "giftMementoId": "gift_teddy_bear_2",
+    "giftLabel": "Gift Teddy Bear"
   },
   {
     "code": "NEWYEARINAR",
-    "validFrom": null,
+    "validFrom": "2025-01-28",
     "validUntil": "2025-02-27",
-    "reason": "New Year event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Lunar New Year Event 2025",
+    "giftMementoId": "embroidered_opera_flags",
+    "giftLabel": "Embroidered Opera Flags"
   },
   {
     "code": "GOODLUCK2025",
-    "validFrom": null,
+    "validFrom": "2025-01-10",
     "validUntil": "2025-02-08",
-    "reason": "New Year / luck event code (2025)",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Lunar New Year Event 2025",
+    "giftMementoId": "fortuitous_lantern",
+    "giftLabel": "Fortuitous Lantern"
   },
   {
     "code": "MERRYGUMI",
-    "validFrom": null,
+    "validFrom": "2024-12-25",
     "validUntil": "2025-01-23",
-    "reason": "Christmas / Gumi event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Christmas Event 2024",
+    "giftMementoId": "birdie_train",
+    "giftLabel": "Birdie Train"
   },
   {
     "code": "XMASTIMER",
-    "validFrom": null,
+    "validFrom": "2024-12-06",
     "validUntil": "2025-01-04",
-    "reason": "Christmas / countdown event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Christmas Event 2024",
+    "giftMementoId": "crunchy_apple_clock",
+    "giftLabel": "Crunchy Apple Clock"
   },
-
   {
     "code": "HALLOWEENIMP",
-    "validFrom": null,
+    "validFrom": "2024-10-31",
     "validUntil": "2024-11-29",
-    "reason": "Halloween event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Halloween Event 2024",
+    "giftMementoId": "imps_wings",
+    "giftLabel": "Imp's Wings"
   },
   {
     "code": "SHOWTIME",
-    "validFrom": null,
+    "validFrom": "2024-10-18",
     "validUntil": "2024-11-16",
-    "reason": "Show / stage event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Halloween Event 2024",
+    "giftMementoId": "show_sign",
+    "giftLabel": "Show Sign"
   },
   {
     "code": "HAPPY5THANN",
-    "validFrom": null,
+    "validFrom": "2024-09-28",
     "validUntil": "2024-10-26",
-    "reason": "Anniversary event code (5th)",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Anniversary Event 2024",
+    "giftMementoId": "jade_stars",
+    "giftLabel": "Jade Stars"
   },
   {
     "code": "BUNNYHUG",
-    "validFrom": null,
+    "validFrom": "2024-09-17",
     "validUntil": "2024-10-15",
-    "reason": "Bunny event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Mid Autumn Festival 2024",
+    "giftMementoId": "coconut_milk_bunnies",
+    "giftLabel": "Coconut Milk Bunnies"
   },
   {
     "code": "GIVEME5",
-    "validFrom": null,
-    "validUntil": "2024-09-11",
-    "reason": "Anniversary / celebration event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "validFrom": "2024-09-13",
+    "validUntil": "2024-10-11",
+    "reason": "Anniversary Event 2024",
+    "giftMementoId": "interlinked_hearts",
+    "giftLabel": "Interlinked Hearts"
+  },
+  {
+    "code": "MUSHROOM",
+    "validFrom": "2024-08-17",
+    "validUntil": "2024-09-14",
+    "reason": null,
+    "giftMementoId": "yummy_mushroom_hat",
+    "giftLabel": "Yummy Mushroom Hat"
   },
   {
     "code": "TOMYLOVERS",
-    "validFrom": null,
+    "validFrom": "2024-08-10",
     "validUntil": "2024-09-07",
-    "reason": "Love event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Qixi Festival 2024",
+    "giftMementoId": "branch_affection",
+    "giftLabel": "Branch Affection"
   },
   {
-    "code": "DUANWU",
-    "validFrom": null,
+    "code": "DUAWNU",
+    "validFrom": "2024-06-10",
     "validUntil": "2024-07-08",
-    "reason": "Duanwu / Dragon Boat Festival event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": null,
+    "giftMementoId": "summer_butterfly",
+    "giftLabel": "Summer Butterfly"
   },
   {
     "code": "SINGWITHUS",
-    "validFrom": null,
+    "validFrom": "2024-06-01",
     "validUntil": "2024-06-30",
-    "reason": "Music / singing event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
-  },
-  {
-    "code": "GROWINGMEOW",
-    "validFrom": null,
-    "validUntil": "2024-06-15",
-    "reason": "Growth / spring event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Children's Day Event 2024",
+    "giftMementoId": "floral_guitar",
+    "giftLabel": "Floral Guitar"
   },
   {
     "code": "ITSAPRANK",
-    "validFrom": null,
+    "validFrom": "2024-04-01",
     "validUntil": "2024-05-01",
-    "reason": "April Fools event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "April Fool's 2024",
+    "giftMementoId": "happy_clown",
+    "giftLabel": "Happy Clown"
   },
   {
     "code": "UNIQUELOVE",
-    "validFrom": null,
+    "validFrom": "2024-02-14",
     "validUntil": "2024-03-14",
-    "reason": "Valentine / love event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Valentine's Day 2024",
+    "giftMementoId": "love_letter_bear",
+    "giftLabel": "Love Letter Bear"
   },
   {
     "code": "DRGYEAR2024",
-    "validFrom": null,
+    "validFrom": "2024-02-10",
     "validUntil": "2024-03-10",
-    "reason": "Lunar New Year event code (2024)",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Lunar New Year Event 2024",
+    "giftMementoId": "lotus_incense_burner",
+    "giftLabel": "Lotus Incense Burner"
   },
   {
     "code": "FESTIVALVIBE",
-    "validFrom": null,
+    "validFrom": "2024-01-27",
     "validUntil": "2024-02-24",
-    "reason": "Festival event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Lunar New Year Event 2024",
+    "giftMementoId": "auspicious_gourd",
+    "giftLabel": "Auspicious Gourd"
   },
   {
     "code": "BUNNYYOLKY",
-    "validFrom": null,
+    "validFrom": "2024-01-22",
     "validUntil": "2024-02-22",
-    "reason": "Bunny / Eggy event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Lunar New Year Event 2024",
+    "giftMementoId": "big_eared_hat",
+    "giftLabel": "Big-Eared Hat"
   },
   {
     "code": "PRAISEOFXMAS",
-    "validFrom": null,
+    "validFrom": "2023-12-25",
     "validUntil": "2024-01-23",
-    "reason": "Christmas event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Christmas Event 2023",
+    "giftMementoId": "first_snow_hymn",
+    "giftLabel": "First Snow Hymn"
   },
-
   {
     "code": "BLOOMON25TH",
-    "validFrom": null,
+    "validFrom": "2023-12-08",
     "validUntil": "2024-01-06",
-    "reason": "Christmas event reward",
+    "reason": "Christmas Event 2023",
     "giftMementoId": "christmas_bouquet",
     "giftLabel": "Christmas Bouquet"
   },
   {
     "code": "SPOOKYNIGHT",
-    "validFrom": null,
-    "validUntil": "2023-11-28",
-    "reason": "Halloween event reward",
+    "validFrom": "2023-10-31",
+    "validUntil": "2023-11-27",
+    "reason": "Halloween Event 2023",
     "giftMementoId": "crystal_resting_place",
     "giftLabel": "Crystal Resting Place"
   },
   {
     "code": "MEOWGICTIME",
-    "validFrom": null,
+    "validFrom": "2023-10-13",
     "validUntil": "2023-11-12",
-    "reason": "Halloween event reward",
+    "reason": "Halloween Event 2023",
     "giftMementoId": "skeletal_lamp",
     "giftLabel": "Skeletal Lamp"
   },
   {
     "code": "WARM4THANN",
-    "validFrom": null,
+    "validFrom": "2023-09-23",
     "validUntil": "2023-10-22",
-    "reason": "Anniversary event reward (4th)",
-    "giftMementoId": null,
-    "giftLabel": "Memento"
+    "reason": "Anniversary Event 2023",
+    "giftMementoId": "milky_white_bear",
+    "giftLabel": "Milky White Bear"
   },
   {
     "code": "FLUFFY4THANN",
-    "validFrom": null,
+    "validFrom": "2023-09-08",
     "validUntil": "2023-10-06",
-    "reason": "Anniversary event reward (4th)",
-    "giftMementoId": null,
-    "giftLabel": "Memento"
+    "reason": "Anniversary Event 2023",
+    "giftMementoId": "soft_round_rug",
+    "giftLabel": "Soft Round Rug"
   },
   {
     "code": "QIXISTARLOVE",
-    "validFrom": null,
+    "validFrom": "2023-08-22",
     "validUntil": "2023-09-21",
-    "reason": "Qixi Festival event reward",
+    "reason": "Qixi Festival 2023",
     "giftMementoId": "peach_blossom_knot",
-    "giftLabel": "Peach Blossom Knot Memento"
+    "giftLabel": "Peach Blossom Knot"
   },
   {
     "code": "APRICATSGIFT",
-    "validFrom": null,
+    "validFrom": "2023-08-01",
     "validUntil": "2023-08-30",
-    "reason": "Event reward",
+    "reason": null,
     "giftMementoId": "apple_sweetheart",
-    "giftLabel": "Apple Sweetheart Memento"
+    "giftLabel": "Apple Sweetheart"
   },
   {
     "code": "BEELOVEDONES",
-    "validFrom": null,
+    "validFrom": "2023-06-01",
     "validUntil": "2023-06-30",
-    "reason": "Event reward",
+    "reason": "Children’s Day 2023",
     "giftMementoId": "little_bee",
     "giftLabel": "Little Bee"
   },
   {
     "code": "ECOFRIENDLY",
-    "validFrom": null,
+    "validFrom": "2023-05-16",
     "validUntil": "2023-06-14",
-    "reason": "Eco / spring event reward",
+    "reason": null,
     "giftMementoId": "blooming_arch",
     "giftLabel": "Blooming Arch"
   },
   {
     "code": "PRANKCANDLE",
-    "validFrom": null,
+    "validFrom": "2023-04-01",
     "validUntil": "2023-04-30",
-    "reason": "April Fools event reward",
+    "reason": "April Fool's 2023",
     "giftMementoId": "blooming_candle",
     "giftLabel": "Blooming Candle"
   },
   {
     "code": "LOVESTORY",
-    "validFrom": null,
+    "validFrom": "2023-02-14",
     "validUntil": "2023-03-13",
-    "reason": "Valentine / love event reward",
+    "reason": "Valentine's Day 2023",
     "giftMementoId": "rose_bear",
-    "giftLabel": "Rose Bear Memento"
+    "giftLabel": "Rose Bear"
   },
   {
     "code": "YEAROFRABBIT",
-    "validFrom": null,
+    "validFrom": "2023-01-22",
     "validUntil": "2023-02-21",
-    "reason": "Lunar New Year event reward",
+    "reason": "Lunar New Year Event 2023",
     "giftMementoId": "fleece_lined_cap",
-    "giftLabel": "Fleece-lined Cap Memento"
+    "giftLabel": "Fleece-lined Cap"
   },
   {
     "code": "EGGYTROPHY",
-    "validFrom": null,
+    "validFrom": "2022-12-30",
     "validUntil": "2023-01-30",
-    "reason": "New Year event reward",
-    "giftMementoId": "golden_housekeeper_eggy",
-    "giftLabel": "Golden Housekeeper Eggy Memento"
+    "reason": "To promote new merchandise release",
+    "giftMementoId": "golden_housekeeper_trophy",
+    "giftLabel": "Golden Housekeeper Trophy"
   },
-
   {
     "code": "MERRYXMAS22",
-    "validFrom": null,
+    "validFrom": "2022-12-25",
     "validUntil": "2023-01-23",
-    "reason": "Christmas event code",
-    "giftMementoId": null,
-    "giftLabel": "Rewards"
+    "reason": "Christmas Event 2022",
+    "giftMementoId": "winter_felt_cap",
+    "giftLabel": "Winter Felt Cap"
   },
   {
     "code": "GUMISPEARL",
-    "validFrom": null,
+    "validFrom": "2022-11-22",
     "validUntil": "2022-12-23",
-    "reason": "Event reward",
+    "reason": "Thanksgiving 2022",
     "giftMementoId": "famous_painting_headscarf",
     "giftLabel": "Famous Painting Headscarf"
   },
   {
     "code": "HALLOWEEN22",
-    "validFrom": null,
+    "validFrom": "2022-10-31",
     "validUntil": "2022-11-30",
-    "reason": "Halloween event reward",
+    "reason": "Halloween Event 2022",
     "giftMementoId": "rose_hat",
     "giftLabel": "Rose Hat"
   },
   {
     "code": "HAPPY3RDANN",
-    "validFrom": null,
+    "validFrom": "2022-09-23",
     "validUntil": "2022-10-23",
-    "reason": "Anniversary event reward (3rd)",
+    "reason": "Anniversary Event 2022",
     "giftMementoId": "floral_crown",
     "giftLabel": "Floral Crown"
   },
   {
     "code": "3RDANNGALA",
-    "validFrom": null,
+    "validFrom": "2022-09-15",
     "validUntil": "2022-10-15",
-    "reason": "Anniversary event reward (3rd)",
+    "reason": "Anniversary Event 2022",
     "giftMementoId": "artist_sculpture",
     "giftLabel": "Artist Sculpture"
   },
   {
     "code": "MOONFESTIVAL",
-    "validFrom": null,
+    "validFrom": "2022-09-10",
     "validUntil": "2022-10-10",
-    "reason": "Mid-Autumn event reward",
+    "reason": "Mid-Autumn Festival 2022",
     "giftMementoId": "osmanthus_hanging_ornament",
     "giftLabel": "Osmanthus Hanging Ornament"
   },
   {
     "code": "GUMILOVEU",
-    "validFrom": null,
-    "validUntil": "2022-09-20",
-    "reason": "Gumi event reward",
+    "validFrom": "2022-08-21",
+    "validUntil": "2022-09-21",
+    "reason": "5,000 likes on Instagram",
     "giftMementoId": "handmade_scarf",
-    "giftLabel": "Handmade Scarf Memento"
+    "giftLabel": "Handmade Scarf"
   },
   {
     "code": "HAPPYASACHILD",
@@ -433,54 +437,270 @@
     "validUntil": "2022-07-01",
     "reason": "Children's Day Event 2022",
     "giftMementoId": "golden_ponytail",
-    "giftLabel": null
+    "giftLabel": "Golden Ponytail"
   },
   {
     "code": "DORISAIMEOW",
-    "validFrom": null,
+    "validFrom": "2022-04-06",
     "validUntil": "2022-05-06",
-    "reason": "Event reward",
+    "reason": "Saimeow Contest Prize [Social Media Event]",
     "giftMementoId": "bunny_ears_top_hat",
     "giftLabel": "Bunny Ears Top Hat"
   },
   {
     "code": "LOVEUMORE",
-    "validFrom": null,
+    "validFrom": "2022-02-14",
     "validUntil": "2022-03-14",
-    "reason": "Valentine / love event reward",
+    "reason": "Valentine's Day 2022",
     "giftMementoId": "romantic_frame",
     "giftLabel": "Romantic Frame"
   },
   {
     "code": "HAPPY2022",
-    "validFrom": null,
+    "validFrom": "2022-02-01",
     "validUntil": "2022-03-01",
-    "reason": "New Year event reward (2022)",
+    "reason": "Lunar New Year Event 2022",
     "giftMementoId": "cloth_tiger",
     "giftLabel": "Cloth Tiger"
   },
   {
     "code": "thx4following",
-    "validFrom": null,
+    "validFrom": "2022-01-25",
     "validUntil": "2022-02-25",
-    "reason": "Social / follower milestone reward",
+    "reason": "Lunar New Year Event",
     "giftMementoId": "helmet",
     "giftLabel": "Helmet"
   },
   {
     "code": "jinglebells",
-    "validFrom": null,
-    "validUntil": "2022-01-06",
-    "reason": "Christmas event reward",
+    "validFrom": "2021-12-25",
+    "validUntil": "2022-01-24",
+    "reason": "Christmas Event 2021",
     "giftMementoId": "small_wooden_reindeer",
     "giftLabel": "Small Wooden Reindeer"
   },
   {
     "code": "XMAS2021",
-    "validFrom": null,
-    "validUntil": "2022-01-24",
-    "reason": "Christmas event reward (2021)",
+    "validFrom": "2021-12-06",
+    "validUntil": "2022-01-06",
+    "reason": "15,000 likes on Instagram/Christmas 2021",
     "giftMementoId": "gumis_happy_box",
-    "giftLabel": "Gumi’s Happy Box"
+    "giftLabel": "Gumi's Happy Box"
+  },
+  {
+    "code": "thanksgiving",
+    "validFrom": "2021-11-26",
+    "validUntil": "2021-12-26",
+    "reason": "10,000 likes on Instagram/Thanksgiving 2021",
+    "giftMementoId": "fried_egg",
+    "giftLabel": "Fried Egg"
+  },
+  {
+    "code": "halloween2021",
+    "validFrom": "2021-10-30",
+    "validUntil": "2021-11-30",
+    "reason": "Halloween Event 2021",
+    "giftMementoId": "strange_box",
+    "giftLabel": "Strange Box"
+  },
+  {
+    "code": "2ndanniversary",
+    "validFrom": "2021-09-29",
+    "validUntil": "2021-10-13",
+    "reason": "Anniversary Event 2021",
+    "giftMementoId": "brown_top_hat",
+    "giftLabel": "Brown Top Hat"
+  },
+  {
+    "code": "midautumn2021",
+    "validFrom": "2021-09-21",
+    "validUntil": "2021-10-20",
+    "reason": "Mid-Autumn Festival 2021",
+    "giftMementoId": "lantern_car",
+    "giftLabel": "Lantern Car"
+  },
+  {
+    "code": "followus",
+    "validFrom": "2021-09-15",
+    "validUntil": "2021-10-14",
+    "reason": "For reaching 400,000 followers on Instagram",
+    "giftMementoId": "seaweed_brows",
+    "giftLabel": "Seaweed Brows"
+  },
+  {
+    "code": "qixi2021",
+    "validFrom": "2021-08-16",
+    "validUntil": "2021-09-15",
+    "reason": "For reaching 10,000 likes on Instagram",
+    "giftMementoId": "fairy_chignon",
+    "giftLabel": "Fairy Chignon"
+  },
+  {
+    "code": "celebration2021",
+    "validFrom": "2021-07-21",
+    "validUntil": "2021-08-20",
+    "reason": "For reaching 500,000 followers on Facebook",
+    "giftMementoId": "speedy_teacup",
+    "giftLabel": "Speedy Teacup"
+  },
+  {
+    "code": "tsuyu2021",
+    "validFrom": "2021-06-21",
+    "validUntil": "2021-07-22",
+    "reason": "For reaching 5,000 likes on Instagram",
+    "giftMementoId": "hydrangea_accessory",
+    "giftLabel": "Hydrangea Accessory"
+  },
+  {
+    "code": "happyjune",
+    "validFrom": "2021-05-31",
+    "validUntil": "2021-06-15",
+    "reason": "Children's Day Event 2021",
+    "giftMementoId": "candy_wall_hangings",
+    "giftLabel": "Candy Wall Hangings"
+  },
+  {
+    "code": "superstar2021",
+    "validFrom": null,
+    "validUntil": "2021-06-13",
+    "reason": "For reaching 1,000 likes on Twitter/Facebook/Instagram",
+    "giftMementoId": "strawberry_knitted_cap",
+    "giftLabel": "Strawberry Knitted Cap"
+  },
+  {
+    "code": "onecod",
+    "validFrom": null,
+    "validUntil": "2021-04-07",
+    "reason": "April Fool's Day 2021",
+    "giftMementoId": "golden_cod",
+    "giftLabel": "Golden Cod"
+  },
+  {
+    "code": "love2021",
+    "validFrom": "2021-02-14",
+    "validUntil": "2021-03-14",
+    "reason": "Valentine's Day 2021",
+    "giftMementoId": "guitar",
+    "giftLabel": "Guitar"
+  },
+  {
+    "code": "2021oxyear",
+    "validFrom": null,
+    "validUntil": "2021-02-21",
+    "reason": "Lunar New Year 2021",
+    "giftMementoId": "big_headed_stone_lion",
+    "giftLabel": "Big-headed Stone Lion"
+  },
+  {
+    "code": "5sYtuqu7pf",
+    "validFrom": null,
+    "validUntil": "2020-12-31",
+    "reason": "Christmas 2020",
+    "giftMementoId": null,
+    "giftLabel": "Plates +800"
+  },
+  {
+    "code": "Tb4AAzKWGe",
+    "validFrom": null,
+    "validUntil": "2020-12-31",
+    "reason": "Christmas 2020",
+    "giftMementoId": null,
+    "giftLabel": "Diamond +20"
+  },
+  {
+    "code": "qVvBMyuRXK",
+    "validFrom": null,
+    "validUntil": "2020-12-31",
+    "reason": "Christmas 2020",
+    "giftMementoId": null,
+    "giftLabel": "Diamond +100"
+  },
+  {
+    "code": "AR999",
+    "validFrom": "2020-01-01",
+    "validUntil": "2099-12-31",
+    "reason": "Friendship gift code/Ads code",
+    "giftMementoId": null,
+    "giftLabel": "Cod+50,000"
+  },
+  {
+    "code": "TG2020",
+    "validFrom": "2020-11-26",
+    "validUntil": "2020-11-30",
+    "reason": "Thanksgiving 2020",
+    "giftMementoId": "thanksgiving_cat",
+    "giftLabel": "Thanksgiving Cat"
+  },
+  {
+    "code": "xF3XbHWDOJ",
+    "validFrom": null,
+    "validUntil": "2020-11-23",
+    "reason": "Compensation for issue of login with Twitter Account.",
+    "giftMementoId": null,
+    "giftLabel": "Diamond +30"
+  },
+  {
+    "code": "mooncake",
+    "validFrom": "2020-10-01",
+    "validUntil": "2020-10-08",
+    "reason": "Moon Festival 2020",
+    "giftMementoId": "mini_convertible",
+    "giftLabel": "Mini Convertible"
+  },
+  {
+    "code": "20200918",
+    "validFrom": "2020-09-19",
+    "validUntil": "2020-09-30",
+    "reason": "Anniversary Celebration 2020",
+    "giftMementoId": "shark_hat",
+    "giftLabel": "Shark Hat"
+  },
+  {
+    "code": "happybirthday",
+    "validFrom": "2020-09-18",
+    "validUntil": "2020-09-30",
+    "reason": "Anniversary Celebration 2020",
+    "giftMementoId": "apple_hat",
+    "giftLabel": "Apple Hat"
+  },
+  {
+    "code": "bccuRSbpqm",
+    "validFrom": null,
+    "validUntil": "2020-09-24",
+    "reason": "Compensation for Tip Desks issue",
+    "giftMementoId": null,
+    "giftLabel": "Plates"
+  },
+  {
+    "code": "happy61",
+    "validFrom": "2020-06-01",
+    "validUntil": "2020-06-10",
+    "reason": "Children's Day 2020",
+    "giftMementoId": "lollipop",
+    "giftLabel": "Lollipop Memento"
+  },
+  {
+    "code": "eMoYchJEd3",
+    "validFrom": null,
+    "validUntil": "2020-04-16",
+    "reason": "Compensation for Network Issue",
+    "giftMementoId": null,
+    "giftLabel": "-"
+  },
+  {
+    "code": "7p77T3AHT1",
+    "validFrom": null,
+    "validUntil": "2020-03-20",
+    "reason": "Compensation for Black Screen Issue",
+    "giftMementoId": null,
+    "giftLabel": "-"
+  },
+  {
+    "code": "MTLcnxQUnM",
+    "validFrom": "2020-02-23",
+    "validUntil": "2020-02-28",
+    "reason": "100,000 Fans Commemoration",
+    "giftMementoId": "100000_fans_commemoration",
+    "giftLabel": "100,000 Fans Commemoration Memento"
   }
 ]

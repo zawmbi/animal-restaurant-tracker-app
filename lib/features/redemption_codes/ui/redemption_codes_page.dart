@@ -25,11 +25,59 @@ class RedemptionCode {
     this.giftLabel,
   });
 
+  /// Parses dates safely:
+  /// - Supports "YYYY-MM-DD" and "YYYY-M-D"
+  /// - If null/invalid, falls back to a safe default
+  static DateTime _parseDateOrFallback(
+    dynamic value, {
+    required DateTime fallback,
+  }) {
+    if (value == null) return fallback;
+
+    final s = value.toString().trim();
+    if (s.isEmpty || s.toLowerCase() == 'null') return fallback;
+
+    // Try strict ISO parse first.
+    try {
+      return DateTime.parse(s);
+    } catch (_) {
+      // Then try flexible YYYY-M-D
+      final parts = s.split('-');
+      if (parts.length >= 3) {
+        final y = int.tryParse(parts[0]);
+        final m = int.tryParse(parts[1]);
+        final d = int.tryParse(parts[2]);
+        if (y != null && m != null && d != null) {
+          try {
+            return DateTime(y, m, d);
+          } catch (_) {}
+        }
+      }
+      return fallback;
+    }
+  }
+
   factory RedemptionCode.fromJson(Map<String, dynamic> json) {
+    // Fallbacks:
+    // - If a code has no start date, keep it very old so it sorts to the bottom.
+    // - If a code has no end date, treat as far-future (permanent-ish).
+    final fallbackFrom = DateTime(1970, 1, 1);
+    final fallbackUntil = DateTime(2099, 12, 31);
+
+    final parsedFrom = _parseDateOrFallback(
+      json['validFrom'],
+      fallback: fallbackFrom,
+    );
+
+    final parsedUntil = _parseDateOrFallback(
+      json['validUntil'],
+      fallback: fallbackUntil,
+    );
+
     return RedemptionCode(
       code: json['code'] as String,
-      validFrom: DateTime.parse(json['validFrom'] as String),
-      validUntil: DateTime.parse(json['validUntil'] as String),
+      validFrom: parsedFrom,
+      validUntil: parsedUntil,
       reason: (json['reason'] as String?) ?? '',
       giftMementoId: json['giftMementoId'] as String?,
       giftLabel: json['giftLabel'] as String?,
@@ -80,8 +128,8 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
     final mementosById = {for (final m in mementos) m.id: m};
 
     // 2) Load redemption codes from JSON
-    final raw = await JsonLoader.load('assets/data/redemption_codes.json')
-        as List<dynamic>;
+    final raw =
+        await JsonLoader.load('assets/data/redemption_codes.json') as List<dynamic>;
 
     final codes = raw
         .map((e) => RedemptionCode.fromJson(e as Map<String, dynamic>))
@@ -94,9 +142,7 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
         .map(
           (c) => _CodeWithMemento(
             code: c,
-            memento: c.giftMementoId != null
-                ? mementosById[c.giftMementoId!]
-                : null,
+            memento: c.giftMementoId != null ? mementosById[c.giftMementoId!] : null,
           ),
         )
         .toList();
@@ -205,7 +251,6 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
               // apply sort
               _sortItems(items);
 
-              
               return Column(
                 children: [
                   // header row = "table" header
@@ -214,8 +259,7 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                         const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                     decoration: BoxDecoration(
                       border: Border(
-                        bottom:
-                            BorderSide(color: theme.dividerColor, width: 1),
+                        bottom: BorderSide(color: theme.dividerColor, width: 1),
                       ),
                     ),
                     child: Row(
@@ -226,8 +270,6 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                           child: Center(child: Text('Valid?')),
                         ),
                         Expanded(flex: 3, child: Text('Date Range')),
-                        // We no longer show the reason in the table
-                        // Expanded(flex: 3, child: Text('Reason')),
                         Expanded(flex: 3, child: Text('Owned')),
                       ],
                     ),
@@ -241,19 +283,16 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                         final m = item.memento;
 
                         final currentlyValid = c.isCurrentlyValid;
-                        final icon = currentlyValid
-                            ? Icons.check_circle
-                            : Icons.cancel;
-                        final iconColor = currentlyValid
-                            ? Colors.green
-                            : Colors.redAccent;
+                        final icon =
+                            currentlyValid ? Icons.check_circle : Icons.cancel;
+                        final iconColor =
+                            currentlyValid ? Colors.green : Colors.redAccent;
 
                         final owned = m != null
                             ? store.isUnlocked('memento_collected', m.key)
                             : false;
 
-                        final giftText =
-                            m?.name ?? item.code.giftLabel ?? '—';
+                        final giftText = m?.name ?? item.code.giftLabel ?? '—';
 
                         return InkWell(
                           onTap: m != null ? () => _openMemento(m) : null,
@@ -273,7 +312,6 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-
                                 Expanded(
                                   flex: 2,
                                   child: InkWell(
@@ -282,9 +320,10 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                                       padding: const EdgeInsets.only(right: 4),
                                       child: Text(
                                         c.code,
-                                        style: theme.textTheme.titleMedium?.copyWith(
+                                        style: theme.textTheme.titleMedium
+                                            ?.copyWith(
                                           fontWeight: FontWeight.bold,
-                                          decoration: TextDecoration.underline, // optional, just to hint it's clickable
+                                          decoration: TextDecoration.underline,
                                         ),
                                       ),
                                     ),
@@ -306,12 +345,11 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                                   ),
                                 ),
 
-                                // Gift + owned checkbox (no reason column anymore)
+                                // Gift + owned checkbox
                                 Expanded(
                                   flex: 3,
                                   child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       if (m != null)
                                         TextButton(
@@ -323,8 +361,7 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                                           child: Text(
                                             giftText,
                                             style: const TextStyle(
-                                              decoration:
-                                                  TextDecoration.underline,
+                                              decoration: TextDecoration.underline,
                                             ),
                                           ),
                                         )
@@ -367,16 +404,16 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
       ),
     );
   }
-  void _copyCode(BuildContext context, String code) {
-  Clipboard.setData(ClipboardData(text: code));
-  ScaffoldMessenger.of(context)
-    ..hideCurrentSnackBar()
-    ..showSnackBar(
-      const SnackBar(
-        content: Text('Copied to clipboard!'),
-        duration: Duration(seconds: 2),
-      ),
-    );
-}
 
+  void _copyCode(BuildContext context, String code) {
+    Clipboard.setData(ClipboardData(text: code));
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        const SnackBar(
+          content: Text('Copied to clipboard!'),
+          duration: Duration(seconds: 2),
+        ),
+      );
+  }
 }
