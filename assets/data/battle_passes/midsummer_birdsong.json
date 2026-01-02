@@ -1,0 +1,57 @@
+{
+  "id": "midsummer_birdsong",
+  "name": "Midsummer Birdsong",
+  "introducedInVersion": "v10.18.0",
+  "seasonDays": 60,
+  "eventRule": "The Midsummer Birdsong event consists of 3 phases. After the event ends, all facilities, decor, and mementos from its Super Rewards will return sporadically in the future and can be purchased with Diamonds.\n\nDuring the event period, your first log-in to the game automatically begins the event for you. You will then have 60 days to complete the event tasks.\n\nNormal Rewards can be obtained directly with EXP. Super Rewards can only be obtained with EXP after unlocking. Both Normal Rewards and Super Rewards can be claimed at the same time.\n\nIf your EXP progress has reached the chest stage and the next phase has unlocked, you may choose to end the current phase and begin the next phase.",
+  "phases": [
+    {
+      "id": "phase_3",
+      "name": "Midsummer Birdsong Phase 3",
+      "start": "November 25th 06:00",
+      "end": "January 24th 06:00",
+      "completionNote": "To complete the event without exchanging Diamonds for Event EXP, players must complete tasks for at least 40 out of 62 days or purchase Super Rewards to reduce the requirement to 20 days.",
+      "tiers": [
+        { "exp": 0, "normalRewards": [{ "type": "memento", "id": "diligent_hairband" }], "superRewards": [{ "type": "facility", "id": "birdie_observer" }] },
+        { "exp": 20, "normalRewards": [{ "type": "rating", "rating": 5 }], "superRewards": [{ "type": "facility", "id": "broken_memories" }] },
+        { "exp": 40, "normalRewards": [{ "type": "currency", "currency": "cod", "amount": 6000 }], "superRewards": [{ "type": "currency", "currency": "cod", "amount": 15000 }] },
+        { "exp": 60, "normalRewards": [{ "type": "currency", "currency": "film", "amount": 100 }], "superRewards": [{ "type": "currency", "currency": "film", "amount": 200 }] },
+        { "exp": 80, "normalRewards": [{ "type": "currency", "currency": "cod", "amount": 8000 }], "superRewards": [{ "type": "currency", "currency": "cod", "amount": 18000 }] },
+        { "exp": 100, "normalRewards": [{ "type": "facility", "id": "butterfly_bow_stove" }], "superRewards": [{ "type": "facility", "id": "morning_dews_song" }] },
+        { "exp": 120, "normalRewards": [{ "type": "currency", "currency": "cod", "amount": 10000 }], "superRewards": [{ "type": "memento", "id": "tulle_ribbon" }] },
+        { "exp": 140, "normalRewards": [{ "type": "rating", "rating": 5 }], "superRewards": [{ "type": "facility", "id": "roland_duet" }] },
+        { "exp": 160, "normalRewards": [{ "type": "currency", "currency": "film", "amount": 150 }], "superRewards": [{ "type": "currency", "currency": "film", "amount": 300 }] },
+        { "exp": 180, "normalRewards": [{ "type": "item", "id": "daisy", "itemType": "flower", "level": 2, "qty": 1 }], "superRewards": [{ "type": "item", "id": "daisy", "itemType": "flower", "level": 4, "qty": 2 }] },
+        { "exp": 200, "normalRewards": [{ "type": "facility", "id": "butterfly_bow_stove" }], "superRewards": [{ "type": "facility", "id": "dawns_warm_glimmer" }] },
+        { "exp": 220, "normalRewards": [{ "type": "currency", "currency": "cod", "amount": 12000 }], "superRewards": [{ "type": "memento", "id": "kitty_sun_hat" }] },
+        { "exp": 240, "normalRewards": [{ "type": "facility", "id": "cool_warm_light" }], "superRewards": [{ "type": "facility", "id": "memorys_echo" }] },
+        { "exp": 260, "normalRewards": [{ "type": "currency", "currency": "film", "amount": 200 }], "superRewards": [{ "type": "currency", "currency": "film", "amount": 500 }] },
+        { "exp": 280, "normalRewards": [{ "type": "currency", "currency": "cod", "amount": 14000 }], "superRewards": [{ "type": "currency", "currency": "cod", "amount": 30000 }] },
+        { "exp": 300, "normalRewards": [{ "type": "facility", "id": "butterfly_bow_stove" }], "superRewards": [{ "type": "facility", "id": "lace_wrap" }] },
+        { "exp": 320, "normalRewards": [{ "type": "currency", "currency": "cod", "amount": 16000 }], "superRewards": [{ "type": "memento", "id": "pristine_head_veil" }] },
+        { "exp": 340, "normalRewards": [{ "type": "rating", "rating": 5 }], "superRewards": [{ "type": "facility", "id": "chirpy_grain_box" }] },
+        { "exp": 360, "normalRewards": [{ "type": "currency", "currency": "film", "amount": 300 }], "superRewards": [{ "type": "currency", "currency": "film", "amount": 800 }] },
+        { "exp": 380, "normalRewards": [{ "type": "item", "id": "sunflower", "itemType": "flower", "level": 2, "qty": 1 }], "superRewards": [{ "type": "item", "id": "sunflower", "itemType": "flower", "level": 4, "qty": 2 }] },
+        { "exp": 400, "normalRewards": [{ "type": "facility", "id": "butterfly_bow_stove" }], "superRewards": [{ "type": "facility", "id": "floral_evening_party" }] },
+        { "exp": 420, "normalRewards": [{ "type": "currency", "currency": "cod", "amount": 18000 }], "superRewards": [{ "type": "facility", "id": "feathered_gentlemen" }] },
+        { "exp": 440, "normalRewards": [{ "type": "rating", "rating": 5 }], "superRewards": [{ "type": "facility", "id": "purple_butterfly_heart" }] },
+
+        {
+          "exp": 1700,
+          "normalRewards": [
+            { "type": "chest", "id": "midsummer_birdsong_normal_reward_chest" },
+            { "type": "currency", "currency": "diamonds", "amount": 10 },
+            { "type": "gacha_draw", "amount": 1 },
+            { "type": "promote_free", "amount": 15 }
+          ],
+          "superRewards": [
+            { "type": "chest", "id": "midsummer_birdsong_super_reward_chest" },
+            { "type": "currency", "currency": "diamonds", "amount": 20 },
+            { "type": "gacha_draw", "amount": 2 },
+            { "type": "promote_free", "amount": 30 }
+          ]
+        }
+      ]
+    }
+  ]
+}
