@@ -41,7 +41,7 @@
   {
     "id": "brown_bunny",
     "name": "Brown Bunny",
-    "tags": ["customer", "restaurant", "very_common", "nearby", "no_requirements", "test"],
+    "tags": ["customer", "restaurant", "very_common", "nearby"],
     "livesIn": "Nearby",
     "appearanceWeight": 9836,
     "requiredFoodId": null,
@@ -113,7 +113,7 @@
  {
   "id": "white_shiba",
   "name": "White Shiba",
-  "tags": ["customer", "restaurant", "rare", "dog"],
+  "tags": ["customer", "restaurant", "rare"],
   "livesIn": "Village",
   "appearanceWeight": 3921,
 
