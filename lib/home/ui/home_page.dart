@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:animal_restaurant_tracker/features/battle_pass/data/battle_pass_repository.dart';
+import 'package:animal_restaurant_tracker/features/pets/ui/pets_page.dart';
 
 import 'package:animal_restaurant_tracker/features/bank/ui/bank_page.dart';
 import 'package:animal_restaurant_tracker/features/facilities/data/facilities_repository.dart'
@@ -280,6 +281,15 @@ class _HomePageState extends State<HomePage> {
                 Icons.attach_money,
                 'Bank',
                 const BankPage(),
+
+
+              ),
+
+               _navTile(
+                context,
+                Icons.pets,
+                'Pets',
+                const PetsPage(),
               ),
               _navTile(
                 context,

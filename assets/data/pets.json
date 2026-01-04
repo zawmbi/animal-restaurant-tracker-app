@@ -1,1 +1,120 @@
-[]
+{
+  "updatedInVersion": "9.20.0.g",
+  "petRoomsUpdatedInVersion": "9.47.0.g",
+  "unlocking": {
+    "ratingRequired": 2500,
+    "notes": "Pets unlock after unlocking the Courtyard. Only one pet can go on an outing at a time."
+  },
+  "petRooms": [
+    { "id": "room_1", "name": "Room 1", "price": { "currency": "film", "amount": 0 }, "requiresPets": 0 },
+    { "id": "room_2", "name": "Room 2", "price": { "currency": "film", "amount": 30000 }, "requiresPets": 4 },
+    { "id": "room_3", "name": "Room 3", "price": { "currency": "film", "amount": 60000 }, "requiresPets": 7 },
+    { "id": "room_4", "name": "Room 4", "price": { "currency": "film", "amount": 90000 }, "requiresPets": 10 },
+    { "id": "room_5", "name": "Room 5", "price": { "currency": "film", "amount": 120000 }, "requiresPets": 13 }
+  ],
+  "photoTasks": [
+    {
+      "id": "flatty_photo_1",
+      "pets": ["flatty"],
+      "furniture": ["tassel_cushion", "dry_bottle"],
+      "rewards": [{ "currency": "film", "amount": 300 }, { "currency": "cod", "amount": 100 }]
+    },
+    {
+      "id": "flatty_photo_2",
+      "pets": ["flatty"],
+      "furniture": ["wooden_square_table", "checkered_mat"],
+      "rewards": [{ "currency": "film", "amount": 1000 }, { "currency": "cod", "amount": 5000 }]
+    },
+    {
+      "id": "flatty_photo_3",
+      "pets": ["flatty"],
+      "furniture": ["cozy_bed", "checkered_mat", "novice_potted_plant"],
+      "rewards": [{ "currency": "film", "amount": 1100 }, { "currency": "cod", "amount": 4950 }]
+    },
+    {
+      "id": "flatty_photo_4",
+      "pets": ["flatty"],
+      "furniture": [
+        "wooden_square_table",
+        "checkered_mat",
+        "novice_potted_plant",
+        "ordinary_noticeboard",
+        "hydroponic_plants"
+      ],
+      "rewards": [{ "currency": "film", "amount": 2000 }, { "currency": "cod", "amount": 10000 }]
+    },
+    {
+      "id": "flatty_photo_5",
+      "pets": ["flatty"],
+      "furniture": [
+        "wooden_square_table",
+        "cozy_bed",
+        "checkered_mat",
+        "slippin_good_time",
+        "hydroponic_plants",
+        "tiny_stationary_holder"
+      ],
+      "rewards": [{ "currency": "film", "amount": 3000 }, { "currency": "cod", "amount": 15000 }]
+    },
+    {
+      "id": "flatty_popo_photo_6",
+      "pets": ["flatty", "popo"],
+      "furniture": [
+        "wooden_square_table",
+        "cozy_bed",
+        "checkered_mat",
+        "novice_potted_plant",
+        "ordinary_noticeboard",
+        "slippin_good_time",
+        "hydroponic_plants",
+        "tiny_stationary_holder"
+      ],
+      "rewards": [
+        { "currency": "film", "amount": 3200 },
+        { "currency": "cod", "amount": 16000 },
+        { "item": "freeze_dried_vegetables", "amount": 5 }
+      ]
+    },
+    {
+      "id": "popo_photo_7",
+      "pets": ["popo"],
+      "furniture": ["elegant_green_table", "fancy_square_carpet", "countryside_painting"],
+      "rewards": [{ "currency": "film", "amount": 2800 }, { "currency": "cod", "amount": 14000 }]
+    },
+    {
+      "id": "flutter_photo_8",
+      "pets": ["flutter"],
+      "furniture": [
+        "azure_carnival",
+        "blue_striped_cushion",
+        "rose_paradise",
+        "wonderland_emissary",
+        "magic_teapot"
+      ],
+      "rewards": [{ "currency": "film", "amount": 6000 }, { "currency": "cod", "amount": 30000 }]
+    },
+    {
+      "id": "ember_photo_9",
+      "pets": ["ember"],
+      "furniture": ["diary_of_a_sailor", "blue_white_mat", "opalescent_coral_tree", "shallow_harvest"],
+      "rewards": [{ "currency": "film", "amount": 6800 }, { "currency": "cod", "amount": 34000 }]
+    }
+  ],
+  "pets": [
+    { "id": "flutter", "hatchlingName": "Flutter Hatchling", "matureName": "Flutter Mature", "nickname": "Flutter", "likes": ["ding", "hedwig"], "series": [1, 2] },
+    { "id": "popo", "hatchlingName": "Popo Hatchling", "matureName": "Popo Mature", "nickname": "Popo", "likes": ["egg_beater", "yolky"], "series": [1, 2] },
+    { "id": "charcoal", "hatchlingName": "Charcoal Hatchling", "matureName": "Charcoal Mature", "nickname": "Charcoal", "likes": ["seedy", "king_jiji"], "series": [1, 2] },
+    { "id": "flatty", "hatchlingName": "Flatty Hatchling", "matureName": "Flatty Mature", "nickname": "Flatty", "likes": ["prince_murong", "gumi"], "series": [1, 2] },
+    { "id": "ember", "hatchlingName": "Ember Hatchling", "matureName": "Ember Mature", "nickname": "Ember", "likes": ["delivery_girl_kate_avatar", "delivery_boy_tate_avatar"], "series": [1, 2] },
+    { "id": "coco", "hatchlingName": "Coco Hatchling", "matureName": "Coco Mature", "nickname": "Coco", "likes": ["timmy", "prince"], "series": [3] },
+    { "id": "cakey", "hatchlingName": "Cakey Hatchling", "matureName": "Cakey Mature", "nickname": "Cakey", "likes": ["delivery_girl_kate_avatar", "yolky"], "series": [3] },
+    { "id": "alga", "hatchlingName": "Alga Hatchling", "matureName": "Alga Mature", "nickname": "Alga", "likes": ["delivery_girl_kate_avatar", "ding"], "series": [1, 2] },
+    { "id": "awoof", "hatchlingName": "Awoof Hatchling", "matureName": "Awoof Mature", "nickname": "Awoof", "likes": ["murong_gumi", "king_jiji"], "series": [1, 2] },
+    { "id": "baby_horns", "hatchlingName": "Baby Horns Hatchling", "matureName": "Baby Horns Mature", "nickname": "Baby Horns", "likes": ["apricat", "timmy"], "series": [3] },
+    { "id": "fluffie", "hatchlingName": "Fluffie Hatchling", "matureName": "Fluffie Mature", "nickname": "Fluffie", "likes": ["support_chef_meow_avatar", "dori_the_emotional"], "series": [1, 2] },
+    { "id": "lully", "hatchlingName": "Lully Hatchling", "matureName": "Lully Mature", "nickname": "Lully", "likes": ["support_chef_meow_avatar", "seedy"], "series": [1, 2] },
+    { "id": "plumpy", "hatchlingName": "Plumpy Hatchling", "matureName": "Plumpy Mature", "nickname": "Plumpy", "likes": ["pfp_paddy", "yolky"], "series": [1, 2] },
+    { "id": "sparkle", "hatchlingName": "Sparkle Hatchling", "matureName": "Sparkle Mature", "nickname": "Sparkle", "likes": ["dori_the_emotional", "king_jiji"], "series": [3] },
+    { "id": "moonie", "hatchlingName": "Moonie Hatchling", "matureName": "Moonie Mature", "nickname": "Moonie", "likes": ["delivery_boy_tate_avatar", "seedy"], "series": [3] }
+  ]
+}
