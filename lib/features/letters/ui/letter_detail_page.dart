@@ -1,4 +1,6 @@
 // lib/features/letters/ui/letter_detail_page.dart
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:collection/collection.dart';
 
@@ -334,12 +336,10 @@ class _CombinationTable extends StatelessWidget {
 
 class _InfoRow extends StatelessWidget {
   final String label;
-  final String? value;
   final Widget? valueWidget;
 
   const _InfoRow({
     required this.label,
-    this.value,
     this.valueWidget,
   });
 
@@ -365,7 +365,7 @@ class _InfoRow extends StatelessWidget {
           ),
           const SizedBox(width: 8),
           Expanded(
-            child: valueWidget ?? Text(value ?? '—'),
+            child: valueWidget ?? const Text('—'),
           ),
         ],
       ),

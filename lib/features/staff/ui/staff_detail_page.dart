@@ -69,20 +69,20 @@ class _StaffDetailPageState extends State<StaffDetailPage> {
     try {
       final customers = await CustomersRepository.instance.all();
       for (final c in customers) {
-        final name = (c.name ?? '').toString().trim();
+        final name = c.name.toString().trim();
         if (name.isNotEmpty) _customerNameToId[name] = c.id;
       }
 
       final facilities = await facrepo.FacilitiesRepository.instance.all();
       for (final f in facilities) {
-        final name = (f.name ?? '').toString().trim();
+        final name = f.name.toString().trim();
         if (name.isNotEmpty) _facilityNameToId[name] = f.id;
       }
 
       // Dishes/Recipes (adjust to your repo + model field names)
       final dishes = await dishrepo.DishesRepository.instance.all();
       for (final d in dishes) {
-        final name = (d.name ?? '').toString().trim();
+        final name = d.name.toString().trim();
         if (name.isNotEmpty) _dishNameToId[name] = d.id;
       }
 

@@ -442,9 +442,6 @@ class _FacilityDetailBody extends StatelessWidget {
 
   static const String _starAsset = 'assets/images/star.png';
 
-  // use your PNGs: assets/images/<currencyKey>.png
-  static String _currencyAsset(MoneyCurrency c) => 'assets/images/${c.key}.png';
-
   String _prettyArea(FacilityArea area) => area.name
       .split('_')
       .map((w) => w.isEmpty ? w : '${w[0].toUpperCase()}${w.substring(1)}')
@@ -538,7 +535,7 @@ class _FacilityDetailBody extends StatelessWidget {
                           child: _effectRow(context, e),
                         ),
                       )
-                      .toList(),
+                      ,
                 ],
               ),
             ),
@@ -562,8 +559,7 @@ class _FacilityDetailBody extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(vertical: 2),
                           child: Text('• $s'),
                         ),
-                      )
-                      .toList(),
+                      ),
                 ],
               ),
             ),

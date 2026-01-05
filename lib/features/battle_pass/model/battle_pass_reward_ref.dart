@@ -1,11 +1,3 @@
-// battle_pass_reward_ref.dart
-import 'package:flutter/material.dart';
-
-import '../../facilities/data/facilities_repository.dart';
-import '../../facilities/model/facility.dart';
-
-// Adjust these imports to where your mementos live:
-import '../../mementos/data/mementos_index.dart';
 
 enum RewardKind {
   facility,

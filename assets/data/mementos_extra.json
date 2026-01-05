@@ -15,7 +15,7 @@
     "description": "Redeem a seasonal code.",
     "stars": 0,
     "requirement": "Use Redemption Code SPRING202X.",
-    "tags": ["redemption_code"],
+    "tags": ["redemption code"],
     "source": "redemption_code",
     "event": "Spring"
   },

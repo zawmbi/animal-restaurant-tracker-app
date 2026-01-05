@@ -69,7 +69,7 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
   void initState() {
     super.initState();
 
-    // ✅ Default to Phase 1 (by name) if it exists, else default to first phase.
+    // Default to Phase 1 (by name) if it exists, else default to first phase.
     _phaseIndex = _defaultPhaseIndex(pass);
     _namesFuture = _loadNamesForPhase(pass.phases[_phaseIndex]);
   }
@@ -162,7 +162,7 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
 
                   const SizedBox(height: 12),
 
-                  // ✅ Premium toggle (scoped to THIS pass only)
+                  //Premium toggle (scoped to THIS pass only)
                   // IMPORTANT: This now ONLY toggles visibility of Super rewards.
                   // It does NOT change any claimed state.
                   Card(
@@ -274,7 +274,7 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
                                     ),
                                   ),
 
-                                  // ✅ Big checkbox (only shown in premium mode)
+                                  // Big checkbox (only shown in premium mode)
                                   if (_hasPremium)
                                     Transform.scale(
                                       scale: 1.15,

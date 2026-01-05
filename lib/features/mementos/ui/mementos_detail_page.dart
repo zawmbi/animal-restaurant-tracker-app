@@ -388,20 +388,4 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
       SnackBar(content: Text('Open event: ${memento.event}')),
     );
   }
-
-  void _openRecipeFromMemento(BuildContext context) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Open vegetable garden recipe page (to be wired).'),
-      ),
-    );
-  }
-
-  void _openStaffChooser(BuildContext context) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Open staff member(s) that can wear this (to be wired).'),
-      ),
-    );
-  }
 }

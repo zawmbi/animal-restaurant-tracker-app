@@ -15,6 +15,21 @@ class _PetDetailPageState extends State<PetDetailPage> {
 
   Pet get p => widget.pet;
 
+  Future<void> _setOwned(bool v) async {
+    await progress.setOwned(p.id, v);
+    if (!v) {
+      await progress.setMature(p.id, false);
+    }
+    if (!mounted) return;
+    setState(() {});
+  }
+
+  Future<void> _setMature(bool v) async {
+    await progress.setMature(p.id, v);
+    if (!mounted) return;
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     final owned = progress.isOwned(p.id);
@@ -40,55 +55,47 @@ class _PetDetailPageState extends State<PetDetailPage> {
                   Text('Mature: ${p.matureName}'),
                   Text('Series: ${p.series.join(' & ')}'),
                   const SizedBox(height: 8),
-                  if (p.likes.isNotEmpty)
-                    Text('Likes: ${p.likes.join(', ')}'),
+                  if (p.likes.isNotEmpty) Text('Likes: ${p.likes.join(', ')}'),
                 ],
               ),
             ),
           ),
-
           const SizedBox(height: 10),
+
           Card(
             child: Column(
               children: [
-                SwitchListTile(
+                ListTile(
+                  dense: true,
+                  visualDensity: VisualDensity.compact,
                   title: const Text('Owned / Hatched'),
                   subtitle: const Text('Track whether you have this pet.'),
-                  value: owned,
-                  onChanged: (v) async {
-                    await progress.setOwned(p.id, v);
-                    if (!v) {
-                      await progress.setMature(p.id, false);
-                    }
-                    if (!mounted) return;
-                    setState(() {});
-                  },
+                  trailing: Transform.scale(
+                    scale: 0.95,
+                    child: Switch(
+                      value: owned,
+                      onChanged: _setOwned,
+                    ),
+                  ),
+                  onTap: () => _setOwned(!owned),
                 ),
                 const Divider(height: 1),
-                SwitchListTile(
+                ListTile(
+                  dense: true,
+                  visualDensity: VisualDensity.compact,
                   title: const Text('Mature'),
                   subtitle: const Text('Only enabled if Owned is on.'),
-                  value: mature,
-                  onChanged: owned
-                      ? (v) async {
-                          await progress.setMature(p.id, v);
-                          if (!mounted) return;
-                          setState(() {});
-                        }
-                      : null,
+                  enabled: owned,
+                  trailing: Transform.scale(
+                    scale: 0.95,
+                    child: Switch(
+                      value: mature,
+                      onChanged: owned ? _setMature : null,
+                    ),
+                  ),
+                  onTap: owned ? () => _setMature(!mature) : null,
                 ),
               ],
-            ),
-          ),
-
-          const SizedBox(height: 10),
-          Card(
-            child: Padding(
-              padding: const EdgeInsets.all(12),
-              child: Text(
-                'Note: This tracker intentionally does not include repeatable goals (e.g., weekly tasks) or temporary event tasks.\n'
-                'This page only tracks stable progress you can “finish” (like owning/maturing pets, rooms, and photo tasks).',
-              ),
             ),
           ),
         ],
