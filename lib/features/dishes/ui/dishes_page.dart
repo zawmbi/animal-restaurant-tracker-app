@@ -18,6 +18,7 @@ class _DishesPageState extends State<DishesPage> {
   final store = UnlockedStore.instance; // bucket: 'dish'
 
   String _n(String s) => s.trim().toLowerCase();
+
   bool _inAnySection(Dish d, List<String> names) {
     final have = d.sections.map(_n).toSet();
     for (final n in names) {
@@ -32,6 +33,8 @@ class _DishesPageState extends State<DishesPage> {
   bool _isTakeout(Dish d) => _inAnySection(d, ['Takeout']);
   bool _isVegGarden(Dish d) =>
       _inAnySection(d, ['Vegetable Garden Recipes', 'Vegetable Garden']);
+  bool _isFoodTruck(Dish d) =>
+      _inAnySection(d, ['Food Truck Recipes']);
 
   @override
   Widget build(BuildContext context) {
@@ -54,15 +57,21 @@ class _DishesPageState extends State<DishesPage> {
             return const Center(child: CircularProgressIndicator());
           }
           if (snap.hasError) {
-            return Center(child: Text('Failed to load recipes:\n${snap.error}', textAlign: TextAlign.center));
+            return Center(
+              child: Text(
+                'Failed to load recipes:\n${snap.error}',
+                textAlign: TextAlign.center,
+              ),
+            );
           }
 
           final dishes = snap.data ?? const <Dish>[];
 
           final freshlyMade = dishes.where(_isFreshlyMade).toList();
-          final buffet      = dishes.where(_isBuffet).toList();
-          final takeout     = dishes.where(_isTakeout).toList();
-          final vegGarden   = dishes.where(_isVegGarden).toList();
+          final buffet = dishes.where(_isBuffet).toList();
+          final takeout = dishes.where(_isTakeout).toList();
+          final vegGarden = dishes.where(_isVegGarden).toList();
+          final foodTruck = dishes.where(_isFoodTruck).toList();
 
           return AnimatedBuilder(
             animation: store,
@@ -74,6 +83,7 @@ class _DishesPageState extends State<DishesPage> {
                     _section(context, 'Freshly Made', freshlyMade, showEvenIfEmpty: true),
                     _section(context, 'Buffet', buffet, showEvenIfEmpty: true),
                     _section(context, 'Takeout', takeout, showEvenIfEmpty: true),
+                    _section(context, 'Food Truck Recipes', foodTruck, showEvenIfEmpty: true),
                     _section(context, 'Vegetable Garden Recipes', vegGarden, showEvenIfEmpty: true),
                   ],
                 ),
@@ -99,7 +109,12 @@ class _DishesPageState extends State<DishesPage> {
               children: [
                 const Icon(Icons.info_outline, size: 18),
                 const SizedBox(width: 8),
-                Expanded(child: Text('No recipes in this section yet.', style: Theme.of(context).textTheme.bodyMedium)),
+                Expanded(
+                  child: Text(
+                    'No recipes in this section yet.',
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+                ),
               ],
             ),
           )

@@ -3,7 +3,7 @@ import '../data/dishes_repository.dart';
 import '../model/dish.dart';
 import '../../shared/data/unlocked_store.dart';
 
-// NEW: to link dishes ↔ customers
+// to link dishes ↔ customers
 import '../../customers/data/customers_repository.dart';
 import '../../customers/model/customer.dart';
 import '../../customers/ui/customer_detail_page.dart';
@@ -42,8 +42,7 @@ class DishDetailPage extends StatelessWidget {
 
           return AnimatedBuilder(
             animation: store,
-            builder: (context, _) =>
-                _FreshDishDetailBody(dish: dish, store: store),
+            builder: (context, _) => _DishDetailBody(dish: dish, store: store),
           );
         },
       ),
@@ -51,8 +50,8 @@ class DishDetailPage extends StatelessWidget {
   }
 }
 
-class _FreshDishDetailBody extends StatelessWidget {
-  const _FreshDishDetailBody({required this.dish, required this.store});
+class _DishDetailBody extends StatelessWidget {
+  const _DishDetailBody({required this.dish, required this.store});
 
   final Dish dish;
   final UnlockedStore store;
@@ -61,6 +60,15 @@ class _FreshDishDetailBody extends StatelessWidget {
       dish.sections.any((s) =>
           s.toLowerCase().contains('freshly made') ||
           s.toLowerCase().contains('fresh dishes'));
+
+  bool get isBuffet =>
+      dish.sections.any((s) => s.toLowerCase().contains('buffet'));
+
+  bool get isTakeout =>
+      dish.sections.any((s) => s.toLowerCase().contains('takeout'));
+
+  bool get isFoodTruck =>
+      dish.sections.any((s) => s.toLowerCase().contains('food truck'));
 
   @override
   Widget build(BuildContext context) {
@@ -81,8 +89,7 @@ class _FreshDishDetailBody extends StatelessWidget {
             ),
             Checkbox(
               value: checked,
-              onChanged: (v) =>
-                  store.setUnlocked('dish', dish.id, v ?? false),
+              onChanged: (v) => store.setUnlocked('dish', dish.id, v ?? false),
             ),
           ],
         ),
@@ -96,95 +103,239 @@ class _FreshDishDetailBody extends StatelessWidget {
           ),
         const SizedBox(height: 16),
 
-        // ---------- Freshly Made Details ----------
-        if (isFreshlyMade)
-          Container(
-            decoration: BoxDecoration(
-              color: Colors
-                  .transparent, // ← removes white background from Card
-              borderRadius: BorderRadius.circular(12),
-              border: Border.all(
-                color: Colors.brown.shade200.withOpacity(.4),
-                width: 1.2,
-              ),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  _infoRow(context, 'Recipe Name', Text(dish.name)),
+        if (isFreshlyMade) _freshlyMadeCard(context),
+        if (isBuffet) _buffetCard(context),
+        if (isTakeout) _takeoutCard(context),
+        if (isFoodTruck) _foodTruckCard(context),
 
-                  if (dish.description.isNotEmpty)
-                    _infoRow(context, 'Description', Text(dish.description)),
-
-                  if (dish.timeSeconds != null)
-                    _infoRow(
-                      context,
-                      'Time to cook',
-                      Text(_formatSeconds(dish.timeSeconds!)),
-                    ),
-
-                  if (dish.earningsMax != null)
-                    _infoRow(
-                      context,
-                      'Earnings per dish',
-                      Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Image.asset(
-                            'assets/images/cod.png',
-                            width: 20,
-                            height: 20,
-                          ),
-                          const SizedBox(width: 4),
-                          Text(_formatNumber(dish.earningsMax!)),
-                        ],
-                      ),
-                    ),
-
-                  _infoRow(
-                    context,
-                    'Star requirement',
-                    dish.requirementsStars != null &&
-                            dish.requirementsStars! > 0
-                        ? Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Image.asset(
-                                'assets/images/star.png',
-                                width: 18,
-                                height: 18,
-                              ),
-                              const SizedBox(width: 4),
-                              Text('${dish.requirementsStars}'),
-                            ],
-                          )
-                        : const Text('—'),
-                  ),
-
-                  _infoRow(
-                    context,
-                    'Cost of the recipe',
-                    _buildCodCostValue(dish.price, dish.costText),
-                  ),
-                ],
-              ),
-            ),
-          ),
-
-        if (!isFreshlyMade)
-          const Text('Details for other recipe types coming soon.'),
+        if (!isFreshlyMade && !isBuffet && !isTakeout && !isFoodTruck)
+          const Text('Details for this recipe type are not implemented yet.'),
 
         const SizedBox(height: 16),
 
-        // ---------- NEW: customer sections ----------
+        // ---------- customer sections ----------
         _buildCustomerSections(context),
       ],
     );
   }
 
-  // ---------- NEW: "Required for" + "Can order" ----------
+  // ------------------ Cards ------------------
+
+  Widget _cardShell(BuildContext context, List<Widget> children) {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.transparent,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(
+          // ignore: deprecated_member_use
+          color: Colors.brown.shade200.withOpacity(.4),
+          width: 1.2,
+        ),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: children),
+      ),
+    );
+  }
+
+  Widget _freshlyMadeCard(BuildContext context) {
+    return _cardShell(
+      context,
+      [
+        _infoRow(context, 'Recipe Name', Text(dish.name)),
+        if (dish.description.isNotEmpty)
+          _infoRow(context, 'Description', Text(dish.description)),
+        if (dish.timeSeconds != null)
+          _infoRow(context, 'Time to cook', Text(_formatSeconds(dish.timeSeconds!))),
+        if (dish.earningsMax != null)
+          _infoRow(
+            context,
+            'Earnings per dish',
+            _moneyRow(currency: 'cod', amount: dish.earningsMax!),
+          ),
+        _infoRow(
+          context,
+          'Star requirement',
+          (dish.requirementsStars != null && dish.requirementsStars! > 0)
+              ? _iconNumberRow(iconAsset: 'assets/images/star.png', value: dish.requirementsStars!.toString())
+              : const Text('—'),
+        ),
+        _infoRow(
+          context,
+          'Cost of the recipe',
+          _buildPriceValue(dish.price, dish.costText),
+        ),
+      ],
+    );
+  }
+
+  Widget _buffetCard(BuildContext context) {
+    return _cardShell(
+      context,
+      [
+        _infoRow(context, 'Recipe Name', Text(dish.name)),
+        if (dish.description.isNotEmpty)
+          _infoRow(context, 'Description', Text(dish.description)),
+        if (dish.earningsPerHour != null && dish.earningsPerHour!.isNotEmpty)
+          _infoRow(
+            context,
+            'Earnings per hour',
+            _moneyRow(currency: 'cod', amount: dish.earningsPerHourInt ?? 0, suffix: '/h'),
+          ),
+        _infoRow(
+          context,
+          'Star requirement',
+          (dish.requirementsStars != null && dish.requirementsStars! > 0)
+              ? _iconNumberRow(iconAsset: 'assets/images/star.png', value: dish.requirementsStars!.toString())
+              : const Text('—'),
+        ),
+        _infoRow(
+          context,
+          'Cost',
+          _buildPriceValue(dish.price, dish.costText),
+        ),
+      ],
+    );
+  }
+
+  Widget _takeoutCard(BuildContext context) {
+    final children = <Widget>[
+      _infoRow(context, 'Recipe Name', Text(dish.name)),
+      if (dish.description.isNotEmpty)
+        _infoRow(context, 'Description', Text(dish.description)),
+      if (dish.earningsRange != null && dish.earningsRange!.isNotEmpty)
+        _infoRow(
+          context,
+          'Earnings range',
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Image.asset('assets/images/bell.png', width: 18, height: 18),
+              const SizedBox(width: 4),
+              Text(dish.earningsRange!),
+            ],
+          ),
+        ),
+      if (dish.requirementsLikes != null && dish.requirementsLikes! > 0)
+        _infoRow(
+          context,
+          'Base likes requirement',
+          _iconNumberRow(iconAsset: 'assets/images/like.png', value: dish.requirementsLikes!.toString()),
+        ),
+      if (dish.requirementsStars != null && dish.requirementsStars! > 0)
+        _infoRow(
+          context,
+          'Base star requirement',
+          _iconNumberRow(iconAsset: 'assets/images/star.png', value: dish.requirementsStars!.toString()),
+        ),
+    ];
+
+    if (dish.tiers != null && dish.tiers!.isNotEmpty) {
+      children.add(const SizedBox(height: 10));
+      children.add(Text('Tiers', style: Theme.of(context).textTheme.titleMedium));
+      children.add(const SizedBox(height: 6));
+      children.addAll(dish.tiers!.map((t) => _tierCard(context, t)));
+    }
+
+    return _cardShell(context, children);
+  }
+
+  Widget _tierCard(BuildContext context, DishTier t) {
+    final tierLabel = (t.tier ?? '').trim().isEmpty ? '—' : t.tier!.trim();
+
+    final reqStars = t.requirementsStars ?? 0;
+    final reqLikes = t.requirementsLikes ?? 0;
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 10),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: Colors.brown.shade200.withOpacity(.35), width: 1),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('Tier $tierLabel', style: const TextStyle(fontWeight: FontWeight.w700)),
+          const SizedBox(height: 6),
+          Row(
+            children: [
+              Expanded(
+                child: Row(
+                  children: [
+                    Image.asset('assets/images/star.png', width: 16, height: 16),
+                    const SizedBox(width: 4),
+                    Text(reqStars > 0 ? _formatNumber(reqStars) : '—'),
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Row(
+                  children: [
+                    Image.asset('assets/images/like.png', width: 16, height: 16),
+                    const SizedBox(width: 4),
+                    Text(reqLikes > 0 ? _formatNumber(reqLikes) : '—'),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              const Text('Cost: '),
+              _buildPriceValue(t.price, null),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _foodTruckCard(BuildContext context) {
+    final children = <Widget>[
+      _infoRow(context, 'Recipe Name', Text(dish.name)),
+      if (dish.description.isNotEmpty)
+        _infoRow(context, 'Description', Text(dish.description)),
+      if (dish.refinedRating != null)
+        _infoRow(
+          context,
+          'Refined rating',
+          _iconNumberRow(iconAsset: 'assets/images/star.png', value: '+${dish.refinedRating}'),
+        ),
+      if (dish.prepTimeSeconds != null)
+        _infoRow(context, 'Prep time', Text(_formatSeconds(dish.prepTimeSeconds!))),
+      if (dish.perfectDishes != null)
+        _infoRow(context, 'Perfect dishes', Text('${dish.perfectDishes}')),
+      if (dish.flavor != null && dish.flavor!.trim().isNotEmpty)
+        _infoRow(context, 'Flavor', Text(dish.flavor!)),
+    ];
+
+    if (dish.ingredientsList != null && dish.ingredientsList!.isNotEmpty) {
+      children.add(const SizedBox(height: 10));
+      children.add(Text('Ingredients', style: Theme.of(context).textTheme.titleMedium));
+      children.add(const SizedBox(height: 6));
+      children.add(_ingredientWrap(context, dish.ingredientsList!));
+    }
+
+    return _cardShell(context, children);
+  }
+
+  Widget _ingredientWrap(BuildContext context, List<DishIngredient> items) {
+    return Wrap(
+      spacing: 8,
+      runSpacing: 8,
+      children: items.map((ing) {
+        final amt = ing.amount;
+        final amtText = (amt != null && amt > 0) ? ' x$amt' : '';
+        return Chip(label: Text('${ing.item}$amtText'));
+      }).toList(),
+    );
+  }
+
+  // ------------------ Customers ------------------
+
   Widget _buildCustomerSections(BuildContext context) {
     return FutureBuilder<List<Customer>>(
       future: CustomersRepository.instance.all(),
@@ -281,7 +432,8 @@ class _FreshDishDetailBody extends StatelessWidget {
     );
   }
 
-  // ---------- Helper Row ----------
+  // ------------------ Helpers ------------------
+
   Widget _infoRow(BuildContext context, String label, Widget valueWidget) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 4),
@@ -300,29 +452,63 @@ class _FreshDishDetailBody extends StatelessWidget {
     );
   }
 
-  // ---------- Cost Row with Icon ----------
-  Widget _buildCodCostValue(List<Price>? prices, String? costText) {
-    if (prices == null || prices.isEmpty) {
-      return Text(costText ?? 'Free');
-    }
-
-    final codPrice = prices.first;
-
+  Widget _iconNumberRow({required String iconAsset, required String value}) {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Image.asset(
-          'assets/images/cod.png',
-          width: 20,
-          height: 20,
-        ),
+        Image.asset(iconAsset, width: 18, height: 18),
         const SizedBox(width: 4),
-        Text(_formatNumber(codPrice.amount)),
+        Text(value),
       ],
     );
   }
 
-  // ---------- Formatting ----------
+  Widget _moneyRow({required String currency, required int amount, String? suffix}) {
+    final icon = _currencyIcon(currency);
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Image.asset(icon, width: 20, height: 20),
+        const SizedBox(width: 4),
+        Text('${_formatNumber(amount)}${suffix ?? ''}'),
+      ],
+    );
+  }
+
+  Widget _buildPriceValue(List<Price>? prices, String? costText) {
+    if (prices == null || prices.isEmpty) {
+      return Text(costText ?? 'Free');
+    }
+
+    // Many of your recipes have a single currency, but we support multiples cleanly.
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        for (int i = 0; i < prices.length; i++) ...[
+          if (i > 0) const SizedBox(width: 10),
+          Image.asset(_currencyIcon(prices[i].currency), width: 20, height: 20),
+          const SizedBox(width: 4),
+          Text(_formatNumber(prices[i].amount)),
+        ],
+      ],
+    );
+  }
+
+  static String _currencyIcon(String currency) {
+    final c = currency.trim().toLowerCase();
+    switch (c) {
+      case 'cod':
+        return 'assets/images/cod.png';
+      case 'plates':
+        return 'assets/images/plate.png';
+      case 'bells':
+        return 'assets/images/bell.png';
+      default:
+        // Fallback to cod icon so UI never breaks, but still uses an asset.
+        return 'assets/images/cod.png';
+    }
+  }
+
   static String _formatSeconds(int s) {
     if (s < 60) return '${s}s';
     final m = s ~/ 60;

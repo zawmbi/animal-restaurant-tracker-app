@@ -1,9 +1,8 @@
 import 'package:flutter/foundation.dart';
 
-/// Basic money tuple used by dishes & tiers.
 @immutable
 class Price {
-  final String currency; // e.g. "cod", "plates"
+  final String currency; // e.g. "cod", "plates", "bells"
   final int amount;
 
   const Price({required this.currency, required this.amount});
@@ -22,14 +21,13 @@ class Price {
       };
 }
 
-/// Optional tier (mainly for Takeout), keeping room for per-tier earnings.
 @immutable
 class DishTier {
   final String? tier; // "C","B","A","S" etc.
   final int? requirementsStars;
   final int? requirementsLikes;
   final List<Price>? price;
-  final String? earningsRange; // Optional: "+14~56" etc. if provided per-tier.
+  final String? earningsRange; // optional if you ever use it per-tier
 
   const DishTier({
     this.tier,
@@ -62,30 +60,54 @@ class DishTier {
 }
 
 @immutable
+class DishIngredient {
+  final String item;
+  final int? amount;
+
+  const DishIngredient({required this.item, this.amount});
+
+  factory DishIngredient.fromJson(Map<String, dynamic> json) => DishIngredient(
+        item: (json['item'] ?? '').toString(),
+        amount: _asIntOrNull(json['amount']),
+      );
+
+  Map<String, dynamic> toJson() => {
+        'item': item,
+        if (amount != null) 'amount': amount,
+      };
+}
+
+@immutable
 class Dish {
   final String id;
   final String name;
   final List<String> sections;
   final String description;
 
-  // Core numbers (nullable so older rows can omit them)
+  // Freshly Made
   final int? timeSeconds;
   final int? earningsMax;
-  final String? earningsPerHour; // e.g. "+3,000/h"
-  final String? earningsRange;   // e.g. "+14~56"
+
+  // Buffet
+  final String? earningsPerHour; // string source if you keep it
+  final int? earningsPerHourInt; // normalized numeric (Cod+/h)
+
+  // Takeout
+  final String? earningsRange; // e.g. "Bells+14~56"
+  final int? requirementsLikes;
 
   // Requirements & cost (legacy)
-  final String? requirement; // raw text like "400★" or other notes
-  final String? costText;    // raw "Free", "400 Cod", etc.
+  final String? requirement;
+  final String? costText;
 
-  // New normalized fields used by the detail page
-  final int? requirementsStars;     // numeric star requirement
-  final List<Price>? price;         // normalized prices list
-  final List<DishTier>? tiers;      // optional tiered unlocks
+  // Normalized
+  final int? requirementsStars;
+  final List<Price>? price;
+  final List<DishTier>? tiers;
 
-  // Food Truck / extras
+  // Food Truck Recipes
   final int? refinedRating;
-  final String? ingredients;    // stored raw; UI formats to chips
+  final List<DishIngredient>? ingredientsList;
   final int? perfectDishes;
   final int? prepTimeSeconds;
   final String? flavor;
@@ -98,20 +120,35 @@ class Dish {
     this.timeSeconds,
     this.earningsMax,
     this.earningsPerHour,
+    this.earningsPerHourInt,
     this.earningsRange,
     this.requirement,
     this.costText,
     this.requirementsStars,
+    this.requirementsLikes,
     this.price,
     this.tiers,
     this.refinedRating,
-    this.ingredients,
+    this.ingredientsList,
     this.perfectDishes,
     this.prepTimeSeconds,
     this.flavor,
   });
 
   factory Dish.fromJson(Map<String, dynamic> json) {
+    // buffet: your JSON uses earningsPerHour as an int; sometimes you had "Cod+3,000/h" text elsewhere
+    final ePHRaw = json['earningsPerHour'];
+    final ePHInt = _asIntOrNull(ePHRaw);
+
+    // food truck: ingredients is a list of {item, amount}
+    List<DishIngredient>? ing;
+    if (json['ingredients'] is List) {
+      ing = (json['ingredients'] as List)
+          .whereType<Map<String, dynamic>>()
+          .map((e) => DishIngredient.fromJson(e))
+          .toList();
+    }
+
     return Dish(
       id: (json['id'] ?? '').toString(),
       name: (json['name'] ?? '').toString(),
@@ -122,21 +159,25 @@ class Dish {
 
       timeSeconds: _asIntOrNull(json['timeSeconds'] ?? json['time_s']),
       earningsMax: _asIntOrNull(json['earningsMax']),
-      earningsPerHour: json['earningsPerHour']?.toString(),
+
+      earningsPerHour: (ePHRaw is String) ? ePHRaw : null,
+      earningsPerHourInt: ePHInt,
+
       earningsRange: json['earningsRange']?.toString(),
 
-      // legacy/extra strings
       requirement: json['requirement']?.toString(),
       costText: json['cost']?.toString() ?? json['costText']?.toString(),
 
-      // normalized new fields
       requirementsStars: _asIntOrNull(json['requirementsStars']),
+      requirementsLikes: _asIntOrNull(json['requirementsLikes']),
+
       price: (json['price'] is List)
           ? (json['price'] as List)
               .whereType<Map<String, dynamic>>()
               .map((e) => Price.fromJson(e))
               .toList()
           : null,
+
       tiers: (json['tiers'] is List)
           ? (json['tiers'] as List)
               .whereType<Map<String, dynamic>>()
@@ -144,9 +185,8 @@ class Dish {
               .toList()
           : null,
 
-      // food truck / extras
       refinedRating: _asIntOrNull(json['refinedRating']),
-      ingredients: json['ingredients']?.toString(),
+      ingredientsList: ing,
       perfectDishes: _asIntOrNull(json['perfectDishes']),
       prepTimeSeconds: _asIntOrNull(json['prepTimeSeconds']),
       flavor: json['flavor']?.toString(),
@@ -161,21 +201,23 @@ class Dish {
         if (timeSeconds != null) 'timeSeconds': timeSeconds,
         if (earningsMax != null) 'earningsMax': earningsMax,
         if (earningsPerHour != null) 'earningsPerHour': earningsPerHour,
+        if (earningsPerHourInt != null) 'earningsPerHour': earningsPerHourInt,
         if (earningsRange != null) 'earningsRange': earningsRange,
         if (requirement != null) 'requirement': requirement,
         if (costText != null) 'cost': costText,
         if (requirementsStars != null) 'requirementsStars': requirementsStars,
+        if (requirementsLikes != null) 'requirementsLikes': requirementsLikes,
         if (price != null) 'price': price!.map((e) => e.toJson()).toList(),
         if (tiers != null) 'tiers': tiers!.map((e) => e.toJson()).toList(),
         if (refinedRating != null) 'refinedRating': refinedRating,
-        if (ingredients != null) 'ingredients': ingredients,
+        if (ingredientsList != null)
+          'ingredients': ingredientsList!.map((e) => e.toJson()).toList(),
         if (perfectDishes != null) 'perfectDishes': perfectDishes,
         if (prepTimeSeconds != null) 'prepTimeSeconds': prepTimeSeconds,
         if (flavor != null) 'flavor': flavor,
       };
 }
 
-// ---- helpers ----
 int? _asIntOrNull(dynamic v) {
   if (v == null) return null;
   if (v is int) return v;
