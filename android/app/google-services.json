@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "174067290396",
+    "project_id": "ar-progress-tracker-1b3d8",
+    "storage_bucket": "ar-progress-tracker-1b3d8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174067290396:android:b1fa5d08ea39346ac66ad9",
+        "android_client_info": {
+          "package_name": "com.example.animal_restaurant_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu7NFv3qk1BvfcfPETyZCLt9nT_5YBoWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
