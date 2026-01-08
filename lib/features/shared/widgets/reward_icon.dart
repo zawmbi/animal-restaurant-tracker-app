@@ -13,7 +13,7 @@ class RewardIcon extends StatelessWidget {
   //  CHANGE THESE PATHS to match your real png locations in /assets
   static const String diamondPng = 'assets/images/diamond.png';
   static const String codPng = 'assets/images/cod.png';
-  static const String platesPng = 'assets/images/plates.png';
+  static const String platesPng = 'assets/images/plate.png';
   static const String certificatePng = 'assets/images/certificate_one.png';
   static const String mementoPng = 'assets/images/memento.png';
 

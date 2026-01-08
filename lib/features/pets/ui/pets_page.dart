@@ -20,8 +20,8 @@ class _PetsPageState extends State<PetsPage> {
     'cod': 'assets/images/cod.png',
     'film': 'assets/images/film.png',
     'bell': 'assets/images/bell.png',
-    'plates': 'assets/images/plates.png',
-    'diamonds': 'assets/images/diamonds.png',
+    'plates': 'assets/images/plate.png',
+    'diamonds': 'assets/images/diamond.png',
   };
 
   Widget _currencyPill(String currency, int amount) {
@@ -212,8 +212,8 @@ class _PetRoomsAndPhotosPageState extends State<_PetRoomsAndPhotosPage> {
     'cod': 'assets/images/cod.png',
     'film': 'assets/images/film.png',
     'bell': 'assets/images/bell.png',
-    'plates': 'assets/images/plates.png',
-    'diamonds': 'assets/images/diamonds.png',
+    'plates': 'assets/images/plate.png',
+    'diamonds': 'assets/images/diamond.png',
   };
 
   Widget _currencyPill(String currency, int amount) {

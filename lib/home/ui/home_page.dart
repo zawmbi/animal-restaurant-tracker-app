@@ -26,6 +26,11 @@ import '../../features/redemption_codes/ui/redemption_codes_page.dart';
 import 'package:animal_restaurant_tracker/features/courtyard/ui/courtyard_page.dart';
 import 'package:animal_restaurant_tracker/features/aromatic_acorn/ui/aromatic_acorn_page.dart';
 import 'package:animal_restaurant_tracker/features/staff/ui/staff_page.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:animal_restaurant_tracker/features/auth/ui/login_page.dart';
+import 'package:animal_restaurant_tracker/features/auth/data/auth_service.dart';
+import 'package:animal_restaurant_tracker/features/movies/ui/movies_page.dart';
+import 'package:animal_restaurant_tracker/features/support/ui/support_page.dart';
 
 import '../../features/letters/ui/letters_page.dart';
 import '../../features/mementos/ui/mementos_page.dart';
@@ -35,6 +40,10 @@ import '../../features/settings/ui/settings_page.dart';
 
 import '../../features/customers/data/customers_repository.dart';
 import 'package:animal_restaurant_tracker/features/mementos/data/mementos_index.dart';
+
+// Auth (for sign out button)
+import 'package:animal_restaurant_tracker/features/auth/data/auth_service.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 // ^ if your file is named differently (ex: mementos_detail_page.dart), use that instead.
 
@@ -78,12 +87,6 @@ class _HomePageState extends State<HomePage> {
       });
     });
   }
-
-  // Convert a display name -> your underscored id format.
-  // Example:
-  //   "Teddy Bear Stove" -> "teddy_bear_stove"
-  //   "Gumi's Custom Doors" -> "gumis_custom_doors"
-  //   "Vibrant Flower Long 2" -> "vibrant_flower_long_2"
 
   void _openHit(SearchHit h) async {
     switch (h.type) {
@@ -144,10 +147,32 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
+  Future<void> _signOut() async {
+    await AuthService.instance.signOut();
+    // AuthGate will swap back to LoginPage automatically.
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Home')),
+      appBar: AppBar(
+        title: const Text('Home'),
+        actions: [
+          StreamBuilder<User?>(
+            stream: FirebaseAuth.instance.authStateChanges(),
+            builder: (context, snap) {
+              final user = snap.data;
+              if (user == null) return const SizedBox.shrink();
+
+              return IconButton(
+                tooltip: 'Sign out',
+                onPressed: _signOut,
+                icon: const Icon(Icons.logout),
+              );
+            },
+          ),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
@@ -200,8 +225,6 @@ class _HomePageState extends State<HomePage> {
                           case HitType.memento:
                             bucket = 'memento_collected';
                             break;
-
-                          //  Battle Pass progress tracking bucket (only if you want checkboxes here)
                           case HitType.battlePass:
                             bucket = 'battle_pass';
                             break;
@@ -277,14 +300,17 @@ class _HomePageState extends State<HomePage> {
               ),
               _navTile(
                 context,
+                Icons.movie,
+                'Movies',
+                const MoviesPage(),
+              ),
+              _navTile(
+                context,
                 Icons.attach_money,
                 'Bank',
                 const BankPage(),
-
-
               ),
-
-               _navTile(
+              _navTile(
                 context,
                 Icons.pets,
                 'Pets',
@@ -335,6 +361,19 @@ class _HomePageState extends State<HomePage> {
                 'Settings',
                 const SettingsPage(),
               ),
+              _navTile(
+                context,
+                Icons.person,
+                'Login',
+                const _AccountPage(),
+              ),
+              _navTile(
+              context,
+              Icons.support_agent,
+              'Support',
+              const SupportPage(),
+            ),
+
             ],
           ),
         ],
@@ -441,6 +480,49 @@ class _AromaticAcornPlaceholderPage extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
       ),
+    );
+  }
+}
+class _AccountPage extends StatelessWidget {
+  const _AccountPage();
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder<User?>(
+      stream: FirebaseAuth.instance.authStateChanges(),
+      builder: (context, snap) {
+        final user = snap.data;
+
+        if (user == null) {
+          return const LoginPage();
+        }
+
+        return Scaffold(
+          appBar: AppBar(title: const Text('Account')),
+          body: ListView(
+            padding: const EdgeInsets.all(16),
+            children: [
+              Text(
+                'Signed in as ${user.email ?? user.uid}',
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              const SizedBox(height: 16),
+              ElevatedButton(
+                onPressed: () async {
+                  await AuthService.instance.signOut();
+                  if (context.mounted) Navigator.of(context).pop();
+                },
+                child: const Text('Sign out'),
+              ),
+              const SizedBox(height: 12),
+              const Text(
+                'If you sign in, your progress can sync across devices. '
+                'If you do not sign in, your progress still saves locally on this device.',
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

@@ -1403,16 +1403,6 @@
     "description": "Round and sticky. Oh, it's also mildly sweet!",
     "earningsPerHour": 3000,
     "requirementsStars": 0,
-    "price": [{ "currency": "cod", "amount": 0 }]
-  },
- 
-  {
-    "id": "strawberry_daifuku",
-    "name": "Strawberry Daifuku",
-    "sections": ["Buffet"],
-    "description": "Round and sticky. Oh, it's also mildly sweet!",
-    "earningsPerHour": 3000,
-    "requirementsStars": 0,
     "price": [{ "currency": "plates", "amount": 0 }]
   },
   {

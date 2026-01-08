@@ -1,14 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+
 import 'theme/app_theme.dart';
 import 'home/ui/home_page.dart';
 import 'package:animal_restaurant_tracker/features/timers/data/timer_service.dart';
+import 'package:animal_restaurant_tracker/features/shared/data/unlocked_store.dart';
+
+import 'firebase_options.dart';
+import 'package:animal_restaurant_tracker/features/auth/ui/auth_binder.dart';
 
 final GlobalKey<NavigatorState> _navKey = GlobalKey<NavigatorState>();
 final ValueNotifier<int> _navTick = ValueNotifier<int>(0);
 
-void main() async {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   await TimerService.instance.init();
+  await UnlockedStore.instance.init();
+
   runApp(const AnimalRestaurantApp());
 }
 
@@ -23,7 +36,9 @@ class AnimalRestaurantApp extends StatelessWidget {
       title: 'Animal Restaurant Tracker',
       debugShowCheckedModeBanner: false,
       theme: buildAppTheme(),
-      home: const HomePage(),
+      home: const AuthBinder(
+        child: HomePage(),
+      ),
       builder: (context, child) {
         if (child == null) return const SizedBox.shrink();
         return _GlobalHomeOverlay(child: child);
@@ -37,7 +52,6 @@ class _OverlayNavObserver extends NavigatorObserver {
   _OverlayNavObserver(this.tick);
 
   void _bump() {
-    // Delay to avoid "markNeedsBuild called during build"
     WidgetsBinding.instance.addPostFrameCallback((_) {
       tick.value++;
     });
@@ -91,7 +105,6 @@ class _HomeOverlayButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // No FloatingActionButton => no Hero/Overlay requirement.
     return Material(
       elevation: 6,
       shape: const CircleBorder(),

@@ -1,9 +1,13 @@
+// ignore_for_file: unused_element
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:animal_restaurant_tracker/features/shared/data/unlocked_store.dart';
 import 'package:animal_restaurant_tracker/features/timers/data/timer_service.dart';
-import 'package:animal_restaurant_tracker/features/settings/data/feedback_service.dart';
+
+import '../../support/ui/support_page.dart';
+import 'app_settings_page.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -13,10 +17,6 @@ class SettingsPage extends StatefulWidget {
 }
 
 class _SettingsPageState extends State<SettingsPage> {
-  final _feedbackCtrl = TextEditingController();
-  final _contactCtrl = TextEditingController();
-  bool _sendingFeedback = false;
-
   late final SyncedVersionsData _syncedVersions;
 
   // Edit this JSON whenever you want (no other code changes needed).
@@ -44,13 +44,6 @@ class _SettingsPageState extends State<SettingsPage> {
     _syncedVersions = SyncedVersionsData.fromJson(
       jsonDecode(_syncedVersionsJson) as Map<String, dynamic>,
     );
-  }
-
-  @override
-  void dispose() {
-    _feedbackCtrl.dispose();
-    _contactCtrl.dispose();
-    super.dispose();
   }
 
   Future<void> _confirmAndWipe(BuildContext context) async {
@@ -92,48 +85,23 @@ class _SettingsPageState extends State<SettingsPage> {
     );
   }
 
-  Future<void> _submitFeedback(BuildContext context) async {
-    final msg = _feedbackCtrl.text.trim();
-    final contact = _contactCtrl.text.trim();
-
-    if (msg.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Please enter some feedback first.')),
-      );
-      return;
-    }
-
-    setState(() => _sendingFeedback = true);
-    try {
-      await FeedbackService.instance.sendFeedback(
-        message: msg,
-        contact: contact.isEmpty ? null : contact,
-      );
-
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Feedback sent. Thank you.')),
-      );
-
-      _feedbackCtrl.clear();
-      _contactCtrl.clear();
-    } catch (e) {
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Feedback failed: $e')),
-      );
-    } finally {
-      if (mounted) {
-        setState(() => _sendingFeedback = false);
-      }
-    }
-  }
-
   void _openSyncedVersions() {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => SyncedVersionsPage(data: _syncedVersions),
       ),
+    );
+  }
+
+  void _openSupport() {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => const SupportPage()),
+    );
+  }
+
+  void _openAppSettings() {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => const AppSettingsPage()),
     );
   }
 
@@ -151,69 +119,42 @@ class _SettingsPageState extends State<SettingsPage> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          // Basic info
-
-          const SizedBox(height: 16),
-
-          // Feedback (stays in this page, no redirection)
+          // Tiles at top: Settings + Support
           Card(
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Feedback / Report Bugs',
-                    style: Theme.of(context).textTheme.titleLarge,
+            child: Column(
+              children: [
+                ListTile(
+                  title: Text(
+                    'App Settings',
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'Have feedback, concerns, or ideas? Fill this form out and it will be '
-                    'sent through the app. We will get back to you as soon as possible.',
-                    style: Theme.of(context).textTheme.bodySmall,
+                  subtitle: const Padding(
+                    padding: EdgeInsets.only(top: 6),
+                    child: Text('Preferences for the app (dark mode coming soon).'),
                   ),
-                  const SizedBox(height: 12),
-                  TextField(
-                    controller: _feedbackCtrl,
-                    maxLines: 5,
-                    decoration: const InputDecoration(
-                      labelText: 'Feedback / concerns',
-                      alignLabelWithHint: true,
-                      border: OutlineInputBorder(),
-                    ),
+                  trailing: const Icon(Icons.chevron_right),
+                  onTap: _openAppSettings,
+                ),
+                const Divider(height: 1),
+                ListTile(
+                  title: Text(
+                    'Support',
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
-                  const SizedBox(height: 8),
-                  TextField(
-                    controller: _contactCtrl,
-                    decoration: const InputDecoration(
-                      labelText: 'Contact info (optional)',
-                      hintText: 'Email, Discord, etc.',
-                      border: OutlineInputBorder(),
-                    ),
+                  subtitle: const Padding(
+                    padding: EdgeInsets.only(top: 6),
+                    child: Text('Feedback, bug reports, and support links.'),
                   ),
-                  const SizedBox(height: 12),
-                  Align(
-                    alignment: Alignment.centerRight,
-                    child: FilledButton(
-                      onPressed:
-                          _sendingFeedback ? null : () => _submitFeedback(context),
-                      child: _sendingFeedback
-                          ? const SizedBox(
-                              width: 18,
-                              height: 18,
-                              child: CircularProgressIndicator(strokeWidth: 2),
-                            )
-                          : const Text('Send feedback'),
-                    ),
-                  ),
-                ],
-              ),
+                  trailing: const Icon(Icons.chevron_right),
+                  onTap: _openSupport,
+                ),
+              ],
             ),
           ),
 
           const SizedBox(height: 16),
 
-          //  Synced Versions (second-to-last section)
+          // Synced Versions (kept here)
           Card(
             child: ListTile(
               title: Text(
@@ -285,8 +226,7 @@ class SyncedVersionsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final latestLine =
-        data.latestSynced ? 'Synced' : 'Not Fully Synced';
+    final latestLine = data.latestSynced ? 'Synced' : 'Not Fully Synced';
     final upcomingLine = data.upcomingProvided
         ? (data.upcomingVersion == null || data.upcomingVersion!.trim().isEmpty
             ? 'Yes'
@@ -327,9 +267,7 @@ class SyncedVersionsPage extends StatelessWidget {
               ),
             ),
           ),
-
           const SizedBox(height: 16),
-
           Card(
             child: Padding(
               padding: const EdgeInsets.all(16),
@@ -341,8 +279,6 @@ class SyncedVersionsPage extends StatelessWidget {
                     style: Theme.of(context).textTheme.titleMedium,
                   ),
                   const SizedBox(height: 8),
-
-                  // Keep this from becoming a giant screen-tall table
                   ConstrainedBox(
                     constraints: const BoxConstraints(maxHeight: 320),
                     child: SingleChildScrollView(
