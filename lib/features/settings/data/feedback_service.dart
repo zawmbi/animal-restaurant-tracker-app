@@ -6,7 +6,7 @@ class FeedbackService {
   static final FeedbackService instance = FeedbackService._();
 
 static const String _endpoint =
-  'https://backendfeedbackartracker.vercel.app/api/feedback/';
+  'https://backendfeedbackartracker.vercel.app/api/feedback';
 
   Future<void> sendFeedback({
     required String message,
