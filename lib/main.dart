@@ -9,8 +9,14 @@ import 'package:animal_restaurant_tracker/features/shared/data/unlocked_store.da
 import 'firebase_options.dart';
 import 'package:animal_restaurant_tracker/features/auth/ui/auth_binder.dart';
 
+//  ADD: settings controller
+import 'package:animal_restaurant_tracker/features/settings/data/app_settings_controller.dart';
+
 final GlobalKey<NavigatorState> _navKey = GlobalKey<NavigatorState>();
 final ValueNotifier<int> _navTick = ValueNotifier<int>(0);
+
+//  ADD: single shared settings instance
+final AppSettingsController appSettings = AppSettingsController();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,6 +28,9 @@ Future<void> main() async {
   await TimerService.instance.init();
   await UnlockedStore.instance.init();
 
+  //  ADD: load saved theme mode before building UI
+  await appSettings.load();
+
   runApp(const AnimalRestaurantApp());
 }
 
@@ -30,18 +39,27 @@ class AnimalRestaurantApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      navigatorKey: _navKey,
-      navigatorObservers: [_OverlayNavObserver(_navTick)],
-      title: 'Animal Restaurant Tracker',
-      debugShowCheckedModeBanner: false,
-      theme: buildAppTheme(),
-      home: const AuthBinder(
-        child: HomePage(),
-      ),
-      builder: (context, child) {
-        if (child == null) return const SizedBox.shrink();
-        return _GlobalHomeOverlay(child: child);
+    //  Rebuild MaterialApp when settings change (theme mode toggled)
+    return AnimatedBuilder(
+      animation: appSettings,
+      builder: (context, _) {
+        return MaterialApp(
+          navigatorKey: _navKey,
+          navigatorObservers: [_OverlayNavObserver(_navTick)],
+          title: 'Animal Restaurant Tracker',
+          debugShowCheckedModeBanner: false,
+          theme: buildLightTheme(),
+          darkTheme: buildDarkTheme(),
+          themeMode: appSettings.themeMode,
+
+          home: const AuthBinder(
+            child: HomePage(),
+          ),
+          builder: (context, child) {
+            if (child == null) return const SizedBox.shrink();
+            return _GlobalHomeOverlay(child: child);
+          },
+        );
       },
     );
   }
@@ -89,7 +107,8 @@ class _GlobalHomeOverlay extends StatelessWidget {
                 right: 16,
                 bottom: 16,
                 child: _HomeOverlayButton(
-                  onPressed: () => _navKey.currentState?.popUntil((r) => r.isFirst),
+                  onPressed: () =>
+                      _navKey.currentState?.popUntil((r) => r.isFirst),
                 ),
               ),
           ],

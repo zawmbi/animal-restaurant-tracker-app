@@ -2,6 +2,7 @@
 
 import 'dart:convert';
 
+import 'package:animal_restaurant_tracker/main.dart';
 import 'package:flutter/material.dart';
 import 'package:animal_restaurant_tracker/features/shared/data/unlocked_store.dart';
 import 'package:animal_restaurant_tracker/features/timers/data/timer_service.dart';
@@ -99,11 +100,14 @@ class _SettingsPageState extends State<SettingsPage> {
     );
   }
 
-  void _openAppSettings() {
+      void _openAppSettings() {
     Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => const AppSettingsPage()),
+      MaterialPageRoute(
+        builder: (_) => AppSettingsPage(settings: appSettings),
+      ),
     );
-  }
+
+      }
 
   @override
   Widget build(BuildContext context) {
@@ -130,7 +134,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   ),
                   subtitle: const Padding(
                     padding: EdgeInsets.only(top: 6),
-                    child: Text('Preferences for the app (dark mode coming soon).'),
+                    child: Text('Dark Mode'),
                   ),
                   trailing: const Icon(Icons.chevron_right),
                   onTap: _openAppSettings,
