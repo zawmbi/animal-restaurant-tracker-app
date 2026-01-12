@@ -41,11 +41,7 @@ import '../../features/settings/ui/settings_page.dart';
 import '../../features/customers/data/customers_repository.dart';
 import 'package:animal_restaurant_tracker/features/mementos/data/mementos_index.dart';
 
-// Auth (for sign out button)
-import 'package:animal_restaurant_tracker/features/auth/data/auth_service.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
-// ^ if your file is named differently (ex: mementos_detail_page.dart), use that instead.
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

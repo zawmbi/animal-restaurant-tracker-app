@@ -14,7 +14,7 @@ class PetsPage extends StatefulWidget {
 class _PetsPageState extends State<PetsPage> {
   final progress = PetProgress.instance;
 
-  // ✅ Map your currency keys -> asset icons
+  // Map your currency keys -> asset icons
   // Update filenames here if yours differ.
   static const Map<String, String> _currencyIcon = {
     'cod': 'assets/images/cod.png',

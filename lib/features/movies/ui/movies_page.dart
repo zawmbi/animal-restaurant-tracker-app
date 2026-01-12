@@ -19,7 +19,6 @@ class _MoviesPageState extends State<MoviesPage> {
   @override
   void initState() {
     super.initState();
-    // Ensure the bucket exists even if it was not part of default types.
     store.registerType(_bucket);
   }
 
@@ -34,15 +33,36 @@ class _MoviesPageState extends State<MoviesPage> {
   bool _isComplete(Movie m) => _checkedCount(m) == m.actCount;
 
   Future<void> _setAll(Movie m, bool value) async {
-    // Do sequential to keep behavior stable and predictable.
     for (final k in m.allActKeys()) {
       await store.setUnlocked(_bucket, k, value);
     }
   }
 
+  // Map JSON currency keys -> actual asset filenames in assets/images/
+  String _currencyAsset(String currencyKey) {
+    switch (currencyKey) {
+      case 'plates':
+        return 'assets/images/plate.png';
+      case 'diamonds':
+        return 'assets/images/diamond.png';
+      case 'bells':
+        return 'assets/images/bell.png';
+      case 'cod':
+        return 'assets/images/cod.png';
+      case 'film':
+        return 'assets/images/film.png';
+      case 'like':
+        return 'assets/images/like.png';
+      case 'star':
+        return 'assets/images/star.png';
+      default:
+        return 'assets/images/$currencyKey.png';
+    }
+  }
+
   Widget _currencyIcon(String currencyKey, double size) {
     return Image.asset(
-      'assets/images/$currencyKey.png',
+      _currencyAsset(currencyKey),
       width: size,
       height: size,
       fit: BoxFit.contain,

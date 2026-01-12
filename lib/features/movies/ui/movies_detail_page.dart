@@ -43,9 +43,32 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
     return c;
   }
 
+  // Map JSON currency keys -> actual asset filenames in assets/images/
+  String _currencyAsset(String currencyKey) {
+    switch (currencyKey) {
+      case 'plates':
+        return 'assets/images/plate.png';
+      case 'diamonds':
+        return 'assets/images/diamond.png';
+      case 'bells':
+        return 'assets/images/bell.png';
+      case 'cod':
+        return 'assets/images/cod.png';
+      case 'film':
+        return 'assets/images/film.png';
+      case 'like':
+        return 'assets/images/like.png';
+      case 'star':
+        return 'assets/images/star.png';
+      default:
+        // Fallback if you add a currency later that matches its filename
+        return 'assets/images/$currencyKey.png';
+    }
+  }
+
   Widget _currencyIcon(String currencyKey, double size) {
     return Image.asset(
-      'assets/images/$currencyKey.png',
+      _currencyAsset(currencyKey),
       width: size,
       height: size,
       fit: BoxFit.contain,
@@ -130,7 +153,8 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                     return Card(
                       child: CheckboxListTile(
                         value: isOn,
-                        onChanged: (v) => store.setUnlocked(_bucket, key, v ?? false),
+                        onChanged: (v) =>
+                            store.setUnlocked(_bucket, key, v ?? false),
                         title: Text('Act $actNum'),
                         controlAffinity: ListTileControlAffinity.trailing,
                       ),
