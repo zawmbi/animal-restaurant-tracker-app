@@ -9,6 +9,13 @@ class LettersRepository {
   static final LettersRepository instance = LettersRepository._();
 
   List<Letter>? _cache;
+  Future<Letter?> byId(String id) async {
+    final list = await all();
+    for (final l in list) {
+      if (l.id == id) return l;
+    }
+    return null;
+  }
 
   Future<List<Letter>> all() async {
     if (_cache != null) return _cache!;

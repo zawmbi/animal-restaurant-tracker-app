@@ -1,19 +1,41 @@
 import 'package:flutter/material.dart';
+
 import '../model/customer.dart';
 import '../../dishes/ui/dish_detail_page.dart';
 import '../../facilities/ui/facility_detail_page.dart';
 import '../../letters/ui/letter_detail_page.dart';
 import '../../shared/widgets/entity_chip.dart';
 import '../../mementos/data/mementos_index.dart';
+import '../../letters/data/letters_repository.dart';
+import '../../letters/model/letter.dart';
+import '../../shared/data/unlocked_store.dart';
+import '../../mementos/ui/mementos_detail_page.dart';
 
-
-class CustomerDetailPage extends StatelessWidget {
+class CustomerDetailPage extends StatefulWidget {
   final Customer customer;
   const CustomerDetailPage({super.key, required this.customer});
 
   @override
+  State<CustomerDetailPage> createState() => _CustomerDetailPageState();
+}
+
+class _CustomerDetailPageState extends State<CustomerDetailPage> {
+  final store = UnlockedStore.instance;
+
+  // Buckets that match YOUR app pages
+  static const String _bucketDish = 'dish';
+  static const String _bucketLetter = 'letter';
+  static const String _bucketFacility = 'facility'; // change if yours differs
+  static const String _bucketMementoCollected = 'memento_collected';
+
+  Customer get customer => widget.customer;
+
+  Color _ownedFill(BuildContext context) => Colors.green.withOpacity(0.18);
+
+  @override
   Widget build(BuildContext context) {
     final r = customer.requirements;
+    final ownedFill = _ownedFill(context);
 
     return Scaffold(
       appBar: AppBar(title: Text(customer.name)),
@@ -43,62 +65,114 @@ class CustomerDetailPage extends StatelessWidget {
                 r.rating!,
               ),
 
-            _links(
-              context,
-              'Required Recipes',
-              r.recipes,
-              (id) => DishDetailPage(dishId: id),
+            // Recipes: stored as ids, bucket 'dish'
+            _simpleLinks(
+              context: context,
+              title: 'Required Recipes',
+              ids: r.recipes,
+              isOwned: (id) => store.isUnlocked(_bucketDish, id.toString()),
+              fillIfOwned: ownedFill,
+              onTap: (id) async {
+                await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => DishDetailPage(dishId: id.toString()),
+                  ),
+                );
+                if (!mounted) return;
+                setState(() {});
+              },
             ),
 
-            _links(
-              context,
-              'Required Facilities',
-              r.facilities,
-              (id) => FacilityDetailPage(facilityId: id),
+            // Facilities: stored as ids, bucket assumed 'facility'
+            _simpleLinks(
+              context: context,
+              title: 'Required Facilities',
+              ids: r.facilities,
+              isOwned: (id) => store.isUnlocked(_bucketFacility, id.toString()),
+              fillIfOwned: ownedFill,
+              onTap: (id) async {
+                await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) =>
+                        FacilityDetailPage(facilityId: id.toString()),
+                  ),
+                );
+                if (!mounted) return;
+                setState(() {});
+              },
             ),
 
-            _links(
-              context,
-              'Required Letters',
-              r.letters,
-              (id) => LetterDetailPage(letter: id),
+            // Letters: ids -> load Letter -> open LetterDetailPage(letter: Letter)
+            _simpleLinks(
+              context: context,
+              title: 'Required Letters',
+              ids: r.letters,
+              isOwned: (id) => store.isUnlocked(_bucketLetter, id.toString()),
+              fillIfOwned: ownedFill,
+              onTap: (id) async {
+                final Letter? letter =
+                    await LettersRepository.instance.byId(id.toString());
+                if (!mounted || letter == null) return;
+
+                await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => LetterDetailPage(letter: letter),
+                  ),
+                );
+                if (!mounted) return;
+                setState(() {});
+              },
             ),
           ],
-if (customer.mementos.isNotEmpty) ...[
-  const SizedBox(height: 24),
-  const Text(
-    'Mementos',
-    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-  ),
-  Wrap(
-    spacing: 8,
-    children: customer.mementos.map((m) {
-      return EntityChip(
-        label: m.name,
-        onTap: () async {
-          // 🔑 resolve the REAL memento entry
-          final entry =
-              await MementosIndex.instance.byId(m.id);
 
-          if (entry == null || !context.mounted) return;
-
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (_) => Scaffold(
-                appBar: AppBar(title: Text(entry.name ?? 'Memento')),
-                body: Padding(
-                  padding: EdgeInsets.all(16),
-                  child: Text(entry.description ?? ''),
-                ),
-              ),
+          // Mementos: customer.mementos gives you objects with .id/.name
+          // BUT your collected key in MementosPage is e.key under bucket 'memento_collected'
+          // So we resolve the index entry first and use entry.key for ownership.
+          if (customer.mementos.isNotEmpty) ...[
+            const SizedBox(height: 24),
+            const Text(
+              'Mementos',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-          );
-        },
-      );
-    }).toList(),
-  ),
-],
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: customer.mementos.map((m) {
+                return FutureBuilder(
+                  future: MementosIndex.instance.byId(m.id),
+                  builder: (context, snap) {
+                    final entry = snap.data;
+
+                    final collected = (entry != null)
+                        ? store.isUnlocked('memento_collected', entry.key)
+                        : false;
+
+                    return EntityChip(
+                      label: m.name,
+                      fillColor: collected ? Colors.green.withOpacity(0.18) : null,
+                      onTap: () async {
+                        final real = entry ?? await MementosIndex.instance.byId(m.id);
+                        if (real == null || !context.mounted) return;
+
+                        await Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => MementoDetailPage(memento: real),
+                          ),
+                        );
+
+                        // IMPORTANT: requires CustomerDetailPage to be StatefulWidget
+                        if (mounted) setState(() {});
+                      },
+                    );
+                  },
+                );
+              }).toList(),
+            ),
+          ],
 
         ],
       ),
@@ -127,12 +201,14 @@ if (customer.mementos.isNotEmpty) ...[
     );
   }
 
-  Widget _links(
-    BuildContext context,
-    String title,
-    List ids,
-    Widget Function(dynamic id) pageBuilder,
-  ) {
+  Widget _simpleLinks({
+    required BuildContext context,
+    required String title,
+    required List ids,
+    required bool Function(dynamic id) isOwned,
+    required Color fillIfOwned,
+    required Future<void> Function(dynamic id) onTap,
+  }) {
     if (ids.isEmpty) return const SizedBox.shrink();
 
     return Column(
@@ -142,19 +218,15 @@ if (customer.mementos.isNotEmpty) ...[
         Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
         Wrap(
           spacing: 8,
-          children: ids
-              .map(
-                (id) => EntityChip(
-                  label: id.toString(),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (_) => pageBuilder(id)),
-                    );
-                  },
-                ),
-              )
-              .toList(),
+          runSpacing: 8,
+          children: ids.map((id) {
+            final owned = isOwned(id);
+            return EntityChip(
+              label: id.toString(),
+              fillColor: owned ? fillIfOwned : null,
+              onTap: () => onTap(id),
+            );
+          }).toList(),
         ),
       ],
     );

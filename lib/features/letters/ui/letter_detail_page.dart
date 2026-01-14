@@ -15,8 +15,6 @@ class LetterDetailPage extends StatelessWidget {
 
   const LetterDetailPage({super.key, required this.letter});
 
-  // TODO: change this to the real path of YOUR star png asset.
-  // Example: 'assets/images/star.png' or 'assets/icons/star.png'
   static const String _starAsset = 'assets/images/star.png';
 
   @override

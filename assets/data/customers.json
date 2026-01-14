@@ -2,7 +2,7 @@
   {
     "id": "white_bunny",
     "name": "White Bunny",
-    "tags": ["customer", "restaurant", "very_common"],
+    "tags": ["customer", "restaurant", "very_common", "regular"],
     "livesIn": "Nearby",
     "appearanceWeight": 10000,
     "requiredFoodId": "Taiyaki",
