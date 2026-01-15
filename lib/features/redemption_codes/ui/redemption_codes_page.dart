@@ -98,10 +98,11 @@ class _CodeWithMemento {
   _CodeWithMemento({required this.code, required this.memento});
 }
 
-enum RedemptionSortMode {
-  dateDesc,
+enum RedemptionSortColumn {
+  code,
+  valid,
+  date,
   owned,
-  startMonthDesc,
 }
 
 class RedemptionCodesPage extends StatefulWidget {
@@ -114,7 +115,10 @@ class RedemptionCodesPage extends StatefulWidget {
 class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
   final store = UnlockedStore.instance;
   late Future<List<_CodeWithMemento>> _future;
-  RedemptionSortMode _sortMode = RedemptionSortMode.dateDesc;
+
+  // NEW: clickable column sort state
+  RedemptionSortColumn _sortColumn = RedemptionSortColumn.date;
+  bool _ascending = false; // default: Date newest first (descending)
 
   @override
   void initState() {
@@ -135,7 +139,7 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
         .map((e) => RedemptionCode.fromJson(e as Map<String, dynamic>))
         .toList();
 
-    // Default sort: newest start date first
+    // default order in data (doesn't matter much because we sort in UI)
     codes.sort((a, b) => b.validFrom.compareTo(a.validFrom));
 
     return codes
@@ -155,49 +159,124 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
     return '$y-$m-$day';
   }
 
-  void _sortItems(List<_CodeWithMemento> items) {
-    switch (_sortMode) {
-      case RedemptionSortMode.dateDesc:
-        items.sort(
-          (a, b) => b.code.validFrom.compareTo(a.code.validFrom),
-        );
-        break;
-
-      case RedemptionSortMode.owned:
-        items.sort((a, b) {
-          final aOwned = a.memento != null &&
-              store.isUnlocked('memento_collected', a.memento!.key);
-          final bOwned = b.memento != null &&
-              store.isUnlocked('memento_collected', b.memento!.key);
-
-          if (aOwned != bOwned) {
-            // owned first
-            return aOwned ? -1 : 1;
-          }
-          // then by date (newest first)
-          return b.code.validFrom.compareTo(a.code.validFrom);
-        });
-        break;
-
-      case RedemptionSortMode.startMonthDesc:
-        items.sort((a, b) {
-          final aKey = a.code.validFrom.year * 100 + a.code.validFrom.month;
-          final bKey = b.code.validFrom.year * 100 + b.code.validFrom.month;
-          return bKey.compareTo(aKey); // latest month first
-        });
-        break;
-    }
+  bool _isOwned(_CodeWithMemento item) {
+    final m = item.memento;
+    if (m == null) return false;
+    return store.isUnlocked('memento_collected', m.key);
   }
 
-  String _sortModeLabel(RedemptionSortMode mode) {
-    switch (mode) {
-      case RedemptionSortMode.dateDesc:
-        return 'Date (newest first)';
-      case RedemptionSortMode.owned:
-        return 'Owned first';
-      case RedemptionSortMode.startMonthDesc:
-        return 'Starting month';
+  void _sortItems(List<_CodeWithMemento> items) {
+    int cmpBool(bool a, bool b) {
+      if (a == b) return 0;
+      return a ? 1 : -1; // false < true in ascending
     }
+
+    int cmpStr(String a, String b) => a.toLowerCase().compareTo(b.toLowerCase());
+
+    int cmpDate(DateTime a, DateTime b) => a.compareTo(b);
+
+    items.sort((a, b) {
+      int result = 0;
+
+      switch (_sortColumn) {
+        case RedemptionSortColumn.code:
+          result = cmpStr(a.code.code, b.code.code);
+          break;
+
+        case RedemptionSortColumn.valid:
+          // valid false/true (ascending puts invalid first, descending puts valid first)
+          result = cmpBool(a.code.isCurrentlyValid, b.code.isCurrentlyValid);
+          break;
+
+        case RedemptionSortColumn.date:
+          // use validFrom as the sort date
+          result = cmpDate(a.code.validFrom, b.code.validFrom);
+          break;
+
+        case RedemptionSortColumn.owned:
+          // owned false/true
+          result = cmpBool(_isOwned(a), _isOwned(b));
+          break;
+      }
+
+      if (!_ascending) result = -result;
+
+      // stable-ish tie breaker: always by code (A-Z)
+      if (result == 0) {
+        result = cmpStr(a.code.code, b.code.code);
+      }
+      return result;
+    });
+  }
+
+  void _toggleSort(RedemptionSortColumn col) {
+    setState(() {
+      if (_sortColumn == col) {
+        _ascending = !_ascending; // tap same header toggles direction
+      } else {
+        _sortColumn = col;
+        // choose sensible defaults per column
+        switch (col) {
+          case RedemptionSortColumn.code:
+            _ascending = true; // A-Z first
+            break;
+          case RedemptionSortColumn.valid:
+            _ascending = false; // valid first
+            break;
+          case RedemptionSortColumn.date:
+            _ascending = false; // newest first
+            break;
+          case RedemptionSortColumn.owned:
+            _ascending = false; // owned first
+            break;
+        }
+      }
+    });
+  }
+
+  Widget _sortHeaderCell({
+    required BuildContext context,
+    required int flex,
+    required String label,
+    required RedemptionSortColumn column,
+    Alignment alignment = Alignment.centerLeft,
+  }) {
+    final theme = Theme.of(context);
+    final isActive = _sortColumn == column;
+
+    final arrow = isActive
+        ? Icon(
+            _ascending ? Icons.arrow_upward : Icons.arrow_downward,
+            size: 14,
+            color: theme.textTheme.bodyMedium?.color,
+          )
+        : const SizedBox(width: 14);
+
+    return Expanded(
+      flex: flex,
+      child: InkWell(
+        onTap: () => _toggleSort(column),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 6),
+          child: Align(
+            alignment: alignment,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  label,
+                  style: theme.textTheme.bodyMedium?.copyWith(
+                    fontWeight: isActive ? FontWeight.w700 : FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(width: 6),
+                arrow,
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 
   void _openMemento(MementoEntry m) {
@@ -215,23 +294,6 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Redemption Codes'),
-        actions: [
-          PopupMenuButton<RedemptionSortMode>(
-            icon: const Icon(Icons.sort),
-            onSelected: (mode) {
-              setState(() {
-                _sortMode = mode;
-              });
-            },
-            itemBuilder: (context) => [
-              for (final mode in RedemptionSortMode.values)
-                PopupMenuItem(
-                  value: mode,
-                  child: Text(_sortModeLabel(mode)),
-                ),
-            ],
-          ),
-        ],
       ),
       body: AnimatedBuilder(
         animation: store,
@@ -253,24 +315,44 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
 
               return Column(
                 children: [
-                  // header row = "table" header
+                  // header row = clickable "table" header
                   Container(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                     decoration: BoxDecoration(
                       border: Border(
                         bottom: BorderSide(color: theme.dividerColor, width: 1),
                       ),
                     ),
                     child: Row(
-                      children: const [
-                        Expanded(flex: 2, child: Text('Code')),
-                        Expanded(
-                          flex: 1,
-                          child: Center(child: Text('Valid?')),
+                      children: [
+                        _sortHeaderCell(
+                          context: context,
+                          flex: 2,
+                          label: 'Code',
+                          column: RedemptionSortColumn.code,
+                          alignment: Alignment.centerLeft,
                         ),
-                        Expanded(flex: 3, child: Text('Date Range')),
-                        Expanded(flex: 3, child: Text('Owned')),
+                        _sortHeaderCell(
+                          context: context,
+                          flex: 1,
+                          label: 'Valid',
+                          column: RedemptionSortColumn.valid,
+                          alignment: Alignment.center,
+                        ),
+                        _sortHeaderCell(
+                          context: context,
+                          flex: 3,
+                          label: 'Date',
+                          column: RedemptionSortColumn.date,
+                          alignment: Alignment.centerLeft,
+                        ),
+                        _sortHeaderCell(
+                          context: context,
+                          flex: 3,
+                          label: 'Owned',
+                          column: RedemptionSortColumn.owned,
+                          alignment: Alignment.centerLeft,
+                        ),
                       ],
                     ),
                   ),
@@ -288,9 +370,7 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                         final iconColor =
                             currentlyValid ? Colors.green : Colors.redAccent;
 
-                        final owned = m != null
-                            ? store.isUnlocked('memento_collected', m.key)
-                            : false;
+                        final owned = m != null ? _isOwned(item) : false;
 
                         final giftText = m?.name ?? item.code.giftLabel ?? '—';
 
@@ -320,8 +400,7 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                                       padding: const EdgeInsets.only(right: 4),
                                       child: Text(
                                         c.code,
-                                        style: theme.textTheme.titleMedium
-                                            ?.copyWith(
+                                        style: theme.textTheme.titleMedium?.copyWith(
                                           fontWeight: FontWeight.bold,
                                           decoration: TextDecoration.underline,
                                         ),

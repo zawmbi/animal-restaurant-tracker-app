@@ -561,7 +561,7 @@
   },
   {
     "code": "superstar2021",
-    "validFrom": null,
+    "validFrom": "2021-05-29",
     "validUntil": "2021-06-13",
     "reason": "For reaching 1,000 likes on Twitter/Facebook/Instagram",
     "giftMementoId": "strawberry_knitted_cap",
@@ -569,7 +569,7 @@
   },
   {
     "code": "onecod",
-    "validFrom": null,
+    "validFrom": "2021-03-31",
     "validUntil": "2021-04-07",
     "reason": "April Fool's Day 2021",
     "giftMementoId": "golden_cod",
@@ -585,7 +585,7 @@
   },
   {
     "code": "2021oxyear",
-    "validFrom": null,
+    "validFrom": "2021-01-01",
     "validUntil": "2021-02-21",
     "reason": "Lunar New Year 2021",
     "giftMementoId": "big_headed_stone_lion",
@@ -593,7 +593,7 @@
   },
   {
     "code": "5sYtuqu7pf",
-    "validFrom": null,
+    "validFrom": "2020-11-30",
     "validUntil": "2020-12-31",
     "reason": "Christmas 2020",
     "giftMementoId": null,
@@ -601,7 +601,7 @@
   },
   {
     "code": "Tb4AAzKWGe",
-    "validFrom": null,
+    "validFrom": "2020-11-30",
     "validUntil": "2020-12-31",
     "reason": "Christmas 2020",
     "giftMementoId": null,
@@ -609,7 +609,7 @@
   },
   {
     "code": "qVvBMyuRXK",
-    "validFrom": null,
+    "validFrom": "2020-11-30",
     "validUntil": "2020-12-31",
     "reason": "Christmas 2020",
     "giftMementoId": null,
@@ -633,7 +633,7 @@
   },
   {
     "code": "xF3XbHWDOJ",
-    "validFrom": null,
+    "validFrom": "2020-10-08",
     "validUntil": "2020-11-23",
     "reason": "Compensation for issue of login with Twitter Account.",
     "giftMementoId": null,
@@ -665,7 +665,7 @@
   },
   {
     "code": "bccuRSbpqm",
-    "validFrom": null,
+    "validFrom": "2020-09-17",
     "validUntil": "2020-09-24",
     "reason": "Compensation for Tip Desks issue",
     "giftMementoId": null,
@@ -681,7 +681,7 @@
   },
   {
     "code": "eMoYchJEd3",
-    "validFrom": null,
+    "validFrom": "2020-04-10",
     "validUntil": "2020-04-16",
     "reason": "Compensation for Network Issue",
     "giftMementoId": null,
@@ -689,7 +689,7 @@
   },
   {
     "code": "7p77T3AHT1",
-    "validFrom": null,
+    "validFrom": "2020-03-13",
     "validUntil": "2020-03-20",
     "reason": "Compensation for Black Screen Issue",
     "giftMementoId": null,

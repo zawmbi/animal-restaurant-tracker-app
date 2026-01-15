@@ -31,17 +31,7 @@ class LetterDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            if (letter.imageAsset != null)
-              Center(
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(12),
-                  child: Image.asset(
-                    letter.imageAsset!,
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-            if (letter.imageAsset != null) const SizedBox(height: 16),
+
 
             if (combos.isNotEmpty) _CombinationTable(combinations: combos),
 

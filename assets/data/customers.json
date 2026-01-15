@@ -41,7 +41,7 @@
   {
     "id": "brown_bunny",
     "name": "Brown Bunny",
-    "tags": ["customer", "restaurant", "very_common", "nearby"],
+    "tags": ["customer", "restaurant", "very_common", "nearby","regular"],
     "livesIn": "Nearby",
     "appearanceWeight": 9836,
     "requiredFoodId": null,
@@ -89,6 +89,30 @@
         "stars": 10,
         "description": "It will bestow you with Deer's good fortune.",
         "requirement": "Serve Deer 700 times.",
+        "tags": ["customer_gift"],
+        "source": "customer_gift"
+      }
+    ]
+  },
+  {
+    "id": "mouse",
+    "name": "Mouse",
+    "tags": ["customer", "restaurant", "very_common", "nearby", "regular"],
+    "livesIn": "Nearby",
+    "appearanceWeight": 8860,
+    "requiredFoodId": "Adzuki Bean Dumpling",
+    "dishesOrderedIds": ["Steamed Clams", "Seaweed Rice Ball", "Purple Sweet Potato Bun", "Adzuki Bean Dumpling"],
+    "customerDescription": "They're dirty and like boasting about how many places they've been.",
+    "requirements": {
+      "facilities": ["wild_fern"]   
+    },
+    "mementos": [
+      {
+        "id": "gold_chain",
+        "name": "Gold Chain",
+        "stars": 20,
+        "description": "Put it on and you'll be the richest kid in Animal Restaurant.",
+        "requirement": "Serve Mouse 1 time.",
         "tags": ["customer_gift"],
         "source": "customer_gift"
       }
