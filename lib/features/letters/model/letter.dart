@@ -1,3 +1,5 @@
+// lib/features/letters/model/letter.dart
+
 class LetterCombination {
   final String slot1;
   final String slot2;
@@ -35,6 +37,10 @@ class Letter {
   final String? unlocks;
   final String? prerequisite;
   final String? imageAsset;
+
+  // NEW: for event/merchant/gachapon/etc acquisition
+  final String? obtainMethod;
+
   final List<LetterCombination> combinations;
 
   const Letter({
@@ -47,6 +53,7 @@ class Letter {
     this.unlocks,
     this.prerequisite,
     this.imageAsset,
+    this.obtainMethod,
     this.combinations = const [],
   });
 
@@ -60,6 +67,7 @@ class Letter {
         unlocks: j['unlocks'] as String?,
         prerequisite: j['prerequisite'] as String?,
         imageAsset: j['imageAsset'] as String?,
+        obtainMethod: j['obtainMethod'] as String?,
         combinations: (j['combinations'] as List<dynamic>? ?? [])
             .map((e) => LetterCombination.fromJson(e as Map<String, dynamic>))
             .toList(),
