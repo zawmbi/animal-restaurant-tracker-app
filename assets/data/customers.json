@@ -172,6 +172,218 @@
       "source": "customer_gift"
     }
   ]
+},
+
+  {
+    "id": "traditional_popcorn",
+    "name": "Traditional Popcorn",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "customerDescription": "Very traditional popcorn. It creates an explosive bang while cooking.",
+    "requirements": {
+      "rating": null,
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": { "min": 5, "max": 15 },
+      "requiredFishIds": ["tree_branch"],
+      "incomeEvery5Min": [
+        { "currency": "cod", "amount": 100, "chance": 0.12 },
+        { "currency": "plates", "amount": 10, "chance": 0.88 }
+      ],
+      "customerDrop": { "currency": "cod", "min": 50, "max": 75 },
+      "appearanceRatesByFish": [
+        { "fishId": "tree_branch", "morning": 52.91, "afternoon": 52.91, "night": 52.91 }
+      ]
+    }
+  },
+  {
+    "id": "old_joe",
+    "name": "Old Joe",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "customerDescription": "Old Joe's wife sets up a stall outside the school gate everyday, while Old Joe pulls customers in the streets. The Chicky's Ends they grill are liked by all students.",
+    "requirements": {
+      "rating": null,
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": ["shiba"]
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": { "min": 5, "max": 15 },
+      "requiredFishIds": ["tree_branch", "clownfish"],
+      "incomeEvery5Min": [
+        { "currency": "rating", "amount": 0.2, "chance": 0.20 },
+        { "currency": "plates", "amount": 10, "chance": 0.80 }
+      ],
+      "customerDrop": { "currency": "cod", "min": 55, "max": 82 },
+      "appearanceRatesByFish": [
+        { "fishId": "tree_branch", "morning": 16.36, "afternoon": 16.36, "night": 16.36 },
+        { "fishId": "clownfish", "morning": 12.68, "afternoon": 12.68, "night": 12.68 }
+      ]
+    }
+  },
+  {
+    "id": "portrait_drawing_booth",
+    "name": "Portrait Drawing Booth",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "customerDescription": "Inelegantly collects ten dollars for each portrait. Though every person looks about the same, the queue is rather long.",
+    "requirements": {
+      "rating": 6000,
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": { "min": 5, "max": 15 },
+      "requiredFishIds": ["tree_branch", "clownfish"],
+      "incomeEvery5Min": [
+        { "currency": "cod", "amount": 120, "chance": 0.12 },
+        { "currency": "plates", "amount": 10, "chance": 0.88 }
+      ],
+      "customerDrop": { "currency": "cod", "min": 60, "max": 90 },
+      "appearanceRatesByFish": [
+        { "fishId": "tree_branch", "morning": 5.29, "afternoon": 5.29, "night": 5.29 },
+        { "fishId": "clownfish", "morning": 7.04, "afternoon": 7.04, "night": 7.04 }
+      ]
+    }
+  },
+  {
+    "id": "sketch_artist",
+    "name": "Sketch Artist",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "customerDescription": "Elegantly drawing something.",
+    "requirements": {
+      "rating": null,
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": { "min": 5, "max": 15 },
+      "requiredFishIds": ["clownfish", "flounder"],
+      "incomeEvery5Min": [
+        { "currency": "rating", "amount": 0.2, "chance": 0.20 },
+        { "currency": "plates", "amount": 10, "chance": 0.80 }
+      ],
+      "customerDrop": { "currency": "cod", "min": 65, "max": 98 },
+      "appearanceRatesByFish": [
+        { "fishId": "clownfish", "morning": 21.13, "afternoon": 21.13, "night": 21.13 },
+        { "fishId": "flounder", "morning": 15.06, "afternoon": 15.06, "night": 15.06 }
+      ]
+    }
+  },
+  {
+    "id": "picnicking_rabbit",
+    "name": "Picnicking Rabbit",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "customerDescription": "The rabbit picknicking alone is enjoying a pile of food with just a tinge of loneliness.",
+    "requirements": {
+      "rating": null,
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": { "min": 5, "max": 15 },
+      "requiredFishIds": ["clownfish", "flounder"],
+      "incomeEvery5Min": [
+        { "currency": "rating", "amount": 0.2, "chance": 0.20 },
+        { "currency": "plates", "amount": 10, "chance": 0.80 }
+      ],
+      "customerDrop": { "currency": "cod", "min": 70, "max": 105 },
+      "appearanceRatesByFish": [
+        { "fishId": "clownfish", "morning": 3.52, "afternoon": 3.52, "night": 3.52 },
+        { "fishId": "flounder", "morning": 6.02, "afternoon": 6.02, "night": 6.02 }
+      ]
+    }
+  },
+
+  {
+  "id": "cutie_white_bunny",
+  "name": "Cutie White Bunny",
+  "tags": ["customer", "performer"],
+  "livesIn": null,
+  "appearanceWeight": null,
+  "requiredFoodId": null,
+  "dishesOrderedIds": [],
+  "customerDescription": "A member of the Cutie Girlies. Behind her cute appearance is a skillful rapper.",
+  "requirements": {
+    "rating": null,
+    "recipes": [],
+    "facilities": [],
+    "letters": [],
+    "customers": []
+  },
+  "mementos": [],
+  "performer": {
+    "band": "Cutie Girlies",
+    "showDurationMinutes": 30,
+    "callbackRequirementHours": 5,
+    "baseEarnings": { "currency": "film", "amountPerMinute": 10 },
+    "fansCustomerIds": [
+      "glamourous_lady",
+      "lop_eared_rabbit",
+      "abi",
+      "fox",
+      "spotted_deer"
+    ],
+    "canInviteThis": [
+      { "performerId": "cutie_hamster", "chancePercent": 54.00 },
+      { "performerId": "cutie_goose", "chancePercent": 54.00 },
+      { "performerId": "cutie_guru", "chancePercent": 54.00 },
+      { "performerId": "little_piggy_angel", "chancePercent": 4.46 },
+      { "performerId": "bassist_toad", "chancePercent": 4.90 },
+      { "performerId": "vocalist_samoyed", "chancePercent": 5.00 },
+      { "performerId": "lead_dancer_slim_white_dog", "chancePercent": 7.50 },
+      { "performerId": "leader_pug", "chancePercent": 7.50 },
+      { "performerId": "probiotic_panther", "chancePercent": 11.03 }
+    ],
+    "canBeInvitedBy": [
+      { "performerId": "cutie_hamster", "chancePercent": 54.00 },
+      { "performerId": "cutie_goose", "chancePercent": 27.00 },
+      { "performerId": "cutie_guru", "chancePercent": 9.00 },
+      { "performerId": "little_piggy_angel", "chancePercent": 4.63 },
+      { "performerId": "bassist_toad", "chancePercent": 0.93 },
+      { "performerId": "vocalist_samoyed", "chancePercent": 0.74 },
+      { "performerId": "lead_dancer_slim_white_dog", "chancePercent": 1.11 },
+      { "performerId": "leader_pug", "chancePercent": 0.74 },
+      { "performerId": "probiotic_panther", "chancePercent": 1.85 }
+    ],
+    "posterIds": [
+      "butterflies_in_my_stomach",
+      "green_trap",
+      "lonely_troubles",
+      "island_memories",
+      "featherlight_sweetness",
+      "lively_shooting_stars"
+    ]
+  }
 }
 
 ]

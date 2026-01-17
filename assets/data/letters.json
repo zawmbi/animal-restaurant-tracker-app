@@ -593,5 +593,504 @@
     "combinations": [
       { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Clover" }
     ]
+  },
+  {
+    "id": "new_zealand_journal_page_1",
+    "name": "New Zealand Journal Page 1",
+    "series": "Cici's Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+130",
+    "unlocks": "Alpaca, Cici, New Zealand Journal Page 2",
+    "prerequisite": "Rating6,500",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Bluebell" }
+    ]
+  },
+  {
+    "id": "new_zealand_journal_page_2",
+    "name": "New Zealand Journal Page 2",
+    "series": "Cici's Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+160",
+    "unlocks": "Cici",
+    "prerequisite": "New Zealand Journal Page 1, Heat-intolerant Alpaca's Order",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Bluebell", "slot2": "Red Rose", "slot3": "Sunflower" }
+    ]
+  },
+  {
+    "id": "last_journal_page",
+    "name": "Last Journal Page",
+    "series": "Cici's Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+600",
+    "unlocks": "—",
+    "prerequisite": "Cici, Rating20,000",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Daisy", "slot2": "Daisy", "slot3": "Daisy" },
+      { "slot1": "Daisy", "slot2": "Sunflower", "slot3": "Bluebell" },
+      { "slot1": "Daisy", "slot2": "White Rose", "slot3": "Bluebell" },
+      { "slot1": "Daisy", "slot2": "*", "slot3": "Bluebell" },
+      { "slot1": "*", "slot2": "White Rose", "slot3": "Bluebell" }
+    ]
+  },
+  {
+    "id": "old_journal_page_1",
+    "name": "Old Journal Page 1",
+    "series": "Cici's Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+200",
+    "unlocks": "—",
+    "prerequisite": "Rating20,000",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Sunflower", "slot2": "Bluebell", "slot3": "Iron Can" }
+    ]
+  },
+  {
+    "id": "old_journal_page_2",
+    "name": "Old Journal Page 2",
+    "series": "Cici's Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+220",
+    "unlocks": "Wild Duck",
+    "prerequisite": "Cici",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Bluebell", "slot2": "White Rose", "slot3": "Sunflower" }
+    ]
+  },
+
+  {
+    "id": "circus_poster",
+    "name": "Circus Poster",
+    "series": "Circus Letters",
+    "unlockRequirement": "Halloween",
+    "description": "Halloween 2024 event exclusive letter.",
+    "bonus": "+22",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained during the 2024 Halloween event. Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "circus_invitation",
+    "name": "Circus Invitation",
+    "series": "Circus Letters",
+    "unlockRequirement": "Halloween",
+    "description": "Halloween 2024 event exclusive letter.",
+    "bonus": "+32",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained during the 2024 Halloween event. Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "halloween_drinks_menu",
+    "name": "Halloween Drinks Menu",
+    "series": "Circus Letters",
+    "unlockRequirement": "Halloween",
+    "description": "Halloween 2025 event exclusive letter.",
+    "bonus": "+35",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained during the 2025 Halloween event.",
+    "combinations": []
+  },
+
+  {
+    "id": "diary_of_a_dog_1",
+    "name": "Diary Of A Dog 1",
+    "series": "Diary Of A Dog",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+60",
+    "unlocks": "Diary Of A Dog 2",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Sunflower", "slot2": "Red Rose", "slot3": "Sakura" }
+    ]
+  },
+  {
+    "id": "diary_of_a_dog_2",
+    "name": "Diary Of A Dog 2",
+    "series": "Diary Of A Dog",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+25",
+    "unlocks": "—",
+    "prerequisite": "Diary Of A Dog 1",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Red Rose", "slot2": "Gold Can", "slot3": "Sunflower" }
+    ]
+  },
+
+  {
+    "id": "eggys_certificate",
+    "name": "Eggy's Certificate",
+    "series": null,
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+35",
+    "unlocks": "—",
+    "prerequisite": "Higher chance to obtain from May 5th to May 7th 2022",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Daisy", "slot2": "*", "slot3": "*" },
+      { "slot1": "Daisy", "slot2": "Daisy", "slot3": "Daisy" },
+      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Red Rose" },
+      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Bluebell" }
+    ]
+  },
+
+  {
+    "id": "eggys_diary_1",
+    "name": "Eggy's Diary 1",
+    "series": "Eggy's Diary",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+180",
+    "unlocks": "—",
+    "prerequisite": "Abi",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "White Rose", "slot2": "Seed", "slot3": "Iron Can" }
+    ]
+  },
+  {
+    "id": "eggys_diary_2",
+    "name": "Eggy's Diary 2",
+    "series": "Eggy's Diary",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+200",
+    "unlocks": "Wild Duck",
+    "prerequisite": "Cici, Abi",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "White Rose", "slot2": "Sakura", "slot3": "Clover" }
+    ]
+  },
+  {
+    "id": "eggys_diary_3",
+    "name": "Eggy's Diary 3",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Halloween",
+    "description": "Halloween event letter.",
+    "bonus": "+20",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained randomly during the 2019 Halloween event. Sold by the Mysterious Merchant. Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_4",
+    "name": "Eggy's Diary 4",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Halloween",
+    "description": "Halloween event letter.",
+    "bonus": "+35",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained randomly during the 2019 Halloween event. Sold by the Mysterious Merchant. Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_5",
+    "name": "Eggy's Diary 5",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Halloween",
+    "description": "Halloween event letter.",
+    "bonus": "+50",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained randomly during the 2019 Halloween event. Sold by the Mysterious Merchant. Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_6",
+    "name": "Eggy's Diary 6",
+    "series": "Eggy's Diary",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+200",
+    "unlocks": "Reverie Bar",
+    "prerequisite": "Newspaper 4",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Sunflower", "slot2": "Copper Can", "slot3": "Maple Leaf" }
+    ]
+  },
+  {
+    "id": "eggys_diary_7",
+    "name": "Eggy's Diary 7",
+    "series": "Eggy's Diary",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+260",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Maple Leaf", "slot2": "Snowflake", "slot3": "Bluebell" }
+    ]
+  },
+  {
+    "id": "eggys_diary_8",
+    "name": "Eggy's Diary 8",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Lunar New Year",
+    "description": "Lunar New Year event letter.",
+    "bonus": "—",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained randomly during the Lunar New Year 2020 event. Sold by the Mysterious Merchant. Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_9",
+    "name": "Eggy's Diary 9",
+    "series": "Eggy's Diary",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+51",
+    "unlocks": "—",
+    "prerequisite": "International Workers' Day Letter: Limited to May 1st to May 7th",
+    "imageAsset": null,
+    "obtainMethod": "Any combination from May 1st to May 7th.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_10",
+    "name": "Eggys Diary 10",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Halloween",
+    "description": "Halloween event letter.",
+    "bonus": "+20",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained during the 2020 Halloween event. Sold by the Mysterious Merchant. Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_11",
+    "name": "Eggy's Diary 11",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Halloween",
+    "description": "Halloween event letter.",
+    "bonus": "+35",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained during the 2020 Halloween event. Sold by the Mysterious Merchant. Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_12",
+    "name": "Eggy's Diary 12",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Halloween",
+    "description": "Halloween event letter.",
+    "bonus": "+50",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained during the 2020 Halloween event. Sold by the Mysterious Merchant. Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_13",
+    "name": "Eggy's Diary 13",
+    "series": "Eggy's Diary",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+38",
+    "unlocks": "—",
+    "prerequisite": "Mister Tibetan Fox",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Bluebell", "slot2": "Snowflake", "slot3": "*" }
+    ]
+  },
+  {
+    "id": "eggys_diary_14",
+    "name": "Eggy's Diary 14",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Lunar New Year",
+    "description": "Lunar New Year 2021 event exclusive letter.",
+    "bonus": "—",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Can be obtained with any combo after Lunar New Year eve meal. Sold by the Mysterious Merchant. Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_15",
+    "name": "Eggy's Diary 15",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Women's Day",
+    "description": "Women's Day event letter.",
+    "bonus": "—",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Interact with White Bunny in the Courtyard on 8 March International Women's Day 2021. Sold by the Mysterious Merchant. Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_16",
+    "name": "Eggy's Diary 16",
+    "series": "Eggy's Diary",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+35",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Clover", "slot2": "Bluebell", "slot3": "Iron Can" }
+    ]
+  },
+  {
+    "id": "eggys_diary_17",
+    "name": "Eggy's Diary 17",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Mid-Autumn Festival",
+    "description": "Mid-Autumn Festival letter.",
+    "bonus": "+37",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Answer Gumi's Quiz correctly during Mid-Autumn Festival 2021. After the event or quiz answered wrong 3 times: Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_18",
+    "name": "Eggy's Diary 18",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Lunar New Year",
+    "description": "Lunar New Year 2022 event exclusive letter.",
+    "bonus": "+28",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Can be obtained with any combo after Lunar New Year 2022 Eve meal.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_19",
+    "name": "Eggy's Diary 19",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Lunar New Year",
+    "description": "Lunar New Year 2023 event exclusive letter.",
+    "bonus": "+28",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Can be obtained with any combo after the Lunar New Year Eve Meal.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_20",
+    "name": "Eggy's Diary 20",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Lunar New Year",
+    "description": "Lunar New Year 2024 event exclusive letter.",
+    "bonus": "+30",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Can be obtained with any combo after Lunar New Year 2024 Eve meal.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_21",
+    "name": "Eggy's Diary 21",
+    "series": "Eggy's Diary",
+    "unlockRequirement": null,
+    "description": null,
+    "bonus": "+25",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": null,
+    "combinations": [
+      { "slot1": "Bluebell", "slot2": "Iron Can", "slot3": "*" }
+    ]
+  },
+  {
+    "id": "eggys_diary_22",
+    "name": "Eggy's Diary 22",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Halloween",
+    "description": "Halloween 2024 event exclusive letter.",
+    "bonus": "+32",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained during the 2024 Halloween event.",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_23",
+    "name": "Eggy's Diary 23",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Lunar New Year",
+    "description": "Lunar New Year 2025 event exclusive letter.",
+    "bonus": "+30",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained during Lunar New Year 2025. Sold by the Mysterious Merchant.",
+    "combinations": [
+      { "slot1": "Daisy", "slot2": "Gold Can", "slot3": "*" }
+    ]
+  },
+  {
+    "id": "eggys_diary_24",
+    "name": "Eggy's Diary 24",
+    "series": "Eggy's Diary",
+    "unlockRequirement": "Halloween",
+    "description": "Halloween 2025 event exclusive letter.",
+    "bonus": "+42",
+    "unlocks": "—",
+    "prerequisite": "—",
+    "imageAsset": null,
+    "obtainMethod": "Obtained during the 2025 Halloween event.",
+    "combinations": []
   }
+
 ]

@@ -21,7 +21,6 @@ import '../../facilities/ui/facility_detail_page.dart';
 import '../../mementos/data/mementos_index.dart';
 import '../../mementos/ui/mementos_detail_page.dart';
 
-// Dishes (optional but useful)
 import '../../dishes/data/dishes_repository.dart';
 import '../../dishes/ui/dish_detail_page.dart';
 

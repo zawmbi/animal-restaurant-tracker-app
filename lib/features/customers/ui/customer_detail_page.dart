@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../data/customers_repository.dart';
 import '../model/customer.dart';
 import '../../dishes/ui/dish_detail_page.dart';
 import '../../facilities/ui/facility_detail_page.dart';
@@ -22,15 +23,42 @@ class CustomerDetailPage extends StatefulWidget {
 class _CustomerDetailPageState extends State<CustomerDetailPage> {
   final store = UnlockedStore.instance;
 
-  // Buckets that match YOUR app pages
+  static const String _bucketCustomers = 'customers';
   static const String _bucketDish = 'dish';
   static const String _bucketLetter = 'letter';
-  static const String _bucketFacility = 'facility'; // change if yours differs
+  static const String _bucketFacility = 'facility';
   static const String _bucketMementoCollected = 'memento_collected';
 
   Customer get customer => widget.customer;
 
+  @override
+  void initState() {
+    super.initState();
+    store.registerType(_bucketCustomers);
+  }
+
+  bool get _isCustomerUnlocked =>
+      store.isUnlocked(_bucketCustomers, customer.id);
+
+  Future<void> _setCustomerUnlocked(bool v) async {
+    await store.setUnlocked(_bucketCustomers, customer.id, v);
+    if (mounted) setState(() {});
+  }
+
   Color _ownedFill(BuildContext context) => Colors.green.withOpacity(0.18);
+
+  Future<void> _openCustomerById(BuildContext context, String id) async {
+    final found = await CustomersRepository.instance.byId(id);
+    if (!context.mounted || found == null) return;
+
+    await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => CustomerDetailPage(customer: found),
+      ),
+    );
+
+    if (mounted) setState(() {});
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,14 +70,43 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
+          CheckboxListTile(
+            contentPadding: EdgeInsets.zero,
+            title: const Text('Unlocked'),
+            value: _isCustomerUnlocked,
+            onChanged: (v) {
+              if (v == null) return;
+              _setCustomerUnlocked(v);
+            },
+          ),
           Text(customer.customerDescription),
 
           const SizedBox(height: 16),
-          _section('Lives In', Text(customer.livesIn)),
-          _section(
-            'Appearance Weight',
-            Text(customer.appearanceWeight.toString()),
-          ),
+          if (customer.livesIn != null)
+            _section('Lives In', Text(customer.livesIn!)),
+          if (customer.appearanceWeight != null)
+            _section(
+              'Appearance Weight',
+              Text(customer.appearanceWeight.toString()),
+            ),
+
+          if (customer.boothOwner != null) ...[
+            const SizedBox(height: 24),
+            const Text(
+              'Booth Owner',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            _boothOwnerSection(customer.boothOwner!),
+          ],
+
+          if (customer.performer != null) ...[
+            const SizedBox(height: 24),
+            const Text(
+              'Performer',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            _performerSection(context, customer.performer!),
+          ],
 
           if (r != null && r.hasAny) ...[
             const SizedBox(height: 24),
@@ -57,15 +114,8 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               'Requirements',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
+            if (r.rating != null) _section('Rating', Text(r.rating.toString())),
 
-            if (r.rating != null)
-              _currencyRow(
-                'assets/images/star.png',
-                'Rating',
-                r.rating!,
-              ),
-
-            // Recipes: stored as ids, bucket 'dish'
             _simpleLinks(
               context: context,
               title: 'Required Recipes',
@@ -84,12 +134,12 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               },
             ),
 
-            // Facilities: stored as ids, bucket assumed 'facility'
             _simpleLinks(
               context: context,
               title: 'Required Facilities',
               ids: r.facilities,
-              isOwned: (id) => store.isUnlocked(_bucketFacility, id.toString()),
+              isOwned: (id) =>
+                  store.isUnlocked(_bucketFacility, id.toString()),
               fillIfOwned: ownedFill,
               onTap: (id) async {
                 await Navigator.push(
@@ -104,7 +154,6 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               },
             ),
 
-            // Letters: ids -> load Letter -> open LetterDetailPage(letter: Letter)
             _simpleLinks(
               context: context,
               title: 'Required Letters',
@@ -126,11 +175,19 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
                 setState(() {});
               },
             ),
+
+            // Now navigates to the prerequisite customer
+            _simpleLinks(
+              context: context,
+              title: 'Prerequisite Customers',
+              ids: r.customers,
+              isOwned: (id) =>
+                  store.isUnlocked(_bucketCustomers, id.toString()),
+              fillIfOwned: ownedFill,
+              onTap: (id) => _openCustomerById(context, id.toString()),
+            ),
           ],
 
-          // Mementos: customer.mementos gives you objects with .id/.name
-          // BUT your collected key in MementosPage is e.key under bucket 'memento_collected'
-          // So we resolve the index entry first and use entry.key for ownership.
           if (customer.mementos.isNotEmpty) ...[
             const SizedBox(height: 24),
             const Text(
@@ -147,14 +204,16 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
                     final entry = snap.data;
 
                     final collected = (entry != null)
-                        ? store.isUnlocked('memento_collected', entry.key)
+                        ? store.isUnlocked(_bucketMementoCollected, entry.key)
                         : false;
 
                     return EntityChip(
                       label: m.name,
-                      fillColor: collected ? Colors.green.withOpacity(0.18) : null,
+                      fillColor:
+                          collected ? Colors.green.withOpacity(0.18) : null,
                       onTap: () async {
-                        final real = entry ?? await MementosIndex.instance.byId(m.id);
+                        final real =
+                            entry ?? await MementosIndex.instance.byId(m.id);
                         if (real == null || !context.mounted) return;
 
                         await Navigator.push(
@@ -164,7 +223,6 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
                           ),
                         );
 
-                        // IMPORTANT: requires CustomerDetailPage to be StatefulWidget
                         if (mounted) setState(() {});
                       },
                     );
@@ -173,9 +231,174 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               }).toList(),
             ),
           ],
-
         ],
       ),
+    );
+  }
+
+  Widget _boothOwnerSection(BoothOwnerInfo b) {
+    final lines = <Widget>[];
+
+    if (b.timeRange == null) {
+      lines.add(_section('Time Range', const Text('Any Time')));
+    } else {
+      lines.add(_section(
+        'Time Range',
+        Text('${b.timeRange!.start} to ${b.timeRange!.end}'),
+      ));
+    }
+
+    if (b.stayDurationMinutes != null) {
+      lines.add(_section(
+        'Stay Duration',
+        Text(
+          '${b.stayDurationMinutes!.min} min to ${b.stayDurationMinutes!.max} min',
+        ),
+      ));
+    }
+
+    if (b.requiredFishIds.isNotEmpty) {
+      lines.add(_section('Required Fish', Text(b.requiredFishIds.join(', '))));
+    }
+
+    if (b.customerDrop != null) {
+      lines.add(_section(
+        'Customer Drop',
+        Text(
+          '${b.customerDrop!.currency}: ${b.customerDrop!.min} ~ ${b.customerDrop!.max}',
+        ),
+      ));
+    }
+
+    if (b.incomeEvery5Min.isNotEmpty) {
+      lines.add(const SizedBox(height: 8));
+      lines.add(const Text(
+        'Income every 5 min',
+        style: TextStyle(fontWeight: FontWeight.bold),
+      ));
+      for (final r in b.incomeEvery5Min) {
+        final pct = (r.chance * 100).toStringAsFixed(0);
+        lines.add(Padding(
+          padding: const EdgeInsets.only(top: 4),
+          child: Text('$pct% chance to get ${r.currency} ${r.amount}'),
+        ));
+      }
+    }
+
+    if (b.appearanceRatesByFish.isNotEmpty) {
+      lines.add(const SizedBox(height: 8));
+      lines.add(const Text(
+        'Appearance probability',
+        style: TextStyle(fontWeight: FontWeight.bold),
+      ));
+      for (final row in b.appearanceRatesByFish) {
+        lines.add(Padding(
+          padding: const EdgeInsets.only(top: 4),
+          child: Text(
+            '${row.fishId}: '
+            '${row.morning?.toStringAsFixed(2) ?? '-'} / '
+            '${row.afternoon?.toStringAsFixed(2) ?? '-'} / '
+            '${row.night?.toStringAsFixed(2) ?? '-'}',
+          ),
+        ));
+      }
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: lines,
+    );
+  }
+
+  Widget _performerSection(BuildContext context, PerformerInfo p) {
+    final lines = <Widget>[];
+
+    if (p.band != null && p.band!.trim().isNotEmpty) {
+      lines.add(_section('Band', Text(p.band!)));
+    }
+    if (p.showDurationMinutes != null) {
+      lines.add(_section('Show Duration', Text('${p.showDurationMinutes} mins')));
+    }
+    if (p.callbackRequirementHours != null) {
+      lines.add(_section('Callback Requirement', Text('${p.callbackRequirementHours} hours')));
+    }
+    if (p.baseEarnings != null) {
+      lines.add(_section(
+        'Base Earnings',
+        Text('${p.baseEarnings!.currency}+${p.baseEarnings!.amountPerMinute}/min'),
+      ));
+    }
+
+    if (p.fansCustomerIds.isNotEmpty) {
+      lines.add(const Text('Fans', style: TextStyle(fontWeight: FontWeight.bold)));
+      lines.add(const SizedBox(height: 6));
+      lines.add(Wrap(
+        spacing: 8,
+        runSpacing: 8,
+        children: p.fansCustomerIds.map((id) {
+          return EntityChip(
+            label: id,
+            onTap: () => _openCustomerById(context, id),
+          );
+        }).toList(),
+      ));
+      lines.add(const SizedBox(height: 12));
+    }
+
+    if (p.canInviteThis.isNotEmpty) {
+      lines.add(const Text(
+        'Performers who can invite this performer',
+        style: TextStyle(fontWeight: FontWeight.bold),
+      ));
+      lines.add(const SizedBox(height: 6));
+      lines.add(Wrap(
+        spacing: 8,
+        runSpacing: 8,
+        children: p.canInviteThis.map((e) {
+          return EntityChip(
+            label: '${e.performerId} (${e.chancePercent.toStringAsFixed(2)}%)',
+            onTap: () => _openCustomerById(context, e.performerId),
+          );
+        }).toList(),
+      ));
+      lines.add(const SizedBox(height: 12));
+    }
+
+    if (p.canBeInvitedBy.isNotEmpty) {
+      lines.add(const Text(
+        'Performers who can be invited by this performer',
+        style: TextStyle(fontWeight: FontWeight.bold),
+      ));
+      lines.add(const SizedBox(height: 6));
+      lines.add(Wrap(
+        spacing: 8,
+        runSpacing: 8,
+        children: p.canBeInvitedBy.map((e) {
+          return EntityChip(
+            label: '${e.performerId} (${e.chancePercent.toStringAsFixed(2)}%)',
+            onTap: () => _openCustomerById(context, e.performerId),
+          );
+        }).toList(),
+      ));
+    }
+
+    if (p.posterIds.isNotEmpty) {
+      lines.add(const SizedBox(height: 12));
+      lines.add(const Text(
+        'Poster Featured',
+        style: TextStyle(fontWeight: FontWeight.bold),
+      ));
+      lines.add(const SizedBox(height: 6));
+      lines.add(Wrap(
+        spacing: 8,
+        runSpacing: 8,
+        children: p.posterIds.map((pid) => EntityChip(label: pid)).toList(),
+      ));
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: lines,
     );
   }
 
@@ -191,23 +414,13 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     );
   }
 
-  Widget _currencyRow(String image, String label, int value) {
-    return Row(
-      children: [
-        Image.asset(image, width: 20),
-        const SizedBox(width: 8),
-        Text('$label: $value'),
-      ],
-    );
-  }
-
   Widget _simpleLinks({
     required BuildContext context,
     required String title,
     required List ids,
     required bool Function(dynamic id) isOwned,
     required Color fillIfOwned,
-    required Future<void> Function(dynamic id) onTap,
+    Future<void> Function(dynamic id)? onTap,
   }) {
     if (ids.isEmpty) return const SizedBox.shrink();
 
@@ -224,7 +437,7 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
             return EntityChip(
               label: id.toString(),
               fillColor: owned ? fillIfOwned : null,
-              onTap: () => onTap(id),
+              onTap: onTap == null ? null : () => onTap(id),
             );
           }).toList(),
         ),

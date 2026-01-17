@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../../shared/data/unlocked_store.dart';
 import '../data/customers_repository.dart';
 import '../model/customer.dart';
 import 'customer_detail_page.dart';
@@ -17,7 +19,13 @@ class _CustomersPageState extends State<CustomersPage>
   @override
   void initState() {
     super.initState();
-    _tabs = TabController(length: 4, vsync: this);
+    _tabs = TabController(length: 5, vsync: this);
+  }
+
+  @override
+  void dispose() {
+    _tabs.dispose();
+    super.dispose();
   }
 
   @override
@@ -32,57 +40,144 @@ class _CustomersPageState extends State<CustomersPage>
             Tab(text: 'Regular'),
             Tab(text: 'Booth Owner'),
             Tab(text: 'Performer'),
+            Tab(text: 'Special'),
           ],
         ),
       ),
       body: TabBarView(
         controller: _tabs,
         children: const [
-          _CustomersList(),
-          _CustomersList(tag: 'regular'),
-          _CustomersList(tag: 'booth_owner'),
-          _CustomersList(tag: 'performer'),
+          _CustomersGrid(),
+          _CustomersGrid(tag: 'regular'),
+          _CustomersGrid(tag: 'booth_owner'),
+          _CustomersGrid(tag: 'performer'),
+          _CustomersGrid(tag: 'special'),
         ],
       ),
     );
   }
 }
 
-class _CustomersList extends StatelessWidget {
+class _CustomersGrid extends StatefulWidget {
   final String? tag;
-  const _CustomersList({this.tag});
+  const _CustomersGrid({this.tag});
+
+  @override
+  State<_CustomersGrid> createState() => _CustomersGridState();
+}
+
+class _CustomersGridState extends State<_CustomersGrid> {
+  static const String _bucketCustomers = 'customers';
+  final store = UnlockedStore.instance;
+
+  @override
+  void initState() {
+    super.initState();
+    store.registerType(_bucketCustomers);
+  }
+
+  Future<List<Customer>> _load() {
+    return widget.tag == null
+        ? CustomersRepository.instance.all()
+        : CustomersRepository.instance.withTag(widget.tag!);
+  }
+
+  bool _isUnlocked(Customer c) => store.isUnlocked(_bucketCustomers, c.id);
+
+  int _unlockedCount(List<Customer> list) {
+    var n = 0;
+    for (final c in list) {
+      if (_isUnlocked(c)) n++;
+    }
+    return n;
+  }
 
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<Customer>>(
-      future: tag == null
-          ? CustomersRepository.instance.all()
-          : CustomersRepository.instance.withTag(tag!),
+      future: _load(),
       builder: (context, snap) {
         if (!snap.hasData) {
           return const Center(child: CircularProgressIndicator());
         }
 
         final customers = snap.data!;
+        final total = customers.length;
+        final unlocked = _unlockedCount(customers);
 
-        return ListView.separated(
-          itemCount: customers.length,
-          separatorBuilder: (_, __) => const Divider(height: 1),
-          itemBuilder: (context, i) {
-            final c = customers[i];
-            return ListTile(
-              title: Text(c.name),
-              subtitle: Text(c.customerDescription),
-              trailing: const Icon(Icons.chevron_right),
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => CustomerDetailPage(customer: c),
+        return Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      'Total: $total',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
                   ),
-                );
-              },
-            );
-          },
+                  Text(
+                    '$unlocked/$total unlocked',
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                ],
+              ),
+            ),
+            const Divider(height: 1),
+            Expanded(
+              child: GridView.builder(
+                padding: const EdgeInsets.all(12),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 3,
+                  crossAxisSpacing: 12,
+                  mainAxisSpacing: 12,
+                  childAspectRatio: 1,
+                ),
+                itemCount: customers.length,
+                itemBuilder: (context, i) {
+                  final c = customers[i];
+                  final isUnlocked = _isUnlocked(c);
+
+                  return InkWell(
+                    borderRadius: BorderRadius.circular(12),
+                    onTap: () async {
+                      await Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => CustomerDetailPage(customer: c),
+                        ),
+                      );
+                      if (mounted) setState(() {});
+                    },
+                    child: AnimatedOpacity(
+                      duration: const Duration(milliseconds: 120),
+                      opacity: isUnlocked ? 1.0 : 0.55,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          border: Border.all(
+                            color: Theme.of(context).dividerColor,
+                          ),
+                          color: Theme.of(context).colorScheme.surface,
+                        ),
+                        padding: const EdgeInsets.all(10),
+                        child: Center(
+                          child: Text(
+                            c.name,
+                            textAlign: TextAlign.center,
+                            softWrap: true,
+                            maxLines: 3,
+                            overflow: TextOverflow.ellipsis,
+                            style: Theme.of(context).textTheme.titleSmall,
+                          ),
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
         );
       },
     );
