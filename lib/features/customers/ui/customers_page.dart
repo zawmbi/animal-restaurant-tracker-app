@@ -38,20 +38,20 @@ class _CustomersPageState extends State<CustomersPage>
           tabs: const [
             Tab(text: 'All'),
             Tab(text: 'Regular'),
+            Tab(text: 'Special'),
             Tab(text: 'Booth Owner'),
             Tab(text: 'Performer'),
-            Tab(text: 'Special'),
           ],
         ),
       ),
       body: TabBarView(
         controller: _tabs,
         children: const [
-          _CustomersGrid(),
+          _CustomersGrid(), // all
           _CustomersGrid(tag: 'regular'),
+          _CustomersGrid(tag: 'special'),
           _CustomersGrid(tag: 'booth_owner'),
           _CustomersGrid(tag: 'performer'),
-          _CustomersGrid(tag: 'special'),
         ],
       ),
     );
@@ -67,8 +67,9 @@ class _CustomersGrid extends StatefulWidget {
 }
 
 class _CustomersGridState extends State<_CustomersGrid> {
-  static const String _bucketCustomers = 'customers';
   final store = UnlockedStore.instance;
+
+  static const String _bucketCustomers = 'customers';
 
   @override
   void initState() {
@@ -77,19 +78,28 @@ class _CustomersGridState extends State<_CustomersGrid> {
   }
 
   Future<List<Customer>> _load() {
-    return widget.tag == null
-        ? CustomersRepository.instance.all()
-        : CustomersRepository.instance.withTag(widget.tag!);
+    if (widget.tag == null) return CustomersRepository.instance.all();
+    return CustomersRepository.instance.withTag(widget.tag!);
   }
 
-  bool _isUnlocked(Customer c) => store.isUnlocked(_bucketCustomers, c.id);
-
   int _unlockedCount(List<Customer> list) {
-    var n = 0;
-    for (final c in list) {
-      if (_isUnlocked(c)) n++;
+    var c = 0;
+    for (final x in list) {
+      if (store.isUnlocked(_bucketCustomers, x.id)) c++;
     }
-    return n;
+    return c;
+  }
+
+  Future<void> _openDetail(Customer c) async {
+    await Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => CustomerDetailPage(customer: c)),
+    );
+    if (mounted) setState(() {}); // refresh counts + checkboxes
+  }
+
+  Future<void> _toggle(Customer c, bool v) async {
+    await store.setUnlocked(_bucketCustomers, c.id, v);
+    if (mounted) setState(() {});
   }
 
   @override
@@ -102,84 +112,136 @@ class _CustomersGridState extends State<_CustomersGrid> {
         }
 
         final customers = snap.data!;
-        final total = customers.length;
-        final unlocked = _unlockedCount(customers);
 
-        return Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      'Total: $total',
-                      style: Theme.of(context).textTheme.titleMedium,
-                    ),
-                  ),
-                  Text(
-                    '$unlocked/$total unlocked',
-                    style: Theme.of(context).textTheme.titleMedium,
-                  ),
-                ],
-              ),
-            ),
-            const Divider(height: 1),
-            Expanded(
-              child: GridView.builder(
-                padding: const EdgeInsets.all(12),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3,
-                  crossAxisSpacing: 12,
-                  mainAxisSpacing: 12,
-                  childAspectRatio: 1,
-                ),
-                itemCount: customers.length,
-                itemBuilder: (context, i) {
-                  final c = customers[i];
-                  final isUnlocked = _isUnlocked(c);
+        // Keep UI live when any checkbox changes elsewhere
+        return AnimatedBuilder(
+          animation: store,
+          builder: (context, _) {
+            final unlocked = _unlockedCount(customers);
+            final total = customers.length;
 
-                  return InkWell(
-                    borderRadius: BorderRadius.circular(12),
-                    onTap: () async {
-                      await Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => CustomerDetailPage(customer: c),
-                        ),
-                      );
-                      if (mounted) setState(() {});
-                    },
-                    child: AnimatedOpacity(
-                      duration: const Duration(milliseconds: 120),
-                      opacity: isUnlocked ? 1.0 : 0.55,
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          border: Border.all(
-                            color: Theme.of(context).dividerColor,
-                          ),
-                          color: Theme.of(context).colorScheme.surface,
-                        ),
-                        padding: const EdgeInsets.all(10),
-                        child: Center(
-                          child: Text(
-                            c.name,
-                            textAlign: TextAlign.center,
-                            softWrap: true,
-                            maxLines: 3,
-                            overflow: TextOverflow.ellipsis,
-                            style: Theme.of(context).textTheme.titleSmall,
-                          ),
-                        ),
+            return Column(
+              children: [
+                // ---- Count header ----
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
+                  child: Row(
+                    children: [
+                      Text(
+                        'Unlocked: $unlocked/$total',
+                        style: Theme.of(context).textTheme.titleMedium,
                       ),
+                    ],
+                  ),
+                ),
+
+                const Divider(height: 1),
+
+                // ---- Grid ----
+                Expanded(
+                  child: GridView.builder(
+                    padding: const EdgeInsets.all(12),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 3,
+                      mainAxisSpacing: 10,
+                      crossAxisSpacing: 10,
+                      childAspectRatio: 1, // square
                     ),
-                  );
-                },
-              ),
-            ),
-          ],
+                    itemCount: customers.length,
+                    itemBuilder: (context, i) {
+                      final c = customers[i];
+                      final checked =
+                          store.isUnlocked(_bucketCustomers, c.id);
+
+                      return _CustomerTile(
+                        name: c.name,
+                        checked: checked,
+                        onTap: () => _openDetail(c),
+                        onChanged: (v) => _toggle(c, v),
+                      );
+                    },
+                  ),
+                ),
+              ],
+            );
+          },
         );
       },
+    );
+  }
+}
+
+class _CustomerTile extends StatelessWidget {
+  final String name;
+  final bool checked;
+  final VoidCallback onTap;
+  final ValueChanged<bool> onChanged;
+
+  const _CustomerTile({
+    required this.name,
+    required this.checked,
+    required this.onTap,
+    required this.onChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final borderColor = Colors.brown.shade200.withOpacity(.45);
+
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(12),
+        child: Ink(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(color: borderColor, width: 1.2),
+          ),
+          child: Stack(
+            children: [
+              // Name centered, wraps inside box
+              Positioned.fill(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(10, 12, 10, 12),
+                  child: Center(
+                    child: Text(
+                      name,
+                      textAlign: TextAlign.center,
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                      softWrap: true,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w700,
+                        fontSize: 14,
+                        height: 1.15,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              // Checkbox corner
+              Positioned(
+                top: 4,
+                right: 4,
+                child: SizedBox(
+                  width: 36,
+                  height: 36,
+                  child: Checkbox(
+                    value: checked,
+                    onChanged: (v) {
+                      if (v == null) return;
+                      onChanged(v);
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
