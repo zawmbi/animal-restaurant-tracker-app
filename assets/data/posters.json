@@ -1,0 +1,26 @@
+[
+  {
+    "id": "gifted_poster",
+    "name": "Gifted Poster",
+    "description": "A free poster from buying a record.",
+    "earningIncreasePercent": 0,
+    "requiredPerformerIds": [],
+    "requirements": {
+      "customers": [],
+      "facilities": ["log_plank"],
+      "notes": []
+    }
+  },
+  {
+    "id": "butterflies_in_my_stomach",
+    "name": "Butterflies in my Stomach",
+    "description": "I've never felt like this before! What is this feeling?",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": ["cutie_white_bunny", "accompanist_penguin"],
+    "requirements": {
+      "customers": ["cutie_white_bunny", "accompanist_penguin"],
+      "facilities": ["secret_of_the_vines"],
+      "notes": []
+    }
+  }
+]

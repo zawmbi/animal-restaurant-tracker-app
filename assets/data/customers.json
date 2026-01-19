@@ -323,7 +323,3419 @@
       ]
     }
   },
+{
+    "id": "hillsides_stinkiest",
+    "name": "Hillside's Stinkiest",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Nobody knows how this Fried Tofu is made, nor do we dare ask.",
+    "requirements": {
+      "rating": 10000,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["jellyfish", "clownfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 15, "chance": null },
+        { "currency": "cod", "amount": 150, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "jellyfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "clownfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "picnicking_duck",
+    "name": "Picnicking Duck",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Camping isn't an easy thing for a family of eight.",
+    "requirements": {
+      "rating": null,
+      "customers": ["chocolate_lab"],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": true,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["flounder", "jellyfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 15, "chance": null },
+        { "currency": "cod", "amount": 160, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "flounder", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "jellyfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "prosperity_pineapple",
+    "name": "Prosperity Pineapple",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Toad's Pineapple Shop. Free if it ain't sweet!",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["squid", "flounder"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 15, "chance": null },
+        { "currency": "cod", "amount": 180, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "squid", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "flounder", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "wholegrain_pancake",
+    "name": "Wholegrain Pancake",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Add sausage. Add chicken fillet. Add crisp fritter.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["hermit_crab", "flounder"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 15, "chance": null },
+        { "currency": "rating", "amount": 0.3, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "hermit_crab", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "flounder", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "convenience_buns",
+    "name": "Convenience Buns",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Convenient, hygienic and tasty microwave buns.",
+    "requirements": {
+      "rating": null,
+      "customers": ["boston_terrier"],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["jellyfish", "squid", "crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 20, "chance": null },
+        { "currency": "rating", "amount": 0.3, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "jellyfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "squid", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "love_filled_buns",
+    "name": "Love-filled Buns",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Buns just as advertised.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["hermit_crab", "jellyfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 20, "chance": null },
+        { "currency": "cod", "amount": 220, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "hermit_crab", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "jellyfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "reverie_cotton_candy",
+    "name": "Reverie Cotton Candy",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Perhaps only those with hearts filled with love can make delicious cotton candy.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["seahorse", "squid", "jellyfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 20, "chance": null },
+        { "currency": "cod", "amount": 240, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "seahorse", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "squid", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "jellyfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
 
+  {
+    "id": "slum_cotton_candy",
+    "name": "Slum Cotton Candy",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Full of childhood memories.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["crab", "starfish", "squid", "pink_shell"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 25, "chance": null },
+        { "currency": "cod", "amount": 250, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "squid", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "pink_shell", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "stray_wild_panda",
+    "name": "Stray Wild Panda",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Looks familiar. Is it the panda? But he's very dirty and skinny.",
+    "requirements": {
+      "rating": 22000,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": true,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["red_puffer", "starfish", "squid", "crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 25, "chance": null },
+        { "currency": "rating", "amount": 0.4, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "red_puffer", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "squid", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "scavenging_skinny_dog",
+    "name": "Scavenging Skinny Dog",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Give him your unwanted clothes and plastic bottles. He'll be very grateful.",
+    "requirements": {
+      "rating": null,
+      "customers": ["husky"],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["cuttlefish", "squid"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 25, "chance": null },
+        { "currency": "rating", "amount": 0.4, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "cuttlefish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "squid", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "candied_hawthorn",
+    "name": "Candied Hawthorn",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Very sweet! Strawberries and hawthorns available!",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["red_puffer", "crab", "pink_shell"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 30, "chance": null },
+        { "currency": "cod", "amount": 250, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "red_puffer", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "pink_shell", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "mouse_market",
+    "name": "Mouse Market",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "The worst mouse in the world left the circus and opened a market with his own savings. Rumors say that there's even an online store now. Try looking up 'Mouse Market'.",
+    "requirements": {
+      "rating": 30000,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["pink_shell", "crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 30, "chance": null },
+        { "currency": "cod", "amount": 330, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "pink_shell", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "flower_shop",
+    "name": "Flower Shop",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Shiba Liang is very gentle, even to flowers.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["butterflyfish", "crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 35, "chance": null },
+        { "currency": "cod", "amount": 350, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "butterflyfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "bunnys_back_garden",
+    "name": "Bunny's Back Garden",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "The shop owner thinks that flowers can bring happiness. That's why he opened a flower shop, in hopes that everyone will find their happiness.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["shark", "starfish", "pink_shell"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 35, "chance": null },
+        { "currency": "rating", "amount": 0.6, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "shark", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "pink_shell", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "garden_plot",
+    "name": "Garden Plot",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "He only does three things everyday: reading, eating and watering flowers.",
+    "requirements": {
+      "rating": null,
+      "customers": ["sloth"],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["shark", "pink_shell"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 35, "chance": null },
+        { "currency": "cod", "amount": 370, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "shark", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "pink_shell", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "cut_cake",
+    "name": "Cut Cake",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "The boss's eyes hide dollar signs.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": true,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["cuttlefish", "pink_shell"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 35, "chance": null },
+        { "currency": "rating", "amount": 0.6, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "cuttlefish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "pink_shell", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "floras_ring_toss",
+    "name": "Flora's Ring Toss",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Chance to earn a wood carving of the Chef, personally carved by Flora.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": true,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["squid", "crab", "goldfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 40, "chance": null },
+        { "currency": "cod", "amount": 430, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "squid", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "goldfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "bamboo_hot_and_sour_noodles",
+    "name": "Bamboo Hot and Sour Noodles",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Boss Wiggins, the creator of the Bamboo Hot and Sour Noodles, is well-loved by those who prefer mild-tasting food.",
+    "requirements": {
+      "rating": 70000,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["starfish", "red_puffer", "shark"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 40, "chance": null },
+        { "currency": "cod", "amount": 440, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "red_puffer", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "shark", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "terrible_pancake",
+    "name": "Terrible Pancake",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Only when others say your food taste awful, then is it really awful. What are you doing criticizing your own food?",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["goldfish", "sea_urchin", "starfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 45, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "goldfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "sea_urchin", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "japanese_cuisine",
+    "name": "Japanese Cuisine",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "The boss usually speaks little but, occasionally, late at night, he chats with lonely customers about the things they want to do in future.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": true,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["butterflyfish", "starfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 45, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "butterflyfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "bears_takoyaki",
+    "name": "Bear's Takoyaki",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Takoyaki is especially popular with youngsters.",
+    "requirements": {
+      "rating": null,
+      "customers": ["white_rabbit"],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": true,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["red_puffer", "shark", "ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 45, "chance": null },
+        { "currency": "cod", "amount": 470, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "red_puffer", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "shark", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "ray", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "rabbits_breakfast",
+    "name": "Rabbit's Breakfast",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "The best of the peddlers in the village, Top3, has extraordinary peddling skills and is planning to publish a book called 'Peddling'.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["red_puffer"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 45, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "red_puffer", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "hedgehogs_breakfast",
+    "name": "Hedgehog's Breakfast",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Has just graduated from high school and is temporarily manning the stall for his family during the holidays, though he thinks this is harder than confessing to a girl.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["shark", "red_puffer"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 45, "chance": null },
+        { "currency": "cod", "amount": 490, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "shark", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "red_puffer", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "sweet_malt_candy",
+    "name": "Sweet Malt Candy",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "A traditional delight with a long history. Two dollars to spin the left wheel and five to spin the right, which is said to be easier to get the dragon, but ends up giving the quail every time...",
+    "requirements": {
+      "rating": 90000,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["shark", "sea_urchin"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 50, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "shark", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "sea_urchin", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "scavenging_puppies_and_kitties",
+    "name": "Scavenging Puppies and Kitties",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "A cool doggo turned gentle thanks to a kitty's company.",
+    "requirements": {
+      "rating": null,
+      "customers": ["dalmatian"],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["cuttlefish", "shark"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 50, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "cuttlefish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "shark", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "beancurd_dessert",
+    "name": "Beancurd Dessert",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Shiba's specialty beancurd.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["jellyfish", "flounder"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 15, "chance": null },
+        { "currency": "rating", "amount": 0.2, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "jellyfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "flounder", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "bowl_pudding",
+    "name": "Bowl Pudding",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Smooth and delicious, rich and aromatic.",
+    "requirements": {
+      "rating": 14000,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": true,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["jellyfish", "clownfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 20, "chance": null },
+        { "currency": "cod", "amount": 200, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "jellyfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "clownfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "ice_cream_stall",
+    "name": "Ice Cream Stall",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Sweet and yummy!",
+    "requirements": {
+      "rating": 18000,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["starfish", "squid"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 20, "chance": null },
+        { "currency": "rating", "amount": 0.3, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "squid", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "golden_fried_potatoes",
+    "name": "Golden Fried Potatoes",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Crispy on the outside, fluffy on the inside. Looks really delicious!",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["pink_shell", "crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 25, "chance": null },
+        { "currency": "rating", "amount": 0.4, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "pink_shell", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "american_hot_dog",
+    "name": "American Hot Dog",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "A very big serving. You'll feel full after just half of it.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["starfish", "crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 25, "chance": null },
+        { "currency": "cod", "amount": 290, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "honeydew_shaved_ice",
+    "name": "Honeydew Shaved Ice",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Made from natural ice straight from Antarctica.",
+    "requirements": {
+      "rating": null,
+      "customers": ["penguin"],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["pink_shell", "crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 30, "chance": null },
+        { "currency": "cod", "amount": 310, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "pink_shell", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "traditional_bowl_pudding",
+    "name": "Traditional Bowl Pudding",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "Traditional Bowl Pudding has an even richer taste!",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["starfish", "pink_shell"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 30, "chance": null },
+        { "currency": "rating", "amount": 0.4, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "pink_shell", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "fresh_glutinous_rice_cake",
+    "name": "Fresh Glutinous Rice Cake",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "A common childhood snack, but hardly seen any more.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["starfish", "pink_shell"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 30, "chance": null },
+        { "currency": "cod", "amount": 340, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "pink_shell", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "egg_waffle",
+    "name": "Egg Waffle",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "The egg waffle of childhood smells really appetizing.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["red_puffer", "starfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 35, "chance": null },
+        { "currency": "rating", "amount": 0.4, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "red_puffer", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+
+  {
+    "id": "tailor_liu",
+    "name": "Tailor Liu",
+    "tags": ["customer", "booth_owner"],
+    "customerDescription": "After years of sewing and mending clothes, his technique is top-notch.",
+    "requirements": {
+      "rating": null,
+      "customers": [],
+      "recipes": [],
+      "facilities": [],
+      "letters": []
+    },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": true,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["shark", "red_puffer"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 40, "chance": null },
+        { "currency": "cod", "amount": 400, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "shark", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "red_puffer", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  
+
+  {
+    "id": "love_salon",
+    "name": "Love Salon",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Professional hairdresser. Satisfaction guaranteed!",
+    "requirements": {
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": [],
+      "rating": null
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Shark Shark", "Red Puffer Red Puffer"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 40, "chance": null },
+        { "currency": "rating", "amount": 0.6, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "fried_quail_eggs",
+    "name": "Fried Quail Eggs",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Fried to a golden brown. It tastes even better with condiments.",
+    "requirements": {
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": [],
+      "rating": null
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Shark Shark", "Ray Ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 40, "chance": null },
+        { "currency": "cod", "amount": 420, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "ice_cream_truck",
+    "name": "Ice Cream Truck",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Many flavors to choose from. Bring your own stool!",
+    "requirements": {
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": [],
+      "rating": null
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Shark Shark", "Seahorse Seahorse"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 50, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "street_stall_hiring",
+    "name": "Street Stall Hiring",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Although he is wearing a paper bag over his head, he looks really familiar!",
+    "requirements": {
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": [],
+      "rating": null
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Clownfish Clownfish", "Squid Squid"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 30, "chance": null },
+        { "currency": "rating", "amount": 0.4, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": true
+    }
+  },
+  {
+    "id": "summer_iced_jelly",
+    "name": "Summer Iced Jelly",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A bowl of handmade iced jelly full of ingredients on a hot summer day is one of the best indulgences in life!",
+    "requirements": {
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": [],
+      "rating": null
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Seahorse Seahorse", "Jellyfish Jellyfish", "Flounder Flounder"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 30, "chance": null },
+        { "currency": "rating", "amount": 0.4, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "piggys_crawdads",
+    "name": "Piggy's Crawdads",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The customers are all frequent patrons, and the stall often stays open till 2 or 3 in the morning.",
+    "requirements": {
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": [],
+      "rating": null
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Sea Urchin Sea Urchin", "Crab Crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 40, "chance": null },
+        { "currency": "cod", "amount": 440, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "skillful_massage",
+    "name": "Skillful Massage",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The therapist has top-tier techniques and strength but is also quite talkative.",
+    "requirements": {
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": [],
+      "rating": null
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Sea Urchin Sea Urchin"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "cod", "amount": 540, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "rainbow_shop_stationery",
+    "name": "Rainbow Shop Stationery",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Often gets lost in storybooks and forgets that customers are here.",
+    "requirements": {
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": [],
+      "rating": null
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Sea Urchin Sea Urchin"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 1.2, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "bicycle_repairs",
+    "name": "Bicycle Repairs",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Always has dirty face and palms.",
+    "requirements": {
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": [],
+      "rating": null
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Seahorse Seahorse"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "cod", "amount": 540, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "encounters_photo_studio",
+    "name": "Encounters Photo Studio",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Starts to feel uncomfortable if they don't take a few photos every day.",
+    "requirements": {
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": [],
+      "rating": null
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Seahorse Seahorse"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 1.2, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "love_tribe",
+    "name": "Love Tribe",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Has a gaze filled with countless stories.",
+    "requirements": {
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": [],
+      "rating": null
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Cuttlefish Cuttlefish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "cod", "amount": 540, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": true
+    }
+  },
+  {
+    "id": "fortunetelling",
+    "name": "Fortunetelling",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Has a mysterious look.",
+    "requirements": {
+      "recipes": [],
+      "facilities": [],
+      "letters": [],
+      "customers": [],
+      "rating": null
+    },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Cuttlefish Cuttlefish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 1.2, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "professional_protectors",
+    "name": "Professional Protectors",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "I hear they were an office worker back in the day.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Butterflyfish Butterfly Fish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "cod", "amount": 560, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "gold_tooth_antiques",
+    "name": "Gold Tooth Antiques",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Equally honest with all customers!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Butterflyfish Butterfly Fish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 1.0, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "another_roujiamo",
+    "name": "Another Roujiamo",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Another, and another! There's no stopping!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Butterflyfish Butterfly Fish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 1.2, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "swift_roti_prata",
+    "name": "Swift Roti Prata",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "I recommend the pineapple flavor. It's sweet, crunchy, and delicious!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Sea Urchin Sea Urchin", "Clownfish Clownfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "trendy_braid",
+    "name": "Trendy Braid",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Just by looking at it, you know it was braided by a master!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Butterflyfish Butterfly Fish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 1.2, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "uncles_roasted_sweet_potato",
+    "name": "Uncle's Roasted Sweet Potato",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Want a sweet potato? It'll make your winter days warmer!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": 110000 },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Shark Shark"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "cod", "amount": 590, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "inconspicuous_roasted_chestnuts",
+    "name": "Inconspicuous Roasted Chestnuts",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Otto's been roasting chestnuts here for years, just waiting for that girl with the braces...",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["little_lion"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Pink Shell Pink Shell"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 1.2, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+  {
+    "id": "romantic_hot_air_balloon",
+    "name": "Romantic Hot Air Balloon",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "I want to bring you to the romantic Oak Bay!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Butterflyfish Butterfly Fish", "Clownfish Clownfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 1.2, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "budget_witchs_soup",
+    "name": "Budget Witch's Soup",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Huh? Why does this bowl of soup taste kinda... gooey and salty?",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Seahorse Seahorse", "Flounder Flounder"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "cod", "amount": 540, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "sticky_rice_balls",
+    "name": "Sticky Rice Balls",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Bang bang bang. It's the melody of the glutinous rice bouncing on drums.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Jellyfish Jellyfish", "Cuttlefish Cuttlefish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "cod", "amount": 600, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": true
+    }
+  },
+
+  {
+    "id": "ink_calligraphy",
+    "name": "Ink Calligraphy",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "You can smell the fragrance of the ink and paper from a distance.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Butterflyfish Butterfly Fish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "cod", "amount": 600, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "aaron_herbs",
+    "name": "Aaron Herbs",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "He always appears on time and disappears once he finishes selling his herbs.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Hermit Crab Hermit Crab", "Clownfish Clownfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "cod", "amount": 610, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "mr_horses_vegetables",
+    "name": "Mr. Horse's Vegetables",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Vegetables sold without the use of middlemen.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["brown_horse"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Hermit Crab Hermit Crab", "Flounder Flounder"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "cod", "amount": 610, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "mysterious_magic",
+    "name": "Mysterious Magic",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Just standard magic tricks. The magician doesn't seem to mind that no one is watching.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": 150000 },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Goldfish Goldfish", "Jellyfish Jellyfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "rating", "amount": 1.0, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "sweet_coconut_water",
+    "name": "Sweet Coconut Water",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The shopkeeper is always smiling. He prepares the coconuts with speed and precision.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["asian_elephant"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Goldfish Goldfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "rating", "amount": 1.0, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "foxs_oden",
+    "name": "Fox's Oden",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The stall only opens late at night, specifically for those who go home late.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Hermit Crab Hermit Crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "cod", "amount": 620, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "wholesale_wild_mushrooms",
+    "name": "Wholesale Wild Mushrooms",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Delicious and healthy.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Ray Ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "cod", "amount": 620, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "outdoor_yoga",
+    "name": "Outdoor Yoga",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "I like to do yoga outdoors when the weather is nice outside.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": 200000 },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Ray Ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 65, "chance": null },
+        { "currency": "cod", "amount": 620, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "laughter_club",
+    "name": "Laughter Club",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Are you feeling down? Come and watch my performance!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Clownfish Clownfish", "Ray Ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 50, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "colorful_balloons",
+    "name": "Colorful Balloons",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "He finished twisting these balloons before I could even blink.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Pink Shell Pink Shell", "Ray Ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 50, "chance": null },
+        { "currency": "cod", "amount": 510, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "freewheeling_doodles",
+    "name": "Freewheeling Doodles",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Paint it just the way you like it!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Goldfish Goldfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 65, "chance": null },
+        { "currency": "cod", "amount": 620, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "phantom_car",
+    "name": "Phantom Car",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Appears out of the blue at night and vanishes abruptly before dawn.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Red Puffer Red Puffer", "Flounder Flounder"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 35, "chance": null },
+        { "currency": "cod", "amount": 350, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "soul_carving_booth",
+    "name": "Soul-Carving Booth",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "All the pumpkins carved by the boss look incredibly lifelike.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Sea Urchin Sea Urchin", "Squid Squid"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 45, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "magic_candy_store",
+    "name": "Magic Candy Store",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "It's clearly unmanned, yet the pumpkin automatically dispenses candy whenever customers step up.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Seahorse Seahorse", "Goldfish Goldfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 1.2, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "graveyard_dressing_room",
+    "name": "Graveyard Dressing Room",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Although the boss has a nasty temper, his skills are first-rate.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Hermit Crab Hermit Crab", "Cuttlefish Cuttlefish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 1.2, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "beavers_flying_daggers",
+    "name": "Beaver's Flying Daggers",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Don't worry, everyone. Rest assured that all our performers have undergone professional training.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Ray Ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "cod", "amount": 620, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "gingerbread_mans_bar_cart",
+    "name": "Gingerbread Man's Bar Cart",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Would you like a warm glass of fresh red wine to keep the cold at bay this Christmas Eve?",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Sea Urchin Sea Urchin", "Goldfish Goldfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 35, "chance": null },
+        { "currency": "rating", "amount": 0.6, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "magic_bakery",
+    "name": "Magic Bakery",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Strange singing can be heard each time someone picks up a bun.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Flounder Flounder", "Hermit Crab Hermit Crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 65, "chance": null },
+        { "currency": "cod", "amount": 620, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "a_melody_on_the_bridge",
+    "name": "A Melody on the Bridge",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Have a listen when you pass by. Who knows when you'll get to enjoy it again?",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Hermit Crab Hermit Crab", "Seahorse Seahorse"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 40, "chance": null },
+        { "currency": "cod", "amount": 430, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "super_value_pawnshop",
+    "name": "Super Value Pawnshop",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "As long as you're brave enough to pawn it, we'll take it.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Ray Ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "cod", "amount": 610, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "crispy_wafer_rolls_booth",
+    "name": "Crispy Wafer Rolls Booth",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Fresh from the oven! They're crispy and delicious.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["alaska"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Cuttlefish Cuttlefish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 40, "chance": null },
+        { "currency": "cod", "amount": 440, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "artisan_chihuahua",
+    "name": "Artisan Chihuahua",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "This booth owner can craft anything upon request.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["chihuahua"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Butterflyfish Butterfly Fish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 1.2, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "professional_welding_machine",
+    "name": "Professional Welding Machine",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Don't stare at the welding sparks for too long. It'll hurt your eyes!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["dalmatian"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Goldfish Goldfish", "Squid Squid"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "cod", "amount": 620, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "outdoor_livestream",
+    "name": "Outdoor Livestream",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Your support will motivate him to do even better!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["lynx"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Sea Urchin Sea Urchin", "Jellyfish Jellyfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "cod", "amount": 620, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": true
+    }
+  },
+
+  {
+    "id": "handmade_lemon_water",
+    "name": "Handmade Lemon Water",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "I'm not upset, I'm just trying to squeeze as much juice from the lemons as I can!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["yannis"], "rating": 220000 },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Ray Ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 65, "chance": null },
+        { "currency": "cod", "amount": 620, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "grilled_toast",
+    "name": "Grilled Toast",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Take a bite and let the toast's aroma linger in your mouth!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["hamster"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Seahorse Seahorse", "Hermit Crab Hermit Crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 45, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "yayas_succulents",
+    "name": "Yaya's Succulents",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Don't water the succulent plants too frequently!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["praying_samoyed"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Ray Ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 65, "chance": null },
+        { "currency": "cod", "amount": 630, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "strange_chocolate_booth",
+    "name": "Strange Chocolate Booth",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Although it tastes strange, it possesses mysterious effects.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["little_turtle"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Squid Squid"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 45, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "magic_brooms",
+    "name": "Magic Brooms",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The fastest broom in the world!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["dachshund"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Flounder Flounder"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "cod", "amount": 590, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "all_knowing_magic_mirror",
+    "name": "All-knowing Magic Mirror",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "It will give you the correct answers to all your questions.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["rice_cake"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Shark Shark"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 65, "chance": null },
+        { "currency": "cod", "amount": 630, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "mad_hatters_afternoon_tea",
+    "name": "Mad Hatter's Afternoon Tea",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The tea on the table is always hot, regardless of the time of day.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["mad_hatter"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Butterflyfish Butterfly Fish", "Cuttlefish Cuttlefish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 60, "chance": null },
+        { "currency": "cod", "amount": 580, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "wondrous_christmas_tree",
+    "name": "Wondrous Christmas Tree",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Fancy making a wish? It's likely to come true!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["adventurer_stoat"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Seahorse Seahorse", "Red Puffer Red Puffer"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 65, "chance": null },
+        { "currency": "cod", "amount": 610, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "magic_tiny_train",
+    "name": "Magic Tiny Train",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "What wondrous place will this tiny train take me this time?",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["binturong"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Goldfish Goldfish", "Sea Urchin Sea Urchin"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 70, "chance": null },
+        { "currency": "cod", "amount": 650, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "sweet_ding_ding_candy",
+    "name": "Sweet Ding Ding Candy",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Ding-a-ling! Tastes like the sweet memories of my childhood.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["wood_chuckin_beaver"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Butterflyfish Butterfly Fish", "Crab Crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 65, "chance": null },
+        { "currency": "cod", "amount": 630, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "grilled_tofu",
+    "name": "Grilled Tofu",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Don't let the rundown exterior fool you–the boss' tofu-grilling skills are top-notch!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["fennec_fox"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Ray Ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 70, "chance": null },
+        { "currency": "cod", "amount": 660, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "warm_lotus_seed_dessert",
+    "name": "Warm Lotus Seed Dessert",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A spoonful warms you right up.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["aries"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Goldfish Goldfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 75, "chance": null },
+        { "currency": "cod", "amount": 680, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "fragrant_sticky_rice",
+    "name": "Fragrant Sticky Rice",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Sticky rice by itself is 100% delicious, but if you add a sausage, the tastiness shoots up to 10,000%!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["dalmatian"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Cuttlefish Cuttlefish", "Starfish Starfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 70, "chance": null },
+        { "currency": "cod", "amount": 640, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "crackling_grilled_sausages",
+    "name": "Crackling Grilled Sausages",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Three bucks for one, five bucks for two!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["fancy_rat"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Hermit Crab Hermit Crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 75, "chance": null },
+        { "currency": "cod", "amount": 670, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "shadow_play_theater",
+    "name": "Shadow Play Theater",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "This lone booth owner controls legions on the stage!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["chocolate_lab"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Sea Urchin Sea Urchin", "Jellyfish Jellyfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 80, "chance": null },
+        { "currency": "cod", "amount": 690, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "cutie_manicure",
+    "name": "Cutie Manicure",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Available in all sorts of designs under the sun.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["rice_cake"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Crab Crab", "Clownfish Clownfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 65, "chance": null },
+        { "currency": "cod", "amount": 700, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": true
+    }
+  },
+
+  {
+    "id": "airplane_kiddie_ride",
+    "name": "Airplane Kiddie Ride",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Little pilot, are you up for the challenge?",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["wood_chuckin_beaver"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Cuttlefish Cuttlefish", "Seahorse Seahorse"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 80, "chance": null },
+        { "currency": "cod", "amount": 660, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "tiny_trampoline",
+    "name": "Tiny Trampoline",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Even though the stall keeper seems quite fierce, in reality he won't chase you away, even if you exceed the allocated time.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["one_eyed_papillon"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Hermit Crab Hermit Crab", "Ray Ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 70, "chance": null },
+        { "currency": "cod", "amount": 630, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "sky_high_kite",
+    "name": "Sky-High Kite",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Ten seconds is all we need to make a kite!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["pug"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Butterflyfish Butterfly Fish", "Goldfish Goldfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 80, "chance": null },
+        { "currency": "cod", "amount": 650, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "penguin_coffee_cart",
+    "name": "Penguin Coffee Cart",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Exquisite coffee beans for an exquisite experience.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["penguin"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Sea Urchin Sea Urchin", "Red Puffer Red Puffer"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 65, "chance": null },
+        { "currency": "cod", "amount": 670, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "mint_chocolate_cones",
+    "name": "Mint Chocolate Cones",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "100% made by hand, the cones emit a rich aroma.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["white_mouse"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Seahorse Seahorse", "Jellyfish Jellyfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 65, "chance": null },
+        { "currency": "cod", "amount": 680, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "knitting_lamb",
+    "name": "Knitting Lamb",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "This stall's products are all made of 100% wool. It is said that the stall owner can knit the trendiest designs.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["sheepie"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Ray Ray", "Pink Shell Pink Shell"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 80, "chance": null },
+        { "currency": "cod", "amount": 690, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "strongman_game",
+    "name": "Strongman Game",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Only the strongest of warriors are worthy of this challenge.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["sleepwalking_little_lion"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Clownfish Clownfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 45, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "skeleton_puppet_show",
+    "name": "Skeleton Puppet Show",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The puppet is far more flexible than the puppeteer.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["party_puppy"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Flounder Flounder"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "cod", "amount": 590, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "handicrafts_for_charity",
+    "name": "Handicrafts For Charity",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A booth selling handicrafts by Oak Bay Elementary School students. All proceeds go to charity! The students apparently worked really hard on the handicrafts when they learned that they'd be helping those in need.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["little_koala"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Butterflyfish Butterfly Fish", "Crab Crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 80, "chance": null },
+        { "currency": "cod", "amount": 580, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "rainbow_snowboards",
+    "name": "Rainbow Snowboards",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Get a super detailed guidebook on snowboarding techniques with every purchase!",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["cher"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Sea Urchin Sea Urchin", "Jellyfish Jellyfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 75, "chance": null },
+        { "currency": "cod", "amount": 610, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "antique_clock_repairs",
+    "name": "Antique Clock Repairs",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Just like memories, time must also be preserved.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Cuttlefish Cuttlefish", "Squid Squid"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "cod", "amount": 670, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "sixth_bookstore",
+    "name": "Sixth Bookstore",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Many valuable books can be found here.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["weeping_croc"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Seahorse Seahorse", "Red Puffer Red Puffer"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 80, "chance": null },
+        { "currency": "cod", "amount": 690, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "cozy_churros",
+    "name": "Cozy Churros",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "It's best to eat something warm and toasty during wintertime.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["manager_bear"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Sea Urchin Sea Urchin", "Ray Ray"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 75, "chance": null },
+        { "currency": "cod", "amount": 700, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "exquisite_lanterns",
+    "name": "Exquisite Lanterns",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Does any of the lanterns catch your fancy?",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["curly"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Hermit Crab Hermit Crab", "Squid Squid"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "cod", "amount": 670, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "kungfu_teahouse",
+    "name": "Kungfu Teahouse",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The booth owner is a master of the kungfu move known as 'The White Goose Spreads Its Wings.'",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": [], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Starfish Starfish", "Seahorse Seahorse", "Butterflyfish Butterfly Fish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 80, "chance": null },
+        { "currency": "cod", "amount": 690, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+  {
+    "id": "mr_bears_woodblocks",
+    "name": "Mr. Bear's Woodblocks",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "His dominant arm is much more muscular than his other arm.",
+    "requirements": { "recipes": [], "facilities": [], "letters": [], "customers": ["wounded_bear"], "rating": null },
+    "mementos": [],
+    "boothOwner": {
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["Squid Squid", "Goldfish Goldfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 75, "chance": null },
+        { "currency": "cod", "amount": 700, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [],
+      "hasMinigames": false
+    }
+  },
+
+
+  {
+    "id": "sizzling_squid",
+    "name": "Sizzling Squid",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Only fresh catch here! Have as much squid as you want!",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": ["french_bulldog"] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["clownfish", "red_puffer"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 75, "chance": null },
+        { "currency": "cod", "amount": 710, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "clownfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "red_puffer", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "customized_gown",
+    "name": "Customized Gown",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Every stitch is painstakingly handsewn by the tailor.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": ["dobermann"] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["sea_urchin", "jellyfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 75, "chance": null },
+        { "currency": "cod", "amount": 610, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "sea_urchin", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "jellyfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "sword_in_the_stone_challenge",
+    "name": "Sword in the Stone Challenge",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Will I be king if I pull it out?",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": ["green_hat_gnome"] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": true,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["clownfish", "crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 75, "chance": null },
+        { "currency": "cod", "amount": 670, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "clownfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "goldfish_scooping",
+    "name": "Goldfish Scooping",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "You need to control your strength and timing. Want to give it a try?",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": ["guru"] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": true,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["butterflyfish", "crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 75, "chance": null },
+        { "currency": "cod", "amount": 610, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "butterflyfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "street_coffee",
+    "name": "Street Coffee",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Authentic, handcrafted coffee!",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": ["artist_badger"] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["sea_urchin", "jellyfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 75, "chance": null },
+        { "currency": "cod", "amount": 670, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "sea_urchin", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "jellyfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "aeros_sliced_noodles",
+    "name": "Aero's Sliced Noodles",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Up they fly, down they fly, and into the pot they fly!",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": ["striped_yellow_jackal"] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["sea_urchin", "jellyfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 80, "chance": null },
+        { "currency": "cod", "amount": 690, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "sea_urchin", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "jellyfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "leisure_golf",
+    "name": "Leisure Golf",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Practice your golf skills, anywhere, anytime.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": ["terrier"] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": true,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["crab", "clownfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 45, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "crab", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "clownfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "aromatic_cheese_shop",
+    "name": "Aromatic Cheese Shop",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Do you like Swiss cheese or blue cheese?",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["cuttlefish", "starfish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 85, "chance": null },
+        { "currency": "cod", "amount": 700, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "cuttlefish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "border_collies_fresh_seafood",
+    "name": "Border Collie's Fresh Seafood",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "An unassuming shop that sells fresh seafood. There's always a long queue.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["hermit_crab", "flounder"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 50, "chance": null },
+        { "currency": "rating", "amount": 0.8, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "hermit_crab", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "flounder", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "jins_magic_wands",
+    "name": "Jin's Magic Wands",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "I heard that the wands choose their own masters.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["tree_branch", "shark"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 85, "chance": null },
+        { "currency": "cod", "amount": 710, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "tree_branch", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "shark", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "invisibility_cloaks",
+    "name": "Invisibility Cloaks",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Makes you invisible when you wear it!",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["goldfish", "pink_shell"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 55, "chance": null },
+        { "currency": "rating", "amount": 1.1, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "goldfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "pink_shell", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "magical_matches_booth",
+    "name": "Magical Matches Booth",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Rumors say that visions of delicious food appear when the matches are lit.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": ["pink_piggy"] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["tree_branch", "hermit_crab"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 50, "chance": null },
+        { "currency": "rating", "amount": 1.0, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "tree_branch", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "hermit_crab", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  {
+    "id": "cozy_winter_hat_booth",
+    "name": "Cozy Winter Hat Booth",
+    "tags": ["customer", "booth_owner"],
+    "livesIn": "Booth",
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "You're sure to find the perfect hat here.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": ["bernese_mountain_pup"] },
+    "mementos": [],
+    "boothOwner": {
+      "hasMinigames": false,
+      "timeRange": null,
+      "stayDurationMinutes": null,
+      "requiredFishIds": ["starfish", "cuttlefish"],
+      "incomeEvery5Min": [
+        { "currency": "plates", "amount": 90, "chance": null },
+        { "currency": "cod", "amount": 720, "chance": null }
+      ],
+      "customerDrop": null,
+      "appearanceRatesByFish": [
+        { "fishId": "starfish", "morning": null, "afternoon": null, "night": null },
+        { "fishId": "cuttlefish", "morning": null, "afternoon": null, "night": null }
+      ]
+    }
+  },
+  
   {
   "id": "cutie_white_bunny",
   "name": "Cutie White Bunny",
@@ -384,6 +3796,1517 @@
       "lively_shooting_stars"
     ]
   }
-}
+},
+  {
+    "id": "cutie_hamster",
+    "name": "Cutie Hamster",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Cutie Girlies. She may be short, but her dancing dominates the stage!",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Cutie Girlies",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
 
+  {
+    "id": "cutie_goose",
+    "name": "Cutie Goose",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Cutie Girlies. She has a very special voice and is a very special lead singer.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Cutie Girlies",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "cutie_guru",
+    "name": "Cutie Guru",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Cutie Girlies. The secret powerhouse of the group.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Cutie Girlies",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "little_piggy_angel",
+    "name": "Little Piggy Angel",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Little Angels Chorus. Likes singing and dancing and is working hard to improve her singing.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Little Angels Chorus",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "little_turtle_angel",
+    "name": "Little Turtle Angel",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Little Angels Chorus. The leader of the group and a born singer.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Little Angels Chorus",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "little_yorkie_angel",
+    "name": "Little Yorkie Angel",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Little Angels Chorus. Loves singing but is completely tone deaf.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Little Angels Chorus",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "little_shiba_angel",
+    "name": "Little Shiba Angel",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Little Angels Chorus. Is happiest when singing along with everyone!",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Little Angels Chorus",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "bassist_toad",
+    "name": "Bassist Toad",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of The Croaks. A perfect gentleman.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "The Croaks",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "guitarist_toad",
+    "name": "Guitarist Toad",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of The Croaks. Is extremely passionate about music and often indulges in it.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "The Croaks",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "vocalist_toad",
+    "name": "Vocalist Toad",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of The Croaks. Loves the band and has a steadfast heart.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "The Croaks",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "drummer_toad",
+    "name": "Drummer Toad",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of The Croaks. Doesn't talk much.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "The Croaks",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "vocalist_samoyed",
+    "name": "Vocalist Samoyed",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Founder of Sakura Soda. Killer move: A smile that cures all sadness.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Sakura Soda",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "guitarist_husky",
+    "name": "Guitarist Husky",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Member of Sakura Soda. His aloofness draws a lot of attention from the girls.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Sakura Soda",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "bassist_border_collie",
+    "name": "Bassist Border Collie",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Member of Sakura Soda. For straight-A students, everything is a breeze, including bass.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Sakura Soda",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "accompanist_penguin",
+    "name": "Accompanist Penguin",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Member of Sakura Soda. He only shakes the maracas when you think he's slacking off.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Sakura Soda",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "lead_dancer_slim_white_dog",
+    "name": "Lead Dancer Slim White Dog",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Member of Nebulae. Has 8 years of dancing experience. Loves life, but loves dancing even more.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Nebulae",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "lead_singer_dalmatian",
+    "name": "Lead Singer Dalmatian",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Member of Nebulae. Has a sweet voice that can heal your heart.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Nebulae",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "rapper_bean",
+    "name": "Rapper Bean",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Member of Nebulae. An energetic rapper.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Nebulae",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "leader_scotch_collie",
+    "name": "Leader Scotch Collie",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Member of Nebulae. An all-rounded leader that everyone counts on.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Nebulae",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "leader_pug",
+    "name": "Leader Pug",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Member of Ball Lightning. With his knack for music, he provides an emotional anchor for all members.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Ball Lightning",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "guitarist_jackal",
+    "name": "Guitarist Jackal",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Member of Ball Lightning. Wild on stage, quiet off stage. Appears rather aloof.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Ball Lightning",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "bassist_brown_wolf",
+    "name": "Bassist Brown Wolf",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Member of Ball Lightning. Always with a smile on his face, he seems to have a hidden glorious past.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Ball Lightning",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "dj_wolf",
+    "name": "DJ Wolf",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Member of Ball Lightning. Great at livening up the atmosphere.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Ball Lightning",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "piano_contender",
+    "name": "Piano Contender",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Laughing Out Loud. Proficient in performing rhythmic rap storytelling to the beat of bamboo clappers. It is said that he may even outshine a piano in a group act.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Laughing Out Loud",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "bamboo_hand_fan",
+    "name": "Bamboo Hand Fan",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Laughing Out Loud. His vocal skills and a bamboo hand fan are all he needs to delight the audience.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Laughing Out Loud",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "natural_comedian",
+    "name": "Natural Comedian",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Laughing Out Loud. Owing to his comical appearance, the audience frequently roar in laughter even before he begins his performance.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Laughing Out Loud",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "chopper",
+    "name": "Chopper",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Laughing Out Loud. Boasts a strong foundation. Rattles off fluent and perfectly sound sentences with ease.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Laughing Out Loud",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "probiotic_panther",
+    "name": "Probiotic Panther",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Sweet Yogurt. He's a bit of a scatterbrain, but the team really relies on him.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Sweet Yogurt",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "frisky_pangolin",
+    "name": "Frisky Pangolin",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Sweet Yogurt. He's a ball of energy and always goes all out during performances.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Sweet Yogurt",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "zippy_koala",
+    "name": "Zippy Koala",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Sweet Yogurt. Very responsible despite his young age. Always eagerly helping his leader wrap up loose ends.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Sweet Yogurt",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "sweetie_curly",
+    "name": "Sweetie Curly",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Sweet Yogurt. As the youngest, everyone treats her very well.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Sweet Yogurt",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "dubond",
+    "name": "DuBond",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The refined and gentlemanly principal cellist of the Sunshine Symphony.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Sunshine Symphony",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "louise",
+    "name": "Louise",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A reticent member of the Sunshine Symphony who is often found immersed in the world of music.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Sunshine Symphony",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "danielle",
+    "name": "Danielle",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Sunshine Symphony. For some reason, people easily nod off when they listen to her perform.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Sunshine Symphony",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "marcus",
+    "name": "Marcus",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The leader and conductor of the Sunshine Symphony. Though he has an odd way of speaking, he is highly accomplished as an artist.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Sunshine Symphony",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "pretty_face",
+    "name": "Pretty Face",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Eight Tones Band. She is the eldest among the four members and is calm and reliable. Her specialty is the Rebound Pipa.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Eight Tones Band",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "drunken_rouge",
+    "name": "Drunken Rouge",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Eight Tones Band. She doesn't talk much, preferring to communicate by playing the guzheng in a way that imitates human speech instead.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Eight Tones Band",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "exquisite_jade",
+    "name": "Exquisite Jade",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Eight Tones Band. She is the youngest among the members and is very popular among all age groups. All the customers love her.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Eight Tones Band",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "princess_feather",
+    "name": "Princess Feather",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Eight Tones Band. She wanted to learn how to play the drums, but due to lack of strength, she turned to playing the sheng instead. Surprisingly enough, she turned out to be rather talented at it.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Eight Tones Band",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "rat_a_tat",
+    "name": "Rat-a-tat",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "He's the one who started Cheesy Notes. He plays the cheese drums because he's the strongest band member!",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Cheesy Notes",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "dingle_dangle",
+    "name": "Dingle-dangle",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "She's the youngest member of Cheesy Notes. Although she seems somewhat lazy, she never misses a beat!",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Cheesy Notes",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "ta_da_da",
+    "name": "Ta-da-da",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Cheesy Notes, she personally bakes the bread that she uses in every performance. She also stores her bread carefully and strives to put on the best performance possible.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Cheesy Notes",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "thump_thump",
+    "name": "Thump-thump",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Cheesy Notes, he is quite rotund in appearance. Extremely lovable, he is well-liked by all.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Cheesy Notes",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "busy_bee_trice",
+    "name": "Busy Bee-trice",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Pomegranate Dance Troupe’s management team. She is always hustling and bustling.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Pomegranate Dance Troupe",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "steady_sally",
+    "name": "Steady Sally",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Despite being the oldest member of the Pomegranate Dance Troupe, her form remains impeccable. Her fundamentals are rock solid!",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Pomegranate Dance Troupe",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "gentle_grace",
+    "name": "Gentle Grace",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Pomegranate Dance Troupe, she has such a kind disposition that even the naughtiest children will listen to her words.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Pomegranate Dance Troupe",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "elegant_emily",
+    "name": "Elegant Emily",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A stylish lady and the youngest member of the Pomegranate Dance Troupe.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Pomegranate Dance Troupe",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "backing_vocalist_beaver",
+    "name": "Backing Vocalist Beaver",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Aloha Band. While those who hear her singing praise its ethereal qualities, she prefers more rhythmical expressions than actual singing.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Aloha Band",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "soloist_beaver",
+    "name": "Soloist Beaver",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Aloha Band. Even though he's typically absent-minded, once he starts to perform, he'll always give it his all.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Aloha Band",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "accompanist_beaver",
+    "name": "Accompanist Beaver",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Aloha Band, and also a foodie. His motto is, 'I can only play the drums on a full belly.'",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Aloha Band",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "backup_dancer_beaver",
+    "name": "Backup Dancer Beaver",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of the Aloha Band. A passionate dancer that's able to groove to all kinds of music, she is capable of hyping up any crowd.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Aloha Band",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "aaron",
+    "name": "Aaron",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Minty Popping Candy. Despite being the youngest member of the band, he carries the largest drum. Perhaps he's a child prodigy?",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Minty Popping Candy",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "belle",
+    "name": "Belle",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The tallest and liveliest member of Minty Popping Candy. However, she's easily distracted.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Minty Popping Candy",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "ella",
+    "name": "Ella",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Minty Popping Candy. Once a rhythm starts, she can instantly follow the beat. What a reliable musician!",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Minty Popping Candy",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "chris",
+    "name": "Chris",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The lead member of Minty Popping Candy. Gentle, composed, and detail-oriented.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Minty Popping Candy",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "windrider",
+    "name": "Windrider",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "Member and founder of Cloudrise Tai Chi. The set of tai chi swordplay techniques he created enjoys high praise among all who learn it.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Cloudrise Tai Chi",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "moondancer",
+    "name": "Moondancer",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Cloudrise Tai Chi. Rather than practicing tai chi at dawn, he finds taking in the moon's energy on moonlit nights much more effective.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Cloudrise Tai Chi",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "cloudmaster",
+    "name": "Cloudmaster",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Cloudrise Tai Chi. He moves with such grace and power that nobody can stop him from going where he wishes. His one move 'The White Crane Spreads Its Wings' is an unforgettable sight.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Cloudrise Tai Chi",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "snowwalker",
+    "name": "Snowwalker",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "A member of Cloudrise Tai Chi. Regular training has made him quick and light on his feet, allowing him to walk on snow without leaving paw prints.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Cloudrise Tai Chi",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+
+  {
+    "id": "minty_star",
+    "name": "Minty Star",
+    "tags": ["customer", "performer"],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "customerDescription": "The happy-go-lucky member of Puff Planet. His voice is as lovely as his bell instrument.",
+    "requirements": { "rating": null, "recipes": [], "facilities": [], "letters": [], "customers": [] },
+    "mementos": [],
+    "performer": {
+      "band": "Puff Planet",
+      "showDurationMinutes": null,
+      "callbackRequirementHours": null,
+      "baseEarnings": { "currency": "film", "amountPerMinute": null },
+      "fansCustomerIds": [],
+      "canInviteThis": [],
+      "canBeInvitedBy": [],
+      "posterIds": []
+    }
+  },
+  {
+    "id": "frosty_star",
+    "name": "Frosty Star",
+    "tags": ["customer", "performer"],
+    "group": "Puff Planet",
+    "description": "The calm member of Puff Planet. He likes playing the flute in a corner by himself.",
+    "showDurationMinutes": null,
+    "callbackRequirementHours": null,
+    "baseEarnings": null,
+    "fans": [],
+    "canInvite": [],
+    "canBeInvitedBy": [],
+    "posters": [],
+    "facilities": [],
+    "categories": []
+  },
+  {
+    "id": "pudding_star",
+    "name": "Pudding Star",
+    "tags": ["customer", "performer"],
+    "group": "Puff Planet",
+    "description": "The member of Puff Planet with a muddle-headed personality, but it makes it easy to distinguish him from his twin.",
+    "showDurationMinutes": null,
+    "callbackRequirementHours": null,
+    "baseEarnings": null,
+    "fans": [],
+    "canInvite": [],
+    "canBeInvitedBy": [],
+    "posters": [],
+    "facilities": [],
+    "categories": []
+  },
+  {
+    "id": "honey_star",
+    "name": "Honey Star",
+    "tags": ["customer", "performer"],
+    "group": "Puff Planet",
+    "description": "A member of Puff Planet. Joined the band for stress relief from work, but takes his performances very seriously.",
+    "showDurationMinutes": null,
+    "callbackRequirementHours": null,
+    "baseEarnings": null,
+    "fans": [],
+    "canInvite": [],
+    "canBeInvitedBy": [],
+    "posters": [],
+    "facilities": [],
+    "categories": []
+  },
+  {
+    "id": "dancing_flamingo",
+    "name": "Dancing Flamingo",
+    "tags": ["customer", "performer"],
+    "group": "Lightseeker Ballet Troupe",
+    "description": "A member of the Lightseeker Ballet Troupe and aiming to become the principal dancer. It is said they can continue dancing even while asleep.",
+    "showDurationMinutes": null,
+    "callbackRequirementHours": null,
+    "baseEarnings": null,
+    "fans": [],
+    "canInvite": [],
+    "canBeInvitedBy": [],
+    "posters": [],
+    "facilities": [],
+    "categories": []
+  },
+  {
+    "id": "dancing_ostrich",
+    "name": "Dancing Ostrich",
+    "tags": ["customer", "performer"],
+    "group": "Lightseeker Ballet Troupe",
+    "description": "A member of the Lightseeker Ballet Troupe and the face of the group. They can learn new dance moves very quickly.",
+    "showDurationMinutes": null,
+    "callbackRequirementHours": null,
+    "baseEarnings": null,
+    "fans": [],
+    "canInvite": [],
+    "canBeInvitedBy": [],
+    "posters": [],
+    "facilities": [],
+    "categories": []
+  },
+  {
+    "id": "dancing_swan",
+    "name": "Dancing Swan",
+    "tags": ["customer", "performer"],
+    "group": "Lightseeker Ballet Troupe",
+    "description": "A member of the Lightseeker Ballet Troupe. Although she often complains during training, she always excels during performances.",
+    "showDurationMinutes": null,
+    "callbackRequirementHours": null,
+    "baseEarnings": null,
+    "fans": [],
+    "canInvite": [],
+    "canBeInvitedBy": [],
+    "posters": [],
+    "facilities": [],
+    "categories": []
+  },
+  {
+    "id": "dancing_wild_duck",
+    "name": "Dancing Wild Duck",
+    "tags": ["customer", "performer"],
+    "group": "Lightseeker Ballet Troupe",
+    "description": "A member of the Lightseeker Ballet Troupe. Calm and composed, she is able to solve problems with ease.",
+    "showDurationMinutes": null,
+    "callbackRequirementHours": null,
+    "baseEarnings": null,
+    "fans": [],
+    "canInvite": [],
+    "canBeInvitedBy": [],
+    "posters": [],
+    "facilities": [],
+    "categories": []
+  },
+  {
+    "id": "aurora_polar_bear",
+    "name": "Aurora Polar Bear",
+    "tags": ["customer", "performer"],
+    "group": "Aurora Puppet Club",
+    "description": "A member of the Aurora Puppet Club. Occasionally nods off during performances.",
+    "showDurationMinutes": null,
+    "callbackRequirementHours": null,
+    "baseEarnings": null,
+    "fans": [],
+    "canInvite": [],
+    "canBeInvitedBy": [],
+    "posters": [],
+    "facilities": [],
+    "categories": []
+  },
+  {
+    "id": "aurora_arctic_hare",
+    "name": "Aurora Arctic Hare",
+    "tags": ["customer", "performer"],
+    "group": "Aurora Puppet Club",
+    "description": "A member of the Aurora Puppet Club. Frequently surprises audiences with his performances.",
+    "showDurationMinutes": null,
+    "callbackRequirementHours": null,
+    "baseEarnings": null,
+    "fans": [],
+    "canInvite": [],
+    "canBeInvitedBy": [],
+    "posters": [],
+    "facilities": [],
+    "categories": []
+  },
+  {
+    "id": "aurora_fuzzy",
+    "name": "Aurora Fuzzy",
+    "tags": ["customer", "performer"],
+    "group": "Aurora Puppet Club",
+    "description": "A member of the Aurora Puppet Club. Possesses an incredible sense of rhythm.",
+    "showDurationMinutes": null,
+    "callbackRequirementHours": null,
+    "baseEarnings": null,
+    "fans": [],
+    "canInvite": [],
+    "canBeInvitedBy": [],
+    "posters": [],
+    "facilities": [],
+    "categories": []
+  },
+  {
+    "id": "aurora_sheep",
+    "name": "Aurora Sheep",
+    "tags": ["customer", "performer"],
+    "group": "Aurora Puppet Club",
+    "description": "A member of the Aurora Puppet Club. A musical genius who effortlessly creates exquisite melodies.",
+    "showDurationMinutes": null,
+    "callbackRequirementHours": null,
+    "baseEarnings": null,
+    "fans": [],
+    "canInvite": [],
+    "canBeInvitedBy": [],
+    "posters": [],
+    "facilities": [],
+    "categories": []
+  }
 ]

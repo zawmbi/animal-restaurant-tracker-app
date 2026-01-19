@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 import '../data/customers_repository.dart';
+import '../data/posters_repository.dart';
 import '../model/customer.dart';
+import '../model/poster.dart';
+import 'poster_detail_page.dart';
+
 import '../../dishes/ui/dish_detail_page.dart';
 import '../../facilities/ui/facility_detail_page.dart';
 import '../../letters/ui/letter_detail_page.dart';
@@ -60,6 +64,19 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     if (mounted) setState(() {});
   }
 
+  Future<void> _openPosterById(BuildContext context, String posterId) async {
+    final Poster? p = await PostersRepository.instance.byId(posterId);
+    if (!context.mounted || p == null) return;
+
+    await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => PosterDetailPage(posterId: posterId),
+      ),
+    );
+
+    if (mounted) setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     final r = customer.requirements;
@@ -79,6 +96,7 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               _setCustomerUnlocked(v);
             },
           ),
+
           Text(customer.customerDescription),
 
           const SizedBox(height: 16),
@@ -114,7 +132,9 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               'Requirements',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            if (r.rating != null) _section('Rating', Text(r.rating.toString())),
+
+            if (r.rating != null)
+              _section('Rating', Text(r.rating.toString())),
 
             _simpleLinks(
               context: context,
@@ -176,7 +196,6 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               },
             ),
 
-            // Now navigates to the prerequisite customer
             _simpleLinks(
               context: context,
               title: 'Prerequisite Customers',
@@ -316,12 +335,15 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     if (p.band != null && p.band!.trim().isNotEmpty) {
       lines.add(_section('Band', Text(p.band!)));
     }
+
     if (p.showDurationMinutes != null) {
       lines.add(_section('Show Duration', Text('${p.showDurationMinutes} mins')));
     }
+
     if (p.callbackRequirementHours != null) {
       lines.add(_section('Callback Requirement', Text('${p.callbackRequirementHours} hours')));
     }
+
     if (p.baseEarnings != null) {
       lines.add(_section(
         'Base Earnings',
@@ -392,7 +414,12 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
       lines.add(Wrap(
         spacing: 8,
         runSpacing: 8,
-        children: p.posterIds.map((pid) => EntityChip(label: pid)).toList(),
+        children: p.posterIds.map((pid) {
+          return EntityChip(
+            label: pid,
+            onTap: () => _openPosterById(context, pid),
+          );
+        }).toList(),
       ));
     }
 
