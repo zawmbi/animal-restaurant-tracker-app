@@ -17,26 +17,56 @@ class AppSettingsPage extends StatelessWidget {
             padding: const EdgeInsets.all(16),
             children: [
               Card(
-                child: SwitchListTile(
-                  title: Text(
-                    'Dark mode',
-                    style: Theme.of(context).textTheme.titleMedium,
+                child: Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Theme',
+                        style: Theme.of(context).textTheme.titleMedium,
+                      ),
+                      const SizedBox(height: 12),
+                      RadioListTile<ThemeMode>(
+                        title: const Text('Light'),
+                        subtitle: const Text('Always use light mode'),
+                        value: ThemeMode.light,
+                        groupValue: settings.themeMode,
+                        onChanged: (mode) {
+                          if (mode != null) {
+                            settings.setThemeMode(mode);
+                          }
+                        },
+                        contentPadding: EdgeInsets.zero,
+                      ),
+                      RadioListTile<ThemeMode>(
+                        title: const Text('Dark'),
+                        subtitle: const Text('Always use dark mode'),
+                        value: ThemeMode.dark,
+                        groupValue: settings.themeMode,
+                        onChanged: (mode) {
+                          if (mode != null) {
+                            settings.setThemeMode(mode);
+                          }
+                        },
+                        contentPadding: EdgeInsets.zero,
+                      ),
+                      RadioListTile<ThemeMode>(
+                        title: const Text('System'),
+                        subtitle: const Text('Follow device settings'),
+                        value: ThemeMode.system,
+                        groupValue: settings.themeMode,
+                        onChanged: (mode) {
+                          if (mode != null) {
+                            settings.setThemeMode(mode);
+                          }
+                        },
+                        contentPadding: EdgeInsets.zero,
+                      ),
+                    ],
                   ),
-                  subtitle: const Padding(
-                    padding: EdgeInsets.only(top: 6),
-                    child: Text('Use a darker color scheme.'),
-                  ),
-                  value: settings.themeMode == ThemeMode.dark,
-                  onChanged: (v) {
-                    // If you want a pure on/off toggle:
-                    // ON -> dark, OFF -> light
-                    settings.setThemeMode(v ? ThemeMode.dark : ThemeMode.light);
-                  },
                 ),
               ),
-
-              // Optional: if you want System / Light / Dark instead of a switch,
-              // tell me and I’ll swap this UI to a segmented control / radios.
             ],
           ),
         );

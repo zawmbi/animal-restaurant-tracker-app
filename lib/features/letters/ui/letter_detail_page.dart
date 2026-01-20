@@ -48,64 +48,92 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
   Color _ownedFill(BuildContext context) => Colors.green.withOpacity(0.18);
 
   @override
+  void initState() {
+    super.initState();
+    store.registerType(_bucketLetter);
+  }
+
+  @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final ownedFill = _ownedFill(context);
     final combos = letter.combinations;
 
-    return Scaffold(
-      appBar: AppBar(title: Text(letter.name)),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          if (letter.obtainMethod != null && letter.obtainMethod!.trim().isNotEmpty) ...[
-            const Text(
-              'How to Obtain',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+    return AnimatedBuilder(
+      animation: store,
+      builder: (context, _) {
+        final isOwned = store.isUnlocked(_bucketLetter, letter.id);
+
+        return Scaffold(
+          appBar: AppBar(
+            toolbarHeight: kToolbarHeight * 1.5,
+            title: Text(
+              letter.name,
+              maxLines: null,
             ),
-            const SizedBox(height: 8),
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: theme.colorScheme.surfaceVariant.withOpacity(0.3),
-                borderRadius: BorderRadius.circular(8),
+            actions: [
+              Checkbox(
+                value: isOwned,
+                onChanged: (v) {
+                  store.setUnlocked(_bucketLetter, letter.id, v ?? false);
+                  setState(() {});
+                },
               ),
-              child: Text(letter.obtainMethod!),
-            ),
-            const SizedBox(height: 16),
-          ],
-
-          if (combos.isNotEmpty) _CombinationTable(combinations: combos),
-          if (combos.isNotEmpty) const SizedBox(height: 16),
-
-          if (letter.description != null)
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: theme.colorScheme.secondary.withOpacity(0.25),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Text(letter.description!, textAlign: TextAlign.center),
-            ),
-
-          const SizedBox(height: 16),
-
-          _infoRow(
-            label: 'Bonus',
-            value: _BonusValue(raw: letter.bonus ?? '—', starAsset: _starAsset),
+            ],
           ),
+          body: ListView(
+            padding: const EdgeInsets.all(16),
+            children: [
+              if (letter.obtainMethod != null && letter.obtainMethod!.trim().isNotEmpty) ...[
+                const Text(
+                  'How to Obtain',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 8),
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: theme.colorScheme.surfaceVariant.withOpacity(0.3),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Text(letter.obtainMethod!),
+                ),
+                const SizedBox(height: 16),
+              ],
 
-          _ownedLinkRow(label: 'Unlocks', raw: letter.unlocks, fillIfOwned: ownedFill),
-          _ownedLinkRow(label: 'Prerequisite', raw: letter.prerequisite, fillIfOwned: ownedFill),
+              if (combos.isNotEmpty) _CombinationTable(combinations: combos),
+              if (combos.isNotEmpty) const SizedBox(height: 16),
 
-          if (letter.unlockRequirement != null && letter.unlockRequirement!.trim().isNotEmpty)
-            _ownedLinkRow(
-              label: 'Unlock Requirement',
-              raw: letter.unlockRequirement,
-              fillIfOwned: ownedFill,
-            ),
-        ],
-      ),
+              if (letter.description != null)
+                Container(
+                  padding: const EdgeInsets.all(12),
+                  decoration: BoxDecoration(
+                    color: theme.colorScheme.secondary.withOpacity(0.25),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Text(letter.description!, textAlign: TextAlign.center),
+                ),
+
+              const SizedBox(height: 16),
+
+              _infoRow(
+                label: 'Bonus',
+                value: _BonusValue(raw: letter.bonus ?? '—', starAsset: _starAsset),
+              ),
+
+              _ownedLinkRow(label: 'Unlocks', raw: letter.unlocks, fillIfOwned: ownedFill),
+              _ownedLinkRow(label: 'Prerequisite', raw: letter.prerequisite, fillIfOwned: ownedFill),
+
+              if (letter.unlockRequirement != null && letter.unlockRequirement!.trim().isNotEmpty)
+                _ownedLinkRow(
+                  label: 'Unlock Requirement',
+                  raw: letter.unlockRequirement,
+                  fillIfOwned: ownedFill,
+                ),
+            ],
+          ),
+        );
+      },
     );
   }
 
@@ -137,53 +165,139 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
     required Color fillIfOwned,
   }) {
     final text = (raw ?? '—').trim();
-    if (text.isEmpty || text == '—') {
+    if (text.isEmpty || text == '—' || text == '-') {
       return _infoRow(label: label, value: Text(text.isEmpty ? '—' : text));
     }
 
+    // Split by comma and trim each item
+    final items = text.split(',').map((s) => s.trim()).where((s) => s.isNotEmpty).toList();
+    
+    if (items.isEmpty) {
+      return _infoRow(label: label, value: Text(text));
+    }
+
+    // If single item, resolve it directly
+    if (items.length == 1) {
+      return _infoRow(
+        label: label,
+        value: FutureBuilder<_ResolvedTarget?>(
+          future: _resolve(items[0]),
+          builder: (context, snap) {
+            final target = snap.data;
+            if (target == null) return Text(items[0]);
+
+            final owned = target.owned;
+            final childText = Text(
+              items[0],
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.primary,
+                decoration: TextDecoration.none,
+              ),
+            );
+
+            final clickable = InkWell(
+              borderRadius: BorderRadius.circular(6),
+              onTap: () async {
+                await _openTarget(target);
+                if (mounted) setState(() {});
+              },
+              child: owned
+                  ? Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                      decoration: BoxDecoration(
+                        color: fillIfOwned,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: childText,
+                    )
+                  : Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 2),
+                      child: childText,
+                    ),
+            );
+
+            return UnconstrainedBox(
+              alignment: Alignment.centerLeft,
+              child: clickable,
+            );
+          },
+        ),
+      );
+    }
+
+    // Multiple items - show them in a Wrap
     return _infoRow(
       label: label,
-      value: FutureBuilder<_ResolvedTarget?>(
-        future: _resolve(text),
+      value: FutureBuilder<List<_ResolvedTarget?>>(
+        future: Future.wait(items.map((item) => _resolve(item))),
         builder: (context, snap) {
-          final target = snap.data;
-          if (target == null) return Text(text);
+          if (!snap.hasData) {
+            return Wrap(
+              spacing: 4,
+              runSpacing: 4,
+              children: items.map((item) => Text(item)).toList(),
+            );
+          }
 
-          final owned = target.owned;
+          final targets = snap.data!;
+          final widgets = <Widget>[];
 
-          final childText = Text(
-            text,
-            style: TextStyle(
-              color: Theme.of(context).colorScheme.primary,
-              decoration: TextDecoration.none, // no underline
-            ),
-          );
+          for (int i = 0; i < items.length; i++) {
+            final item = items[i];
+            final target = targets[i];
 
-          final clickable = InkWell(
-            borderRadius: BorderRadius.circular(6),
-            onTap: () async {
-              await _openTarget(target);
-              if (mounted) setState(() {});
-            },
-            child: owned
-                ? Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                    decoration: BoxDecoration(
-                      color: fillIfOwned,
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: childText,
-                  )
-                : Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 2),
-                    child: childText,
-                  ),
-          );
+            if (target == null) {
+              widgets.add(Text(item));
+            } else {
+              final owned = target.owned;
+              final childText = Text(
+                item,
+                style: TextStyle(
+                  color: Theme.of(context).colorScheme.primary,
+                  decoration: TextDecoration.none,
+                ),
+              );
 
-          // IMPORTANT: make the owned pill fit content (not full-width)
-          return UnconstrainedBox(
-            alignment: Alignment.centerLeft,
-            child: clickable,
+              final clickable = InkWell(
+                borderRadius: BorderRadius.circular(6),
+                onTap: () async {
+                  await _openTarget(target);
+                  if (mounted) setState(() {});
+                },
+                child: owned
+                    ? Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                        decoration: BoxDecoration(
+                          color: fillIfOwned,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: childText,
+                      )
+                    : Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 2),
+                        child: childText,
+                      ),
+              );
+
+              widgets.add(UnconstrainedBox(
+                alignment: Alignment.centerLeft,
+                child: clickable,
+              ));
+            }
+
+            // Add comma separator except for last item
+            if (i < items.length - 1) {
+              widgets.add(const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 4),
+                child: Text(','),
+              ));
+            }
+          }
+
+          return Wrap(
+            spacing: 0,
+            runSpacing: 4,
+            children: widgets,
           );
         },
       ),
@@ -229,14 +343,20 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
   }
 
   Future<_ResolvedTarget?> _resolve(String value) async {
+    final valueLower = value.trim().toLowerCase();
+    
+    // Try letters by name or ID
     final letters = await LettersRepository.instance.all();
-    final l = letters.firstWhereOrNull((e) => _eq(e.name, value));
+    var l = letters.firstWhereOrNull((e) => _eq(e.name, value));
+    l ??= letters.firstWhereOrNull((e) => _eq(e.id, valueLower));
     if (l != null && l.id != letter.id) {
       return _LetterTarget(l, owned: store.isUnlocked(_bucketLetter, l.id));
     }
 
+    // Try customers by name or ID
     final customers = await CustomersRepository.instance.all();
-    final c = customers.firstWhereOrNull((e) => _eq(e.name, value));
+    var c = customers.firstWhereOrNull((e) => _eq(e.name, value));
+    c ??= customers.firstWhereOrNull((e) => _eq(e.id, valueLower));
     if (c != null) {
       final cid = _tryGetId(c);
       return _CustomerTarget(
@@ -245,8 +365,10 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
       );
     }
 
+    // Try facilities by name or ID
     final facilities = await FacilitiesRepository.instance.all();
-    final f = facilities.firstWhereOrNull((e) => _eq(e.name, value));
+    var f = facilities.firstWhereOrNull((e) => _eq(e.name, value));
+    f ??= facilities.firstWhereOrNull((e) => _eq(e.id, valueLower));
     if (f != null) {
       final fid = _tryGetId(f);
       return _FacilityTarget(
@@ -255,13 +377,16 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
       );
     }
 
-    final m = await MementosIndex.instance.byId(value);
+    // Try mementos by ID
+    var m = await MementosIndex.instance.byId(valueLower);
     if (m != null) {
       return _MementoTarget(m, owned: store.isUnlocked(_bucketMementoCollected, m.key));
     }
 
+    // Try dishes by name or ID
     final dishes = await DishesRepository.instance.all();
-    final d = dishes.firstWhereOrNull((e) => _eq(e.name, value));
+    var d = dishes.firstWhereOrNull((e) => _eq(e.name, value));
+    d ??= dishes.firstWhereOrNull((e) => _eq(e.id, valueLower));
     if (d != null) {
       final did = _tryGetId(d);
       return _DishTarget(
