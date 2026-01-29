@@ -53,8 +53,8 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
     if (b == null || b.incomeEvery5Min == null) return 0;
 
     var expected = 0.0;
-    for (final rule in b.incomeEvery5Min!) {
-      expected += (rule.chance ?? 0) * (rule.amount ?? 0);
+    for (final rule in b.incomeEvery5Min) {
+      expected += (rule.chance) * (rule.amount);
     }
     return expected;
   }

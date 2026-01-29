@@ -325,7 +325,7 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            if (memento.stars > 0) ...[
+            if (memento.earnedStars > 0) ...[
               _sectionTitle(theme, 'Rating Bonus'),
               Row(
                 children: [
@@ -336,7 +336,7 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
                   ),
                   const SizedBox(width: 6),
                   Text(
-                    'Bonus Rating +${memento.stars}',
+                    'Bonus Rating +${memento.earnedStars}',
                     style: theme.textTheme.bodyMedium,
                   ),
                 ],

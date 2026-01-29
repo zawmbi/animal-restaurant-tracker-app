@@ -92,7 +92,7 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
 
           _infoRow(
             label: 'Bonus',
-            value: _BonusValue(raw: letter.bonus ?? '—', starAsset: _starAsset),
+            value: _BonusValue(raw: letter.earnedStars ?? '—', starAsset: _starAsset),
           ),
 
           _ownedLinkRow(label: 'Unlocks', raw: letter.unlocks, fillIfOwned: ownedFill),

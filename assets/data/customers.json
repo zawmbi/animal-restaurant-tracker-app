@@ -15,7 +15,7 @@
       {
         "id": "purse",
         "name": "Purse",
-        "stars": 5,
+        "earnedStars": 5,
         "description": "Looks very light, as if there is nothing inside.",
         "requirement": "Serve White Bunny 350 times.",
         "tags": ["customer_gift", "logbook_default"],
@@ -25,14 +25,14 @@
       {
         "id": "calculator",
         "name": "Calculator",
-        "stars": 30,
+        "earnedStars": 30,
         "description": "Continuously pressing buttons will produce cool robotic sounds.",
         "requirement": "Serve White Bunny 1500 times. \nSell 2000 Taiyaki."
       },
       {
         "id": "rabbit_hat",
         "name": "Rabbit Hat",
-        "stars": 15,
+        "earnedStars": 15,
         "description": "Knitted from the fur that Rabbit gave to the chef. It's very warm.",
         "requirement": "Serve White Bunny 3000 times. Sell 3500 Taiyaki."
       }
@@ -52,7 +52,7 @@
       {
         "id": "carrot_cellphone",
         "name": "Carrot Cellphone",
-        "stars": 10,
+        "earnedStars": 10,
         "description": "Although it's a cellphone, it looks like it's only good for eating.",
         "requirement": "Serve Brown Bunny 500 times.",
         "tags": ["customer_gift"],
@@ -62,7 +62,7 @@
       {
         "id": "sturdy_flower",
         "name": "Sturdy Flower",
-        "stars": 25,
+        "earnedStars": 25,
         "description": "This flower was dug out of nowhere, but it has survived and thrived.",
         "requirement": "Serve Brown Bunny 1330 times.",
         "tags": ["customer_gift"],
@@ -86,7 +86,7 @@
       {
         "id": "deers_cracker",
         "name": "Deer's Cracker",
-        "stars": 10,
+        "earnedStars": 10,
         "description": "It will bestow you with Deer's good fortune.",
         "requirement": "Serve Deer 700 times.",
         "tags": ["customer_gift"],
@@ -110,7 +110,7 @@
       {
         "id": "gold_chain",
         "name": "Gold Chain",
-        "stars": 20,
+        "earnedStars": 20,
         "description": "Put it on and you'll be the richest kid in Animal Restaurant.",
         "requirement": "Serve Mouse 1 time.",
         "tags": ["customer_gift"],
@@ -165,7 +165,7 @@
     {
       "id": "kibble",
       "name": "Kibble",
-      "stars": 10,
+      "earnedStars": 10,
       "description": "Crunchy dog food.",
       "requirement": "Serve White Shiba 500 times.",
       "tags": ["customer_gift"],

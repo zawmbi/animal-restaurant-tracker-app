@@ -332,7 +332,7 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
                         ),
                       ),
                     );
-                  }).toList(),
+                  }),
                 ],
               );
             },
@@ -435,7 +435,7 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
           width: 18,
           height: 18,
           fit: BoxFit.contain,
-          errorBuilder: (_, __, ___) =>
+          errorBuilder: (_, _, _) =>
               const Icon(Icons.attach_money, size: 18),
         );
       }
@@ -446,7 +446,7 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
           width: 18,
           height: 18,
           fit: BoxFit.contain,
-          errorBuilder: (_, __, ___) => const Icon(Icons.star, size: 18),
+          errorBuilder: (_, _, _) => const Icon(Icons.star, size: 18),
         );
 
       case BattlePassRewardType.gachaDraw:
@@ -455,7 +455,7 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
           width: 18,
           height: 18,
           fit: BoxFit.contain,
-          errorBuilder: (_, __, ___) => const Icon(Icons.casino, size: 18),
+          errorBuilder: (_, _, ___) => const Icon(Icons.casino, size: 18),
         );
 
       case BattlePassRewardType.promoteFree:
@@ -509,7 +509,7 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
       }
 
       case BattlePassRewardType.rating:
-        return 'Rating+${r.rating ?? 0}';
+        return 'Rating+${r.earnedStars ?? 0}';
 
       case BattlePassRewardType.item: {
         final qty = r.qty ?? 1;

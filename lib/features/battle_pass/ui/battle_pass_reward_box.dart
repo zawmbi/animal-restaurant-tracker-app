@@ -64,7 +64,7 @@ class BattlePassRewardBox extends StatelessWidget {
       case BattlePassRewardType.currency:
         return (Icons.attach_money, '${_cur(r.currency)}+${r.amount ?? 0}');
       case BattlePassRewardType.rating:
-        return (Icons.star, 'Rating+${r.rating ?? 0}');
+        return (Icons.star, 'Rating+${r.earnedStars ?? 0}');
       case BattlePassRewardType.item:
         final qty = r.qty ?? 1;
         final lvl = r.level;

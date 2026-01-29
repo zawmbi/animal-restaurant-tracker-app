@@ -67,7 +67,7 @@ class _CourtyardFacilityDetailPageState
             const SizedBox(height: 12),
             Text(f.description),
             const SizedBox(height: 12),
-            if (f.requirementsStars > 0 ||
+            if (f.requiredStars > 0 ||
                 (f.requirementNote != null &&
                     f.requirementNote!.isNotEmpty)) ...[
               Text(
@@ -75,8 +75,8 @@ class _CourtyardFacilityDetailPageState
                 style: Theme.of(context).textTheme.titleMedium,
               ),
               const SizedBox(height: 4),
-              if (f.requirementsStars > 0)
-                Text('Rating ${f.requirementsStars}'),
+              if (f.requiredStars > 0)
+                Text('Rating ${f.requiredStars}'),
               if (f.requirementNote != null &&
                   f.requirementNote!.isNotEmpty)
                 Text(f.requirementNote!),

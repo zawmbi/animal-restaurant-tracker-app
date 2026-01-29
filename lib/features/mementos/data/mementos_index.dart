@@ -8,7 +8,7 @@ class MementoEntry {
   final String key;          // m:<customerId>/<mementoId> or x:<mementoId>
   final String id;
   final String name;
-  final int stars;
+  final int earnedStars;
   final String requirement;
   final String description;
   final String? customerId;
@@ -22,7 +22,7 @@ class MementoEntry {
     required this.key,
     required this.id,
     required this.name,
-    required this.stars,
+    required this.earnedStars,
     required this.requirement,
     required this.description,
     required this.customerId,
@@ -76,7 +76,7 @@ class MementosIndex {
           key: customerId != null ? _ckey(customerId, id) : _xkey(id),
           id: id,
           name: map['name'] as String,
-          stars: map['stars'] as int? ?? 0,
+          earnedStars: map['earnedStars'] as int? ?? 0,
           requirement: map['requirement'] as String? ?? '',
           description: map['description'] as String? ?? '',
           customerId: customerId,
@@ -101,7 +101,7 @@ class MementosIndex {
           key: _xkey(m.id),
           id: m.id,
           name: m.name,
-          stars: m.stars,
+          earnedStars: m.earnedStars,
           requirement: m.requirement,
           description: m.description,
           customerId: null,

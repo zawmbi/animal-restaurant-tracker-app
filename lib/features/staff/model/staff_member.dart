@@ -40,20 +40,20 @@ class StaffWearableMemento {
   final String mementoId;
 
   // numeric rating bonus (e.g. 15)
-  final int? bonusRating;
+  final int? earnedStars;
 
   final String? requirements;
 
   const StaffWearableMemento({
     required this.mementoId,
-    this.bonusRating,
+    this.earnedStars,
     this.requirements,
   });
 
   factory StaffWearableMemento.fromJson(Map<String, dynamic> j) =>
       StaffWearableMemento(
         mementoId: j['mementoId'] as String,
-        bonusRating: _toIntOrNull(j['bonusRating']),
+        earnedStars: _toIntOrNull(j['earnedStars']),
         requirements: j['requirements'] as String?,
       );
 }
@@ -65,7 +65,7 @@ class StaffRaiseUpgrade {
   final String? required;
 
   // bonus rating at that level
-  final int? ratingBonus;
+  final int? earnedStars;
 
   // structured cost: currency key + numeric amount
   final StaffCost? cost;
@@ -75,7 +75,7 @@ class StaffRaiseUpgrade {
   const StaffRaiseUpgrade({
     required this.level,
     this.required,
-    this.ratingBonus,
+    this.earnedStars,
     this.cost,
     this.perks = const {},
   });
@@ -83,7 +83,7 @@ class StaffRaiseUpgrade {
   factory StaffRaiseUpgrade.fromJson(Map<String, dynamic> j) => StaffRaiseUpgrade(
         level: _toInt(j['level']),
         required: j['required'] as String?,
-        ratingBonus: _toIntOrNull(j['ratingBonus']),
+        earnedStars: _toIntOrNull(j['earnedStars']),
         cost: j['cost'] == null
             ? null
             : StaffCost.fromJson(j['cost'] as Map<String, dynamic>),

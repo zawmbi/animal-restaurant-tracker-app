@@ -18,14 +18,14 @@ class RewardRef {
   final int? amount;
 
   // For rating:
-  final int? rating;
+  final int? earnedStars;
 
   const RewardRef._({
     required this.kind,
     this.id,
     this.currency,
     this.amount,
-    this.rating,
+    this.earnedStars,
   });
 
   factory RewardRef.fromJson(Map<String, dynamic> j) {
@@ -48,7 +48,7 @@ class RewardRef {
       case RewardKind.rating:
         return RewardRef._(
           kind: kind,
-          rating: (j['amount'] as num).toInt(),
+          earnedStars: (j['amount'] as num).toInt(),
         );
     }
   }

@@ -339,7 +339,7 @@ class Facility {
   final String? description;
 
   /// Star requirement to buy/unlock (if applicable).
-  final int? requirementStars; // JSON key is "requirementsStars"
+  final int? requiredStars;
 
   final List<Price> price;
 
@@ -358,7 +358,7 @@ class Facility {
     required this.area,
     required this.group,
     this.description,
-    this.requirementStars,
+    this.requiredStars,
     required this.price,
     required this.effects,
     this.series,
@@ -375,7 +375,7 @@ class Facility {
       area: _parseArea(j),
       group: j['group'] as String,
       description: j['description'] as String?,
-      requirementStars: (j['requirementsStars'] as num?)?.toInt(),
+      requiredStars: (j['requiredStars'] as num?)?.toInt(),
       price: prices
           .map((e) => Price.fromJson(e as Map<String, dynamic>, j))
           .toList(),
@@ -394,7 +394,7 @@ class Facility {
         'area': area.name,
         'group': group,
         if (description != null) 'description': description,
-        if (requirementStars != null) 'requirementsStars': requirementStars,
+        if (requiredStars != null) 'requiredStars': requiredStars,
         'price': price.map((e) => e.toJson()).toList(),
         'effects': effects.map((e) => e.toJson()).toList(),
         if (series != null) 'series': series,

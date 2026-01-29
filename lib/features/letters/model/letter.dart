@@ -33,7 +33,7 @@ class Letter {
   final String? unlockRequirement;
 
   final String? description;
-  final String? bonus;
+  final String? earnedStars;
   final String? unlocks;
   final String? prerequisite;
   final String? imageAsset;
@@ -49,7 +49,7 @@ class Letter {
     this.series,
     this.unlockRequirement,
     this.description,
-    this.bonus,
+    this.earnedStars,
     this.unlocks,
     this.prerequisite,
     this.imageAsset,
@@ -63,7 +63,7 @@ class Letter {
         series: j['series'] as String?,
         unlockRequirement: j['unlockRequirement'] as String?,
         description: j['description'] as String?,
-        bonus: j['bonus'] as String?,
+        earnedStars: j['earnedStars'] as String?,
         unlocks: j['unlocks'] as String?,
         prerequisite: j['prerequisite'] as String?,
         imageAsset: j['imageAsset'] as String?,

@@ -83,7 +83,7 @@ class CourtyardEffect extends Equatable {
 ///   "group": "Friends Board",
 ///   "name": "Friends Board",
 ///   "description": "...",
-///   "requirementsStars": 0,
+///   "requiredStars": 0,
 ///   "requirementNote": "Sold during Christmas Event",   // optional
 ///   "price": [ { "currency": "film", "amount": 0 } ],
 ///   "effects": [
@@ -101,7 +101,7 @@ class CourtyardFacility extends Equatable {
 
   /// Star requirement if you want to keep using that;
   /// you can set 0 in JSON if not applicable.
-  final int requirementsStars;
+  final int requiredStars;
 
   /// Optional extra requirement text
   /// like "Sold During Christmas Event" or
@@ -121,7 +121,7 @@ class CourtyardFacility extends Equatable {
     required this.group,
     required this.name,
     required this.description,
-    required this.requirementsStars,
+    required this.requiredStars,
     required this.price,
     required this.effects,
     this.requirementNote,
@@ -138,7 +138,7 @@ class CourtyardFacility extends Equatable {
       group: json['group'] as String,
       name: json['name'] as String,
       description: json['description'] as String? ?? '',
-      requirementsStars: (json['requirementsStars'] as num?)?.toInt() ?? 0,
+      requiredStars: (json['requiredStars'] as num?)?.toInt() ?? 0,
       requirementNote: json['requirementNote'] as String?,
       series: json['series'] as String?,
       price: priceJson
@@ -156,7 +156,7 @@ class CourtyardFacility extends Equatable {
         'group': group,
         'name': name,
         'description': description,
-        'requirementsStars': requirementsStars,
+        'requiredStars': requiredStars,
         if (requirementNote != null) 'requirementNote': requirementNote,
         if (series != null) 'series': series,
         'price': price.map((p) => p.toJson()).toList(),
@@ -170,7 +170,7 @@ class CourtyardFacility extends Equatable {
         group,
         name,
         description,
-        requirementsStars,
+        requiredStars,
         requirementNote,
         price,
         effects,

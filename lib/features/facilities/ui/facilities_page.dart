@@ -498,9 +498,9 @@ class _FacilityDetailBody extends StatelessWidget {
                   context,
                   'Star Requirement',
                   _starValue(
-                    value: (facility.requirementStars != null &&
-                            facility.requirementStars! > 0)
-                        ? facility.requirementStars!
+                    value: (facility.requiredStars != null &&
+                            facility.requiredStars! > 0)
+                        ? facility.requiredStars!
                         : null,
                   ),
                 ),

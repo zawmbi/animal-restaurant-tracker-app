@@ -133,8 +133,8 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
 
-            if (r.rating != null)
-              _section('Rating', Text(r.rating.toString())),
+            if (r.requiredStars != null)
+              _section('Rating', Text(r.requiredStars.toString())),
 
             _simpleLinks(
               context: context,

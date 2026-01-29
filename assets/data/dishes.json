@@ -6,7 +6,7 @@
     "description": "A favorite of cats.",
     "timeSeconds": 2,
     "earningsMax": 3300,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 0 }]
   },
   {
@@ -16,7 +16,7 @@
     "description": "Keepin' it simple!",
     "timeSeconds": 3,
     "earningsMax": 3400,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 0 }]
   },
   {
@@ -26,7 +26,7 @@
     "description": "Sweet potato is very good for you.",
     "timeSeconds": 4,
     "earningsMax": 3500,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 400 }]
   },
   {
@@ -36,7 +36,7 @@
     "description": "Espresso with water.",
     "timeSeconds": 6,
     "earningsMax": 3800,
-    "requirementsStars": 15,
+    "requiredStars": 15,
     "price": [{ "currency": "cod", "amount": 900 }]
   },
   {
@@ -46,7 +46,7 @@
     "description": "Found all over the stream. Steam them a bit and they'll be bursting with flavor!",
     "timeSeconds": 8,
     "earningsMax": 3900,
-    "requirementsStars": 25,
+    "requiredStars": 25,
     "price": [{ "currency": "cod", "amount": 1000 }]
   },
   {
@@ -56,7 +56,7 @@
     "description": "The chickens' hometown always adds adzuki bean to their dumplings.",
     "timeSeconds": 10,
     "earningsMax": 4000,
-    "requirementsStars": 40,
+    "requiredStars": 40,
     "price": [{ "currency": "cod", "amount": 1100 }]
   },
   {
@@ -66,7 +66,7 @@
     "description": "The pure taste of wheat goes with anything!",
     "timeSeconds": 12,
     "earningsMax": 800,
-    "requirementsStars": 60,
+    "requiredStars": 60,
     "price": [{ "currency": "cod", "amount": 2500 }]
   },
   {
@@ -76,7 +76,7 @@
     "description": "The tiny cup makes it hard to hold.",
     "timeSeconds": 14,
     "earningsMax": 900,
-    "requirementsStars": 65,
+    "requiredStars": 65,
     "price": [{ "currency": "cod", "amount": 2600 }]
   },
   {
@@ -86,7 +86,7 @@
     "description": "A freshly-toasted slice of bread slathered with butter.",
     "timeSeconds": 16,
     "earningsMax": 4500,
-    "requirementsStars": 70,
+    "requiredStars": 70,
     "price": [{ "currency": "cod", "amount": 2700 }]
   },
   {
@@ -96,7 +96,7 @@
     "description": "Freshly-fried, select potatoes.",
     "timeSeconds": 18,
     "earningsMax": 1500,
-    "requirementsStars": 90,
+    "requiredStars": 90,
     "price": [{ "currency": "cod", "amount": 5000 }]
   },
   {
@@ -106,7 +106,7 @@
     "description": "Today's fortune: Good luck!",
     "timeSeconds": 48,
     "earningsMax": 1600,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 30000 }]
   },
   {
@@ -116,7 +116,7 @@
     "description": "Chef Gumi's painstakingly-made masterpiece.",
     "timeSeconds": 18,
     "earningsMax": 1000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Piping Bag"],
     "price": [{ "currency": "cod", "amount": 6000 }]
   },
@@ -127,7 +127,7 @@
     "description": "A hot omelet with fragrant rice.",
     "timeSeconds": 20,
     "earningsMax": 750,
-    "requirementsStars": 110,
+    "requiredStars": 110,
     "price": [{ "currency": "cod", "amount": 5200 }]
   },
   {
@@ -137,7 +137,7 @@
     "description": "The strawberries were picked before dawn.",
     "timeSeconds": 22,
     "earningsMax": 5900,
-    "requirementsStars": 130,
+    "requiredStars": 130,
     "price": [{ "currency": "cod", "amount": 5400 }]
   },
   {
@@ -147,7 +147,7 @@
     "description": "A common wild berry with added honey.",
     "timeSeconds": 24,
     "earningsMax": 1000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Mysterious Order"],
     "price": [{ "currency": "cod", "amount": 7000 }]
   },
@@ -158,7 +158,7 @@
     "description": "Do you think eating taiyaki with matcha can wake you up?",
     "timeSeconds": 26,
     "earningsMax": 1050,
-    "requirementsStars": 150,
+    "requiredStars": 150,
     "price": [{ "currency": "cod", "amount": 7400 }]
   },
   {
@@ -168,7 +168,7 @@
     "description": "The perfect breakfast combo.",
     "timeSeconds": 30,
     "earningsMax": 6800,
-    "requirementsStars": 160,
+    "requiredStars": 160,
     "price": [{ "currency": "cod", "amount": 7800 }]
   },
   {
@@ -178,7 +178,7 @@
     "description": "Start mixing before the egg finishes cooking!",
     "timeSeconds": 34,
     "earningsMax": 1300,
-    "requirementsStars": 200,
+    "requiredStars": 200,
     "price": [{ "currency": "cod", "amount": 9000 }]
   },
   {
@@ -188,7 +188,7 @@
     "description": "The homemade filling was cooked overnight.",
     "timeSeconds": 38,
     "earningsMax": 1350,
-    "requirementsStars": 210,
+    "requiredStars": 210,
     "price": [{ "currency": "cod", "amount": 9800 }]
   },
   {
@@ -198,7 +198,7 @@
     "description": "The chef only befriends customers who like this dish.",
     "timeSeconds": 42,
     "earningsMax": 1400,
-    "requirementsStars": 220,
+    "requiredStars": 220,
     "price": [{ "currency": "cod", "amount": 10600 }]
   },
   {
@@ -208,7 +208,7 @@
     "description": "You gotta mix it before you eat it.",
     "timeSeconds": 46,
     "earningsMax": 8200,
-    "requirementsStars": 250,
+    "requiredStars": 250,
     "price": [{ "currency": "cod", "amount": 15000 }]
   },
   {
@@ -218,7 +218,7 @@
     "description": "A good choice for first-time coffee drinkers.",
     "timeSeconds": 50,
     "earningsMax": 1650,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Wounded Bear's Cookery Lessons"],
     "price": [{ "currency": "cod", "amount": 2000 }]
   },
@@ -229,7 +229,7 @@
     "description": "We're always bugging Mr. Bear to catch shrimp for us.",
     "timeSeconds": 54,
     "earningsMax": 1700,
-    "requirementsStars": 290,
+    "requiredStars": 290,
     "price": [{ "currency": "cod", "amount": 22000 }]
   },
   {
@@ -239,7 +239,7 @@
     "description": "Sent by Uncle Shiba. The chef can't get used to the flavor.",
     "timeSeconds": 60,
     "earningsMax": 4000,
-    "requirementsStars": 320,
+    "requiredStars": 320,
     "price": [{ "currency": "cod", "amount": 32000 }]
   },
   {
@@ -249,7 +249,7 @@
     "description": "Uncle Shiba taught me to make it when I worked with him in Japan.",
     "timeSeconds": 66,
     "earningsMax": 9300,
-    "requirementsStars": 360,
+    "requiredStars": 360,
     "price": [{ "currency": "cod", "amount": 34000 }]
   },
   {
@@ -259,7 +259,7 @@
     "description": "The best choice for the season!",
     "timeSeconds": 72,
     "earningsMax": 2500,
-    "requirementsStars": 400,
+    "requiredStars": 400,
     "price": [{ "currency": "cod", "amount": 36000 }]
   },
   {
@@ -269,7 +269,7 @@
     "description": "Crispy and full of air holes. It's veeeery hard to make!",
     "timeSeconds": 78,
     "earningsMax": 2800,
-    "requirementsStars": 500,
+    "requiredStars": 500,
     "price": [{ "currency": "cod", "amount": 45000 }]
   },
   {
@@ -279,7 +279,7 @@
     "description": "Has thin skin and lovely filling.",
     "timeSeconds": 84,
     "earningsMax": 2900,
-    "requirementsStars": 520,
+    "requiredStars": 520,
     "price": [{ "currency": "cod", "amount": 48000 }]
   },
   {
@@ -289,7 +289,7 @@
     "description": "The chef seems allergic to mushrooms.",
     "timeSeconds": 90,
     "earningsMax": 11600,
-    "requirementsStars": 540,
+    "requiredStars": 540,
     "price": [{ "currency": "cod", "amount": 51000 }]
   },
   {
@@ -299,7 +299,7 @@
     "description": "Some people like the feeling of roe bursting in their mouth.",
     "timeSeconds": 96,
     "earningsMax": 6200,
-    "requirementsStars": 590,
+    "requiredStars": 590,
     "price": [{ "currency": "cod", "amount": 60000 }]
   },
   {
@@ -309,7 +309,7 @@
     "description": "They have thin skin and tender filling.",
     "timeSeconds": 102,
     "earningsMax": 3400,
-    "requirementsStars": 620,
+    "requiredStars": 620,
     "price": [{ "currency": "cod", "amount": 64000 }]
   },
   {
@@ -319,7 +319,7 @@
     "description": "Humans drink it when they're sad, so obviously it tastes bad.",
     "timeSeconds": 108,
     "earningsMax": 3500,
-    "requirementsStars": 650,
+    "requiredStars": 650,
     "price": [{ "currency": "cod", "amount": 68000 }]
   },
   {
@@ -329,7 +329,7 @@
     "description": "Fried things are always delicious!",
     "timeSeconds": 114,
     "earningsMax": 16000,
-    "requirementsStars": 750,
+    "requiredStars": 750,
     "price": [{ "currency": "cod", "amount": 85000 }]
   },
   {
@@ -339,7 +339,7 @@
     "description": "Troublesome and not fun to make.",
     "timeSeconds": 120,
     "earningsMax": 3900,
-    "requirementsStars": 800,
+    "requiredStars": 800,
     "price": [{ "currency": "cod", "amount": 90000 }]
   },
   {
@@ -349,7 +349,7 @@
     "description": "A timeless way of cooking.",
     "timeSeconds": 126,
     "earningsMax": 7500,
-    "requirementsStars": 850,
+    "requiredStars": 850,
     "price": [{ "currency": "cod", "amount": 95000 }]
   },
   {
@@ -359,7 +359,7 @@
     "description": "It's said to be the most popular food in the chef's hometown, but eating it every day is hard on the bowels...",
     "timeSeconds": 132,
     "earningsMax": 4300,
-    "requirementsStars": 1000,
+    "requiredStars": 1000,
     "price": [{ "currency": "cod", "amount": 110000 }]
   },
   {
@@ -369,7 +369,7 @@
     "description": "Fish caught by the Bear family. It's only right to eat it raw!",
     "timeSeconds": 138,
     "earningsMax": 4400,
-    "requirementsStars": 1050,
+    "requiredStars": 1050,
     "price": [{ "currency": "cod", "amount": 116000 }]
   },
   {
@@ -379,7 +379,7 @@
     "description": "Smuggled from the rats.",
     "timeSeconds": 146,
     "earningsMax": 32000,
-    "requirementsStars": 1100,
+    "requiredStars": 1100,
     "price": [{ "currency": "cod", "amount": 122000 }]
   },
   {
@@ -389,7 +389,7 @@
     "description": "Has a nice wheaty fragrance.",
     "timeSeconds": 154,
     "earningsMax": 10500,
-    "requirementsStars": 1250,
+    "requiredStars": 1250,
     "price": [{ "currency": "cod", "amount": 140000 }]
   },
   {
@@ -399,7 +399,7 @@
     "description": "Extra cheese, please!",
     "timeSeconds": 162,
     "earningsMax": 5700,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Begging Raccoon"],
     "price": [{ "currency": "cod", "amount": 148000 }]
   },
@@ -410,7 +410,7 @@
     "description": "Iced things are pretty nice!",
     "timeSeconds": 170,
     "earningsMax": 5900,
-    "requirementsStars": 1320,
+    "requiredStars": 1320,
     "price": [{ "currency": "cod", "amount": 156000 }]
   },
   {
@@ -420,7 +420,7 @@
     "description": "An energizing drink.",
     "timeSeconds": 178,
     "earningsMax": 6400,
-    "requirementsStars": 1400,
+    "requiredStars": 1400,
     "price": [{ "currency": "cod", "amount": 186000 }]
   },
   {
@@ -430,7 +430,7 @@
     "description": "The pasta looks like a sheep's wool.",
     "timeSeconds": 186,
     "earningsMax": 50000,
-    "requirementsStars": 1450,
+    "requiredStars": 1450,
     "price": [{ "currency": "cod", "amount": 196000 }]
   },
   {
@@ -440,7 +440,7 @@
     "description": "Packed with eggs and sausage.",
     "timeSeconds": 194,
     "earningsMax": 6800,
-    "requirementsStars": 1500,
+    "requiredStars": 1500,
     "price": [{ "currency": "cod", "amount": 206000 }]
   },
   {
@@ -450,7 +450,7 @@
     "description": "Humans seem to like it for breakfast, so we learned to make it!",
     "timeSeconds": 202,
     "earningsMax": 7300,
-    "requirementsStars": 1580,
+    "requiredStars": 1580,
     "price": [{ "currency": "cod", "amount": 220000 }]
   },
   {
@@ -460,7 +460,7 @@
     "description": "Fresh and tasty! They're limited because there's not enough for the waiters to eat.",
     "timeSeconds": 210,
     "earningsMax": 12500,
-    "requirementsStars": 1630,
+    "requiredStars": 1630,
     "price": [{ "currency": "cod", "amount": 225000 }]
   },
   {
@@ -470,7 +470,7 @@
     "description": "A timeless recipe using leftover rice and pickled scallions.",
     "timeSeconds": 218,
     "earningsMax": 66000,
-    "requirementsStars": 1680,
+    "requiredStars": 1680,
     "price": [{ "currency": "cod", "amount": 230000 }]
   },
   {
@@ -480,7 +480,7 @@
     "description": "With meat, vegetables and salsa. The hard shells are difficult to make.",
     "timeSeconds": 226,
     "earningsMax": 8200,
-    "requirementsStars": 1760,
+    "requiredStars": 1760,
     "price": [{ "currency": "cod", "amount": 260000 }]
   },
   {
@@ -490,7 +490,7 @@
     "description": "Made with an olive.",
     "timeSeconds": 234,
     "earningsMax": 8400,
-    "requirementsStars": 1810,
+    "requiredStars": 1810,
     "price": [{ "currency": "cod", "amount": 280000 }]
   },
   {
@@ -500,7 +500,7 @@
     "description": "Eat this to plump up for hibernation!",
     "timeSeconds": 242,
     "earningsMax": 8600,
-    "requirementsStars": 1860,
+    "requiredStars": 1860,
     "price": [{ "currency": "cod", "amount": 300000 }]
   },
   {
@@ -510,7 +510,7 @@
     "description": "Baking 101!",
     "timeSeconds": 250,
     "earningsMax": 50000,
-    "requirementsStars": 1910,
+    "requiredStars": 1910,
     "price": [{ "currency": "cod", "amount": 330000 }]
   },
   {
@@ -520,7 +520,7 @@
     "description": "The chef's master always eats one for lunch.",
     "timeSeconds": 258,
     "earningsMax": 17000,
-    "requirementsStars": 1960,
+    "requiredStars": 1960,
     "price": [{ "currency": "cod", "amount": 360000 }]
   },
   {
@@ -530,7 +530,7 @@
     "description": "My old master called it 'happy fatty water'. Can it really make you happy...?",
     "timeSeconds": 266,
     "earningsMax": 9500,
-    "requirementsStars": 2200,
+    "requiredStars": 2200,
     "price": [{ "currency": "cod", "amount": 390000 }]
   },
   {
@@ -540,7 +540,7 @@
     "description": "Crispy on the outside, soft on the inside.",
     "timeSeconds": 274,
     "earningsMax": 10000,
-    "requirementsStars": 2500,
+    "requiredStars": 2500,
     "price": [{ "currency": "cod", "amount": 450000 }]
   },
   {
@@ -550,7 +550,7 @@
     "description": "Tastier than beer.",
     "timeSeconds": 282,
     "earningsMax": 66000,
-    "requirementsStars": 2800,
+    "requiredStars": 2800,
     "price": [{ "currency": "cod", "amount": 500000 }]
   },
   {
@@ -560,7 +560,7 @@
     "description": "Popcorn and cola - a match made in heaven!",
     "timeSeconds": 290,
     "earningsMax": 11600,
-    "requirementsStars": 3200,
+    "requiredStars": 3200,
     "price": [{ "currency": "cod", "amount": 550000 }]
   },
   {
@@ -570,7 +570,7 @@
     "description": "So sweet your teeth'll fall out!",
     "timeSeconds": 298,
     "earningsMax": 12600,
-    "requirementsStars": 3600,
+    "requiredStars": 3600,
     "price": [{ "currency": "cod", "amount": 700000 }]
   },
   {
@@ -580,7 +580,7 @@
     "description": "Comes in all different shapes.",
     "timeSeconds": 308,
     "earningsMax": 13600,
-    "requirementsStars": 4000,
+    "requiredStars": 4000,
     "price": [{ "currency": "cod", "amount": 800000 }]
   },
   {
@@ -590,7 +590,7 @@
     "description": "So sweet!",
     "timeSeconds": 318,
     "earningsMax": 46000,
-    "requirementsStars": 4500,
+    "requiredStars": 4500,
     "price": [{ "currency": "cod", "amount": 900000 }]
   },
   {
@@ -600,7 +600,7 @@
     "description": "A must for hibernation!",
     "timeSeconds": 328,
     "earningsMax": 16000,
-    "requirementsStars": 5000,
+    "requiredStars": 5000,
     "price": [{ "currency": "cod", "amount": 1200000 }]
   },
   {
@@ -610,7 +610,7 @@
     "description": "Tastes delicate and sweet.",
     "timeSeconds": 338,
     "earningsMax": 18000,
-    "requirementsStars": 5500,
+    "requiredStars": 5500,
     "price": [{ "currency": "cod", "amount": 1400000 }]
   },
   {
@@ -620,7 +620,7 @@
     "description": "A delicacy learned from the East.",
     "timeSeconds": 348,
     "earningsMax": 20000,
-    "requirementsStars": 6000,
+    "requiredStars": 6000,
     "price": [{ "currency": "cod", "amount": 1600000 }]
   },
   {
@@ -630,7 +630,7 @@
     "description": "There are three pieces of mango inside.",
     "timeSeconds": 358,
     "earningsMax": 62000,
-    "requirementsStars": 7000,
+    "requiredStars": 7000,
     "price": [{ "currency": "cod", "amount": 2000000 }]
   },
   {
@@ -640,7 +640,7 @@
     "description": "Careful not to burn your mouth!",
     "timeSeconds": 368,
     "earningsMax": 28000,
-    "requirementsStars": 8000,
+    "requiredStars": 8000,
     "price": [{ "currency": "cod", "amount": 3500000 }]
   },
   {
@@ -650,7 +650,7 @@
     "description": "The reason people cry when they eat it is the onions.",
     "timeSeconds": 378,
     "earningsMax": 32000,
-    "requirementsStars": 9000,
+    "requiredStars": 9000,
     "price": [{ "currency": "cod", "amount": 5000000 }]
   },
   {
@@ -660,7 +660,7 @@
     "description": "A sweet liquor with a layer of coconut-flavored milk froth on top. It doesn't taste too strongly of alcohol.",
     "timeSeconds": 388,
     "earningsMax": 74000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Border Collie's Postcard"],
     "price": [{ "currency": "cod", "amount": 8000000 }]
   },
@@ -671,7 +671,7 @@
     "description": "Soft and sweet. The middle is the yummiest part!",
     "timeSeconds": 398,
     "earningsMax": 42000,
-    "requirementsStars": 11000,
+    "requiredStars": 11000,
     "price": [{ "currency": "cod", "amount": 10000000 }]
   },
   {
@@ -681,7 +681,7 @@
     "description": "Be careful not to burn yourself while eating them!",
     "timeSeconds": 408,
     "earningsMax": 48000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Insta-Pup's Letter"],
     "price": [{ "currency": "cod", "amount": 12000000 }]
   },
@@ -692,7 +692,7 @@
     "description": "All I wanna eat during summer is soft, velvety shaved ice!",
     "timeSeconds": 418,
     "earningsMax": 80000,
-    "requirementsStars": 14000,
+    "requiredStars": 14000,
     "price": [{ "currency": "cod", "amount": 14000000 }]
   },
   {
@@ -702,7 +702,7 @@
     "description": "A simple sandwich with forest butter. When you bite into it, you will feel your mind and body have been healed.",
     "timeSeconds": 428,
     "earningsMax": 60000,
-    "requirementsStars": 16500,
+    "requiredStars": 16500,
     "price": [{ "currency": "cod", "amount": 16000000 }]
   },
   {
@@ -712,7 +712,7 @@
     "description": "A cup of iced lemon tea is the best thing to quench your thirst after coming in from the heat or eating something spicy.",
     "timeSeconds": 438,
     "earningsMax": 66000,
-    "requirementsStars": 19500,
+    "requiredStars": 19500,
     "price": [{ "currency": "cod", "amount": 18000000 }]
   },
   {
@@ -722,7 +722,7 @@
     "description": "The best food to eat when you don't have much of an appetite.",
     "timeSeconds": 448,
     "earningsMax": 74000,
-    "requirementsStars": 23000,
+    "requiredStars": 23000,
     "price": [{ "currency": "cod", "amount": 20000000 }]
   },
   {
@@ -732,7 +732,7 @@
     "description": "With its hard and intriguing texture, it's a must-have snack when having fun!",
     "timeSeconds": 458,
     "earningsMax": 82000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Picnic Photo"],
     "price": [{ "currency": "cod", "amount": 22000000 }]
   },
@@ -743,7 +743,7 @@
     "description": "A curious dish that smells bad but tastes good.",
     "timeSeconds": 468,
     "earningsMax": 90000,
-    "requirementsStars": 28000,
+    "requiredStars": 28000,
     "price": [{ "currency": "cod", "amount": 24000000 }]
   },
   {
@@ -753,7 +753,7 @@
     "description": "I hear that many people need this these days.",
     "timeSeconds": 478,
     "earningsMax": 92000,
-    "requirementsStars": 38000,
+    "requiredStars": 38000,
     "price": [{ "currency": "cod", "amount": 28000000 }]
   },
   {
@@ -763,7 +763,7 @@
     "description": "Sprinkle Sichuan pepper powder on the piping hot tofu. Eat it while it's still warm.",
     "timeSeconds": 488,
     "earningsMax": 93000,
-    "requirementsStars": 40000,
+    "requiredStars": 40000,
     "price": [{ "currency": "cod", "amount": 28500000 }]
   },
 
@@ -774,7 +774,7 @@
     "description": "The plump pearls are very chewy. Can be changed to popping boba too.",
     "timeSeconds": 368,
     "earningsMax": 24000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Traditional Popcorn"],
     "price": [{ "currency": "cod", "amount": 2800000 }]
   },
@@ -785,7 +785,7 @@
     "description": "Hot roasted sweet potatoes are sweet and tasty.",
     "timeSeconds": 378,
     "earningsMax": 32000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Wholegrain Pancake"],
     "price": [{ "currency": "cod", "amount": 4000000 }]
   },
@@ -796,7 +796,7 @@
     "description": "Winter steamboat. Perfect for a snowy winter.",
     "timeSeconds": 328,
     "earningsMax": 16500,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Ice Cream Stall"],
     "price": [{ "currency": "cod", "amount": 1300000 }]
   },
@@ -807,7 +807,7 @@
     "description": "I heard that if you're lucky, you might find a sycee that the chef hid in the dumplings.",
     "timeSeconds": 368,
     "earningsMax": 25000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Tailor Liu"],
     "price": [{ "currency": "cod", "amount": 3000000 }]
   },
@@ -818,7 +818,7 @@
     "description": "An auspicious dish signifying abundance all year round.",
     "timeSeconds": 388,
     "earningsMax": 36000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Stray Wild Panda"],
     "price": [{ "currency": "cod", "amount": 7500000 }]
   },
@@ -829,7 +829,7 @@
     "description": "Sweet and sour, or spicy?",
     "timeSeconds": 398,
     "earningsMax": 38000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 9500000 }]
   },
   {
@@ -839,7 +839,7 @@
     "description": "A cute, new drink that tastes sweet and sour. Now available in the restaurant!",
     "timeSeconds": 358,
     "earningsMax": 24000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 2300000 }]
   },
   {
@@ -849,7 +849,7 @@
     "description": "Made from ingredients such as glutinous rice, adzuki bean paste, jujube paste and candied fruits according to Gumi's special method. Note: do not add rice.",
     "timeSeconds": 438,
     "earningsMax": 66000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 21500000 }]
   },
   {
@@ -859,7 +859,7 @@
     "description": "Silky and chewy, it's both cute and yummy.",
     "timeSeconds": 428,
     "earningsMax": 60000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 16000000 }]
   },
   {
@@ -869,7 +869,7 @@
     "description": "Fragrant with a glutinous texture.",
     "timeSeconds": 388,
     "earningsMax": 38000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 6800000 }]
   },
   {
@@ -879,7 +879,7 @@
     "description": "Fresh out of the pot, crispy and yummy!",
     "timeSeconds": 438,
     "earningsMax": 66000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 22000000 }]
   },
   {
@@ -889,7 +889,7 @@
     "description": "Rich in nutrition, it can help ward off rheumatism.",
     "timeSeconds": 428,
     "earningsMax": 60000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 13700000 }]
   },
   {
@@ -899,7 +899,7 @@
     "description": "All your ice cream, whipped cream and fruit needs in a cup!",
     "timeSeconds": 388,
     "earningsMax": 36000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 7800000 }]
   },
   {
@@ -909,7 +909,7 @@
     "description": "The fragrant taste of life!",
     "timeSeconds": 428,
     "earningsMax": 60000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 14000000 }]
   },
   {
@@ -919,7 +919,7 @@
     "description": "Apparently a Christmas must-have.",
     "timeSeconds": 428,
     "earningsMax": 60000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 16000000 }]
   },
   {
@@ -929,7 +929,7 @@
     "description": "Super-satisfying big bites of meat.",
     "timeSeconds": 378,
     "earningsMax": 32000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 5000000 }]
   },
   {
@@ -939,7 +939,7 @@
     "description": "Fried chicken and dipping sauce are a wonderful match!",
     "timeSeconds": 418,
     "earningsMax": 54000,
-    "requirementsStars": 100000,
+    "requiredStars": 100000,
     "price": [{ "currency": "cod", "amount": 14000000 }]
   },
   {
@@ -949,7 +949,7 @@
     "description": "Fresh and sweet, full of pineapple fragrance!",
     "timeSeconds": 428,
     "earningsMax": 60000,
-    "requirementsStars": 120000,
+    "requiredStars": 120000,
     "price": [{ "currency": "cod", "amount": 16000000 }]
   },
   {
@@ -959,7 +959,7 @@
     "description": "Curry and seafood are a match made in heaven!",
     "timeSeconds": 388,
     "earningsMax": 38000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 16800000 }]
   },
   {
@@ -969,7 +969,7 @@
     "description": "Each skewer is a new surprise.",
     "timeSeconds": 428,
     "earningsMax": 70000,
-    "requirementsStars": 70000,
+    "requiredStars": 70000,
     "price": [{ "currency": "cod", "amount": 19000000 }]
   },
   {
@@ -979,7 +979,7 @@
     "description": "Soft and sweet deliciousness with every bite.",
     "timeSeconds": 478,
     "earningsMax": 60000,
-    "requirementsStars": 100000,
+    "requiredStars": 100000,
     "price": [{ "currency": "cod", "amount": 25000000 }]
   },
   {
@@ -989,7 +989,7 @@
     "description": "It will taste even better with a squeeze of lemon juice!",
     "timeSeconds": 678,
     "earningsMax": 80000,
-    "requirementsStars": 300000,
+    "requiredStars": 300000,
     "price": [{ "currency": "cod", "amount": 65000000 }]
   },
   {
@@ -999,7 +999,7 @@
     "description": "Brown sugar and soybean powder combine to create a delightful flavor!",
     "timeSeconds": 478,
     "earningsMax": 60000,
-    "requirementsStars": 10000,
+    "requiredStars": 10000,
     "price": [{ "currency": "cod", "amount": 22300000 }]
   },
   {
@@ -1009,7 +1009,7 @@
     "description": "A must-have dish for meat lovers!",
     "timeSeconds": 528,
     "earningsMax": 65000,
-    "requirementsStars": 200000,
+    "requiredStars": 200000,
     "price": [{ "currency": "cod", "amount": 33000000 }]
   },
   {
@@ -1019,7 +1019,7 @@
     "description": "Sweet and fragrant! A taste of the seaside!",
     "timeSeconds": 328,
     "earningsMax": 16000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 1200000 }]
   },
   {
@@ -1029,7 +1029,7 @@
     "description": "The flavor of green tea is enhanced by the aroma of red beans.",
     "timeSeconds": 388,
     "earningsMax": 38000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 8000000 }]
   },
   {
@@ -1039,7 +1039,7 @@
     "description": "Even picky eaters enjoy them!",
     "timeSeconds": 388,
     "earningsMax": 38000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 8000000 }]
   },
   {
@@ -1049,7 +1049,7 @@
     "description": "A dessert every kid loves.",
     "timeSeconds": 388,
     "earningsMax": 38000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 8000000 }]
   },
   {
@@ -1059,7 +1059,7 @@
     "description": "Melts in your mouth without being greasy. Will eating the dish turns you into a poet like Dongpo?",
     "timeSeconds": 428,
     "earningsMax": 60000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 16000000 }]
   },
   {
@@ -1069,7 +1069,7 @@
     "description": "The taste of coconut milk is very rich. It's not fattening too.",
     "timeSeconds": 528,
     "earningsMax": 65000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 33000000 }]
   },
   {
@@ -1079,7 +1079,7 @@
     "description": "The mellow aroma of the red wine coupled with the sweetness of fruits. The perfect winter warmer.",
     "timeSeconds": 428,
     "earningsMax": 60000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 16000000 }]
   },
   {
@@ -1089,7 +1089,7 @@
     "description": "Honey-glazed smoked ham. Crispy on the outside, tender and succulent on the inside!",
     "timeSeconds": 528,
     "earningsMax": 65000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 33000000 }]
   },
   {
@@ -1099,7 +1099,7 @@
     "description": "The fragrant sauce leaves a delightful and satisfying aftertaste.",
     "timeSeconds": 438,
     "earningsMax": 62000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 18000000 }]
   },
   {
@@ -1109,7 +1109,7 @@
     "description": "A tasty dish of fresh succulent meat filling encased in thin dumpling wrappers.",
     "timeSeconds": 558,
     "earningsMax": 68000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 35000000 }]
   },
   {
@@ -1119,7 +1119,7 @@
     "description": "Rich and creamy. Bring me another serving!",
     "timeSeconds": 123,
     "earningsMax": 4000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 100000 }]
   },
   {
@@ -1129,7 +1129,7 @@
     "description": "Fresh and savory filling encased in golden, crispy batter.",
     "timeSeconds": 488,
     "earningsMax": 64000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 20000000 }]
   },
   {
@@ -1139,7 +1139,7 @@
     "description": "Full of fragrance of bamboo, this is a dish exclusively enjoyed during spring.",
     "timeSeconds": 488,
     "earningsMax": 1100,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Golden Bamboo"],
     "price": [{ "currency": "cod", "amount": 8000 }]
   },
@@ -1150,7 +1150,7 @@
     "description": "As sweet as it tasted during childhood.",
     "timeSeconds": 458,
     "earningsMax": 60000,
-    "requirementsStars": 12500,
+    "requiredStars": 12500,
     "price": [{ "currency": "cod", "amount": 18000000 }]
   },
   {
@@ -1160,7 +1160,7 @@
     "description": "Kids would cry if they can't sink their teeth into their crispy yet succulent snack.",
     "timeSeconds": 358,
     "earningsMax": 24000,
-    "requirementsStars": 7500,
+    "requiredStars": 7500,
     "price": [{ "currency": "cod", "amount": 5800000 }]
   },
   {
@@ -1170,7 +1170,7 @@
     "description": "Triple the calories, triple the satisfaction!",
     "timeSeconds": 458,
     "earningsMax": 62000,
-    "requirementsStars": 13000,
+    "requiredStars": 13000,
     "price": [{ "currency": "cod", "amount": 22000000 }]
   },
   {
@@ -1180,7 +1180,7 @@
     "description": "Bake it perfectly to create the ultimate delicacy of tender meat encased in a crispy pastry.",
     "timeSeconds": 358,
     "earningsMax": 25000,
-    "requirementsStars": 8000,
+    "requiredStars": 8000,
     "price": [{ "currency": "cod", "amount": 6800000 }]
   },
   {
@@ -1190,7 +1190,7 @@
     "description": "The perfect blend of mushroom and cream. Delicious!",
     "timeSeconds": 126,
     "earningsMax": 4200,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 150000 }]
   },
   {
@@ -1200,7 +1200,7 @@
     "description": "Fresh and juicy, chock-full with flavor!",
     "timeSeconds": 468,
     "earningsMax": 62000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 18000000 }]
   },
   {
@@ -1210,7 +1210,7 @@
     "description": "Sweet and warm, drinking it chases the wintry cold away.",
     "timeSeconds": 470,
     "earningsMax": 63000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 20000000 }]
   },
   {
@@ -1220,7 +1220,7 @@
     "description": "I wonder which part of the pudding the lucky coin was hidden in...",
     "timeSeconds": 500,
     "earningsMax": 70000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 42000000 }]
   },
   {
@@ -1230,7 +1230,7 @@
     "description": "A sweet and refreshing dish that's not overly rich or greasy!",
     "timeSeconds": 560,
     "earningsMax": 75000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 60000000 }]
   },
   {
@@ -1240,7 +1240,7 @@
     "description": "Prawns infused with the refreshing aroma of tea. Each bite will make you come back for more!",
     "timeSeconds": 540,
     "earningsMax": 72000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 53000000 }]
   },
   {
@@ -1250,7 +1250,7 @@
     "description": "It looks good and tastes even better! A flaky delight with every bite.",
     "timeSeconds": 25,
     "earningsMax": 1500,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Spring Corsage"],
     "price": [{ "currency": "cod", "amount": 10000 }]
   },
@@ -1261,7 +1261,7 @@
     "description": "Teddy Bento for little teddies!",
     "timeSeconds": 560,
     "earningsMax": 68000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 35000000 }]
   },
   {
@@ -1271,7 +1271,7 @@
     "description": "The taste of childhood! The cream filling is hard.",
     "timeSeconds": 450,
     "earningsMax": 63000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 20000000 }]
   },
   {
@@ -1281,7 +1281,7 @@
     "description": "Who can resist a glass of creamy mint liqueur?",
     "timeSeconds": 580,
     "earningsMax": 65000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 45000000 }]
   },
   {
@@ -1291,7 +1291,7 @@
     "description": "The combination of juicy scallops and refreshing pea puree is ingenious indeed. How marvelous!",
     "timeSeconds": 600,
     "earningsMax": 68000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 48000000 }]
   },
   {
@@ -1301,7 +1301,7 @@
     "description": "Although it's made with less sugar than usual, it still tastes just as delectable.",
     "timeSeconds": 600,
     "earningsMax": 75000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 70000000 }]
   },
   {
@@ -1311,7 +1311,7 @@
     "description": "Fill your mouth with the taste of seafood.",
     "timeSeconds": 560,
     "earningsMax": 72000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 52000000 }]
   },
   {
@@ -1321,7 +1321,7 @@
     "description": "Tender yet crispy at the same time, these rolls made with fresh ingredients promise goodness in every bite.",
     "timeSeconds": 560,
     "earningsMax": 78000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 66000000 }]
   },
   {
@@ -1331,7 +1331,7 @@
     "description": "A delicious and fragrant mix of sweetness and tanginess.",
     "timeSeconds": 580,
     "earningsMax": 70000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 58000000 }]
   },
   {
@@ -1341,7 +1341,7 @@
     "description": "Crunchy lotus root cubes covered in a layer of sticky glutinous rice cooked to an aromatic perfection. Guaranteed to satisfy your taste buds!",
     "timeSeconds": 620,
     "earningsMax": 76000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 68000000 }]
   },
   {
@@ -1351,7 +1351,7 @@
     "description": "A flavour exclusive to spring!",
     "timeSeconds": 25,
     "earningsMax": 1800,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirements": ["Tofu Ornament"],
     "price": [{ "currency": "cod", "amount": 15000 }]
   },
@@ -1362,7 +1362,7 @@
     "description": "The cup is made of biscuit and is fully edible!",
     "timeSeconds": 560,
     "earningsMax": 76000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 72000000 }]
   },
   {
@@ -1372,7 +1372,7 @@
     "description": "Have a slice of Planet Cake, make a wish to travel around the galaxy!",
     "timeSeconds": 580,
     "earningsMax": 82000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 78000000 }]
   },
   {
@@ -1382,7 +1382,7 @@
     "description": "I heard that this is a traditional French dish that is quite complicated to make.",
     "timeSeconds": 570,
     "earningsMax": 80000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 76000000 }]
   },
   {
@@ -1392,7 +1392,7 @@
     "description": "A simple but delicious breakfast.",
     "timeSeconds": 600,
     "earningsMax": 84000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 82000000 }]
   },
 
@@ -1402,7 +1402,7 @@
     "sections": ["Buffet"],
     "description": "Round and sticky. Oh, it's also mildly sweet!",
     "earningsPerHour": 3000,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "plates", "amount": 0 }]
   },
   {
@@ -1411,7 +1411,7 @@
     "sections": ["Buffet"],
     "description": "It only takes 30 seconds from milk production to processing.",
     "earningsPerHour": 3100,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "plates", "amount": 50 }]
   },
   {
@@ -1420,7 +1420,7 @@
     "sections": ["Buffet"],
     "description": "You can get really full from eating sushi!",
     "earningsPerHour": 3200,
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "plates", "amount": 100 }]
   },
   {
@@ -1429,7 +1429,7 @@
     "sections": ["Buffet"],
     "description": "I smell a faint ocean scent.",
     "earningsPerHour": 3300,
-    "requirementsStars": 2000,
+    "requiredStars": 2000,
     "price": [{ "currency": "plates", "amount": 200 }]
   },
   {
@@ -1438,7 +1438,7 @@
     "sections": ["Buffet"],
     "description": "Handmade food imbued with the spirit of craftsmanship.",
     "earningsPerHour": 3400,
-    "requirementsStars": 2200,
+    "requiredStars": 2200,
     "price": [{ "currency": "plates", "amount": 300 }]
   },
   {
@@ -1447,7 +1447,7 @@
     "sections": ["Buffet"],
     "description": "A masterpiece made of eel and plenty of rice.",
     "earningsPerHour": 3500,
-    "requirementsStars": 2400,
+    "requiredStars": 2400,
     "price": [{ "currency": "plates", "amount": 400 }]
   },
   {
@@ -1456,7 +1456,7 @@
     "sections": ["Buffet"],
     "description": "Delicious milk of a dairy cow from the pure, natural pasture.",
     "earningsPerHour": 3600,
-    "requirementsStars": 2600,
+    "requiredStars": 2600,
     "price": [{ "currency": "plates", "amount": 550 }]
   },
   {
@@ -1465,7 +1465,7 @@
     "sections": ["Buffet"],
     "description": "It's not just a street food, it's the memories of an entire generation.",
     "earningsPerHour": 3700,
-    "requirementsStars": 2800,
+    "requiredStars": 2800,
     "requirements": ["Taco"],
     "price": [{ "currency": "plates", "amount": 700 }]
   },
@@ -1475,7 +1475,7 @@
     "sections": ["Buffet"],
     "description": "I'm a bit afraid to try raw octopus...",
     "earningsPerHour": 3800,
-    "requirementsStars": 3000,
+    "requiredStars": 3000,
     "requirements": ["Pizza"],
     "price": [{ "currency": "plates", "amount": 950 }]
   },
@@ -1485,7 +1485,7 @@
     "sections": ["Buffet"],
     "description": "The perfect combination of shrimp and sushi. The taste packs a punch!",
     "earningsPerHour": 3900,
-    "requirementsStars": 4000,
+    "requiredStars": 4000,
     "price": [{ "currency": "plates", "amount": 1150 }]
   },
   {
@@ -1494,7 +1494,7 @@
     "sections": ["Buffet"],
     "description": "Fried shrimp are fragrant and crispy!",
     "earningsPerHour": 4000,
-    "requirementsStars": 4300,
+    "requiredStars": 4300,
     "requirements": ["Fried Shrimp Sushi"],
     "price": [{ "currency": "plates", "amount": 1350 }]
   },
@@ -1504,7 +1504,7 @@
     "sections": ["Buffet"],
     "description": "The same dorayaki as the one from Pokonyan!",
     "earningsPerHour": 4100,
-    "requirementsStars": 4600,
+    "requiredStars": 4600,
     "price": [{ "currency": "plates", "amount": 1400 }]
   },
   {
@@ -1513,7 +1513,7 @@
     "sections": ["Buffet"],
     "description": "The feeling of roe with rice leaves diners with a lingering taste.",
     "earningsPerHour": 4200,
-    "requirementsStars": 6000,
+    "requiredStars": 6000,
     "requirements": ["Roe Sushi"],
     "price": [{ "currency": "plates", "amount": 1550 }]
   },
@@ -1523,7 +1523,7 @@
     "sections": ["Buffet"],
     "description": "Look again! Look again and I'll drink you up!",
     "earningsPerHour": 4300,
-    "requirementsStars": 6500,
+    "requiredStars": 6500,
     "price": [{ "currency": "plates", "amount": 1650 }]
   },
   {
@@ -1532,7 +1532,7 @@
     "sections": ["Buffet"],
     "description": "Don't eat too many buffet desserts! Though it does look quite delicious...",
     "earningsPerHour": 4500,
-    "requirementsStars": 7000,
+    "requiredStars": 7000,
     "requirements": ["Chocolate Cake"],
     "price": [{ "currency": "plates", "amount": 1900 }]
   },
@@ -1542,7 +1542,7 @@
     "sections": ["Buffet"],
     "description": "I'm tart and sweet!",
     "earningsPerHour": 4700,
-    "requirementsStars": 10000,
+    "requiredStars": 10000,
     "price": [{ "currency": "plates", "amount": 2200 }]
   },
   {
@@ -1551,7 +1551,7 @@
     "sections": ["Buffet"],
     "description": "If it spins too fast, be sure to open it toward someone else!",
     "earningsPerHour": 4900,
-    "requirementsStars": 11000,
+    "requiredStars": 11000,
     "requirements": ["Cola"],
     "price": [{ "currency": "plates", "amount": 2500 }]
   },
@@ -1561,7 +1561,7 @@
     "sections": ["Buffet"],
     "description": "How can tamagoyaki possibly be this tasty?!",
     "earningsPerHour": 5100,
-    "requirementsStars": 12000,
+    "requiredStars": 12000,
     "price": [{ "currency": "plates", "amount": 2800 }]
   },
   {
@@ -1570,7 +1570,7 @@
     "sections": ["Buffet"],
     "description": "Tastes delicious and sweet.",
     "earningsPerHour": 5300,
-    "requirementsStars": 20000,
+    "requiredStars": 20000,
     "requirements": ["Montblanc"],
     "price": [{ "currency": "plates", "amount": 3100 }]
   },
@@ -1580,7 +1580,7 @@
     "sections": ["Buffet"],
     "description": "Salmon and wasabi are a perfect match!",
     "earningsPerHour": 5500,
-    "requirementsStars": 22000,
+    "requiredStars": 22000,
     "requirements": ["Salmon Sushi"],
     "price": [{ "currency": "plates", "amount": 3400 }]
   },
@@ -1590,7 +1590,7 @@
     "sections": ["Buffet"],
     "description": "It's getting cold, so have a bowl of miso soup!",
     "earningsPerHour": 5700,
-    "requirementsStars": 25000,
+    "requiredStars": 25000,
     "price": [{ "currency": "plates", "amount": 3700 }]
   },
   {
@@ -1599,7 +1599,7 @@
     "sections": ["Buffet"],
     "description": "A classic Hong Kong dessert.",
     "earningsPerHour": 5900,
-    "requirementsStars": 30000,
+    "requiredStars": 30000,
     "price": [{ "currency": "plates", "amount": 4000 }]
   },
   {
@@ -1608,7 +1608,7 @@
     "sections": ["Buffet"],
     "description": "The strong smell of durian spreads throughout your mouth.",
     "earningsPerHour": 6100,
-    "requirementsStars": 35000,
+    "requiredStars": 35000,
     "price": [{ "currency": "plates", "amount": 4300 }]
   },
   {
@@ -1617,7 +1617,7 @@
     "sections": ["Buffet"],
     "description": "A delicious, outstanding representative of the world of tofu.",
     "earningsPerHour": 6300,
-    "requirementsStars": 40000,
+    "requiredStars": 40000,
     "price": [{ "currency": "plates", "amount": 4600 }]
   },
   {
@@ -1626,7 +1626,7 @@
     "sections": ["Buffet"],
     "description": "A special skill in all the methods of egg cooking.",
     "earningsPerHour": 6500,
-    "requirementsStars": 45000,
+    "requiredStars": 45000,
     "price": [{ "currency": "plates", "amount": 4900 }]
   },
   {
@@ -1635,7 +1635,7 @@
     "sections": ["Buffet"],
     "description": "Don't worry about whether they're called potstickers or dumplings or fried dumplings. All that matters is their crispy texture!",
     "earningsPerHour": 6700,
-    "requirementsStars": 50000,
+    "requiredStars": 50000,
     "price": [{ "currency": "plates", "amount": 5200 }]
   },
   {
@@ -1644,7 +1644,7 @@
     "sections": ["Buffet"],
     "description": "The walnut gives the rice ball a full flavor.",
     "earningsPerHour": 6900,
-    "requirementsStars": 55000,
+    "requiredStars": 55000,
     "price": [{ "currency": "plates", "amount": 5500 }]
   },
   {
@@ -1653,7 +1653,7 @@
     "sections": ["Buffet"],
     "description": "Its creased surface makes it look like it's been grilled.",
     "earningsPerHour": 7100,
-    "requirementsStars": 60000,
+    "requiredStars": 60000,
     "price": [{ "currency": "plates", "amount": 5800 }]
   },
   {
@@ -1662,7 +1662,7 @@
     "sections": ["Buffet"],
     "description": "The veins of the white radish have been completely melted by the soup.",
     "earningsPerHour": 7300,
-    "requirementsStars": 65000,
+    "requiredStars": 65000,
     "price": [{ "currency": "plates", "amount": 6100 }]
   },
   {
@@ -1671,7 +1671,7 @@
     "sections": ["Buffet"],
     "description": "Not sure what's in the pouch? Eat it and find out!",
     "earningsPerHour": 7500,
-    "requirementsStars": 70000,
+    "requiredStars": 70000,
     "price": [{ "currency": "plates", "amount": 6400 }]
   },
   {
@@ -1680,7 +1680,7 @@
     "sections": ["Buffet"],
     "description": "Enjoy the taste of cold-brewed tea.",
     "earningsPerHour": 2500,
-    "requirementsStars": 75000,
+    "requiredStars": 75000,
     "price": [{ "currency": "plates", "amount": 1000 }]
   },
   {
@@ -1689,7 +1689,7 @@
     "sections": ["Buffet"],
     "description": "Rich strawberry flavor.",
     "earningsPerHour": 2700,
-    "requirementsStars": 80000,
+    "requiredStars": 80000,
     "price": [{ "currency": "plates", "amount": 1300 }]
   },
   {
@@ -1698,7 +1698,7 @@
     "sections": ["Buffet"],
     "description": "It has a fruity taste so it must be healthy.",
     "earningsPerHour": 2900,
-    "requirementsStars": 85000,
+    "requiredStars": 85000,
     "price": [{ "currency": "plates", "amount": 1600 }]
   },
   {
@@ -1707,7 +1707,7 @@
     "sections": ["Buffet"],
     "description": "Low fat and high protein, a dish with grat nutritional value.",
     "earningsPerHour": 3100,
-    "requirementsStars": 90000,
+    "requiredStars": 90000,
     "price": [{ "currency": "plates", "amount": 1900 }]
   },
   {
@@ -1716,7 +1716,7 @@
     "sections": ["Buffet"],
     "description": "Crispy and savory, without the oily after taste. It's finger lickin' good!",
     "earningsPerHour": 3300,
-    "requirementsStars": 95000,
+    "requiredStars": 95000,
     "requirements": ["Spicy Crawdads"],
     "price": [{ "currency": "plates", "amount": 2200 }]
   },
@@ -1726,7 +1726,7 @@
     "sections": ["Buffet"],
     "description": "Sprinke some nuts to top it off.",
     "earningsPerHour": 3500,
-    "requirementsStars": 100000,
+    "requiredStars": 100000,
     "price": [{ "currency": "plates", "amount": 2500 }]
   },
   {
@@ -1735,7 +1735,7 @@
     "sections": ["Buffet"],
     "description": "Chef has been researching about avocado dishes lately.",
     "earningsPerHour": 3700,
-    "requirementsStars": 105000,
+    "requiredStars": 105000,
     "price": [{ "currency": "plates", "amount": 2800 }]
   },
   {
@@ -1744,7 +1744,7 @@
     "sections": ["Buffet"],
     "description": "Did you know that not removing the intestines is the authentic way to prepare this dish?",
     "earningsPerHour": 3900,
-    "requirementsStars": 110000,
+    "requiredStars": 110000,
     "price": [{ "currency": "plates", "amount": 3100 }]
   },
   {
@@ -1753,7 +1753,7 @@
     "sections": ["Buffet"],
     "description": "Remember to eat the seaweed before it becomes soggy!",
     "earningsPerHour": 4100,
-    "requirementsStars": 115000,
+    "requiredStars": 115000,
     "price": [{ "currency": "plates", "amount": 3400 }]
   },
   {
@@ -1762,7 +1762,7 @@
     "sections": ["Buffet"],
     "description": "Topped with a generous serving of meat floss.",
     "earningsPerHour": 4300,
-    "requirementsStars": 120000,
+    "requiredStars": 120000,
     "price": [{ "currency": "plates", "amount": 3700 }]
   },
   {
@@ -1771,7 +1771,7 @@
     "sections": ["Buffet"],
     "description": "Flaky on the outside and soft on the inside, delicious with every bite.",
     "earningsPerHour": 4500,
-    "requirementsStars": 125000,
+    "requiredStars": 125000,
     "price": [{ "currency": "plates", "amount": 4000 }]
   },
   {
@@ -1780,7 +1780,7 @@
     "sections": ["Buffet"],
     "description": "Topped with a generous serving of meat floss.",
     "earningsPerHour": 4700,
-    "requirementsStars": 130000,
+    "requiredStars": 130000,
     "price": [{ "currency": "plates", "amount": 4300 }]
   },
   {
@@ -1789,7 +1789,7 @@
     "sections": ["Buffet"],
     "description": "The soft red beans and sticky rice cakes make the best combination.",
     "earningsPerHour": 4900,
-    "requirementsStars": 135000,
+    "requiredStars": 135000,
     "price": [{ "currency": "plates", "amount": 4600 }]
   },
   {
@@ -1798,7 +1798,7 @@
     "sections": ["Buffet"],
     "description": "Add chocolate sauce to make it sweeter.",
     "earningsPerHour": 5100,
-    "requirementsStars": 140000,
+    "requiredStars": 140000,
     "price": [{ "currency": "plates", "amount": 4900 }]
   },
   {
@@ -1807,7 +1807,7 @@
     "sections": ["Buffet"],
     "description": "Delicious and healthy.",
     "earningsPerHour": 5300,
-    "requirementsStars": 145000,
+    "requiredStars": 145000,
     "price": [{ "currency": "plates", "amount": 5200 }]
   },
   {
@@ -1816,7 +1816,7 @@
     "sections": ["Buffet"],
     "description": "One bowl to fulfill them all.",
     "earningsPerHour": 5500,
-    "requirementsStars": 150000,
+    "requiredStars": 150000,
     "price": [{ "currency": "plates", "amount": 5500 }]
   },
   {
@@ -1825,7 +1825,7 @@
     "sections": ["Buffet"],
     "description": "The most basic of all flavors.",
     "earningsPerHour": 5700,
-    "requirementsStars": 160000,
+    "requiredStars": 160000,
     "price": [{ "currency": "plates", "amount": 6000 }]
   },
   {
@@ -1834,7 +1834,7 @@
     "sections": ["Buffet"],
     "description": "Looks good and is nutritious too.",
     "earningsPerHour": 5900,
-    "requirementsStars": 170000,
+    "requiredStars": 170000,
     "price": [{ "currency": "plates", "amount": 6500 }]
   },
   {
@@ -1843,7 +1843,7 @@
     "sections": ["Buffet"],
     "description": "Surprisingly satisfying when eaten with a dipping sauce.",
     "earningsPerHour": 6100,
-    "requirementsStars": 180000,
+    "requiredStars": 180000,
     "price": [{ "currency": "plates", "amount": 7000 }]
   },
   {
@@ -1852,7 +1852,7 @@
     "sections": ["Buffet"],
     "description": "Surprisingly satisfying when eaten with a dipping sauce.",
     "earningsPerHour": 6300,
-    "requirementsStars": 185000,
+    "requiredStars": 185000,
     "price": [{ "currency": "plates", "amount": 7300 }]
   },
   {
@@ -1861,7 +1861,7 @@
     "sections": ["Buffet"],
     "description": "Surprisingly satisfying when eaten with a dipping sauce.",
     "earningsPerHour": 6500,
-    "requirementsStars": 190000,
+    "requiredStars": 190000,
     "price": [{ "currency": "plates", "amount": 7600 }]
   },
   {
@@ -1870,7 +1870,7 @@
     "sections": ["Buffet"],
     "description": "Surprisingly satisfying when eaten with a dipping sauce.",
     "earningsPerHour": 6700,
-    "requirementsStars": 200000,
+    "requiredStars": 200000,
     "price": [{ "currency": "plates", "amount": 7900 }]
   },
   {
@@ -1879,7 +1879,7 @@
     "sections": ["Buffet"],
     "description": "Surprisingly satisfying when eaten with a dipping sauce.",
     "earningsPerHour": 6900,
-    "requirementsStars": 210000,
+    "requiredStars": 210000,
     "price": [{ "currency": "plates", "amount": 8200 }]
   },
 
@@ -1889,14 +1889,14 @@
     "sections": ["Takeout"],
     "description": "Bite-sized crackers that are perfect for children.",
     "earningsRange": { "min": 14, "max": 56 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 3500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 100, "price": [{ "currency": "cod", "amount": 10000 }] },
-      { "tier": "A", "requirementsStars": 20000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 30000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 1000, "price": [{ "currency": "cod", "amount": 1000000 }] }
+      { "tier": "C", "requiredStars": 3500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 100, "price": [{ "currency": "cod", "amount": 10000 }] },
+      { "tier": "A", "requiredStars": 20000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 30000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 1000, "price": [{ "currency": "cod", "amount": 1000000 }] }
     ]
   },
   {
@@ -1905,14 +1905,14 @@
     "sections": ["Takeout"],
     "description": "Fresh and healthy milk from a quality source.",
     "earningsRange": { "min": 15, "max": 60 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 3800, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 20000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 100, "price": [{ "currency": "cod", "amount": 120000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 520, "price": [{ "currency": "cod", "amount": 350000 }] },
-      { "tier": "S", "requirementsStars": 52000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1100000 }] }
+      { "tier": "C", "requiredStars": 3800, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 20000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 100, "price": [{ "currency": "cod", "amount": 120000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 520, "price": [{ "currency": "cod", "amount": 350000 }] },
+      { "tier": "S", "requiredStars": 52000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1100000 }] }
     ]
   },
   {
@@ -1921,14 +1921,14 @@
     "sections": ["Takeout"],
     "description": "A crispy cone filled with sweet and tart strawberry ice cream that is too wonderful for words.",
     "earningsRange": { "min": 17, "max": 64 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 4100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 30000 }] },
-      { "tier": "B", "requirementsStars": 11500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 140000 }] },
-      { "tier": "A", "requirementsStars": 22000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 400000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 1200, "price": [{ "currency": "cod", "amount": 1200000 }] }
+      { "tier": "C", "requiredStars": 4100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 30000 }] },
+      { "tier": "B", "requiredStars": 11500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 140000 }] },
+      { "tier": "A", "requiredStars": 22000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 400000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 1200, "price": [{ "currency": "cod", "amount": 1200000 }] }
     ]
   },
   {
@@ -1937,14 +1937,14 @@
     "sections": ["Takeout"],
     "description": "They say eating this will make you have to visit the toilet.",
     "earningsRange": { "min": 18, "max": 69 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 4400, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 40000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 120, "price": [{ "currency": "cod", "amount": 160000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 560, "price": [{ "currency": "cod", "amount": 450000 }] },
-      { "tier": "S", "requirementsStars": 56000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1300000 }] }
+      { "tier": "C", "requiredStars": 4400, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 40000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 120, "price": [{ "currency": "cod", "amount": 160000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 560, "price": [{ "currency": "cod", "amount": 450000 }] },
+      { "tier": "S", "requiredStars": 56000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1300000 }] }
     ]
   },
   {
@@ -1953,14 +1953,14 @@
     "sections": ["Takeout"],
     "description": "Strawberry-flavored cookies that you can dip.",
     "earningsRange": { "min": 19, "max": 73 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 4700, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 50000 }] },
-      { "tier": "B", "requirementsStars": 12500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 180000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 600, "price": [{ "currency": "cod", "amount": 500000 }] },
-      { "tier": "S", "requirementsStars": 60000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1400000 }] }
+      { "tier": "C", "requiredStars": 4700, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 50000 }] },
+      { "tier": "B", "requiredStars": 12500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 180000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 600, "price": [{ "currency": "cod", "amount": 500000 }] },
+      { "tier": "S", "requiredStars": 60000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1400000 }] }
     ]
   },
   {
@@ -1969,14 +1969,14 @@
     "sections": ["Takeout"],
     "description": "A chubby geek's favorite drink.",
     "earningsRange": { "min": 21, "max": 80 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 5000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 60000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 140, "price": [{ "currency": "cod", "amount": 200000 }] },
-      { "tier": "A", "requirementsStars": 24000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 550000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 1400, "price": [{ "currency": "cod", "amount": 1500000 }] }
+      { "tier": "C", "requiredStars": 5000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 60000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 140, "price": [{ "currency": "cod", "amount": 200000 }] },
+      { "tier": "A", "requiredStars": 24000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 550000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 1400, "price": [{ "currency": "cod", "amount": 1500000 }] }
     ]
   },
   {
@@ -1985,14 +1985,14 @@
     "sections": ["Takeout"],
     "description": "Has the same shape as taiyaki.",
     "earningsRange": { "min": 22, "max": 87 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 5300, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 70000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 160, "price": [{ "currency": "cod", "amount": 220000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 640, "price": [{ "currency": "cod", "amount": 600000 }] },
-      { "tier": "S", "requirementsStars": 64000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1600000 }] }
+      { "tier": "C", "requiredStars": 5300, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 70000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 160, "price": [{ "currency": "cod", "amount": 220000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 640, "price": [{ "currency": "cod", "amount": 600000 }] },
+      { "tier": "S", "requiredStars": 64000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1600000 }] }
     ]
   },
   {
@@ -2001,14 +2001,14 @@
     "sections": ["Takeout"],
     "description": "Should you cut it into pieces, or dig into it with a spoon?",
     "earningsRange": { "min": 24, "max": 94 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 5600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 80000 }] },
-      { "tier": "B", "requirementsStars": 13500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 240000 }] },
-      { "tier": "A", "requirementsStars": 26000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 650000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 1600, "price": [{ "currency": "cod", "amount": 1700000 }] }
+      { "tier": "C", "requiredStars": 5600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 80000 }] },
+      { "tier": "B", "requiredStars": 13500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 240000 }] },
+      { "tier": "A", "requiredStars": 26000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 650000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 1600, "price": [{ "currency": "cod", "amount": 1700000 }] }
     ]
   },
   {
@@ -2017,14 +2017,14 @@
     "sections": ["Takeout"],
     "description": "Strawberry jelly that you can drink!",
     "earningsRange": { "min": 26, "max": 100 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 10,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 5900, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 90000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 200, "price": [{ "currency": "cod", "amount": 260000 }] },
-      { "tier": "A", "requirementsStars": 28000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 700000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 1800, "price": [{ "currency": "cod", "amount": 1800000 }] }
+      { "tier": "C", "requiredStars": 5900, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 90000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 200, "price": [{ "currency": "cod", "amount": 260000 }] },
+      { "tier": "A", "requiredStars": 28000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 700000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 1800, "price": [{ "currency": "cod", "amount": 1800000 }] }
     ]
   },
   {
@@ -2033,14 +2033,14 @@
     "sections": ["Takeout"],
     "description": "Delicious strawberry-flavored milk.",
     "earningsRange": { "min": 28, "max": 107 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 15,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 6200, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 100000 }] },
-      { "tier": "B", "requirementsStars": 14500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 280000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 680, "price": [{ "currency": "cod", "amount": 750000 }] },
-      { "tier": "S", "requirementsStars": 68000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1900000 }] }
+      { "tier": "C", "requiredStars": 6200, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 100000 }] },
+      { "tier": "B", "requiredStars": 14500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 280000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 680, "price": [{ "currency": "cod", "amount": 750000 }] },
+      { "tier": "S", "requiredStars": 68000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1900000 }] }
     ]
   },
   {
@@ -2049,14 +2049,14 @@
     "sections": ["Takeout"],
     "description": "A crispy cone filled with rich, creamy chocolate ice cream that is too wonderful for words.",
     "earningsRange": { "min": 29, "max": 114 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 20,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 6500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 110000 }] },
-      { "tier": "B", "requirementsStars": 15500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 300000 }] },
-      { "tier": "A", "requirementsStars": 30000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 800000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 2000, "price": [{ "currency": "cod", "amount": 2000000 }] }
+      { "tier": "C", "requiredStars": 6500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 110000 }] },
+      { "tier": "B", "requiredStars": 15500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 300000 }] },
+      { "tier": "A", "requiredStars": 30000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 800000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 2000, "price": [{ "currency": "cod", "amount": 2000000 }] }
     ]
   },
   {
@@ -2065,14 +2065,14 @@
     "sections": ["Takeout"],
     "description": "You might get the runs if you eat too much.",
     "earningsRange": { "min": 31, "max": 120 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 25,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 6800, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 120000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 300, "price": [{ "currency": "cod", "amount": 320000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 800, "price": [{ "currency": "cod", "amount": 850000 }] },
-      { "tier": "S", "requirementsStars": 72000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2100000 }] }
+      { "tier": "C", "requiredStars": 6800, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 120000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 300, "price": [{ "currency": "cod", "amount": 320000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 800, "price": [{ "currency": "cod", "amount": 850000 }] },
+      { "tier": "S", "requiredStars": 72000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2100000 }] }
     ]
   },
   {
@@ -2081,14 +2081,14 @@
     "sections": ["Takeout"],
     "description": "Blueberry jelly that you can drink!",
     "earningsRange": { "min": 33, "max": 127 },
-    "requirementsStars": 4100,
+    "requiredStars": 4100,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 35, "price": [{ "currency": "cod", "amount": 130000 }] },
-      { "tier": "B", "requirementsStars": 16500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 340000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 920, "price": [{ "currency": "cod", "amount": 900000 }] },
-      { "tier": "S", "requirementsStars": 76000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2200000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 35, "price": [{ "currency": "cod", "amount": 130000 }] },
+      { "tier": "B", "requiredStars": 16500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 340000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 920, "price": [{ "currency": "cod", "amount": 900000 }] },
+      { "tier": "S", "requiredStars": 76000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2200000 }] }
     ]
   },
   {
@@ -2097,14 +2097,14 @@
     "sections": ["Takeout"],
     "description": "Full of juice and bubbles.",
     "earningsRange": { "min": 35, "max": 136 },
-    "requirementsStars": 4500,
+    "requiredStars": 4500,
     "requirementsLikes": 45,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 7400, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 140000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 400, "price": [{ "currency": "cod", "amount": 360000 }] },
-      { "tier": "A", "requirementsStars": 32000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 950000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 2200, "price": [{ "currency": "cod", "amount": 2300000 }] }
+      { "tier": "C", "requiredStars": 7400, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 140000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 400, "price": [{ "currency": "cod", "amount": 360000 }] },
+      { "tier": "A", "requiredStars": 32000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 950000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 2200, "price": [{ "currency": "cod", "amount": 2300000 }] }
     ]
   },
   {
@@ -2113,14 +2113,14 @@
     "sections": ["Takeout"],
     "description": "Dumplings with thin skin and plenty of filling.",
     "earningsRange": { "min": 38, "max": 145 },
-    "requirementsStars": 5000,
+    "requiredStars": 5000,
     "requirementsLikes": 55,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 7700, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 150000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 500, "price": [{ "currency": "cod", "amount": 380000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 1040, "price": [{ "currency": "cod", "amount": 1000000 }] },
-      { "tier": "S", "requirementsStars": 80000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2400000 }] }
+      { "tier": "C", "requiredStars": 7700, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 150000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 500, "price": [{ "currency": "cod", "amount": 380000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 1040, "price": [{ "currency": "cod", "amount": 1000000 }] },
+      { "tier": "S", "requiredStars": 80000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2400000 }] }
     ]
   },
   {
@@ -2129,14 +2129,14 @@
     "sections": ["Takeout"],
     "description": "Yummy and stinky.",
     "earningsRange": { "min": 40, "max": 154 },
-    "requirementsStars": 5500,
+    "requiredStars": 5500,
     "requirementsLikes": 65,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 8000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 160000 }] },
-      { "tier": "B", "requirementsStars": 17500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 400000 }] },
-      { "tier": "A", "requirementsStars": 34000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1050000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 2400, "price": [{ "currency": "cod", "amount": 2500000 }] }
+      { "tier": "C", "requiredStars": 8000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 160000 }] },
+      { "tier": "B", "requiredStars": 17500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 400000 }] },
+      { "tier": "A", "requiredStars": 34000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1050000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 2400, "price": [{ "currency": "cod", "amount": 2500000 }] }
     ]
   },
   {
@@ -2145,15 +2145,15 @@
     "sections": ["Takeout"],
     "description": "Spicy, chewy, and full of childhood memories.",
     "earningsRange": { "min": 42, "max": 163 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 80,
     "requirements": ["Rice Pudding"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 8300, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 170000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 600, "price": [{ "currency": "cod", "amount": 420000 }] },
-      { "tier": "A", "requirementsStars": 36000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1100000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 2600, "price": [{ "currency": "cod", "amount": 2600000 }] }
+      { "tier": "C", "requiredStars": 8300, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 170000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 600, "price": [{ "currency": "cod", "amount": 420000 }] },
+      { "tier": "A", "requiredStars": 36000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1100000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 2600, "price": [{ "currency": "cod", "amount": 2600000 }] }
     ]
   },
   {
@@ -2162,15 +2162,15 @@
     "sections": ["Takeout"],
     "description": "Uses the finest coffee beans.",
     "earningsRange": { "min": 45, "max": 172 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 95,
     "requirements": ["Chicken Burger"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 8600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 180000 }] },
-      { "tier": "B", "requirementsStars": 18500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 440000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 1160, "price": [{ "currency": "cod", "amount": 1150000 }] },
-      { "tier": "S", "requirementsStars": 84000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2700000 }] }
+      { "tier": "C", "requiredStars": 8600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 180000 }] },
+      { "tier": "B", "requiredStars": 18500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 440000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 1160, "price": [{ "currency": "cod", "amount": 1150000 }] },
+      { "tier": "S", "requiredStars": 84000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2700000 }] }
     ]
   },
   {
@@ -2179,15 +2179,15 @@
     "sections": ["Takeout"],
     "description": "Made with excellent glutinous rice flour and fragnant black sesame.",
     "earningsRange": { "min": 47, "max": 181 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 110,
     "requirements": ["Montblanc"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 8900, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 190000 }] },
-      { "tier": "B", "requirementsStars": 19500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 460000 }] },
-      { "tier": "A", "requirementsStars": 38000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1200000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 2800, "price": [{ "currency": "cod", "amount": 2800000 }] }
+      { "tier": "C", "requiredStars": 8900, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 190000 }] },
+      { "tier": "B", "requiredStars": 19500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 460000 }] },
+      { "tier": "A", "requiredStars": 38000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1200000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 2800, "price": [{ "currency": "cod", "amount": 2800000 }] }
     ]
   },
   {
@@ -2196,15 +2196,15 @@
     "sections": ["Takeout"],
     "description": "Looks like the apple from Snow White.",
     "earningsRange": { "min": 49, "max": 190 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 125,
     "requirements": ["Sweet Dumplings"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 9200, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 200000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 700, "price": [{ "currency": "cod", "amount": 480000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 1280, "price": [{ "currency": "cod", "amount": 1250000 }] },
-      { "tier": "S", "requirementsStars": 88000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2900000 }] }
+      { "tier": "C", "requiredStars": 9200, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 200000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 700, "price": [{ "currency": "cod", "amount": 480000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 1280, "price": [{ "currency": "cod", "amount": 1250000 }] },
+      { "tier": "S", "requiredStars": 88000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2900000 }] }
     ]
   },
   {
@@ -2213,15 +2213,15 @@
     "sections": ["Takeout"],
     "description": "Both fun and delicious!",
     "earningsRange": { "min": 52, "max": 199 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 145,
     "requirements": ["Retro Phone"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 9500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 210000 }] },
-      { "tier": "B", "requirementsStars": 20500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 500000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 1400, "price": [{ "currency": "cod", "amount": 1300000 }] },
-      { "tier": "S", "requirementsStars": 92000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3000000 }] }
+      { "tier": "C", "requiredStars": 9500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 210000 }] },
+      { "tier": "B", "requiredStars": 20500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 500000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 1400, "price": [{ "currency": "cod", "amount": 1300000 }] },
+      { "tier": "S", "requiredStars": 92000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3000000 }] }
     ]
   },
   {
@@ -2230,15 +2230,15 @@
     "sections": ["Takeout"],
     "description": "Traditional yogurt that many brands sell.",
     "earningsRange": { "min": 54, "max": 208 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 170,
     "requirements": ["Log Takeout Counter"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 9800, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 220000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 800, "price": [{ "currency": "cod", "amount": 520000 }] },
-      { "tier": "A", "requirementsStars": 40000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1350000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 3000, "price": [{ "currency": "cod", "amount": 3100000 }] }
+      { "tier": "C", "requiredStars": 9800, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 220000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 800, "price": [{ "currency": "cod", "amount": 520000 }] },
+      { "tier": "A", "requiredStars": 40000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1350000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 3000, "price": [{ "currency": "cod", "amount": 3100000 }] }
     ]
   },
   {
@@ -2247,15 +2247,15 @@
     "sections": ["Takeout"],
     "description": "Ice cream popular among elementar school students.",
     "earningsRange": { "min": 57, "max": 217 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 195,
     "requirements": ["Vines"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 10100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 230000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 900, "price": [{ "currency": "cod", "amount": 540000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 1520, "price": [{ "currency": "cod", "amount": 1400000 }] },
-      { "tier": "S", "requirementsStars": 96000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3200000 }] }
+      { "tier": "C", "requiredStars": 10100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 230000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 900, "price": [{ "currency": "cod", "amount": 540000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 1520, "price": [{ "currency": "cod", "amount": 1400000 }] },
+      { "tier": "S", "requiredStars": 96000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3200000 }] }
     ]
   },
   {
@@ -2264,15 +2264,15 @@
     "sections": ["Takeout"],
     "description": "Top-tier wine quality grapes.",
     "earningsRange": { "min": 59, "max": 226 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 220,
     "requirements": ["Memo List"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 10400, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 240000 }] },
-      { "tier": "B", "requirementsStars": 21500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 560000 }] },
-      { "tier": "A", "requirementsStars": 42000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1450000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 3200, "price": [{ "currency": "cod", "amount": 3300000 }] }
+      { "tier": "C", "requiredStars": 10400, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 240000 }] },
+      { "tier": "B", "requiredStars": 21500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 560000 }] },
+      { "tier": "A", "requiredStars": 42000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1450000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 3200, "price": [{ "currency": "cod", "amount": 3300000 }] }
     ]
   },
   {
@@ -2281,15 +2281,15 @@
     "sections": ["Takeout"],
     "description": "Chocolate-flavored cookies that you can dip.",
     "earningsRange": { "min": 61, "max": 235 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 250,
     "requirements": ["Cold Watermelon"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 10700, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 250000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 1000, "price": [{ "currency": "cod", "amount": 580000 }] },
-      { "tier": "A", "requirementsStars": 44000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1500000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 3400, "price": [{ "currency": "cod", "amount": 3400000 }] }
+      { "tier": "C", "requiredStars": 10700, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 250000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 1000, "price": [{ "currency": "cod", "amount": 580000 }] },
+      { "tier": "A", "requiredStars": 44000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1500000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 3400, "price": [{ "currency": "cod", "amount": 3400000 }] }
     ]
   },
   {
@@ -2298,15 +2298,15 @@
     "sections": ["Takeout"],
     "description": "Especially refreshing.",
     "earningsRange": { "min": 64, "max": 246 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 280,
     "requirements": ["Spicy Crawdads"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 11000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 260000 }] },
-      { "tier": "B", "requirementsStars": 22500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 600000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 1640, "price": [{ "currency": "cod", "amount": 1550000 }] },
-      { "tier": "S", "requirementsStars": 100000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3500000 }] }
+      { "tier": "C", "requiredStars": 11000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 260000 }] },
+      { "tier": "B", "requiredStars": 22500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 600000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 1640, "price": [{ "currency": "cod", "amount": 1550000 }] },
+      { "tier": "S", "requiredStars": 100000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3500000 }] }
     ]
   },
   {
@@ -2315,15 +2315,15 @@
     "sections": ["Takeout"],
     "description": "One half per person, and everyone's best friends forever!",
     "earningsRange": { "min": 67, "max": 257 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 310,
     "requirements": ["Strawberry Shaved Ice"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 11300, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 270000 }] },
-      { "tier": "B", "requirementsStars": 23500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 620000 }] },
-      { "tier": "A", "requirementsStars": 46000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1600000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 3600, "price": [{ "currency": "cod", "amount": 3600000 }] }
+      { "tier": "C", "requiredStars": 11300, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 270000 }] },
+      { "tier": "B", "requiredStars": 23500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 620000 }] },
+      { "tier": "A", "requiredStars": 46000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1600000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 3600, "price": [{ "currency": "cod", "amount": 3600000 }] }
     ]
   },
   {
@@ -2332,15 +2332,15 @@
     "sections": ["Takeout"],
     "description": "Its green color makes it look really sour, but its actually sweet!",
     "earningsRange": { "min": 70, "max": 268 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 340,
     "requirements": ["Avocado Sandwich"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 11600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 280000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 1100, "price": [{ "currency": "cod", "amount": 640000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 1760, "price": [{ "currency": "cod", "amount": 1650000 }] },
-      { "tier": "S", "requirementsStars": 104000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3700000 }] }
+      { "tier": "C", "requiredStars": 11600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 280000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 1100, "price": [{ "currency": "cod", "amount": 640000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 1760, "price": [{ "currency": "cod", "amount": 1650000 }] },
+      { "tier": "S", "requiredStars": 104000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3700000 }] }
     ]
   },
   {
@@ -2349,15 +2349,15 @@
     "sections": ["Takeout"],
     "description": "For friends who love hot pot, but don't like going out.",
     "earningsRange": { "min": 73, "max": 280 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 375,
     "requirements": ["Simple Landline Phone"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 11900, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 290000 }] },
-      { "tier": "B", "requirementsStars": 24500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 660000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 1880, "price": [{ "currency": "cod", "amount": 1700000 }] },
-      { "tier": "S", "requirementsStars": 108000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3800000 }] }
+      { "tier": "C", "requiredStars": 11900, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 290000 }] },
+      { "tier": "B", "requiredStars": 24500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 660000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 1880, "price": [{ "currency": "cod", "amount": 1700000 }] },
+      { "tier": "S", "requiredStars": 108000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3800000 }] }
     ]
   },
   {
@@ -2366,15 +2366,15 @@
     "sections": ["Takeout"],
     "description": "Delicious banana-flavored milk.",
     "earningsRange": { "min": 76, "max": 291 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 410,
     "requirements": ["Fine Takeout Counter"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 12400, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 300000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 1200, "price": [{ "currency": "cod", "amount": 680000 }] },
-      { "tier": "A", "requirementsStars": 48000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1750000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 3800, "price": [{ "currency": "cod", "amount": 3900000 }] }
+      { "tier": "C", "requiredStars": 12400, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 300000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 1200, "price": [{ "currency": "cod", "amount": 680000 }] },
+      { "tier": "A", "requiredStars": 48000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1750000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 3800, "price": [{ "currency": "cod", "amount": 3900000 }] }
     ]
   },
   {
@@ -2383,15 +2383,15 @@
     "sections": ["Takeout"],
     "description": "Salted egg yolk with fresh milk for a different kind of taste.",
     "earningsRange": { "min": 79, "max": 302 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 445,
     "requirements": ["Cat Tree"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 12500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 310000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 1300, "price": [{ "currency": "cod", "amount": 700000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 2000, "price": [{ "currency": "cod", "amount": 1800000 }] },
-      { "tier": "S", "requirementsStars": 112000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 4000000 }] }
+      { "tier": "C", "requiredStars": 12500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 310000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 1300, "price": [{ "currency": "cod", "amount": 700000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 2000, "price": [{ "currency": "cod", "amount": 1800000 }] },
+      { "tier": "S", "requiredStars": 112000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 4000000 }] }
     ]
   },
   {
@@ -2400,15 +2400,15 @@
     "sections": ["Takeout"],
     "description": "One of butter's soul mates.",
     "earningsRange": { "min": 82, "max": 313 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 480,
     "requirements": ["Cute Blackboard"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 12800, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 320000 }] },
-      { "tier": "B", "requirementsStars": 25500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 720000 }] },
-      { "tier": "A", "requirementsStars": 50000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1850000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 4000, "price": [{ "currency": "cod", "amount": 4100000 }] }
+      { "tier": "C", "requiredStars": 12800, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 320000 }] },
+      { "tier": "B", "requiredStars": 25500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 720000 }] },
+      { "tier": "A", "requiredStars": 50000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1850000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 4000, "price": [{ "currency": "cod", "amount": 4100000 }] }
     ]
   },
   {
@@ -2417,15 +2417,15 @@
     "sections": ["Takeout"],
     "description": "Rich strawberry juice, it's sweet but not sickening.",
     "earningsRange": { "min": 85, "max": 327 },
-    "requirementsStars": 7200,
+    "requiredStars": 7200,
     "requirementsLikes": 0,
     "requirements": ["Chilled Edamame"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 520, "price": [{ "currency": "cod", "amount": 330000 }] },
-      { "tier": "B", "requirementsStars": 13100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 740000 }] },
-      { "tier": "A", "requirementsStars": 52000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1900000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 4200, "price": [{ "currency": "cod", "amount": 4200000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 520, "price": [{ "currency": "cod", "amount": 330000 }] },
+      { "tier": "B", "requiredStars": 13100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 740000 }] },
+      { "tier": "A", "requiredStars": 52000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1900000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 4200, "price": [{ "currency": "cod", "amount": 4200000 }] }
     ]
   },
   {
@@ -2434,15 +2434,15 @@
     "sections": ["Takeout"],
     "description": "Has plenty of probiotics.",
     "earningsRange": { "min": 89, "max": 340 },
-    "requirementsStars": 8000,
+    "requiredStars": 8000,
     "requirementsLikes": 0,
     "requirements": ["Snail Noodles"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 560, "price": [{ "currency": "cod", "amount": 340000 }] },
-      { "tier": "B", "requirementsStars": 13600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 760000 }] },
-      { "tier": "A", "requirementsStars": 26500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1950000 }] },
-      { "tier": "S", "requirementsStars": 116500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 4300000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 560, "price": [{ "currency": "cod", "amount": 340000 }] },
+      { "tier": "B", "requiredStars": 13600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 760000 }] },
+      { "tier": "A", "requiredStars": 26500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1950000 }] },
+      { "tier": "S", "requiredStars": 116500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 4300000 }] }
     ]
   },
   {
@@ -2451,15 +2451,15 @@
     "sections": ["Takeout"],
     "description": "Ice cream with an air of grandeur.",
     "earningsRange": { "min": 92, "max": 353 },
-    "requirementsStars": 9000,
+    "requiredStars": 9000,
     "requirementsLikes": 0,
     "requirements": ["Black Sesame Paste"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 600, "price": [{ "currency": "cod", "amount": 350000 }] },
-      { "tier": "B", "requirementsStars": 14100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 780000 }] },
-      { "tier": "A", "requirementsStars": 27500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2000000 }] },
-      { "tier": "S", "requirementsStars": 54000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 4400000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 600, "price": [{ "currency": "cod", "amount": 350000 }] },
+      { "tier": "B", "requiredStars": 14100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 780000 }] },
+      { "tier": "A", "requiredStars": 27500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2000000 }] },
+      { "tier": "S", "requiredStars": 54000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 4400000 }] }
     ]
   },
   {
@@ -2468,15 +2468,15 @@
     "sections": ["Takeout"],
     "description": "Soaking it in salt water will make it taste even better.",
     "earningsRange": { "min": 96, "max": 367 },
-    "requirementsStars": 10000,
+    "requiredStars": 10000,
     "requirementsLikes": 0,
     "requirements": ["Mapo Tofu"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 640, "price": [{ "currency": "cod", "amount": 360000 }] },
-      { "tier": "B", "requirementsStars": 14600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 800000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 2280, "price": [{ "currency": "cod", "amount": 2005000 }] },
-      { "tier": "S", "requirementsStars": 120000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 4500000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 640, "price": [{ "currency": "cod", "amount": 360000 }] },
+      { "tier": "B", "requiredStars": 14600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 800000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 2280, "price": [{ "currency": "cod", "amount": 2005000 }] },
+      { "tier": "S", "requiredStars": 120000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 4500000 }] }
     ]
   },
   {
@@ -2485,15 +2485,15 @@
     "sections": ["Takeout"],
     "description": "Feels as though there will be a ceremony.",
     "earningsRange": { "min": 100, "max": 383 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 690,
     "requirements": ["Cordless Phone"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 15100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 370000 }] },
-      { "tier": "B", "requirementsStars": 28500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 820000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 2420, "price": [{ "currency": "cod", "amount": 2100000 }] },
-      { "tier": "S", "requirementsStars": 124000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 4600000 }] }
+      { "tier": "C", "requiredStars": 15100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 370000 }] },
+      { "tier": "B", "requiredStars": 28500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 820000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 2420, "price": [{ "currency": "cod", "amount": 2100000 }] },
+      { "tier": "S", "requiredStars": 124000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 4600000 }] }
     ]
   },
   {
@@ -2502,15 +2502,15 @@
     "sections": ["Takeout"],
     "description": "Full of strawberries and bubbles!",
     "earningsRange": { "min": 104, "max": 398 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 740,
     "requirements": ["Classy Takeout Counter"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 15600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 380000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 1600, "price": [{ "currency": "cod", "amount": 840000 }] },
-      { "tier": "A", "requirementsStars": 56000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2150000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 4600, "price": [{ "currency": "cod", "amount": 4700000 }] }
+      { "tier": "C", "requiredStars": 15600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 380000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 1600, "price": [{ "currency": "cod", "amount": 840000 }] },
+      { "tier": "A", "requiredStars": 56000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2150000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 4600, "price": [{ "currency": "cod", "amount": 4700000 }] }
     ]
   },
   {
@@ -2519,15 +2519,15 @@
     "sections": ["Takeout"],
     "description": "Refreshes you and very cute too!",
     "earningsRange": { "min": 108, "max": 414 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 790,
     "requirements": ["Minimalistic Ladder"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 16100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 390000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 1700, "price": [{ "currency": "cod", "amount": 860000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 2560, "price": [{ "currency": "cod", "amount": 2200000 }] },
-      { "tier": "S", "requirementsStars": 128000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 4800000 }] }
+      { "tier": "C", "requiredStars": 16100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 390000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 1700, "price": [{ "currency": "cod", "amount": 860000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 2560, "price": [{ "currency": "cod", "amount": 2200000 }] },
+      { "tier": "S", "requiredStars": 128000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 4800000 }] }
     ]
   },
   {
@@ -2536,15 +2536,15 @@
     "sections": ["Takeout"],
     "description": "One of the best tropical fruits.",
     "earningsRange": { "min": 112, "max": 430 },
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementsLikes": 840,
     "requirements": ["Forest Map"],
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 16600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 400000 }] },
-      { "tier": "B", "requirementsStars": 29500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 880000 }] },
-      { "tier": "A", "requirementsStars": 58000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2250000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 4800, "price": [{ "currency": "cod", "amount": 4900000 }] }
+      { "tier": "C", "requiredStars": 16600, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 400000 }] },
+      { "tier": "B", "requiredStars": 29500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 880000 }] },
+      { "tier": "A", "requiredStars": 58000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2250000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 4800, "price": [{ "currency": "cod", "amount": 4900000 }] }
     ]
   },
 
@@ -2554,14 +2554,14 @@
     "sections": ["Takeout"],
     "description": "Traditional and delicious candy.",
     "earningsRange": { "min": 42, "max": 163 },
-    "requirementsStars": 12000,
+    "requiredStars": 12000,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 890, "price": [{ "currency": "cod", "amount": 210000 }] },
-      { "tier": "B", "requirementsStars": 17100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 500000 }] },
-      { "tier": "A", "requirementsStars": 60000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1300000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 5000, "price": [{ "currency": "cod", "amount": 3000000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 890, "price": [{ "currency": "cod", "amount": 210000 }] },
+      { "tier": "B", "requiredStars": 17100, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 500000 }] },
+      { "tier": "A", "requiredStars": 60000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1300000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 5000, "price": [{ "currency": "cod", "amount": 3000000 }] }
     ]
   },
   {
@@ -2570,14 +2570,14 @@
     "sections": ["Takeout"],
     "description": "Combines the deliciousness of milk tea and ice cream.",
     "earningsRange": { "min": 45, "max": 172 },
-    "requirementsStars": 14000,
+    "requiredStars": 14000,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 940, "price": [{ "currency": "cod", "amount": 220000 }] },
-      { "tier": "B", "requirementsStars": 30500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 520000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 2680, "price": [{ "currency": "cod", "amount": 1350000 }] },
-      { "tier": "S", "requirementsStars": 132000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3100000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 940, "price": [{ "currency": "cod", "amount": 220000 }] },
+      { "tier": "B", "requiredStars": 30500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 520000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 2680, "price": [{ "currency": "cod", "amount": 1350000 }] },
+      { "tier": "S", "requiredStars": 132000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3100000 }] }
     ]
   },
   {
@@ -2586,14 +2586,14 @@
     "sections": ["Takeout"],
     "description": "Combines the deliciousness of milk tea and ice cream.",
     "earningsRange": { "min": 47, "max": 181 },
-    "requirementsStars": 16000,
+    "requiredStars": 16000,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 900, "price": [{ "currency": "cod", "amount": 230000 }] },
-      { "tier": "B", "requirementsStars": 31500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 540000 }] },
-      { "tier": "A", "requirementsStars": 62000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1400000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 5200, "price": [{ "currency": "cod", "amount": 3200000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 900, "price": [{ "currency": "cod", "amount": 230000 }] },
+      { "tier": "B", "requiredStars": 31500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 540000 }] },
+      { "tier": "A", "requiredStars": 62000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 1400000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 5200, "price": [{ "currency": "cod", "amount": 3200000 }] }
     ]
   },
   {
@@ -2602,14 +2602,14 @@
     "sections": ["Takeout"],
     "description": "Delicious fruit is housed within the thick skin.",
     "earningsRange": { "min": 49, "max": 190 },
-    "requirementsStars": 18000,
+    "requiredStars": 18000,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 1040, "price": [{ "currency": "cod", "amount": 240000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 1900, "price": [{ "currency": "cod", "amount": 560000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 2800, "price": [{ "currency": "cod", "amount": 1450000 }] },
-      { "tier": "S", "requirementsStars": 136000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3300000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 1040, "price": [{ "currency": "cod", "amount": 240000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 1900, "price": [{ "currency": "cod", "amount": 560000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 2800, "price": [{ "currency": "cod", "amount": 1450000 }] },
+      { "tier": "S", "requiredStars": 136000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 3300000 }] }
     ]
   },
   {
@@ -2618,14 +2618,14 @@
     "sections": ["Takeout"],
     "description": "Nutritious and tasty!",
     "earningsRange": { "min": 117, "max": 448 },
-    "requirementsStars": 20000,
+    "requiredStars": 20000,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 1100, "price": [{ "currency": "cod", "amount": 410000 }] },
-      { "tier": "B", "requirementsStars": 32500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 900000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 2920, "price": [{ "currency": "cod", "amount": 2300000 }] },
-      { "tier": "S", "requirementsStars": 140000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 5000000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 1100, "price": [{ "currency": "cod", "amount": 410000 }] },
+      { "tier": "B", "requiredStars": 32500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 900000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 2920, "price": [{ "currency": "cod", "amount": 2300000 }] },
+      { "tier": "S", "requiredStars": 140000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 5000000 }] }
     ]
   },
   {
@@ -2634,14 +2634,14 @@
     "sections": ["Takeout"],
     "description": "A tropical beverage.",
     "earningsRange": { "min": 123, "max": 470 },
-    "requirementsStars": 25000,
+    "requiredStars": 25000,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 1200, "price": [{ "currency": "cod", "amount": 420000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 2100, "price": [{ "currency": "cod", "amount": 920000 }] },
-      { "tier": "A", "requirementsStars": 64000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2350000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 5400, "price": [{ "currency": "cod", "amount": 5100000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 1200, "price": [{ "currency": "cod", "amount": 420000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 2100, "price": [{ "currency": "cod", "amount": 920000 }] },
+      { "tier": "A", "requiredStars": 64000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2350000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 5400, "price": [{ "currency": "cod", "amount": 5100000 }] }
     ]
   },
   {
@@ -2650,14 +2650,14 @@
     "sections": ["Takeout"],
     "description": "Delicious ice cream wrapped inside a soft outer layer.",
     "earningsRange": { "min": 129, "max": 492 },
-    "requirementsStars": 30000,
+    "requiredStars": 30000,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 1300, "price": [{ "currency": "cod", "amount": 430000 }] },
-      { "tier": "B", "requirementsStars": 0, "requirementsLikes": 2200, "price": [{ "currency": "cod", "amount": 940000 }] },
-      { "tier": "A", "requirementsStars": 0, "requirementsLikes": 3040, "price": [{ "currency": "cod", "amount": 2400000 }] },
-      { "tier": "S", "requirementsStars": 144000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 5200000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 1300, "price": [{ "currency": "cod", "amount": 430000 }] },
+      { "tier": "B", "requiredStars": 0, "requirementsLikes": 2200, "price": [{ "currency": "cod", "amount": 940000 }] },
+      { "tier": "A", "requiredStars": 0, "requirementsLikes": 3040, "price": [{ "currency": "cod", "amount": 2400000 }] },
+      { "tier": "S", "requiredStars": 144000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 5200000 }] }
     ]
   },
   {
@@ -2666,14 +2666,14 @@
     "sections": ["Takeout"],
     "description": "Is it more delicious when it's soft or firm?",
     "earningsRange": { "min": 135, "max": 515 },
-    "requirementsStars": 35000,
+    "requiredStars": 35000,
     "requirementsLikes": 0,
     "price": [],
     "tiers": [
-      { "tier": "C", "requirementsStars": 0, "requirementsLikes": 1400, "price": [{ "currency": "cod", "amount": 440000 }] },
-      { "tier": "B", "requirementsStars": 33500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 960000 }] },
-      { "tier": "A", "requirementsStars": 66000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2450000 }] },
-      { "tier": "S", "requirementsStars": 0, "requirementsLikes": 5600, "price": [{ "currency": "cod", "amount": 5300000 }] }
+      { "tier": "C", "requiredStars": 0, "requirementsLikes": 1400, "price": [{ "currency": "cod", "amount": 440000 }] },
+      { "tier": "B", "requiredStars": 33500, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 960000 }] },
+      { "tier": "A", "requiredStars": 66000, "requirementsLikes": 0, "price": [{ "currency": "cod", "amount": 2450000 }] },
+      { "tier": "S", "requiredStars": 0, "requirementsLikes": 5600, "price": [{ "currency": "cod", "amount": 5300000 }] }
     ]
   },
 
@@ -2690,7 +2690,7 @@
     "perfectDishes": 10,
     "prepTimeSeconds": 24,
     "flavor": "Sweet",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": []
   },
   {
@@ -2706,7 +2706,7 @@
     "perfectDishes": 10,
     "prepTimeSeconds": 26,
     "flavor": "Sweet",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": []
   },
   {
@@ -2722,7 +2722,7 @@
     "perfectDishes": 15,
     "prepTimeSeconds": 24,
     "flavor": "Sweet",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": []
   },
   {
@@ -2738,7 +2738,7 @@
     "perfectDishes": 30,
     "prepTimeSeconds": 28,
     "flavor": "Spicy",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": []
   },
   {
@@ -2754,7 +2754,7 @@
     "perfectDishes": 35,
     "prepTimeSeconds": 26,
     "flavor": "Sour",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": []
   },
   {
@@ -2771,7 +2771,7 @@
     "perfectDishes": 40,
     "prepTimeSeconds": 42,
     "flavor": "Salty",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": []
   },
   {
@@ -2788,7 +2788,7 @@
     "perfectDishes": 30,
     "prepTimeSeconds": 42,
     "flavor": "Sweet",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": []
   },
   {
@@ -2805,7 +2805,7 @@
     "perfectDishes": 35,
     "prepTimeSeconds": 42,
     "flavor": "Salty",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": []
   },
   {
@@ -2823,7 +2823,7 @@
     "perfectDishes": 25,
     "prepTimeSeconds": 54,
     "flavor": "Spicy",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": []
   },
   {
@@ -2841,7 +2841,7 @@
     "perfectDishes": 20,
     "prepTimeSeconds": 54,
     "flavor": "Salty",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": []
   }
 ]

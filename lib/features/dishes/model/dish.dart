@@ -24,14 +24,14 @@ class Price {
 @immutable
 class DishTier {
   final String? tier; // "C","B","A","S" etc.
-  final int? requirementsStars;
+  final int? requiredStars;
   final int? requirementsLikes;
   final List<Price>? price;
   final String? earningsRange; // optional if you ever use it per-tier
 
   const DishTier({
     this.tier,
-    this.requirementsStars,
+    this.requiredStars,
     this.requirementsLikes,
     this.price,
     this.earningsRange,
@@ -39,7 +39,7 @@ class DishTier {
 
   factory DishTier.fromJson(Map<String, dynamic> json) => DishTier(
         tier: json['tier']?.toString(),
-        requirementsStars: _asIntOrNull(json['requirementsStars']),
+        requiredStars: _asIntOrNull(json['requiredStars']),
         requirementsLikes: _asIntOrNull(json['requirementsLikes']),
         price: (json['price'] is List)
             ? (json['price'] as List)
@@ -52,7 +52,7 @@ class DishTier {
 
   Map<String, dynamic> toJson() => {
         if (tier != null) 'tier': tier,
-        if (requirementsStars != null) 'requirementsStars': requirementsStars,
+        if (requiredStars != null) 'requiredStars': requiredStars,
         if (requirementsLikes != null) 'requirementsLikes': requirementsLikes,
         if (price != null) 'price': price!.map((e) => e.toJson()).toList(),
         if (earningsRange != null) 'earningsRange': earningsRange,
@@ -101,7 +101,7 @@ class Dish {
   final String? costText;
 
   // Normalized
-  final int? requirementsStars;
+  final int? requiredStars;
   final List<Price>? price;
   final List<DishTier>? tiers;
 
@@ -124,7 +124,7 @@ class Dish {
     this.earningsRange,
     this.requirement,
     this.costText,
-    this.requirementsStars,
+    this.requiredStars,
     this.requirementsLikes,
     this.price,
     this.tiers,
@@ -168,7 +168,7 @@ class Dish {
       requirement: json['requirement']?.toString(),
       costText: json['cost']?.toString() ?? json['costText']?.toString(),
 
-      requirementsStars: _asIntOrNull(json['requirementsStars']),
+      requiredStars: _asIntOrNull(json['requiredStars']),
       requirementsLikes: _asIntOrNull(json['requirementsLikes']),
 
       price: (json['price'] is List)
@@ -205,7 +205,7 @@ class Dish {
         if (earningsRange != null) 'earningsRange': earningsRange,
         if (requirement != null) 'requirement': requirement,
         if (costText != null) 'cost': costText,
-        if (requirementsStars != null) 'requirementsStars': requirementsStars,
+        if (requiredStars != null) 'requiredStars': requiredStars,
         if (requirementsLikes != null) 'requirementsLikes': requirementsLikes,
         if (price != null) 'price': price!.map((e) => e.toJson()).toList(),
         if (tiers != null) 'tiers': tiers!.map((e) => e.toJson()).toList(),

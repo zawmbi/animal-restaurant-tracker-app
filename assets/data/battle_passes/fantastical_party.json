@@ -17,7 +17,7 @@
           "superRewards": [ { "type": "facility", "id": "floral_telescope" } ]
         },
         { "exp": 20,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "bear_cupboard" } ]
         },
         { "exp": 40,
@@ -44,7 +44,7 @@
           "superRewards": [ { "type": "facility", "id": "little_sheep_phone_assistant" } ]
         },
         { "exp": 140,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "treasured_moment" } ]
         },
         { "exp": 160,
@@ -84,7 +84,7 @@
           "superRewards": [ { "type": "memento", "id": "round_teddy_bear_hat" } ]
         },
         { "exp": 340,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "baby_veggie_basket" } ]
         },
         { "exp": 360,
@@ -104,7 +104,7 @@
           "superRewards": [ { "type": "memento", "id": "buttoned_butterfly_bow" } ]
         },
         { "exp": 440,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "memento", "id": "fluffy_sheep_slippers" } ]
         },
         { "exp": 460,
@@ -144,7 +144,7 @@
           "superRewards": [ { "type": "memento", "id": "stylish_patchwork" } ]
         },
         { "exp": 710,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "of_flowers_and_pearls" } ]
         },
         { "exp": 740,
@@ -164,7 +164,7 @@
           "superRewards": [ { "type": "currency", "currency": "cod", "amount": 80000 } ]
         },
         { "exp": 860,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "plushie_pair" } ]
         },
         { "exp": 890,
@@ -204,7 +204,7 @@
           "superRewards": [ { "type": "item", "id": "shark", "itemType": "fish", "qty": 2 } ]
         },
         { "exp": 1160,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "flavors_of_spring" } ]
         },
         { "exp": 1190,
@@ -226,7 +226,7 @@
           "superRewards": [ { "type": "item", "id": "ray", "itemType": "fish", "qty": 2 } ]
         },
         { "exp": 1330,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "teddy_bears_beautiful_dream" } ]
         },
         { "exp": 1370,
@@ -248,7 +248,7 @@
           "superRewards": [ { "type": "item", "id": "butterflyfish", "itemType": "fish", "qty": 2 } ]
         },
         { "exp": 1530,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "cute_birdhouse" } ]
         },
         { "exp": 1570,
@@ -289,7 +289,7 @@
           "superRewards": [ { "type": "facility", "id": "sleepy_little_bear" } ]
         },
         { "exp": 20,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "teddy_cookie" } ]
         },
         { "exp": 40,
@@ -313,7 +313,7 @@
           "superRewards": [ { "type": "item", "id": "healing_night_act_1", "itemType": "movie_fragment", "qty": 1 } ]
         },
         { "exp": 140,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "sunny_afternoon" } ]
         },
         { "exp": 160,
@@ -353,7 +353,7 @@
           "superRewards": [ { "type": "item", "id": "healing_night_act_2", "itemType": "movie_fragment", "qty": 1 } ]
         },
         { "exp": 340,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "whispers_of_spring" } ]
         },
         { "exp": 360,
@@ -373,7 +373,7 @@
           "superRewards": [ { "type": "memento", "id": "tulip_bib" } ]
         },
         { "exp": 440,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "woodsy_flavor" } ]
         },
         { "exp": 460,
@@ -413,7 +413,7 @@
           "superRewards": [ { "type": "item", "id": "healing_night_act_4", "itemType": "movie_fragment", "qty": 1 } ]
         },
         { "exp": 710,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "rainy_flower_bed" } ]
         },
         { "exp": 740,
@@ -433,7 +433,7 @@
           "superRewards": [ { "type": "currency", "currency": "cod", "amount": 80000 } ]
         },
         { "exp": 860,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "vine_bar_stool" } ]
         },
         { "exp": 890,
@@ -473,7 +473,7 @@
           "superRewards": [ { "type": "item", "id": "shark", "itemType": "fish", "qty": 2 } ]
         },
         { "exp": 1160,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "sunny_afternoon" } ]
         },
         { "exp": 1190,
@@ -495,7 +495,7 @@
           "superRewards": [ { "type": "item", "id": "ray", "itemType": "fish", "qty": 2 } ]
         },
         { "exp": 1330,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "daisy_sliding_doors" } ]
         },
         { "exp": 1370,
@@ -517,7 +517,7 @@
           "superRewards": [ { "type": "item", "id": "butterflyfish", "itemType": "fish", "qty": 2 } ]
         },
         { "exp": 1530,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "retro_fabric_lamp" } ]
         },
         { "exp": 1570,
@@ -558,7 +558,7 @@
           "superRewards": [ { "type": "memento", "id": "floral_sunglass" } ]
         },
         { "exp": 20,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "memento", "id": "little_apron" } ]
         },
         { "exp": 40,
@@ -582,7 +582,7 @@
           "superRewards": [ { "type": "item", "id": "miss_fawn_doll", "itemType": "event_item", "qty": 5 } ]
         },
         { "exp": 140,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "cute_disco" } ]
         },
         { "exp": 160,
@@ -622,7 +622,7 @@
           "superRewards": [ { "type": "item", "id": "miss_fawn_doll", "itemType": "event_item", "qty": 5 } ]
         },
         { "exp": 340,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "cute_disco" } ]
         },
         { "exp": 360,
@@ -642,7 +642,7 @@
           "superRewards": [ { "type": "item", "id": "miss_fawn_doll", "itemType": "event_item", "qty": 5 } ]
         },
         { "exp": 440,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "memento", "id": "fluffy_keychain" } ]
         },
         { "exp": 460,
@@ -682,7 +682,7 @@
           "superRewards": [ { "type": "item", "id": "miss_fawn_doll", "itemType": "event_item", "qty": 5 } ]
         },
         { "exp": 710,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "energetic_sweetness" } ]
         },
         { "exp": 740,
@@ -702,7 +702,7 @@
           "superRewards": [ { "type": "currency", "currency": "cod", "amount": 80000 } ]
         },
         { "exp": 860,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "cute_disco" } ]
         },
         { "exp": 890,
@@ -742,7 +742,7 @@
           "superRewards": [ { "type": "item", "id": "shark", "itemType": "fish", "qty": 2 } ]
         },
         { "exp": 1160,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "cow_cap" } ]
         },
         { "exp": 1190,
@@ -764,7 +764,7 @@
           "superRewards": [ { "type": "item", "id": "ray", "itemType": "fish", "qty": 2 } ]
         },
         { "exp": 1330,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "fawns_best_choice" } ]
         },
         { "exp": 1370,
@@ -786,7 +786,7 @@
           "superRewards": [ { "type": "item", "id": "butterflyfish", "itemType": "fish", "qty": 2 } ]
         },
         { "exp": 1530,
-          "normalRewards": [ { "type": "rating", "rating": 5 } ],
+          "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
           "superRewards": [ { "type": "facility", "id": "knitted_bag" } ]
         },
         { "exp": 1570,

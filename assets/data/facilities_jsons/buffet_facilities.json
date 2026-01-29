@@ -5,7 +5,7 @@
     "group": "Conveyor Belts",
     "name": "Simple Carousel",
     "description": "At least it has a rotation function, but it has low efficiency.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 0 }],
     "effects": [
       { "type": "ratingBonus", "amount": 20 },
@@ -19,7 +19,7 @@
     "group": "Conveyor Belts",
     "name": "Mechanical Carousel",
     "description": "Increases efficiency. Makes the meal enjoyable.",
-    "requirementsStars": 5000,
+    "requiredStars": 5000,
     "price": [{ "currency": "cod", "amount": 760000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 66 },
@@ -33,7 +33,7 @@
     "group": "Conveyor Belts",
     "name": "Modern Mechanical Carousel",
     "description": "A conveyor belt with added decorations. Maybe it'll put customers in a good mood!",
-    "requirementsStars": 12000,
+    "requiredStars": 12000,
     "price": [{ "currency": "cod", "amount": 1950000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 133 },
@@ -47,7 +47,7 @@
     "group": "Conveyor Belts",
     "name": "Round Carousel",
     "description": "Slightly shortens the food's traveled distance.",
-    "requirementsStars": 40000,
+    "requiredStars": 40000,
     "price": [{ "currency": "cod", "amount": 4400000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 225 },
@@ -61,7 +61,7 @@
     "group": "Conveyor Belts",
     "name": "Modern Round Carousel",
     "description": "Awesome! Be sure to maintain your image while eating.",
-    "requirementsStars": 70000,
+    "requiredStars": 70000,
     "price": [{ "currency": "cod", "amount": 11600000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 600 },
@@ -75,7 +75,7 @@
     "group": "Conveyor Belts",
     "name": "Spiderwebbed Conveyor Belt",
     "description": "An old and spooky conveyor belt. Perhaps it can attract some special customers.",
-    "requirementsStars": 38000,
+    "requiredStars": 38000,
     "price": [{ "currency": "cod", "amount": 8100000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 180 },
@@ -89,7 +89,7 @@
     "group": "Conveyor Belts",
     "name": "Mushroom Conveyor Belt",
     "description": "A cozy and mysterious conveyor belt. Friends can chat here all night long.",
-    "requirementsStars": 85000,
+    "requiredStars": 85000,
     "price": [{ "currency": "cod", "amount": 13000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 620 },
@@ -103,7 +103,7 @@
     "group": "Conveyor Belts",
     "name": "Marine Conveyor Belt",
     "description": "The pink octopus strictly monitors the quality of each meal.",
-    "requirementsStars": 105000,
+    "requiredStars": 105000,
     "price": [{ "currency": "cod", "amount": 27350000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 640 },
@@ -117,7 +117,7 @@
     "group": "Conveyor Belts",
     "name": "Fruity Conveyor Belt",
     "description": "The smell of fruits makes things more appetizing.",
-    "requirementsStars": 90000,
+    "requiredStars": 90000,
     "price": [{ "currency": "cod", "amount": 10500000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 255 },
@@ -131,7 +131,7 @@
     "group": "Conveyor Belts",
     "name": "White Chocolate Conveyor Belt",
     "description": "Careful! It'll melt in high temperatures. Limited-time unlock: Jun 1st–Jun 30th.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 2000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 80 },
@@ -145,7 +145,7 @@
     "group": "Conveyor Belts",
     "name": "Mechanical Conveyor Belt",
     "description": "It looks to be quite old. Green vines are climbing up the cold machinery.",
-    "requirementsStars": 100000,
+    "requiredStars": 100000,
     "price": [{ "currency": "cod", "amount": 12000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 230 },
@@ -159,7 +159,7 @@
     "group": "Conveyor Belts",
     "name": "Ghost Conveyor Belt",
     "description": "It squeaks when the belt turns.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 8000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 160 },
@@ -173,7 +173,7 @@
     "group": "Conveyor Belts",
     "name": "Snowball Conveyor Belt",
     "description": "An exclusive set custom-made for Snowball. Limited-time unlock: Dec 6th–Jan 18th.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 5000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 150 },
@@ -187,7 +187,7 @@
     "group": "Conveyor Belts",
     "name": "Sandalwood Conveyor Belt",
     "description": "You can smell the faint scent of the sandalwood.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 15000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 220 },
@@ -201,7 +201,7 @@
     "group": "Conveyor Belts",
     "name": "Magical Celestial Conveyor Belt",
     "description": "A jingle can be heard every time the stars collide.",
-    "requirementsStars": 170000,
+    "requiredStars": 170000,
     "price": [{ "currency": "cod", "amount": 45000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 800 },
@@ -215,7 +215,7 @@
     "group": "Conveyor Belts",
     "name": "Elegant Moments Conveyor Belt",
     "description": "Oh, do mind your dining etiquette.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 32000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 570 },
@@ -229,7 +229,7 @@
     "group": "Conveyor Belts",
     "name": "Furry Conveyor Belt",
     "description": "This conveyor belt will never shed! Requirement: Complete Aromatic Acorn 2-Star Judging.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "diamonds", "amount": 150 }],
     "effects": [
       { "type": "ratingBonus", "amount": 80 },
@@ -243,7 +243,7 @@
     "group": "Conveyor Belts",
     "name": "Flowing Conveyor Belt",
     "description": "Let's drink and make merry, my friend. Limited-time unlock: Jan 4th–Feb 17th.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 18000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 240 },
@@ -257,7 +257,7 @@
     "group": "Conveyor Belts",
     "name": "Four-Leaf Clover Conveyor Belt",
     "description": "Eating food blessed by four-leaf clovers is said to bring good luck. Limited-time unlock: May 17th–Jun 16th.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 10000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 160 },
@@ -271,7 +271,7 @@
     "group": "Conveyor Belts",
     "name": "Cheesy Crunch",
     "description": "An appropriate amount of sweetness can enhance the flavor of food.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 38000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 680 },
@@ -285,7 +285,7 @@
     "group": "Conveyor Belts",
     "name": "Magic Conveyor Belt",
     "description": "Rest assured that the magic spell is only used to transport things around on the belt. Requirement: Complete Aromatic Acorn 2-Star Judging. Originally obtained from Slumberous Nights event.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "diamonds", "amount": 180 }],
     "effects": [
       { "type": "ratingBonus", "amount": 80 },
@@ -299,7 +299,7 @@
     "group": "Conveyor Belts",
     "name": "Bloody Night Feast",
     "description": "An invitation for midnight. Come attend this banquet!",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 30000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 600 },
@@ -313,7 +313,7 @@
     "group": "Conveyor Belts",
     "name": "Snowfield Dinner",
     "description": "Bury the drinks in a pile of snow for ten minutes and they'll taste even better! Limited-time unlock: Dec 6th–Jan 18th.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 8600000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 190 },
@@ -327,7 +327,7 @@
     "group": "Conveyor Belts",
     "name": "Imp's Conveyor Belt",
     "description": "I'm going to secretly devour your dishes!",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 15000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 250 }
@@ -340,7 +340,7 @@
     "group": "Conveyor Belts",
     "name": "Mint Chocolate Loop",
     "description": "Our table includes an endless loop of flowing chocolate!",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 50000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 260 }
@@ -353,7 +353,7 @@
     "group": "Conveyor Belts",
     "name": "Tidal Wave Conveyor Belt",
     "description": "The waves will carry delectable dishes to you. Requirement: Complete Aromatic Acorn 2-Star Judging. Originally obtained from Deep-sea Ballad event.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "diamonds", "amount": 185 }],
     "effects": [
       { "type": "ratingBonus", "amount": 80 },
@@ -367,7 +367,7 @@
     "group": "Conveyor Belts",
     "name": "Halloween Memoirs",
     "description": "Let's have a blast tonight under the warm, orange light!",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 35000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 620 },
@@ -381,7 +381,7 @@
     "group": "Conveyor Belts",
     "name": "Warm Peaceful Fruit",
     "description": "No need to worry even if you're afraid of the cold! We've prepared some thick blankets! Limited-time unlock: Dec 6th–Jan 18th.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 13000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 220 },
@@ -395,7 +395,7 @@
     "group": "Conveyor Belts",
     "name": "Butterfly Waltz",
     "description": "Little butterfly, little butterfly, why are you here? Obtained from Midsummer Birdsong event.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 0 }],
     "effects": [
       { "type": "ratingBonus", "amount": 80 },
@@ -409,7 +409,7 @@
     "group": "Conveyor Belts",
     "name": "Gilded Conveyor Belt",
     "description": "Such magnificence! It is said to have been made by an accomplished craftsman.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 53500000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 280 },
@@ -423,7 +423,7 @@
     "group": "Gachapon",
     "name": "Normal Gachapon",
     "description": "Has all kinds of capsules inside, but is not much different from the Gachapon machines available in the market.",
-    "requirementsStars": 850,
+    "requiredStars": 850,
     "price": [{ "currency": "cod", "amount": 920000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 45 },
@@ -438,7 +438,7 @@
     "group": "Gachapon",
     "name": "Pink Gachapon",
     "description": "From beneath the pink gachapon green grasses grow. Very popular with girls.",
-    "requirementsStars": 20000,
+    "requiredStars": 20000,
     "price": [{ "currency": "cod", "amount": 2100000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 133 },
@@ -453,7 +453,7 @@
     "group": "Gachapon",
     "name": "Space SSR",
     "description": "I hear that someone received Animal Restaurant's best reward from this kind of Gachapon—a cat teaser bitten by Chef Gumi.",
-    "requirementsStars": 70000,
+    "requiredStars": 70000,
     "price": [{ "currency": "cod", "amount": 20000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 250 },
@@ -468,7 +468,7 @@
     "group": "Gachapon",
     "name": "Retro Gachapon",
     "description": "Fashionistas have said that the most retro is the trendiest.",
-    "requirementsStars": 150000,
+    "requiredStars": 150000,
     "price": [{ "currency": "cod", "amount": 50000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 400 },
@@ -483,7 +483,7 @@
     "group": "Gachapon",
     "name": "Lighthouse Gachapon",
     "description": "I want to touch the rounded roof!",
-    "requirementsStars": 150000,
+    "requiredStars": 150000,
     "price": [{ "currency": "cod", "amount": 39000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 350 },
@@ -498,7 +498,7 @@
     "group": "Gachapon",
     "name": "Banana Peel Capsule Machine",
     "description": "Even banana peels can bring you good luck!",
-    "requirementsStars": 150000,
+    "requiredStars": 150000,
     "price": [{ "currency": "cod", "amount": 45000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 500 },
@@ -528,7 +528,7 @@
     "group": "Gachapon",
     "name": "Lightbulb Gachapon",
     "description": "Why doesn't it light up?",
-    "requirementsStars": 150000,
+    "requiredStars": 150000,
     "price": [{ "currency": "cod", "amount": 30000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 350 },
@@ -586,7 +586,7 @@
     "group": "Gachapon",
     "name": "Gem Gachapon",
     "description": "Shiny yellow gems! Looks like something good is about to happen!",
-    "requirementsStars": 300000,
+    "requiredStars": 300000,
     "price": [{ "currency": "cod", "amount": 90000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 650 },
@@ -687,7 +687,7 @@
     "group": "Gachapon",
     "name": "Thorny Caged Bird",
     "description": "I wonder if the bird imprisoned in this also longs for freedom.",
-    "requirementsStars": 15000,
+    "requiredStars": 15000,
     "price": [{ "currency": "cod", "amount": 62500000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 550 },
@@ -717,7 +717,7 @@
     "group": "Gachapon",
     "name": "Starry Butterfly Dreams",
     "description": "The butterfly points at the lucky capsules.",
-    "requirementsStars": 160000,
+    "requiredStars": 160000,
     "price": [{ "currency": "cod", "amount": 35000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 380 },
@@ -760,7 +760,7 @@
     "group": "Gachapon",
     "name": "Gentleman of Hearts",
     "description": "A gentlemanly gachapon complete with a top hat, but then again, he secretly hides your capsules...",
-    "requirementsStars": 15000,
+    "requiredStars": 15000,
     "price": [{ "currency": "cod", "amount": 68000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 580 },
@@ -1222,7 +1222,7 @@
         "area": "buffet",
         "group": "Wall Hangings",
         "description": "The logo of Gumi's Kitchen is drawn on all four squares.",
-        "requirementsStars": 600,
+        "requiredStars": 600,
         "price": [{ "currency": "cod", "amount": 145000 }],
         "effects": [
           { "type": "ratingBonus", "amount": 15 },
@@ -1236,7 +1236,7 @@
         "area": "buffet",
         "group": "Wall Hangings",
         "description": "This candle may be short, but it never goes out!",
-        "requirementsStars": 6000,
+        "requiredStars": 6000,
         "price": [{ "currency": "cod", "amount": 980000 }],
         "effects": [
           { "type": "ratingBonus", "amount": 83 },
@@ -1250,7 +1250,7 @@
         "area": "buffet",
         "group": "Wall Hangings",
         "description": "Emits a gentle glow and lights up with Gumi's paw prints.",
-        "requirementsStars": 14000,
+        "requiredStars": 14000,
         "price": [{ "currency": "cod", "amount": 2500000 }],
         "effects": [
           { "type": "ratingBonus", "amount": 156 },
@@ -1264,7 +1264,7 @@
         "area": "buffet",
         "group": "Wall Hangings",
         "description": "Sometimes Gumi's Kitchen needs an antique feel too!",
-        "requirementsStars": 18000,
+        "requiredStars": 18000,
         "price": [{ "currency": "cod", "amount": 5600000 }],
         "effects": [
           { "type": "ratingBonus", "amount": 300 },
@@ -1278,7 +1278,7 @@
         "area": "buffet",
         "group": "Wall Hangings",
         "description": "They say that on the broom lives friends that the witch met.",
-        "requirementsStars": 30000,
+        "requiredStars": 30000,
         "price": [{ "currency": "cod", "amount": 11000000 }],
         "effects": [
           { "type": "ratingBonus", "amount": 380 },
@@ -1292,7 +1292,7 @@
         "area": "buffet",
         "group": "Wall Hangings",
         "description": "Shiny like a luminous pearl.",
-        "requirementsStars": 18000,
+        "requiredStars": 18000,
         "price": [{ "currency": "cod", "amount": 9100000 }],
         "effects": [
           { "type": "ratingBonus", "amount": 350 },
@@ -1306,7 +1306,7 @@
         "area": "buffet",
         "group": "Wall Hangings",
         "description": "A mystery person's letter has been stuffed inside.",
-        "requirementsStars": 15000,
+        "requiredStars": 15000,
         "price": [{ "currency": "cod", "amount": 7600000 }],
         "effects": [
           { "type": "ratingBonus", "amount": 280 },
@@ -1320,7 +1320,7 @@
         "area": "buffet",
         "group": "Wall Hangings",
         "description": "The little lights are made from crystallized grape juice.",
-        "requirementsStars": 35000,
+        "requiredStars": 35000,
         "price": [{ "currency": "cod", "amount": 10500000 }],
         "effects": [
           { "type": "ratingBonus", "amount": 350 },
@@ -1348,7 +1348,7 @@
         "area": "buffet",
         "group": "Wall Hangings",
         "description": "The light shines down on the green plants. They miss the sunlight.",
-        "requirementsStars": 50000,
+        "requiredStars": 50000,
         "price": [{ "currency": "cod", "amount": 11500000 }],
         "effects": [
           { "type": "ratingBonus", "amount": 200 },
@@ -1389,7 +1389,7 @@
         "area": "buffet",
         "group": "Wall Hangings",
         "description": "It's beautiful but fragile. Please do not touch.",
-        "requirementsStars": 120000,
+        "requiredStars": 120000,
         "price": [{ "currency": "cod", "amount": 25000000 }],
         "effects": [
           { "type": "ratingBonus", "amount": 450 },
@@ -1416,7 +1416,7 @@
   "area": "buffet",
   "group": "Ice Cream",
   "description": "A favorite of both children and adults. The little shops of my childhood were just like this.",
-  "requirementsStars": 1800,
+  "requiredStars": 1800,
   "price": [{ "currency": "cod", "amount": 250000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 25 },
@@ -1430,7 +1430,7 @@
   "area": "buffet",
   "group": "Ice Cream",
   "description": "Automatic delivery that's fast and convenient!",
-  "requirementsStars": 7000,
+  "requiredStars": 7000,
   "price": [{ "currency": "cod", "amount": 1180000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 100 },
@@ -1444,7 +1444,7 @@
   "area": "buffet",
   "group": "Ice Cream",
   "description": "There are more than two flavors. Don't mistake it for a lottery!",
-  "requirementsStars": 16000,
+  "requiredStars": 16000,
   "price": [{ "currency": "cod", "amount": 2900000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 218 },
@@ -1458,7 +1458,7 @@
   "area": "buffet",
   "group": "Ice Cream",
   "description": "All kinds of ice cream are available here!",
-  "requirementsStars": 46000,
+  "requiredStars": 46000,
   "price": [{ "currency": "cod", "amount": 6300000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 325 },
@@ -1472,7 +1472,7 @@
   "area": "buffet",
   "group": "Ice Cream",
   "description": "A pumpkin dessert made specially for Halloween.",
-  "requirementsStars": 55000,
+  "requiredStars": 55000,
   "price": [{ "currency": "cod", "amount": 14000000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 330 },
@@ -1486,7 +1486,7 @@
   "area": "buffet",
   "group": "Ice Cream",
   "description": "Descend into a fantasy dreamland for a chance to enjoy comforting and delicious ice cream.",
-  "requirementsStars": 40000,
+  "requiredStars": 40000,
   "price": [{ "currency": "cod", "amount": 6900000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 320 },
@@ -1500,7 +1500,7 @@
   "area": "buffet",
   "group": "Ice Cream",
   "description": "Various desserts made with love.",
-  "requirementsStars": 65000,
+  "requiredStars": 65000,
   "price": [{ "currency": "cod", "amount": 18000000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 350 },
@@ -1514,7 +1514,7 @@
   "area": "buffet",
   "group": "Ice Cream",
   "description": "'This season, we recommend the sea salt ice cream!' said Mister Seagull.",
-  "requirementsStars": 50000,
+  "requiredStars": 50000,
   "price": [{ "currency": "cod", "amount": 15600000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 280 },
@@ -1528,7 +1528,7 @@
   "area": "buffet",
   "group": "Ice Cream",
   "description": "Don't miss out! Step right up! There are many fruit flavors for you to choose from!",
-  "requirementsStars": 50000,
+  "requiredStars": 50000,
   "price": [{ "currency": "cod", "amount": 8000000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 210 },
@@ -1556,7 +1556,7 @@
   "area": "buffet",
   "group": "Ice Cream",
   "description": "It won't stop as long as it has the materials.",
-  "requirementsStars": 60000,
+  "requiredStars": 60000,
   "price": [{ "currency": "cod", "amount": 9250000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 180 },
@@ -1597,7 +1597,7 @@
   "area": "buffet",
   "group": "Ice Cream",
   "description": "When the stars don't want to shine, they'll hide here.",
-  "requirementsStars": 160000,
+  "requiredStars": 160000,
   "price": [{ "currency": "cod", "amount": 38000000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 500 },
@@ -1734,7 +1734,7 @@
   "area": "buffet",
   "group": "Ice Cream",
   "description": "Made by Little Mouse, a reliable brand.",
-  "requirementsStars": 65000,
+  "requiredStars": 65000,
   "price": [{ "currency": "cod", "amount": 40000000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 330 },
@@ -1829,7 +1829,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Be careful when you open and close them!",
-    "requirementsStars": 1500,
+    "requiredStars": 1500,
     "price": [{ "currency": "cod", "amount": 230000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 35 },
@@ -1843,7 +1843,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Everyone says solid wood is good, but I don't know what solid wood is.",
-    "requirementsStars": 8000,
+    "requiredStars": 8000,
     "price": [{ "currency": "cod", "amount": 1380000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 133 },
@@ -1857,7 +1857,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "You can look through the glass and see what's behind the door.",
-    "requirementsStars": 18000,
+    "requiredStars": 18000,
     "price": [{ "currency": "cod", "amount": 3300000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 218 },
@@ -1871,7 +1871,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Chef Gumi had an experienced artisan make it. It's so pretty!",
-    "requirementsStars": 49000,
+    "requiredStars": 49000,
     "price": [{ "currency": "cod", "amount": 7100000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 375 },
@@ -1885,7 +1885,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Decorated with ribbons and full of festive cheer.",
-    "requirementsStars": 50000,
+    "requiredStars": 50000,
     "price": [{ "currency": "cod", "amount": 14700000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 390 },
@@ -1899,7 +1899,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "It leads to a mysterious wonderland.",
-    "requirementsStars": 70000,
+    "requiredStars": 70000,
     "price": [{ "currency": "cod", "amount": 22000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 400 },
@@ -1913,7 +1913,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Has a summer beach style.",
-    "requirementsStars": 100000,
+    "requiredStars": 100000,
     "price": [{ "currency": "cod", "amount": 29000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 420 },
@@ -1927,7 +1927,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Putting strawberry prints on a glass door is a refreshing idea.",
-    "requirementsStars": 80000,
+    "requiredStars": 80000,
     "price": [{ "currency": "cod", "amount": 16500000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 305 },
@@ -1955,7 +1955,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "Made with old, discarded pipes. One man's trash is another man's treasure!",
-    "requirementsStars": 90000,
+    "requiredStars": 90000,
     "price": [{ "currency": "cod", "amount": 17000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 280 },
@@ -1996,7 +1996,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "The impressions of time enhance its beauty.",
-    "requirementsStars": 200000,
+    "requiredStars": 200000,
     "price": [{ "currency": "cod", "amount": 60000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 620 },
@@ -2122,7 +2122,7 @@
     "area": "buffet",
     "group": "Sliding Doors",
     "description": "A poster of 3HUA's newest show has been put up on it.",
-    "requirementsStars": 95000,
+    "requiredStars": 95000,
     "price": [{ "currency": "cod", "amount": 20000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 300 },

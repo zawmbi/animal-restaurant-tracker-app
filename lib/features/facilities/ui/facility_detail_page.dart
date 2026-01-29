@@ -438,9 +438,9 @@ class _FacilityDetailBody extends StatelessWidget {
                 _infoRow(
                   context,
                   'Star requirement',
-                  (facility.requirementStars != null &&
-                          facility.requirementStars! > 0)
-                      ? '${facility.requirementStars}★'
+                  (facility.requiredStars != null &&
+                          facility.requiredStars! > 0)
+                      ? '${facility.requiredStars}★'
                       : '—',
                 ),
 

@@ -66,7 +66,7 @@
   "area": "takeout",
   "group": "Signature Store - Garden Storage",
   "description": "A practical hand-woven flower basket.",
-  "requirementsStars": 3500,
+  "requiredStars": 3500,
   "price": [{ "currency": "bells", "amount": 1000 }],
   "effects": [
     { "type": "ratingBonus", "amount": 30 },

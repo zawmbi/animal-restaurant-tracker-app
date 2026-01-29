@@ -24,7 +24,7 @@ class BattlePassReward {
   final int? amount;
 
   // For rating
-  final int? rating;
+  final int? earnedStars;
 
   // For items (flowers/fish/etc)
   final String? itemType; // flower, fish, etc.
@@ -39,7 +39,7 @@ class BattlePassReward {
     this.id,
     this.currency,
     this.amount,
-    this.rating,
+    this.earnedStars,
     this.itemType,
     this.level,
     this.qty,
@@ -55,7 +55,7 @@ class BattlePassReward {
       id: j['id'] as String?,
       currency: j['currency'] as String?,
       amount: (j['amount'] as num?)?.toInt(),
-      rating: (j['rating'] as num?)?.toInt(),
+      earnedStars: (j['earnedStars'] as num?)?.toInt(),
       itemType: j['itemType'] as String?,
       level: (j['level'] as num?)?.toInt(),
       qty: (j['qty'] as num?)?.toInt(),

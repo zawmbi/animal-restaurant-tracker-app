@@ -172,7 +172,7 @@ class _StaffDetailPageState extends State<StaffDetailPage> {
                 dishNameToId: _dishNameToId,
                 onCustomerTap: _openCustomerById,
                 onFacilityTap: _openFacilityById,
-                onDishTap: _openDishById,
+                onDishTap: _openDishById
               ),
             ),
           _CollapsibleSectionCard(
@@ -256,11 +256,11 @@ class _StaffDetailPageState extends State<StaffDetailPage> {
                                                   icon: Icons.schedule,
                                                   text: 'Required: ${u.required}',
                                                 ),
-                                              if (u.ratingBonus != null)
+                                              if (u.earnedStars != null)
                                                 _InlineStat.asset(
                                                   assetPath: _starAsset,
                                                   fallbackIcon: Icons.star,
-                                                  text: '+${_formatWithCommas(u.ratingBonus!.toString())}',
+                                                  text: '+${_formatWithCommas(u.earnedStars!.toString())}',
                                                 ),
                                               if (u.cost != null)
                                                 _InlineStat.asset(
@@ -357,13 +357,13 @@ class _StaffDetailPageState extends State<StaffDetailPage> {
                                 ),
                               ),
 
-                              if (wm.bonusRating != null)
+                              if (wm.earnedStars != null)
                                 Padding(
                                   padding: const EdgeInsets.only(top: 8),
                                   child: _InlineStat.asset(
                                     assetPath: _starAsset,
                                     fallbackIcon: Icons.star,
-                                    text: '+${_formatWithCommas(wm.bonusRating!.toString())}',
+                                    text: '+${_formatWithCommas(wm.earnedStars!.toString())}',
                                   ),
                                 ),
 
@@ -669,11 +669,11 @@ class _CurrentPerksBox extends StatelessWidget {
               _InlineStat.icon(icon: Icons.upgrade, text: 'LVL ${current.level}'),
               if ((current.required ?? '').trim().isNotEmpty)
                 _InlineStat.icon(icon: Icons.schedule, text: 'Req: ${current.required}'),
-              if (current.ratingBonus != null)
+              if (current.earnedStars != null)
                 _InlineStat.asset(
                   assetPath: starAsset,
                   fallbackIcon: Icons.star,
-                  text: '+${_formatWithCommas(current.ratingBonus!.toString())}',
+                  text: '+${_formatWithCommas(current.earnedStars!.toString())}',
                 ),
               if (current.cost != null)
                 _InlineStat.asset(

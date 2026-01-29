@@ -5,7 +5,7 @@
     "group": "Tip Desk",
     "name": "Stone Bowl",
     "description": "Patrons, show some love...",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 1000 }],
     "effects": [
       { "type": "incomePerMinute", "currency": "cod", "amount": 5 },
@@ -20,7 +20,7 @@
     "group": "Tip Desk",
     "name": "Savings Jar",
     "description": "Watch your savings grow!",
-    "requirementsStars": 130,
+    "requiredStars": 130,
     "price": [{ "currency": "cod", "amount": 14000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 6 },
@@ -35,7 +35,7 @@
     "group": "Tip Desk",
     "name": "Piggy Bank",
     "description": "The more you save, the fatter he gets!",
-    "requirementsStars": 240,
+    "requiredStars": 240,
     "price": [{ "currency": "cod", "amount": 88000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 12 },
@@ -49,7 +49,7 @@
     "group": "Tip Desk",
     "name": "Cash Register",
     "description": "You'll be counting cash till your hand cramps",
-    "requirementsStars": 900,
+    "requiredStars": 900,
     "price": [{ "currency": "cod", "amount": 200000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 32 },
@@ -63,7 +63,7 @@
     "group": "Tip Desk",
     "name": "Reverie Register",
     "description": "I hear it can scan QR codes!",
-    "requirementsStars": 6600,
+    "requiredStars": 6600,
     "price": [{ "currency": "cod", "amount": 1520000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 140 },
@@ -77,7 +77,7 @@
     "group": "Tip Desk",
     "name": "Pumpkin Tip Desk",
     "description": "Quickly take away the cod or they'll be eaten by the jack-o'-lantern.",
-    "requirementsStars": 3000,
+    "requiredStars": 3000,
     "price": [{ "currency": "cod", "amount": 540000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 32 },
@@ -91,7 +91,7 @@
     "group": "Tip Desk",
     "name": "Chimney Counter",
     "description": "Seems like it's bottomless.",
-    "requirementsStars": 30000,
+    "requiredStars": 30000,
     "specialRequirements": ["Sold During Christmas Event"],
     "price": [{ "currency": "cod", "amount": 4500000 }],
     "effects": [
@@ -106,7 +106,7 @@
     "group": "Tip Desk",
     "name": "Abacus Counter",
     "description": "This abacus has weathered many storms.",
-    "requirementsStars": 35000,
+    "requiredStars": 35000,
     "price": [{ "currency": "cod", "amount": 5000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 50 },
@@ -120,7 +120,7 @@
     "group": "Tip Desk",
     "name": "Seashell Counter",
     "description": "The pearl in the seashell has been replaced by cod.",
-    "requirementsStars": 80000,
+    "requiredStars": 80000,
     "price": [{ "currency": "cod", "amount": 21000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 160 },
@@ -162,7 +162,7 @@
     "group": "Tip Desk",
     "name": "Celestial Scales",
     "description": "Absolute justice!",
-    "requirementsStars": 120000,
+    "requiredStars": 120000,
     "price": [{ "currency": "cod", "amount": 35000000 }],
     "effects": [
       { "type": "ratingBonus", "amount": 220 },
@@ -380,7 +380,7 @@
     "group": "Tip Desk",
     "name": "Platform Tip Desk",
     "description": "Did this journey meet your expectations?",
-    "requirementsStars": 40000,
+    "requiredStars": 40000,
     "specialRequirements": ["Sold during Christmas Event"],
     "price": [{ "currency": "cod", "amount": 5800000 }],
     "effects": [
@@ -451,7 +451,7 @@
     "group": "Table 1",
     "name": "Small Stump",
     "description": "A cozy table",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [{ "currency": "cod", "amount": 150 }],
     "effects": [
       { "type": "incomePerMinute", "currency": "cod", "amount": 4 }
@@ -464,7 +464,7 @@
     "group": "Table 1",
     "name": "Elegant Table",
     "description": "An elegant, impressive round table",
-    "requirementsStars": 260,
+    "requiredStars": 260,
     "price": [{ "currency": "cod", "amount": 62000 }],
     "effects": [
       { "type": "incomePerMinute", "currency": "cod", "amount": 7 },

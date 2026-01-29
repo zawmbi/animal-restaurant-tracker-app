@@ -157,8 +157,8 @@ class _DishDetailBody extends StatelessWidget {
         _infoRow(
           context,
           'Star requirement',
-          (dish.requirementsStars != null && dish.requirementsStars! > 0)
-              ? _iconNumberRow(iconAsset: 'assets/images/star.png', value: dish.requirementsStars!.toString())
+          (dish.requiredStars != null && dish.requiredStars! > 0)
+              ? _iconNumberRow(iconAsset: 'assets/images/star.png', value: dish.requiredStars!.toString())
               : const Text('—'),
         ),
         _infoRow(
@@ -186,8 +186,8 @@ class _DishDetailBody extends StatelessWidget {
         _infoRow(
           context,
           'Star requirement',
-          (dish.requirementsStars != null && dish.requirementsStars! > 0)
-              ? _iconNumberRow(iconAsset: 'assets/images/star.png', value: dish.requirementsStars!.toString())
+          (dish.requiredStars != null && dish.requiredStars! > 0)
+              ? _iconNumberRow(iconAsset: 'assets/images/star.png', value: dish.requiredStars!.toString())
               : const Text('—'),
         ),
         _infoRow(
@@ -223,11 +223,11 @@ class _DishDetailBody extends StatelessWidget {
           'Base likes requirement',
           _iconNumberRow(iconAsset: 'assets/images/like.png', value: dish.requirementsLikes!.toString()),
         ),
-      if (dish.requirementsStars != null && dish.requirementsStars! > 0)
+      if (dish.requiredStars != null && dish.requiredStars! > 0)
         _infoRow(
           context,
           'Base star requirement',
-          _iconNumberRow(iconAsset: 'assets/images/star.png', value: dish.requirementsStars!.toString()),
+          _iconNumberRow(iconAsset: 'assets/images/star.png', value: dish.requiredStars!.toString()),
         ),
     ];
 
@@ -244,7 +244,7 @@ class _DishDetailBody extends StatelessWidget {
   Widget _tierCard(BuildContext context, DishTier t) {
     final tierLabel = (t.tier ?? '').trim().isEmpty ? '—' : t.tier!.trim();
 
-    final reqStars = t.requirementsStars ?? 0;
+    final reqStars = t.requiredStars ?? 0;
     final reqLikes = t.requirementsLikes ?? 0;
 
     return Container(

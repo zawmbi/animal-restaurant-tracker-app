@@ -93,7 +93,7 @@ class Customer {
 }
 
 class CustomerRequirements {
-  final int? rating;
+  final int? requiredStars;
 
   // DishDetailPage uses requirements.recipes (strings) and lowercases them
   final List<String> recipes;
@@ -105,7 +105,7 @@ class CustomerRequirements {
   final List<String> customers;
 
   CustomerRequirements({
-    required this.rating,
+    required this.requiredStars,
     required this.recipes,
     required this.facilities,
     required this.letters,
@@ -113,7 +113,7 @@ class CustomerRequirements {
   });
 
   bool get hasAny =>
-      rating != null ||
+      requiredStars != null ||
       recipes.isNotEmpty ||
       facilities.isNotEmpty ||
       letters.isNotEmpty ||
@@ -132,7 +132,7 @@ class CustomerRequirements {
     }
 
     return CustomerRequirements(
-      rating: _nullableInt(json['rating']),
+      requiredStars: _nullableInt(json['requiredStars']),
       recipes: _stringList(json['recipes']),
       facilities: _stringList(json['facilities']),
       letters: _stringList(json['letters']),

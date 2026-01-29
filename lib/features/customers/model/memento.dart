@@ -2,7 +2,7 @@ class Memento {
   final String id;
   final String name;
   final String description;
-  final int stars;           // e.g., +5
+  final int earnedStars;     // e.g., +5
   final String requirement;   // human text requirement
   final List<String> tags;    // e.g., ['customer_gift','logbook_default']
   final bool hidden;          // convenient flag (also mirror via a 'hidden' tag)
@@ -15,7 +15,7 @@ class Memento {
     required this.id,
     required this.name,
     required this.description,
-    required this.stars,
+    required this.earnedStars,
     required this.requirement,
     this.tags = const [],
     this.hidden = false,
@@ -29,7 +29,7 @@ class Memento {
         id: j['id'] as String,
         name: j['name'] as String,
         description: j['description'] as String? ?? '',
-        stars: j['stars'] as int? ?? 0,
+        earnedStars: j['earnedStars'] as int? ?? 0,
         requirement: j['requirement'] as String? ?? '',
         tags: (j['tags'] as List? ?? const []).cast<String>(),
         hidden: j['hidden'] as bool? ?? false,

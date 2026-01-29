@@ -5,7 +5,7 @@
     "group": "Friends Board",
     "name": "Friends Board",
     "description": "Add friends and visit their restaurants. Shows up in the Courtyard.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 0 }
     ],
@@ -21,7 +21,7 @@
     "group": "Friends Board",
     "name": "Friends Board (Expanded)",
     "description": "An upgraded Friends Board that lets you add even more friends.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 20000 }
     ],
@@ -38,7 +38,7 @@
     "group": "Speaker",
     "name": "Speaker",
     "description": "Courtyard facility that boosts promotion. Tap it to see detailed Speaker Upgrades.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 10000 }
     ],
@@ -53,7 +53,7 @@
     "group": "Speaker",
     "name": "Fancy Speaker",
     "description": "An upgraded speaker with better sound and more effective promotions.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 50000 }
     ],
@@ -69,7 +69,7 @@
     "group": "Game Machine",
     "name": "Game Machine",
     "description": "Lets customers play minigames for Cod, Rating, Film and Magnifying Glass.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 20000 }
     ],
@@ -84,7 +84,7 @@
     "group": "Game Machine",
     "name": "Retro Game Machine",
     "description": "A retro-style console packed with classic minigames.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 60000 }
     ],
@@ -100,7 +100,7 @@
     "group": "House Type",
     "name": "Tree House",
     "description": "A pretty cozy house in a tree hole.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 0 }
     ],
@@ -116,7 +116,7 @@
     "group": "House Type",
     "name": "Burrow",
     "description": "Like a house from a fairy tale.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 7200 }
     ],
@@ -133,7 +133,7 @@
     "group": "Door",
     "name": "Log Door",
     "description": "Made with the simplest method from the most primitive material.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "cod", "amount": 0 }
     ],
@@ -149,7 +149,7 @@
     "group": "Door",
     "name": "Green Round Door",
     "description": "'Knock, knock!' Will a dwarf open the door?",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "cod", "amount": 200000 }
     ],
@@ -166,7 +166,7 @@
     "group": "Window",
     "name": "Simple Window",
     "description": "Open the window to start your simple happy day!",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "cod", "amount": 30000 }
     ],
@@ -182,7 +182,7 @@
     "group": "Window",
     "name": "Green Flutter",
     "description": "The gentle breeze flutters the curtain.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "cod", "amount": 250000 }
     ],
@@ -199,7 +199,7 @@
     "group": "Table",
     "name": "Log Table",
     "description": "Simple and sturdy.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "cod", "amount": 70000 }
     ],
@@ -215,7 +215,7 @@
     "group": "Table",
     "name": "Picnic Cloth",
     "description": "It's a wonderful day. Let's have a picnic.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "cod", "amount": 300000 }
     ],
@@ -232,7 +232,7 @@
     "group": "Stool",
     "name": "Wooden Stool",
     "description": "It squeaks when you sit on it.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "cod", "amount": 80000 }
     ],
@@ -248,7 +248,7 @@
     "group": "Stool",
     "name": "Mushroom Stool",
     "description": "It can grow bigger?!",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "cod", "amount": 550000 }
     ],
@@ -265,7 +265,7 @@
     "group": "Short Fence",
     "name": "Pine Fence (Short)",
     "description": "Time for some space management.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 2500 }
     ],
@@ -281,7 +281,7 @@
     "group": "Short Fence",
     "name": "Stake Fence (Short)",
     "description": "The moss on the wooden stakes smells like the forest.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 5000 }
     ],
@@ -298,7 +298,7 @@
     "group": "Long Fence",
     "name": "Pine Fence (Long)",
     "description": "A longer section of pine fence.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 5000 }
     ],
@@ -314,7 +314,7 @@
     "group": "Long Fence",
     "name": "Stake Fence (Long)",
     "description": "A longer version of the stake fence.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 10000 }
     ],
@@ -331,7 +331,7 @@
     "group": "Wall Decor",
     "name": "Little Blackboard",
     "description": "Jiji wrote today's menu recommendations on it.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 800 }
     ],
@@ -346,7 +346,7 @@
     "group": "Wall Decor",
     "name": "Party Flag",
     "description": "Got to have a sweet party, right?",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 4000 }
     ],
@@ -362,7 +362,7 @@
     "group": "Plants",
     "name": "Little Apple Tree Sapling",
     "description": "The apples look small, but they are crispy and sweet.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 3000 }
     ],
@@ -378,7 +378,7 @@
     "group": "Plants",
     "name": "Fragrant White Flowering Tree Sapling",
     "description": "The fragrance of the blooming flowers can fill the whole yard.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 3000 }
     ],
@@ -395,7 +395,7 @@
     "group": "Table Decor",
     "name": "Strawberry Cake",
     "description": "Strawberries and cream go together perfectly.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 2400 }
     ],
@@ -411,7 +411,7 @@
     "group": "Table Decor",
     "name": "Picnic Basket",
     "description": "Take all that delicious food on a picnic!",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 3200 }
     ],
@@ -428,7 +428,7 @@
     "group": "Carpet",
     "name": "Woven Carpet",
     "description": "Granny's carefully-woven carpet. It's very warm.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 4500 }
     ],
@@ -443,7 +443,7 @@
     "group": "Carpet",
     "name": "Rose Long Carpet",
     "description": "The carpet's soft material is comfortable to step on.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 16600 }
     ],
@@ -459,7 +459,7 @@
     "group": "Floor Decor",
     "name": "Paper Light Box",
     "description": "Careful not to get it wet in the rain.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 1600 }
     ],
@@ -474,7 +474,7 @@
     "group": "Floor Decor",
     "name": "Little Yellow Flower",
     "description": "A very resilient flower that grows by the roadside.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 4000 }
     ],
@@ -490,7 +490,7 @@
     "group": "Certificate of Honor",
     "name": "Aromatic Acorn 1-Star Certificate",
     "description": "A 1-Star Certificate from Aromatic Acorn Judging.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementNote": "Complete Aromatic Acorn 1-Star Judging",
     "price": [],
     "effects": [
@@ -504,7 +504,7 @@
     "group": "Certificate of Honor",
     "name": "Aromatic Acorn 2-Star Certificate",
     "description": "A 2-Star Certificate from Aromatic Acorn Judging.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "requirementNote": "Complete Aromatic Acorn 2-Star Judging",
     "price": [],
     "effects": [
@@ -519,7 +519,7 @@
     "group": "Pet Houses",
     "name": "Cozy Kennel",
     "description": "A small but cozy kennel where pets can rest in the courtyard.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 15000 }
     ],
@@ -534,7 +534,7 @@
     "group": "Pet Houses",
     "name": "Courtyard Cat Tower",
     "description": "A tall cat tower that lets kitties survey the courtyard.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 30000 }
     ],
@@ -550,7 +550,7 @@
     "group": "Pet Paradise",
     "name": "Pet Paradise - Small Garden",
     "description": "A small garden area where pets can play together.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 50000 }
     ],
@@ -565,7 +565,7 @@
     "group": "Pet Paradise",
     "name": "Pet Paradise - Large Playground",
     "description": "A large playground filled with toys for all kinds of pets.",
-    "requirementsStars": 0,
+    "requiredStars": 0,
     "price": [
       { "currency": "film", "amount": 100000 }
     ],
