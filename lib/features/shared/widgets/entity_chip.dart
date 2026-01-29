@@ -66,7 +66,8 @@ class EntityChip extends StatelessWidget {
                   padding: EdgeInsets.only(left: showCheckbox ? 4 : 2, right: 2),
                   child: Text(
                     label,
-                    overflow: TextOverflow.ellipsis,
+                    overflow: TextOverflow.clip,
+                    maxLines: null,
                   ),
                 ),
               ),

@@ -33,8 +33,22 @@ class _DishesPageState extends State<DishesPage> {
   bool _isTakeout(Dish d) => _inAnySection(d, ['Takeout']);
   bool _isVegGarden(Dish d) =>
       _inAnySection(d, ['Vegetable Garden Recipes', 'Vegetable Garden']);
-  bool _isFoodTruck(Dish d) =>
-      _inAnySection(d, ['Food Truck Recipes']);
+
+  Widget _unlockedCountRow(String label, int unlocked, int total) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          label,
+          style: const TextStyle(fontWeight: FontWeight.w500),
+        ),
+        Text(
+          '$unlocked / $total',
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        ),
+      ],
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -71,19 +85,54 @@ class _DishesPageState extends State<DishesPage> {
           final buffet = dishes.where(_isBuffet).toList();
           final takeout = dishes.where(_isTakeout).toList();
           final vegGarden = dishes.where(_isVegGarden).toList();
-          final foodTruck = dishes.where(_isFoodTruck).toList();
 
           return AnimatedBuilder(
             animation: store,
             builder: (context, _) {
+              // Calculate unlocked counts for each category
+              final unlockedAll = dishes.where((d) => store.isUnlocked('dish', d.id)).length;
+              final unlockedFreshly = freshlyMade.where((d) => store.isUnlocked('dish', d.id)).length;
+              final unlockedBuffet = buffet.where((d) => store.isUnlocked('dish', d.id)).length;
+              final unlockedTakeout = takeout.where((d) => store.isUnlocked('dish', d.id)).length;
+              final unlockedVegGarden = vegGarden.where((d) => store.isUnlocked('dish', d.id)).length;
+
               return SingleChildScrollView(
                 child: Column(
                   children: [
+                    // Unlocked counts header
+                    Container(
+                      margin: const EdgeInsets.all(12),
+                      padding: const EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.primaryContainer,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Unlocked Recipes',
+                            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          _unlockedCountRow('All', unlockedAll, dishes.length),
+                          const SizedBox(height: 8),
+                          _unlockedCountRow('Freshly Made', unlockedFreshly, freshlyMade.length),
+                          const SizedBox(height: 8),
+                          _unlockedCountRow('Buffet', unlockedBuffet, buffet.length),
+                          const SizedBox(height: 8),
+                          _unlockedCountRow('Takeout', unlockedTakeout, takeout.length),
+                          const SizedBox(height: 8),
+                          _unlockedCountRow('Vegetable Garden', unlockedVegGarden, vegGarden.length),
+                        ],
+                      ),
+                    ),
                     _section(context, 'All Recipes', dishes, showEvenIfEmpty: true),
                     _section(context, 'Freshly Made', freshlyMade, showEvenIfEmpty: true),
                     _section(context, 'Buffet', buffet, showEvenIfEmpty: true),
                     _section(context, 'Takeout', takeout, showEvenIfEmpty: true),
-                    _section(context, 'Food Truck Recipes', foodTruck, showEvenIfEmpty: true),
                     _section(context, 'Vegetable Garden Recipes', vegGarden, showEvenIfEmpty: true),
                   ],
                 ),

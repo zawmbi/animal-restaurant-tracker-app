@@ -70,6 +70,9 @@ class _DishDetailBody extends StatelessWidget {
   bool get isFoodTruck =>
       dish.sections.any((s) => s.toLowerCase().contains('food truck'));
 
+  bool get isVegetableGarden =>
+      dish.sections.any((s) => s.toLowerCase().contains('vegetable garden'));
+
   @override
   Widget build(BuildContext context) {
     final checked = store.isUnlocked('dish', dish.id);
@@ -107,8 +110,9 @@ class _DishDetailBody extends StatelessWidget {
         if (isBuffet) _buffetCard(context),
         if (isTakeout) _takeoutCard(context),
         if (isFoodTruck) _foodTruckCard(context),
+        if (isVegetableGarden) _vegetableGardenCard(context),
 
-        if (!isFreshlyMade && !isBuffet && !isTakeout && !isFoodTruck)
+        if (!isFreshlyMade && !isBuffet && !isTakeout && !isFoodTruck && !isVegetableGarden)
           const Text('Details for this recipe type are not implemented yet.'),
 
         const SizedBox(height: 16),
@@ -322,15 +326,53 @@ class _DishDetailBody extends StatelessWidget {
     return _cardShell(context, children);
   }
 
+  Widget _vegetableGardenCard(BuildContext context) {
+    final children = <Widget>[
+      _infoRow(context, 'Recipe Name', Text(dish.name)),
+      if (dish.description.isNotEmpty)
+        _infoRow(context, 'Description', Text(dish.description)),
+      if (dish.refinedRating != null)
+        _infoRow(
+          context,
+          'Refined rating',
+          _iconNumberRow(iconAsset: 'assets/images/star.png', value: '+${dish.refinedRating}'),
+        ),
+      if (dish.prepTimeSeconds != null)
+        _infoRow(context, 'Prep time', Text(_formatSeconds(dish.prepTimeSeconds!))),
+      if (dish.perfectDishes != null)
+        _infoRow(context, 'Perfect dishes', Text('${dish.perfectDishes}')),
+      if (dish.flavor != null && dish.flavor!.trim().isNotEmpty)
+        _infoRow(context, 'Flavor', Text(dish.flavor!)),
+      if (dish.requirementsStars != null && dish.requirementsStars! > 0)
+        _infoRow(
+          context,
+          'Star requirement',
+          _iconNumberRow(iconAsset: 'assets/images/star.png', value: dish.requirementsStars!.toString()),
+        ),
+    ];
+
+    if (dish.ingredientsList != null && dish.ingredientsList!.isNotEmpty) {
+      children.add(const SizedBox(height: 10));
+      children.add(Text('Ingredients', style: Theme.of(context).textTheme.titleMedium));
+      children.add(const SizedBox(height: 6));
+      children.add(_ingredientWrap(context, dish.ingredientsList!));
+    }
+
+    return _cardShell(context, children);
+  }
+
   Widget _ingredientWrap(BuildContext context, List<DishIngredient> items) {
-    return Wrap(
-      spacing: 8,
-      runSpacing: 8,
-      children: items.map((ing) {
-        final amt = ing.amount;
-        final amtText = (amt != null && amt > 0) ? ' x$amt' : '';
-        return Chip(label: Text('${ing.item}$amtText'));
-      }).toList(),
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Wrap(
+        spacing: 8,
+        runSpacing: 8,
+        children: items.map((ing) {
+          final amt = ing.amount;
+          final amtText = (amt != null && amt > 0) ? ' x$amt' : '';
+          return Chip(label: Text('${ing.item}$amtText'));
+        }).toList(),
+      ),
     );
   }
 
@@ -440,12 +482,14 @@ class _DishDetailBody extends StatelessWidget {
       child: Row(
         children: [
           Expanded(child: Text(label)),
-          DefaultTextStyle(
-            style: const TextStyle(
-              fontWeight: FontWeight.w600,
-              fontSize: 15,
+          Expanded(
+            child: DefaultTextStyle(
+              style: const TextStyle(
+                fontWeight: FontWeight.w600,
+                fontSize: 15,
+              ),
+              child: valueWidget,
             ),
-            child: valueWidget,
           ),
         ],
       ),

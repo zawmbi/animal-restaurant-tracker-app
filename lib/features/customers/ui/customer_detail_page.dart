@@ -129,30 +129,45 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
           if (r != null && r.hasAny) ...[
             const SizedBox(height: 24),
             const Text(
-              'Requirements',
+              'Requirements to invite customer',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
 
             if (r.requiredStars != null)
               _section('Rating', Text(r.requiredStars.toString())),
 
-            _simpleLinks(
-              context: context,
-              title: 'Required Recipes',
-              ids: r.recipes,
-              isOwned: (id) => store.isUnlocked(_bucketDish, id.toString()),
-              fillIfOwned: ownedFill,
-              onTap: (id) async {
-                await Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (_) => DishDetailPage(dishId: id.toString()),
-                  ),
-                );
-                if (!mounted) return;
-                setState(() {});
-              },
-            ),
+            if (r.recipes.isNotEmpty)
+              Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(height: 12),
+                const Text('Required Recipes',
+                  style: TextStyle(fontWeight: FontWeight.bold)),
+                Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: r.recipes.map((id) {
+                  final owned = store.isUnlocked(_bucketDish, id.toString());
+                  final s = id.toString();
+                  final label = s.isEmpty ? s : '${s[0].toUpperCase()}${s.substring(1)}';
+                  return EntityChip(
+                  label: label,
+                  fillColor: owned ? ownedFill : null,
+                  onTap: () async {
+                    await Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => DishDetailPage(dishId: id.toString()),
+                    ),
+                    );
+                    if (!mounted) return;
+                    setState(() {});
+                  },
+                  );
+                }).toList(),
+                ),
+              ],
+              ),
 
             _simpleLinks(
               context: context,

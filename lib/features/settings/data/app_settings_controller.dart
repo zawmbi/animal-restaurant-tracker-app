@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class AppSettingsController extends ChangeNotifier {
   static const _kThemeModeKey = 'settings:themeMode'; // 'system' | 'light' | 'dark'
 
-  ThemeMode _themeMode = ThemeMode.system;
+  ThemeMode _themeMode = ThemeMode.light;
   ThemeMode get themeMode => _themeMode;
 
   bool get isDark =>
@@ -12,7 +12,7 @@ class AppSettingsController extends ChangeNotifier {
 
   Future<void> load() async {
     final prefs = await SharedPreferences.getInstance();
-    final raw = prefs.getString(_kThemeModeKey) ?? 'system';
+    final raw = prefs.getString(_kThemeModeKey) ?? 'light';
     _themeMode = _decodeThemeMode(raw);
     notifyListeners();
   }

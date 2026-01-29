@@ -18,7 +18,7 @@ class DishesRepository {
   }
 
   void _reindex() {
-    _byId = {for (final d in _cache!) d.id: d};
+    _byId = {for (final d in _cache!) d.id.toLowerCase(): d};
     _byNameLower = {
       for (final d in _cache!) d.name.toLowerCase(): d,
     };
@@ -38,7 +38,8 @@ class DishesRepository {
 
   Future<Dish?> byId(String id) async {
     await _ensure();
-    return _byId![id];
+    final trimmedId = id.trim().toLowerCase();
+    return _byId?[trimmedId];
   }
 
   Future<Dish?> byName(String name) async {

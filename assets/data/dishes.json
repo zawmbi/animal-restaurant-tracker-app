@@ -2680,7 +2680,7 @@
   {
     "id": "kitty_crepe",
     "name": "Kitty Crepe",
-    "sections": ["Food Truck Recipes"],
+    "sections": ["Vegetable Garden Recipes"],
     "description": "Gear up for a new gustatory experience with this fluffy crepe and chilled strawberry mochi combination!",
     "refinedRating": 150,
     "ingredients": [
@@ -2696,7 +2696,7 @@
   {
     "id": "carrot_cake",
     "name": "Carrot Cake",
-    "sections": ["Food Truck Recipes"],
+    "sections": ["Vegetable Garden Recipes"],
     "description": "You'll love this cake even if you dislike carrots.",
     "refinedRating": 200,
     "ingredients": [
@@ -2712,7 +2712,7 @@
   {
     "id": "tofu_pudding",
     "name": "Tofu Pudding in Sweet Rice Wine",
-    "sections": ["Food Truck Recipes"],
+    "sections": ["Vegetable Garden Recipes"],
     "description": "The flavor of Jiangnan all in one bowl.",
     "refinedRating": 250,
     "ingredients": [
@@ -2728,7 +2728,7 @@
   {
     "id": "chefs_burger",
     "name": "Chef's Burger",
-    "sections": ["Food Truck Recipes"],
+    "sections": ["Vegetable Garden Recipes"],
     "description": "Bliss with every bite! Pumps you full of energy for the entire day.",
     "refinedRating": 300,
     "ingredients": [
@@ -2744,7 +2744,7 @@
   {
     "id": "tomatoes_in_mashed_potatoes",
     "name": "Tomatoes in Mashed Potatoes",
-    "sections": ["Food Truck Recipes"],
+    "sections": ["Vegetable Garden Recipes"],
     "description": "Soft and creamy, sweet and sour... This dish simply melts in the mouth.",
     "refinedRating": 350,
     "ingredients": [
@@ -2760,7 +2760,7 @@
   {
     "id": "shepherds_pie",
     "name": "Shepherd's Pie",
-    "sections": ["Food Truck Recipes"],
+    "sections": ["Vegetable Garden Recipes"],
     "description": "Spread mashed potato onto ragu and bake it to create a truly delicious dish!",
     "refinedRating": 500,
     "ingredients": [
@@ -2777,7 +2777,7 @@
   {
     "id": "frosted_gingerbread_house",
     "name": "Frosted Gingerbread House",
-    "sections": ["Food Truck Recipes"],
+    "sections": ["Vegetable Garden Recipes"],
     "description": "Icy sweetness meets crispiness for a treat like no other!",
     "refinedRating": 370,
     "ingredients": [
@@ -2794,7 +2794,7 @@
   {
     "id": "mushroom_fried_rice",
     "name": "Mushroom Fried Rice",
-    "sections": ["Food Truck Recipes"],
+    "sections": ["Vegetable Garden Recipes"],
     "description": "This dish of juicy mushrooms and fragrant rice will leave you begging for more!",
     "refinedRating": 400,
     "ingredients": [
@@ -2811,7 +2811,7 @@
   {
     "id": "strange_tasting_cotton_candy",
     "name": "Strange-tasting Cotton Candy",
-    "sections": ["Food Truck Recipes"],
+    "sections": ["Vegetable Garden Recipes"],
     "description": "What does the cotton candy taste like?",
     "refinedRating": 480,
     "ingredients": [
@@ -2829,7 +2829,7 @@
   {
     "id": "hot_dog_and_fries",
     "name": "Hot Dog & Fries",
-    "sections": ["Food Truck Recipes"],
+    "sections": ["Vegetable Garden Recipes"],
     "description": "It ain't no hotdog without em', fries!",
     "refinedRating": 450,
     "ingredients": [
