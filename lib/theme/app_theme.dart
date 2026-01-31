@@ -35,6 +35,7 @@ ThemeData buildLightTheme() {
       elevation: 0,
       scrolledUnderElevation: 0,
       titleTextStyle: TextStyle(
+        fontFamily: 'Quano',
         fontSize: 30,
         fontWeight: FontWeight.w600,
         color: kBrownDark,
@@ -102,6 +103,7 @@ ThemeData buildDarkTheme() {
       elevation: 0,
       scrolledUnderElevation: 0,
       titleTextStyle: TextStyle(
+        fontFamily: 'Quano',
         fontSize: 30,
         fontWeight: FontWeight.w600,
         color: kTextDark,

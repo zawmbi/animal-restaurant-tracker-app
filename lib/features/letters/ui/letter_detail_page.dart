@@ -79,29 +79,7 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
                   setState(() {});
                 },
               ),
-              child: Text(letter.obtainMethod!),
-            ),
-            const SizedBox(height: 16),
-          ],
-
-          if (combos.isNotEmpty) _CombinationTable(combinations: combos),
-          if (combos.isNotEmpty) const SizedBox(height: 16),
-
-          if (letter.description != null)
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: theme.colorScheme.secondary.withOpacity(0.25),
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Text(letter.description!, textAlign: TextAlign.center),
-            ),
-
-          const SizedBox(height: 16),
-
-          _infoRow(
-            label: 'Bonus',
-            value: _BonusValue(raw: letter.earnedStars ?? '—', starAsset: _starAsset),
+            ],
           ),
           body: ListView(
             padding: const EdgeInsets.all(16),
@@ -140,7 +118,7 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
 
               _infoRow(
                 label: 'Bonus',
-                value: _BonusValue(raw: letter.bonus ?? '—', starAsset: _starAsset),
+                value: _BonusValue(raw: letter.earnedStars ?? '—', starAsset: _starAsset),
               ),
 
               _ownedLinkRow(label: 'Unlocks', raw: letter.unlocks, fillIfOwned: ownedFill),
