@@ -79,7 +79,6 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
                   setState(() {});
                 },
               ),
-<<<<<<< HEAD
               child: Text(letter.obtainMethod!),
             ),
             const SizedBox(height: 16),
@@ -103,17 +102,14 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
           _infoRow(
             label: 'Bonus',
             value: _BonusValue(raw: letter.earnedStars ?? '—', starAsset: _starAsset),
-=======
-            ],
->>>>>>> 24e8ab145900fb9b931546ff2340ce3bb9663557
           ),
           body: ListView(
             padding: const EdgeInsets.all(16),
             children: [
               if (letter.obtainMethod != null && letter.obtainMethod!.trim().isNotEmpty) ...[
-                const Text(
+                Text(
                   'How to Obtain',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  style: theme.textTheme.titleMedium,
                 ),
                 const SizedBox(height: 8),
                 Container(
@@ -514,11 +510,32 @@ class _CombinationTable extends StatelessWidget {
               color: theme.colorScheme.secondary,
               borderRadius: const BorderRadius.vertical(top: Radius.circular(8)),
             ),
-            child: const Row(
+            child: Row(
               children: [
-                Expanded(child: Center(child: Text('Slot 1', style: TextStyle(fontWeight: FontWeight.bold)))),
-                Expanded(child: Center(child: Text('Slot 2', style: TextStyle(fontWeight: FontWeight.bold)))),
-                Expanded(child: Center(child: Text('Slot 3', style: TextStyle(fontWeight: FontWeight.bold)))),
+                Expanded(
+                  child: Center(
+                    child: Text(
+                      'Slot 1',
+                      style: theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Center(
+                    child: Text(
+                      'Slot 2',
+                      style: theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Center(
+                    child: Text(
+                      'Slot 3',
+                      style: theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),

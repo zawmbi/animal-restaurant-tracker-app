@@ -343,11 +343,11 @@ class _DishDetailBody extends StatelessWidget {
         _infoRow(context, 'Perfect dishes', Text('${dish.perfectDishes}')),
       if (dish.flavor != null && dish.flavor!.trim().isNotEmpty)
         _infoRow(context, 'Flavor', Text(dish.flavor!)),
-      if (dish.requirementsStars != null && dish.requirementsStars! > 0)
+      if (dish.requiredStars != null && dish.requiredStars! > 0)
         _infoRow(
           context,
           'Star requirement',
-          _iconNumberRow(iconAsset: 'assets/images/star.png', value: dish.requirementsStars!.toString()),
+          _iconNumberRow(iconAsset: 'assets/images/star.png', value: dish.requiredStars!.toString()),
         ),
     ];
 
