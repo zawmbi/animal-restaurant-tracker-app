@@ -21,6 +21,9 @@ class Customer {
   final BoothOwnerInfo? boothOwner;
   final PerformerInfo? performer;
 
+  // Seasonal grouping (e.g. "summer", "halloween", "christmas", "winter")
+  final String? season;
+
   Customer({
     required this.id,
     required this.name,
@@ -34,6 +37,7 @@ class Customer {
     required this.mementos,
     this.boothOwner,
     this.performer,
+    this.season,
   });
 
   bool hasTag(String t) => tags.contains(t);
@@ -88,6 +92,8 @@ class Customer {
               Map<String, dynamic>.from(json['performer'] as Map),
             )
           : null,
+
+      season: json['season']?.toString(),
     );
   }
 }

@@ -27,4 +27,9 @@ class CustomersRepository {
     final list = await all();
   return list.where((c) => c.tags.contains(tag)).toList();
   }
+
+  Future<List<Customer>> seasonal() async {
+    final list = await all();
+    return list.where((c) => c.season != null).toList();
+  }
 }
