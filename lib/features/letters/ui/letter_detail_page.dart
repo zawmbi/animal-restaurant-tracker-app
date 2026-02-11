@@ -23,6 +23,7 @@ import '../../mementos/ui/mementos_detail_page.dart';
 
 import '../../dishes/data/dishes_repository.dart';
 import '../../dishes/ui/dish_detail_page.dart';
+import '../../dishes/ui/dish_detail_page.dart';
 
 class LetterDetailPage extends StatefulWidget {
   final Letter letter;
