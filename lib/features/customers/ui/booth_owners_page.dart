@@ -28,7 +28,7 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
 
   // filters (expand later)
   String? _fishFilterId; // e.g. "jellyfish"
-  String? _timeBlock; // "morning" | "afternoon" | "night" (optional)
+// "morning" | "afternoon" | "night" (optional)
 
   @override
   void initState() {
