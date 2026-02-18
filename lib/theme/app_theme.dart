@@ -34,10 +34,10 @@ ThemeData buildLightTheme() {
       foregroundColor: kBrownDark,
       elevation: 0,
       scrolledUnderElevation: 0,
+      centerTitle: true,
       titleTextStyle: TextStyle(
         fontFamily: 'Quano',
         fontSize: 30,
-        fontWeight: FontWeight.w600,
         color: kBrownDark,
       ),
     ),
@@ -102,10 +102,10 @@ ThemeData buildDarkTheme() {
       foregroundColor: kTextDark,
       elevation: 0,
       scrolledUnderElevation: 0,
+      centerTitle: true,
       titleTextStyle: TextStyle(
         fontFamily: 'Quano',
         fontSize: 30,
-        fontWeight: FontWeight.w600,
         color: kTextDark,
       ),
     ),
