@@ -50,7 +50,7 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
     // If you don’t have boothOwner data yet, this safely returns 0.
     // Once you add boothOwner.incomeEvery5Min, replace this logic.
     final b = c.boothOwner; // requires you to add this field in model
-    if (b == null || b.incomeEvery5Min == null) return 0;
+    if (b == null) return 0;
 
     var expected = 0.0;
     for (final rule in b.incomeEvery5Min) {

@@ -325,6 +325,10 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
         'Appearance probability',
         style: TextStyle(fontWeight: FontWeight.bold),
       ));
+      lines.add(const Padding(
+        padding: EdgeInsets.only(top: 4),
+        child: Text('06:00-12:00 / 12:00-19:00 / 19:00-06:00'),
+      ));
       for (final row in b.appearanceRatesByFish) {
         lines.add(Padding(
           padding: const EdgeInsets.only(top: 4),

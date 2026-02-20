@@ -3,6 +3,7 @@ import '../model/customer.dart';
 
 class CustomersRepository {
   static const _asset = 'assets/data/customers.json';
+  static const _boothOwnerAsset = 'assets/data/booth_owners.json';
   CustomersRepository._();
   static final CustomersRepository instance = CustomersRepository._();
   List<Customer>? _cache;
@@ -10,7 +11,15 @@ class CustomersRepository {
   Future<List<Customer>> all() async {
     if (_cache != null) return _cache!;
     final data = await JsonLoader.load(_asset) as List<dynamic>;
-    _cache = data.map((e) => Customer.fromJson(e as Map<String, dynamic>)).toList();
+    final boothData = await JsonLoader.load(_boothOwnerAsset) as Map<String, dynamic>;
+    _cache = data.map((e) {
+      final map = Map<String, dynamic>.from(e as Map);
+      final id = map['id']?.toString() ?? '';
+      if (boothData.containsKey(id)) {
+        map['boothOwner'] = boothData[id];
+      }
+      return Customer.fromJson(map);
+    }).toList();
     return _cache!;
   }
 

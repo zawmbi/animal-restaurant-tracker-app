@@ -1,0 +1,3807 @@
+{
+  "traditional_popcorn": {
+    "timeRange": null,
+    "stayDurationMinutes": {
+      "min": 5,
+      "max": 15
+    },
+    "requiredFishIds": [
+      "tree_branch"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "cod",
+        "amount": 100,
+        "chance": 0.12
+      },
+      {
+        "currency": "plates",
+        "amount": 10,
+        "chance": 0.88
+      }
+    ],
+    "customerDrop": {
+      "currency": "cod",
+      "min": 50,
+      "max": 75
+    },
+    "appearanceRatesByFish": [
+      {
+        "fishId": "tree_branch",
+        "morning": 52.91,
+        "afternoon": 52.91,
+        "night": 52.91
+      }
+    ]
+  },
+  "old_joe": {
+    "timeRange": null,
+    "stayDurationMinutes": {
+      "min": 5,
+      "max": 15
+    },
+    "requiredFishIds": [
+      "tree_branch",
+      "clownfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "rating",
+        "amount": 0.2,
+        "chance": 0.2
+      },
+      {
+        "currency": "plates",
+        "amount": 10,
+        "chance": 0.8
+      }
+    ],
+    "customerDrop": {
+      "currency": "cod",
+      "min": 55,
+      "max": 82
+    },
+    "appearanceRatesByFish": [
+      {
+        "fishId": "tree_branch",
+        "morning": 16.36,
+        "afternoon": 16.36,
+        "night": 16.36
+      },
+      {
+        "fishId": "clownfish",
+        "morning": 12.68,
+        "afternoon": 12.68,
+        "night": 12.68
+      }
+    ]
+  },
+  "portrait_drawing_booth": {
+    "timeRange": null,
+    "stayDurationMinutes": {
+      "min": 5,
+      "max": 15
+    },
+    "requiredFishIds": [
+      "tree_branch",
+      "clownfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "cod",
+        "amount": 120,
+        "chance": 0.12
+      },
+      {
+        "currency": "plates",
+        "amount": 10,
+        "chance": 0.88
+      }
+    ],
+    "customerDrop": {
+      "currency": "cod",
+      "min": 60,
+      "max": 90
+    },
+    "appearanceRatesByFish": [
+      {
+        "fishId": "tree_branch",
+        "morning": 5.29,
+        "afternoon": 5.29,
+        "night": 5.29
+      },
+      {
+        "fishId": "clownfish",
+        "morning": 7.04,
+        "afternoon": 7.04,
+        "night": 7.04
+      }
+    ]
+  },
+  "sketch_artist": {
+    "timeRange": null,
+    "stayDurationMinutes": {
+      "min": 5,
+      "max": 15
+    },
+    "requiredFishIds": [
+      "clownfish",
+      "flounder"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "rating",
+        "amount": 0.2,
+        "chance": 0.2
+      },
+      {
+        "currency": "plates",
+        "amount": 10,
+        "chance": 0.8
+      }
+    ],
+    "customerDrop": {
+      "currency": "cod",
+      "min": 65,
+      "max": 98
+    },
+    "appearanceRatesByFish": [
+      {
+        "fishId": "clownfish",
+        "morning": 21.13,
+        "afternoon": 21.13,
+        "night": 21.13
+      },
+      {
+        "fishId": "flounder",
+        "morning": 15.06,
+        "afternoon": 15.06,
+        "night": 15.06
+      }
+    ]
+  },
+  "picnicking_rabbit": {
+    "timeRange": null,
+    "stayDurationMinutes": {
+      "min": 5,
+      "max": 15
+    },
+    "requiredFishIds": [
+      "clownfish",
+      "flounder"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "rating",
+        "amount": 0.2,
+        "chance": 0.2
+      },
+      {
+        "currency": "plates",
+        "amount": 10,
+        "chance": 0.8
+      }
+    ],
+    "customerDrop": {
+      "currency": "cod",
+      "min": 70,
+      "max": 105
+    },
+    "appearanceRatesByFish": [
+      {
+        "fishId": "clownfish",
+        "morning": 3.52,
+        "afternoon": 3.52,
+        "night": 3.52
+      },
+      {
+        "fishId": "flounder",
+        "morning": 6.02,
+        "afternoon": 6.02,
+        "night": 6.02
+      }
+    ]
+  },
+  "hillsides_stinkiest": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "jellyfish",
+      "clownfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 15,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 150,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "jellyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "clownfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "picnicking_duck": {
+    "hasMinigames": true,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "flounder",
+      "jellyfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 15,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 160,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "flounder",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "jellyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "prosperity_pineapple": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "squid",
+      "flounder"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 15,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 180,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "squid",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "flounder",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "wholegrain_pancake": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "hermit_crab",
+      "flounder"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 15,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.3,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "hermit_crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "flounder",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "convenience_buns": {
+    "hasMinigames": false,
+    "timeRange": {
+      "start": "06:00",
+      "end": "12:00"
+    },
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "jellyfish",
+      "squid",
+      "crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 20,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.3,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "jellyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "squid",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "love_filled_buns": {
+    "hasMinigames": false,
+    "timeRange": {
+      "start": "06:00",
+      "end": "12:00"
+    },
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "hermit_crab",
+      "jellyfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 20,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 220,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "hermit_crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "jellyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "reverie_cotton_candy": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "seahorse",
+      "squid",
+      "jellyfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 20,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 240,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "seahorse",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "squid",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "jellyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "slum_cotton_candy": {
+    "hasMinigames": false,
+    "timeRange": {
+      "start": "12:00",
+      "end": "19:00"
+    },
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "crab",
+      "starfish",
+      "squid",
+      "pink_shell"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 25,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 250,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "squid",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "pink_shell",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "stray_wild_panda": {
+    "hasMinigames": true,
+    "timeRange": {
+      "start": "19:00",
+      "end": "06:00"
+    },
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "red_puffer",
+      "starfish",
+      "squid",
+      "crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 25,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.4,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "red_puffer",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "squid",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "scavenging_skinny_dog": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "cuttlefish",
+      "squid"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 25,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.4,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "cuttlefish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "squid",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "candied_hawthorn": {
+    "hasMinigames": false,
+    "timeRange": {
+      "start": "19:00",
+      "end": "06:00"
+    },
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "red_puffer",
+      "crab",
+      "pink_shell"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 30,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 250,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "red_puffer",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "pink_shell",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "mouse_market": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "pink_shell",
+      "crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 30,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 330,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "pink_shell",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "flower_shop": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "butterflyfish",
+      "crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 35,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 350,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "butterflyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "bunnys_back_garden": {
+    "hasMinigames": false,
+    "timeRange": {
+      "start": "12:00",
+      "end": "19:00"
+    },
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "shark",
+      "starfish",
+      "pink_shell"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 35,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.6,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "shark",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "pink_shell",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "garden_plot": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "shark",
+      "pink_shell"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 35,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 370,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "shark",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "pink_shell",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "cut_cake": {
+    "hasMinigames": true,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "cuttlefish",
+      "pink_shell"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 35,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.6,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "cuttlefish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "pink_shell",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "floras_ring_toss": {
+    "hasMinigames": true,
+    "timeRange": {
+      "start": "19:00",
+      "end": "06:00"
+    },
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "squid",
+      "crab",
+      "goldfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 40,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 430,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "squid",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "goldfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "bamboo_hot_and_sour_noodles": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "starfish",
+      "red_puffer",
+      "shark"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 40,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 440,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "red_puffer",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "shark",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "terrible_pancake": {
+    "hasMinigames": false,
+    "timeRange": {
+      "start": "06:00",
+      "end": "12:00"
+    },
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "goldfish",
+      "sea_urchin",
+      "starfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 45,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "goldfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "sea_urchin",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "japanese_cuisine": {
+    "hasMinigames": true,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "butterflyfish",
+      "starfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 45,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "butterflyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "bears_takoyaki": {
+    "hasMinigames": true,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "red_puffer",
+      "shark",
+      "ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 45,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 470,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "red_puffer",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "shark",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "ray",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "rabbits_breakfast": {
+    "hasMinigames": false,
+    "timeRange": {
+      "start": "06:00",
+      "end": "12:00"
+    },
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "red_puffer"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 45,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "red_puffer",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "hedgehogs_breakfast": {
+    "hasMinigames": false,
+    "timeRange": {
+      "start": "06:00",
+      "end": "12:00"
+    },
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "shark",
+      "red_puffer"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 45,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 490,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "shark",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "red_puffer",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "sweet_malt_candy": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "shark",
+      "sea_urchin"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 50,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "shark",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "sea_urchin",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "scavenging_puppies_and_kitties": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "cuttlefish",
+      "shark"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 50,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "cuttlefish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "shark",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "beancurd_dessert": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "jellyfish",
+      "flounder"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 15,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.2,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "jellyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "flounder",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "bowl_pudding": {
+    "hasMinigames": true,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "jellyfish",
+      "clownfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 20,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 200,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "jellyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "clownfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "ice_cream_stall": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "starfish",
+      "squid"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 20,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.3,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "squid",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "golden_fried_potatoes": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "pink_shell",
+      "crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 25,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.4,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "pink_shell",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "american_hot_dog": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "starfish",
+      "crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 25,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 290,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "honeydew_shaved_ice": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "pink_shell",
+      "crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 30,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 310,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "pink_shell",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "traditional_bowl_pudding": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "starfish",
+      "pink_shell"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 30,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.4,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "pink_shell",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "fresh_glutinous_rice_cake": {
+    "hasMinigames": false,
+    "timeRange": {
+      "start": "12:00",
+      "end": "19:00"
+    },
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "starfish",
+      "pink_shell"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 30,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 340,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "pink_shell",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "egg_waffle": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "red_puffer",
+      "starfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 35,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.4,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "red_puffer",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "tailor_liu": {
+    "hasMinigames": true,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "shark",
+      "red_puffer"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 40,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 400,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "shark",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "red_puffer",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "love_salon": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Shark Shark",
+      "Red Puffer Red Puffer"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 40,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.6,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "fried_quail_eggs": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Shark Shark",
+      "Ray Ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 40,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 420,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "ice_cream_truck": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Shark Shark",
+      "Seahorse Seahorse"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 50,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "street_stall_hiring": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Clownfish Clownfish",
+      "Squid Squid"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 30,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.4,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": true
+  },
+  "summer_iced_jelly": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Seahorse Seahorse",
+      "Jellyfish Jellyfish",
+      "Flounder Flounder"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 30,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.4,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "piggys_crawdads": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Sea Urchin Sea Urchin",
+      "Crab Crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 40,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 440,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "skillful_massage": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Sea Urchin Sea Urchin"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 540,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "rainbow_shop_stationery": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Sea Urchin Sea Urchin"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.2,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "bicycle_repairs": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Seahorse Seahorse"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 540,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "encounters_photo_studio": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Seahorse Seahorse"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.2,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "love_tribe": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Cuttlefish Cuttlefish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 540,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": true
+  },
+  "fortunetelling": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Cuttlefish Cuttlefish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.2,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "professional_protectors": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Butterflyfish Butterfly Fish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 560,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "gold_tooth_antiques": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Butterflyfish Butterfly Fish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.0,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "another_roujiamo": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Butterflyfish Butterfly Fish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.2,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "swift_roti_prata": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Sea Urchin Sea Urchin",
+      "Clownfish Clownfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "trendy_braid": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Butterflyfish Butterfly Fish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.2,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "uncles_roasted_sweet_potato": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Shark Shark"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 590,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "inconspicuous_roasted_chestnuts": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Pink Shell Pink Shell"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.2,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "romantic_hot_air_balloon": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Butterflyfish Butterfly Fish",
+      "Clownfish Clownfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.2,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "budget_witchs_soup": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Seahorse Seahorse",
+      "Flounder Flounder"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 540,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "sticky_rice_balls": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Jellyfish Jellyfish",
+      "Cuttlefish Cuttlefish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 600,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": true
+  },
+  "ink_calligraphy": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Butterflyfish Butterfly Fish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 600,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "aaron_herbs": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Hermit Crab Hermit Crab",
+      "Clownfish Clownfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 610,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "mr_horses_vegetables": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Hermit Crab Hermit Crab",
+      "Flounder Flounder"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 610,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "mysterious_magic": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Goldfish Goldfish",
+      "Jellyfish Jellyfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.0,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "sweet_coconut_water": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Goldfish Goldfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.0,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "foxs_oden": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Hermit Crab Hermit Crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 620,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "wholesale_wild_mushrooms": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Ray Ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 620,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "outdoor_yoga": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Ray Ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 65,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 620,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "laughter_club": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Clownfish Clownfish",
+      "Ray Ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 50,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "colorful_balloons": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Pink Shell Pink Shell",
+      "Ray Ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 50,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 510,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "freewheeling_doodles": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Goldfish Goldfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 65,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 620,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "phantom_car": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Red Puffer Red Puffer",
+      "Flounder Flounder"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 35,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 350,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "soul_carving_booth": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Sea Urchin Sea Urchin",
+      "Squid Squid"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 45,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "magic_candy_store": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Seahorse Seahorse",
+      "Goldfish Goldfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.2,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "graveyard_dressing_room": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Hermit Crab Hermit Crab",
+      "Cuttlefish Cuttlefish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.2,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "beavers_flying_daggers": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Ray Ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 620,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "gingerbread_mans_bar_cart": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Sea Urchin Sea Urchin",
+      "Goldfish Goldfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 35,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.6,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "magic_bakery": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Flounder Flounder",
+      "Hermit Crab Hermit Crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 65,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 620,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "a_melody_on_the_bridge": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Hermit Crab Hermit Crab",
+      "Seahorse Seahorse"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 40,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 430,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "super_value_pawnshop": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Ray Ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 610,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "crispy_wafer_rolls_booth": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Cuttlefish Cuttlefish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 40,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 440,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "artisan_chihuahua": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Butterflyfish Butterfly Fish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.2,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "professional_welding_machine": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Goldfish Goldfish",
+      "Squid Squid"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 620,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "outdoor_livestream": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Sea Urchin Sea Urchin",
+      "Jellyfish Jellyfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 620,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": true
+  },
+  "handmade_lemon_water": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Ray Ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 65,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 620,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "grilled_toast": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Seahorse Seahorse",
+      "Hermit Crab Hermit Crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 45,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "yayas_succulents": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Ray Ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 65,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 630,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "strange_chocolate_booth": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Squid Squid"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 45,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "magic_brooms": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Flounder Flounder"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 590,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "all_knowing_magic_mirror": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Shark Shark"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 65,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 630,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "mad_hatters_afternoon_tea": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Butterflyfish Butterfly Fish",
+      "Cuttlefish Cuttlefish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 60,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 580,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "wondrous_christmas_tree": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Seahorse Seahorse",
+      "Red Puffer Red Puffer"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 65,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 610,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "magic_tiny_train": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Goldfish Goldfish",
+      "Sea Urchin Sea Urchin"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 70,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 650,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "sweet_ding_ding_candy": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Butterflyfish Butterfly Fish",
+      "Crab Crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 65,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 630,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "grilled_tofu": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Ray Ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 70,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 660,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "warm_lotus_seed_dessert": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Goldfish Goldfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 75,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 680,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "fragrant_sticky_rice": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Cuttlefish Cuttlefish",
+      "Starfish Starfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 70,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 640,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "crackling_grilled_sausages": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Hermit Crab Hermit Crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 75,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 670,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "shadow_play_theater": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Sea Urchin Sea Urchin",
+      "Jellyfish Jellyfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 80,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 690,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "cutie_manicure": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Crab Crab",
+      "Clownfish Clownfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 65,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 700,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": true
+  },
+  "airplane_kiddie_ride": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Cuttlefish Cuttlefish",
+      "Seahorse Seahorse"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 80,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 660,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "tiny_trampoline": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Hermit Crab Hermit Crab",
+      "Ray Ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 70,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 630,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "sky_high_kite": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Butterflyfish Butterfly Fish",
+      "Goldfish Goldfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 80,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 650,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "penguin_coffee_cart": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Sea Urchin Sea Urchin",
+      "Red Puffer Red Puffer"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 65,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 670,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "mint_chocolate_cones": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Seahorse Seahorse",
+      "Jellyfish Jellyfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 65,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 680,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "knitting_lamb": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Ray Ray",
+      "Pink Shell Pink Shell"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 80,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 690,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "strongman_game": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Clownfish Clownfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 45,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "skeleton_puppet_show": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Flounder Flounder"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 590,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "handicrafts_for_charity": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Butterflyfish Butterfly Fish",
+      "Crab Crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 80,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 580,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "rainbow_snowboards": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Sea Urchin Sea Urchin",
+      "Jellyfish Jellyfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 75,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 610,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "antique_clock_repairs": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Cuttlefish Cuttlefish",
+      "Squid Squid"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 670,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "sixth_bookstore": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Seahorse Seahorse",
+      "Red Puffer Red Puffer"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 80,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 690,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "cozy_churros": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Sea Urchin Sea Urchin",
+      "Ray Ray"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 75,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 700,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "exquisite_lanterns": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Hermit Crab Hermit Crab",
+      "Squid Squid"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 670,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "kungfu_teahouse": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Starfish Starfish",
+      "Seahorse Seahorse",
+      "Butterflyfish Butterfly Fish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 80,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 690,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "mr_bears_woodblocks": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "Squid Squid",
+      "Goldfish Goldfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 75,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 700,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [],
+    "hasMinigames": false
+  },
+  "sizzling_squid": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "clownfish",
+      "red_puffer"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 75,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 710,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "clownfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "red_puffer",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "customized_gown": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "sea_urchin",
+      "jellyfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 75,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 610,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "sea_urchin",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "jellyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "sword_in_the_stone_challenge": {
+    "hasMinigames": true,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "clownfish",
+      "crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 75,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 670,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "clownfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "goldfish_scooping": {
+    "hasMinigames": true,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "butterflyfish",
+      "crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 75,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 610,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "butterflyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "street_coffee": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "sea_urchin",
+      "jellyfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 75,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 670,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "sea_urchin",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "jellyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "aeros_sliced_noodles": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "sea_urchin",
+      "jellyfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 80,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 690,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "sea_urchin",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "jellyfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "leisure_golf": {
+    "hasMinigames": true,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "crab",
+      "clownfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 45,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "clownfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "aromatic_cheese_shop": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "cuttlefish",
+      "starfish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 85,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 700,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "cuttlefish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "border_collies_fresh_seafood": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "hermit_crab",
+      "flounder"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 50,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 0.8,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "hermit_crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "flounder",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "jins_magic_wands": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "tree_branch",
+      "shark"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 85,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 710,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "tree_branch",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "shark",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "invisibility_cloaks": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "goldfish",
+      "pink_shell"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 55,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.1,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "goldfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "pink_shell",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "magical_matches_booth": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "tree_branch",
+      "hermit_crab"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 50,
+        "chance": null
+      },
+      {
+        "currency": "rating",
+        "amount": 1.0,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "tree_branch",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "hermit_crab",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  },
+  "cozy_winter_hat_booth": {
+    "hasMinigames": false,
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "starfish",
+      "cuttlefish"
+    ],
+    "incomeEvery5Min": [
+      {
+        "currency": "plates",
+        "amount": 90,
+        "chance": null
+      },
+      {
+        "currency": "cod",
+        "amount": 720,
+        "chance": null
+      }
+    ],
+    "customerDrop": null,
+    "appearanceRatesByFish": [
+      {
+        "fishId": "starfish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      },
+      {
+        "fishId": "cuttlefish",
+        "morning": null,
+        "afternoon": null,
+        "night": null
+      }
+    ]
+  }
+}
