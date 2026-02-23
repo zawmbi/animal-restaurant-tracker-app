@@ -1576,8 +1576,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Shark Shark",
-      "Red Puffer Red Puffer"
+      "shark",
+      "red_puffer"
     ],
     "incomeEvery5Min": [
       {
@@ -1599,8 +1599,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Shark Shark",
-      "Ray Ray"
+      "shark",
+      "ray"
     ],
     "incomeEvery5Min": [
       {
@@ -1622,8 +1622,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Shark Shark",
-      "Seahorse Seahorse"
+      "shark",
+      "seahorse"
     ],
     "incomeEvery5Min": [
       {
@@ -1645,8 +1645,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Clownfish Clownfish",
-      "Squid Squid"
+      "clownfish",
+      "squid"
     ],
     "incomeEvery5Min": [
       {
@@ -1668,9 +1668,9 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Seahorse Seahorse",
-      "Jellyfish Jellyfish",
-      "Flounder Flounder"
+      "seahorse",
+      "jellyfish",
+      "flounder"
     ],
     "incomeEvery5Min": [
       {
@@ -1692,8 +1692,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Sea Urchin Sea Urchin",
-      "Crab Crab"
+      "sea_urchin",
+      "crab"
     ],
     "incomeEvery5Min": [
       {
@@ -1715,7 +1715,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Sea Urchin Sea Urchin"
+      "sea_urchin"
     ],
     "incomeEvery5Min": [
       {
@@ -1737,7 +1737,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Sea Urchin Sea Urchin"
+      "sea_urchin"
     ],
     "incomeEvery5Min": [
       {
@@ -1759,7 +1759,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Seahorse Seahorse"
+      "seahorse"
     ],
     "incomeEvery5Min": [
       {
@@ -1781,7 +1781,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Seahorse Seahorse"
+      "seahorse"
     ],
     "incomeEvery5Min": [
       {
@@ -1803,7 +1803,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Cuttlefish Cuttlefish"
+      "cuttlefish"
     ],
     "incomeEvery5Min": [
       {
@@ -1825,7 +1825,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Cuttlefish Cuttlefish"
+      "cuttlefish"
     ],
     "incomeEvery5Min": [
       {
@@ -1847,7 +1847,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Butterflyfish Butterfly Fish"
+      "butterflyfish"
     ],
     "incomeEvery5Min": [
       {
@@ -1869,7 +1869,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Butterflyfish Butterfly Fish"
+      "butterflyfish"
     ],
     "incomeEvery5Min": [
       {
@@ -1891,7 +1891,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Butterflyfish Butterfly Fish"
+      "butterflyfish"
     ],
     "incomeEvery5Min": [
       {
@@ -1913,8 +1913,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Sea Urchin Sea Urchin",
-      "Clownfish Clownfish"
+      "sea_urchin",
+      "clownfish"
     ],
     "incomeEvery5Min": [
       {
@@ -1936,7 +1936,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Butterflyfish Butterfly Fish"
+      "butterflyfish"
     ],
     "incomeEvery5Min": [
       {
@@ -1958,7 +1958,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Shark Shark"
+      "shark"
     ],
     "incomeEvery5Min": [
       {
@@ -1980,7 +1980,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Pink Shell Pink Shell"
+      "pink_shell"
     ],
     "incomeEvery5Min": [
       {
@@ -2002,8 +2002,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Butterflyfish Butterfly Fish",
-      "Clownfish Clownfish"
+      "butterflyfish",
+      "clownfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2025,8 +2025,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Seahorse Seahorse",
-      "Flounder Flounder"
+      "seahorse",
+      "flounder"
     ],
     "incomeEvery5Min": [
       {
@@ -2048,8 +2048,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Jellyfish Jellyfish",
-      "Cuttlefish Cuttlefish"
+      "jellyfish",
+      "cuttlefish"
     ],
     "incomeEvery5Min": [
       {
@@ -2071,7 +2071,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Butterflyfish Butterfly Fish"
+      "butterflyfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2093,8 +2093,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Hermit Crab Hermit Crab",
-      "Clownfish Clownfish"
+      "hermit_crab",
+      "clownfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2116,8 +2116,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Hermit Crab Hermit Crab",
-      "Flounder Flounder"
+      "hermit_crab",
+      "flounder"
     ],
     "incomeEvery5Min": [
       {
@@ -2139,8 +2139,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Goldfish Goldfish",
-      "Jellyfish Jellyfish"
+      "goldfish",
+      "jellyfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2162,7 +2162,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Goldfish Goldfish"
+      "goldfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2184,7 +2184,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Hermit Crab Hermit Crab"
+      "hermit_crab"
     ],
     "incomeEvery5Min": [
       {
@@ -2206,7 +2206,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Ray Ray"
+      "ray"
     ],
     "incomeEvery5Min": [
       {
@@ -2228,7 +2228,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Ray Ray"
+      "ray"
     ],
     "incomeEvery5Min": [
       {
@@ -2250,8 +2250,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Clownfish Clownfish",
-      "Ray Ray"
+      "clownfish",
+      "ray"
     ],
     "incomeEvery5Min": [
       {
@@ -2273,8 +2273,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Pink Shell Pink Shell",
-      "Ray Ray"
+      "pink_shell",
+      "ray"
     ],
     "incomeEvery5Min": [
       {
@@ -2296,7 +2296,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Goldfish Goldfish"
+      "goldfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2318,8 +2318,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Red Puffer Red Puffer",
-      "Flounder Flounder"
+      "red_puffer",
+      "flounder"
     ],
     "incomeEvery5Min": [
       {
@@ -2341,8 +2341,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Sea Urchin Sea Urchin",
-      "Squid Squid"
+      "sea_urchin",
+      "squid"
     ],
     "incomeEvery5Min": [
       {
@@ -2364,8 +2364,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Seahorse Seahorse",
-      "Goldfish Goldfish"
+      "seahorse",
+      "goldfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2387,8 +2387,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Hermit Crab Hermit Crab",
-      "Cuttlefish Cuttlefish"
+      "hermit_crab",
+      "cuttlefish"
     ],
     "incomeEvery5Min": [
       {
@@ -2410,7 +2410,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Ray Ray"
+      "ray"
     ],
     "incomeEvery5Min": [
       {
@@ -2432,8 +2432,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Sea Urchin Sea Urchin",
-      "Goldfish Goldfish"
+      "sea_urchin",
+      "goldfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2455,8 +2455,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Flounder Flounder",
-      "Hermit Crab Hermit Crab"
+      "flounder",
+      "hermit_crab"
     ],
     "incomeEvery5Min": [
       {
@@ -2478,8 +2478,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Hermit Crab Hermit Crab",
-      "Seahorse Seahorse"
+      "hermit_crab",
+      "seahorse"
     ],
     "incomeEvery5Min": [
       {
@@ -2501,7 +2501,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Ray Ray"
+      "ray"
     ],
     "incomeEvery5Min": [
       {
@@ -2523,7 +2523,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Cuttlefish Cuttlefish"
+      "cuttlefish"
     ],
     "incomeEvery5Min": [
       {
@@ -2545,7 +2545,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Butterflyfish Butterfly Fish"
+      "butterflyfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2567,8 +2567,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Goldfish Goldfish",
-      "Squid Squid"
+      "goldfish",
+      "squid"
     ],
     "incomeEvery5Min": [
       {
@@ -2590,8 +2590,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Sea Urchin Sea Urchin",
-      "Jellyfish Jellyfish"
+      "sea_urchin",
+      "jellyfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2613,7 +2613,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Ray Ray"
+      "ray"
     ],
     "incomeEvery5Min": [
       {
@@ -2635,8 +2635,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Seahorse Seahorse",
-      "Hermit Crab Hermit Crab"
+      "seahorse",
+      "hermit_crab"
     ],
     "incomeEvery5Min": [
       {
@@ -2658,7 +2658,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Ray Ray"
+      "ray"
     ],
     "incomeEvery5Min": [
       {
@@ -2680,7 +2680,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Squid Squid"
+      "squid"
     ],
     "incomeEvery5Min": [
       {
@@ -2702,7 +2702,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Flounder Flounder"
+      "flounder"
     ],
     "incomeEvery5Min": [
       {
@@ -2724,7 +2724,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Shark Shark"
+      "shark"
     ],
     "incomeEvery5Min": [
       {
@@ -2746,8 +2746,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Butterflyfish Butterfly Fish",
-      "Cuttlefish Cuttlefish"
+      "butterflyfish",
+      "cuttlefish"
     ],
     "incomeEvery5Min": [
       {
@@ -2769,8 +2769,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Seahorse Seahorse",
-      "Red Puffer Red Puffer"
+      "seahorse",
+      "red_puffer"
     ],
     "incomeEvery5Min": [
       {
@@ -2792,8 +2792,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Goldfish Goldfish",
-      "Sea Urchin Sea Urchin"
+      "goldfish",
+      "sea_urchin"
     ],
     "incomeEvery5Min": [
       {
@@ -2815,8 +2815,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Butterflyfish Butterfly Fish",
-      "Crab Crab"
+      "butterflyfish",
+      "crab"
     ],
     "incomeEvery5Min": [
       {
@@ -2838,7 +2838,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Ray Ray"
+      "ray"
     ],
     "incomeEvery5Min": [
       {
@@ -2860,7 +2860,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Goldfish Goldfish"
+      "goldfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2882,8 +2882,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Cuttlefish Cuttlefish",
-      "Starfish Starfish"
+      "cuttlefish",
+      "starfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2905,7 +2905,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Hermit Crab Hermit Crab"
+      "hermit_crab"
     ],
     "incomeEvery5Min": [
       {
@@ -2927,8 +2927,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Sea Urchin Sea Urchin",
-      "Jellyfish Jellyfish"
+      "sea_urchin",
+      "jellyfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2950,8 +2950,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Crab Crab",
-      "Clownfish Clownfish"
+      "crab",
+      "clownfish"
     ],
     "incomeEvery5Min": [
       {
@@ -2973,8 +2973,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Cuttlefish Cuttlefish",
-      "Seahorse Seahorse"
+      "cuttlefish",
+      "seahorse"
     ],
     "incomeEvery5Min": [
       {
@@ -2996,8 +2996,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Hermit Crab Hermit Crab",
-      "Ray Ray"
+      "hermit_crab",
+      "ray"
     ],
     "incomeEvery5Min": [
       {
@@ -3019,8 +3019,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Butterflyfish Butterfly Fish",
-      "Goldfish Goldfish"
+      "butterflyfish",
+      "goldfish"
     ],
     "incomeEvery5Min": [
       {
@@ -3042,8 +3042,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Sea Urchin Sea Urchin",
-      "Red Puffer Red Puffer"
+      "sea_urchin",
+      "red_puffer"
     ],
     "incomeEvery5Min": [
       {
@@ -3065,8 +3065,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Seahorse Seahorse",
-      "Jellyfish Jellyfish"
+      "seahorse",
+      "jellyfish"
     ],
     "incomeEvery5Min": [
       {
@@ -3088,8 +3088,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Ray Ray",
-      "Pink Shell Pink Shell"
+      "ray",
+      "pink_shell"
     ],
     "incomeEvery5Min": [
       {
@@ -3111,7 +3111,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Clownfish Clownfish"
+      "clownfish"
     ],
     "incomeEvery5Min": [
       {
@@ -3133,7 +3133,7 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Flounder Flounder"
+      "flounder"
     ],
     "incomeEvery5Min": [
       {
@@ -3155,8 +3155,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Butterflyfish Butterfly Fish",
-      "Crab Crab"
+      "butterflyfish",
+      "crab"
     ],
     "incomeEvery5Min": [
       {
@@ -3178,8 +3178,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Sea Urchin Sea Urchin",
-      "Jellyfish Jellyfish"
+      "sea_urchin",
+      "jellyfish"
     ],
     "incomeEvery5Min": [
       {
@@ -3201,8 +3201,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Cuttlefish Cuttlefish",
-      "Squid Squid"
+      "cuttlefish",
+      "squid"
     ],
     "incomeEvery5Min": [
       {
@@ -3224,8 +3224,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Seahorse Seahorse",
-      "Red Puffer Red Puffer"
+      "seahorse",
+      "red_puffer"
     ],
     "incomeEvery5Min": [
       {
@@ -3247,8 +3247,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Sea Urchin Sea Urchin",
-      "Ray Ray"
+      "sea_urchin",
+      "ray"
     ],
     "incomeEvery5Min": [
       {
@@ -3270,8 +3270,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Hermit Crab Hermit Crab",
-      "Squid Squid"
+      "hermit_crab",
+      "squid"
     ],
     "incomeEvery5Min": [
       {
@@ -3293,9 +3293,9 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Starfish Starfish",
-      "Seahorse Seahorse",
-      "Butterflyfish Butterfly Fish"
+      "starfish",
+      "seahorse",
+      "butterflyfish"
     ],
     "incomeEvery5Min": [
       {
@@ -3317,8 +3317,8 @@
     "timeRange": null,
     "stayDurationMinutes": null,
     "requiredFishIds": [
-      "Squid Squid",
-      "Goldfish Goldfish"
+      "squid",
+      "goldfish"
     ],
     "incomeEvery5Min": [
       {

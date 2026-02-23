@@ -25,10 +25,33 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
   final store = UnlockedStore.instance;
 
   BoothSort _sort = BoothSort.nameAZ;
+  String? _fishFilterId;
 
-  // filters (expand later)
-  String? _fishFilterId; // e.g. "jellyfish"
-// "morning" | "afternoon" | "night" (optional)
+  static const _regularFish = [
+    ('clownfish', 'Clownfish'),
+    ('crab', 'Crab'),
+    ('flounder', 'Flounder'),
+    ('jellyfish', 'Jellyfish'),
+    ('pink_shell', 'Pink Shell'),
+    ('red_puffer', 'Red Puffer'),
+    ('shark', 'Shark'),
+    ('squid', 'Squid'),
+    ('starfish', 'Starfish'),
+    ('tree_branch', 'Tree Branch'),
+  ];
+
+  static const _specialtyFish = [
+    ('sea_urchin', 'Sea Urchin'),
+    ('cuttlefish', 'Cuttlefish'),
+    ('seahorse', 'Seahorse'),
+    ('hermit_crab', 'Hermit Crab'),
+    ('goldfish', 'Goldfish'),
+  ];
+
+  static const _rareFish = [
+    ('butterflyfish', 'Butterflyfish'),
+    ('ray', 'Ray'),
+  ];
 
   @override
   void initState() {
@@ -103,6 +126,53 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
     return out;
   }
 
+  Widget _fishChip(String id, String label) {
+    final selected = _fishFilterId == id;
+    return FilterChip(
+      label: Text(label),
+      selected: selected,
+      onSelected: (_) => setState(() {
+        _fishFilterId = selected ? null : id;
+      }),
+    );
+  }
+
+  Widget _buildFishFilters(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Wrap(
+            spacing: 6,
+            runSpacing: 4,
+            children: [
+              for (final (id, label) in _regularFish) _fishChip(id, label),
+            ],
+          ),
+          const SizedBox(height: 4),
+          Text('Specialty', style: Theme.of(context).textTheme.labelSmall),
+          Wrap(
+            spacing: 6,
+            runSpacing: 4,
+            children: [
+              for (final (id, label) in _specialtyFish) _fishChip(id, label),
+            ],
+          ),
+          const SizedBox(height: 4),
+          Text('Rare', style: Theme.of(context).textTheme.labelSmall),
+          Wrap(
+            spacing: 6,
+            runSpacing: 4,
+            children: [
+              for (final (id, label) in _rareFish) _fishChip(id, label),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -171,21 +241,7 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
                 ),
               ),
 
-              // Placeholder filter row (wire up once you have fish IDs in data)
-              // Keep it simple now; expand later.
-              if (_fishFilterId != null)
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
-                  child: Row(
-                    children: [
-                      Expanded(child: Text('Fish: $_fishFilterId')),
-                      TextButton(
-                        onPressed: () => setState(() => _fishFilterId = null),
-                        child: const Text('Clear'),
-                      ),
-                    ],
-                  ),
-                ),
+              _buildFishFilters(context),
 
               const Divider(height: 1),
 
