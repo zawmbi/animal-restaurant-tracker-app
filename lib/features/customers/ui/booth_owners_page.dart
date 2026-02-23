@@ -95,9 +95,6 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
       }).toList();
     }
 
-    // Optional: time-block filtering once you model it
-    // if (_timeBlock != null) { ... }
-
     return out;
   }
 
