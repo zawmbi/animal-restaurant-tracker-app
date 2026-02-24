@@ -5342,5 +5342,257 @@
     "posters": [],
     "facilities": [],
     "categories": []
+  },
+  {
+    "id": "rich_kid",
+    "name": "Rich Kid",
+    "tags": ["customer", "special"],
+    "livesIn": "Nearby",
+    "customerDescription": "Doesn't care too much about money and just wants to travel around. Dreams of opening a restaurant.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "ad_salesman",
+    "name": "Ad Salesman",
+    "tags": ["customer", "special"],
+    "livesIn": "Nearby",
+    "customerDescription": "Very shy and afraid of being chased out, but still perseveres at work!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "cod_stealing_rabbit",
+    "name": "Cod-Stealing Rabbit",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Always borrows without returning. When will it end?",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "skunk",
+    "name": "Skunk",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "He's extremely troubled by his own habitual nature and can only try his best to avoid crowded spaces.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "card_playing_mouse",
+    "name": "Card-Playing Mouse",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "A famous magician in Las Vegas who excels at reading minds.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "wandering_singer",
+    "name": "Wandering Singer",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "When the parrot begins to sing, the area becomes his own stage.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "new_year_mouse",
+    "name": "New Year Mouse",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "A costume borrowed from who knows where.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "rascal",
+    "name": "Rascal",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "A mischievous rascal that everyone dislikes.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "rascals_dad",
+    "name": "Rascal's Dad",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Behind every rascal, lurks a pair of rapscallion parents.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "rascals_mom",
+    "name": "Rascal's Mom",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Behind every rascal, lurks a pair of rapscallion parents.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "christmas_elf",
+    "name": "Christmas Elf",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Quietly leaves presents while you're sleeping.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "new_year_calf",
+    "name": "New Year Calf",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Likes traditional things and is always methodical.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "cowherd",
+    "name": "Cowherd",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "We are like a pair of mandarin ducks.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "weaver_girl",
+    "name": "Weaver Girl",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Flying side by side through the world.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "dani",
+    "name": "Dani",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Will stop immediately when seeing something adorable.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "halloween_ragdoll",
+    "name": "Halloween Ragdoll",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Made by an old tailor, this ragdoll set his heart on finding his little brother.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "snowball_2",
+    "name": "Snowball 2",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Roly-poly Snowball. If you don't keep an eye on them, they'll sneak away to slack off.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "tiger_of_blessings",
+    "name": "Tiger of Blessings",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Looks fierce but is actually very friendly.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "auspicious_bunny",
+    "name": "Auspicious Bunny",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "This soft and furry little friend must be especially cuddly!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "sugar_glider_mimi",
+    "name": "Sugar Glider Mimi",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Even though it sleeps very early every night, this sleepyhead is always looking for a place to nap.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "blessed_dragon",
+    "name": "Blessed Dragon",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "His elegance contributes to his solemn demeanor that belies an affable personality when you talk to him.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "felicity_nuwa",
+    "name": "Felicity N\u00fcwa",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "She always has a friendly smile for everyone she meets.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "halloween_pumpkin",
+    "name": "Halloween Pumpkin",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Although he is a clown from the circus who amuses people, he doesn't like his job. He enjoys scaring little kids to tears.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "fortuneteller",
+    "name": "Fortuneteller",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "The legendary Fortuneteller who can use the forest's mysterious forces, but whether or not you believe is up to you.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "mysterious_merchant",
+    "name": "Mysterious Merchant",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Covered head-to-toe in black, with eyes that peer all around. Likes shiny things, such as money.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "otter_dodo",
+    "name": "Otter Dodo",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Dreams of becoming a great magician. Still practicing though.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "mister_roach",
+    "name": "Mister Roach",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "This cutthroat competitor will stop at nothing to ruin our restaurant's business.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "chacha",
+    "name": "Chacha",
+    "tags": ["customer", "special"],
+    "livesIn": null,
+    "customerDescription": "Keep an eye out for him! He may steal your crops if you don't!",
+    "requirements": {},
+    "mementos": []
   }
 ]
