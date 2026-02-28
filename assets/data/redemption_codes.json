@@ -1,5 +1,29 @@
 [
   {
+    "code": "SPRINGVIBE2026",
+    "validFrom": "2026-02-17",
+    "validUntil": "2026-03-14",
+    "reason": "Lunar New Year Event 2026",
+    "giftMementoId": "rainbow_bead_headpiece",
+    "giftLabel": "Rainbow Bead Headpiece"
+  },  
+  {
+    "code": "ARLOVE2026",
+    "validFrom": "2026-02-14",
+    "validUntil": "2026-02-28",
+    "reason": "Valentine's Day 2026",
+    "giftMementoId": "telephone_bear",
+    "giftLabel": "Telephone Bear"
+  },
+   {
+    "code": "LUCKYCAT2026",
+    "validFrom": "2026-01-31",
+    "validUntil": "2026-02-28",
+    "reason": "Lunar New Year Event 2026",
+    "giftMementoId": "lotus_teacup",
+    "giftLabel": "Lotus Teacup"
+  },
+  {
     "code": "ARXMASPARTY",
     "validFrom": "2025-12-25",
     "validUntil": "2026-01-23",
