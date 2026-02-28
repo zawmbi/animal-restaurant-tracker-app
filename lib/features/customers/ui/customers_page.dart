@@ -27,7 +27,7 @@ class _CustomersPageState extends State<CustomersPage>
   @override
   void initState() {
     super.initState();
-    _tabs = TabController(length: 6, vsync: this);
+    _tabs = TabController(length: 7, vsync: this);
   }
 
   @override
@@ -48,6 +48,7 @@ class _CustomersPageState extends State<CustomersPage>
             Tab(text: 'All'),
             Tab(text: 'Regular'),
             Tab(text: 'Special'),
+            Tab(text: 'Event'),
             Tab(text: 'Seasonal'),
             Tab(text: 'Booth Owner'),
             Tab(text: 'Performer'),
@@ -60,6 +61,7 @@ class _CustomersPageState extends State<CustomersPage>
           _CustomersGrid(), // all
           _CustomersGrid(tag: 'regular'),
           _CustomersGrid(tag: 'special'),
+          _CustomersGrid(tag: 'event'),
           _CustomersGrid(seasonal: true),
           _CustomersGrid(tag: 'booth_owner'),
           _CustomersGrid(tag: 'performer'),

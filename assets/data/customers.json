@@ -195,7 +195,7 @@
       "Pineapple Rice",
       "Planet Cake"
     ],
-    "customerDescription": "",
+    "customerDescription": "Very shy but wants to make friends.",
     "requirements": {
       "letters": [
         "halloween_invitation"
@@ -5346,7 +5346,10 @@
   {
     "id": "rich_kid",
     "name": "Rich Kid",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": "Nearby",
     "customerDescription": "Doesn't care too much about money and just wants to travel around. Dreams of opening a restaurant.",
     "requirements": {},
@@ -5355,7 +5358,10 @@
   {
     "id": "ad_salesman",
     "name": "Ad Salesman",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": "Nearby",
     "customerDescription": "Very shy and afraid of being chased out, but still perseveres at work!",
     "requirements": {},
@@ -5364,7 +5370,10 @@
   {
     "id": "cod_stealing_rabbit",
     "name": "Cod-Stealing Rabbit",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Always borrows without returning. When will it end?",
     "requirements": {},
@@ -5373,7 +5382,10 @@
   {
     "id": "skunk",
     "name": "Skunk",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "He's extremely troubled by his own habitual nature and can only try his best to avoid crowded spaces.",
     "requirements": {},
@@ -5382,7 +5394,10 @@
   {
     "id": "card_playing_mouse",
     "name": "Card-Playing Mouse",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "A famous magician in Las Vegas who excels at reading minds.",
     "requirements": {},
@@ -5391,7 +5406,10 @@
   {
     "id": "wandering_singer",
     "name": "Wandering Singer",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "When the parrot begins to sing, the area becomes his own stage.",
     "requirements": {},
@@ -5400,7 +5418,10 @@
   {
     "id": "new_year_mouse",
     "name": "New Year Mouse",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "A costume borrowed from who knows where.",
     "requirements": {},
@@ -5409,7 +5430,10 @@
   {
     "id": "rascal",
     "name": "Rascal",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "A mischievous rascal that everyone dislikes.",
     "requirements": {},
@@ -5418,7 +5442,10 @@
   {
     "id": "rascals_dad",
     "name": "Rascal's Dad",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Behind every rascal, lurks a pair of rapscallion parents.",
     "requirements": {},
@@ -5427,7 +5454,10 @@
   {
     "id": "rascals_mom",
     "name": "Rascal's Mom",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Behind every rascal, lurks a pair of rapscallion parents.",
     "requirements": {},
@@ -5436,7 +5466,10 @@
   {
     "id": "christmas_elf",
     "name": "Christmas Elf",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Quietly leaves presents while you're sleeping.",
     "requirements": {},
@@ -5445,7 +5478,10 @@
   {
     "id": "new_year_calf",
     "name": "New Year Calf",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Likes traditional things and is always methodical.",
     "requirements": {},
@@ -5454,7 +5490,10 @@
   {
     "id": "cowherd",
     "name": "Cowherd",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "We are like a pair of mandarin ducks.",
     "requirements": {},
@@ -5463,7 +5502,10 @@
   {
     "id": "weaver_girl",
     "name": "Weaver Girl",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Flying side by side through the world.",
     "requirements": {},
@@ -5472,7 +5514,10 @@
   {
     "id": "dani",
     "name": "Dani",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Will stop immediately when seeing something adorable.",
     "requirements": {},
@@ -5481,7 +5526,12 @@
   {
     "id": "halloween_ragdoll",
     "name": "Halloween Ragdoll",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special",
+      "event",
+      "halloween"
+    ],
     "livesIn": null,
     "customerDescription": "Made by an old tailor, this ragdoll set his heart on finding his little brother.",
     "requirements": {},
@@ -5490,7 +5540,10 @@
   {
     "id": "snowball_2",
     "name": "Snowball 2",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Roly-poly Snowball. If you don't keep an eye on them, they'll sneak away to slack off.",
     "requirements": {},
@@ -5499,7 +5552,10 @@
   {
     "id": "tiger_of_blessings",
     "name": "Tiger of Blessings",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Looks fierce but is actually very friendly.",
     "requirements": {},
@@ -5508,7 +5564,10 @@
   {
     "id": "auspicious_bunny",
     "name": "Auspicious Bunny",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "This soft and furry little friend must be especially cuddly!",
     "requirements": {},
@@ -5517,7 +5576,10 @@
   {
     "id": "sugar_glider_mimi",
     "name": "Sugar Glider Mimi",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Even though it sleeps very early every night, this sleepyhead is always looking for a place to nap.",
     "requirements": {},
@@ -5526,7 +5588,10 @@
   {
     "id": "blessed_dragon",
     "name": "Blessed Dragon",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "His elegance contributes to his solemn demeanor that belies an affable personality when you talk to him.",
     "requirements": {},
@@ -5534,8 +5599,11 @@
   },
   {
     "id": "felicity_nuwa",
-    "name": "Felicity N\u00fcwa",
-    "tags": ["customer", "special"],
+    "name": "Felicity Nüwa",
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "She always has a friendly smile for everyone she meets.",
     "requirements": {},
@@ -5544,7 +5612,12 @@
   {
     "id": "halloween_pumpkin",
     "name": "Halloween Pumpkin",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special",
+      "event",
+      "halloween"
+    ],
     "livesIn": null,
     "customerDescription": "Although he is a clown from the circus who amuses people, he doesn't like his job. He enjoys scaring little kids to tears.",
     "requirements": {},
@@ -5553,7 +5626,10 @@
   {
     "id": "fortuneteller",
     "name": "Fortuneteller",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "The legendary Fortuneteller who can use the forest's mysterious forces, but whether or not you believe is up to you.",
     "requirements": {},
@@ -5562,7 +5638,10 @@
   {
     "id": "mysterious_merchant",
     "name": "Mysterious Merchant",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Covered head-to-toe in black, with eyes that peer all around. Likes shiny things, such as money.",
     "requirements": {},
@@ -5571,7 +5650,10 @@
   {
     "id": "otter_dodo",
     "name": "Otter Dodo",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Dreams of becoming a great magician. Still practicing though.",
     "requirements": {},
@@ -5580,7 +5662,10 @@
   {
     "id": "mister_roach",
     "name": "Mister Roach",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "This cutthroat competitor will stop at nothing to ruin our restaurant's business.",
     "requirements": {},
@@ -5589,9 +5674,2350 @@
   {
     "id": "chacha",
     "name": "Chacha",
-    "tags": ["customer", "special"],
+    "tags": [
+      "customer",
+      "special"
+    ],
     "livesIn": null,
     "customerDescription": "Keep an eye out for him! He may steal your crops if you don't!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "striped_yellow_jackal",
+    "name": "Striped Yellow Jackal",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They're always chanting 'Fresh guts!' and 'Yay, guts!'",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "badger",
+    "name": "Badger",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "DON'T let him eat too many beans. If he farts, the entire restaurant is done for.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "spotted_deer",
+    "name": "Spotted Deer",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Everyone always thinks of this kind of spotted deer, but they're pretty rare around here.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "artist_badger",
+    "name": "Artist Badger",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "He is overconfident about his talent, very fussy about food, and is always pulling all-nighters to make finishing touches... but nobody has ever seen any of his paintings.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "wounded_bear",
+    "name": "Wounded Bear",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "There's an unheard story behind the knife wound. The bear is a regular, and also our fish supplier!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "hedgehog",
+    "name": "Hedgehog",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They're covered in spines but still want to hug everyone.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "brown_wolf",
+    "name": "Brown Wolf",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They're highly sociable and always go out in groups, so different from cats!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "striped_jackal",
+    "name": "Striped Jackal",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They're very sensitive to expiration dates and like cold-tossed pancreas.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "blueberry_hedgehog",
+    "name": "Blueberry Hedgehog",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Blueberry fanatics.",
+    "requirements": {
+      "facilities": [
+        "daisy"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "sheep",
+    "name": "Sheep",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "During grazing season, they're all over the mountains and plains. A type of sheep from the neighbor's pasture.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "yellow_jackal",
+    "name": "Yellow Jackal",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They've got bright eyes and look like they're ready to pounce at any moment.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "swan",
+    "name": "Swan",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "When he was little he thought he was a duck, but when he grew up he still thought he was a duck, so he's not too mean.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "wolf",
+    "name": "Wolf",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Normal wolves. They eat meat with every meal.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "scarred_bear",
+    "name": "Scarred Bear",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "There's a faint scar on his belly. He always looks down.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "granny_wolf",
+    "name": "Granny Wolf",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Even though he's male, he's taken to wearing a silk scarf that he found somewhere and learned to tie from watching humans.",
+    "requirements": {
+      "facilities": [
+        "sunflower"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "border_collie",
+    "name": "Border Collie",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "If you ever lose something, you can go find them. They can get it back with a single sniff and never ask for compensation.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "french_bulldog",
+    "name": "French Bulldog",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They're quite pompous, and they all think they're of noble blood.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "bald_sheep",
+    "name": "Bald Sheep",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Isn't he cold? At the very least he could wear some clothes. Everyone feels kinda awkward looking at him.",
+    "requirements": {
+      "facilities": [
+        "red_rose"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "lop_eared_rabbit",
+    "name": "Lop-Eared Rabbit",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They're always chewing on pieces of grass.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "otter",
+    "name": "Otter",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They handle all the woodworking in this area. The houses and furniture they make are all sturdy and durable. They're saving the money they earn to build an even bigger dam.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "one_eyed_papillon",
+    "name": "One-Eyed Papillon",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "He's a dog of few words, and nobody dares talk to him. He seems to hate humans.",
+    "requirements": {
+      "facilities": [
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "fox",
+    "name": "Fox",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Even though he's fully grown, he still tries to act cute to get what he wants. Just give him whatever he asks for. The chef'll pay for it.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "raccoon",
+    "name": "Raccoon",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Their tummies are always rumbling, but they never go hungry.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "terrier",
+    "name": "Terrier",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They look like old men.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "field_dog",
+    "name": "Field Dog",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Has a bit of an underbite and may not be well-liked among humans. I hear they can't even live in the city.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "shiba",
+    "name": "Shiba",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They're always waiting for something by the intersection. Don't be fooled by their serious faces; they often think of something and start laughing.",
+    "requirements": {
+      "facilities": [
+        "white_rose"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "ostrich",
+    "name": "Ostrich",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "We made the door higher just for them.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "paper_bagged_ostrich",
+    "name": "Paper Bagged Ostrich",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A shy guy.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "berry_hedgehog",
+    "name": "Berry Hedgehog",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They tend to worry, so they like to hoard food. They'll curl up into a ball if they get frightened.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "chocolate_lab",
+    "name": "Chocolate Lab",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "These city-slickers get all suave whenever they see a human.",
+    "requirements": {
+      "facilities": [
+        "daisy",
+        "red_rose"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "chocolate_border_collie",
+    "name": "Chocolate Border Collie",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "These city-slickers get all suave whenever they see a human.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "boar",
+    "name": "Boar",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They're related to pigs, but they've got an entirely different temper, so take care when you're serving them",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "black_shiba",
+    "name": "Black Shiba",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They love to go for walks and play tug-of-war.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "black_lab",
+    "name": "Black Lab",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Has unlimited energy, a huge appetite, good teeth, and stinky breath, possibly from chewing too many shoes...",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "boston_terrier",
+    "name": "Boston Terrier",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "The chef doesn't like these kinds of customers.",
+    "requirements": {
+      "facilities": [
+        "white_rose",
+        "sunflower"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "merle_border_collie",
+    "name": "Merle Border Collie",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "These dogs look super cool, but they'd rather play with people than dogs.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "pug",
+    "name": "Pug",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They're so stinky that the chef stays far away whenever he sees them, but they're welcomed by the other animals because they're good at playing dumb and listening in on the humans' secrets. They're always gossiping.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "corgi",
+    "name": "Corgi",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A stingy pup who likes fighting with others. If he breaks the tableware, make sure he pays up!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "speckled_pig",
+    "name": "Speckled Pig",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They used to be farm animals, but they were abandoned because they grew too fast. How could a pig NOT grow?",
+    "requirements": {
+      "facilities": [
+        "sunflower",
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "husky",
+    "name": "Husky",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "These easy-going kings of destruction are always liked by female dogs, but nobody cares for their wisdom.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "tri_colored_corgi",
+    "name": "Tri-Colored Corgi",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "As pretty as any other corgi.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "pig",
+    "name": "Pig",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They're always asking if they've lost weight...but they're still as chubby as ever.",
+    "requirements": {
+      "facilities": [
+        "daisy",
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "old_collie",
+    "name": "Old Collie",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "You usually won't see them on rainy days.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "fennec_fox",
+    "name": "Fennec Fox",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They may look young, but they're actually menopausal! They always feel hot, so they like cold foods and drinks.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "penguin",
+    "name": "Penguin",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Don't ask me why there are penguins here. I have no idea! Everyone likes hearing their stories about faraway glaciers.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "white_collar_fox",
+    "name": "White-Collar Fox",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They're always in a hurry to pay and seem to do business with some dangerous man. We like these kinds of customers!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "lynx",
+    "name": "Lynx",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "They look a bit strange... Nobody's seen this kind of cat before.",
+    "requirements": {
+      "facilities": [
+        "red_rose",
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "dachshund",
+    "name": "Dachshund",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Loves waxing herself.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "rescue_dog",
+    "name": "Rescue Dog",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A pup of high morals who can tell you all about disasters.",
+    "requirements": {
+      "letters": [
+        "party_puppys_response"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "sloth",
+    "name": "Sloth",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "These sloths are probably more active than others, as they haven't got any mushrooms growing on them.",
+    "requirements": {
+      "facilities": [
+        "daisy",
+        "sunflower"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "polar_bear",
+    "name": "Polar Bear",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A homeless and rare type of bear.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "slim_white_dog",
+    "name": "Slim White Dog",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "She always likes to stay in shape.",
+    "requirements": {
+      "facilities": [
+        "daisy"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "insta_pup",
+    "name": "Insta-Pup",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "He always has the latest mobile camera on his neck.",
+    "requirements": {
+      "facilities": [
+        "daisy",
+        "sunflower",
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "flamingo",
+    "name": "Flamingo",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Enjoys sleep and has a slight inferiority complex.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "gnome",
+    "name": "Gnome",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "He's rarely seen, but those who do see him will be in luck.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "mushroom_sloth",
+    "name": "Mushroom Sloth",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "He's so lazy a mushroom's grown on his head.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "influencer_flamingo",
+    "name": "Influencer Flamingo",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "She puts on sunglasses and thinks she's all that, but even influencers will go out in style!",
+    "requirements": {
+      "facilities": [
+        "daisy",
+        "red_rose",
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "tiger",
+    "name": "Tiger",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Looks like he could be Jiji's distant relative.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "little_black_dog",
+    "name": "Little Black Dog",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Nobody knows what breed he is, but everyone likes him!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "white_rabbit",
+    "name": "White Rabbit",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "He's holding his watch like he's late for something.",
+    "requirements": {
+      "facilities": [
+        "white_rose"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "cheshire_cat",
+    "name": "Cheshire Cat",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "He's always grinning. Don't believe anything he says! I do think I've seen him in some fairytale, though...",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "reporter",
+    "name": "Reporter",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "He's carrying a backpack and a camera. He doesn't seem like a bad guy.",
+    "requirements": {
+      "facilities": [
+        "daisy",
+        "sunflower",
+        "red_rose"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "glamourous_lady",
+    "name": "Glamourous Lady",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "This species has a penchant for leopard print.",
+    "requirements": {
+      "letters": [
+        "sunset_luxury_tours"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "scotch_collie",
+    "name": "Scotch Collie",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Has a very long face.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "programmers_dog",
+    "name": "Programmer's Dog",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "The colors have been washed from his clothes.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "dalmatian",
+    "name": "Dalmatian",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A very loyal dog.",
+    "requirements": {
+      "facilities": [
+        "daisy",
+        "red_rose",
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "party_puppy",
+    "name": "Party Puppy",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Just came back from a party without even removing her hat.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "green_hat_gnome",
+    "name": "Green-Hat Gnome",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "An even rarer gnome. If you see him, you'll be super-duper lucky!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "cici",
+    "name": "Cici",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A melancholy human girl.",
+    "requirements": {
+      "letters": [
+        "party_puppys_response",
+        "new_zealand_journal_page_1",
+        "new_zealand_journal_page_2"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "lucky_pig",
+    "name": "Lucky Pig",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Happy Year of the Pig! All is well in the world!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "shiba_puppy",
+    "name": "Shiba Puppy",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "The shiba couple's pup. Chubby just like dad!",
+    "requirements": {
+      "letters": [
+        "shiba_puppys_photo"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "alpaca",
+    "name": "Alpaca",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Super soft with a gentle personality. Be careful not to get too close though—you might get spat on!",
+    "requirements": {
+      "letters": [
+        "new_zealand_journal_page_1"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "little_lion",
+    "name": "Little Lion",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Has a head of golden fur that makes the bald animals jealous. Loves meat, but is very gentle.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "abi",
+    "name": "Abi",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A bald programmer. He needs to be ready to fix bugs at any time, so he's always holding a computer.",
+    "requirements": {
+      "facilities": [
+        "white_rose",
+        "red_rose",
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "little_fox",
+    "name": "Little Fox",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A little red fox with a big, bushy tail.",
+    "requirements": {
+      "facilities": [
+        "sunflower",
+        "red_rose",
+        "bluebell"
+      ],
+      "letters": [
+        "little_foxs_letter"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "squirrel",
+    "name": "Squirrel",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Enjoys meddling in others' affairs.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "wild_duck",
+    "name": "Wild Duck",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Likes wetlands and ponds.",
+    "requirements": {
+      "letters": [
+        "eggys_diary_2",
+        "old_journal_page_2"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "wood_chuckin_beaver",
+    "name": "Wood-chuckin' Beaver",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Hailing from Xinjiang, they have iconic paddle-shaped tails and are rarely seen nowadays.",
+    "requirements": {
+      "letters": [
+        "otters_letter_1"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "brown_horse",
+    "name": "Brown Horse",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "People think he is lonely, but he enjoys his freedom. That is his nose, not his eyes.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "yorkie_mom",
+    "name": "Yorkie Mom",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Mom is a high class VIP member of the hair salon. She insists on eating walnuts and black sesame paste every day. She spends an average of 8 hours a day brushing her hair. While this might seem like a daily chore to others, she enjoys it very much.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "yorkie_dad",
+    "name": "Yorkie Dad",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Dad wants to go to the salon for a haircut, because his hair is so long that his eyes are covered. However, Mom says 'Hair gives us life! Cutting off your hair is like cutting away our life!'",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "pink_piggy",
+    "name": "Pink Piggy",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Pink Piggy is always happy. His smile and chubby face can rid friends of all bad luck!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "yorkie_pup",
+    "name": "Yorkie Pup",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Pup is a boy but Mom insists that he not cut his hair, so he looks very cute. Everyone always compliments him, 'Such a cute little girl!'",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "bean",
+    "name": "Bean",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Has sharp little teeth that are especially good at gnawing through cables.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "dr_puppy",
+    "name": "Dr. Puppy",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "The skin on his hand is peeling from repeated hand-washing. Has strange marks on his face.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "moon_rabbit",
+    "name": "Moon Rabbit",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A rabbit with a story. He used to work in an office but quit to live in a small town in the country. He likes to fish.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "capybara",
+    "name": "Capybara",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "The favorite kindergarten teacher of the children. She is peace-loving and takes good care of her health.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "pangolin_baby",
+    "name": "Pangolin Baby",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Got separated from his mother and is going around everywhere asking about her.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "pangolin_mama",
+    "name": "Pangolin Mama",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "The gentle animal was caught by the poachers before but managed to escape. She is now looking for her own baby when she hears on the radio that some ancient book seems to have changed some things.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "guru",
+    "name": "Guru",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Gumi's distant cousin. She's a gentle and cute little girl, but Gumi is always afraid of her.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "red_squirrel",
+    "name": "Red Squirrel",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Fur as red as fire. Looks a bit like Little Fox.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "beaver_engineer",
+    "name": "Beaver Engineer",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A student learning ecological engineering with excellent results. Can build dams, help to fight drought, improve water quality, and even combat climate change.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "alaska",
+    "name": "Alaska",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A calm and composed big dog, but is often mistaken for Husky.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "asian_elephant",
+    "name": "Asian Elephant",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Tall and large. Likes playing with kids.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "hippopotamus",
+    "name": "Hippopotamus",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "An unemployed youth who loves playing games.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "snow_leopard_pup",
+    "name": "Snow Leopard Pup",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Adorable but very playful, and a little rebellious too.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "snow_leopard",
+    "name": "Snow Leopard",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A father who is trying hard to learn parenting techniques.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "adventurer_stoat",
+    "name": "Adventurer Stoat",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Comes from a faraway planet. Rumor has it that she has been to countless places.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "beancurd",
+    "name": "Beancurd",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Mumbles a bit due to the recent tooth extraction.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "rice_cake",
+    "name": "Rice Cake",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Her loud voice contrasts sharply with her cute look.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "moose",
+    "name": "Moose",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "The antlers on its head are too big and are always hitting into others.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "aries",
+    "name": "Aries",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A dependable and gentle member of the Forest Firefighters.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "curly",
+    "name": "Curly",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Despite the young age, she's an absolute connoisseur of food.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "dorkie",
+    "name": "Dorkie",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A bookworm who carries an encyclopedia wherever he goes.",
+    "requirements": {
+      "facilities": [
+        "daisy",
+        "red_rose"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "little_koala",
+    "name": "Little Koala",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "New transfer student in Oak Bay Elementary School.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "yannis",
+    "name": "Yannis",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A muscular hunk who works out a lot.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "mooey",
+    "name": "Mooey",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "It's still teething, so it constantly wants to chew on something.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "mr_bharal",
+    "name": "Mr. Bharal",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A teacher in charge of outdoor activities at summer camp. Extremely skilled at rock climbing.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "chihuahua",
+    "name": "Chihuahua",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Nobody knows why he becomes so aggressive when someone gets too close.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "brown_chihuahua",
+    "name": "Brown Chihuahua",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A connoisseur who is determined to find out the recipe when presented with a delectable dish.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "black_and_white_chihuahua",
+    "name": "Black & White Chihuahua",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Lover of corny jokes. He gets angry if no one laughs at them.",
+    "requirements": {
+      "facilities": [
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "lilith",
+    "name": "Lilith",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Elegant and full of artistic eloquence.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "rose",
+    "name": "Rose",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Always brimming with passion and bringing joy to everyone. Nobody has ever seen her downcast.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "snowy",
+    "name": "Snowy",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Loves everything related to snow! Travels to wherever there is snow to be found.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "sleepwalking_little_lion",
+    "name": "Sleepwalking Little Lion",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "9 out of 10 dreams he has are related to food.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "arctic_hare",
+    "name": "Arctic Hare",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "He's always on the beet phone looking extremely busy. However, no one knows what he's busy with.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "mystifying_crane",
+    "name": "Mystifying Crane",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A mystifying and enigmatic swordsman who seems to be highly skilled in martial arts.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "nozy",
+    "name": "Nozy",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Enjoys watching and listening in on others' affairs with poker face. You'll find him wherever there is gossip.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "black_papillon",
+    "name": "Black Papillon",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A math genius whose mental calculation skills outperform those of someone using a calculator.",
+    "requirements": {
+      "facilities": [
+        "daisy"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "eugene_the_tree_kangaroo",
+    "name": "Eugene the Tree-kangaroo",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Applied for a yearly pass to a boxing class so that he would stand out among the programmers.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "bernese_mountain_pup",
+    "name": "Bernese Mountain Pup",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A scatterbrain that always listens to her owner.",
+    "requirements": {
+      "facilities": [
+        "white_rose",
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "miss_rhino",
+    "name": "Miss Rhino",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Likes cute clothes.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "manager_bear",
+    "name": "Manager Bear",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "The manager of a certain influencer. It's rumored that the two of them argue all the time.",
+    "requirements": {
+      "facilities": [
+        "daisy",
+        "red_rose",
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "golden_retriever",
+    "name": "Golden Retriever",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "So amiable that he'll still come up and talk to you even if you responded coldly the last time.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "little_colt",
+    "name": "Little Colt",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Sports natural curls in his mane, but because they're difficult to maintain, he spends a lot of time styling them every day.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "white_mouse",
+    "name": "White Mouse",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Looks much cleaner than other types of rodents.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "fancy_rat",
+    "name": "Fancy Rat",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A pet rat that slips out of the master's house in search of a nice meal.",
+    "requirements": {
+      "facilities": [
+        "sunflower"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "grandpa_spirit_bear",
+    "name": "Grandpa Spirit Bear",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "You can smell the scent of butter when you're near the super friendly bear.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "amber",
+    "name": "Amber",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "An aloof and secretive customer with a personality that doesn't match her appearance.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "dracula",
+    "name": "Dracula",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "What?! Could it be one in the legends?!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "ahau",
+    "name": "Ahau",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Anyone who locks eyes with him can't help but surreptitiously take a step back and keep their distance from him.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "lil_duckling",
+    "name": "Lil' Duckling",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A restless little duckling.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "longevity_fox",
+    "name": "Longevity Fox",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Despite its small stature, it can run rapidly even when there's someone riding on its back.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "deer_of_nine_colors",
+    "name": "Deer of Nine Colors",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Lingers near kind people and brings good luck to them.",
+    "requirements": {
+      "facilities": [
+        "red_rose"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "dragony",
+    "name": "Dragony",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Wears a dragon-shaped headgear, seemingly to conceal his identity. How mysterious...",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "weeping_croc",
+    "name": "Weeping Croc",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A romance novelist who weeps in distress whenever he suffers from a lack of inspiration.",
+    "requirements": {
+      "facilities": [
+        "daisy"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "axolotl",
+    "name": "Axolotl",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Could someone as cute as her truly harbor any bad intentions?",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "goofy",
+    "name": "Goofy",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A seemingly goofy and good-natured customer.",
+    "requirements": {
+      "facilities": [
+        "sunflower"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "honey_badger",
+    "name": "Honey Badger",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Works as a beekeeper because he loves honey very much.",
+    "requirements": {
+      "facilities": [
+        "daisy"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "lil_giraffe",
+    "name": "Lil' Giraffe",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Despite her small age, she's already quite tall.",
+    "requirements": {
+      "facilities": [
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "quokka",
+    "name": "Quokka",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "This happy and positive customer is always seen with a smile.",
+    "requirements": {
+      "facilities": [
+        "sunflower"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "german_shepherd",
+    "name": "German Shepherd",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A retired police dog, but highly dependable to have around.",
+    "requirements": {
+      "facilities": [
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "annie",
+    "name": "Annie",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Always buys lots of stuff with a smile on her face.",
+    "requirements": {
+      "facilities": [
+        "sunflower"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "harpy_eagle_wizard",
+    "name": "Harpy Eagle Wizard",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A mysterious wizard from a faraway nation. Only ever shows three-quarters of his profile.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "black_panther",
+    "name": "Black Panther",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A ticket inspector who is very passionate about the job.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "cong_cong",
+    "name": "Cong Cong",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Owing to its six legs, this bold creature can move incredibly fast. It is said to have a tendency to emphasize words that share the consonant in its name when it speaks.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "er_shu",
+    "name": "Er Shu",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A legendary being that is neither a mouse nor a rabbit, despite its resemblance to both.",
+    "requirements": {
+      "facilities": [
+        "red_rose"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "cyborg_danny",
+    "name": "Cyborg Danny",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Are they human... or an android?",
+    "requirements": {
+      "facilities": [
+        "sunflower"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "fuzzy",
+    "name": "Fuzzy",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Looks perpetually tired.",
+    "requirements": {
+      "facilities": [
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "meery",
+    "name": "Meery",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "An alien enthusiast. Strongly believes in the existence of extraterrestrial life.",
+    "requirements": {
+      "facilities": [
+        "sunflower"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "squiddy",
+    "name": "Squiddy",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A customer from another planet. Makes squishy noises when walking.",
+    "requirements": {
+      "facilities": [
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "lemur",
+    "name": "Lemur",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Able to sunbathe for an entire day if the sun is out.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "elephant_shrew",
+    "name": "Elephant Shrew",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "The tip of its nose is so long that it looks like it might break anytime.",
+    "requirements": {
+      "facilities": [
+        "white_rose"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "alicia",
+    "name": "Alicia",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "To save her brother, she has never stopped crocheting.",
+    "requirements": {
+      "facilities": [
+        "red_rose"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "damascus_goat",
+    "name": "Damascus Goat",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "His favorite color is pink.",
+    "requirements": {
+      "facilities": [
+        "sunflower"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "hansel",
+    "name": "Hansel",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "He's said to be looking for a candy house in Oak Bay with his sister.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "gretel",
+    "name": "Gretel",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Looking for the Candy House with her brother in the oak forest.",
+    "requirements": {
+      "facilities": [
+        "red_rose"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "emperor_tamarin",
+    "name": "Emperor Tamarin",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Not everyone with a white beard is a grandpa!",
+    "requirements": {
+      "facilities": [
+        "bluebell"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "clown",
+    "name": "Clown",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Little children hide in fright when they see the clown (not exactly). Can you guess who this is?",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "vampire",
+    "name": "Vampire",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "The clothes don't really fit. Can you guess who this is?",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "werewolf",
+    "name": "Werewolf",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Will grow muscles and fangs when the moon is full. The werewolf even wear underwear. Can you guess who this is?",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "ghoul",
+    "name": "Ghoul",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Bed sheets cannot hide the big tail. Can you guess who this is?",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "mummy",
+    "name": "Mummy",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Tightly-wrapped bandages, freshly resurrected from inside the pyramid. Can you guess who this is?",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "witch",
+    "name": "Witch",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Graduated from Hogwarts, but unable to find a job. Can you guess who this is?",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "infernal_emissary",
+    "name": "Infernal Emissary",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "This robed figure comes and goes like a shadow, with a hat covering most of their face.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "old_captain",
+    "name": "Old Captain",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "A mean-looking old captain. Shh, don't talk about his height to his face!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "hopping_zombie",
+    "name": "Hopping Zombie",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Its legs may be short, but it sure can jump!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "little_dino",
+    "name": "Little Dino",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "A dinosaur that loves every second of work.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "gnome_bean",
+    "name": "Gnome Bean",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Loves to wield its wand and make things disappear.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "frankenpooch",
+    "name": "Frankenpooch",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "His brows are locked in a huge frown, and there are unidentified stains on his clothes.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "party_skeleton",
+    "name": "Party Skeleton",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Wears fluorescent party wristbands that glow in the dark.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "invisible_bunny",
+    "name": "Invisible Bunny",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Unless you look closely, you'll mistake her for a pile of moving clothes.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "little_red_riding_hood",
+    "name": "Little Red Riding Hood",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Adorable but taciturn, she rarely shows anyone what is in her basket.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "little_yeti",
+    "name": "Little Yeti",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Roars cutely as he ambles along.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "ghost_soldier",
+    "name": "Ghost Soldier",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "His head looks like it weighs a ton.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "chainsaw_puppy",
+    "name": "Chainsaw Puppy",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "It looks very scary holding a chainsaw, but it's actually just a plastic toy.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "nine_tailed_fox",
+    "name": "Nine-tailed Fox",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "She walks with light steps and has a graceful posture.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "old_fan",
+    "name": "Old Fan",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Holding cuffs in its hands, it specializes in capturing disobedient spirits. Looking closely at its hat, you can see the words 'World Peace'.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "old_xie",
+    "name": "Old Xie",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "He has a long tongue that hangs outside his mouth and is always smiling. Looking closely at his hat, you can see the words 'Fortune at a glance'.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "supernatural_enthusiast",
+    "name": "Supernatural Enthusiast",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Believes that there are spirits in this world. During Halloween every year, he goes around looking for places with strong magnetic field fluctuations.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "exorcism_descendant",
+    "name": "Exorcism Descendant",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "A lonely traveler. His faith is reflected on his icy crossbow bolt.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "god_of_wine",
+    "name": "God of Wine",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "He smells more like grapes than wine.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "spartan_warrior",
+    "name": "Spartan Warrior",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "His armor looks very heavy.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "trumpeting_angel",
+    "name": "Trumpeting Angel",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Flies around everywhere on wings, especially adored by everyone.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "imp",
+    "name": "Imp",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Who knows when another silly idea will pop into his head.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "wolf_magistrate",
+    "name": "Wolf Magistrate",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "He has a stern businesslike demeanor.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "anubis",
+    "name": "Anubis",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Guardian of the Dead",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "fox_bride",
+    "name": "Fox Bride",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "It is said that on the day a fox gets married, rain will fall while the sun shines in the sky.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "granny_meng",
+    "name": "Granny Meng",
+    "tags": [
+      "customer",
+      "event",
+      "halloween"
+    ],
+    "customerDescription": "Should you really drink the soup that she's holding...",
     "requirements": {},
     "mementos": []
   }
