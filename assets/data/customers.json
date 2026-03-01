@@ -179,10 +179,8 @@
       "customer",
       "restaurant",
       "very_rare",
-      "city",
-      "halloween"
+      "city"
     ],
-    "season": "halloween",
     "livesIn": "City",
     "appearanceWeight": 100,
     "requiredFoodId": null,
@@ -257,7 +255,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": null,
     "appearanceWeight": null,
     "customerDescription": "Very traditional popcorn. It creates an explosive bang while cooking.",
     "requirements": {
@@ -276,7 +273,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": null,
     "appearanceWeight": null,
     "customerDescription": "Old Joe's wife sets up a stall outside the school gate everyday, while Old Joe pulls customers in the streets. The Chicky's Ends they grill are liked by all students.",
     "requirements": {
@@ -297,7 +293,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": null,
     "appearanceWeight": null,
     "customerDescription": "Inelegantly collects ten dollars for each portrait. Though every person looks about the same, the queue is rather long.",
     "requirements": {
@@ -316,7 +311,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": null,
     "appearanceWeight": null,
     "customerDescription": "Elegantly drawing something.",
     "requirements": {
@@ -335,7 +329,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": null,
     "appearanceWeight": null,
     "customerDescription": "The rabbit picknicking alone is enjoying a pile of food with just a tinge of loneliness.",
     "requirements": {
@@ -963,7 +956,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -984,7 +976,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1005,7 +996,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1026,7 +1016,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1047,8 +1036,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "summer",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1069,7 +1056,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1090,7 +1076,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1111,7 +1096,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1132,7 +1116,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1153,7 +1136,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1174,7 +1156,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1195,7 +1176,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1216,7 +1196,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1237,7 +1216,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1258,7 +1236,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1279,7 +1256,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1300,7 +1276,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1321,8 +1296,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "winter",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1343,7 +1316,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1366,7 +1338,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1387,8 +1358,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "halloween",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1409,7 +1378,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1430,7 +1398,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1451,7 +1418,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1472,7 +1438,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1495,7 +1460,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1516,7 +1480,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1539,7 +1502,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1560,7 +1522,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1581,7 +1542,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1602,7 +1562,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1623,7 +1582,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1644,7 +1602,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1665,8 +1622,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "halloween",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1687,8 +1642,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "halloween",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1709,8 +1662,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "halloween",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1731,8 +1682,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "halloween",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1753,7 +1702,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1774,8 +1722,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "christmas",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1796,7 +1742,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1817,7 +1762,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1838,7 +1782,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1859,7 +1802,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1882,7 +1824,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1905,7 +1846,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1928,7 +1868,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1951,7 +1890,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1974,7 +1912,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -1997,7 +1934,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2020,7 +1956,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2043,7 +1978,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2066,7 +2000,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2089,7 +2022,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2112,8 +2044,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "christmas",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2136,7 +2066,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2159,7 +2088,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2182,7 +2110,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2205,7 +2132,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2228,7 +2154,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2251,7 +2176,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2274,7 +2198,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2297,7 +2220,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2320,7 +2242,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2343,7 +2264,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2366,7 +2286,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2389,7 +2308,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2412,7 +2330,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2435,7 +2352,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2458,7 +2374,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2481,8 +2396,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "halloween",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2505,7 +2418,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2528,8 +2440,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "winter",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2552,7 +2462,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2573,7 +2482,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2596,8 +2504,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "winter",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2620,8 +2526,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "lantern_festival",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2644,7 +2548,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2665,7 +2568,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2688,7 +2590,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2711,7 +2612,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2734,7 +2634,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2757,7 +2656,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2780,7 +2678,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2803,7 +2700,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2826,7 +2722,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2849,7 +2744,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2870,7 +2764,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2891,7 +2784,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2912,7 +2804,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2933,7 +2824,6 @@
       "customer",
       "booth_owner"
     ],
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -2956,8 +2846,6 @@
       "customer",
       "booth_owner"
     ],
-    "season": "winter",
-    "livesIn": "Booth",
     "appearanceWeight": null,
     "requiredFoodId": null,
     "dishesOrderedIds": [],
@@ -8018,6 +7906,1684 @@
       "halloween"
     ],
     "customerDescription": "Should you really drink the soup that she's holding...",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "praying_samoyed",
+    "name": "Praying Samoyed",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "spring",
+    "customerDescription": "A dog who loves going to shrines in the springtime to pray for himself and his friends.",
+    "requirements": {
+      "facilities": [
+        "sakura"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "tom",
+    "name": "Tom",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "spring",
+    "customerDescription": "His droopy eyes make him look a bit down, but he's actually a very gentle cat. He's Gumi's friend.",
+    "requirements": {
+      "facilities": [
+        "sakura"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "duke_swallow",
+    "name": "Duke Swallow",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "spring",
+    "customerDescription": "A foreign swallow here on holiday. Loves Chinese culture and food.",
+    "requirements": {
+      "facilities": [
+        "sakura"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "mister_gecko",
+    "name": "Mister Gecko",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "spring",
+    "customerDescription": "A professional mosquito killer who often finds it hard to forget when he's not working.",
+    "requirements": {
+      "facilities": [
+        "sakura"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "sheepie",
+    "name": "Sheepie",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "spring",
+    "customerDescription": "First time going outside alone. Curious about almost anything.",
+    "requirements": {
+      "facilities": [
+        "sakura"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "little_beagle",
+    "name": "Little Beagle",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "spring",
+    "customerDescription": "It's always 110% chock-full of energy. One can't help but wonder where it gets all that vigor from.",
+    "requirements": {
+      "facilities": [
+        "sakura"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "platypus",
+    "name": "Platypus",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "spring",
+    "customerDescription": "An agriculture major up to their neck in their final year project.",
+    "requirements": {
+      "facilities": [
+        "sakura"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "bigmouth_bird",
+    "name": "Bigmouth Bird",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "spring",
+    "customerDescription": "Don't ever let it overhear anything you say. It's already privy to too much gossip in town.",
+    "requirements": {
+      "facilities": [
+        "sakura"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "penniless_toad",
+    "name": "Penniless Toad",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "summer",
+    "customerDescription": "A poor and defeated toad who's always saying his savings are only in the double digits. He's unwilling to spend anything on himself, but he's always generous toward others. He only comes out on the hottest days.",
+    "requirements": {
+      "facilities": [
+        "clover"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "little_turtle",
+    "name": "Little Turtle",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "summer",
+    "customerDescription": "It's summer vacation! This little turtle is learning to find food at restaurants alone and wants to make more friends.",
+    "requirements": {
+      "facilities": [
+        "clover"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "fashionable_zebra",
+    "name": "Fashionable Zebra",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "summer",
+    "customerDescription": "A very fashionable zebra who is especially nit-picky and talkative. He thinks he's the top influencer.",
+    "requirements": {
+      "facilities": [
+        "clover"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "tapir",
+    "name": "Tapir",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "summer",
+    "customerDescription": "Summer is the season of many dreams. Maybe you'll meet him in your dreams.",
+    "requirements": {
+      "facilities": [
+        "clover"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "old_gene",
+    "name": "Old Gene",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "summer",
+    "customerDescription": "With a wave of his straw fan, everything will be fine.",
+    "requirements": {
+      "facilities": [
+        "clover"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "greedy_hedgehog",
+    "name": "Greedy Hedgehog",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "summer",
+    "customerDescription": "Always eats until its belly is round and full.",
+    "requirements": {
+      "facilities": [
+        "clover"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "goober",
+    "name": "Goober",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "summer",
+    "customerDescription": "A guinea pig who is on a diet.",
+    "requirements": {
+      "facilities": [
+        "clover"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "uncle_marty",
+    "name": "Uncle Marty",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "summer",
+    "customerDescription": "Runs a farm that grows tons of lemons.",
+    "requirements": {
+      "facilities": [
+        "clover"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "hamster",
+    "name": "Hamster",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "autumn",
+    "customerDescription": "Its puffy cheeks are like a bottomless pit.",
+    "requirements": {
+      "facilities": [
+        "maple_leaf"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "devil_squirrel",
+    "name": "Devil Squirrel",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "autumn",
+    "customerDescription": "Has quite a bad temper and is skittish, always running away at the slightest noise or movement.",
+    "requirements": {
+      "facilities": [
+        "maple_leaf"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "wandering_bard",
+    "name": "Wandering Bard",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "autumn",
+    "customerDescription": "A little panda who enjoys traveling and adventure. He collects various stories and sings of them.",
+    "requirements": {
+      "facilities": [
+        "maple_leaf"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "prawny",
+    "name": "Prawny",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "autumn",
+    "customerDescription": "Her friends think that she's a sophisticated and elegant teddy, but her personality is the opposite in private.",
+    "requirements": {
+      "facilities": [
+        "maple_leaf"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "leopard",
+    "name": "Leopard",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "autumn",
+    "customerDescription": "Has a melancholic look in his eyes. Nobody knows what is on his mind.",
+    "requirements": {
+      "facilities": [
+        "maple_leaf"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "binturong",
+    "name": "Binturong",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "autumn",
+    "customerDescription": "A cartoonist new to the business, working hard on scripts and storyboards every day.",
+    "requirements": {
+      "facilities": [
+        "maple_leaf"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "donkey",
+    "name": "Donkey",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "autumn",
+    "customerDescription": "Carrots are the only thing this perennially happy customer eats.",
+    "requirements": {
+      "facilities": [
+        "maple_leaf"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "prince_secretarybird",
+    "name": "Prince Secretarybird",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "autumn",
+    "customerDescription": "Excudes an air of notability and elegance.",
+    "requirements": {
+      "facilities": [
+        "maple_leaf"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "cher",
+    "name": "Cher",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "winter",
+    "customerDescription": "A novice skier who injured her arm while skiing.",
+    "requirements": {
+      "facilities": [
+        "snowflake"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "lady_snow_fox",
+    "name": "Lady Snow Fox",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "winter",
+    "customerDescription": "Has a youthful appearance, and is always up-to-date with the latest fashion trends.",
+    "requirements": {
+      "facilities": [
+        "snowflake"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "mister_tibetan_fox",
+    "name": "Mister Tibetan Fox",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "winter",
+    "customerDescription": "Lady Snow Fox's husband. He loves and respects her very much—if Lady Snow Fox says she's going east, he won't dare go west.",
+    "requirements": {
+      "facilities": [
+        "snowflake"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "seal_pup",
+    "name": "Seal Pup",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "winter",
+    "customerDescription": "Dazed as if he just woke up, confused about his whereabouts.",
+    "requirements": {
+      "facilities": [
+        "snowflake"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "upturned_brows_penguin",
+    "name": "Upturned-Brows Penguin",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "winter",
+    "customerDescription": "His flashy brows and the scar at the corner of his eye make him look like there's more to him than meets the eye.",
+    "requirements": {
+      "facilities": [
+        "snowflake"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "arctic_wolf",
+    "name": "Arctic Wolf",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "winter",
+    "customerDescription": "A wolf native to the Arctic. Why does it look a little weird?",
+    "requirements": {
+      "facilities": [
+        "snowflake"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "mole",
+    "name": "Mole",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "winter",
+    "customerDescription": "Although he's getting on in years, he still has a keen sense of smell.",
+    "requirements": {
+      "facilities": [
+        "snowflake"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "forest_ranger_tibetan_mastiff",
+    "name": "Forest Ranger Tibetan Mastiff",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "season": "winter",
+    "customerDescription": "Looks commanding at first glance, but is actually very amiable.",
+    "requirements": {
+      "facilities": [
+        "snowflake"
+      ]
+    },
+    "mementos": []
+  },
+  {
+    "id": "painter_penguin_doll",
+    "name": "Painter Penguin Doll",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Clumsy and pessimistic, often blames himself for being good for nothing. Wishes to paint a new wall.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "kimono_goose",
+    "name": "Kimono Goose",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Just returned from a tour in Japan, still wearing a kimono. Complains about how her feet hurt but refuses to take off the clogs.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "unyoung_lady",
+    "name": "Unyoung Lady",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Age is just a number, you are never too old to do something.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "hip_hop_toad",
+    "name": "Hip-hop Toad",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Got hooked onto hip-hop recently. Settles differences with rap battles.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "picnic_lop_eared_rabbit",
+    "name": "Picnic Lop-Eared Rabbit",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Fears loneliness. Often tries to blend into other's social circles.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "sporty_dog",
+    "name": "Sporty Dog",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Has a workout plan to complete. Bought some new clothes of subpar quality, but they will suffice.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "indoor_toad",
+    "name": "Indoor Toad",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Loves staying at home. Snacks and dramas are enough.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "uniformed_shiba_puppy",
+    "name": "Uniformed Shiba Puppy",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Loves going to school in the new uniform. Hides candies in its pocket.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "uniformed_yorkie_pup",
+    "name": "Uniformed Yorkie Pup",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Received the wrong uniform from the teacher. Hates being jeered by his peers.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "student_samoyed",
+    "name": "Student Samoyed",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Looks happy and carefree, but his faint smile hides dark secrets.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "bully_husky",
+    "name": "Bully Husky",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Husky in his high school days, very particular about being manly.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "student_president_merle_border_collie",
+    "name": "Student President Merle Border Collie",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "A student who is self-disciplined, the role model for everyone.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "hanfu_white_bunny",
+    "name": "Hanfu White Bunny",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "A refined, elegant, classical rabbit.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "starstruck_corgi",
+    "name": "Starstruck Corgi",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Aaaaahh, my idol is the best in the world!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "ballet_piggy",
+    "name": "Ballet Piggy",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "A piggy can be graceful and charming too!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "lucky",
+    "name": "Lucky",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Wishing you a fortunate new year!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "prospero",
+    "name": "Prospero",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Wishing you a year of progress!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "hale",
+    "name": "Hale",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Wishing you a healthy new year!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "wild_duck_navigator",
+    "name": "Wild Duck Navigator",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "One small step for me, one big step for the ducks!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "little_racer",
+    "name": "Little Racer",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Beep! I lose if I see the tail lights of the toy car.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "tropical_island",
+    "name": "Tropical Island",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Move your body to the rhythm of the waves.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "white_shiba_bride",
+    "name": "White Shiba Bride",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Wearing a white wedding dress on this special day.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "shiba_groom",
+    "name": "Shiba Groom",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "I do!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "little_turtle_sailor",
+    "name": "Little Turtle Sailor",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "He has a small body but a big dream to conquer the seas.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "kungfu_kid",
+    "name": "Kungfu Kid",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "The kungfu of the family can never be shared with others!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "part_timer_cici",
+    "name": "Part-timer Cici",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Went to work in the store because seeing the store uniform was too cute.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "little_lady",
+    "name": "Little Lady",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "It's hard to resist spinning around after putting on a dress.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "magic_chihuahua",
+    "name": "Magic Chihuahua",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "A reluctant champion of world peace who attentively performs his duty.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "gentleman_dobermann",
+    "name": "Gentleman Dobermann",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "The umbrella is his soul.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "sweet_nurse",
+    "name": "Sweet Nurse",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Such a cute nurse. I'm sure her injections won't hurt!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "sleeping_baby_elephant",
+    "name": "Sleeping Baby Elephant",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Wear this one-piece pajamas and be a baby elephant in your dreams.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "demure_maiden",
+    "name": "Demure Maiden",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Bring along a beach umbrella and enjoy a leisurely vacation before autumn ends!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "little_fox_in_raincoat",
+    "name": "Little Fox in Raincoat",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Who can resist the temptation of stepping in a puddle?",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "frog_prince",
+    "name": "Frog Prince",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "They say that a kiss can turn him back to his original state.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "volleyball_second_spiker",
+    "name": "Volleyball Second Spiker",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Volleyball is not a one-man battle!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "frosting_elf",
+    "name": "Frosting Elf",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Ring the bell and he will appear with candy!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "clockwork_penguin",
+    "name": "Clockwork Penguin",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Turn the key counterclockwise three times and clockwise five times, and it'll start moving!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "snow_queen",
+    "name": "Snow Queen",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "She brings the first snow of winter.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "lucky_curly",
+    "name": "Lucky Curly",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "New clothes are a must for the new year!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "mister_fox",
+    "name": "Mister Fox",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Fox's new part-time job: background actor in a TV drama.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "unicorn",
+    "name": "Unicorn",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Every single strand of hair has been impeccably conditioned, giving off an alluring scent.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "hot_dog_promoter",
+    "name": "Hot Dog Promoter",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Hot dogs are no doubt tasty, but you should also finish all the lettuce!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "cowboy_fennec_fox",
+    "name": "Cowboy Fennec Fox",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "It's never the silver bullets that defeat you. Instead, it's the relentless march of time.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "cha_cha_scotch_collie",
+    "name": "Cha-cha Scotch Collie",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Dance passionately to the beat!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "fragrant_fairy",
+    "name": "Fragrant Fairy",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "With a dress made of fresh flowers and clothes made from morning dew, it's another fragrant day!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "rising_star_curly",
+    "name": "Rising Star Curly",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Born among beauty and hope in a faraway galaxy! Let me introduce you to-Rising Star Curly!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "moon_goddess",
+    "name": "Moon Goddess",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "A goddess from an ancient and mysterious civilization that commands a profound deference.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "ditzy_crocheter",
+    "name": "Ditzy Crocheter",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Always having to undo their stitches to start all over because they can't remember where they left off.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "mime_actor",
+    "name": "Mime Actor",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Has an occupational habit so ingrained that they never speak, only gesturing to express themselves.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "trainee_postman",
+    "name": "Trainee Postman",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "He may be new, but he takes extremely good care of letter assigned to him.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "phantom_of_the_raccoon",
+    "name": "Phantom of the Raccoon",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "He must have a full stomach each time he performs. Otherwise, he'll feel fatigued during the performance.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "miss_hydrangea",
+    "name": "Miss Hydrangea",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "The invariably shy customer has a fan with her at all times so that nobody can recognize her.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "tuxedo_thief",
+    "name": "Tuxedo Thief",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "He seems to think very highly of his appearance.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "forest_elf",
+    "name": "Forest Elf",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Finds joy in collecting different-colored maple leaves.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "reindeer_curly",
+    "name": "Reindeer Curly",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "She's Santa's little helper!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "apple_girl",
+    "name": "Apple Girl",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Would you like to buy some apples? They're crisp and sweet!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "rotund_little_snowman",
+    "name": "Rotund Little Snowman",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Round and bouncy.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "peach_garden_eldest_brother",
+    "name": "Peach Garden Eldest Brother",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "The eldest of the Peach Garden sworn brothers, he is forthright and sincere.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "peach_garden_middle_brother",
+    "name": "Peach Garden Middle Brother",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "The second of the Peach Garden sworn brothers, he is brave and loyal.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "peach_garden_youngest_brother",
+    "name": "Peach Garden Youngest Brother",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "The youngest of the Peach Garden sworn brothers, he is carefree and upright.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "fisherman_old_gin",
+    "name": "Fisherman Old Gin",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "He fishes up anything but fish.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "green_snorkeler",
+    "name": "Green Snorkeler",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "All the little fishes seem to appear green in the water!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "strawberry_sweetie",
+    "name": "Strawberry Sweetie",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "I'm the bunny who loves strawberries the most in the whole wide world!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "bee_puppy",
+    "name": "Bee Puppy",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Can I play with the bees if I dress like this?",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "summer_waitress",
+    "name": "Summer Waitress",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "What a cheery outfit! But I'll be happier if I was wearing this to somewhere other than work.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "street_artist",
+    "name": "Street Artist",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "A cool guy with his own way of doing things.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "novice_baker",
+    "name": "Novice Baker",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Having just dipped his toes into baking, he follows the recipe down to the letter, including the required ingredients and stated durations.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "black_shiba_pilot",
+    "name": "Black Shiba Pilot",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Only obtained his pilot's license recently.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "formal_granny_wolf",
+    "name": "Formal Granny Wolf",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Dress like the main character you wish to be.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "strange_doll",
+    "name": "Strange Doll",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Looks cute but has a weird vibe about her.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "exotic_dancer",
+    "name": "Exotic Dancer",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Whenever it walks, the gossamer fabric sways in the wind and the trinkets tickle merrily. How delightful!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "sideline_piggy",
+    "name": "Sideline Piggy",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "With that cheerful and bright smile of hers, who can resist buying her products before the soccer match begins?",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "lady_yellow_rose",
+    "name": "Lady Yellow Rose",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "A black veil enshrouds the rose's beauty. Just what does fate have in store for her...",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "king_chihuahua",
+    "name": "King Chihuahua",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "It looks rather imposing for some reason...",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "little_bunny_bear",
+    "name": "Little Bunny Bear",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Although he looks rather stern at first, once he puts on his headgear, he suddenly seems very cute and unassuming.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "water_loving_dalmatian",
+    "name": "Water-loving Dalmatian",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "It likes to spray water at you when you least expect it.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "starlight_researcher",
+    "name": "Starlight Researcher",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Every clear and tranquil night, they would sit atop a mountain and study the starlight.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "candy_emissary",
+    "name": "Candy Emissary",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "With so much candy hidden under the hat, you'll be sure to find anything that you want.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "madam_white_snake",
+    "name": "Madam White Snake",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "A thousand-year-old snake spirit who has taken on human form, she finds everything around her new and intriguing.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "xu_xian",
+    "name": "Xu Xian",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "A kindhearted man who often offers a helping hand to those in need.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "speckled_pig_caveman",
+    "name": "Speckled Pig Caveman",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Follow your primitive instincts.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "lion_farmer",
+    "name": "Lion Farmer",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Searching for serenity in the fields.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "scientist_terrier",
+    "name": "Scientist Terrier",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Seeks truth from facts and engages in research.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "super_pitcher",
+    "name": "Super Pitcher",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "In search of the perfect trajectory.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "mysterious_detective",
+    "name": "Mysterious Detective",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "When everyone else is baffled and uncertain about their next step, he always manages to find the critical piece of evidence that solves the case.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "nameless_swordsman",
+    "name": "Nameless Swordsman",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "A straw cape and a wine gourd are all he needs to wander the world.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "qipao_granny_wolf",
+    "name": "Qipao Granny Wolf",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "The picture of elegance.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "gentle_poet",
+    "name": "Gentle Poet",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Sitting under a tree and feeling the cool breeze while drinking hot green tea. There's no better way to enjoy life than this!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "mural_artist",
+    "name": "Mural Artist",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Works on each piece of art with utmost dedication.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "greedy_hedgehog_doll_figure",
+    "name": "Greedy Hedgehog (Doll Figure)",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Who took a bite of the donut?!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "ranger_squirrel",
+    "name": "Ranger Squirrel",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Travels far and wide to uphold justice.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "countess",
+    "name": "Countess",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Has a haughty gaze.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "soprano_performer",
+    "name": "Soprano Performer",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "They may be able to sing in a beautiful voice, but doing so out of nowhere still startles people around.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "velvet_bean",
+    "name": "Velvet Bean",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Will be photographed when he goes to the mall.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "skilled_handyman",
+    "name": "Skilled Handyman",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Reassures everybody with the way they calmly complete their tasks at hand.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "ace_mixologist",
+    "name": "Ace Mixologist",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "As the breadwinner of his family, he also works part-time at the bar.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "pirate_stoat",
+    "name": "Pirate Stoat",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Looks like she's wearing local fashion from another planet.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "yuki_onna",
+    "name": "Yuki-onna",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "The surrounding temperature seems to lower when you get close to her.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "barista",
+    "name": "Barista",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Looks like he is mature and considerate.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "basketball_forward",
+    "name": "Basketball Forward",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Able to twirl a basketball while walking.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "autumn_quokka",
+    "name": "Autumn Quokka",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Loves every autumntime dish!",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "balloon_artist",
+    "name": "Balloon Artist",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "It's said that she can twist balloons into all sorts of interesting shapes.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "miss_florist",
+    "name": "Miss Florist",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "She's surrounded by a light floral fragrance.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "bathrobe_platypus",
+    "name": "Bathrobe Platypus",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "And so, a precious day of free time from agricultural research comes to an end.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "christmas_tree_donny",
+    "name": "Christmas Tree Donny",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "It's hard not to wonder why he's dressed like this.",
+    "requirements": {},
+    "mementos": []
+  },
+  {
+    "id": "candy_salesman",
+    "name": "Candy Salesman",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "A friendly Candy Salesman who is well-liked by everyone.",
     "requirements": {},
     "mementos": []
   }
