@@ -80,10 +80,19 @@ class _BankPageState extends State<BankPage> {
   // ---------- Tip Jar ----------
 
   Widget _tipJarCard(BuildContext context, BankStats s) {
-    final current = s.tipJarPerHourCurrent;
-    final all = s.tipJarPerHourAll;
-    final diff = all - current;
-    final currentAd = current * 2;
+    final cap = s.tipCapCurrent;
+    final capAll = s.tipCapAll;
+    final capDiff = capAll - cap;
+    final fillRate = s.tipFillPerHourCurrent;
+    final fillRateAll = s.tipFillPerHourAll;
+
+    // Time to fill the jar (in minutes)
+    final minutesToFill =
+        (fillRate > 0 && cap > 0) ? (cap / (fillRate / 60.0)) : 0.0;
+    final hoursToFill = minutesToFill / 60.0;
+
+    // Ad doubles the collection amount
+    final capWithAd = cap * 2;
 
     return Card(
       child: Padding(
@@ -96,36 +105,41 @@ class _BankPageState extends State<BankPage> {
                 Image.asset('assets/images/cod.png', width: 22, height: 22),
                 const SizedBox(width: 8),
                 Text(
-                  'Maximum Cod from Tips',
+                  'Tip Jar',
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
               ],
             ),
 
             const SizedBox(height: 8),
-            _kv('Cod per hour (checked facilities)', _codPerHourWidget(current)),
-            _kv('Cod per hour (all possible)', _codPerHourWidget(all)),
+            _kv('Tip jar capacity', _codAmountWidget(cap)),
+            _kv('With ad (2× collection)', _codAmountWidget(capWithAd)),
 
-            if (diff > 0)
+            const SizedBox(height: 8),
+            _kv('Fill rate (checked)', _codPerHourWidget(fillRate)),
+            _kv('Fill rate (all possible)', _codPerHourWidget(fillRateAll)),
+
+            if (fillRate > 0 && cap > 0) ...[
+              const SizedBox(height: 4),
+              _kv(
+                'Time to fill',
+                Text(
+                  hoursToFill >= 1
+                      ? '${hoursToFill.toStringAsFixed(1)} hours'
+                      : '${minutesToFill.round()} min',
+                  style: const TextStyle(fontWeight: FontWeight.w600),
+                ),
+              ),
+            ],
+
+            if (capDiff > 0)
               Padding(
-                padding: const EdgeInsets.only(top: 4),
+                padding: const EdgeInsets.only(top: 8),
                 child: Text(
-                  '+${_formatNumber(diff)} cod/h available by checking more cod-making facilities',
+                  '+${_formatNumber(capDiff)} tip cap available by checking more tip desk facilities',
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
               ),
-
-            const SizedBox(height: 12),
-            Text(
-              'With ad bonus (2×)',
-              style: Theme.of(context)
-                  .textTheme
-                  .titleMedium
-                  ?.copyWith(fontWeight: FontWeight.w600),
-            ),
-
-            const SizedBox(height: 4),
-            _kv('Cod per hour (with ad)', _codPerHourWidget(currentAd)),
           ],
         ),
       ),
@@ -138,16 +152,12 @@ class _BankPageState extends State<BankPage> {
     final perHour = s.buffetPerHourCurrent;
     final perHourAll = s.buffetPerHourAll;
 
-    final base1h = perHour;
-    final base12h = perHour * 12;
-
-    final base1hWithAd = _withBuffetAdBonus(base1h);
-    final base12hWithAd = _withBuffetAdBonus(base12h);
-
     final rawHours = _parseBuffetHours() ?? 3.0;
     final clampedHours = rawHours.clamp(1.0, 12.0);
+
+    final base1h = perHour;
+    final base12h = perHour * 12;
     final baseCustom = (perHour * clampedHours).round();
-    final customWithAd = _withBuffetAdBonus(baseCustom);
 
     return Card(
       child: Padding(
@@ -160,7 +170,7 @@ class _BankPageState extends State<BankPage> {
                 Image.asset('assets/images/cod.png', width: 22, height: 22),
                 const SizedBox(width: 8),
                 Text(
-                  'Buffet (Up to 12 hours)',
+                  'Buffet Income (maxes at 12 hours)',
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
               ],
@@ -174,23 +184,35 @@ class _BankPageState extends State<BankPage> {
               _kv('Buffet cod per hour', _codPerHourWidget(perHour)),
               const SizedBox(height: 8),
 
+              // --- Without ad ---
               Text(
-                'Preset collections',
+                'Without ad',
                 style: Theme.of(context)
                     .textTheme
                     .titleMedium
                     ?.copyWith(fontWeight: FontWeight.w600),
               ),
-
               const SizedBox(height: 4),
               _kv('1 hour', _codAmountWidget(base1h)),
-              _kv('1 hour + ad (max +1,500,000)', _codAmountWidget(base1hWithAd)),
+              _kv('12 hours (max)', _codAmountWidget(base12h)),
 
+              const SizedBox(height: 8),
+
+              // --- With ad (1.5× capped at +1.5 mil) ---
+              Text(
+                'With ad (1.5×, max +1,500,000)',
+                style: Theme.of(context)
+                    .textTheme
+                    .titleMedium
+                    ?.copyWith(fontWeight: FontWeight.w600),
+              ),
               const SizedBox(height: 4),
-              _kv('12 hours (max stack)', _codAmountWidget(base12h)),
-              _kv('12 hours + ad (max +1,500,000)', _codAmountWidget(base12hWithAd)),
+              _kv('1 hour', _codAmountWidget(_withBuffetAdBonus(base1h))),
+              _kv('12 hours (max)', _codAmountWidget(_withBuffetAdBonus(base12h))),
 
               const SizedBox(height: 12),
+
+              // --- Custom hours ---
               Text(
                 'Custom hours (1–12)',
                 style: Theme.of(context)
@@ -198,7 +220,6 @@ class _BankPageState extends State<BankPage> {
                     .titleMedium
                     ?.copyWith(fontWeight: FontWeight.w600),
               ),
-
               const SizedBox(height: 4),
 
               Row(
@@ -220,7 +241,7 @@ class _BankPageState extends State<BankPage> {
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
-                      'Using ${clampedHours.toStringAsFixed(2)} h (clamped between 1 and 12)',
+                      '${clampedHours.toStringAsFixed(1)} h',
                       style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ),
@@ -228,8 +249,8 @@ class _BankPageState extends State<BankPage> {
               ),
 
               const SizedBox(height: 8),
-              _kv('Custom', _codAmountWidget(baseCustom)),
-              _kv('Custom + ad (max +1,500,000)', _codAmountWidget(customWithAd)),
+              _kv('Without ad', _codAmountWidget(baseCustom)),
+              _kv('With ad', _codAmountWidget(_withBuffetAdBonus(baseCustom))),
             ],
 
             if (perHourAll > perHour) ...[

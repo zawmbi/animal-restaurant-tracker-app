@@ -14,12 +14,17 @@ class BankStats {
   /// Buffet cod per hour if all buffet facilities that make cod were checked.
   final int buffetPerHourAll;
 
-  /// Tip Jar cod per hour from checked NON-buffet facilities
-  /// (any facility with incomePerMinute cod).
-  final int tipJarPerHourCurrent;
+  /// Tip jar maximum capacity (sum of tipCapIncrease) from checked facilities.
+  final int tipCapCurrent;
 
-  /// Tip Jar cod per hour if all NON-buffet cod facilities were checked.
-  final int tipJarPerHourAll;
+  /// Tip jar maximum capacity from all tip desk facilities.
+  final int tipCapAll;
+
+  /// Tip jar fill rate: cod per hour from checked restaurant facilities.
+  final int tipFillPerHourCurrent;
+
+  /// Tip jar fill rate: cod per hour from all restaurant facilities.
+  final int tipFillPerHourAll;
 
   /// Online-only cod per hour (incomePerInterval cod), checked facilities.
   final int onlineCodPerHourCurrent;
@@ -36,23 +41,15 @@ class BankStats {
   const BankStats({
     required this.buffetPerHourCurrent,
     required this.buffetPerHourAll,
-    required this.tipJarPerHourCurrent,
-    required this.tipJarPerHourAll,
+    required this.tipCapCurrent,
+    required this.tipCapAll,
+    required this.tipFillPerHourCurrent,
+    required this.tipFillPerHourAll,
     required this.onlineCodPerHourCurrent,
     required this.onlineCodPerHourAll,
     required this.platesPerDayCurrent,
     required this.platesPerDayAll,
   });
-
-  int get totalCodPerHourCurrent =>
-      buffetPerHourCurrent +
-      tipJarPerHourCurrent +
-      onlineCodPerHourCurrent;
-
-  int get totalCodPerHourAll =>
-      buffetPerHourAll +
-      tipJarPerHourAll +
-      onlineCodPerHourAll;
 }
 class BankService {
   final FacilitiesRepository _facilities = FacilitiesRepository.instance;
@@ -61,7 +58,7 @@ class BankService {
   Future<BankStats> compute() async {
     final allFacilities = await _facilities.all();
 
-    bool _isUnlocked(Facility f) => _store.isUnlocked('facility', f.id);
+    bool isUnlocked(Facility f) => _store.isUnlocked('facility', f.id);
 
     // ----- Helpers -----
 
@@ -114,6 +111,23 @@ class BankService {
       return total;
     }
 
+    // ----- Tip cap from tipCapIncrease effects -----
+
+    int tipCap(Facility f) {
+      return f.effects
+          .where((e) => e.type == FacilityEffectType.tipCapIncrease)
+          .map((e) => e.capIncrease ?? 0)
+          .sum;
+    }
+
+    final tipCapFacilities = allFacilities
+        .where((f) => tipCap(f) > 0)
+        .toList();
+
+    final tipCapAllTotal = tipCapFacilities.map(tipCap).sum;
+    final tipCapCurrentTotal =
+        tipCapFacilities.where(isUnlocked).map(tipCap).sum;
+
     // ----- Split buffet vs tip-jar vs online-only cod -----
 
     // BUFFET: area == buffet, any cod income (per-minute OR interval)
@@ -121,49 +135,47 @@ class BankService {
         .where((f) => f.area == FacilityArea.buffet)
         .toList();
 
-    //  TIP JAR: NON-buffet, per-minute cod only (same as before)
-    final nonBuffetCodFacilities = allFacilities
+    // TIP JAR FILL RATE: restaurant area, per-minute cod
+    final restaurantCodFacilities = allFacilities
         .where((f) =>
-            f.area != FacilityArea.buffet && codPerMinute(f) > 0)
+            f.area == FacilityArea.restaurant && codPerMinute(f) > 0)
         .toList();
 
-    //  ONLINE-ONLY: NON-buffet, interval-based cod
+    // ONLINE-ONLY: NON-buffet, interval-based cod
     final intervalCodFacilities = allFacilities
         .where((f) =>
             f.area != FacilityArea.buffet &&
             codPerHourFromInterval(f) > 0)
         .toList();
 
-    // Buffet per HOUR (now includes interval-based income!)
+    // Buffet per HOUR (includes both per-minute and interval-based income)
     int buffetAllPerHour = 0;
     int buffetCurrentPerHour = 0;
 
     for (final f in buffetFacilities) {
-      final perMinute = codPerMinute(f); // might be 0 for your buffet JSON
-      final perHourFromMinute = perMinute * 60;
+      final perHourFromMinute = codPerMinute(f) * 60;
       final perHourFromInterval = codPerHourFromInterval(f);
-
       final perHourTotal = perHourFromMinute + perHourFromInterval;
 
       buffetAllPerHour += perHourTotal;
-      if (_isUnlocked(f)) {
+      if (isUnlocked(f)) {
         buffetCurrentPerHour += perHourTotal;
       }
     }
 
-    // Tip Jar per hour (non-buffet cod-per-minute)
-    final tipAllPerMinute =
-        nonBuffetCodFacilities.map(codPerMinute).sum;
-    final tipCurrentPerMinute = nonBuffetCodFacilities
-        .where(_isUnlocked)
+    // Tip jar fill rate (restaurant area cod-per-minute)
+    final tipFillAllPerMinute =
+        restaurantCodFacilities.map(codPerMinute).sum;
+    final tipFillCurrentPerMinute = restaurantCodFacilities
+        .where(isUnlocked)
         .map(codPerMinute)
         .sum;
 
-    // Online cod per hour from intervals (non-buffet only now)
+    // Online cod per hour from intervals (non-buffet only)
     final onlineAllPerHour =
         intervalCodFacilities.map(codPerHourFromInterval).sum;
     final onlineCurrentPerHour = intervalCodFacilities
-        .where(_isUnlocked)
+        .where(isUnlocked)
         .map(codPerHourFromInterval)
         .sum;
 
@@ -171,7 +183,7 @@ class BankService {
     final platesAllPerDay =
         allFacilities.map(platesPerDay).where((v) => v > 0).sum;
     final platesCurrentPerDay = allFacilities
-        .where(_isUnlocked)
+        .where(isUnlocked)
         .map(platesPerDay)
         .where((v) => v > 0)
         .sum;
@@ -179,8 +191,12 @@ class BankService {
     return BankStats(
       buffetPerHourCurrent: buffetCurrentPerHour,
       buffetPerHourAll: buffetAllPerHour,
-      tipJarPerHourCurrent: tipCurrentPerMinute * 60,
-      tipJarPerHourAll: tipAllPerMinute * 60,
+      tipCapCurrent: tipCapCurrentTotal,
+      tipCapAll: tipCapAllTotal,
+      tipFillPerHourCurrent: tipFillAllPerMinute > 0
+          ? tipFillCurrentPerMinute * 60
+          : 0,
+      tipFillPerHourAll: tipFillAllPerMinute * 60,
       onlineCodPerHourCurrent: onlineCurrentPerHour,
       onlineCodPerHourAll: onlineAllPerHour,
       platesPerDayCurrent: platesCurrentPerDay,
