@@ -9,6 +9,7 @@ import 'package:animal_restaurant_tracker/features/timers/data/timer_service.dar
 
 import '../../support/ui/support_page.dart';
 import 'app_settings_page.dart';
+import 'updates_page.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -24,17 +25,17 @@ class _SettingsPageState extends State<SettingsPage> {
   // You can set statuses to: "Synced", "Not Fully Synced", "Upcoming Update"
   static const String _syncedVersionsJson = '''
 {
-  "syncedUpTo": "v11.10.0.g",
-  "latestVersion": "v11.10.0.g",
-  "latestSynced": true,
+  "syncedUpTo": "v11.15.0g",
+  "latestVersion": "v11.15.0g",
+  "latestSynced": false,
   "upcoming": {
     "provided": false,
-    "version": "v11.11.0"
+    "version": "v11.16.0"
   },
   "rows": [
-    { "area": "Base game content", "version": "v11.10.0.g", "status": "Synced" },
-    { "area": "Event content", "version": "v11.10.0.g", "status": "Not Synced" },
-    { "area": "Next update", "version": "v11.11.0", "status": "Upcoming" }
+    { "area": "Base game content", "version": "v11.15.0g", "status": "Synced" },
+    { "area": "Event content", "version": "v11.15.0g", "status": "Not Fully Synced" },
+    { "area": "Next update", "version": "v11.16.0", "status": "Upcoming" }
   ]
 }
 ''';
@@ -97,6 +98,12 @@ class _SettingsPageState extends State<SettingsPage> {
   void _openSupport() {
     Navigator.of(context).push(
       MaterialPageRoute(builder: (_) => const SupportPage()),
+    );
+  }
+
+  void _openUpdates() {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => const UpdatesPage()),
     );
   }
 
@@ -175,6 +182,24 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
               trailing: const Icon(Icons.chevron_right),
               onTap: _openSyncedVersions,
+            ),
+          ),
+
+          const SizedBox(height: 16),
+
+          // Game Updates
+          Card(
+            child: ListTile(
+              title: Text(
+                'Game Updates',
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              subtitle: const Padding(
+                padding: EdgeInsets.only(top: 6),
+                child: Text('View recent Animal Restaurant patch notes.'),
+              ),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: _openUpdates,
             ),
           ),
 
