@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "C:/Users/Linda/Coding/animal-restaurant-tracker-app/linux"
+    "cmake.sourceDirectory": "C:/Users/Linda/Coding/animal-restaurant-tracker-app/linux",
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }
