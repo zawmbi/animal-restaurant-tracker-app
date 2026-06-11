@@ -1,0 +1,4430 @@
+[
+  {
+    "id": "old_lightbulb_tier_1",
+    "name": "Old Lightbulb (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "An old lightbulb that only occasionally lights up. Hopefully it won't leak electricity!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "old_fashioned_stage_lights_tier_1",
+    "name": "Old Fashioned Stage Lights (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "A classic style. Back in the day, it was the best lighting around.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 6000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 12
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "windmill_stage_lights_tier_1",
+    "name": "Windmill Stage Lights (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The fake flowers on the wire are very realistic.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "big_candy_light_tier_1",
+    "name": "Big Candy Light (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Emits a warm light. Everyone looks sweet under this lighting.",
+    "requiredStars": 20000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 80000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "fairy_tale_hat_light_tier_1",
+    "name": "Fairy Tale Hat Light (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Pull on the switch ever so gently.",
+    "requiredStars": 40000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "full_energy_tier_1",
+    "name": "Full Energy (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Let's have an energetic day!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "skeleton_lamp_tier_1",
+    "name": "Skeleton Lamp (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Just relax—the lamp is mounted tightly, so it won't fall.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "winters_symphonic_movement_tier_1",
+    "name": "Winter's Symphonic Movement (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "This lamp has a warming effect, so performances in the snow won't be too cold.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "candle_lantern_tier_1",
+    "name": "Candle Lantern (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Everyone's passion keeps the candle burning!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "rose_starry_light_tier_1",
+    "name": "Rose Starry Light (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Stars can always illuminate you, regardless of how weakly they twinkle.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 360000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "cute_disco_tier_1",
+    "name": "Cute Disco (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Let's dance together!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 110
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "classical_carnival_tier_1",
+    "name": "Classical Carnival (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Make vintage art popular again!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 160000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "berry_chandelier_tier_1",
+    "name": "Berry Chandelier (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "It sometimes emits static noises due to the cold.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "midnight_moonlight_tier_1",
+    "name": "Midnight Moonlight (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The gentle moonlight spills down upon every corner of the world.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 115
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "twisted_stage_tier_1",
+    "name": "Twisted Stage (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Let's start grooving to the beat!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 460000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "midnight_echoes_tier_1",
+    "name": "Midnight Echoes (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "A sudden rhythmic knocking of glass disrupts the silence of the night.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "snowy_nights_plum_streetlamp_tier_1",
+    "name": "Snowy Night's Plum Streetlamp (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Turning back suddenly, I realise that my old friend is still standing underneath the streetlamp.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "blossoming_vitality_tier_1",
+    "name": "Blossoming Vitality (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Children, come and display the most energetic side of you!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "underwater_beacon_tier_1",
+    "name": "Underwater Beacon (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Emits a gentle but penetrating light.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 125
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "orangey_fragrance_tier_1",
+    "name": "Orangey Fragrance (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "I'm so tempted to eat the bright orange.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "party_white_noise_tier_1",
+    "name": "Party White Noise (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Party till the sun rises! You only live once!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 220000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "soft_lighting_tier_1",
+    "name": "Soft Lighting (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The soft lighting can add a hazy aesthetic to one silhouette.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 550000
+      }
+    ],
+    "effects": [],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "veiled_dreamscape_tier_1",
+    "name": "Veiled Dreamscape (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Weave a gorgeous dream on the stage.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 135
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "bright_opus_tier_1",
+    "name": "Bright Opus (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The lantern's color temperature is just right. The flowers surrounding it are also very tasteful.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 660000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "candy_cane_hat_tier_1",
+    "name": "Candy Cane Hat (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The stand of the lamp looks so similar to a Candy cane that even the light it emits seems to be sweet.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 45000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "fluffy_lantern_tier_1",
+    "name": "Fluffy Lantern (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The red apple lantern glows with a warm light.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 41000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "imperial_lantern_tier_1",
+    "name": "Imperial Lantern (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Its flickering light twinkles like stars across the night sky.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 32000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "blissful_cake_light_tier_1",
+    "name": "Blissful Cake Light (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Practical and stylish.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Creamy Kingdom"
+  },
+  {
+    "id": "gravity_spotlight_tier_1",
+    "name": "Gravity Spotlight (Tier 1)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "How amazing! It Can even glow when it's not plugged in!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 56000
+      }
+    ],
+    "effects": [],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "old_lightbulb_tier_2",
+    "name": "Old Lightbulb (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "An old lightbulb that only occasionally lights up. Hopefully it won't leak electricity!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 1500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 2
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "old_fashioned_stage_lights_tier_2",
+    "name": "Old Fashioned Stage Lights (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "A classic style. Back in the day, it was the best lighting around.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 9000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 12
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "windmill_stage_lights_tier_2",
+    "name": "Windmill Stage Lights (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The fake flowers on the wire are very realistic.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "big_candy_light_tier_2",
+    "name": "Big Candy Light (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Emits a warm light. Everyone looks sweet under this lighting.",
+    "requiredStars": 20000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 100000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "fairy_tale_hat_light_tier_2",
+    "name": "Fairy Tale Hat Light (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Pull on the switch ever so gently.",
+    "requiredStars": 40000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 220000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "full_energy_tier_2",
+    "name": "Full Energy (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Let's have an energetic day!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "skeleton_lamp_tier_2",
+    "name": "Skeleton Lamp (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Just relax—the lamp is mounted tightly, so it won't fall.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "winters_symphonic_movement_tier_2",
+    "name": "Winter's Symphonic Movement (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "This lamp has a warming effect, so performances in the snow won't be too cold.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 24000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "candle_lantern_tier_2",
+    "name": "Candle Lantern (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Everyone's passion keeps the candle burning!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "rose_starry_light_tier_2",
+    "name": "Rose Starry Light (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Stars can always illuminate you, regardless of how weakly they twinkle.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "cute_disco_tier_2",
+    "name": "Cute Disco (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Let's dance together!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 110
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "classical_carnival_tier_2",
+    "name": "Classical Carnival (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Make vintage art popular again!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 180000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "berry_chandelier_tier_2",
+    "name": "Berry Chandelier (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "It sometimes emits static noises due to the cold.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "midnight_moonlight_tier_2",
+    "name": "Midnight Moonlight (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The gentle moonlight spills down upon every corner of the world.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 115
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "twisted_stage_tier_2",
+    "name": "Twisted Stage (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Let's start grooving to the beat!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 480000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "midnight_echoes_tier_2",
+    "name": "Midnight Echoes (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "A sudden rhythmic knocking of glass disrupts the silence of the night.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "snowy_nights_plum_streetlamp_tier_2",
+    "name": "Snowy Night's Plum Streetlamp (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Turning back suddenly, I realise that my old friend is still standing underneath the streetlamp.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "blossoming_vitality_tier_2",
+    "name": "Blossoming Vitality (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Children, come and display the most energetic side of you!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "underwater_beacon_tier_2",
+    "name": "Underwater Beacon (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Emits a gentle but penetrating light.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 125
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "orangey_fragrance_tier_2",
+    "name": "Orangey Fragrance (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "I'm so tempted to eat the bright orange.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 220000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "party_white_noise_tier_2",
+    "name": "Party White Noise (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Party till the sun rises! You only live once!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 250000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "soft_lighting_tier_2",
+    "name": "Soft Lighting (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The soft lighting can add a hazy aesthetic to one silhouette.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 600000
+      }
+    ],
+    "effects": [],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "veiled_dreamscape_tier_2",
+    "name": "Veiled Dreamscape (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Weave a gorgeous dream on the stage.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 135
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "bright_opus_tier_2",
+    "name": "Bright Opus (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The lantern's color temperature is just right. The flowers surrounding it are also very tasteful.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 690000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "candy_cane_hat_tier_2",
+    "name": "Candy Cane Hat (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The stand of the lamp looks so similar to a Candy cane that even the light it emits seems to be sweet.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 51000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "fluffy_lantern_tier_2",
+    "name": "Fluffy Lantern (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The red apple lantern glows with a warm light.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 46000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "imperial_lantern_tier_2",
+    "name": "Imperial Lantern (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Its flickering light twinkles like stars across the night sky.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 37000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "blissful_cake_light_tier_2",
+    "name": "Blissful Cake Light (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Practical and stylish.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Creamy Kingdom"
+  },
+  {
+    "id": "gravity_spotlight_tier_2",
+    "name": "Gravity Spotlight (Tier 2)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "How amazing! It Can even glow when it's not plugged in!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 56000
+      }
+    ],
+    "effects": [],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "old_lightbulb_tier_3",
+    "name": "Old Lightbulb (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "An old lightbulb that only occasionally lights up. Hopefully it won't leak electricity!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 3000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 2
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "old_fashioned_stage_lights_tier_3",
+    "name": "Old Fashioned Stage Lights (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "A classic style. Back in the day, it was the best lighting around.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 12000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 12
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "windmill_stage_lights_tier_3",
+    "name": "Windmill Stage Lights (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The fake flowers on the wire are very realistic.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 50000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "big_candy_light_tier_3",
+    "name": "Big Candy Light (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Emits a warm light. Everyone looks sweet under this lighting.",
+    "requiredStars": 20000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 120000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "fairy_tale_hat_light_tier_3",
+    "name": "Fairy Tale Hat Light (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Pull on the switch ever so gently.",
+    "requiredStars": 40000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 260000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "full_energy_tier_3",
+    "name": "Full Energy (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Let's have an energetic day!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "skeleton_lamp_tier_3",
+    "name": "Skeleton Lamp (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Just relax—the lamp is mounted tightly, so it won't fall.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "winters_symphonic_movement_tier_3",
+    "name": "Winter's Symphonic Movement (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "This lamp has a warming effect, so performances in the snow won't be too cold.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 28000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "candle_lantern_tier_3",
+    "name": "Candle Lantern (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Everyone's passion keeps the candle burning!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "rose_starry_light_tier_3",
+    "name": "Rose Starry Light (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Stars can always illuminate you, regardless of how weakly they twinkle.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 440000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "cute_disco_tier_3",
+    "name": "Cute Disco (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Let's dance together!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 110
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "classical_carnival_tier_3",
+    "name": "Classical Carnival (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Make vintage art popular again!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "berry_chandelier_tier_3",
+    "name": "Berry Chandelier (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "It sometimes emits static noises due to the cold.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "midnight_moonlight_tier_3",
+    "name": "Midnight Moonlight (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The gentle moonlight spills down upon every corner of the world.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 115
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "twisted_stage_tier_3",
+    "name": "Twisted Stage (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Let's start grooving to the beat!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "midnight_echoes_tier_3",
+    "name": "Midnight Echoes (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "A sudden rhythmic knocking of glass disrupts the silence of the night.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 45000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "snowy_nights_plum_streetlamp_tier_3",
+    "name": "Snowy Night's Plum Streetlamp (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Turning back suddenly, I realise that my old friend is still standing underneath the streetlamp.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "blossoming_vitality_tier_3",
+    "name": "Blossoming Vitality (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Children, come and display the most energetic side of you!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "underwater_beacon_tier_3",
+    "name": "Underwater Beacon (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Emits a gentle but penetrating light.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 125
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "orangey_fragrance_tier_3",
+    "name": "Orangey Fragrance (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "I'm so tempted to eat the bright orange.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 240000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "party_white_noise_tier_3",
+    "name": "Party White Noise (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Party till the sun rises! You only live once!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 280000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "soft_lighting_tier_3",
+    "name": "Soft Lighting (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The soft lighting can add a hazy aesthetic to one silhouette.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 650000
+      }
+    ],
+    "effects": [],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "veiled_dreamscape_tier_3",
+    "name": "Veiled Dreamscape (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Weave a gorgeous dream on the stage.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 135
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "bright_opus_tier_3",
+    "name": "Bright Opus (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The lantern's color temperature is just right. The flowers surrounding it are also very tasteful.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 720000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "candy_cane_hat_tier_3",
+    "name": "Candy Cane Hat (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The stand of the lamp looks so similar to a Candy cane that even the light it emits seems to be sweet.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 50000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "fluffy_lantern_tier_3",
+    "name": "Fluffy Lantern (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The red apple lantern glows with a warm light.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 54000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "imperial_lantern_tier_3",
+    "name": "Imperial Lantern (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Its flickering light twinkles like stars across the night sky.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 42000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "blissful_cake_light_tier_3",
+    "name": "Blissful Cake Light (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Practical and stylish.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Creamy Kingdom"
+  },
+  {
+    "id": "gravity_spotlight_tier_3",
+    "name": "Gravity Spotlight (Tier 3)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "How amazing! It Can even glow when it's not plugged in!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 56000
+      }
+    ],
+    "effects": [],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "old_lightbulb_tier_4",
+    "name": "Old Lightbulb (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "An old lightbulb that only occasionally lights up. Hopefully it won't leak electricity!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 4500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 2
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "old_fashioned_stage_lights_tier_4",
+    "name": "Old Fashioned Stage Lights (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "A classic style. Back in the day, it was the best lighting around.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 15000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 12
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "windmill_stage_lights_tier_4",
+    "name": "Windmill Stage Lights (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The fake flowers on the wire are very realistic.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 60000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "big_candy_light_tier_4",
+    "name": "Big Candy Light (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Emits a warm light. Everyone looks sweet under this lighting.",
+    "requiredStars": 20000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 140000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "fairy_tale_hat_light_tier_4",
+    "name": "Fairy Tale Hat Light (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Pull on the switch ever so gently.",
+    "requiredStars": 40000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 300000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "full_energy_tier_4",
+    "name": "Full Energy (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Let's have an energetic day!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "skeleton_lamp_tier_4",
+    "name": "Skeleton Lamp (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Just relax—the lamp is mounted tightly, so it won't fall.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "winters_symphonic_movement_tier_4",
+    "name": "Winter's Symphonic Movement (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "This lamp has a warming effect, so performances in the snow won't be too cold.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 32000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "candle_lantern_tier_4",
+    "name": "Candle Lantern (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Everyone's passion keeps the candle burning!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "rose_starry_light_tier_4",
+    "name": "Rose Starry Light (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Stars can always illuminate you, regardless of how weakly they twinkle.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 480000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "cute_disco_tier_4",
+    "name": "Cute Disco (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Let's dance together!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 110
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "classical_carnival_tier_4",
+    "name": "Classical Carnival (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Make vintage art popular again!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 220000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "berry_chandelier_tier_4",
+    "name": "Berry Chandelier (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "It sometimes emits static noises due to the cold.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 45000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "midnight_moonlight_tier_4",
+    "name": "Midnight Moonlight (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The gentle moonlight spills down upon every corner of the world.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 115
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "twisted_stage_tier_4",
+    "name": "Twisted Stage (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Let's start grooving to the beat!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 520000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "midnight_echoes_tier_4",
+    "name": "Midnight Echoes (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "A sudden rhythmic knocking of glass disrupts the silence of the night.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 50000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "snowy_nights_plum_streetlamp_tier_4",
+    "name": "Snowy Night's Plum Streetlamp (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Turning back suddenly, I realise that my old friend is still standing underneath the streetlamp.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "blossoming_vitality_tier_4",
+    "name": "Blossoming Vitality (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Children, come and display the most energetic side of you!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "underwater_beacon_tier_4",
+    "name": "Underwater Beacon (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Emits a gentle but penetrating light.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 125
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "orangey_fragrance_tier_4",
+    "name": "Orangey Fragrance (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "I'm so tempted to eat the bright orange.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 260000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "party_white_noise_tier_4",
+    "name": "Party White Noise (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Party till the sun rises! You only live once!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 320000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "soft_lighting_tier_4",
+    "name": "Soft Lighting (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The soft lighting can add a hazy aesthetic to one silhouette.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 700000
+      }
+    ],
+    "effects": [],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "veiled_dreamscape_tier_4",
+    "name": "Veiled Dreamscape (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Weave a gorgeous dream on the stage.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 135
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "bright_opus_tier_4",
+    "name": "Bright Opus (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The lantern's color temperature is just right. The flowers surrounding it are also very tasteful.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 750000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "candy_cane_hat_tier_4",
+    "name": "Candy Cane Hat (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The stand of the lamp looks so similar to a Candy cane that even the light it emits seems to be sweet.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 56000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "fluffy_lantern_tier_4",
+    "name": "Fluffy Lantern (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "The red apple lantern glows with a warm light.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 60000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "imperial_lantern_tier_4",
+    "name": "Imperial Lantern (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Its flickering light twinkles like stars across the night sky.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 47000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "blissful_cake_light_tier_4",
+    "name": "Blissful Cake Light (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "Practical and stylish.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ],
+    "series": "Creamy Kingdom"
+  },
+  {
+    "id": "gravity_spotlight_tier_4",
+    "name": "Gravity Spotlight (Tier 4)",
+    "area": "courtyard_concert",
+    "group": "Lights",
+    "description": "How amazing! It Can even glow when it's not plugged in!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 56000
+      }
+    ],
+    "effects": [],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "log_plank",
+    "name": "Log Plank",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Made from the tree in the backyard.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 18
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "secret_of_the_vines",
+    "name": "Secret of the Vines",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "The gnomes like hiding little things in the grass on top.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "windmill_memories",
+    "name": "Windmill Memories",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "When the windmill turns, it brings in the scent of the sea.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 80000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "sweet_impression",
+    "name": "Sweet Impression",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Cookies that look to be chocolate-flavored.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 180000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 460
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "wonderful_dream",
+    "name": "Wonderful Dream",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Everything you think of will come true in your dreams.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 380000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 800
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "galactic_news",
+    "name": "Galactic News",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Breaking news! Something big happend!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 60000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "moment_of_silence",
+    "name": "Moment of Silence",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Things got eerily quiet all of a sudden...",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 80000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "cozy_christmas_night",
+    "name": "Cozy Christmas Night",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Warms up your winter nights.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 45000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "a_night_to_remember",
+    "name": "A Night to Remember",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "With this bustling atmosphere, tonight sure is unforgettable.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 55000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 145
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "summer_dream",
+    "name": "Summer Dream",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Summer dreams smell of roses.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 680000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 850
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "golden_age",
+    "name": "Golden Age",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "The golden years filled with memories.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 300000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 600
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "tranquil_field",
+    "name": "Tranquil Field",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Makes one feel like lying down and sunbathing.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 80
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "marvelous_roast",
+    "name": "Marvelous Roast",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Freshly released details on performances!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 750000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 950
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "devout_winged_crown",
+    "name": "Devout Winged Crown",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Whenever you've lost yourself, make your way here. The wings will guide you to the right path.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 90
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "hazy_vow",
+    "name": "Hazy Vow",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Do you still remember the promise from the past?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 65000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 150
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "warm_jingle_jangle",
+    "name": "Warm Jingle-jangle",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Good fortune is sure to follow anyone who hears the bells ringing!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 50000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 145
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "noticeboard_of_wonders",
+    "name": "Noticeboard of Wonders",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "All of the wonderful things that can be found throughout the world will be displayed here.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 60000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 150
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "floral_noticeboard",
+    "name": "Floral Noticeboard",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "All sorts of information can be found here.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 75000
+      }
+    ],
+    "effects": [],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "fruitful_achievements",
+    "name": "Fruitful Achievements",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "A truly fruit-full party!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 800
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "colorful_symphony",
+    "name": "Colorful Symphony",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "3, 2, 1! It's the rhythm of the rainbow! Join in and put your hands up in the air!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 450000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 900
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "puppy_news",
+    "name": "Puppy News",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Woof woof, have a look at today's headlines!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 980
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "seashell_tales",
+    "name": "Seashell Tales",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "I wonder what interesting performances there are to view today.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 100
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "lace_epilogue",
+    "name": "Lace Epilogue",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "The gemstone dazzles beneath the sun's reflection.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 115
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "golden_promise",
+    "name": "Golden Promise",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Oh my, I almost missed the announcementfor that grand and majestic performance!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 850000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 990
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "orange_mist_signboard",
+    "name": "Orange Mist Signboard",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "After you pass through the misty forest, a gigantic circus sign welcomes you!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 69000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 158
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "starry_snow_dream",
+    "name": "Starry Snow Dream",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "If a star is planted in the snow, will a Star Tree sprout?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 57000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 154
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "morning_anecdotes",
+    "name": "Morning Anecdotes",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Find out about all that's new and interesting!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 78000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 156
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "geometric_planet",
+    "name": "Geometric Planet",
+    "area": "courtyard_concert",
+    "group": "Playbill Board",
+    "description": "Beep! Check out today's planeary news.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 93000
+      }
+    ],
+    "effects": [],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "simple_ticket_booth",
+    "name": "Simple Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "A temporary ticket booth made from wood.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 0
+      }
+    ],
+    "effects": [],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "pine_ticket_booth",
+    "name": "Pine Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Be good and line up. Tickets will be checked in order!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "classy_ticket_booth",
+    "name": "Classy Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "This blue table helps calm your nerves.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 100000
+      }
+    ],
+    "effects": [],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "cute_ticket_booth",
+    "name": "Cute Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "The candy-scented tickets sold are sweet and",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 220000
+      }
+    ],
+    "effects": [],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "mystery_ticket_booth",
+    "name": "Mystery Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Who will be the mystery guest performing tonight?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 460000
+      }
+    ],
+    "effects": [],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "manual_ticket_booth",
+    "name": "Manual Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "It looks automatic, but it's actually manual.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 80000
+      }
+    ],
+    "effects": [],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "guarded_ticket_booth",
+    "name": "Guarded Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "The Hat Monster who guards the ticket booth allows no mistakes.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 120000
+      }
+    ],
+    "effects": [],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "snowball_ticket_booth",
+    "name": "Snowball Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "The meticulous Snowball will be sure to calculate each and every bill.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 60000
+      }
+    ],
+    "effects": [],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "calligraphy_ticket_booth",
+    "name": "Calligraphy Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Records the people's love with wonderful penmanship.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 65000
+      }
+    ],
+    "effects": [],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "magic_ticket_booth",
+    "name": "Magic Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "A magician pulling an all-nighter left behind this messy workbench.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 580000
+      }
+    ],
+    "effects": [],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "hand_drawn_ticket_booth",
+    "name": "Hand-Drawn Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Every ticket is a unique piece of artwork.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 340000
+      }
+    ],
+    "effects": [],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "needlework_ticket_booth",
+    "name": "Needlework Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "You can make merchandise on the spot with this!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 135
+      }
+    ],
+    "effects": [],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "icy_ticket_booth",
+    "name": "Icy Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Everyone's enthusiasm will dispel the cold.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "cheesy_ticket_booth",
+    "name": "Cheesy Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "There's surely a performance that you'll enjoy.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 420000
+      }
+    ],
+    "effects": [],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "phantom_ticket_booth",
+    "name": "Phantom Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Is the ticketer invisible, or do they move too fast> Either way, nobody has seen them before.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 140
+      }
+    ],
+    "effects": [],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "dreary_fragrance",
+    "name": "Dreary Fragrance",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Beware of the inexplicable fragrance that wafts over at midnight...",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 72000
+      }
+    ],
+    "effects": [],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "never_ending_ticket_booth",
+    "name": "Never-ending Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Passengers come and go in a never-ending stream.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 65000
+      }
+    ],
+    "effects": [],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "sweet_surprise",
+    "name": "Sweet Surprise",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "An unexpected assault of sweetness has arrived!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 80000
+      }
+    ],
+    "effects": [],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "fruity_ticket_booth",
+    "name": "Fruity Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Why are you secretly snacking on oranges while working?!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 500000
+      }
+    ],
+    "effects": [],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "hazy_beam",
+    "name": "Hazy Beam",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Hey, hey, hey! Don't throw voided ticket stubs into this box!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 520000
+      }
+    ],
+    "effects": [],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "late_summer_ticket_booth",
+    "name": "Late Summer Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "After finishing your desserts, remember to wash your hands before picking up the ticket stub.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 450000
+      }
+    ],
+    "effects": [],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "octopus_ticket_booth",
+    "name": "Octopus Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Naturally, the currency used to purchase tickets is the octopus seller's favorite thing.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 145
+      }
+    ],
+    "effects": [],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "birdsong_ticket_booth",
+    "name": "Birdsong Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Please hand you ticket over to the birdie for inspection!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 160
+      }
+    ],
+    "effects": [],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "distinguished_table",
+    "name": "Distinguished Table",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Dear quest, here's a special handwritten letter than is just for you.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 480000
+      }
+    ],
+    "effects": [],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "revolving_magic_table",
+    "name": "Revolving Magic Table",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Ghosts are usually discouraged from performing magic tricks unless they persist in doing so.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 75000
+      }
+    ],
+    "effects": [],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "snowcapped_bell_tower",
+    "name": "Snowcapped Bell Tower",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Please queue up for your tickets to be checked.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 75000
+      }
+    ],
+    "effects": [],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "springtime_desk",
+    "name": "Springtime Desk",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Which mischievous little guy left these footprints?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 79000
+      }
+    ],
+    "effects": [],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "little_dino_ticket_booth",
+    "name": "Little Dino Ticket Booth",
+    "area": "courtyard_concert",
+    "group": "Ticket Booth",
+    "description": "Just leave the ticket checking to Little Dino!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 145000
+      }
+    ],
+    "effects": [],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "simple_water_fountain",
+    "name": "Simple Water Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Very simple, but practical.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 3000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 2
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "barrel_water_fountain",
+    "name": "Barrel Water Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Can store lots of water.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 10000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 12
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "island_water_fountain",
+    "name": "Island Water Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Nobody knows what island it was brought from.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 60000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 70
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "sweet_paper_cups",
+    "name": "Sweet Paper Cups",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "The sweet water inside is delicious!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 130000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "bottomless_teacup",
+    "name": "Bottomless Teacup",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "It never empties no matter how much you drink.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 280000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 260
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "wind_up_drinking_fountain",
+    "name": "Wind-up Drinking Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Wind it up more to get water.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "pumpkin_water_fountain",
+    "name": "Pumpkin Water Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Huh? How come the fountain water is green?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 14
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "lucky_water_fountain",
+    "name": "Lucky Water Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "They say Santa blessed this water fountain, so if you drink from it, you'll have good luck!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 18
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "porcelain_water_fountain",
+    "name": "Porcelain Water Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Seems perfect for pet fishes.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "elegant_water_fountain",
+    "name": "Elegant Water Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "The water surface glistens with the starry night's reflection.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 420000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 360
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "purifying_fountain",
+    "name": "Purifying Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Contains the power to heal.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 220000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 200
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "iced_summer_beverage",
+    "name": "Iced Summer Beverage",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Nothing feels better than a big gulp of iced water!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 168
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "starry_water_fountain",
+    "name": "Starry Water Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "The water comes from snowy mountain peaks.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 28000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 18
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "hot_cheesy_canele",
+    "name": "Hot Cheesy Canele",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Can anyone resist taking a bite out of this?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "scented_water_fountain",
+    "name": "Scented Water Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Everyone who passes by walks away with a floral scent.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 175
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "forbidden_romance",
+    "name": "Forbidden Romance",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "The vines climb upward eagerly, craving the water.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 38000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "seamless_horizon",
+    "name": "Seamless Horizon",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Watching the rippling sky blue water makes for a peaceful moment.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "fantastical_honey",
+    "name": "Fantastical Honey",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "I hope that you'll dream an endless stream of sweet fantasies.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 280
+      }
+    ],
+    "effects": [],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "glass_strawberry_fountain",
+    "name": "Glass Strawberry Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Why does the water taste like strawberries?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 250000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "disco_component",
+    "name": "Disco Component",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "This sound of water flowing is just as rhythmic!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 300000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "mint_chocolate_herbel_tea",
+    "name": "Mint Chocolate Herbel Tea",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Hm? Why does the water taste a little minty?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 550000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "ocean_spring",
+    "name": "Ocean Spring",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Contains an endless supply of oceanic magic.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 180
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "glass_stationery",
+    "name": "Glass Stationery",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "I can tell what the hydrangea is thinking about through the stained glass.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 185
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "swan_fountain",
+    "name": "Swan Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "The flowing waters tell stories that no one else knows about.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 710000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "floating_hot_air_balloon",
+    "name": "Floating Hot Air Balloon",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "How can I drink it when it keeps bobbing up and down?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 50000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 29
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "christmas_spring",
+    "name": "Christmas Spring",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "Clean water from melted snow, perfectly safe to drink.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 36000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "springlit_pond",
+    "name": "Springlit Pond",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "The frost melts, revealing the crytal clear water in the well.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 46000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "egg_shell_fountain",
+    "name": "Egg Shell Fountain",
+    "area": "courtyard_concert",
+    "group": "Water Fountain",
+    "description": "What a tough eggshell! I wonder which planet it came from.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 497000
+      }
+    ],
+    "effects": [],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "performance_collage",
+    "name": "Performance Collage",
+    "area": "courtyard_concert",
+    "group": "Wall Decor",
+    "description": "There seems to be a mystery guest?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Others"
+  },
+  {
+    "id": "event_collage",
+    "name": "Event Collage",
+    "area": "courtyard_concert",
+    "group": "Wall Decor",
+    "description": "There are so many events. Let's have some fun!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 14000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 18
+      }
+    ],
+    "series": "Others"
+  },
+  {
+    "id": "rainbow_wind_chimes",
+    "name": "Rainbow Wind Chimes",
+    "area": "courtyard_concert",
+    "group": "Wall Decor",
+    "description": "Ring, ring goes the song of colors in the wind.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 26
+      }
+    ],
+    "series": "Others"
+  },
+  {
+    "id": "brass_hanging_clock",
+    "name": "Brass Hanging Clock",
+    "area": "courtyard_concert",
+    "group": "Wall Decor",
+    "description": "Unfriendly toward those with neck problems.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 7000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "ladybug_lamp",
+    "name": "Ladybug Lamp",
+    "area": "courtyard_concert",
+    "group": "Wall Decor",
+    "description": "It looks more like a firefly at night.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 9000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "swinging_candy_cane",
+    "name": "Swinging Candy Cane",
+    "area": "courtyard_concert",
+    "group": "Wall Decor",
+    "description": "Snowball comes here to swing when nobody notices.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "frost_mirror",
+    "name": "Frost Mirror",
+    "area": "courtyard_concert",
+    "group": "Wall Decor",
+    "description": "Even the snow cannot hide your beauty.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 16000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 18
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "elf_work_attire",
+    "name": "Elf Work Attire",
+    "area": "courtyard_concert",
+    "group": "Wall Decor",
+    "description": "Clothes that a Christmas elf wears when delivering presents.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 28000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 18
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "graffiti_painting",
+    "name": "Graffiti Painting",
+    "area": "courtyard_concert",
+    "group": "Wall Decor",
+    "description": "A self-portrait of Snowball.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 23000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 18
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "stocking_banner",
+    "name": "Stocking Banner",
+    "area": "courtyard_concert",
+    "group": "Wall Decor",
+    "description": "Lalala! Fill the stockings to the brim with presents!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 18000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 18
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "pine_cone_candlestick",
+    "name": "Pine Cone Candlestick",
+    "area": "courtyard_concert",
+    "group": "Wall Decor",
+    "description": "It burns even longer than regular candlesticks.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 62000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "crunchy_apple_clock",
+    "name": "Crunchy Apple Clock",
+    "area": "courtyard_concert",
+    "group": "Wall Decor",
+    "description": "It's so crunchy that you have to be careful when you handle it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "portable_fridge",
+    "name": "Portable Fridge",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "Have a refreshing can of iced cola!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Others"
+  },
+  {
+    "id": "music_banner",
+    "name": "Music Banner",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "The music notes are dancing!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Others"
+  },
+  {
+    "id": "flower_tent",
+    "name": "Flower Tent",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "A simple tent with a faint floral scent inside.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Others"
+  },
+  {
+    "id": "swaying_swing",
+    "name": "Swaying Swing",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "Swing and enjoy a leisurely afternoon.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 26000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 26
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "hot_air_balloon",
+    "name": "Hot Air Balloon",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "I want to go back up into the sky!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "berry_pot_red",
+    "name": "Berry Pot - Red",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "Don't steal the berries!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 10000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "berry_pot_green",
+    "name": "Berry Pot - Green",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "Don't steal the berries!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 10000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "bear_sign",
+    "name": "Bear Sign",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "Today's Special: Christmas Exclusive - Smoked Ham",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 14000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 14
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "rotating_signpost",
+    "name": "Rotating Signpost",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "Don't keep staring at it. You'll get dizzy.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 16000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 16
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "storage_boots",
+    "name": "Storage Boots",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "A ton of things can be stuffed inside these boots!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 18000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 16
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "winter_beach_umbrella",
+    "name": "Winter Beach Umbrella",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "Protection from the sun is still paramount during winter!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 16
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "resting_teddy_bear",
+    "name": "Resting Teddy Bear",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "This teddy bear is so cute, it's fine if it takes a short break, right?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 22000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 16
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "cozy_wintry_round_rug",
+    "name": "Cozy Wintry Round Rug",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "Brings a little warmth into your life.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 45000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "journey_of_freedom",
+    "name": "Journey of Freedom",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "Embark on a journey that truly belongs to you!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 21
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "curtain_of_endings_and_beginnings",
+    "name": "Curtain of Endings and Beginnings",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "We're always in an endless cycle of the opening and closing acts!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 52000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 25
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "guidance_snowman",
+    "name": "Guidance Snowman",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "Esteemed guest, please proceed this way.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 58000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "stationary_clock",
+    "name": "Stationary Clock",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "Standing right here quietly, it has witnessed many stories.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "snowing_gift_box",
+    "name": "Snowing Gift Box",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "It's snowing inside the gift box!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 45000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "apple_birdie",
+    "name": "Apple Birdie",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "It sips tea and watches the snow fall.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "glass_scroll_jar",
+    "name": "Glass Scroll Jar",
+    "area": "courtyard_concert",
+    "group": "Floor Decor",
+    "description": "Makes you want to write a poem!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 26500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 18
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  }
+]

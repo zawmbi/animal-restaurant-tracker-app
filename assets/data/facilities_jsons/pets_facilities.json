@@ -1,0 +1,6068 @@
+[
+  {
+    "id": "simple_tree_house",
+    "name": "Simple Tree House",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "The wood has been treated to prevent decay. It'll do as a living space if you aren't picky.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "little_windmill_house",
+    "name": "Little Windmill House",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "A comfortable home with windmill blades that turn when the wind rises.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 12
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "tranquil_sanctuary",
+    "name": "Tranquil Sanctuary",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "Close the door to enjoy a moment of peace and quiet.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "red_brick_mansion",
+    "name": "Red Brick Mansion",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "The decor is certainly fancy, but its size makes cleanup a dreadful chore.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 88000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "fantastical_teapot",
+    "name": "Fantastical Teapot",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "A large teapot that somebody left there. It actually looks quite nice once you clean it up.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "ocean_echoes",
+    "name": "Ocean Echoes",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "Its inhabitants often fall asleep to the soothing sound of waves.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 600
+      }
+    ],
+    "series": "Of Coconuts Trees and the Sea Breeze"
+  },
+  {
+    "id": "creamy_little_house",
+    "name": "Creamy Little House",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "The cute baby enjoys being surrounded by the smell of cream as it sleeps.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 550000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 750
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "dreamy_ivory_chateau",
+    "name": "Dreamy Ivory Chateau",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "The dreamy drapes and sweet scent of flowers will transport you straight to your very own wonderland.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 120
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "nightmare_castle",
+    "name": "Nightmare Castle",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "A house that unexpectedly appeared in the depths of the forest. Would you like to enter?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 100000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 170
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "delicious_gingerbread_house",
+    "name": "Delicious Gingerbread House",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "What?! You clearly snuck a bite out of this!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 60000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "exquisite_tower",
+    "name": "Exquisite Tower",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "Despite its small size, the universe is contained within it.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 64000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "floral_house",
+    "name": "Floral House",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "Enjoy a unique rustic lifestyle!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 150000
+      }
+    ],
+    "effects": [],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "melon_paradise",
+    "name": "Melon Paradise",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "Hey, hey! This melon is not meant to be eaten!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "music_home",
+    "name": "Music Home",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "Unfamiliar tunes can be heard coming from inside at times.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 420000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 310
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "bellflower_house",
+    "name": "Bellflower House",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "The best place to avoid the summer heat.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 650000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 800
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "sunken_boat",
+    "name": "Sunken Boat",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "Despite its sunken state, this boat has still been exquisitely decorated.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 130
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "daylight_pavilion",
+    "name": "Daylight Pavilion",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "Staying inside this house gives you a sense of confidence that you can master various instruments.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 80000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "sleepy_tent",
+    "name": "Sleepy Tent",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "Good night, sleep tight, may you have sweet dreams tonight.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 280000
+      }
+    ],
+    "effects": [],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "lavender_garden",
+    "name": "Lavender Garden",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "I've planted a lavender garden that I'm carefully cultivating.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 140
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "house_of_stars",
+    "name": "House of Stars",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "Who secretly wished for a house surrounded by flowers?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 750000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 820
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "fantasy_house",
+    "name": "Fantasy House",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "It looks like it houses all the fun things in the world!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 124000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 176
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "house_of_time",
+    "name": "House of Time",
+    "area": "courtyard_pets",
+    "group": "Pet Houses",
+    "description": "If only time could slow down... just a bit more!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 76000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 92
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "peachy_trampoline",
+    "name": "Peachy Trampoline",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Every kid who sees this will want to bounce on it!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "blue_checkered_ball",
+    "name": "Blue Checkered Ball",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Come and kick the ball!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 15000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "bread_skateboard",
+    "name": "Bread Skateboard",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Can I skate and eat at the same time?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 22000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 16
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "lace_trimmed_pool",
+    "name": "Lace-trimmed Pool",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "As a top-notch swimmer, I swim as much as I possibly can!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 28000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 18
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "cheesy_rocking_chair",
+    "name": "Cheesy Rocking Chair",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "The creaking sounds that it emits as it rocks back and forth cause one to reminisce about the good times.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 36000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 26
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "bread_ballad",
+    "name": "Bread Ballad",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Sing your favorite melody!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "fluffy_seesaw",
+    "name": "Fluffy Seesaw",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "The fluffiness of the bread gives it a unique bounciness.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 46000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "cheesy_table",
+    "name": "Cheesy Table",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Who secretly nibbled on the cheesecake that has been placed on the table?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 52000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "magic_chest",
+    "name": "Magic Chest",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Open it for an unexpected surprise!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Murmuring Dark Rose"
+  },
+  {
+    "id": "talkative_witchs_hat",
+    "name": "Talkative Witch's Hat",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Although it says a lot of nonsense, it is rumored to be able to be able to predict the future.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 33000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 23
+      }
+    ],
+    "series": "Murmuring Dark Rose"
+  },
+  {
+    "id": "thorny_cage",
+    "name": "Thorny Cage",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "As it is made from black iron, it is very sturdy.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 38000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 26
+      }
+    ],
+    "series": "Murmuring Dark Rose"
+  },
+  {
+    "id": "gurgling_pumpkin_soup",
+    "name": "Gurgling Pumpkin Soup",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Want to try some? Who knows if there'll be some miraculous effect.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 43000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Murmuring Dark Rose"
+  },
+  {
+    "id": "echoing_melancholy",
+    "name": "Echoing Melancholy",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "The intermittent creaking evokes a faint sadness.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 46000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Murmuring Dark Rose"
+  },
+  {
+    "id": "sad_ghost",
+    "name": "Sad Ghost",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "It floats around aimlessly without direction.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 50000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Murmuring Dark Rose"
+  },
+  {
+    "id": "twinkling_halo",
+    "name": "Twinkling Halo",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "The faster you run, the brighter the halo.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 60000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "forest_drum",
+    "name": "Forest Drum",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Da dum, da dum... It's the sound of the forest's whispers.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 45000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "tiny_jack_in_the_box",
+    "name": "Tiny Jack-in-the-box",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Something amazing will happen when you open it.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 55000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "relaxing_hot_air_balloon",
+    "name": "Relaxing Hot Air Balloon",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Relax as you laze inside this hot air balloon and admire the surrounding view.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 65000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "rocking_sleigh",
+    "name": "Rocking Sleigh",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Remember to deliver presents to all of the little kids on time!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 70000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "cloud_somersault",
+    "name": "Cloud Somersault",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "So fast–it can travel long distances in but an instant!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 75000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "ink_desk",
+    "name": "Ink Desk",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Don't sleep in class!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 52000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "light_shuttlecock",
+    "name": "Light Shuttlecock",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "A light kick is enough to send it flying.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 25
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "three_color_flower_ball",
+    "name": "Three-Color Flower Ball",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Come and see if you have a talent for juggling balls.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 37000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "auspicious_carp",
+    "name": "Auspicious Carp",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Give it a shake and money will start flowing in from all directions.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 73000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "lively_drum",
+    "name": "Lively Drum",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Boom, boom, boom! Move to the beat as you gather the nectar.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 45000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "toy_frying_pan",
+    "name": "Toy Frying Pan",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Safe and reliable, this is the perfect toy for kids to practice their cooking.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "budding_cart",
+    "name": "Budding Cart",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "La la la, I'm a hardworking little gardener.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 55000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "speedy_nectar_gathering",
+    "name": "Speedy Nectar-Gathering",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "I wonder where the flowers will pop up?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 44000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "cloud_shower",
+    "name": "Cloud Shower",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Take a shower to feel refreshed!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 65000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "rocking_cloud",
+    "name": "Rocking Cloud",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Rock back and forth among the clouds until you drift to sleep. Sweet dreams!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 80000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "bouncy_pudding",
+    "name": "Bouncy Pudding",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Its bounciness is out of this world!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 100000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "baby_parfait",
+    "name": "Baby Parfait",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "A necessity for babies to avoid the summer heat!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 95000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "vintage_cake",
+    "name": "Vintage Cake",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "The handmade cream is fresh and not overly cloying.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 120000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 34
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "tame_shopping_cart",
+    "name": "Tame Shopping Cart",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "I'm going on a shopping spree today!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 150000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "chocolate_cosmetic_case",
+    "name": "Chocolate Cosmetic Case",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Come and try the latest cosmetics!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 90000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "lively_speaker",
+    "name": "Lively Speaker",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "One... two... three... four... and repeat!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 110000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 29
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "wacky_popcorn",
+    "name": "Wacky Popcorn",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Cloud, forest, and star flavors... I want to try every one of them!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 38000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "mystery_mirror",
+    "name": "Mystery Mirror",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "It'll take you someplace you've never been before.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 25
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "rumble_spellbook",
+    "name": "Rumble Spellbook",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Go on and recite your spell loudly: Grumble rumble!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 43000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "pumpkin_go_kart",
+    "name": "Pumpkin Go-Kart",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Don't worry, this pumpkin is unbelievably resistant to breakages.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 55000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "ghoulish_balloons",
+    "name": "Ghoulish Balloons",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Be careful when you walk past them.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 55000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "spot_on_fortunes",
+    "name": "Spot-on Fortunes",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "You only pay if its prediction happens.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 66000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "warm_and_cozy_fireplace",
+    "name": "Warm and Cozy Fireplace",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "You'll doze off before you know it.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 82000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "birdie_gift_box",
+    "name": "Birdie Gift Box",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "A surprise for you!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 65000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "bell_of_blessing",
+    "name": "Bell of Blessing",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Each chime signifies the sincerest of blessings.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 88000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 53
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "powered_tiny_train",
+    "name": "Powered Tiny Train",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "It's also full of power today!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 91000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 51
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "snowfall_bench",
+    "name": "Snowfall Bench",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "You never know what is the next piece of chocolate you will get.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 93000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 54
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "warm_coffee",
+    "name": "Warm Coffee",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Warms you up on this cold winter night.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 68000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 56
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "refined_slingshot",
+    "name": "Refined Slingshot",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Made with care. Be careful not to harm others when using it.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 80000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "asiatic_apple_swing",
+    "name": "Asiatic Apple Swing",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Enjoy this moment as you sway among the petals.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 85000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "fortuitous_pinwheel",
+    "name": "Fortuitous Pinwheel",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Spin it to receive good luck and prosperity.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 82000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 53
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "spinning_top",
+    "name": "Spinning Top",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "The ultimate prize of a spinning top competition.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 88000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "precise_pitch_pot",
+    "name": "Precise Pitch-pot",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Aim with 100% accuracy!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 83000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "prosperous_lion_dance_head",
+    "name": "Prosperous Lion Dance Head",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Usher in good luck and prosperity!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 90000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "cooling_tub",
+    "name": "Cooling Tub",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "A tingle of coolness in the midsummer.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 5000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "countryside_swing",
+    "name": "Countryside Swing",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Swingin' in the countryside.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 4200
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 34
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "twisted_trumpet",
+    "name": "Twisted Trumpet",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "It may twist and turn, but it never goes off-key.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 6800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "simple_balance_beam",
+    "name": "Simple Balance Beam",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Simple, but not easy!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 6600
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "bouncy_mushroom",
+    "name": "Bouncy Mushroom",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Surprisingly bouncy.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 5500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "delicious_food_processor",
+    "name": "Delicious Food Processor",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Who's hungry?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 4800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "acrobatic_unicycle",
+    "name": "Acrobatic Unicycle",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Time to put your cycling skills to the test.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 6300
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "no_frills_yoga_ball",
+    "name": "No-frills Yoga Ball",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Do some stretching to relax your body",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 5800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "bath_of_purity",
+    "name": "Bath of Purity",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Here, you can stripe off all pretenses and show off your natural self.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 160000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "swaying_swan",
+    "name": "Swaying Swan",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Rock-a-bye baby on the tree top...",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 140000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "angels_wings",
+    "name": "Angel's Wings",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Carries you to the distant skies.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 110000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 34
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "romantic_moment",
+    "name": "Romantic Moment",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Revisit that moment anytime you wish.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 105000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 31
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "twinkling_chimes",
+    "name": "Twinkling Chimes",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "What delightfully melodious sounds these chimes make.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 120000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "tender_heart",
+    "name": "Tender Heart",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "My hearts thumps for you.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 95000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 29
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "dancing_cactus",
+    "name": "Dancing Cactus",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Come dance along with Mister Cactus!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 66000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "snowscape_stage",
+    "name": "Snowscape Stage",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Where little snowy stories unfold.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 98000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 58
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "squeaky_scales",
+    "name": "Squeaky Scales",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Launches little birds into the air... Wait, why don't they already fly?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 85000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "fortune_stick_holder",
+    "name": "Fortune Stick Holder",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "This is the best of all fortunes!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 54000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "bird_and_blooms",
+    "name": "Bird and Blooms",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "The charm of a bird chirping amidst flowers.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 62000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "cute_shadow_play_theater",
+    "name": "Cute Shadow Play Theater",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "What an exciting story!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 86100
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 57
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "landscape_hot_spring",
+    "name": "Landscape Hot Spring",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Relax in the water and enjoy the snowy scenery.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 93000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "auspicious_drum",
+    "name": "Auspicious Drum",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Dum dum dum! Check out my dazzling dance moves.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 60000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "elegant_rocking_chair",
+    "name": "Elegant Rocking Chair",
+    "area": "courtyard_pets",
+    "group": "Pet Paradise",
+    "description": "Rocking back and forth... You might doze off before you know it.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 106000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 68
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "classic_log",
+    "name": "Classic Log",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "The scent of nature.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 0
+      }
+    ],
+    "effects": [],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "kitty_lattice",
+    "name": "Kitty Lattice",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "Cats with a British style.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 5000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "memories_of_spring",
+    "name": "Memories of Spring",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "Time waits for no one; give it your all.",
+    "requiredStars": 15000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 12000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "simple_elegance",
+    "name": "Simple Elegance",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "A reserved, low-key look.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 6000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 25
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "reverie_blue",
+    "name": "Reverie Blue",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "It'll bring you into a blue dream.",
+    "requiredStars": 28000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 10000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "sea_salt_soda",
+    "name": "Sea Salt Soda",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "Let the summer sea breeze cool down your body.",
+    "requiredStars": 50000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Of Coconuts Trees and the Sea Breeze"
+  },
+  {
+    "id": "wheat_chocolate",
+    "name": "Wheat Chocolate",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "Kickstart your day with a combination of chocolate and wheat!",
+    "requiredStars": 35000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 62
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "strange_castle",
+    "name": "Strange Castle",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "They say strange things happen in the castle at night...",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 55000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "winter_warmth",
+    "name": "Winter Warmth",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "Do you want a mug of hot cocoa?",
+    "requiredStars": 42000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 63000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "fortunes_and_blessings",
+    "name": "Fortunes and Blessings",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "Wishing you all the best every year!",
+    "requiredStars": 52000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 72000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 135
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "fluffy_clouds",
+    "name": "Fluffy Clouds",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "Feel like you're soaring among the clouds.",
+    "requiredStars": 55000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 85000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 145
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "gilded_feathers",
+    "name": "Gilded Feathers",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "Immerse yourself in this luxurious royal ball.",
+    "requiredStars": 36000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 45000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "merrymaking_carnival",
+    "name": "Merrymaking Carnival",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "You're about to be treated to an exciting performance...!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 62000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 122
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "warm_nostalgia",
+    "name": "Warm Nostalgia",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "Listening to grandpa's childhood stories in a cozy room...",
+    "requiredStars": 42000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 67000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "musical_pavilion",
+    "name": "Musical Pavilion",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "Teach someone the proper way to drink and they'll be the most respected guest at the banquet.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 88000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 145
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "sugar_rush",
+    "name": "Sugar Rush",
+    "area": "courtyard_pets",
+    "group": "Wallpaper",
+    "description": "Surrounded by a sweet fragrance.",
+    "requiredStars": 55000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 42500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 92
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "simple_wooden_rack",
+    "name": "Simple Wooden Rack",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "An ordinary-looking wooden piece of furniture that can hold several potted plants.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 0
+      }
+    ],
+    "effects": [],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "wooden_square_table",
+    "name": "Wooden Square Table",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "If you're bored, just lean over and doodle something.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 15000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "elegant_green_table",
+    "name": "Elegant Green Table",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "An endless supply of cookies... How wonderful that we can eat to our heart's desires!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 66
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "luxurious_desk",
+    "name": "Luxurious Desk",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "Look at the gold-plated tissue box on it! This is clearly an expensive desk.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 55000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 89
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "azure_carnival",
+    "name": "Azure Carnival",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "The items on the table move of their own accord, almost as if they posses actual souls!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 65000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "diary_of_a_sailor",
+    "name": "Diary of a Sailor",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "Everything on this table is beloved by the retired old captain.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 85000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 125
+      }
+    ],
+    "series": "Of Coconuts Trees and the Sea Breeze"
+  },
+  {
+    "id": "minty_sweet_dreams_table",
+    "name": "Minty Sweet Dreams Table",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "Looks like the gnomes can be quite vain as well.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 95000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "luminescent_crystal_table",
+    "name": "Luminescent Crystal Table",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "Under the everlasting rose is a secret no one knows about...",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 85000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 125
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "teddy_wishing_station",
+    "name": "Teddy Wishing Station",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "Fortunately, the chimney is large enough for the Christmas teddy to climb out of!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 78000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 129
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "joyful_sandalwood_table",
+    "name": "Joyful Sandalwood Table",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "I'm such a busy bee! There are still so many couplets left for me to write!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 99000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 135
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "fantastic_dream_table",
+    "name": "Fantastic Dream Table",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "If only I could eat candy before bed.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 120000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 142
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "classy_desk",
+    "name": "Classy Desk",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "Someone told me that I could also become a master as long as I practice diligently!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 99000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 145
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "magic_club",
+    "name": "Magic Club",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "Knowledge about performing constantly flows into the baby's mind.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 96800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 143
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "snowfield_express",
+    "name": "Snowfield Express",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "Toot toot! You little one's daily treats will be delivered right on time!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 84000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 136
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "peach_and_blossom_desk",
+    "name": "Peach and Blossom Desk",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "No snacking on the peaches when practicing calligraphy!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 128000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 152
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "sweet_foodie_moment",
+    "name": "Sweet Foodie Moment",
+    "area": "courtyard_pets",
+    "group": "Desk",
+    "description": "Shhh, the bear is creating a sweet piece of art.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 61000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 96
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "tassel_cushion",
+    "name": "Tassel Cushion",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "It doesn't matter how the cushion looks, as long as it's comfortable.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 0
+      }
+    ],
+    "effects": [],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "checkered_mat",
+    "name": "Checkered Mat",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "This extremely eco-friendly piece is upcycled from an old curtain.",
+    "requiredStars": 12000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "fancy_square_carpet",
+    "name": "Fancy Square Carpet",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "Tiny bows make for intricate decorations at each of the carpet's corners.",
+    "requiredStars": 20000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 15000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "golden_silk_cushion",
+    "name": "Golden Silk Cushion",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "Modeled after the esteemed and highly-regarded paw pad, this is specially sewn and customized with golden thread.",
+    "requiredStars": 45000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "blue_striped_cushion",
+    "name": "Blue Striped Cushion",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "Made of expensive materials, it's so comfy to hug that you'll never want to let it go.",
+    "requiredStars": 35000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 28000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 33
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "blue_white_mat",
+    "name": "Blue-white Mat",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "A simple knitted carpet in a nautical style.",
+    "requiredStars": 55000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Of Coconuts Trees and the Sea Breeze"
+  },
+  {
+    "id": "fluffy_sweetheart_cushion",
+    "name": "Fluffy Sweetheart Cushion",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "I want it to be fluffy! No, even fluffier than that!",
+    "requiredStars": 45000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 42000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "mesmerizing_cobweb",
+    "name": "Mesmerizing Cobweb",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "A super bouncy cobweb rug. Great to keep the mischievous you busy with.",
+    "requiredStars": 35000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 42000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "cozy_knitted_rug",
+    "name": "Cozy Knitted Rug",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "With its fuzzy and soft texture, standing on this rug is very comfortable indeed!",
+    "requiredStars": 48000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 44
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "auspicious_fishes_cushion",
+    "name": "Auspicious Fishes Cushion",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "Who said that I can't possess both cod and ingots? My confidence allows me to easily obtain both at once!",
+    "requiredStars": 58000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 45000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "fluffy_mat",
+    "name": "Fluffy Mat",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "Oh no, I don't want to get up after sitting down!",
+    "requiredStars": 60000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 52000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "rose_ballad",
+    "name": "Rose Ballad",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "The roses growing on this mat will never wilt.",
+    "requiredStars": 45000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 46000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "marvel_night_mat",
+    "name": "Marvel Night Mat",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "Thump, thump, thump! The show is about to begin!",
+    "requiredStars": 36000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 49500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 54
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "astral_apple_mat",
+    "name": "Astral Apple Mat",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "Smells faintly of apples.",
+    "requiredStars": 36000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 46000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "among_the_flowers",
+    "name": "Among the Flowers",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "Surpisingy warm to sit on. Is the floor heated?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 57600
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 56
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "candy_mat",
+    "name": "Candy Mat",
+    "area": "courtyard_pets",
+    "group": "Mat",
+    "description": "Do you think there's any candy hidden beneath the mat?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 26000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "cozy_bed",
+    "name": "Cozy Bed",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "Despite being a simple wooden bed, it bears the memories of growing up.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 0
+      }
+    ],
+    "effects": [],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "classic_crib",
+    "name": "Classic Crib",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "No peeking at the diary on the bed!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 22000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "extravagant_chaise_lounge",
+    "name": "Extravagant Chaise Lounge",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "It feels like you'll only get brilliantly opulent drams when sleeping on this couch.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "dreamscape_wonderland",
+    "name": "Dreamscape Wonderland",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "Don't lose sight of Mr. Rabbit, or you'll get lost in the dreamscape!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 46000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "sailing_impression",
+    "name": "Sailing Impression",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "Modified from a small abandoned ship, it is full of memories of sailing in the wide, open sea.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 58000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Of Coconuts Trees and the Sea Breeze"
+  },
+  {
+    "id": "cooling_elven_dreams",
+    "name": "Cooling Elven Dreams",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "The wonderful combination of butterfly bows and lace makes this adorable beyond compare.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 66000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "butterfly_haunting",
+    "name": "Butterfly Haunting",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "Luminescent butterflies are somehow all you ever dream about when you lay on this.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 55000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 105
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "cozy_wintry_dream",
+    "name": "Cozy Wintry Dream",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "Once you wake up, you'll be surrounded by presents! What joy!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 62000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 125
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "agarwood_arhat_bed",
+    "name": "Agarwood Arhat Bed",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "Um... Dear, the lucky money you hid under your bed can be seen.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 76000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "space_walk_bed",
+    "name": "Space Walk Bed",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "I dreamed I was eating cotton candy!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 88000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 145
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "scented_dreams",
+    "name": "Scented Dreams",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "Enjoy a good night's sleep while surrounded by a pleasant floral scent!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 66000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "dreamy_moment",
+    "name": "Dreamy Moment",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "Who hid candies under the blanket?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 66000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 124
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "sweet_dreams_sleigh",
+    "name": "Sweet Dreams Sleigh",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "It's said that you'll dream of receiving lots of gifts if you sleep in Santa's sleigh!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 64500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 127
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "crescent_daybed",
+    "name": "Crescent Daybed",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "Lean back and rest here if you're tired.",
+    "requiredStars": 56000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 91000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "childhood_dream_bed",
+    "name": "Childhood Dream Bed",
+    "area": "courtyard_pets",
+    "group": "Large Furniture",
+    "description": "Come and take a nap here if you get tired from playing.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 45000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "dry_bottle",
+    "name": "Dry Bottle",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "What can be grown in this bottle? There's not a single drop of water in here.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 0
+      }
+    ],
+    "effects": [],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "novice_potted_plant",
+    "name": "Novice Potted Plant",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "An extremely resilient plant that previously survived under a high-pressure faucet.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 5000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 12
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "loafers_plant",
+    "name": "Loafer's Plant",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "Oh no, I forgot to water it! Good thing it's a cactus...",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 25
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "brilliant_moments",
+    "name": "Brilliant Moments",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "Expensive furniture must be complemented with dazzling lights.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 12000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "rose_paradise",
+    "name": "Rose Paradise",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "How miraculous... Roses are actually growing out of teacups!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 18000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "opalescent_coral_tree",
+    "name": "Opalescent Coral Tree",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "An expensive but beautiful coral handcraft.",
+    "requiredStars": 48000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Of Coconuts Trees and the Sea Breeze"
+  },
+  {
+    "id": "murmuring_dusk_bellflowers",
+    "name": "Murmuring Dusk Bellflowers",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "Silently they bloom, showcasing their vibrant beauty.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "eye_of_the_roses",
+    "name": "Eye of the Roses",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "What a pity... It's missing some dramatic lashes.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 32000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "reindeer_cactus",
+    "name": "Reindeer Cactus",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "What should we do now that the cactus is shaped like antlers? I know—I'll draw a reindeer face on the flower pot!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "kumquat_spring",
+    "name": "Kumquat Spring",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "May you be surrounded by good luck and may all of your endeavors be successful.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "fantastic_snack_cover",
+    "name": "Fantastic Snack Cover",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "No one will notice if I take one, right?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 43000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "royal_display",
+    "name": "Royal Display",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "Which crown should be worn today? I can't decide...",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 33500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "house_of_toys",
+    "name": "House of Toys",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "Remember to put your toys away neatly.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 36000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 51
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "snowfall_crystal_ball",
+    "name": "Snowfall Crystal Ball",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "It's hard to stop staring at the snowflakes inside!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "rouge_pavilion",
+    "name": "Rouge Pavilion",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "The Asiatic apple blossoms are as pink as rouge.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 42000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "hot_air_balloon_basket",
+    "name": "Hot Air Balloon Basket",
+    "area": "courtyard_pets",
+    "group": "Decoration",
+    "description": "Looks cute and can be used for storage too.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 23500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "sticky_note",
+    "name": "Sticky Note",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "Full of encrypted text and doodles that desperately require translation.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 0
+      }
+    ],
+    "effects": [],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "ordinary_noticeboard",
+    "name": "Ordinary Noticeboard",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "As children grow up, they gradually learn how to organize their notes.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 4800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "countryside_painting",
+    "name": "Countryside Painting",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "I hope that I'll be as happy as the lamb in the painting every day.",
+    "requiredStars": 18000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 6000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "vintage_collection",
+    "name": "Vintage Collection",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "These are but run-of-the-mill antiques.",
+    "requiredStars": 40000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "wonderland_emissary",
+    "name": "Wonderland Emissary",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "The mischievous Chesire Cat will show up without warning and scare your presumptuous self.",
+    "requiredStars": 38000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 10000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "shallow_harvest",
+    "name": "Shallow Harvest",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "Emits the sounds of tinkling bells whenever a breeze blows past.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 12000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Of Coconuts Trees and the Sea Breeze"
+  },
+  {
+    "id": "rising_stars_talent_showcase",
+    "name": "Rising Star's Talent Showcase",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "A pet personally fired these porcelain wares. How adorable!",
+    "requiredStars": 42000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 18000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "castle_illusion",
+    "name": "Castle Illusion",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "Why do I feel like I've seen something like this in some other castle?",
+    "requiredStars": 40000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "melody_of_chimes",
+    "name": "Melody of Chimes",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "A beautiful morning begins with the crisp ringing sounds of chimes.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 26000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "abundant_harvest",
+    "name": "Abundant Harvest",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "Don't touch it anymore, darling... It's just a painting.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 28500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "cloudy_storage_shelf",
+    "name": "Cloudy Storage Shelf",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "I'll put all my favorite toys up there.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 32000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "misty_rose",
+    "name": "Misty Rose",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "Bring the lantern along as it can help you to dispel the mist!",
+    "requiredStars": 43000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 21000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "colorful_hanging_decorations",
+    "name": "Colorful Hanging Decorations",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "It makes cheerful tinkling noises when the wind blows.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 31000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 49
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "snowy_white_candy_cane",
+    "name": "Snowy White Candy Cane",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "Can this slender candy cane really hold up all those heavy gifts?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 31800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "ink_orchid",
+    "name": "Ink Orchid",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "No idea who the aritst is, but someone insisted on hanging it right here.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 39000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 54
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "reverie_wall_decor",
+    "name": "Reverie Wall Decor",
+    "area": "courtyard_pets",
+    "group": "Fixed Wall Decor",
+    "description": "Items placed on it tend to appear exeptionally vibrant!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 18000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 34
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "tiny_stationery_holder",
+    "name": "Tiny Stationery Holder",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "This may be tiny but it holds a comprehensive variety of stationery.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "hydroponic_plants",
+    "name": "Hydroponic Plants",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "These weeds that have been retrieved from a pond look rather adorable.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 25
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "slippin_good_time",
+    "name": "Slippin' Good Time",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Sitting on it can cause an entire afternoon to pass in the blink of an eye.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 11000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "mini_clothes_stand",
+    "name": "Mini Clothes Stand",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Somehow used to hold bath towels instead.",
+    "requiredStars": 15000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 25
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "snack_basket",
+    "name": "Snack Basket",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Leave the tastiest one for last!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "elegant_stool",
+    "name": "Elegant Stool",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "The lace on the back of the stool is handmade.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 14000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "mini_breakfast_machine",
+    "name": "Mini Breakfast Machine",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "The fried egg on top of the machine looks quite delectable... Too bad it's just a toy.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 15000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 56
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "elegant_umbrella_rack",
+    "name": "Elegant Umbrella Rack",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Simple but tasteful, this is favored by ladies and gentleman alike.",
+    "requiredStars": 46000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 9000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "gumis_recommendation",
+    "name": "Gumi's Recommendation",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Any dish by an outstanding chef is an exquisite one.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 13000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "treasured_fine_wine",
+    "name": "Treasured Fine Wine",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "In actuality, it's just sweet fruit juice disguised as fine wine.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 15000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "specially_yours",
+    "name": "Specially Yours",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "An elegant chair specifically made for a distinguished pet.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 16000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "miraculous_blessings",
+    "name": "Miraculous Blessings",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "The glittering golden key seems like it'll bring about fantastical adventures.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "scarlet_queen",
+    "name": "Scarlet Queen",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "A mysterious chess piece that suddenly appeared out of thin air one day, emitting a magical aura.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "magic_teapot",
+    "name": "Magic Teapot",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Fills up with a random blend of black tea each and every day.",
+    "requiredStars": 30000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 9500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 34
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "cute_cat_ear_mirror",
+    "name": "Cute Cat Ear Mirror",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "This small mirror with a bow tie affixed to it is beloved by many girls.",
+    "requiredStars": 33000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 10000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "reverie_lamp",
+    "name": "Reverie Lamp",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "A lamp that has grown out of the grass... So, is it an electrical device or a plant, I wonder?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 16000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "marvelous_mushroom_clock",
+    "name": "Marvelous Mushroom Clock",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "It's hard to believe, but when I woke up, the chair turned into a mushroom!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 18000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "wonderland_invitation",
+    "name": "Wonderland Invitation",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Don't wander too close to it or you'll be sucked into the book!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 72
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "salted_fish_cushion",
+    "name": "Salted Fish Cushion",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Don't worry! It only looks like a salted fish, it actually smells nice.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 9000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "splashing_memories",
+    "name": "Splashing Memories",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Bring every little bit of your vacation memories back with you!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 10000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 44
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "splashing_memories_2",
+    "name": "Splashing Memories*",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Bring every little bit of your vacation memories back with you!",
+    "requiredStars": 52000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 11000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "life_philosophy",
+    "name": "Life Philosophy",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Aww, chuck those thoughts aside... How about making some fries instead?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 15000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 51
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "invigorating_summer",
+    "name": "Invigorating Summer",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Summer is the perfect time to drink an icy-cold beverage!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 18000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 58
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "tranquil_jellyfish_lamp",
+    "name": "Tranquil Jellyfish Lamp",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "I feel as though I can stare at the jellyfish for an entire day.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 22000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 62
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "consumption_trap",
+    "name": "Consumption Trap",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "The naughty child secretly used Gumi's credit card.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 12000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Minty Milk Chocolate"
+  },
+  {
+    "id": "minty_breath",
+    "name": "Minty Breath",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Don't worry, it can still blow hot air.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 15000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Minty Milk Chocolate"
+  },
+  {
+    "id": "sweet_temptation",
+    "name": "Sweet Temptation",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Before you know it, your hand is already wrapped around the joystick.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 18000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Minty Milk Chocolate"
+  },
+  {
+    "id": "double_freshness",
+    "name": "Double Freshness",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Although desserts are delicious to eat, don't forget to brush your teeth afterward!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 16000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      }
+    ],
+    "series": "Minty Milk Chocolate"
+  },
+  {
+    "id": "checkered_chair_with_ribbon",
+    "name": "Checkered Chair with Ribbon",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Although it looks pretty... the decoration on the back feels a little scratchy.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 22000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 70
+      }
+    ],
+    "series": "Minty Milk Chocolate"
+  },
+  {
+    "id": "starry_surprise",
+    "name": "Starry Surprise",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Make a wish each time you pick up a star.",
+    "requiredStars": 40000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Minty Milk Chocolate"
+  },
+  {
+    "id": "rapid_cool_kettle",
+    "name": "Rapid-Cool Kettle",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Is it my imagination or does the water exude a faint smell of peppermint?",
+    "requiredStars": 38000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 18000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Minty Milk Chocolate"
+  },
+  {
+    "id": "barons_fine_wine",
+    "name": "Baron's Fine Wine",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "This deep red color... and viscosity... Th-This is tomato juice!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 12000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "rascals_chest",
+    "name": "Rascal's Chest",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "A beautiful locked chest. No one knows where the key is.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 16000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "scurrying_candle",
+    "name": "Scurrying Candle",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Don't blink or it'll appear at your feet before you know it.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 68
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "crimson_cascade",
+    "name": "Crimson Cascade",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Haha, relax, this is just sweet strawberry jam!",
+    "requiredStars": 34000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 15000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "nightly_phantom",
+    "name": "Nightly Phantom",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Go on and dance with the impish rascal in the mirror.",
+    "requiredStars": 36000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 28000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 70
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "castle_chair",
+    "name": "Castle Chair",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Even with these thick layers of cobweb, you can tell this used to be a dainty little chair.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 22000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 75
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "grave_secret",
+    "name": "Grave Secret",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Don't people take their secrets to the grave?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 26000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 77
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "arboreal_porcelain_mug",
+    "name": "Arboreal Porcelain Mug",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "The marshmallows contained within will smell even more fragrant once they're toasted!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 22000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "cozy_wintry_break",
+    "name": "Cozy Wintry Break",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "That was close! I would have fallen asleep if I sat just a tad longer!",
+    "requiredStars": 42000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 58
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "snow_kingdom_candy_train",
+    "name": "Snow Kingdom Candy Train",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Choo-choo! Candy train coming through!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 23000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 53
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "sparkling_christmas_tree",
+    "name": "Sparkling Christmas Tree",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "What dazzling lights! What glittering stars!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 56
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "assorted_candy_canes",
+    "name": "Assorted Candy Canes",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "What should you do if you're tired all the time? Well, try sucking on a mysteriously flavored candy cane to excite your tastebuds!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 24000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "hatty_candle",
+    "name": "Hatty Candle",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "The extraordinary windproof hat will protect the candle's flame from being extinguished!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 19000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "christmas_nesting_dolls",
+    "name": "Christmas Nesting Dolls",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Santa, why is there a snowman in your belly?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 21000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 53
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "exploding_firecrackers",
+    "name": "Exploding Firecrackers",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "You can't set fireworks off indoors, my baby! Oh, it's just a model? Never mind, then.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 32000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "kittys_red_wine",
+    "name": "Kitty's Red Wine",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Although it seems like it contains a high percentage of alcohol, it's actually just sweet rice wine.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 43
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "hard_work_pays_off",
+    "name": "Hard Work Pays Off",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Start the new year right by hitting the books!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 27000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "elegant_incense_burner",
+    "name": "Elegant Incense Burner",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Who says that you have to light up incense? Can't I just admire them while they're on display?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 22000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 25
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "ubiquitous_wealth",
+    "name": "Ubiquitous Wealth",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Plant a money tree seed and wealth will converge at your house from all directions!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "mouthwatering_sweet_potato",
+    "name": "Mouthwatering Sweet Potato",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Freshly baked sweet potatoes! Are you sure you don't wish to have a bite?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 33000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "sandalwood_stool",
+    "name": "Sandalwood Stool",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Comes with a small cushion on it, so that whoever sits on it will feel warm and cozy.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "nostalgic_moment",
+    "name": "Nostalgic Moment",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "It's been so many years since I last played this game! I know what I'm doing the rest of the day.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 38000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "reverie_swing",
+    "name": "Reverie Swing",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "I think back on my carefree childhood when I swing on it.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 35000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 53
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "fantastic_tiny_train",
+    "name": "Fantastic Tiny Train",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Today's train is bound for the galaxy!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 42000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "sleep_well_eyepatch",
+    "name": "Sleep-Well Eyepatch",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "I feel sleepy after putting it on.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 36000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "gachapon_toy",
+    "name": "Gachapon Toy",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "What am I going to get next?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 43000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 53
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "starry_telescope",
+    "name": "Starry Telescope",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Which star is your favorite?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 56
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "cloudy_star_chair",
+    "name": "Cloudy Star Chair",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "I won't feel cold with the rainbow blanket!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 48000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "classic_doll_cabinet",
+    "name": "Classic Doll Cabinet",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "It contains all of my pet's favorite toys!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 19000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "angelic_voice",
+    "name": "Angelic Voice",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "I can hear a melodious voice. Who's singing right now?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 57
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "passage_of_time",
+    "name": "Passage of Time",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Time flies, so enjoy the moment and always be happy!",
+    "requiredStars": 39000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 22000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "soft_satin_chair",
+    "name": "Soft Satin Chair",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "This is a very soft chair, no wonder it's so popular!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 23000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 75
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "angels_letter",
+    "name": "Angel's Letter",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Um.. Did an angel send this letter?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 16000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "royal_swan_rocking_chair",
+    "name": "Royal Swan Rocking Chair",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "My pet has almost outgrown this rocking chair!",
+    "requiredStars": 41000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25600
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 76
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "gilded_perpetual_calendar",
+    "name": "Gilded Perpetual Calendar",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "The liveliest time of year has arrived once more in the blink of an eye.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 18000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 34
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "little_ghost_lamp",
+    "name": "Little Ghost Lamp",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "There might be a surprise when you turn it on!",
+    "requiredStars": 37000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 27000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 76
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "party_cannon",
+    "name": "Party Cannon",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "An amazing moment like this has to be properly celebrated!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 16000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "classic_doll",
+    "name": "Classic Doll",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "A baby's favorite stuffed toy. It looks very cute.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 18000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "cute_mini_trailer",
+    "name": "Cute Mini Trailer",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Sit tight as we set off for the amusement park!",
+    "requiredStars": 35000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20700
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "ecstatic_mood",
+    "name": "Ecstatic Mood",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Drum along to the cheerful beat to create beautiful melodies!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 73
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "club_chair",
+    "name": "Club Chair",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Let me tell you a secret, this icon is actually a three-leaf clover!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 28400
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "delicious_dessert_rack",
+    "name": "Delicious Dessert Rack",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "The melting ice cream looks so sad. Let me take care of it!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 23000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "gingerbread_chair",
+    "name": "Gingerbread Chair",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Sit down on it gently.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 38000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 70
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "wishingful_gift_stocking",
+    "name": "Wishingful Gift Stocking",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Hang it up at night and wake up to a stocking full of gifts!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 19500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "dreamy_candy_house",
+    "name": "Dreamy Candy House",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "The roof 9is icing, and the walls are made of cookies, but it's too pretty to eat!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 26300
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 56
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "apple_fireplace",
+    "name": "Apple Fireplace",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Emits a light fruit tree scent when lit.",
+    "requiredStars": 43000,
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30600
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "passionate_chocolate",
+    "name": "Passionate Chocolate",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "So warm and enthusiastic even the marshmallow dolls are starting to melt!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "starfall_clock",
+    "name": "Starfall Clock",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "The hour hand moves whenever a shooting star streaks by.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 28000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 58
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "rocking_deer",
+    "name": "Rocking Deer",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Rocks back and forth, lulling you to sleep...",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 32400
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 63
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "floral_fruit_platter",
+    "name": "Floral Fruit Platter",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Fresh fruits that are almost too tempting to resist.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 27600
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 31
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "rosewood_round_stool",
+    "name": "Rosewood Round Stool",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "The vivid red is a telltale sign of its many years.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 46000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 64
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "lotus_candlestick",
+    "name": "Lotus Candlestick",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Shines throughout the night without ever flickering out!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 40800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 56
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "melodious_pipa",
+    "name": "Melodious Pipa",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Just a simple wave can make it sing a beautiful melody!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 43900
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 62
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "peach_blossom_tea_cakes",
+    "name": "Peach Blossom Tea Cakes",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "A refreshingly sweet treat that pairs perfectly with tea.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 29000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 34
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "mootlit_reflections_sake",
+    "name": "Mootlit Reflections Sake",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Simply delightful...! *hic*",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 33000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "spherical_rolling_lantern",
+    "name": "Spherical Rolling Lantern",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Toss it up and watch it balance like magic. Give it a push and it rolls along smoothly!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 37000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 53
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "multi_layered_dessert_rack",
+    "name": "Multi-layered Dessert Rack",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "I once heard a certain child mention that they wanted to try eating one hundred layers of dessert.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 17800
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 39
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "cone_microphone",
+    "name": "Cone Microphone",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "No one will be able yo resist the temptation to sing.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20700
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "ice_cream_stool",
+    "name": "Ice Cream Stool",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Feels so cool tpo the touch when you sit on it! An absolute necessity during the summer!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 23500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 53
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "lollipop_candy_jar",
+    "name": "Lollipop Candy Jar",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Everyday, the child eagerly awaits the moment when they get to enjoy these lollipops!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 17200
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 33
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "pinky_ice_cream_car",
+    "name": "Pinky Ice Cream Car",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Look! It's the ice cream car!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 15000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 27
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "bear_cup",
+    "name": "Bear Cup",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "Gulp, gulp, gulp. Let me drink some water before we continue playing.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 19500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "bear_claw_machine",
+    "name": "Bear Claw Machine",
+    "area": "courtyard_pets",
+    "group": "Decor (Floor)",
+    "description": "We've already agreed that this will be your last try.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 21000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "toy_guitar",
+    "name": "Toy Guitar",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "After you switch it on, it'll automatically play a pop song.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 8500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 21
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "wooden_bookshelf",
+    "name": "Wooden Bookshelf",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "Some simple processing is all it takes to turn this superior wood into a bookshelf.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 10000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 33
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "pandoras_puzzle",
+    "name": "Pandora's Puzzle",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "An unremarkable tiny birdcage ornament that leaves you wondering all day about it.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 13000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "sea_breeze_daydream",
+    "name": "Sea Breeze Daydream",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "This tiny pet has a huge dream: to sail the vast ocean.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 16000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Of Coconuts Trees and the Sea Breeze"
+  },
+  {
+    "id": "white_love_sincerity",
+    "name": "White Love Sincerity",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "Did I place the mirror too high up? I can only see half of my face!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "shattered_eden",
+    "name": "Shattered Eden",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "So this is where Eggy hid his apple core...",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 18000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "wish_ornament",
+    "name": "Wish Ornament",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "It's said that wishes won't come true if they're spotted by others. Therefore, this message has been encrypted using pet language!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 21000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "a_branch_of_spring",
+    "name": "A Branch of Spring",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "Who made such exquisite and dainty paper-cut decorations? Turns out it's none other than our lil' craftsman!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "planet_window",
+    "name": "Planet Window",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "I think I saw something sparkle over there.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 30000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "swan_painting",
+    "name": "Swan Painting",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "Can my pet also create such beautiful art if they practice for a few more decades?",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 21000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 43
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "theater_clock",
+    "name": "Theater Clock",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "Yay! It's time for another fun gaming session!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 54
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "warm_winter_wreath",
+    "name": "Warm Winter Wreath",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "A must-have Christmas decoration! Don't forget to kiss your darling under it!",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 25200
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 43
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "spring_at_the_window",
+    "name": "Spring at the Window",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "Spring's first whispers are emerging from beneath the snow.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 33000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 51
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "blue_and_pink_streamers",
+    "name": "Blue and Pink Streamers",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "Provides the wall with an extra hint of cuteness.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 15200
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "green_and_orange_streamers",
+    "name": "Green and Orange Streamers",
+    "area": "courtyard_pets",
+    "group": "Decor (Wall)",
+    "description": "Makes the wall look a little more colorful.",
+    "price": [
+      {
+        "currency": "film",
+        "amount": 16000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 33
+      }
+    ],
+    "series": "Childhood Paradise"
+  }
+]

@@ -37,8 +37,12 @@ class FacilitiesRepository {
     FacilityArea.courtyard: [
       'assets/data/facilities_jsons/courtyard_facilities.json',
     ],
-    FacilityArea.courtyard_concert: [],
-    FacilityArea.courtyard_pets: [],
+    FacilityArea.courtyard_concert: [
+      'assets/data/facilities_jsons/concert_facilities.json',
+    ],
+    FacilityArea.courtyard_pets: [
+      'assets/data/facilities_jsons/pets_facilities.json',
+    ],
   };
 
   final Map<FacilityArea, List<Facility>> _byArea = {};
