@@ -8,6 +8,7 @@ import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:animal_restaurant_tracker/features/pets/ui/pets_page.dart';
 
 import 'package:animal_restaurant_tracker/features/bank/ui/bank_page.dart';
+import 'package:animal_restaurant_tracker/features/completion/ui/completion_page.dart';
 import 'package:animal_restaurant_tracker/features/facilities/data/facilities_repository.dart'
     as facrepo;
 
@@ -305,6 +306,12 @@ class _HomePageState extends State<HomePage> {
                 Icons.attach_money,
                 'Bank',
                 const BankPage(),
+              ),
+              _navTile(
+                context,
+                Icons.checklist,
+                'Cost to Complete',
+                const CompletionPage(),
               ),
               _navTile(
                 context,
