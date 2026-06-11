@@ -11,13 +11,41 @@
     "imageAsset": "assets/images/letters/100k_fans_commemoration.png",
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Red Rose", "slot2": "*", "slot3": "*" },
-      { "slot1": "Red Rose", "slot2": "Sunflower", "slot3": "Bluebell" },
-      { "slot1": "Red Rose", "slot2": "Bluebell", "slot3": "White Rose" },
-      { "slot1": "Red Rose", "slot2": "Daisy", "slot3": "Iron Can" },
-      { "slot1": "Red Rose", "slot2": "Bluebell", "slot3": "Gold Can" },
-      { "slot1": "Red Rose", "slot2": "Gold Can", "slot3": "Seed" },
-      { "slot1": "Daisy", "slot2": "Daisy", "slot3": "Daisy" }
+      {
+        "slot1": "Red Rose",
+        "slot2": "*",
+        "slot3": "*"
+      },
+      {
+        "slot1": "Red Rose",
+        "slot2": "Sunflower",
+        "slot3": "Bluebell"
+      },
+      {
+        "slot1": "Red Rose",
+        "slot2": "Bluebell",
+        "slot3": "White Rose"
+      },
+      {
+        "slot1": "Red Rose",
+        "slot2": "Daisy",
+        "slot3": "Iron Can"
+      },
+      {
+        "slot1": "Red Rose",
+        "slot2": "Bluebell",
+        "slot3": "Gold Can"
+      },
+      {
+        "slot1": "Red Rose",
+        "slot2": "Gold Can",
+        "slot3": "Seed"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "Daisy",
+        "slot3": "Daisy"
+      }
     ]
   },
   {
@@ -32,7 +60,11 @@
     "imageAsset": "assets/images/letters/100k_fans_commemoration.png",
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Sunflower", "slot2": "Bluebell", "slot3": "*" }
+      {
+        "slot1": "Sunflower",
+        "slot2": "Bluebell",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -47,11 +79,31 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Bluebell", "slot2": "Gold Can", "slot3": "*" },
-      { "slot1": "Red Rose", "slot2": "Gold Can", "slot3": "Seed" },
-      { "slot1": "Bluebell", "slot2": "Gold Can", "slot3": "Seed" },
-      { "slot1": "Bluebell", "slot2": "Gold Can", "slot3": "Red Rose" },
-      { "slot1": "Bluebell", "slot2": "Gold Can", "slot3": "Gold Can" }
+      {
+        "slot1": "Bluebell",
+        "slot2": "Gold Can",
+        "slot3": "*"
+      },
+      {
+        "slot1": "Red Rose",
+        "slot2": "Gold Can",
+        "slot3": "Seed"
+      },
+      {
+        "slot1": "Bluebell",
+        "slot2": "Gold Can",
+        "slot3": "Seed"
+      },
+      {
+        "slot1": "Bluebell",
+        "slot2": "Gold Can",
+        "slot3": "Red Rose"
+      },
+      {
+        "slot1": "Bluebell",
+        "slot2": "Gold Can",
+        "slot3": "Gold Can"
+      }
     ]
   },
   {
@@ -66,7 +118,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Sunflower", "slot2": "Red Rose", "slot3": "White Rose" }
+      {
+        "slot1": "Sunflower",
+        "slot2": "Red Rose",
+        "slot3": "White Rose"
+      }
     ]
   },
   {
@@ -81,7 +137,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Red Rose", "slot2": "White Rose", "slot3": "*" }
+      {
+        "slot1": "Red Rose",
+        "slot2": "White Rose",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -96,7 +156,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Daisy", "slot2": "Copper Can", "slot3": "*" }
+      {
+        "slot1": "Daisy",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -111,7 +175,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Sunflower", "slot2": "Daisy", "slot3": "*" }
+      {
+        "slot1": "Sunflower",
+        "slot2": "Daisy",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -126,7 +194,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Any Combination", "slot2": "Any Combination", "slot3": "Any Combination" }
+      {
+        "slot1": "Any Combination",
+        "slot2": "Any Combination",
+        "slot3": "Any Combination"
+      }
     ]
   },
   {
@@ -141,10 +213,26 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "*" },
-      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Sunflower" },
-      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Bluebell" },
-      { "slot1": "Sunflower", "slot2": "Red Rose", "slot3": "Bluebell" }
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "*"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "Sunflower"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "Bluebell"
+      },
+      {
+        "slot1": "Sunflower",
+        "slot2": "Red Rose",
+        "slot3": "Bluebell"
+      }
     ]
   },
   {
@@ -159,7 +247,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Daisy", "slot2": "Bluebell", "slot3": "*" }
+      {
+        "slot1": "Daisy",
+        "slot2": "Bluebell",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -174,8 +266,16 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Bluebell" },
-      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "*" }
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "Bluebell"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -190,7 +290,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "White Rose", "slot2": "*", "slot3": "*" }
+      {
+        "slot1": "White Rose",
+        "slot2": "*",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -205,7 +309,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "White Rose", "slot2": "Gold Can", "slot3": "*" }
+      {
+        "slot1": "White Rose",
+        "slot2": "Gold Can",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -220,7 +328,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Sunflower", "slot2": "Copper Can", "slot3": "*" }
+      {
+        "slot1": "Sunflower",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -235,10 +347,13 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Bluebell", "slot2": "Gold Can", "slot3": "*" }
+      {
+        "slot1": "Bluebell",
+        "slot2": "Gold Can",
+        "slot3": "*"
+      }
     ]
   },
-
   {
     "id": "bald_sheeps_diary",
     "name": "Bald Sheep's Diary",
@@ -251,10 +366,13 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Sunflower", "slot2": "Copper Can", "slot3": "Seed" }
+      {
+        "slot1": "Sunflower",
+        "slot2": "Copper Can",
+        "slot3": "Seed"
+      }
     ]
   },
-
   {
     "id": "kates_present",
     "name": "Kate's Present",
@@ -320,7 +438,6 @@
     "obtainMethod": "Obtained by collecting all blind box mementos from the 2025 Blind Box Memento Event. Obtained via Gachapon after the event.",
     "combinations": []
   },
-
   {
     "id": "border_collies_letter",
     "name": "Border Collie's Letter",
@@ -333,8 +450,16 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Sunflower", "slot2": "Bluebell", "slot3": "Red Rose" },
-      { "slot1": "Sunflower", "slot2": "Bluebell", "slot3": "*" }
+      {
+        "slot1": "Sunflower",
+        "slot2": "Bluebell",
+        "slot3": "Red Rose"
+      },
+      {
+        "slot1": "Sunflower",
+        "slot2": "Bluebell",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -349,12 +474,23 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Red Rose", "slot2": "White Rose", "slot3": "Bluebell" },
-      { "slot1": "Red Rose", "slot2": "White Rose", "slot3": "Sunflower" },
-      { "slot1": "Red Rose", "slot2": "White Rose", "slot3": "*" }
+      {
+        "slot1": "Red Rose",
+        "slot2": "White Rose",
+        "slot3": "Bluebell"
+      },
+      {
+        "slot1": "Red Rose",
+        "slot2": "White Rose",
+        "slot3": "Sunflower"
+      },
+      {
+        "slot1": "Red Rose",
+        "slot2": "White Rose",
+        "slot3": "*"
+      }
     ]
   },
-
   {
     "id": "salesmans_gift",
     "name": "Salesman's Gift",
@@ -433,7 +569,6 @@
     "obtainMethod": "Interact with Felicity Nüwa during Lunar New Year 2025.",
     "combinations": []
   },
-
   {
     "id": "certificate_of_honor",
     "name": "Certificate of honor",
@@ -446,13 +581,28 @@
     "imageAsset": null,
     "obtainMethod": "Obtained randomly with empty slots.",
     "combinations": [
-      { "slot1": "Seed", "slot2": "Seed", "slot3": "Gold Can" },
-      { "slot1": "Daisy", "slot2": "Daisy", "slot3": "Daisy" },
-      { "slot1": "Daisy", "slot2": "Bluebell", "slot3": "*" },
-      { "slot1": "Daisy", "slot2": "*", "slot3": "*" }
+      {
+        "slot1": "Seed",
+        "slot2": "Seed",
+        "slot3": "Gold Can"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "Daisy",
+        "slot3": "Daisy"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "Bluebell",
+        "slot3": "*"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "*",
+        "slot3": "*"
+      }
     ]
   },
-
   {
     "id": "chefs_invitation",
     "name": "Chef's Invitation",
@@ -466,7 +616,6 @@
     "obtainMethod": "Sold by the Mysterious Merchant. Obtained via Gachapon.",
     "combinations": []
   },
-
   {
     "id": "chef_meows_diary_1",
     "name": "Chef Meow's Diary 1",
@@ -479,7 +628,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Daisy", "slot2": "Copper Can", "slot3": "*" }
+      {
+        "slot1": "Daisy",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -494,10 +647,13 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Sunflower", "slot2": "Copper Can", "slot3": "*" }
+      {
+        "slot1": "Sunflower",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
     ]
   },
-
   {
     "id": "childhood_letter",
     "name": "Childhood Letter",
@@ -563,7 +719,6 @@
     "obtainMethod": "Obtained from Children's Day Event 2022.",
     "combinations": []
   },
-
   {
     "id": "chocolate_border_collies_letter_1",
     "name": "Chocolate Border Collie's Letter 1",
@@ -576,7 +731,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Sakura", "slot2": "Sunflower", "slot3": "Gold Can" }
+      {
+        "slot1": "Sakura",
+        "slot2": "Sunflower",
+        "slot3": "Gold Can"
+      }
     ]
   },
   {
@@ -591,7 +750,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Clover" }
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "Clover"
+      }
     ]
   },
   {
@@ -606,7 +769,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Bluebell" }
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "Bluebell"
+      }
     ]
   },
   {
@@ -621,7 +788,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Bluebell", "slot2": "Red Rose", "slot3": "Sunflower" }
+      {
+        "slot1": "Bluebell",
+        "slot2": "Red Rose",
+        "slot3": "Sunflower"
+      }
     ]
   },
   {
@@ -636,11 +807,31 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Daisy", "slot2": "Daisy", "slot3": "Daisy" },
-      { "slot1": "Daisy", "slot2": "Sunflower", "slot3": "Bluebell" },
-      { "slot1": "Daisy", "slot2": "White Rose", "slot3": "Bluebell" },
-      { "slot1": "Daisy", "slot2": "*", "slot3": "Bluebell" },
-      { "slot1": "*", "slot2": "White Rose", "slot3": "Bluebell" }
+      {
+        "slot1": "Daisy",
+        "slot2": "Daisy",
+        "slot3": "Daisy"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "Sunflower",
+        "slot3": "Bluebell"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "White Rose",
+        "slot3": "Bluebell"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "*",
+        "slot3": "Bluebell"
+      },
+      {
+        "slot1": "*",
+        "slot2": "White Rose",
+        "slot3": "Bluebell"
+      }
     ]
   },
   {
@@ -655,7 +846,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Sunflower", "slot2": "Bluebell", "slot3": "Iron Can" }
+      {
+        "slot1": "Sunflower",
+        "slot2": "Bluebell",
+        "slot3": "Iron Can"
+      }
     ]
   },
   {
@@ -670,10 +865,13 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Bluebell", "slot2": "White Rose", "slot3": "Sunflower" }
+      {
+        "slot1": "Bluebell",
+        "slot2": "White Rose",
+        "slot3": "Sunflower"
+      }
     ]
   },
-
   {
     "id": "circus_poster",
     "name": "Circus Poster",
@@ -713,7 +911,6 @@
     "obtainMethod": "Obtained during the 2025 Halloween event.",
     "combinations": []
   },
-
   {
     "id": "diary_of_a_dog_1",
     "name": "Diary Of A Dog 1",
@@ -726,7 +923,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Sunflower", "slot2": "Red Rose", "slot3": "Sakura" }
+      {
+        "slot1": "Sunflower",
+        "slot2": "Red Rose",
+        "slot3": "Sakura"
+      }
     ]
   },
   {
@@ -741,10 +942,13 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Red Rose", "slot2": "Gold Can", "slot3": "Sunflower" }
+      {
+        "slot1": "Red Rose",
+        "slot2": "Gold Can",
+        "slot3": "Sunflower"
+      }
     ]
   },
-
   {
     "id": "eggys_certificate",
     "name": "Eggy's Certificate",
@@ -757,13 +961,28 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Daisy", "slot2": "*", "slot3": "*" },
-      { "slot1": "Daisy", "slot2": "Daisy", "slot3": "Daisy" },
-      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Red Rose" },
-      { "slot1": "Daisy", "slot2": "Red Rose", "slot3": "Bluebell" }
+      {
+        "slot1": "Daisy",
+        "slot2": "*",
+        "slot3": "*"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "Daisy",
+        "slot3": "Daisy"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "Red Rose"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "Bluebell"
+      }
     ]
   },
-
   {
     "id": "eggys_diary_1",
     "name": "Eggy's Diary 1",
@@ -776,7 +995,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "White Rose", "slot2": "Seed", "slot3": "Iron Can" }
+      {
+        "slot1": "White Rose",
+        "slot2": "Seed",
+        "slot3": "Iron Can"
+      }
     ]
   },
   {
@@ -791,7 +1014,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "White Rose", "slot2": "Sakura", "slot3": "Clover" }
+      {
+        "slot1": "White Rose",
+        "slot2": "Sakura",
+        "slot3": "Clover"
+      }
     ]
   },
   {
@@ -845,7 +1072,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Sunflower", "slot2": "Copper Can", "slot3": "Maple Leaf" }
+      {
+        "slot1": "Sunflower",
+        "slot2": "Copper Can",
+        "slot3": "Maple Leaf"
+      }
     ]
   },
   {
@@ -860,7 +1091,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Maple Leaf", "slot2": "Snowflake", "slot3": "Bluebell" }
+      {
+        "slot1": "Maple Leaf",
+        "slot2": "Snowflake",
+        "slot3": "Bluebell"
+      }
     ]
   },
   {
@@ -940,7 +1175,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Bluebell", "slot2": "Snowflake", "slot3": "*" }
+      {
+        "slot1": "Bluebell",
+        "slot2": "Snowflake",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -981,7 +1220,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Clover", "slot2": "Bluebell", "slot3": "Iron Can" }
+      {
+        "slot1": "Clover",
+        "slot2": "Bluebell",
+        "slot3": "Iron Can"
+      }
     ]
   },
   {
@@ -1048,7 +1291,11 @@
     "imageAsset": null,
     "obtainMethod": null,
     "combinations": [
-      { "slot1": "Bluebell", "slot2": "Iron Can", "slot3": "*" }
+      {
+        "slot1": "Bluebell",
+        "slot2": "Iron Can",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -1076,7 +1323,11 @@
     "imageAsset": null,
     "obtainMethod": "Obtained during Lunar New Year 2025. Sold by the Mysterious Merchant.",
     "combinations": [
-      { "slot1": "Daisy", "slot2": "Gold Can", "slot3": "*" }
+      {
+        "slot1": "Daisy",
+        "slot2": "Gold Can",
+        "slot3": "*"
+      }
     ]
   },
   {
@@ -1091,6 +1342,3231 @@
     "imageAsset": null,
     "obtainMethod": "Obtained during the 2025 Halloween event.",
     "combinations": []
+  },
+  {
+    "id": "2026_calendar",
+    "name": "2026 Calendar",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/2026_calendar.png",
+    "obtainMethod": "Obtained during Lunar New Year Event 2026. Obtained via Gachapon with Lunar New Year attribute.",
+    "combinations": []
+  },
+  {
+    "id": "3d_christmas_card_1",
+    "name": "3D Christmas Card 1",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/3d_christmas_card_1.png",
+    "obtainMethod": "Obtained via Gachapon. Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "3d_christmas_card_2",
+    "name": "3D Christmas Card 2",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/3d_christmas_card_2.png",
+    "obtainMethod": "Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "3d_christmas_card_3",
+    "name": "3D Christmas Card 3",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/3d_christmas_card_3.png",
+    "obtainMethod": "Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "3d_christmas_card_4",
+    "name": "3D Christmas Card 4",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/3d_christmas_card_4.png",
+    "obtainMethod": "Obtained during Christmas Event 2022 Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "3d_christmas_card_5",
+    "name": "3D Christmas Card 5",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/3d_christmas_card_5.png",
+    "obtainMethod": "Obtained during Christmas Event 2023 Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "3d_christmas_card_6",
+    "name": "3D Christmas Card 6",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/3d_christmas_card_6.png",
+    "obtainMethod": "Obtained during Christmas Event 2024 Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "3d_christmas_card_7",
+    "name": "3D Christmas Card 7",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/3d_christmas_card_7.png",
+    "obtainMethod": "Obtained during Christmas Event 2025. Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "3hua_poster",
+    "name": "3HUA Poster",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": "New Album Release",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/3hua_poster.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Bluebell",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "a_letter_for_chef_meow",
+    "name": "A Letter For Chef Meow",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": "How have you been as of late, my dear little kitty? I recently spoke about archeology at an all-girls' school and my talk was very well received by the students there! Since these children had previously only learned about archeology by watching TV, their bright eyes looked on with intense interest throughout my entire speech. So many of them peppered me with questions once the lesson ended. Some of these kids are even looking to pursue archeology now. I feel so happy when I look at all of these enthusiastic and curiosity-filled girls!",
+    "earnedStars": "+25",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/a_letter_for_chef_meow.png",
+    "obtainMethod": "Interact with White Bunny in the Courtyard during March 8th 6:00 - March 11th 5:59",
+    "combinations": []
+  },
+  {
+    "id": "a_photo_of_baby_staff",
+    "name": "A Photo of Baby Staff",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/a_photo_of_baby_staff.png",
+    "obtainMethod": "Obtained by collecting all Baby Staff Photos during the Children's Day event.",
+    "combinations": []
+  },
+  {
+    "id": "ambers_diary",
+    "name": "Amber's Diary",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "February 29Oh, my dearest descendent kitty, the purest child in this world, the one who brings a ray of light into my dark world! Come, enter a contract with me. I will do everything in my power to make sure nothing from this world taints you.",
+    "earnedStars": "+20",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/ambers_diary.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "White Rose",
+        "slot2": "Daisy",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "black_shibas_postcard",
+    "name": "Black Shiba's Postcard",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Look, Sis! Shiba Puppy drew us! He's such an artist! After having a long talk with you after our travels, I'm really happy that you've decided to support me! But I've also made up my mind to return and visit more often. I musn't be missing in the family portrait when Shiba Puppy draws one!",
+    "earnedStars": "+90",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/black_shibas_postcard.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "Gold Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "capybaras_reply_letter",
+    "name": "Capybara's Reply Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hello, Goofy! Of course I remember you! Everyone likes you because you're always willing to lend a helping hand! You may not know this, but growing up faster than the rest means that you'll experience more intense growing pains than them, so you're already amazing in that sense! I should congratulate you on entering a new stage of your life! There is no fixed path in life, and when yours takes a different course, I hope you can learn to appreciate the experience and encounters that are unique to you.",
+    "earnedStars": "+20",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/capybaras_reply_letter.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "cheer_for_yolky",
+    "name": "Cheer For Yolky",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "- From zero to hero!- I am Yolky's die hard fan!- Yolky deserves better!- I will see you at the top!!!Let us look forward to Yolky's performance in Oak Bay Idol, which airs every Wednesday night. {{Heart}}{{Heart}}{{Heart}}{{Heart}}{{Heart}}",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/cheer_for_yolky.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "damascus_goat_growth_diary_1",
+    "name": "Damascus Goat Growth Diary 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "March 7th, Friday.Weather: Sunny. Mood: Great.Oh my darling, today is the best day of my life. Because it's the day you were born.The doctor very carefully marked this piece of paper with your first footprint. I've slipped it between the pages of this diary. I just know no matter how big and tall you become in the years to come, you'll always be mama's adorable and precious little kid.",
+    "earnedStars": "+30",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/damascus_goat_growth_diary_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sakura",
+        "slot2": "Seeds",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "damascus_goat_growth_diary_2",
+    "name": "Damascus Goat Growth Diary 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "February 24th, Monday, Sunny, Feeling great.My precious darling participated in the Elementary School Sports Meet today! I can't believe you actually came in first in your group for the 200-meter dash, dear! Mama was so excuted that I nearly ran onto the track! My precious darling's just so amazing!",
+    "earnedStars": "+32",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/damascus_goat_growth_diary_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Clover",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "danis_letter_5",
+    "name": "Dani's Letter 5",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Dear Kate, have you been collecting the recently released blind boxes that feature paintings? Those famous pieces of art as blind boxes are cute and artistic! It really feels like I'm visiting an art exhibit when I put them out on display! Why don't we organize an art salon next month? Thant way, we'll be able to enjoy the art while we chat over afternoon tea! Be sure to come!",
+    "earnedStars": "+28",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/danis_letter_5.png",
+    "obtainMethod": "Obtained by collecting all blind box mementos from Blind Box Memento Event 2026",
+    "combinations": []
+  },
+  {
+    "id": "eggys_diary_25",
+    "name": "Eggy's Diary 25",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Chef said he learned about something called 'annual general meetings' from the humans. He talked sooo long on stage I nearly dozed off... until he suddenly mentioned a lucky draw! I almost fell out of my seat when I found out I'd won the grand prize! But then he said the grand (fill in here)",
+    "earnedStars": "+35",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/eggys_diary_25.png",
+    "obtainMethod": "Obtained during Lunar New Year 2026. Category:Lunar New Year Letter",
+    "combinations": [
+      {
+        "slot1": "Snowflake",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "fashion_magazine",
+    "name": "Fashion Magazine",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/fashion_magazine.png",
+    "obtainMethod": "Part of the storyline, obtain with empty slots/any combination.",
+    "combinations": []
+  },
+  {
+    "id": "fashionable_zebras_diary_1",
+    "name": "Fashionable Zebra's Diary 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Tuesday Sunny, Feeling moodyHow is it possible that such a dull and lifeless animal actually exists?! It's not enough that he prohibits me from filming, but to also tell me to 'stop disturbing [him] with trivial stuff' and to 'settle on a plan if [I] have so much energy'?! Am I such an irresponsible zebra to him?! Never mind, animals like him who can't appreciate art are at dime a dozen. The mind of a genius is not something that an average person can understand, humph!",
+    "earnedStars": "+32",
+    "unlocks": "Fashionable Zebra's Diary 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/fashionable_zebras_diary_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "fashionable_zebras_diary_2",
+    "name": "Fashionable Zebra's Diary 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Friday, Overcast, Feeling... I thought that he hated me, like the rest of my colleagues. However, I didn't expect that he would speak up for me of his own accord during the dispute with our partners this time around. He would even explain my philosophy to others as well. Maybe he's rather nice after all... ahem, but I didn't expect him to understand me so well. Looks like he usually pays close attention to what I do! Well, it's only natural that a flawless artist like me would be so full of charisma...",
+    "earnedStars": "+32",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/fashionable_zebras_diary_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Gold Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "fishing_tournament_invitation",
+    "name": "Fishing Tournament Invitation",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hi Rabbit Ding,To allow fishing enthusiasts to get together and exchange fishing tips, we warmly invite you to take part in the Oak Bay Fishing Tournament! Oak Bay Fishing Association",
+    "earnedStars": "+20",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/fishing_tournament_invitation.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Sunflower",
+        "slot3": "Sakura"
+      }
+    ]
+  },
+  {
+    "id": "foxs_graduation_1",
+    "name": "Fox's Graduation 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I've finally graduated! When the photographer asked for everyone to throw their caps, I was silently praying that none of them would fall on me. After taking this photo, I have officially said goodbye to my student life. I don't know if the future will be smooth sailing. At this moment, I am both happy and a little anxious.",
+    "earnedStars": "+55",
+    "unlocks": "Fox's Graduation 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/foxs_graduation_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "foxs_graduation_2",
+    "name": "Fox's Graduation 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Today I went for an interview. The interviewer was really patient with me. Previously, I had read in the newspaper that many companies had really long working hours so I was worried. When I finally asked him about whether there were long working hours at the company, the interviewer looked confused. This made me start to doubt the authenticity of the news. Or does long working hours only apply to human companies?",
+    "earnedStars": "+37",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/foxs_graduation_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Clover",
+        "slot3": "Bluebell"
+      }
+    ]
+  },
+  {
+    "id": "goofys_letter",
+    "name": "Goofy's Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hello, Miss Capybara! You taught me before, do you still remember me? I'm in fifth grade now, but I feel sad these days. Can I tell you about my problems? I'm slow in everything, but I grow a lot faster than my classmates. I always look the biggest in group photos... Classmates who knock into me say that I'm like a wall. Something about my body is changing too. Running and jumping are now difficult, and my classmates are talking about how I dirtied my chair the last time. I feel really upset about it.",
+    "earnedStars": "+25",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/goofys_letter.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Bluebell",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "hamsters_diary_1",
+    "name": "Hamster's Diary 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "The takeout guy who passed by today was so handsome! Just like a prince charming saving a damsel in distress, he got my handbag back from the robber in no time! But he seemed to have missed the time for his order because he stopped to help me. Luckily, I managed to catch a glimpse of the name of the restaurant he's working for! I'm going to order more takeouts so that I can see him more often!",
+    "earnedStars": "+22",
+    "unlocks": "Hamster's Diary 2, Newspaper 7",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/hamsters_diary_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Maple Leaf",
+        "slot2": "Red Rose",
+        "slot3": "Copper Can"
+      }
+    ]
+  },
+  {
+    "id": "hamsters_diary_2",
+    "name": "Hamster's Diary 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Today, I ordered takeout. The takeout guy from that day delivered the food! There were some pests in my house and he helped to take care of them! He told me that his name is Tate. He's such a gentle guy, I'm so lucky to have met him!",
+    "earnedStars": "+26",
+    "unlocks": "Hamster's Diary 3",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/hamsters_diary_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Gold Can",
+        "slot2": "Red Rose",
+        "slot3": "Iron Can"
+      }
+    ]
+  },
+  {
+    "id": "hamsters_diary_3",
+    "name": "Hamster's Diary 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "The weather's turning colder, and I want to knit a scarf for Tate. What about blue? It's a gentle and quiet color, and it seems like it would fit Tate very well. Will he like it? I'm so nervous.",
+    "earnedStars": "+28",
+    "unlocks": "Hamster's Diary 4",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/hamsters_diary_3.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Snowflake",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "hamsters_diary_4",
+    "name": "Hamster's Diary 4",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Tate passed by when I was at my singing class today! I was so nervous that I almost sang out of tune! But when I left the classroom, I saw a packet of throat candy on the windowsill. The throat candy soothed my dry and sore throat, and tasted just like sweet peaches. Tate even left me a message inviting me to the Oak Bay night bazaar next month! Eep, it's making me nervous!",
+    "earnedStars": "+32",
+    "unlocks": "Hamster's Diary 5",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/hamsters_diary_4.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Clover",
+        "slot2": "Gold Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "hamsters_diary_5",
+    "name": "Hamster's Diary 5",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Deciding on a dress to wear took so much time that I almost ended up late. I ran all the way to our meeting point to find that Tate was early and had already been waiting for some time! Oh, and he was wearing the scarf I gave him (seeing it made me so happy!). We shared lots of delicious food and he even bought a cute flower for me when we passed by a flower stall! I will always remember every moment that we spent at the bazaar tonight!",
+    "earnedStars": "+32",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/hamsters_diary_5.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "handsome_mouses_playing_card_3",
+    "name": "Handsome Mouse's Playing Card 3",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/handsome_mouses_playing_card_3.png",
+    "obtainMethod": "Obtained from the Card-Playing Mouse when gambling during the Children's Day event.",
+    "combinations": []
+  },
+  {
+    "id": "animal_restaurant_wikihelping_out",
+    "name": "Animal Restaurant Wiki:Helping Out",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Being by the sea really helps people to relax! The sound of waves is so soothing and sun bathing is a great way to recharge your energy! Can we go on more retreats like this?",
+    "earnedStars": "+10",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/animal_restaurant_wikihelping_out.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Daisy",
+        "slot3": "Sunflower"
+      },
+      {
+        "slot1": "Sunflower",
+        "slot2": "Red Rose",
+        "slot3": "Bluebell"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "Bluebell"
+      }
+    ]
+  },
+  {
+    "id": "insta_pups_letter",
+    "name": "Insta-Pup's Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Do you still remember me? You went viral! It's allbecause of these pictures and videos I shot. My mastermade it into a vlog and uploaded it online!",
+    "earnedStars": "+170",
+    "unlocks": "Mushroom Forest, Spicy Crawdads, Insta-Pup's Letter 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/insta_pups_letter.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Red Rose",
+        "slot3": "Copper Can"
+      }
+    ]
+  },
+  {
+    "id": "insta_pups_letter_2",
+    "name": "Insta-Pup's Letter 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Let me share my latest pic with you, Chef!A while ago, it was midgnight and I couldn't sleep, so I went out to clear my head. Even though it was so late, I still saw a takeout guy delivering food. He was like a lone knight, riding through the deserted streets.",
+    "earnedStars": "+22",
+    "unlocks": "Insta-Pup's Letter 4",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/insta_pups_letter_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Clover",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "insta_pups_letter_3",
+    "name": "Insta-Pup's Letter 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "We're live here at the offline event. It's a special day today! There are many cute people here, and the atmosphere is great! Chef told me that he's very happy to meet everyone including you who are watching this live stream. We hope that everybody has a wonderful day!",
+    "earnedStars": "+20",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/insta_pups_letter_3.png",
+    "obtainMethod": "Increased chance of obtaining from August 29th to August 31st",
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Daisy",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "insta_pups_letter_4",
+    "name": "Insta-Pup's Letter 4",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Long time no see, Chef! I'm on a plateau now. Can you see the snowy mountains in the distance? It shines like gold in the rising sun. You should come see it next time. Oh, I also picked up an abandoned teddy ragdoll. Isn't it cute?",
+    "earnedStars": "+37",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/insta_pups_letter_4.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "White Rose",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "insta_pups_letter_5",
+    "name": "Insta-Pup's Letter 5",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I found the film from my first camera, and discovered the photo when I had it developed! Doesn't it look familiar? The siblings must be living their best lives now.",
+    "earnedStars": "+45",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/insta_pups_letter_5.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Red Rose",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "landlubber_goose",
+    "name": "Landlubber Goose",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Chef, look! I can already float! I think I have the potential to become a pro swimmer!",
+    "earnedStars": "+75",
+    "unlocks": "Landlubber Goose 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/landlubber_goose.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "Copper Can",
+        "slot3": "Gold Can"
+      }
+    ]
+  },
+  {
+    "id": "landlubber_goose_2",
+    "name": "Landlubber Goose 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Dear Chef,I represented our district in a swimming competition! Although I worked really hard it was still not good enough and I've only won the bronze medal... But I'm not going to give up! I will train even harder and win the gold medal next time!",
+    "earnedStars": "+25",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/landlubber_goose_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "Copper Can",
+        "slot3": "Daisy"
+      }
+    ]
+  },
+  {
+    "id": "templateletter",
+    "name": "Template:Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Being by the sea really helps people to relax! The sound of waves is so soothing and sun bathing is a great way to recharge your energy! Can we go on more retreats like this?",
+    "earnedStars": "+10",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/templateletter.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Daisy",
+        "slot3": "Sunflower"
+      },
+      {
+        "slot1": "Sunflower",
+        "slot2": "Red Rose",
+        "slot3": "Bluebell"
+      },
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "Bluebell"
+      }
+    ]
+  },
+  {
+    "id": "letter_covered_in_doodles",
+    "name": "Letter Covered in Doodles",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "To the shiny-furred Timmy,I respect your work!Your fur is as shiny as the Milky Way!Your eyes are as mesmerizing as sapphires!I want to see you every day.I really want to be like a normal customerand sit down for a meal, butI worry I'll bother you all, sowill you let me use this method to order takeout?",
+    "earnedStars": null,
+    "unlocks": "Phantom's Order, Phantom's Letter 3",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/letter_covered_in_doodles.png",
+    "obtainMethod": "This letter can be obtained repeatedly.",
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "letter_from_glamourous_lady_son",
+    "name": "Letter from Glamourous Lady Son",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Dear Mom, how are you doing? I'm doing pretty well over here, but I may not have time to visit you these days. I have some good news! I may have found my soulmate. I hope you're happy, Mom.",
+    "earnedStars": "+210",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/letter_from_glamourous_lady_son.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Snowflake",
+        "slot2": "Maple Leaf",
+        "slot3": "Sunflower"
+      }
+    ]
+  },
+  {
+    "id": "letter_from_the_department_of_education",
+    "name": "Letter From The Department Of Education",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Thank you for your contribution to education! Let us build a better future together!",
+    "earnedStars": "+50",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/letter_from_the_department_of_education.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "letter_from_the_magazine",
+    "name": "Letter from the Magazine",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Dear Mr. Jiji, thank you for being a part of our magazine's fashion event! Your amazing style brought so much inspiration and vitality to the event, and we look forward to working with you again. Please find enclosed a photo we took of you on the runway!",
+    "earnedStars": "+33",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/letter_from_the_magazine.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Gold Can",
+        "slot2": "Bluebell",
+        "slot3": "White Rose"
+      }
+    ]
+  },
+  {
+    "id": "letter_in_a_book_1",
+    "name": "Letter in a Book 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hello, Ms. Axolotl:I'm always able to see your name on library cards and have since realized that we love to read the same types of books. Today, while browsing through the book of The Milky Way I, I discovered a note that you left behind. 'The moon is an eternal witness to all of our stories.' What were you feeling when you wrote this? Coincidentally, the moonlight outside that window tonight is so bright indeed. I really want to share this with you, so I'm placing this letter in the Milky Way II, in the hope that you'll be able to find it.--Wanting to know you better, Weeping Croc",
+    "earnedStars": "+20",
+    "unlocks": "Letter in a Book 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/letter_in_a_book_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "letter_in_a_book_2",
+    "name": "Letter in a Book 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hello Mr. Weeping Croc:Nice to meet you! I'm always able to find you by the book-lending area. I feel exceptionally close to the moon because of its close proximity to us - as it hangs in the sky, it must be able to hear many of our secrets, or listen to many of our troubles. The moon seems quite sad, just like you do, Mr. Weeping Croc... why do you always look so sorrowful? I'm sharing with you a photograph of the moon outside my window tonight, along with a portrait that I drew of you.--Also hoping to know you better, Axolotl",
+    "earnedStars": "+25",
+    "unlocks": "Letter in a Book 3",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/letter_in_a_book_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Gold Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "letter_in_a_book_3",
+    "name": "Letter in a Book 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hello, Ms. Axolotl:After looking at the apt but interesting portrait that you drew, I realized that I do always seem to be bawling my eyes out. I would be extremely sad every time I have writer's block because I would doubt whether I am truly suited for writing. If anything could happen in our universe, as it is written in The Milky Way III, then it wouldn't be strange for a crocodile to write romance novels, right? I'm also attaching a bookmark that I personally made to this letter.--Searching for inspiration, Weeping Croc",
+    "earnedStars": "+30",
+    "unlocks": "Letter in a Book 4",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/letter_in_a_book_3.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "White Rose",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "letter_in_a_book_4",
+    "name": "Letter in a Book 4",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hello Mr. Weeping Croc: The Milky Way III caused me to realize that every celestial body is unique, just like us—a crocodile can write romance novels, while a tiny axolotl can write suspenseful ones. Nothing can stop us from doing whatever we desire! Oh right, whenever I lack inspiration, I'd always go to this restaurant and enjoy the delicious food there. You can try it out as well; I've attached a map to this letter. ——Also experiencing writer's block, Axolotl",
+    "earnedStars": "+30",
+    "unlocks": "Letter in a Book 5",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/letter_in_a_book_4.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "Gold Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "letter_in_a_book_5",
+    "name": "Letter in a Book 5",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hello Ms. Axolotl: I went to the restaurant that you recommended previously and I now feel much happier! Indeed, delicious food, just like the written word, can heal one's soul. However, I am still feeling quite sad, since The Milky Way is about to end. I do not want to lose contact with you, since there are still so many ideas that I wish to discuss with you. Fortunately, the Leonids meteor shower shall occur two days from now. It is said that anyone who sees it will be extraordinarily lucky, so I'm plucking up my courage and inviting you to the planetarium. I've attached the tickets to this letter. —— Nervously waiting, Weeping Croc",
+    "earnedStars": "+35",
+    "unlocks": "Letter in a Book 6",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/letter_in_a_book_5.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Gold Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "letter_in_a_book_6",
+    "name": "Letter in a Book 6",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hello Mr. Weeping Croc: I'm so happy we managed to watch the meteor shower together. When the shooting stars streaked across the sky, I made a wish. Did you make a wish too? If so, can you tell me about it the next time we meet? —— Contentedly, Axolotl",
+    "earnedStars": "+30",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/letter_in_a_book_6.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "letters",
+    "name": "Letters",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": "+88",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/letters.png",
+    "obtainMethod": "Sold by the Mysterious Merchant. Obtained via Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "lil_giraffes_letter",
+    "name": "Lil' Giraffe's Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I've been really upset recently because I'm not able to appear in the same photo with my parents or friends, regardless of who I'm taking the picture with. I'm so distressed over this... Uncle Chef, do you think I should grow taller or not?",
+    "earnedStars": "+25",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/lil_giraffes_letter.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "liliths_ramblings",
+    "name": "Lilith's Ramblings",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "The afternoon breeze at Oak Bay is always so gentle as it carries the dancing dandelion seeds away in the air. The sun shines upon every tree, and you can hear everyone's joyful laughter even from a distance away. It makes me want to set up my canvas and immortalize all of it with my paintbrush.",
+    "earnedStars": "+30",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/liliths_ramblings.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Bluebell",
+        "slot3": "Clover"
+      }
+    ]
+  },
+  {
+    "id": "little_foxs_diary_2",
+    "name": "Little Fox's Diary 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "June 2, 2016There's a thin cat over there. It looks like he hasn't been tamed.",
+    "earnedStars": "+250",
+    "unlocks": "Sadako's Well, Little Fox's Diary 3",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/little_foxs_diary_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Red Rose",
+        "slot3": "Clover"
+      }
+    ]
+  },
+  {
+    "id": "little_foxs_diary_3",
+    "name": "Little Fox's Diary 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "June 3, 2016Why is he wearing a scarf? Is he looking over here? Why is he still here today?",
+    "earnedStars": "+270",
+    "unlocks": "Skeleton Trail",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/little_foxs_diary_3.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "Copper Can",
+        "slot3": "White Rose"
+      }
+    ]
+  },
+  {
+    "id": "little_foxs_letter",
+    "name": "Little Fox's Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "When I go hunting, when I sit on the hill and watch the field of golden wheat, when I drink water, when I'm dreaming... I've already started to miss him.",
+    "earnedStars": "+125",
+    "unlocks": "Little Fox, Little Fox's Diary 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/little_foxs_letter.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Iron Can",
+        "slot3": "Seeds"
+      }
+    ]
+  },
+  {
+    "id": "little_koalas_diary",
+    "name": "Little Koala's Diary",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "During art class today, our teacher taught us how to make clay fugurines. It was the perfect chance to prepare a special Mother's Day surprise for Mom! Teacher told us to first picture a vivid image and focus on that image in our minds, so I thought of the time when Mom hung on to a tree while carrying me on her back so that we could bask in the sunlight together. This made me want to sculpt clay figurines of Mom and I! Back then, Mom would even tell me bedtime stories until I fell asleep. Mom truly is the best mother in the world, hehe!",
+    "earnedStars": "+52",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/little_koalas_diary.png",
+    "obtainMethod": "Increased chance of obtaining from May 9th to May 13th",
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "little_turtles_letter",
+    "name": "Little Turtle's Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Chef, we've been spring cleaning at school and found a drawing hidden away in a corner. Something bad seems to have happened in one of our classmate's home. It's so scary! Should we hand the drawing to our teacher?",
+    "earnedStars": "+12",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/little_turtles_letter.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Clover",
+        "slot2": "Daisy",
+        "slot3": "Sunflower"
+      }
+    ]
+  },
+  {
+    "id": "little_turtles_letter_2",
+    "name": "Little Turtle's Letter 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I'm so happy today, Chef! During field day in school, we had to take part in an event with our mom and dad, but I didn't have anyone with me... I didn't want to be part of it at first, but because Snow Leopard Pup hurt his leg, his dad asked me if I wanted to take part in it with him instead. This is my first time joining a competition with 'Dad'! Hehe, I hope I dream of Dad tonight so that I can tell him all about today!",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/little_turtles_letter_2.png",
+    "obtainMethod": "Increased chance of obtaining from June 21st to June 23rd",
+    "combinations": [
+      {
+        "slot1": "Copper Can",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "little_turtles_letter_3",
+    "name": "Little Turtle's Letter 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hey, Chef! Today we went to play the claw machine after school! That was a first for me, but it seems like I have a knack for it. My friends couldn't catch a thing, but I managed to catch one for everyone! It felt good, hehe!",
+    "earnedStars": "+16",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/little_turtles_letter_3.png",
+    "obtainMethod": "Obtained from Children's Day Event 2025",
+    "combinations": []
+  },
+  {
+    "id": "lynxs_diary_1",
+    "name": "Lynx's Diary 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "A group of people wearing uniforms came after my leg was caught by the animal trap. It was really scary when they used rope to tie me up. I thought they were going to kill me, but they were actually trying to save me. Why are there both people who want to kill me and people who want to save me?",
+    "earnedStars": "+25",
+    "unlocks": "Lynx's Diary 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/lynxs_diary_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Sakura",
+        "slot3": "Bluebell"
+      }
+    ]
+  },
+  {
+    "id": "lynxs_diary_2",
+    "name": "Lynx's Diary 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I was at a place called Wildlife Rescue Station when I was recovering from my wounds. There were many animals who had similar experiences to mine. It was here that I learned that humans and animals are alike. We both have the good and the evil.",
+    "earnedStars": "+55",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/lynxs_diary_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Sunflower",
+        "slot3": "Gold Can"
+      }
+    ]
+  },
+  {
+    "id": "magpie_bridge_meeting",
+    "name": "Magpie Bridge Meeting",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I remember seeing a man practicing embroidering a mandarin duck pouch two days ago when I was delivering letters. That embroidery was terrible. However, I was surprised when I saw him giving that pouch shyly to a lady who seemed to be his wife today because I caught a glimpse of the mandarin duck embroidery, and it looked so good! Is this the power of love? I don't quite understand it, but I felt touched.",
+    "earnedStars": "+30",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/magpie_bridge_meeting.png",
+    "obtainMethod": "Higher chance to obtain from August 9th to August 18th",
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "mothers_letter_to_son_1",
+    "name": "Mother's Letter to Son 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Oh, my son, I made a big mistake! I got a virus on my phone, and it stole all the money from my bank account. I felt so devastated, even through it was just one card. But a friendly bird from the neighbourhood offered me support and reassurance. I wouldn't have known what to do without his help!",
+    "earnedStars": "+60",
+    "unlocks": "Newspaper 8",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/mothers_letter_to_son_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "Snowflake",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "mothers_letter_to_son_2",
+    "name": "Mother's Letter to Son 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Remember that little bird I mentioned? He helped me get my money back! Young people these days are amazing. He's a bit of a homebody, but I'm taking him out more often. He also taught me how to book flights and hotels on my phone. It's so convenient!",
+    "earnedStars": "+100",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/mothers_letter_to_son_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Gold Can",
+        "slot2": "Bluebell",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "mountain_nightscape",
+    "name": "Mountain Nightscape",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "This Valentine's Day Hike was a rare opportunity for me to spend some time with my husband! Ever since we were blessed with a baby, we'realways taking care of them and thus had little time to spend as a couple. This mountain hike has reignited the romantic spark between us once more. After all, we used to hike a lot back in the day! Tonight, I was able to admire the starry night sky with my husband once more, like we were the only ones left in this world. What gogeous scenery it was! I'm certain that I'll frequently reminisce about today's events in my later years.",
+    "earnedStars": "+12",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/mountain_nightscape.png",
+    "obtainMethod": "Higher chance to obtain from February 13th to February 17th",
+    "combinations": [
+      {
+        "slot1": "White Rose",
+        "slot2": "Red Rose",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "my_dearest_friend_1",
+    "name": "My Dearest Friend 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Since I was little, I've always believed there was a mysterious fairy protecting us. When we're out in the open, food will always appear on time when we need it. And when our people are hurt, they'll disappear for a time and come back perfectly healthy! It's amazing!",
+    "earnedStars": "+35",
+    "unlocks": "My Dearest Friend 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/my_dearest_friend_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Bluebell",
+        "slot3": "Snowflake"
+      }
+    ]
+  },
+  {
+    "id": "my_dearest_friend_2",
+    "name": "My Dearest Friend 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I finally met my fairy today! He's a very small human.I want to be his friend! I wonder why he ran away once he saw me. Is it because I saw the surprise he was preparing?",
+    "earnedStars": "+55",
+    "unlocks": "My Dearest Friend 3",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/my_dearest_friend_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Gold Can",
+        "slot2": "Bluebell",
+        "slot3": "Clover"
+      }
+    ]
+  },
+  {
+    "id": "my_dearest_friend_3",
+    "name": "My Dearest Friend 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I decided to prepare a surprise for my friend! However, I couldn't find him, even after searching for a long time. I even accidentally fell into a swamp! Fortunately, he appeared in the nick of time and rescued me with the help of his people. Although I'm slightly worse for wear now, I'm happy to have finally met him!",
+    "earnedStars": "+76",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/my_dearest_friend_3.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Seeds",
+        "slot2": "Bluebell",
+        "slot3": "Maple Leaf"
+      }
+    ]
+  },
+  {
+    "id": "new_album_release",
+    "name": "New Album Release",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Oak Bay's No.1 pop band is releasing their first album 'Heartbeat 0.01' today! In collaboration with the famous producer Wandering Singer, this album recounts three boys' stories of falling in love at first sight. The album features 6 singles and contains 1 Disc, a 36-page lyrics booklet, and 3 photo cards of band members.",
+    "earnedStars": "+55",
+    "unlocks": "Album",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/new_album_release.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Snowflake",
+        "slot2": "Red Rose",
+        "slot3": "Copper Can"
+      }
+    ]
+  },
+  {
+    "id": "new_friend_aten",
+    "name": "New Friend Aten",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/new_friend_aten.png",
+    "obtainMethod": "Finish the puzzle in the Stamp & Puzzle Event to obtain. Was obtainable from Hedwig and could have been bought from Mysterious Merchant from May 3rd 2022 to June 30th 2022",
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Sakura",
+        "slot3": "Iron Can"
+      }
+    ]
+  },
+  {
+    "id": "newspaper_1",
+    "name": "Newspaper 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Following the economic downturn, many companies have chosen to optimize their staff structure or encourage staff to work overtime. More and more companies have their staff working 12 hours a day, 6 days a week. Stress also represents opportunities and struggle.",
+    "earnedStars": "+80",
+    "unlocks": "Sunset Luxury Tours",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/newspaper_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "newspaper_10",
+    "name": "Newspaper 10",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Breaking news! Annie, the daughter of this city's richest tycoon, has suddenly gone missing! Surveillance footage shows that she was last potted at 28 Sandy Bay! Desperate to find his daughter, the chairman is looking to netizens for any clues as to her whereabouts! Anybody who provides useful information will be handsomely rewarded!Comment 1: Wow! I wish I wasn't on vacation right now because I really want that generous reward!Comment 2: I may have spotted her at Animal Restaurant some time ago!Comment 3: I've heard that Miss Annie is surrounded by bodyguards wherever she goes. Surely she'll also be fine this time around?",
+    "earnedStars": "+20",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/newspaper_10.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Copper Can",
+        "slot2": "Daisy",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "newspaper_2",
+    "name": "Newspaper 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "A travel guru has uncovered a mysterious restaurant in the forest! A restaurant with a feline chef has gone viral! Some insiders have revealed that this so-called 'uncovering' process was all a collaboration, and the travel guru is only promoting the restaurant for money. Many customers who have visited think the flavor is nothing special... and that the boss is so rude! There's also a sneaky black cat who's always watching the customers.",
+    "earnedStars": "+240",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/newspaper_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Bluebell",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "newspaper_3",
+    "name": "Newspaper 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "The chef of the famous Animal Restaurant is under investigation. An insider has revealed that the chef has been reported to the Cod Price Bureau.Comment 1: Food's getting more and more expensive. It's getting excessive!Comment 2: Serves him right! He looks like a villain!",
+    "earnedStars": "+120",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/newspaper_3.png",
+    "obtainMethod": "Part of the storyline, obtain with empty slots/any combination.",
+    "combinations": []
+  },
+  {
+    "id": "newspaper_4",
+    "name": "Newspaper 4",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Based on relevant information from insiders, investigative reporters managed to visit a beaver pelt trading market undercover. Reporters discovered that many beavers are hunted and killed to produce high quality pelts for sale, causing the beaver population to decline rapidly.",
+    "earnedStars": "+100",
+    "unlocks": "Reverie Fridge, Eggy's Diary 6",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/newspaper_4.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Gold Can",
+        "slot2": "Bluebell",
+        "slot3": "Sunflower"
+      }
+    ]
+  },
+  {
+    "id": "newspaper_5",
+    "name": "Newspaper 5",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Direct from the first Oak Bay Idol public performance! Who is your favorite? Come and show your support!Comment 1: Ahhhhh! Go Yolky, go! You will always be my hero!Comment 2: Why is Rich Kid in the center? Feels shady...Comment 3: Abi, Abi! Forever will be!",
+    "earnedStars": "+60",
+    "unlocks": "Newspaper 6",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/newspaper_5.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Copper Can",
+        "slot2": "Bluebell",
+        "slot3": "Sakura"
+      }
+    ]
+  },
+  {
+    "id": "newspaper_6",
+    "name": "Newspaper 6",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Yolky, a rising star from the popular Oak Bay Idol, has been called out for not maintaning his body image! His dressing room was filled with empty milk tea cans! Can this disqualify him from being an idol? Comment 1: He looks so fat in this photo!Comment 2: Can the unscrupulous media stop calling Yolky out?Comment 3: If he can't maintain his body image, he has no right to debut!",
+    "earnedStars": "+65",
+    "unlocks": "3HUA Poster",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/newspaper_6.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Iron Can",
+        "slot3": "Clover"
+      }
+    ]
+  },
+  {
+    "id": "newspaper_7",
+    "name": "Newspaper 7",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "A takeout guy chased down a snatch thief and handed them over to the police. We must praise his bravery and enthusiasm for helping others! We hope to see more of these heartening actions from the community soon! Comment 1: Wow! More people should be as brave as him! Comment 2: This guy is quite handsome!",
+    "earnedStars": "+35",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/newspaper_7.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Iron Can",
+        "slot3": "Clover"
+      }
+    ]
+  },
+  {
+    "id": "newspaper_8",
+    "name": "Newspaper 8",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "The police cracked a scam targeting the elderly today. A citizen named Birdie actively gathered evidence and provided witness testimony, greatly assisting the police with their investigation. Birdie has been awarded a Warm-Hearted Citizen badge. This serves as a reminder for the residents of Oak Bay to remain vigilant against potential scam.",
+    "earnedStars": "+80",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/newspaper_8.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Maple Leaf",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "newspaper_9",
+    "name": "Newspaper 9",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Recently, a famed restaurant chef collaborated with a well-established bakery of 30 years to release the brand-new 'Kitty Bread'! This bread has a revolutionary texture, thanks to its unique recipe and the traditional method used to bake it! Review 1: I can't believe that the queue to buy the bread had stretched all the way to the village entrance by the time I swung by this morning! Review 2: It's absolutely delicious! It's the first time I've ever eaten a bread with such a unique mouthfeel! I'll definitely buy it again! Review 3: It's horrendous; it tastes worse than the bread sold by the bakery next door.",
+    "earnedStars": "+30",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/newspaper_9.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Seeds",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "old_journal_page",
+    "name": "Old Journal Page",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "December 2005Today's so cold! My friends and I adopted a kitten. He curled up into a little ball in the corner ofthe big box. I want to name him Gumi.",
+    "earnedStars": "+200",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/old_journal_page.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Iron Can",
+        "slot3": "Bluebell"
+      }
+    ]
+  },
+  {
+    "id": "orcas_letter",
+    "name": "Orca's Letter",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": "Chef, happy new year!The only holiday of the year is finally upon us. It's sucha great feeling!When is your restaurant going on holiday?",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/orcas_letter.png",
+    "obtainMethod": "Obtained during the Lunar New Year 2020 event. Sold by the Mysterious Merchant. Obtained via Gachapon with Lunar New Year attribute.",
+    "combinations": []
+  },
+  {
+    "id": "orcas_letter_2",
+    "name": "Orca's Letter 2",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": "Happy Chinese New Year, Chef!I met with some trouble during my holiday. I regret going on leave now. When do you all come back from your holiday?",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/orcas_letter_2.png",
+    "obtainMethod": "Obtained during the Lunar New Year 2021 event. Sold by the Mysterious Merchant. Obtained via Gachapon with Lunar New Year attribute.",
+    "combinations": []
+  },
+  {
+    "id": "orcas_letter_3",
+    "name": "Orca's Letter 3",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": "Happy New Year, Chef!During our holiday last year, we saw other whales playing 'Whale Chess' so we bought it, but we forgot to bring it along. Luckily, there was a lot of trash in the ocean so we made an impromptu one that actually feels quite good! Aren't we smart? Hahahahaha! What do you usually play during your free time?",
+    "earnedStars": "+16",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/orcas_letter_3.png",
+    "obtainMethod": "Obtained during the Lunar New Year 2022 event. Sold by the Mysterious Merchant",
+    "combinations": []
+  },
+  {
+    "id": "orcas_letter_4",
+    "name": "Orca's Letter 4",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": "Happy New Year, Chef! We found an enormous treasure chest in a deep underwater cave in the sea! There were a ton of sparkly goodies in it! I keep feeling chills running down my spine for some reason, though. Perhaprs the water down here is colder, hahaha. We'll bring you souvenirs, so look forward to our return!",
+    "earnedStars": "+16",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/orcas_letter_4.png",
+    "obtainMethod": "Obtained during the Lunar New Year 2023 event Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "orcas_letter_5",
+    "name": "Orca's Letter 5",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": "Chef, happy new year! On New Year's Eve, we were invited by a new friend of ours to go to his house for a reunion dinner with him. I saw so many dishes that I hadn't encountered before! We kept eating and talking until we were no longer sure when the dinner ended. To our surprise, we woke up in our house this morning! Tell me, do you think that our friend brought us back to our house or was this entire event but a dream?",
+    "earnedStars": "+18",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/orcas_letter_5.png",
+    "obtainMethod": "Can be obtained with any combo since Lunar New Year 2024 Day.",
+    "combinations": []
+  },
+  {
+    "id": "orcas_letter_6",
+    "name": "Orca's Letter 6",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": "Happy new year, chef! My friends from the deep sea gave me a shiny golden crown. When I showed it off to my buddies, the look surprisingly took off and became the next big thing! Everyone's using something they found in the ocean as a crown now! When we host a crown fashion week, you can be sure you'll be the very first person I'll send an invitation to! By the way, I heard you and the others got an extra day off during the new year. Did you enjoy the extra rest?",
+    "earnedStars": "+18",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/orcas_letter_6.png",
+    "obtainMethod": "Can be obtained with any combo since Lunar New Year 2025 Day. Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "orcas_letter_7",
+    "name": "Orca's Letter 7",
+    "series": "Holiday Letters",
+    "unlockRequirement": null,
+    "description": "Dear Chef, Happy New Year! It's a new year again! After hearing from the Seal brothers that this is the latest fashion trend, I wanted to try it too... but I end up getting electrocuted! Apparently, I used the wrong thing as an accessory. Being a fashionista isn't easy, huh... Why don't you give it a try too, Chef?",
+    "earnedStars": "+20",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/orcas_letter_7.png",
+    "obtainMethod": "Can be obtained with any combo since Lunar New Year 2026 Day.",
+    "combinations": []
+  },
+  {
+    "id": "otters_letter_1",
+    "name": "Otter's Letter 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Chef, the heavy rain broke the dam and flooded the area downstream, so I won't be able to come to the shop often these days. We've been working all through the night recently to fix it. I want to order lots of bento, then come and take them to the construction site. Everyone is so tired. It'll be hard to fix on our own, but if we can eat the chef's meals, then there's still hope.",
+    "earnedStars": null,
+    "unlocks": "Wisp, Wood-chuckin' Beaver, Otter's Letter 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/otters_letter_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "Bluebell",
+        "slot3": "White Rose"
+      }
+    ]
+  },
+  {
+    "id": "otters_letter_2",
+    "name": "Otter's Letter 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Chef, I'd like to ask a favor of you. I have a teacher, Wood-chuckin' Beaver, who has a flat tail. He specializes in eco engineering, has excellent results, and is a gifted architect. We need his help to solve the issue with the dam. Here's his picture.",
+    "earnedStars": "+265",
+    "unlocks": "Spiderweb",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/otters_letter_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "Bluebell",
+        "slot3": "White Rose"
+      }
+    ]
+  },
+  {
+    "id": "pangolin_babys_letter",
+    "name": "Pangolin Baby's Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Chef! I finally found my mom! However, she seems to be injured. It looks really painful, so I helped to blow on her boo-boo. Mom says that it's not painful as long as we're together. I'll always stay together with Mom!",
+    "earnedStars": "+30",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/pangolin_babys_letter.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Daisy",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "pangolin_babys_letter_2",
+    "name": "Pangolin Baby's Letter 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Chef! Chef! I'm going to plant sunflowers with my mom! The school let us choose what seeds we wanted to plant, then allowed us to take our seeds home during Mother's Day and grow them with our mothers. Isn't that amazing? On that day, I even secretly made dinner before Mom came home. Hehe, she even complimented me! Sh... I'll let you in on a secret: why I chose to plant sunflowers! It's because I hope that Mom can be like sunflowers, and bask in sunlight and happiness every day!",
+    "earnedStars": "+30",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/pangolin_babys_letter_2.png",
+    "obtainMethod": "Increased chance of obtaining from May 13th to May 17th",
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "party_puppys_response",
+    "name": "Party Puppy's Response",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Gumi, I brought the portrait you drew for me around toask my friends. Everyone said they're never seen a catthat can draw so well, and they wanted to knowwhere you learned it from! I also have some good newsfor you! I have a friend who's a rescue dog. He said hethinks he saw the human girl you drew!",
+    "earnedStars": "+150",
+    "unlocks": "Cici, Rescue Dog",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/party_puppys_response.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "Sunflower",
+        "slot3": "Red Rose"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_adzuki_bean_dumpling",
+    "name": "Permission To Raise Price: Adzuki Bean Dumpling",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_adzuki_bean_dumpling.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_americano",
+    "name": "Permission To Raise Price: Americano",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_americano.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "White Rose",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_buttered_toast",
+    "name": "Permission To Raise Price: Buttered Toast",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_buttered_toast.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "Seeds",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_coconut_cassia_wine",
+    "name": "Permission To Raise Price: Coconut Cassia Wine",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_coconut_cassia_wine.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "Copper Can",
+        "slot3": "Gold Can"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_cup_noodles",
+    "name": "Permission To Raise Price: Cup Noodles",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_cup_noodles.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "White Rose",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_cupcake",
+    "name": "Permission To Raise Price: Cupcake",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_cupcake.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Daisy",
+        "slot3": "Bluebell"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_curry_rice",
+    "name": "Permission To Raise Price: Curry Rice",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_curry_rice.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Daisy",
+        "slot3": "Bluebell"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_fried_rice",
+    "name": "Permission To Raise Price: Fried Rice",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_fried_rice.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "Sunflower"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_fried_shrimp_sushi",
+    "name": "Permission To Raise Price: Fried Shrimp Sushi",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_fried_shrimp_sushi.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_mango_surprise",
+    "name": "Permission To Raise Price: Mango Surprise",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_mango_surprise.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Gold Can",
+        "slot3": "Bluebell"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_mushroom_pasta",
+    "name": "Permission To Raise Price: Mushroom Pasta",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_mushroom_pasta.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Daisy",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_orange_juice",
+    "name": "Permission To Raise Price: Orange Juice",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_orange_juice.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "White Rose",
+        "slot3": "Seeds"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_porridge_jam",
+    "name": "Permission To Raise Price: Porridge & Jam",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_porridge_jam.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_purple_sweet_potato_bun",
+    "name": "Permission To Raise Price: Purple Sweet Potato Bun",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_purple_sweet_potato_bun.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Seeds",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_ramen",
+    "name": "Permission To Raise Price: Ramen",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_ramen.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "White Rose",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_rice_pudding",
+    "name": "Permission To Raise Price: Rice Pudding",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_rice_pudding.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "White Rose",
+        "slot3": "Gold Can"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_seaweed_rice_balls",
+    "name": "Permission To Raise Price: Seaweed Rice Balls",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_seaweed_rice_balls.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Seeds",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_spaghetti",
+    "name": "Permission To Raise Price: Spaghetti",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_spaghetti.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "White Rose",
+        "slot3": "Daisy"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_steamed_clams",
+    "name": "Permission To Raise Price: Steamed Clams",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_steamed_clams.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Copper Can",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_strawberry_pancake",
+    "name": "Permission To Raise Price: Strawberry Pancake",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_strawberry_pancake.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Daisy",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_strawberry_shaved_ice",
+    "name": "Permission To Raise Price: Strawberry Shaved Ice",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_strawberry_shaved_ice.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "Bluebell",
+        "slot3": "Red Rose"
+      }
+    ]
+  },
+  {
+    "id": "permission_to_raise_price_taiyaki",
+    "name": "Permission To Raise Price: Taiyaki",
+    "series": "Permission to Raise Prices",
+    "unlockRequirement": null,
+    "description": "Following the Cod Price Bureau's repeated discussions and market research, we've decided to authorize Gumi Kitchen's price increase. This license is hereby granted for approval.",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/permission_to_raise_price_taiyaki.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "Daisy",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "phantoms_letter_2",
+    "name": "Phantom's Letter 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "To the shiny-furred Timmy, I'm trying to practice facingcrowds.Every day, I practice as hard as I can! Have you noticed?Everyone avoids me. You're the only one willing to get nearme.Thank you.This is a necklace I made out of acorns. I hope you like it!—Phantom",
+    "earnedStars": "+165",
+    "unlocks": "Phantom's Letter 3",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/phantoms_letter_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sakura",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "phantoms_letter_3",
+    "name": "Phantom's Letter 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "To the shiny-furred Timmy, Have you been working too hard lately?I keep seeing you cough. Have you caught a cold?I've recently joined a pottery club.Thanks for giving me to courage to meet new people.This is the first cup that I made. I hope that you'll use it to drink more warm water and recover soon.—Phantom",
+    "earnedStars": "+24",
+    "unlocks": "Phantom's Letter 4",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/phantoms_letter_3.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "Seeds",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "phantoms_letter_4",
+    "name": "Phantom's Letter 4",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "To Timmy with the shiniest fur in the world:You look like you're in better spirits recently! It's delightful to see!Your smile is as warm as the morning sun so I decided to make you this Sunflower Hair Clip. Stay happy!—Phantom",
+    "earnedStars": "+30",
+    "unlocks": "Phantom's Letter 5",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/phantoms_letter_4.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Seeds",
+        "slot3": "Sunflower"
+      }
+    ]
+  },
+  {
+    "id": "phantoms_letter_5",
+    "name": "Phantom's Letter 5",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "To Timmy with the shiniest fur in the world:I'm sorry I haven't been by to visit. I've had to stay home for various reasons.I wonder how you've been?Do you remember the Ceramic Art Association I signed up for? I made you a vase this time. I hope it'll make you happy when it's filled with flowers!—Phantom",
+    "earnedStars": "+30",
+    "unlocks": "Phantom's Letter 6",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/phantoms_letter_5.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Maple Leaf",
+        "slot2": "Daisy",
+        "slot3": "Sunflower"
+      }
+    ]
+  },
+  {
+    "id": "phantoms_letter_6",
+    "name": "Phantom's Letter 6",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "To the shiny-furred Timmy:You're so full of pep each and every day!When I see how hard you're working every day...I feel like you brighten up my life!Here are some homemade cookies that I made. I hope that they'll give you a boost of energy when you're feeling tired or hungry!—Phantom",
+    "earnedStars": "+33",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/phantoms_letter_6.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Clover",
+        "slot3": "Copper Can"
+      }
+    ]
+  },
+  {
+    "id": "picnic_photo",
+    "name": "Picnic Photo",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I helped take this photo during that fireworks show.Looks like your chef got a bit tipsy! It was nice meetingyou. The edamame you cooked were delicious!",
+    "earnedStars": "+115",
+    "unlocks": "Chilled Edamame",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/picnic_photo.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "White Rose",
+        "slot2": "Gold Can",
+        "slot3": "Seeds"
+      }
+    ]
+  },
+  {
+    "id": "postcard_for_mom",
+    "name": "Postcard for Mom",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Dear Mom:Today is Mother's Day. Our teacher got us to prepare Mother's Day gifts. Thinking about how hardworking you are, I made a Back Massage Voucher for you. Happy Mother's Day! I love you, always!Your Child",
+    "earnedStars": "+80",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/postcard_for_mom.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Red Rose",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "prince_secretarybirds_thank_you_gift",
+    "name": "Prince Secretarybird's Thank-You Gift",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Dear Chef,It's been a long time since we last met. I hope you are well. Your secret seasoning has reached this sun-scorched land, and its aroma has amazed us all, as if the spicy fragrance of Oak Bay had wafted all the way here. I had the head chef use it to recreate the Mapo Tofu you made before and it turned out rich and aromatic. I am certain even the most discerning diners would be captiated by your culinary artistry.As a token of my gratitude, I send you a local specialty, blessed by our elders. May it bring you good fortune!",
+    "earnedStars": "+28",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/prince_secretarybirds_thank_you_gift.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Seeds",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "rabbit_dings_fishing_record",
+    "name": "Rabbit Ding's Fishing Record",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I can't believe I discovered such an amazing fishing spot purely by accident! I'm pretty sure no one else managed to find this place or this huge fish would have been caught by someone other than me. I'll come here again next time, heheh!",
+    "earnedStars": "+25",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/rabbit_dings_fishing_record.png",
+    "obtainMethod": "Obtain during Fishing Tournament 2025 Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "ragdolls_picture_1",
+    "name": "Ragdoll's Picture 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Today, Dad made a new ragdollthat's my little brother! He doesn't know how to move yet, but we'll keep teaching him how to be a happy doll. I hope our family can be happy every day!",
+    "earnedStars": "+20",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/ragdolls_picture_1.png",
+    "obtainMethod": "Obtained during the Halloween Event 2021. Obtained via Gachapon with Halloween attribute. Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "ragdolls_picture_2",
+    "name": "Ragdoll's Picture 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Ahhh! My little brother was taken away by a bunch of circus goons! I chased after them with all I had, but I still couldn't catch up. After that, Dad suddenly fell ill and asked me to find my little brother and bring him back.",
+    "earnedStars": "+35",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/ragdolls_picture_2.png",
+    "obtainMethod": "Obtained during the Halloween Event 2021. Obtained via Gachapon with Halloween attribute. Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "ragdolls_picture_3",
+    "name": "Ragdoll's Picture 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "After a long search, I finally found my little brother. He said that his name was Pumpkin, but he couldn't remember Dad and me. It took me a long time to gain his trust. I even showed him our old photo. When we got back to the tailor's shop, he put on the clothes Dad left for him. Dad, I've brought Pumpkin home!",
+    "earnedStars": "+50",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/ragdolls_picture_3.png",
+    "obtainMethod": "Obtained during the Halloween Event 2021. Obtained via Gachapon with Halloween attribute. Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "ragdolls_picture_4",
+    "name": "Ragdoll's Picture 4",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "For this Halloween, my little brother finally looks like he's actually my little brother! Hahahahaha! Obviously, ha wasn't very happy about it and kept sulking. But he looks so adorable even when he's angry! I can't help myself but want to pat his head. How I wish Dad could see him like this too. Then, I can finally send out the photos that Rose took.",
+    "earnedStars": "+38",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/ragdolls_picture_4.png",
+    "obtainMethod": "Obtained during the Halloween Event 2025. Obtained via Gachapon with Halloween attribute.",
+    "combinations": []
+  },
+  {
+    "id": "romantic_dinner",
+    "name": "Romantic Dinner",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "My hubby brought home a bouquet of roses and urged me to go out with him without even changing his shoes! He had secretly reserved the town's most popular restaurant and planned a candle-lit dinner! He said many nice things that I don't often hear, as if we were young again. I'm going to make bookmarks out of those roses and place them in my favorite books!",
+    "earnedStars": "+9",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/romantic_dinner.png",
+    "obtainMethod": "Higher chance to obtain from February 13th to February 17th",
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "roses_love_story_1",
+    "name": "Rose's Love Story 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "The first time I saw him was when I was hiding and secretly crying in a corner. When he saw me, he took off his hat, made a ton of candies appear out of thin air, and offered them to me. Stunned, I stared at the candies that filled his hand. 'Who are you? What are you doing here?' I asked. 'Hello, my name is Pumpkin!' he answered. 'Oh... Hi, I'm Rose,' I whispered shyly.",
+    "earnedStars": "+20",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/roses_love_story_1.png",
+    "obtainMethod": "Obtained during the Halloween Event 2022. Sold by the Mysterious Merchant. Obtained via Gachapon with Halloween attribute.",
+    "combinations": []
+  },
+  {
+    "id": "roses_love_story_2",
+    "name": "Rose's Love Story 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "How can anything this magical possibly exist? So, there really is someone in this world who's on the same wavelength as me. We admired the full moon and danced in the moonlight together, and our laughter rang out as we raced each other in the garden. No matter what I want to do, he is always by my side, and he knows exactly what's on my mind with just a look at my eyes. He has taught me what bliss is.",
+    "earnedStars": "+25",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/roses_love_story_2.png",
+    "obtainMethod": "Obtained during the Halloween Event 2022. Sold by the Mysterious Merchant. Obtained via Gachapon with Halloween attribute.",
+    "combinations": []
+  },
+  {
+    "id": "roses_love_story_3",
+    "name": "Rose's Love Story 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "He proposed to me at the ancient white castle I love so much! The crescent moon, which has borne testimony to our love, looked just like how it did on the day we met. When I uttered the words 'I do,' I felt as if the joy and bliss in me were about to come gushing out like soda pop from a can after someone has shaken it up. I've never felt like this before. We're going to hold a grand wedding to share our joy with everybody!",
+    "earnedStars": "+30",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/roses_love_story_3.png",
+    "obtainMethod": "Obtained during the Halloween Event 2022. Sold by the Mysterious Merchant. Obtained via Gachapon with Halloween attribute.",
+    "combinations": []
+  },
+  {
+    "id": "shiba_puppys_gift",
+    "name": "Shiba Puppy's Gift",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Uncle Black Shiba sent me a four-leaf clover he found and a photo of him skydiving! So cool! Uncle has been out traveling for really long, though. I miss him so much.",
+    "earnedStars": "+80",
+    "unlocks": "White Shiba's Diary 1",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/shiba_puppys_gift.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Daisy",
+        "slot3": "Clover"
+      }
+    ]
+  },
+  {
+    "id": "shiba_puppys_letter",
+    "name": "Shiba Puppy's Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hi Chef!Let me tell you a secret -I think my dad's superman! He can lift me up super high. I feel like I could fly! And he can even make lots of snacks appear for me to eat. I love my dad!",
+    "earnedStars": "+88",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/shiba_puppys_letter.png",
+    "obtainMethod": "Increased chance of obtaining from June 21st to June 23rd",
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Sunflower",
+        "slot3": "Bluebell"
+      }
+    ]
+  },
+  {
+    "id": "shiba_puppys_letter_2",
+    "name": "Shiba Puppy's Letter 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Chef, Chef! Today we performed a musical. I was so nervous I had hiccups before going on stage, but when I saw Yorkie Pup who was so calm beside me, I felt that performing was not so scary after all. The show was a great success. Here's a picture of us. Aren't I the best?",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/shiba_puppys_letter_2.png",
+    "obtainMethod": "Obtained during Children's Day 2021 event. Obtained via Gachapon with Children's Day attribute.",
+    "combinations": []
+  },
+  {
+    "id": "shiba_puppys_letter_3",
+    "name": "Shiba Puppy's Letter 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Chef, Chef! This is my savings jar, but you can have it! In return, can you make Mom a delicious feast for Mother's Day? She works really hard all the time, so I want to give her a big surprise!",
+    "earnedStars": "+61",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/shiba_puppys_letter_3.png",
+    "obtainMethod": "Increased chance of obtaining from May 13th to May 17th",
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Seeds",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "shiba_puppys_letter_4",
+    "name": "Shiba Puppy's Letter 4",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Recently, Dad has been nagging at me to go fishing with him. He says that fishing is really, really fun and I'll definitely love it. So, at sunrise on the weekend, we went to the river bank together. I caught an enormous fish as soon as I cast my fishing rod into the river! Seeing how envious Dad was, I graciously gave my fishing rod to him as a Father's Day present from me!",
+    "earnedStars": "+30",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/shiba_puppys_letter_4.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Red Rose",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "shiba_puppys_photo",
+    "name": "Shiba Puppy's Photo",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "A photo of a happy family: Gumi, guess who this is!Soon he'll be able to walk, and I can bring him to see everyone!",
+    "earnedStars": "+200",
+    "unlocks": "Floating Teacup, Shiba Puppy, Shiba's Letter 3",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/shiba_puppys_photo.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "White Rose",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "shibas_letter",
+    "name": "Shiba's Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hello, Chef!How's your restaurant been doing lately? Thanks to you,I'm dating White now! We're living in Shanghai. All theanimals here are really nice.",
+    "earnedStars": "+180",
+    "unlocks": "Shiba Puppy's Photo",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/shibas_letter.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "White Rose",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "shibas_letter_3",
+    "name": "Shiba's Letter 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hi Chef,Time sure flies! In the blink of an eye, our pup is alreadyin kindergarten!I really don't want him to grow up so much.",
+    "earnedStars": "+150",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/shibas_letter_3.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Clover",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "silk_scarf_badge",
+    "name": "Silk Scarf & Badge",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I really like collecting colorful things! Today I saw agroup of travelers. They were all dressed up in colorfulclothes and looked so pretty and confident.After they left, I picked up a pretty silk scarf and badge.",
+    "earnedStars": "+50",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/silk_scarf_badge.png",
+    "obtainMethod": "Obtained randomly with empty slots.",
+    "combinations": []
+  },
+  {
+    "id": "snow_leopards_parenting_diary_1",
+    "name": "Snow Leopard's Parenting Diary 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "The other day, when i was recuperating in the wildlife rescue center, I saw a staff member coming back with a little guy in their arms. He had snow-white fur like mine. Was he abandoned? Why is he so tense even in his sleep?",
+    "earnedStars": "+15",
+    "unlocks": "Snow Leopard's Parenting Diary 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/snow_leopards_parenting_diary_1.png",
+    "obtainMethod": null,
+    "combinations": []
+  },
+  {
+    "id": "snow_leopards_parenting_diary_2",
+    "name": "Snow Leopard's Parenting Diary 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "The little guy has moved in too. I wanted to chat with him that day, but he was very wary of me and refused to let me go anywhere near him. After he fell asleep, I approached him again, but when I did, I found that he was burning up. I quickly got the humans over. Later, when he was having an injection, he bit down hard on my tail ... Little guy, you have to get well soon, okay?",
+    "earnedStars": "+20",
+    "unlocks": "Snow Leopard's Parenting Diary 3",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/snow_leopards_parenting_diary_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Iron Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "snow_leopards_parenting_diary_3",
+    "name": "Snow Leopard's Parenting Diary 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "He is so malnourished that he wobbles when he walks. The keeper wants me to take care of him and teach him survival skills when he's a little better. He said both of us will eventually return to the mountains. Teaching cubs is such a headache. He only likes fighting with that toy.",
+    "earnedStars": "+30",
+    "unlocks": "Snow Leopard's Parenting Diary 4",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/snow_leopards_parenting_diary_3.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Seeds",
+        "slot2": "Copper Can",
+        "slot3": "Red Rose"
+      }
+    ]
+  },
+  {
+    "id": "snow_leopards_parenting_diary_4",
+    "name": "Snow Leopard's Parenting Diary 4",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "The little guy and I have returned to the mountains. We happened to see the first snowfall of the year. He was so excited that he kept running around all over the place. It's great to see him so full of life. I hope the snow can bury his unhappy past. I will protect him from now on.",
+    "earnedStars": "+50",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/snow_leopards_parenting_diary_4.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "White Rose",
+        "slot2": "Gold Can",
+        "slot3": "Sunflower"
+      }
+    ]
+  },
+  {
+    "id": "stoats_adventure_notes_1",
+    "name": "Stoat's Adventure Notes 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I found a rose on a barren planet today. She was protected in a glass jar, quietly looking in a certain direction as if she was longing for someone. She asked if I'd been to the blue planet, to which I responded yes. I told her it was a planet with splendid sights and a gorgeous garden, and that the gardener there works all day to water and take care of beautiful flowers just like her. She fell silent for a long time before giving me a seed, asking for me to plant her there the next time I return to that planet.",
+    "earnedStars": "+25",
+    "unlocks": "Stoat's Adventure Notes 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/stoats_adventure_notes_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Bluebell",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "stoats_adventure_notes_2",
+    "name": "Stoat's Adventure Notes 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "This time, I arrived on a water planet and got to know Whitie the Merhorse. He showed me around enthusiastically and the underwater sights I got to see were entirely different than what I already know! White gave me a Lucky Heart Aquatic Plant when he learned that deserts were all my planet had, claiming it's a lucky seed that will bring water supply. I'll have to keep it safe!",
+    "earnedStars": "+35",
+    "unlocks": "Stoat's Adventure Notes 3",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/stoats_adventure_notes_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "Gold Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "stoats_adventure_notes_3",
+    "name": "Stoat's Adventure Notes 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I ended up someplace underground that was so dark that finding my way around was impossible. I was carefully exploring the place when I bumped into something and passed out. When I came to, many odd-looking plants were surrounding me. The closest plant then said, 'Break off a tree branch and you may leave. The divine branch will show you the way.' I was already above ground by the time I regained my senses. I'll have to do the necessary preparations before exploring that place again!",
+    "earnedStars": "+32",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/stoats_adventure_notes_3.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "sunset_luxury_tours",
+    "name": "Sunset Luxury Tours",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "What are you waiting for? All you need now is 399! No shopping for the whole trip!Only fun and luxury for this group! Let the forest air cleanse your lungs! Enjoy 3 meals at the internet-famous Gumi's Kitchen!Get close to the animals!Pick up the phone now and book your trip!",
+    "earnedStars": null,
+    "unlocks": "Glamorous Lady, Tour Group's Meal",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/sunset_luxury_tours.png",
+    "obtainMethod": "This letter can be obtained repeatedly.",
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Bluebell",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "tale_of_pumpkins_revenge_1",
+    "name": "Tale of Pumpkin's Revenge 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "For a very long time, I was troubled by constant nightmares where I was transported back to the old circus where each day was filled with the scolding and abuse by the old ringmaster. At that time, I could only bear with the pain day after day... Thankfully, I met my big brother and my wife, my broken self started to heal bit by bit. However, recently, I've been having recurring nightmares about the hellish place. To get rid of these nightmares and not let the others worry, I have decided to exterminate the source of everything!",
+    "earnedStars": "+20",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/tale_of_pumpkins_revenge_1.png",
+    "obtainMethod": "Obtained during the Halloween Event 2023. Obtained via a Halloween Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "tale_of_pumpkins_revenge_2",
+    "name": "Tale of Pumpkin's Revenge 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Collecting evidence, finding witnesses, performing site investigations... We discovered that even today, he is still engaging in such devilish behavior! The fury of revenge nearly made e lose control but thankfully, big brother managed to hold me back at the last moment. As planned, I appeared before him. Faced with the insurmountable evidence and our boundless rage, he fainted.",
+    "earnedStars": "+25",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/tale_of_pumpkins_revenge_2.png",
+    "obtainMethod": "Obtained during the Halloween Event 2023. Obtained via a Halloween Gachapon.",
+    "combinations": []
+  },
+  {
+    "id": "tale_of_pumpkins_revenge_3",
+    "name": "Tale of Pumpkin's Revenge 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "The former ringmaster of the circus has been brought to justice. The culprit confessed that he was also involved in multiple child disappearance cases in Oak Bay. Numerous pieces of evidence have also been found at the scene where he was captured. The culprit has admitted to all of the crimes... Justice has finally been served to the source of my nightmares, At last, I will no longer be afraid of him. In the future, my life will be filled with sunshine. Thank you, my family.",
+    "earnedStars": "+30",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/tale_of_pumpkins_revenge_3.png",
+    "obtainMethod": "Obtained during the Halloween Event 2023. Obtained via a Halloween Gachapon. Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "the_misplaced_schedule_sheet",
+    "name": "The Misplaced Schedule Sheet",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "One iced Americano with two shots of espresso.- Afternoon tea at 2 PM (no carbs, low calories).- Keep room temperature strictly at 78.8F.- Use only Oak Brand cosmetics.(The influencer I've been taking care of lately is incredibly troublesome. I don't get what he's thinking at all.)",
+    "earnedStars": "+35",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/the_misplaced_schedule_sheet.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Sakura",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "the_wandering_bards_pop_up_book_1",
+    "name": "The Wandering Bard's Pop-up Book 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I saw a shivering swallow freezing in the snow during winter, so I gave it my scarf. I hope it survives the winter safely.",
+    "earnedStars": "+18",
+    "unlocks": "The Wandering Bard's Pop-up Book 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/the_wandering_bards_pop_up_book_1.png",
+    "obtainMethod": null,
+    "combinations": []
+  },
+  {
+    "id": "the_wandering_bards_pop_up_book_2",
+    "name": "The Wandering Bard's Pop-up Book 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "When I was passing by the plaza today, I heard somebody calling out to me from afar. When I looked up, it turned out to be the swallow! It was hiding under the hat of the prince's statue. Looks like it has found a way to survive the winter.",
+    "earnedStars": "+30",
+    "unlocks": "The Wandering Bard's Pop-up Book 3",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/the_wandering_bards_pop_up_book_2.png",
+    "obtainMethod": null,
+    "combinations": []
+  },
+  {
+    "id": "the_wandering_bards_pop_up_book_3",
+    "name": "The Wandering Bard's Pop-up Book 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Spring has come. When I went tot he plaza again, there were flowers all around the prince's statue. The swallow had put them there to thank him for giving it a shelter. I picked up my lute and played them a tune. What a fine spring day of birdsong and blossoms!",
+    "earnedStars": "+45",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/the_wandering_bards_pop_up_book_3.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Copper Can",
+        "slot2": "Gold Can",
+        "slot3": "Red Rose"
+      }
+    ]
+  },
+  {
+    "id": "timmys_essay_1",
+    "name": "Timmy's Essay 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Who is this Phantom? Every letter from him is so full of praises it makes me blush. I feel so good after reading them though, adds a little pep in my step when I work. I went to chase off the Cod-stealing Rabbit after reading the letter yesterday and he ran so quickly he fell. Tsk, tsk, it looked really painful.",
+    "earnedStars": "+55",
+    "unlocks": "Timmy's Essay 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/timmys_essay_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Sakura",
+        "slot3": "Iron Can"
+      }
+    ]
+  },
+  {
+    "id": "timmys_essay_2",
+    "name": "Timmy's Essay 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I haven't seen the rabbit in a long while. Did he hurt himself that badly from the fall? Speaking of which, I haven't gotten a letter from the Phantom in a while either. Ugh, it's so peaceful it's boring. I'll have to catch him in the act next time I get a letter!",
+    "earnedStars": "+60",
+    "unlocks": "Timmy's Essay 3",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/timmys_essay_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Clover",
+        "slot2": "Sakura",
+        "slot3": "Iron Can"
+      }
+    ]
+  },
+  {
+    "id": "timmys_essay_3",
+    "name": "Timmy's Essay 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hah! I finally caught my mysterious letter sender. His gift is a little excessive this time. How did he carry that with an injured leg? I was worried he'd drop it when he tried to put it down. Sigh, maybe I'll wait a little longer before I chase him off.",
+    "earnedStars": "+20",
+    "unlocks": "Timmy's Essay 4",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/timmys_essay_3.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "Gold Can"
+      }
+    ]
+  },
+  {
+    "id": "timmys_essay_4",
+    "name": "Timmy's Essay 4",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I saw that familiar silhouette by the window again. Since it's pouring today, I left an umbrella there in advance, just in case they came by again. They looked so shifty when they snuck over here, so why did they walk away with a bounce in their step? Hm... Their clumsiness is really quite endearing after all.",
+    "earnedStars": "+26",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/timmys_essay_4.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sakura",
+        "slot2": "Bluebell",
+        "slot3": "Seeds"
+      }
+    ]
+  },
+  {
+    "id": "weaver_girls_letter",
+    "name": "Weaver Girl’s Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Dear Hedwig, I hope this letter finds you well. I love the photo that you took of us the other day! In return, here's a paper cutout that I made, as well as blooming Chinese peonies that I had recently picked from the garden. I hope that you'll always be full of happiness, no matter how you choose to live your life. Happy holidays!",
+    "earnedStars": "+37",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/weaver_girls_letter.png",
+    "obtainMethod": "Increased chance to obtain from August 9th to August 18th",
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "white_bunnys_letter",
+    "name": "White Bunny's Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Chef, I will definitely make a reservation earlier next time! I came a little too late this time and there was only Taiyaki left in the restaurant. I had to share it with my family with tears in my eyes at home. The Taiyaki melted in my mouth immediately before I had fully savored it. Everybody complained that I had ruined the family gathering.",
+    "earnedStars": "+35",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/white_bunnys_letter.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Gold Can",
+        "slot2": "Bluebell",
+        "slot3": "Sunflower"
+      }
+    ]
+  },
+  {
+    "id": "white_bunnys_letter_2",
+    "name": "White Bunny's Letter 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "It was an exciting day today—our movie happened to wrap up on International Women's Day, so we organized a celebration party! At the gathering, we had a great time and talked about the interesting events that happened on set. I can't wait for the movie to premiere.When it does, I'll book an entire cinema just for my friends' viewing pleasure!",
+    "earnedStars": "+20",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/white_bunnys_letter_2.png",
+    "obtainMethod": "Interact with White Bunny in the Courtyard during March 8th 6:00 - March 11th 5:59Sold by the Mysterious Merchant.",
+    "combinations": []
+  },
+  {
+    "id": "white_rabbits_order",
+    "name": "White Rabbit's Order",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": null,
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/white_rabbits_order.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Bluebell",
+        "slot3": "Red Rose"
+      }
+    ]
+  },
+  {
+    "id": "white_shibas_diary_1",
+    "name": "White Shiba's Diary 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "My little brother really worries me. He has always likes strange plants, ever since he was little. He's already at the age where he should be settling down, but he's still out searching for rare plants and whatnot all day. Surely it's about time he settles don, isn't it?! He's coming back soon. I must have a proper talk with him.",
+    "earnedStars": "+55",
+    "unlocks": "Shiba's Assignment Order, White Shiba's Diary 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/white_shibas_diary_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Red Rose",
+        "slot2": "Copper Can",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "white_shibas_diary_2",
+    "name": "White Shiba's Diary 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "We went traveling with Black Shiba. This is the first time I've involved myself in my little brother's life since I grew up. When I saw how enthusiastic he was when he was telling Shiba Puppy all about plants, it was just like how he was when he was little, and I suddenly wasn't worried anymore. He knows what he wants in life. I should respect his decision.",
+    "earnedStars": "+85",
+    "unlocks": "Black Shiba's Postcard",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/white_shibas_diary_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "White Rose",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "wounded_bears_memory_1",
+    "name": "Wounded Bear's Memory 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "A Dust-laden MemoryI still remember that day. That thing was an animal trap, right? After it trapped me and my little brother, somebody locked us up in cages. My brother was scared and trembling, crying as he said he wanted to go home.",
+    "earnedStars": "+23",
+    "unlocks": "Wounded Bear's Memory 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/wounded_bears_memory_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "Red Rose",
+        "slot3": "Sunflower"
+      }
+    ]
+  },
+  {
+    "id": "wounded_bears_memory_2",
+    "name": "Wounded Bear's Memory 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "EscapeAfter a struggle, I broke free of the chains, but they discovered me before I'd saved my little brother. All I could do was run away in a panic. Wait for me, little brother. Wait until I get stronger—I will bring you home.",
+    "earnedStars": "+32",
+    "unlocks": "Wounded Bear's Memory 3",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/wounded_bears_memory_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Copper Can",
+        "slot2": "Red Rose",
+        "slot3": "Sunflower"
+      }
+    ]
+  },
+  {
+    "id": "wounded_bears_memory_3",
+    "name": "Wounded Bear's Memory 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "ReunionI finally brought my little brother home and helped him take care of his wound. I was in a trance: it was like we were cubs again, as if I were bandaging him up after he fell down playing. But he wouldn't fear pain and cry like he did when he was little...",
+    "earnedStars": "+15",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/wounded_bears_memory_3.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "Bluebell",
+        "slot3": "Sunflower"
+      }
+    ]
+  },
+  {
+    "id": "x_factor",
+    "name": "X Factor",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Come pick your favorite idol in X Factor and help them become a superstar!",
+    "earnedStars": "+60",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/x_factor.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Iron Can",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "yellowed_flyer",
+    "name": "Yellowed Flyer",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Animal restaurant opening discount!For a limited time only!1-for-1 Taiyaki!",
+    "earnedStars": null,
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/yellowed_flyer.png",
+    "obtainMethod": "Tutorial letter",
+    "combinations": [
+      {
+        "slot1": "Daisy",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "yolkys_ramblings_1",
+    "name": "Yolky's Ramblings 1",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I went swimming today! All the heat of summer was washed away once I jumped into the water.What's more relaxing than floating on your back in the waterand counting the passing clouds?",
+    "earnedStars": "+28",
+    "unlocks": "Yolky's Ramblings 2, Yolky's Ramblings 3, Yolky's Ramblings 4, Yolky's Ramblings 5",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/yolkys_ramblings_1.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Clover",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "yolkys_ramblings_2",
+    "name": "Yolky's Ramblings 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Chef says that we'll have a paper airplane competition to celebrate the anniversary. Kate mentioned that she didn't know how to fold paper airplanes, so I took her up the hill to practice! I hope that both of us will do well in the competition!",
+    "earnedStars": "+28",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/yolkys_ramblings_2.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Maple Leaf",
+        "slot2": "Bluebell",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "yolkys_ramblings_3",
+    "name": "Yolky's Ramblings 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I saw Kate while I was on my way back to the restaurant today. The weather was really hot so I invited her for a drink at the milk tea shop that I frequently go. Kate said that the milk tea I recommended was delicious! She has great taste! I'll treat her to my special milk tea next time!",
+    "earnedStars": "+20",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/yolkys_ramblings_3.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Clover",
+        "slot2": "Red Rose",
+        "slot3": "Bluebell"
+      }
+    ]
+  },
+  {
+    "id": "yolkys_ramblings_4",
+    "name": "Yolky's Ramblings 4",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "We had fantastic weather today! Kate and I went to climb a hill to take in the beautiful view and refreshing air. All was good until a bug suddenly fell from a tree, scaring me so badly that I slipped... Good thing Kate caught onto me in time, or I'd have tumbled down the hill. I'll have to treat Kate to a drink once we leave this hill!",
+    "earnedStars": "+22",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/yolkys_ramblings_4.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "Daisy",
+        "slot3": "Iron Can"
+      }
+    ]
+  },
+  {
+    "id": "yolkys_ramblings_5",
+    "name": "Yolky's Ramblings 5",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "There's no better place to be in the summer than the beach! Listening to the waves, enjoying the sea breeze, setting off fireworks, and seeing Kate enjoying herself so much... A great sense of achievement suddenly washed over me! Hahahaha!",
+    "earnedStars": "+25",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/yolkys_ramblings_5.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Bluebell",
+        "slot2": "Sunflower",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "yorkie_pups_letter",
+    "name": "Yorkie Pup's Letter",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hello everyone! I want to share a piece of good news with you guys!Mom styled Dad's hair in a new way at home today!Although Dad looks weird with the new hairstyle, helikes it a lot! Aww, I want to have cut my hair too... But I would hate to part with them too. They took so much effort to grow.",
+    "earnedStars": "+280",
+    "unlocks": "Yorkie Pup's Letter 2",
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/yorkie_pups_letter.png",
+    "obtainMethod": null,
+    "combinations": [
+      {
+        "slot1": "Snowflake",
+        "slot2": "Red Rose",
+        "slot3": "Sunflower"
+      }
+    ]
+  },
+  {
+    "id": "yorkie_pups_letter_2",
+    "name": "Yorkie Pup's Letter 2",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Hello Uncle Chef!Our teacher taught us how to make greeting cards and origami carnations today. The teacher said that carnations represent a mother's love, so there's no wonder carnations are so pretty! I love Mom the most! Happy Mother's Day, Mom! Uncle Chef, did you prepare a present for your mom?",
+    "earnedStars": "+80",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/yorkie_pups_letter_2.png",
+    "obtainMethod": "Increased chance of obtaining from May 13th to May 17th",
+    "combinations": [
+      {
+        "slot1": "Sunflower",
+        "slot2": "*",
+        "slot3": "*"
+      }
+    ]
+  },
+  {
+    "id": "yorkie_pups_letter_3",
+    "name": "Yorkie Pup's Letter 3",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "Chef! I'm over the moon this Children's Day! Mom made me a special exception and agreed to let me have a sleepover with Shiba Puppy and Pangolin Baby! We had pillow fights, played house, and also played with toy blocks! Mom even made us supper, but we fell asleep before it was ready. Boohoo, what a waste.",
+    "earnedStars": "+61",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/yorkie_pups_letter_3.png",
+    "obtainMethod": "Obtained from Children's Day Event 2023Obtained via Gachapon with Children's Day attribute.",
+    "combinations": []
+  },
+  {
+    "id": "yorkie_pups_letter_4",
+    "name": "Yorkie Pup's Letter 4",
+    "series": "Letters",
+    "unlockRequirement": null,
+    "description": "I found a childhood photo that was taken at our secret base. I really haven't been back there for so long. Perhaps this Children's Day, we could all hold a party at the secret base? It'll be a lot of fun! Do you still remember where it is? It's near the tree that is by the lake. See you there!",
+    "earnedStars": "+20",
+    "unlocks": null,
+    "prerequisite": null,
+    "imageAsset": "assets/images/letters/yorkie_pups_letter_4.png",
+    "obtainMethod": "Obtained from Children's Day Event 2024 Obtained via Gachapon with Children's Day attribute.",
+    "combinations": []
   }
-
 ]
