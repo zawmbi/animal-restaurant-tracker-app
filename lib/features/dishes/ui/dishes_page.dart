@@ -6,6 +6,7 @@ import '../../search/ui/global_search_page.dart';
 import '../data/dishes_repository.dart';
 import '../model/dish.dart';
 import 'dish_detail_page.dart';
+import 'dish_leaderboard_page.dart';
 
 class DishesPage extends StatefulWidget {
   const DishesPage({super.key});
@@ -56,6 +57,13 @@ class _DishesPageState extends State<DishesPage> {
       appBar: AppBar(
         title: const Text('Recipes'),
         actions: [
+          IconButton(
+            tooltip: 'Earnings leaderboard',
+            icon: const Icon(Icons.leaderboard),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const DishLeaderboardPage()),
+            ),
+          ),
           IconButton(
             icon: const Icon(Icons.search),
             onPressed: () => Navigator.of(context).push(

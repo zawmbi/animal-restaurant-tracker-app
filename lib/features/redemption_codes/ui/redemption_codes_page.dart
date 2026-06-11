@@ -120,6 +120,9 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
   RedemptionSortColumn _sortColumn = RedemptionSortColumn.date;
   bool _ascending = false; // default: Date newest first (descending)
 
+  // Show only codes that are currently redeemable.
+  bool _activeOnly = false;
+
   @override
   void initState() {
     super.initState();
@@ -305,16 +308,40 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                 return const Center(child: CircularProgressIndicator());
               }
 
-              final items = [...snapshot.data!];
-              if (items.isEmpty) {
+              final allItems = [...snapshot.data!];
+              if (allItems.isEmpty) {
                 return const Center(child: Text('No redemption codes yet.'));
               }
+
+              final activeCount =
+                  allItems.where((it) => it.code.isCurrentlyValid).length;
+
+              final items = _activeOnly
+                  ? allItems
+                      .where((it) => it.code.isCurrentlyValid)
+                      .toList()
+                  : allItems;
 
               // apply sort
               _sortItems(items);
 
               return Column(
                 children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+                    child: Row(
+                      children: [
+                        FilterChip(
+                          label: Text('Active only ($activeCount)'),
+                          selected: _activeOnly,
+                          onSelected: (v) => setState(() => _activeOnly = v),
+                        ),
+                        const Spacer(),
+                        Text('${items.length} shown',
+                            style: theme.textTheme.bodySmall),
+                      ],
+                    ),
+                  ),
                   // header row = clickable "table" header
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
