@@ -1,9 +1,9 @@
 [
   {
-    "id": "second_hand_sprinkler1",
-    "name": "Second-hand Sprinkler.1",
+    "id": "second_hand_sprinkler",
+    "name": "Second-hand Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 1",
     "description": "Stops working every once in a while. Just smack it lightly and it'll work just fine again.",
     "price": [
       {
@@ -14,10 +14,10 @@
     "effects": []
   },
   {
-    "id": "brass_sprinkler1",
-    "name": "Brass Sprinkler.1",
+    "id": "brass_sprinkler",
+    "name": "Brass Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 1",
     "description": "Durable and pratical.",
     "price": [
       {
@@ -28,10 +28,10 @@
     "effects": []
   },
   {
-    "id": "gold_sprinkler1",
-    "name": "Gold Sprinkler.1",
+    "id": "gold_sprinkler",
+    "name": "Gold Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 1",
     "description": "Gives your crops the royal treatment!",
     "price": [
       {
@@ -42,10 +42,10 @@
     "effects": []
   },
   {
-    "id": "second_hand_sprinkler2",
-    "name": "Second-hand Sprinkler.2",
+    "id": "second_hand_sprinkler_2",
+    "name": "Second-hand Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 2",
     "description": "Stops working every once in a while. Just smack it lightly and it'll work just fine again.",
     "price": [
       {
@@ -56,10 +56,10 @@
     "effects": []
   },
   {
-    "id": "brass_sprinkler2",
-    "name": "Brass Sprinkler.2",
+    "id": "brass_sprinkler_2",
+    "name": "Brass Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 2",
     "description": "Durable and pratical.",
     "price": [
       {
@@ -70,10 +70,10 @@
     "effects": []
   },
   {
-    "id": "gold_sprinkler2",
-    "name": "Gold Sprinkler.2",
+    "id": "gold_sprinkler_2",
+    "name": "Gold Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 2",
     "description": "Gives your crops the royal treatment!",
     "price": [
       {
@@ -84,10 +84,10 @@
     "effects": []
   },
   {
-    "id": "second_hand_sprinkler3",
-    "name": "Second-hand Sprinkler.3",
+    "id": "second_hand_sprinkler_3",
+    "name": "Second-hand Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 3",
     "description": "Stops working every once in a while. Just smack it lightly and it'll work just fine again.",
     "price": [
       {
@@ -98,10 +98,10 @@
     "effects": []
   },
   {
-    "id": "brass_sprinkler3",
-    "name": "Brass Sprinkler.3",
+    "id": "brass_sprinkler_3",
+    "name": "Brass Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 3",
     "description": "Durable and pratical.",
     "price": [
       {
@@ -112,10 +112,10 @@
     "effects": []
   },
   {
-    "id": "gold_sprinkler3",
-    "name": "Gold Sprinkler.3",
+    "id": "gold_sprinkler_3",
+    "name": "Gold Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 3",
     "description": "Gives your crops the royal treatment!",
     "price": [
       {
@@ -126,10 +126,10 @@
     "effects": []
   },
   {
-    "id": "second_hand_sprinkler4",
-    "name": "Second-hand Sprinkler.4",
+    "id": "second_hand_sprinkler_4",
+    "name": "Second-hand Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 4",
     "description": "Stops working every once in a while. Just smack it lightly and it'll work just fine again.",
     "price": [
       {
@@ -140,10 +140,10 @@
     "effects": []
   },
   {
-    "id": "brass_sprinkler4",
-    "name": "Brass Sprinkler.4",
+    "id": "brass_sprinkler_4",
+    "name": "Brass Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 4",
     "description": "Durable and pratical.",
     "price": [
       {
@@ -154,10 +154,10 @@
     "effects": []
   },
   {
-    "id": "gold_sprinkler4",
-    "name": "Gold Sprinkler.4",
+    "id": "gold_sprinkler_4",
+    "name": "Gold Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 4",
     "description": "Gives your crops the royal treatment!",
     "price": [
       {
@@ -168,10 +168,10 @@
     "effects": []
   },
   {
-    "id": "second_hand_sprinkler5",
-    "name": "Second-hand Sprinkler.5",
+    "id": "second_hand_sprinkler_5",
+    "name": "Second-hand Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 5",
     "description": "Stops working every once in a while. Just smack it lightly and it'll work just fine again.",
     "price": [
       {
@@ -182,10 +182,10 @@
     "effects": []
   },
   {
-    "id": "brass_sprinkler5",
-    "name": "Brass Sprinkler.5",
+    "id": "brass_sprinkler_5",
+    "name": "Brass Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 5",
     "description": "Durable and pratical.",
     "price": [
       {
@@ -196,10 +196,10 @@
     "effects": []
   },
   {
-    "id": "gold_sprinkler5",
-    "name": "Gold Sprinkler.5",
+    "id": "gold_sprinkler_5",
+    "name": "Gold Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 5",
     "description": "Gives your crops the royal treatment!",
     "price": [
       {
@@ -210,10 +210,10 @@
     "effects": []
   },
   {
-    "id": "second_hand_sprinkler6",
-    "name": "Second-hand Sprinkler.6",
+    "id": "second_hand_sprinkler_6",
+    "name": "Second-hand Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 6",
     "description": "Stops working every once in a while. Just smack it lightly and it'll work just fine again.",
     "price": [
       {
@@ -224,10 +224,10 @@
     "effects": []
   },
   {
-    "id": "brass_sprinkler6",
-    "name": "Brass Sprinkler.6",
+    "id": "brass_sprinkler_6",
+    "name": "Brass Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 6",
     "description": "Durable and pratical.",
     "price": [
       {
@@ -238,10 +238,10 @@
     "effects": []
   },
   {
-    "id": "gold_sprinkler6",
-    "name": "Gold Sprinkler.6",
+    "id": "gold_sprinkler_6",
+    "name": "Gold Sprinkler",
     "area": "garden",
-    "group": "Automatic Sprinkler",
+    "group": "Automatic Sprinkler No. 6",
     "description": "Gives your crops the royal treatment!",
     "price": [
       {
@@ -255,7 +255,7 @@
     "id": "wooden_food_truck",
     "name": "Wooden Food Truck",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "The creaking of wooden wheels means yummy food is on the way!",
     "price": [
       {
@@ -275,7 +275,7 @@
     "id": "bamboo_food_truck",
     "name": "Bamboo Food Truck",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "The fragrance of bamboo and the mouthwatering aroma of the food combined in one.",
     "price": [
       {
@@ -295,7 +295,7 @@
     "id": "vintage_food_truck",
     "name": "Vintage Food Truck",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "How about some freshly baked bread made from homegrown wheat?",
     "price": [
       {
@@ -315,7 +315,7 @@
     "id": "ornate_food_truck",
     "name": "Ornate Food Truck",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "You can find all sorts of exquisite and delicious treats here!",
     "price": [
       {
@@ -335,7 +335,7 @@
     "id": "world_of_flavor",
     "name": "World of Flavor",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "Let your taste buds soar alongside these wings.",
     "price": [
       {
@@ -352,10 +352,10 @@
     "series": "Fleeting Feathers"
   },
   {
-    "id": "baker",
-    "name": "Baker",
+    "id": "bakers_magic",
+    "name": "Baker's Magic",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "Stomachs growl along as the boiling pumpkin soup bubbles away.",
     "price": [
       {
@@ -375,7 +375,7 @@
     "id": "first_snow_food_truck",
     "name": "First Snow Food Truck",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "Don't miss out on the festive Christmas treats on the menu!",
     "price": [
       {
@@ -395,7 +395,7 @@
     "id": "tasty_mirage",
     "name": "Tasty Mirage",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "Is this delicious flavor even real?",
     "price": [
       {
@@ -415,7 +415,7 @@
     "id": "leisurely_food_truck",
     "name": "Leisurely Food Truck",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "You can smell the delicious food even from far away.",
     "price": [
       {
@@ -435,7 +435,7 @@
     "id": "coastline_food_truck",
     "name": "Coastline Food Truck",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "Would you like some sea salt soda?",
     "price": [
       {
@@ -455,7 +455,7 @@
     "id": "fruity_food_truck",
     "name": "Fruity Food Truck",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "Wanna try a freshly baked fruit tart?",
     "price": [
       {
@@ -475,7 +475,7 @@
     "id": "whipped_cream_food_truck",
     "name": "Whipped Cream Food Truck",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "What dessert I should make today?",
     "price": [
       {
@@ -495,7 +495,7 @@
     "id": "honey_bee_food_truck",
     "name": "Honey Bee Food Truck",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "The most delicious kitchen of the bee kingdom.",
     "price": [
       {
@@ -515,7 +515,7 @@
     "id": "cloudy_food_truck",
     "name": "Cloudy Food Truck",
     "area": "garden",
-    "group": "Mystery Food Trucks",
+    "group": "Mystery Food Truck",
     "description": "Taste the flavors of the cosmos!",
     "price": [
       {
@@ -535,7 +535,7 @@
     "id": "wooden_vegetable_rack",
     "name": "Wooden Vegetable Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "Au natural flavors on display.",
     "price": [
       {
@@ -555,7 +555,7 @@
     "id": "handmade_vegetable_rack",
     "name": "Handmade Vegetable Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "A lovingly crafted rack made of fine wood.",
     "price": [
       {
@@ -575,7 +575,7 @@
     "id": "classy_vegetable_rack",
     "name": "Classy Vegetable Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "Presents the most natural and authentic flavors to you.",
     "price": [
       {
@@ -595,7 +595,7 @@
     "id": "precious_vegetable_rack",
     "name": "Precious Vegetable Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "Every harvest is precious.",
     "price": [
       {
@@ -615,7 +615,7 @@
     "id": "fancy_vegetable_rack",
     "name": "Fancy Vegetable Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "It automatically swats away an mosquitos that come close.",
     "price": [
       {
@@ -635,7 +635,7 @@
     "id": "playful_vegetable_rack",
     "name": "Playful Vegetable Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "The vibrant colors give the ingredients a joyful touch!",
     "price": [
       {
@@ -655,7 +655,7 @@
     "id": "starlight_display_rack",
     "name": "Starlight Display Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "This display rack keeps ingredients incredibly fresh!",
     "price": [
       {
@@ -675,7 +675,7 @@
     "id": "dotted_mushroom_vegetable_rack",
     "name": "Dotted Mushroom Vegetable Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "These mushrooms cannot be eaten!",
     "price": [
       {
@@ -695,7 +695,7 @@
     "id": "carved_vegetable_rack",
     "name": "Carved Vegetable Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "Made from precious wood and embellished with exquisite carvings. It's simply beautiful!",
     "price": [
       {
@@ -715,7 +715,7 @@
     "id": "humming_waves",
     "name": "Humming Waves",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "So fresh even the denizens of the ocean want to buy some.",
     "price": [
       {
@@ -735,7 +735,7 @@
     "id": "fruity_double_rack",
     "name": "Fruity Double Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "Enjoy two different flavors at once!",
     "price": [
       {
@@ -755,7 +755,7 @@
     "id": "flatbread_vegetable_rack",
     "name": "Flatbread Vegetable Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "Vegetable flavored flatbread sound very healthy!",
     "price": [
       {
@@ -775,7 +775,7 @@
     "id": "floral_vegetable_rack",
     "name": "Floral Vegetable Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "All the vegetables here are freshly picked!",
     "price": [
       {
@@ -795,7 +795,7 @@
     "id": "interstellar_vegetable_rack",
     "name": "Interstellar Vegetable Rack",
     "area": "garden",
-    "group": "Vegetable Racks",
+    "group": "Vegetable Rack",
     "description": "The vegetables on the rack are kept fresh by being in a vacuum.",
     "price": [
       {
@@ -815,7 +815,7 @@
     "id": "cheerful_houseplants",
     "name": "Cheerful Houseplants",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "Adds a touch of elegance to the surroundings.",
     "price": [
       {
@@ -835,7 +835,7 @@
     "id": "green_fortune_tree",
     "name": "Green Fortune Tree",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "Brings good fortune, apparently.",
     "price": [
       {
@@ -855,7 +855,7 @@
     "id": "cooling_cactus",
     "name": "Cooling Cactus",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "Stay calm and chill.",
     "price": [
       {
@@ -875,7 +875,7 @@
     "id": "exquisite_snacks",
     "name": "Exquisite Snacks",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "Grab a bite to take the edge off that hunger.",
     "price": [
       {
@@ -895,7 +895,7 @@
     "id": "blooming_flowers",
     "name": "Blooming Flowers",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "Only the most dazzling moment will be displayed for your enjoyment.",
     "price": [
       {
@@ -915,7 +915,7 @@
     "id": "celebratory_rhythm",
     "name": "Celebratory Rhythm",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "Wait a minute, is that something hiding among the balloons?",
     "price": [
       {
@@ -935,7 +935,7 @@
     "id": "snowfield_clock",
     "name": "Snowfield Clock",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "Has a classic color scheme. It heralds the arrival of winter.",
     "price": [
       {
@@ -955,7 +955,7 @@
     "id": "lost_wonderland",
     "name": "Lost Wonderland",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "It's covered in fine, delicate moss.",
     "price": [
       {
@@ -975,7 +975,7 @@
     "id": "banana_bonsai",
     "name": "Banana Bonsai",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "It'd look even better with an ornamental rock.",
     "price": [
       {
@@ -992,10 +992,10 @@
     "series": "Spring Pavilion Banquet"
   },
   {
-    "id": "sailor",
-    "name": "Sailor",
+    "id": "sailors_strength",
+    "name": "Sailor's Strength",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "You must pick up this anchor to become a true sailor.",
     "price": [
       {
@@ -1015,7 +1015,7 @@
     "id": "berry_record_player",
     "name": "Berry Record Player",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "Listen! Is that the sound of berries singing?!",
     "price": [
       {
@@ -1035,7 +1035,7 @@
     "id": "cotton_candy_potted_plant",
     "name": "Cotton Candy Potted Plant",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "I'm a little hesitant to tell you that this is only for decoration.",
     "price": [
       {
@@ -1055,7 +1055,7 @@
     "id": "midsummer_sunflower",
     "name": "Midsummer Sunflower",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "Is this what summer feels like?",
     "price": [
       {
@@ -1075,7 +1075,7 @@
     "id": "galactic_flower",
     "name": "Galactic Flower",
     "area": "garden",
-    "group": "Truck-Side Decorations",
+    "group": "Truck-Side Decoration",
     "description": "I picked the prettiest flower in the galaxy just for you.",
     "price": [
       {
@@ -1095,7 +1095,7 @@
     "id": "simple_order_box",
     "name": "Simple Order Box",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "What would you like today?",
     "price": [
       {
@@ -1115,7 +1115,7 @@
     "id": "metal_order_box",
     "name": "Metal Order Box",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "I'll leave the meal planning to you!",
     "price": [
       {
@@ -1135,7 +1135,7 @@
     "id": "tall_order_box",
     "name": "Tall Order Box",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "You won't believe what kind of orders you'll find inside!",
     "price": [
       {
@@ -1155,7 +1155,7 @@
     "id": "classic_order_box",
     "name": "Classic Order Box",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "How about some retro delicacies?",
     "price": [
       {
@@ -1175,7 +1175,7 @@
     "id": "swan_dedications",
     "name": "Swan Dedications",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "You can tell the swan anything.",
     "price": [
       {
@@ -1195,7 +1195,7 @@
     "id": "magic_boxes",
     "name": "Magic Boxes",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "With this magic wand, I can satisfy all your wants!",
     "price": [
       {
@@ -1215,7 +1215,7 @@
     "id": "chickadee_notebook",
     "name": "Chickadee Notebook",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "Let's see what orders have come in.",
     "price": [
       {
@@ -1235,7 +1235,7 @@
     "id": "white_rabbit_order_box",
     "name": "White Rabbit Order Box",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "Don't worry! White Rabbit will take everyone's orders properly!",
     "price": [
       {
@@ -1255,7 +1255,7 @@
     "id": "eight_treasure_delicacy",
     "name": "Eight Treasure Delicacy",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "Please wait a moment. Your meal is on its way!",
     "price": [
       {
@@ -1275,7 +1275,7 @@
     "id": "sky_blue_letter",
     "name": "Sky Blue Letter",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "Hang on to a floaty if you can't swim!",
     "price": [
       {
@@ -1295,7 +1295,7 @@
     "id": "avocado_order_box",
     "name": "Avocado Order Box",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "I Wonder where the other half of the avocado went.",
     "price": [
       {
@@ -1315,7 +1315,7 @@
     "id": "ice_cream_order_box",
     "name": "Ice Cream Order Box",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "Wait! Your tongue will get stuck if you try to lick it.",
     "price": [
       {
@@ -1335,7 +1335,7 @@
     "id": "honey_dedications",
     "name": "Honey Dedications",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "Secretly whisper your thoughts to the bees!",
     "price": [
       {
@@ -1355,7 +1355,7 @@
     "id": "galactic_shuttle_box",
     "name": "Galactic Shuttle Box",
     "area": "garden",
-    "group": "Order Boxes",
+    "group": "Order Box",
     "description": "Sometimes there are mystery orders.",
     "price": [
       {
@@ -1535,7 +1535,7 @@
     "id": "antique_armchair",
     "name": "Antique Armchair",
     "area": "garden",
-    "group": "Seating",
+    "group": "Seatings",
     "description": "Relieves all your fatigue in an instant!",
     "price": [
       {
@@ -1555,7 +1555,7 @@
     "id": "beach_break",
     "name": "Beach Break",
     "area": "garden",
-    "group": "Seating",
+    "group": "Seatings",
     "description": "Remember to use sunscreen!",
     "price": [
       {
@@ -1575,7 +1575,7 @@
     "id": "soft_cherry_shaped_chair",
     "name": "Soft Cherry-Shaped Chair",
     "area": "garden",
-    "group": "Seating",
+    "group": "Seatings",
     "description": "Oof, what a close call. The chair is so comfortable that I almost didn't want to get up anymore.",
     "price": [
       {
@@ -1595,7 +1595,7 @@
     "id": "donut_stool",
     "name": "Donut Stool",
     "area": "garden",
-    "group": "Seating",
+    "group": "Seatings",
     "description": "Oh! You'll gradually sink in while sitting on it.",
     "price": [
       {
@@ -1615,7 +1615,7 @@
     "id": "fluffy_cloud_stool",
     "name": "Fluffy Cloud Stool",
     "area": "garden",
-    "group": "Seating",
+    "group": "Seatings",
     "description": "It feels very comfortable to sit among the clouds.",
     "price": [
       {
@@ -1635,7 +1635,7 @@
     "id": "interstellar_relaxation",
     "name": "Interstellar Relaxation",
     "area": "garden",
-    "group": "Seating",
+    "group": "Seatings",
     "description": "Take a breather beneath a lovely rainbow.",
     "price": [
       {
@@ -1655,7 +1655,7 @@
     "id": "wattle_fence",
     "name": "Wattle Fence",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "The wooden stakes are firmly embedded in the ground.",
     "price": [
       {
@@ -1675,7 +1675,7 @@
     "id": "countryside_fence",
     "name": "Countryside Fence",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "Has a unique countryside vibe to it.",
     "price": [
       {
@@ -1695,7 +1695,7 @@
     "id": "artsy_fence",
     "name": "Artsy Fence",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "You brighten the place up more than anything else.",
     "price": [
       {
@@ -1715,7 +1715,7 @@
     "id": "cozy_fence",
     "name": "Cozy Fence",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "Makes you feel warm and fuzzy AND safe.",
     "price": [
       {
@@ -1735,7 +1735,7 @@
     "id": "pure_white_fence",
     "name": "Pure White Fence",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "It feels quite romantic.",
     "price": [
       {
@@ -1755,7 +1755,7 @@
     "id": "carnival_party",
     "name": "Carnival Party",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "The little ghost is currently helping set up the party.",
     "price": [
       {
@@ -1775,7 +1775,7 @@
     "id": "gingerbread_fence",
     "name": "Gingerbread Fence",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "The gingerbreads are all dressed up for winter to welcome everyone!",
     "price": [
       {
@@ -1795,7 +1795,7 @@
     "id": "rabbit_sonata",
     "name": "Rabbit Sonata",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "Did the rabbits' expressions change? Or... is it just my imagination?",
     "price": [
       {
@@ -1815,7 +1815,7 @@
     "id": "springtime",
     "name": "Springtime",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "Let's go on a spring outing together!",
     "price": [
       {
@@ -1835,7 +1835,7 @@
     "id": "blue_white_braid",
     "name": "Blue-white Braid",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "Uses a special coat of paint that resists corrosion from seawater.",
     "price": [
       {
@@ -1855,7 +1855,7 @@
     "id": "fruity_fence",
     "name": "Fruity Fence",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "I can't believe what I'm seeing: There are gigantic fruits along the side of the field!",
     "price": [
       {
@@ -1875,7 +1875,7 @@
     "id": "cookie_fence",
     "name": "Cookie Fence",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "Don't worry! This fence is extremely sturdy. After all, I tried biting into it just now.",
     "price": [
       {
@@ -1895,7 +1895,7 @@
     "id": "cloth_fence",
     "name": "Cloth Fence",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "Has a clean and retro look.",
     "price": [
       {
@@ -1915,7 +1915,7 @@
     "id": "starlight_fence",
     "name": "Starlight Fence",
     "area": "garden",
-    "group": "Fences",
+    "group": "Fence",
     "description": "Made from starlight.",
     "price": [
       {
@@ -1935,7 +1935,7 @@
     "id": "wooden_vegetable_rack_2",
     "name": "Wooden Vegetable Rack",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "Stores the gifts of nature.",
     "price": [
       {
@@ -1955,7 +1955,7 @@
     "id": "homey_warehouse",
     "name": "Homey Warehouse",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "A home for the seeds.",
     "price": [
       {
@@ -1975,7 +1975,7 @@
     "id": "nature_warehouse",
     "name": "Nature Warehouse",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "Simulates the natural environment to better store seeds.",
     "price": [
       {
@@ -1995,7 +1995,7 @@
     "id": "budding_warehouse",
     "name": "Budding Warehouse",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "Full of life inside.",
     "price": [
       {
@@ -2015,7 +2015,7 @@
     "id": "magic_seed_station",
     "name": "Magic Seed Station",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "What are we planting today?",
     "price": [
       {
@@ -2035,7 +2035,7 @@
     "id": "carnival_tent",
     "name": "Carnival Tent",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "The seeds lie comfortably in the tent, no longer afraid of moisture.",
     "price": [
       {
@@ -2055,7 +2055,7 @@
     "id": "sugar_igloo",
     "name": "Sugar Igloo",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "Do seeds have sweet dreams inside?",
     "price": [
       {
@@ -2075,7 +2075,7 @@
     "id": "eternal_teapot",
     "name": "Eternal Teapot",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "Seeds placed inside are frozen in time, staying fresh indefinitely!",
     "price": [
       {
@@ -2095,7 +2095,7 @@
     "id": "springtime_granary",
     "name": "Springtime Granary",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "The seeds have just awakened from their winter slumber.",
     "price": [
       {
@@ -2115,7 +2115,7 @@
     "id": "leisurely_pinwheel",
     "name": "Leisurely Pinwheel",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "It creaks when the wind starts to blow.",
     "price": [
       {
@@ -2135,7 +2135,7 @@
     "id": "lemony_warehouse",
     "name": "Lemony Warehouse",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "Take a guess, where is the lemon's seed?",
     "price": [
       {
@@ -2155,7 +2155,7 @@
     "id": "jelly_warehouse",
     "name": "Jelly Warehouse",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "Not only does it look cute, but it can also effectively protect the seeds!",
     "price": [
       {
@@ -2175,7 +2175,7 @@
     "id": "cloudy_seed_station",
     "name": "Cloudy Seed Station",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "The ideal temperaturę for storing seeds.",
     "price": [
       {
@@ -2195,7 +2195,7 @@
     "id": "space_plant_station",
     "name": "Space Plant Station",
     "area": "garden",
-    "group": "Mini Warehouses",
+    "group": "Mini Warehouse",
     "description": "Researching newly discovered seeds.",
     "price": [
       {
@@ -2495,7 +2495,7 @@
     "id": "shabby_scarecrow",
     "name": "Shabby Scarecrow",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "A cute doll made from random materials found nearby.",
     "price": [
       {
@@ -2515,7 +2515,7 @@
     "id": "countryside_scarecrow",
     "name": "Countryside Scarecrow",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "A unsophisticated-looking scarecrow.",
     "price": [
       {
@@ -2535,7 +2535,7 @@
     "id": "harvest_scarecrow",
     "name": "Harvest Scarecrow",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "May you be blessed with a bountiful harvest this year!",
     "price": [
       {
@@ -2555,7 +2555,7 @@
     "id": "exquisite_scarecrow",
     "name": "Exquisite Scarecrow",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "Shall we go on a picnic together?",
     "price": [
       {
@@ -2575,7 +2575,7 @@
     "id": "gentle_guardian",
     "name": "Gentle Guardian",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "Hi, nice to meet you!",
     "price": [
       {
@@ -2595,7 +2595,7 @@
     "id": "playful_scarecrow",
     "name": "Playful Scarecrow",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "Actually, I can perform acrobatics as well!",
     "price": [
       {
@@ -2615,7 +2615,7 @@
     "id": "bus_stop_snowman",
     "name": "Bus Stop Snowman",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "Always watching over you.",
     "price": [
       {
@@ -2635,7 +2635,7 @@
     "id": "down_the_rabbit_hole",
     "name": "Down the Rabbit Hole",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "I shall be late! Are you ready to set off with me?",
     "price": [
       {
@@ -2655,7 +2655,7 @@
     "id": "tranquil_scarecrow",
     "name": "Tranquil Scarecrow",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "Want to harvest the fruits with me today?",
     "price": [
       {
@@ -2675,7 +2675,7 @@
     "id": "sailor_scarecrow",
     "name": "Sailor Scarecrow",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "Yearining for the deep ocean...",
     "price": [
       {
@@ -2695,7 +2695,7 @@
     "id": "energetic_fruit_farmer",
     "name": "Energetic Fruit Farmer",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "Good news! The fruits tha have been harvested this year are especially huge!",
     "price": [
       {
@@ -2712,10 +2712,10 @@
     "series": "Energy Fruit"
   },
   {
-    "id": "teddy_bear",
-    "name": "Teddy Bear",
+    "id": "teddy_bears_protection",
+    "name": "Teddy Bear's Protection",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "It's always protecting the field with a smile.",
     "price": [
       {
@@ -2735,7 +2735,7 @@
     "id": "lively_scarecrow",
     "name": "Lively Scarecrow",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "La, la, la! I'm the liveliest scarecrow!",
     "price": [
       {
@@ -2755,7 +2755,7 @@
     "id": "space_watcher",
     "name": "Space Watcher",
     "area": "garden",
-    "group": "Field Scarecrows",
+    "group": "Field Scarecrow",
     "description": "Do you often look up at the stars?",
     "price": [
       {

@@ -146,8 +146,8 @@
     "series": "Marvelous Midnight"
   },
   {
-    "id": "grandpa",
-    "name": "Grandpa",
+    "id": "grandpas_phone",
+    "name": "Grandpa's Phone",
     "area": "takeout",
     "group": "Provision Table",
     "description": "It looks kind of old. Will it still work?",
@@ -878,8 +878,8 @@
     "series": "Energy Fruit"
   },
   {
-    "id": "imp",
-    "name": "Imp",
+    "id": "imps_cabinet",
+    "name": "Imp's Cabinet",
     "area": "takeout",
     "group": "Snack Cabinet",
     "description": "Items are always inexplicably disappearing.",
@@ -919,8 +919,8 @@
     "series": "Alice's Dream"
   },
   {
-    "id": "sailor",
-    "name": "Sailor",
+    "id": "sailors_oar_cabinet",
+    "name": "Sailor's Oar Cabinet",
     "area": "takeout",
     "group": "Snack Cabinet",
     "description": "Oars with stories to tell.",
@@ -1182,8 +1182,8 @@
     "series": "Deep-sea Ballad"
   },
   {
-    "id": "puppy",
-    "name": "Puppy",
+    "id": "puppys_selection",
+    "name": "Puppy's Selection",
     "area": "takeout",
     "group": "Snack Cabinet",
     "description": "Meticulously crafted recommendations for the adorable puppy!",
@@ -4704,8 +4704,8 @@
     "series": "Alice's Dream"
   },
   {
-    "id": "pirate",
-    "name": "Pirate",
+    "id": "pirates_collectible",
+    "name": "Pirate's Collectible",
     "area": "takeout",
     "group": "Wall Decor",
     "description": "Fished out from the seabed. It looks pretty old.",
@@ -4866,8 +4866,8 @@
     "series": "Fanciful Melody"
   },
   {
-    "id": "eros",
-    "name": "Eros",
+    "id": "eros_arrow",
+    "name": "Eros' Arrow",
     "area": "takeout",
     "group": "Wall Decor",
     "description": "Eros'arrow points to the sky whe it's time for love every day.",
@@ -4986,8 +4986,8 @@
     "series": "Milky Mint Chocolate"
   },
   {
-    "id": "baron",
-    "name": "Baron",
+    "id": "barons_blade",
+    "name": "Baron's Blade",
     "area": "takeout",
     "group": "Wall Decor",
     "description": "This blade needs no devil's blood for embellishment. Scented roses will do!",
@@ -5006,8 +5006,8 @@
     "series": "Murmuring Dusk Rose"
   },
   {
-    "id": "rock",
-    "name": "Rock",
+    "id": "rock_n_roll_bass",
+    "name": "Rock 'n' Roll Bass",
     "area": "takeout",
     "group": "Wall Decor",
     "description": "Little Mouse's very first bass that's full of precious memories.",
@@ -5292,8 +5292,8 @@
     "series": "Energy Fruit"
   },
   {
-    "id": "sisily",
-    "name": "Sisily",
+    "id": "sisilys_chair",
+    "name": "Sisily's Chair",
     "area": "takeout",
     "group": "Resting Area",
     "description": "After sitting down, you'll subconsciously start humming some songs you've never heard before.",

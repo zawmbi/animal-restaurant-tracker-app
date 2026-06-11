@@ -3,7 +3,7 @@
     "id": "bud_planter",
     "name": "Bud Planter",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Bluebell Garden",
     "description": "The little buds here are getting ready to bloom",
     "price": [
       {
@@ -22,7 +22,7 @@
     "id": "blue_flower_bed",
     "name": "Blue Flower Bed",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Bluebell Garden",
     "description": "The blooming bluebells sway in the wind.",
     "price": [
       {
@@ -41,7 +41,7 @@
     "id": "fairy_bluebells",
     "name": "Fairy Bluebells",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Bluebell Garden",
     "description": "When the bluebells sway in the wind, you can almost hear the sound of bells ringing.",
     "price": [
       {
@@ -60,7 +60,7 @@
     "id": "azure_sky",
     "name": "Azure Sky",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Bluebell Garden",
     "description": "It is as if the bluebells are twinkling in the night sky.",
     "price": [
       {
@@ -79,7 +79,7 @@
     "id": "innocent_memories",
     "name": "Innocent Memories",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Bluebell Garden",
     "description": "The blue wind chime sways in the wind, invoking memories of innocent times.",
     "price": [
       {
@@ -93,7 +93,7 @@
     "id": "dash_of_red",
     "name": "Dash Of Red",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Rose Garden",
     "description": "One beautiful little rose is growing here.",
     "price": [
       {
@@ -112,7 +112,7 @@
     "id": "red_flower_bed",
     "name": "Red Flower Bed",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Rose Garden",
     "description": "The blooming roses are full of life!",
     "price": [
       {
@@ -131,7 +131,7 @@
     "id": "ruby_sea",
     "name": "Ruby Sea",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Rose Garden",
     "description": "Full of glittering red gems.",
     "price": [
       {
@@ -150,7 +150,7 @@
     "id": "love_and_beauty",
     "name": "Love And Beauty",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Rose Garden",
     "description": "Love as wide as the world and as deep as the sea.",
     "price": [
       {
@@ -169,7 +169,7 @@
     "id": "white_romance",
     "name": "White Romance",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Rose Garden",
     "description": "Romance is white, the color of snow and of clouds.",
     "price": [
       {
@@ -183,7 +183,7 @@
     "id": "terracotta_plant_pot",
     "name": "Terracotta Plant Pot",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Sunflower Garden",
     "description": "Here's where the little sunflowers grow up!",
     "price": [
       {
@@ -202,7 +202,7 @@
     "id": "rectangle_flower_bed",
     "name": "Rectangle Flower Bed",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Sunflower Garden",
     "description": "The sunflowers greet the sunrise with a smile.",
     "price": [
       {
@@ -221,7 +221,7 @@
     "id": "courtyard_flower_bed",
     "name": "Courtyard Flower Bed",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Sunflower Garden",
     "description": "The courtyard is full of life!",
     "price": [
       {
@@ -240,7 +240,7 @@
     "id": "modern_greenhouse",
     "name": "Modern Greenhouse",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Sunflower Garden",
     "description": "Even without sunlight, the garden is still thriving!",
     "price": [
       {
@@ -259,7 +259,7 @@
     "id": "wrought_iron_flowerbed",
     "name": "Wrought Iron Flowerbed",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Sunflower Garden",
     "description": "Looks somewhat artistic.",
     "price": [
       {
@@ -273,7 +273,7 @@
     "id": "small_plant_pot",
     "name": "Small Plant Pot",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Daisy Garden",
     "description": "Can only fit a single flower.",
     "price": [
       {
@@ -292,7 +292,7 @@
     "id": "yellow_flower_bed",
     "name": "Yellow Flower Bed",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Daisy Garden",
     "description": "The blooming daisies look so happy and carefree!",
     "price": [
       {
@@ -311,7 +311,7 @@
     "id": "medium_flower_bed",
     "name": "Medium Flower Bed",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Daisy Garden",
     "description": "You can smell the scent of daisies.",
     "price": [
       {
@@ -330,7 +330,7 @@
     "id": "greenhouse_garden",
     "name": "Greenhouse Garden",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Daisy Garden",
     "description": "The flowers have faded, leaving only the daisies in full bloom.",
     "price": [
       {
@@ -349,7 +349,7 @@
     "id": "vintage_flowerbed",
     "name": "Vintage Flowerbed",
     "area": "garden",
-    "group": "Flowerbed",
+    "group": "Daisy Garden",
     "description": "Daisies blooming within a classic flowerbed, a dash of playfulness mixed with vintage.",
     "price": [
       {
@@ -434,8 +434,8 @@
         "amount": 2350000
       }
     ],
-    "series": "Supreme Seat of Honor",
-    "effects": []
+    "effects": [],
+    "series": "Supreme Seat of Honor"
   },
   {
     "id": "floating_teacup",
@@ -450,12 +450,12 @@
         "amount": 8000000
       }
     ],
-    "series": "Alice's Dream",
-    "effects": []
+    "effects": [],
+    "series": "Alice's Dream"
   },
   {
-    "id": "sadako",
-    "name": "Sadako",
+    "id": "sadakos_well",
+    "name": "Sadako's Well",
     "area": "garden",
     "group": "Wishing Well",
     "description": "Lv.4: It's quite tiring to hang there as well.",
@@ -465,8 +465,8 @@
         "amount": 8600000
       }
     ],
-    "series": "Marvelous Midnight",
-    "effects": []
+    "effects": [],
+    "series": "Marvelous Midnight"
   },
   {
     "id": "sweet_dream",
@@ -509,8 +509,8 @@
     "series": "Energy Fruit"
   },
   {
-    "id": "pirates",
-    "name": "Pirates",
+    "id": "pirates_barrel",
+    "name": "Pirates' Barrel",
     "area": "garden",
     "group": "Wishing Well",
     "description": "Lv.5: It's said that wine barrels that crossed the sea are better for making wishes.",
@@ -521,8 +521,8 @@
         "amount": 15000000
       }
     ],
-    "series": "Of Coconut Trees and the Sea Breeze",
-    "effects": []
+    "effects": [],
+    "series": "Of Coconut Trees and the Sea Breeze"
   },
   {
     "id": "lucky_bell",
@@ -536,8 +536,8 @@
         "amount": 3800000
       }
     ],
-    "series": "Warm Winter Chimes",
-    "effects": []
+    "effects": [],
+    "series": "Warm Winter Chimes"
   },
   {
     "id": "carp_of_fortune",
@@ -551,8 +551,8 @@
         "amount": 8800000
       }
     ],
-    "series": "Stovetop Blessings",
-    "effects": []
+    "effects": [],
+    "series": "Stovetop Blessings"
   },
   {
     "id": "celestial_spring",
@@ -567,8 +567,8 @@
         "amount": 25000000
       }
     ],
-    "series": "Starry Rose",
-    "effects": []
+    "effects": [],
+    "series": "Starry Rose"
   },
   {
     "id": "mid_air_imagination",
@@ -583,8 +583,8 @@
         "amount": 20000000
       }
     ],
-    "series": "Steam-powered",
-    "effects": []
+    "effects": [],
+    "series": "Steam-powered"
   },
   {
     "id": "ghost_staff_fountain",
@@ -598,8 +598,8 @@
         "amount": 9000000
       }
     ],
-    "series": "Marvelous Midnight",
-    "effects": []
+    "effects": [],
+    "series": "Marvelous Midnight"
   },
   {
     "id": "sweet_loop",
@@ -613,8 +613,8 @@
         "amount": 12000000
       }
     ],
-    "series": "Childhood Paradise",
-    "effects": []
+    "effects": [],
+    "series": "Childhood Paradise"
   },
   {
     "id": "fountain_goddess",
@@ -628,8 +628,8 @@
         "amount": 14500000
       }
     ],
-    "series": "Fanciful Melody",
-    "effects": []
+    "effects": [],
+    "series": "Fanciful Melody"
   },
   {
     "id": "winter_skates",
@@ -643,8 +643,8 @@
         "amount": 12000000
       }
     ],
-    "series": "Aurora Fairy Tale",
-    "effects": []
+    "effects": [],
+    "series": "Aurora Fairy Tale"
   },
   {
     "id": "fine_wine",
@@ -658,8 +658,8 @@
         "amount": 15000000
       }
     ],
-    "series": "Pleasant Dreams",
-    "effects": []
+    "effects": [],
+    "series": "Pleasant Dreams"
   },
   {
     "id": "duckling_gathering",
@@ -673,8 +673,8 @@
         "amount": 170
       }
     ],
-    "series": "Fantastical Party",
-    "effects": []
+    "effects": [],
+    "series": "Fantastical Party"
   },
   {
     "id": "milky_flow",
@@ -689,12 +689,12 @@
         "amount": 50000000
       }
     ],
-    "series": "Warm Bakery",
-    "effects": []
+    "effects": [],
+    "series": "Warm Bakery"
   },
   {
-    "id": "cupid",
-    "name": "Cupid",
+    "id": "cupids_spring",
+    "name": "Cupid's Spring",
     "area": "garden",
     "group": "Wishing Well",
     "description": "Lv.5: I heard that drinking from this spring allows one to find true love!",
@@ -705,8 +705,8 @@
         "amount": 48000000
       }
     ],
-    "series": "Murmuring Dusk Rose",
-    "effects": []
+    "effects": [],
+    "series": "Murmuring Dusk Rose"
   },
   {
     "id": "moonglow_spring",
@@ -720,8 +720,8 @@
         "amount": 180
       }
     ],
-    "series": "Slumberous Nights",
-    "effects": []
+    "effects": [],
+    "series": "Slumberous Nights"
   },
   {
     "id": "fervid_rainbow",
@@ -736,8 +736,8 @@
         "amount": 28000000
       }
     ],
-    "series": "Rock'n'Roll Sweetheart",
-    "effects": []
+    "effects": [],
+    "series": "Rock'n'Roll Sweetheart"
   },
   {
     "id": "rippling_winged_pond",
@@ -760,8 +760,8 @@
     "series": "Buzzing Sweet Whispers"
   },
   {
-    "id": "ladies",
-    "name": "Ladies",
+    "id": "ladies_dreamy_tower",
+    "name": "Ladies' Dreamy Tower",
     "area": "garden",
     "group": "Wishing Well",
     "description": "Lv.5: Silently make a wish and the puppy will make it come true.",
@@ -771,8 +771,8 @@
         "amount": 52000000
       }
     ],
-    "series": "Milky Mint Chocolate",
-    "effects": []
+    "effects": [],
+    "series": "Milky Mint Chocolate"
   },
   {
     "id": "pumpkin_ghoul_fountain",
@@ -787,8 +787,8 @@
         "amount": 55000000
       }
     ],
-    "series": "Forgotten Fantasies Paradise",
-    "effects": []
+    "effects": [],
+    "series": "Forgotten Fantasies Paradise"
   },
   {
     "id": "azure_wish",
@@ -802,8 +802,8 @@
         "amount": 190
       }
     ],
-    "series": "Deep-sea Ballad",
-    "effects": []
+    "effects": [],
+    "series": "Deep-sea Ballad"
   },
   {
     "id": "chickadee_singing_class",
@@ -817,8 +817,8 @@
         "amount": 18000000
       }
     ],
-    "series": "Snowflake Journey",
-    "effects": []
+    "effects": [],
+    "series": "Snowflake Journey"
   },
   {
     "id": "lotus_fountain",
@@ -832,8 +832,8 @@
         "amount": 16000000
       }
     ],
-    "series": "Spring Pavilion Banquet",
-    "effects": []
+    "effects": [],
+    "series": "Spring Pavilion Banquet"
   },
   {
     "id": "floating_spring",
@@ -867,8 +867,8 @@
         "amount": 64000000
       }
     ],
-    "series": "Fleeting Feathers",
-    "effects": []
+    "effects": [],
+    "series": "Fleeting Feathers"
   },
   {
     "id": "butterfly_wishes",
@@ -882,8 +882,8 @@
         "amount": 216
       }
     ],
-    "series": "Midsummer Birdsong",
-    "effects": []
+    "effects": [],
+    "series": "Midsummer Birdsong"
   },
   {
     "id": "simple_table",
@@ -917,8 +917,8 @@
         "amount": 290000
       }
     ],
-    "series": "Lattice Story",
-    "effects": []
+    "effects": [],
+    "series": "Lattice Story"
   },
   {
     "id": "artsy_table",
@@ -932,8 +932,8 @@
         "amount": 1360000
       }
     ],
-    "series": "Forest Humming",
-    "effects": []
+    "effects": [],
+    "series": "Forest Humming"
   },
   {
     "id": "ornate_table",
@@ -947,8 +947,8 @@
         "amount": 3400000
       }
     ],
-    "series": "Supreme Sea of Honor",
-    "effects": []
+    "effects": [],
+    "series": "Supreme Sea of Honor"
   },
   {
     "id": "halloween_table",
@@ -962,8 +962,8 @@
         "amount": 1000000
       }
     ],
-    "series": "Marvelous Midnight",
-    "effects": []
+    "effects": [],
+    "series": "Marvelous Midnight"
   },
   {
     "id": "reverie_table",
@@ -978,8 +978,8 @@
         "amount": 18500000
       }
     ],
-    "series": "Alice's Dream",
-    "effects": []
+    "effects": [],
+    "series": "Alice's Dream"
   },
   {
     "id": "dessert_long_table",
@@ -1034,8 +1034,8 @@
         "amount": 12000000
       }
     ],
-    "series": "Of Coconut Trees and the Sea Breeze",
-    "effects": []
+    "effects": [],
+    "series": "Of Coconut Trees and the Sea Breeze"
   },
   {
     "id": "christmas_long_table",
@@ -1070,8 +1070,8 @@
         "amount": 9600000
       }
     ],
-    "series": "Stovetop Blessings",
-    "effects": []
+    "effects": [],
+    "series": "Stovetop Blessings"
   },
   {
     "id": "sky_gazing",
@@ -1086,8 +1086,8 @@
         "amount": 22000000
       }
     ],
-    "series": "Starry Rose",
-    "effects": []
+    "effects": [],
+    "series": "Starry Rose"
   },
   {
     "id": "gear_long_table",
@@ -1102,8 +1102,8 @@
         "amount": 12000000
       }
     ],
-    "series": "Steam-powered",
-    "effects": []
+    "effects": [],
+    "series": "Steam-powered"
   },
   {
     "id": "antique_long_table",
@@ -1117,8 +1117,8 @@
         "amount": 4000000
       }
     ],
-    "series": "Marvelous Midnight",
-    "effects": []
+    "effects": [],
+    "series": "Marvelous Midnight"
   },
   {
     "id": "long_sketching_table",
@@ -1132,8 +1132,8 @@
         "amount": 16000000
       }
     ],
-    "series": "Fanciful Melody",
-    "effects": []
+    "effects": [],
+    "series": "Fanciful Melody"
   },
   {
     "id": "snowy_night_tea_party",
@@ -1147,8 +1147,8 @@
         "amount": 9000000
       }
     ],
-    "series": "Aurora Fairy Tale",
-    "effects": []
+    "effects": [],
+    "series": "Aurora Fairy Tale"
   },
   {
     "id": "courtyard_snow",
@@ -1162,8 +1162,8 @@
         "amount": 10000000
       }
     ],
-    "series": "Pleasant Dreams",
-    "effects": []
+    "effects": [],
+    "series": "Pleasant Dreams"
   },
   {
     "id": "cute_party",
@@ -1177,8 +1177,8 @@
         "amount": 158
       }
     ],
-    "series": "Fantastical Party",
-    "effects": []
+    "effects": [],
+    "series": "Fantastical Party"
   },
   {
     "id": "relaxing_taste",
@@ -1192,8 +1192,8 @@
         "amount": 19000000
       }
     ],
-    "series": "Warm Bakery",
-    "effects": []
+    "effects": [],
+    "series": "Warm Bakery"
   },
   {
     "id": "true_love_never_dies",
@@ -1207,8 +1207,8 @@
         "amount": 22000000
       }
     ],
-    "series": "Murmuring Dusk Rose",
-    "effects": []
+    "effects": [],
+    "series": "Murmuring Dusk Rose"
   },
   {
     "id": "dream_encounter",
@@ -1222,8 +1222,8 @@
         "amount": 170
       }
     ],
-    "series": "Slumberous Nights",
-    "effects": []
+    "effects": [],
+    "series": "Slumberous Nights"
   },
   {
     "id": "mirror_rhapsody",
@@ -1238,8 +1238,8 @@
         "amount": 24000000
       }
     ],
-    "series": "Rock'n'Roll Sweetheart",
-    "effects": []
+    "effects": [],
+    "series": "Rock'n'Roll Sweetheart"
   },
   {
     "id": "early_summertime_reunion",
@@ -1273,8 +1273,8 @@
         "amount": 20000000
       }
     ],
-    "series": "Milky Mint Chocolate",
-    "effects": []
+    "effects": [],
+    "series": "Milky Mint Chocolate"
   },
   {
     "id": "late_night_rhapsody",
@@ -1288,8 +1288,8 @@
         "amount": 26000000
       }
     ],
-    "series": "Forgotten Fantasies Paradise",
-    "effects": []
+    "effects": [],
+    "series": "Forgotten Fantasies Paradise"
   },
   {
     "id": "floating_afternoon_tea",
@@ -1303,8 +1303,8 @@
         "amount": 180
       }
     ],
-    "series": "Deep-sea Ballad",
-    "effects": []
+    "effects": [],
+    "series": "Deep-sea Ballad"
   },
   {
     "id": "gingerbread_snow_carriage",
@@ -1338,8 +1338,8 @@
         "amount": 16000000
       }
     ],
-    "series": "Spring Pavillion Banquet",
-    "effects": []
+    "effects": [],
+    "series": "Spring Pavillion Banquet"
   },
   {
     "id": "cosmic_afternoon_tea",
@@ -1373,8 +1373,8 @@
         "amount": 22300000
       }
     ],
-    "series": "Fleeting Feathers",
-    "effects": []
+    "effects": [],
+    "series": "Fleeting Feathers"
   },
   {
     "id": "elegant_afternoon",
@@ -1388,8 +1388,8 @@
         "amount": 190
       }
     ],
-    "series": "Midsummer Birdsong",
-    "effects": []
+    "effects": [],
+    "series": "Midsummer Birdsong"
   },
   {
     "id": "stump_mailbox",
@@ -1512,8 +1512,8 @@
     "series": "Marvelous Midnight"
   },
   {
-    "id": "witch",
-    "name": "Witch",
+    "id": "witchs_hoard",
+    "name": "Witch's Hoard",
     "area": "garden",
     "group": "Mailbox",
     "description": "All of the witch's secrets are hidden in here.",
@@ -2443,8 +2443,8 @@
     "series": "Warm Bakery"
   },
   {
-    "id": "psyche",
-    "name": "Psyche",
+    "id": "psyches_journey",
+    "name": "Psyche's Journey",
     "area": "garden",
     "group": "Path",
     "description": "Although the journey is arduous, we'll reunite eventually.",
@@ -3113,8 +3113,8 @@
     "series": "Rock'n'Roll Sweetheart"
   },
   {
-    "id": "sunflowers",
-    "name": "Sunflowers",
+    "id": "sunflowers_promise",
+    "name": "Sunflowers' Promise",
     "area": "garden",
     "group": "Fence",
     "description": "The sunflowers lift their heads as they anxiously search for the sun.",

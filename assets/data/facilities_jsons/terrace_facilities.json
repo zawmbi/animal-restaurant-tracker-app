@@ -11,8 +11,8 @@
         "amount": 0
       }
     ],
-    "series": "Log Scenery",
-    "effects": []
+    "effects": [],
+    "series": "Log Scenery"
   },
   {
     "id": "natural_scenery",
@@ -1548,8 +1548,8 @@
     "series": "Buzzing Sweet Whispers"
   },
   {
-    "id": "lady",
-    "name": "Lady",
+    "id": "ladys_dressing_table",
+    "name": "Lady's Dressing Table",
     "area": "terrace",
     "group": "Sink",
     "description": "The cute mirror makes you look even more adorable!",
@@ -1850,8 +1850,8 @@
     "series": "Lattice Story"
   },
   {
-    "id": "grandma",
-    "name": "Grandma",
+    "id": "grandmas_dining_table",
+    "name": "Grandma's Dining Table",
     "area": "terrace",
     "group": "Cold Food Section",
     "description": "You're eating too little! Is the dessert that Grandma made not nice?",
@@ -3625,10 +3625,10 @@
     "series": "Starry Whisper"
   },
   {
-    "id": "stump_table1",
-    "name": "Stump Table.1",
+    "id": "stump_table",
+    "name": "Stump Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Still exudes the scent of nature.",
     "price": [
       {
@@ -3645,10 +3645,10 @@
     "series": "Log Scenery"
   },
   {
-    "id": "fabric_round_table1",
-    "name": "Fabric Round Table.1",
+    "id": "fabric_round_table",
+    "name": "Fabric Round Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Suitable for a family gathering.",
     "price": [
       {
@@ -3665,10 +3665,10 @@
     "series": "Lattice Story"
   },
   {
-    "id": "elegant_atmosphere1",
-    "name": "Elegant Atmosphere.1",
+    "id": "elegant_atmosphere",
+    "name": "Elegant Atmosphere",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "You'll feel like drinking a little when sitting here.",
     "price": [
       {
@@ -3685,10 +3685,10 @@
     "series": "Forest Humming"
   },
   {
-    "id": "elegant_customization1",
-    "name": "Elegant Customization.1",
+    "id": "elegant_customization",
+    "name": "Elegant Customization",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "A luxurious table that was custom made in secret.",
     "price": [
       {
@@ -3705,10 +3705,10 @@
     "series": "Supreme Seat of Honor"
   },
   {
-    "id": "first_snow_encounter1",
-    "name": "First Snow Encounter.1",
+    "id": "first_snow_encounter",
+    "name": "First Snow Encounter",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Who would you want to spend the day of first snow with?",
     "price": [
       {
@@ -3725,10 +3725,10 @@
     "series": "Warm Winter Chimes"
   },
   {
-    "id": "mini_reunion1",
-    "name": "Mini Reunion.1",
+    "id": "mini_reunion",
+    "name": "Mini Reunion",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "The mini round table embodies the warmth of the family.",
     "price": [
       {
@@ -3745,10 +3745,10 @@
     "series": "Stovetop Blessings"
   },
   {
-    "id": "sweet_palate_blue1",
-    "name": "Sweet Palate - Blue.1",
+    "id": "sweet_palate_blue",
+    "name": "Sweet Palate - Blue",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Smells like vanilla.",
     "price": [
       {
@@ -3765,10 +3765,10 @@
     "series": "Childhood Paradise"
   },
   {
-    "id": "exclusive_customization1",
-    "name": "Exclusive Customization.1",
+    "id": "exclusive_customization",
+    "name": "Exclusive Customization",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Welcome, the table that you've reserved is over here. This way please!",
     "price": [
       {
@@ -3785,10 +3785,10 @@
     "series": "Fanciful Melody"
   },
   {
-    "id": "first_dinner1",
-    "name": "First Dinner.1",
+    "id": "first_dinner",
+    "name": "First Dinner",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Let's clean up the spider webs before eating.",
     "price": [
       {
@@ -3805,10 +3805,10 @@
     "series": "Marvelous Midnight"
   },
   {
-    "id": "refreshing_table1",
-    "name": "Refreshing Table.1",
+    "id": "refreshing_table",
+    "name": "Refreshing Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "It looks really good when the sun shines on it.",
     "price": [
       {
@@ -3825,10 +3825,10 @@
     "series": "Fantastical Party"
   },
   {
-    "id": "woodsy_afternoon_tea1",
-    "name": "Woodsy Afternoon Tea.1",
+    "id": "woodsy_afternoon_tea",
+    "name": "Woodsy Afternoon Tea",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "No one's having any afternoon tea until the spell is broken.",
     "requiredStars": 320000,
     "price": [
@@ -3846,10 +3846,10 @@
     "series": "Alice's Dream"
   },
   {
-    "id": "island_round_table1",
-    "name": "Island Round Table.1",
+    "id": "island_round_table",
+    "name": "Island Round Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Making do with what we have at the beach: a table made from coconut trees.",
     "requiredStars": 380000,
     "price": [
@@ -3867,10 +3867,10 @@
     "series": "Of Coconut Trees and the Sea Breeze"
   },
   {
-    "id": "planetary_orbit1",
-    "name": "Planetary Orbit.1",
+    "id": "planetary_orbit",
+    "name": "Planetary Orbit",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "The stars are silent, but you gave them meaning and brought them to life.",
     "requiredStars": 500000,
     "price": [
@@ -3888,10 +3888,10 @@
     "series": "Starry Rose"
   },
   {
-    "id": "bear_recess1",
-    "name": "Bear Recess.1",
+    "id": "bear_recess",
+    "name": "Bear Recess",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Since it's over, let's just rest now!",
     "price": [
       {
@@ -3908,10 +3908,10 @@
     "series": "Warm Bakery"
   },
   {
-    "id": "musing_round_table1",
-    "name": "Musing Round Table.1",
+    "id": "musing_round_table",
+    "name": "Musing Round Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Come and take a seat. Take a deep breath and close your eyes, for the meditation is about to begin.",
     "price": [
       {
@@ -3928,10 +3928,10 @@
     "series": "Slumberous Nights"
   },
   {
-    "id": "jade_table1",
-    "name": "Jade Table.1",
+    "id": "jade_table",
+    "name": "Jade Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "This table is so smooth and icy-cold that I can't help but want to run my hand across it even more.",
     "price": [
       {
@@ -3948,10 +3948,10 @@
     "series": "Pleasant Dreams"
   },
   {
-    "id": "daisy_square_table1",
-    "name": "Daisy Square Table.1",
+    "id": "daisy_square_table",
+    "name": "Daisy Square Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "The stools are soft and bouncy. There's even the aroma of daisies wafting in the air!",
     "price": [
       {
@@ -3968,10 +3968,10 @@
     "series": "Buzzing Sweet Whispers"
   },
   {
-    "id": "butter_cookies_table1",
-    "name": "Butter Cookies Table.1",
+    "id": "butter_cookies_table",
+    "name": "Butter Cookies Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Do you feel more relaxed that you've taken a seat here?",
     "price": [
       {
@@ -3988,10 +3988,10 @@
     "series": "Milky Mint Chocolate"
   },
   {
-    "id": "duskfall_table1",
-    "name": "Duskfall Table.1",
+    "id": "duskfall_table",
+    "name": "Duskfall Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "These candles will keep you company for as long as it's dusk.",
     "price": [
       {
@@ -4008,10 +4008,10 @@
     "series": "Murmuring Dusk Rose"
   },
   {
-    "id": "heart_of_the_ocean1",
-    "name": "Heart of the Ocean.1",
+    "id": "heart_of_the_ocean",
+    "name": "Heart of the Ocean",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "It holds great power.",
     "price": [
       {
@@ -4028,10 +4028,10 @@
     "series": "Deep-sea Ballad"
   },
   {
-    "id": "prismatic_snowflake_table1",
-    "name": "Prismatic Snowflake Table.1",
+    "id": "prismatic_snowflake_table",
+    "name": "Prismatic Snowflake Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "The reflation of the prisms makes the food loo even more appealing!",
     "price": [
       {
@@ -4048,10 +4048,10 @@
     "series": "Aurora Fairy Tale"
   },
   {
-    "id": "season_of_strawberries1",
-    "name": "Season of Strawberries.1",
+    "id": "season_of_strawberries",
+    "name": "Season of Strawberries",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "I would like a strawberry cream cupcake, please!",
     "requiredStars": 400000,
     "price": [
@@ -4069,10 +4069,10 @@
     "series": "Energy Fruit"
   },
   {
-    "id": "metal_frenzy1",
-    "name": "Metal Frenzy.1",
+    "id": "metal_frenzy",
+    "name": "Metal Frenzy",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Beneath a cold and harsh exterior is a soft and tender core.",
     "requiredStars": 450000,
     "price": [
@@ -4090,10 +4090,10 @@
     "series": "Rock 'n' Roll Sweetheart"
   },
   {
-    "id": "tasty_adventures1",
-    "name": "Tasty Adventures.1",
+    "id": "tasty_adventures",
+    "name": "Tasty Adventures",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "The arious delicious adventures bring about unending surprises!",
     "price": [
       {
@@ -4110,10 +4110,10 @@
     "series": "Steam-powered"
   },
   {
-    "id": "floral_waltz1",
-    "name": "Floral Waltz.1",
+    "id": "floral_waltz",
+    "name": "Floral Waltz",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Twirl around with the music.",
     "price": [
       {
@@ -4130,10 +4130,10 @@
     "series": "Fleeting Feathers"
   },
   {
-    "id": "vibrant_party_table1",
-    "name": "Vibrant Party Table.1",
+    "id": "vibrant_party_table",
+    "name": "Vibrant Party Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Ding! Your exclusie set meal is on its way!",
     "price": [
       {
@@ -4150,10 +4150,10 @@
     "series": "Forgotten Fantasies Paradise"
   },
   {
-    "id": "precious_dream_dance1",
-    "name": "Precious Dream Dance.1",
+    "id": "precious_dream_dance",
+    "name": "Precious Dream Dance",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "May I have a dance before dinner?",
     "price": [
       {
@@ -4170,10 +4170,10 @@
     "series": "Midsummer Birdsong"
   },
   {
-    "id": "sweet_cookie_table1",
-    "name": "Sweet Cookie Table.1",
+    "id": "sweet_cookie_table",
+    "name": "Sweet Cookie Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "A tasty table, pertect for secretly snacking on after a meal as dessert.",
     "price": [
       {
@@ -4190,10 +4190,10 @@
     "series": "Snowflake Journey"
   },
   {
-    "id": "antique_round_table1",
-    "name": "Antique Round Table.1",
+    "id": "antique_round_table",
+    "name": "Antique Round Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Before you know it, you are already composing poems and couplets.",
     "price": [
       {
@@ -4210,10 +4210,10 @@
     "series": "Spring Pavilion Banquet"
   },
   {
-    "id": "cloudy_stardust1",
-    "name": "Cloudy Stardust.1",
+    "id": "cloudy_stardust",
+    "name": "Cloudy Stardust",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 1",
     "description": "Are you willing to share with me stories about your adventures?",
     "price": [
       {
@@ -4230,10 +4230,10 @@
     "series": "Starry Whisper"
   },
   {
-    "id": "stump_table2",
-    "name": "Stump Table.2",
+    "id": "stump_table_2",
+    "name": "Stump Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Still exudes the scent of nature.",
     "price": [
       {
@@ -4250,10 +4250,10 @@
     "series": "Log Scenery"
   },
   {
-    "id": "fabric_round_table2",
-    "name": "Fabric Round Table.2",
+    "id": "fabric_round_table_2",
+    "name": "Fabric Round Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Suitable for a family gathering.",
     "price": [
       {
@@ -4270,10 +4270,10 @@
     "series": "Lattice Story"
   },
   {
-    "id": "elegant_atmosphere2",
-    "name": "Elegant Atmosphere.2",
+    "id": "elegant_atmosphere_2",
+    "name": "Elegant Atmosphere",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "You'll feel like drinking a little when sitting here.",
     "price": [
       {
@@ -4290,10 +4290,10 @@
     "series": "Forest Humming"
   },
   {
-    "id": "elegant_customization2",
-    "name": "Elegant Customization.2",
+    "id": "elegant_customization_2",
+    "name": "Elegant Customization",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "A luxurious table that was custom made in secret.",
     "price": [
       {
@@ -4310,10 +4310,10 @@
     "series": "Supreme Seat of Honor"
   },
   {
-    "id": "first_snow_encounter2",
-    "name": "First Snow Encounter.2",
+    "id": "first_snow_encounter_2",
+    "name": "First Snow Encounter",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Who would you want to spend the day of first snow with?",
     "price": [
       {
@@ -4330,10 +4330,10 @@
     "series": "Warm Winter Chimes"
   },
   {
-    "id": "mini_reunion2",
-    "name": "Mini Reunion.2",
+    "id": "mini_reunion_2",
+    "name": "Mini Reunion",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "The mini round table embodies the warmth of the family.",
     "price": [
       {
@@ -4350,10 +4350,10 @@
     "series": "Stovetop Blessings"
   },
   {
-    "id": "sweet_palate_pink2",
-    "name": "Sweet Palate - Pink.2",
+    "id": "sweet_palate_pink",
+    "name": "Sweet Palate - Pink",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Smells like strawberries.",
     "price": [
       {
@@ -4370,10 +4370,10 @@
     "series": "Childhood Paradise"
   },
   {
-    "id": "exclusive_customization2",
-    "name": "Exclusive Customization.2",
+    "id": "exclusive_customization_2",
+    "name": "Exclusive Customization",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Welcome, the table that you've reserved is over here. This way please!",
     "price": [
       {
@@ -4390,10 +4390,10 @@
     "series": "Fanciful Melody"
   },
   {
-    "id": "first_dinner2",
-    "name": "First Dinner.2",
+    "id": "first_dinner_2",
+    "name": "First Dinner",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Let's clean up the spider webs before eating.",
     "price": [
       {
@@ -4410,10 +4410,10 @@
     "series": "Marvelous Midnight"
   },
   {
-    "id": "refreshing_table2",
-    "name": "Refreshing Table.2",
+    "id": "refreshing_table_2",
+    "name": "Refreshing Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "It looks really good when the sun shines on it.",
     "price": [
       {
@@ -4430,10 +4430,10 @@
     "series": "Fantastical Party"
   },
   {
-    "id": "woodsy_afternoon_tea2",
-    "name": "Woodsy Afternoon Tea.2",
+    "id": "woodsy_afternoon_tea_2",
+    "name": "Woodsy Afternoon Tea",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "No one's having any afternoon tea until the spell is broken.",
     "requiredStars": 320000,
     "price": [
@@ -4451,10 +4451,10 @@
     "series": "Alice's Dream"
   },
   {
-    "id": "island_round_table2",
-    "name": "Island Round Table.2",
+    "id": "island_round_table_2",
+    "name": "Island Round Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Making do with what we have at the beach: a table made from coconut trees.",
     "requiredStars": 380000,
     "price": [
@@ -4472,10 +4472,10 @@
     "series": "Of Coconut Trees and the Sea Breeze"
   },
   {
-    "id": "planetary_orbit2",
-    "name": "Planetary Orbit.2",
+    "id": "planetary_orbit_2",
+    "name": "Planetary Orbit",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "The stars are silent, but you gave them meaning and brought them to life.",
     "requiredStars": 500000,
     "price": [
@@ -4493,10 +4493,10 @@
     "series": "Starry Rose"
   },
   {
-    "id": "bear_recess2",
-    "name": "Bear Recess.2",
+    "id": "bear_recess_2",
+    "name": "Bear Recess",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Since it's over, let's just rest now!",
     "price": [
       {
@@ -4513,10 +4513,10 @@
     "series": "Warm Bakery"
   },
   {
-    "id": "musing_round_table2",
-    "name": "Musing Round Table.2",
+    "id": "musing_round_table_2",
+    "name": "Musing Round Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Come and take a seat. Take a deep breath and close your eyes, for the meditation is about to begin.",
     "price": [
       {
@@ -4533,10 +4533,10 @@
     "series": "Slumberous Nights"
   },
   {
-    "id": "jade_table2",
-    "name": "Jade Table.2",
+    "id": "jade_table_2",
+    "name": "Jade Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "This table is so smooth and icy-cold that I can't help but want to run my hand across it even more.",
     "price": [
       {
@@ -4553,10 +4553,10 @@
     "series": "Pleasant Dreams"
   },
   {
-    "id": "daisy_square_table2",
-    "name": "Daisy Square Table.2",
+    "id": "daisy_square_table_2",
+    "name": "Daisy Square Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "The stools are soft and bouncy. There's even the aroma of daisies wafting in the air!",
     "price": [
       {
@@ -4573,10 +4573,10 @@
     "series": "Buzzing Sweet Whisper"
   },
   {
-    "id": "butter_cookies_table2",
-    "name": "Butter Cookies Table.2",
+    "id": "butter_cookies_table_2",
+    "name": "Butter Cookies Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Do you feel more relaxed that you've taken a seat here?",
     "price": [
       {
@@ -4593,10 +4593,10 @@
     "series": "Milky Mint Chocolate"
   },
   {
-    "id": "duskfall_table2",
-    "name": "Duskfall Table.2",
+    "id": "duskfall_table_2",
+    "name": "Duskfall Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "These candles will keep you company for as long as it's dusk.",
     "price": [
       {
@@ -4613,10 +4613,10 @@
     "series": "Murmuring Dusk Rose"
   },
   {
-    "id": "heart_of_the_ocean2",
-    "name": "Heart of the Ocean.2",
+    "id": "heart_of_the_ocean_2",
+    "name": "Heart of the Ocean",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "It holds great power.",
     "price": [
       {
@@ -4633,10 +4633,10 @@
     "series": "Deep-sea Ballad"
   },
   {
-    "id": "prismatic_snowflake_table2",
-    "name": "Prismatic Snowflake Table.2",
+    "id": "prismatic_snowflake_table_2",
+    "name": "Prismatic Snowflake Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "The reflation of the prisms makes the food loo even more appealing!",
     "price": [
       {
@@ -4653,10 +4653,10 @@
     "series": "Aurora Fairy Tale"
   },
   {
-    "id": "season_of_strawberries2",
-    "name": "Season of Strawberries.2",
+    "id": "season_of_strawberries_2",
+    "name": "Season of Strawberries",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "I would like a strawberry cream cupcake, please!",
     "requiredStars": 400000,
     "price": [
@@ -4674,10 +4674,10 @@
     "series": "Energy Fruit"
   },
   {
-    "id": "metal_frenzy2",
-    "name": "Metal Frenzy.2",
+    "id": "metal_frenzy_2",
+    "name": "Metal Frenzy",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Beneath a cold and harsh exterior is a soft and tender core.",
     "requiredStars": 450000,
     "price": [
@@ -4695,10 +4695,10 @@
     "series": "Rock 'n' Roll Sweetheart"
   },
   {
-    "id": "tasty_adventures2",
-    "name": "Tasty Adventures.2",
+    "id": "tasty_adventures_2",
+    "name": "Tasty Adventures",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "The arious delicious adventures bring about unending surprises!",
     "price": [
       {
@@ -4715,10 +4715,10 @@
     "series": "Steam-powered"
   },
   {
-    "id": "floral_waltz2",
-    "name": "Floral Waltz.2",
+    "id": "floral_waltz_2",
+    "name": "Floral Waltz",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Twirl around with the music.",
     "price": [
       {
@@ -4735,10 +4735,10 @@
     "series": "Fleeting Feathers"
   },
   {
-    "id": "vibrant_party_table2",
-    "name": "Vibrant Party Table.2",
+    "id": "vibrant_party_table_2",
+    "name": "Vibrant Party Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Ding! Your exclusie set meal is on its way!",
     "price": [
       {
@@ -4755,10 +4755,10 @@
     "series": "Forgotten Fantasies Paradise"
   },
   {
-    "id": "precious_dream_dance2",
-    "name": "Precious Dream Dance.2",
+    "id": "precious_dream_dance_2",
+    "name": "Precious Dream Dance",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "May I have a dance before dinner?",
     "price": [
       {
@@ -4775,10 +4775,10 @@
     "series": "Midsummer Birdsong"
   },
   {
-    "id": "sweet_cookie_table2",
-    "name": "Sweet Cookie Table.2",
+    "id": "sweet_cookie_table_2",
+    "name": "Sweet Cookie Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "A tasty table, pertect for secretly snacking on after a meal as dessert.",
     "price": [
       {
@@ -4795,10 +4795,10 @@
     "series": "Snowflake Journey"
   },
   {
-    "id": "antique_round_table2",
-    "name": "Antique Round Table.2",
+    "id": "antique_round_table_2",
+    "name": "Antique Round Table",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Before you know it, you are already composing poems and couplets.",
     "price": [
       {
@@ -4815,10 +4815,10 @@
     "series": "Spring Pavilion Banquet"
   },
   {
-    "id": "cloudy_stardust2",
-    "name": "Cloudy Stardust.2",
+    "id": "cloudy_stardust_2",
+    "name": "Cloudy Stardust",
     "area": "terrace",
-    "group": "Table",
+    "group": "Table 2",
     "description": "Are you willing to share with me stories about your adventures?",
     "price": [
       {
@@ -5015,8 +5015,8 @@
     "series": "Marvelous Midnight"
   },
   {
-    "id": "teddy_bear",
-    "name": "Teddy Bear",
+    "id": "teddy_bears_beautiful_dream",
+    "name": "Teddy Bear's Beautiful Dream",
     "area": "terrace",
     "group": "Open Air Cinema",
     "description": "The little bear can always dream of wondrous lands.",
@@ -5035,8 +5035,8 @@
     "series": "Fantastical Party"
   },
   {
-    "id": "hatter",
-    "name": "Hatter",
+    "id": "hatters_theater",
+    "name": "Hatter's Theater",
     "area": "terrace",
     "group": "Open Air Cinema",
     "description": "Are you ready for the wildest, most intense show ever?!",
@@ -5118,8 +5118,8 @@
     "series": "Warm Bakery"
   },
   {
-    "id": "lovers",
-    "name": "Lovers",
+    "id": "lovers_arrow",
+    "name": "Lovers' Arrow",
     "area": "terrace",
     "group": "Open Air Cinema",
     "description": "Why do I feel sadder than usual? It's as though an arrowhas just pierced my heart.",
@@ -6661,8 +6661,8 @@
         "amount": 600000
       }
     ],
-    "series": "{{R|+15}} {{Cod|+200}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+15}} {{Cod|+200}}/30s"
   },
   {
     "id": "springtime_snack_mat",
@@ -6676,8 +6676,8 @@
         "amount": 1500000
       }
     ],
-    "series": "{{R|+30}} {{Cod|+250}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+30}} {{Cod|+250}}/30s"
   },
   {
     "id": "delectable_snack_table",
@@ -6691,8 +6691,8 @@
         "amount": 3500000
       }
     ],
-    "series": "{{R|+50}} {{Cod|+300}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+50}} {{Cod|+300}}/30s"
   },
   {
     "id": "luxurious_coffee_table",
@@ -6706,8 +6706,8 @@
         "amount": 7000000
       }
     ],
-    "series": "{{R|+80}} {{Cod|+350}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+80}} {{Cod|+350}}/30s"
   },
   {
     "id": "sweet_cat_paw",
@@ -6721,8 +6721,8 @@
         "amount": 11000000
       }
     ],
-    "series": "{{R|+105}} {{Cod|+370}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+105}} {{Cod|+370}}/30s"
   },
   {
     "id": "nibble_counter",
@@ -6736,8 +6736,8 @@
         "amount": 20000000
       }
     ],
-    "series": "{{R|+180}} {{Cod|+450}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+180}} {{Cod|+450}}/30s"
   },
   {
     "id": "wondrous_pumpkin_box",
@@ -6751,8 +6751,8 @@
         "amount": 22000000
       }
     ],
-    "series": "{{R|+200}} {{Cod|+480}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+200}} {{Cod|+480}}/30s"
   },
   {
     "id": "snow_top_cookie_desk",
@@ -6766,8 +6766,8 @@
         "amount": 9500000
       }
     ],
-    "series": "{{R|+90}} {{Cod|+360}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+90}} {{Cod|+360}}/30s"
   },
   {
     "id": "relaxing_moment",
@@ -6781,8 +6781,8 @@
         "amount": 36
       }
     ],
-    "series": "{{R|+22}} {{Cod|+220}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+22}} {{Cod|+220}}/30s"
   },
   {
     "id": "mushroom_counter",
@@ -6797,8 +6797,8 @@
         "amount": 40000000
       }
     ],
-    "series": "{{R|+350}} {{Cod|+850}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+350}} {{Cod|+850}}/30s"
   },
   {
     "id": "sea_salt_breeze",
@@ -6813,8 +6813,8 @@
         "amount": 52000000
       }
     ],
-    "series": "{{R|+400}} {{Cod|+1,000}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+400}} {{Cod|+1,000}}/30s"
   },
   {
     "id": "galactic_retreat",
@@ -6829,8 +6829,8 @@
         "amount": 67500000
       }
     ],
-    "series": "{{R|+520}} {{Cod|+1,300}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+520}} {{Cod|+1,300}}/30s"
   },
   {
     "id": "captives_of_wheat",
@@ -6844,8 +6844,8 @@
         "amount": 24000000
       }
     ],
-    "series": "{{R|+210}} {{Cod|+450}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+210}} {{Cod|+450}}/30s"
   },
   {
     "id": "serendipitous_magic_mirror",
@@ -6859,8 +6859,8 @@
         "amount": 45
       }
     ],
-    "series": "{{R|+22}} {{Cod|+220}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+22}} {{Cod|+220}}/30s"
   },
   {
     "id": "morning_tea_counter",
@@ -6874,8 +6874,8 @@
         "amount": 11500000
       }
     ],
-    "series": "{{R|+95}} {{Cod|+360}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+95}} {{Cod|+360}}/30s"
   },
   {
     "id": "candlelit_drink",
@@ -6889,8 +6889,8 @@
         "amount": 29900000
       }
     ],
-    "series": "{{R|+195}} {{Cod|+400}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+195}} {{Cod|+400}}/30s"
   },
   {
     "id": "sweet_exclusivity",
@@ -6904,8 +6904,8 @@
         "amount": 10000000
       }
     ],
-    "series": "{{R|+100}} {{Cod|+350}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+100}} {{Cod|+350}}/30s"
   },
   {
     "id": "woof_buffet",
@@ -6919,8 +6919,8 @@
         "amount": 38000000
       }
     ],
-    "series": "{{R|+320}} {{Cod|+680}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+320}} {{Cod|+680}}/30s"
   },
   {
     "id": "ghoul_retailer",
@@ -6934,8 +6934,8 @@
         "amount": 28000000
       }
     ],
-    "series": "{{R|+220}} {{Cod|+500}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+220}} {{Cod|+500}}/30s"
   },
   {
     "id": "sweet_seashell",
@@ -6949,8 +6949,8 @@
         "amount": 50
       }
     ],
-    "series": "{{R|+22}} {{Cod|+220}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+22}} {{Cod|+220}}/30s"
   },
   {
     "id": "ginger_teatime",
@@ -6964,8 +6964,8 @@
         "amount": 15000000
       }
     ],
-    "series": "{{R|+100}} {{Cod|+400}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+100}} {{Cod|+400}}/30s"
   },
   {
     "id": "taste_of_pear_fection",
@@ -6980,8 +6980,8 @@
         "amount": 52000000
       }
     ],
-    "series": "{{R|+450}} {{Cod|+1,000}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+450}} {{Cod|+1,000}}/30s"
   },
   {
     "id": "ode_to_snacks",
@@ -6996,8 +6996,8 @@
         "amount": 63000000
       }
     ],
-    "series": "{{R|+480}} {{Cod|+1,000}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+480}} {{Cod|+1,000}}/30s"
   },
   {
     "id": "ingenious_snack_counter",
@@ -7011,8 +7011,8 @@
         "amount": 30000000
       }
     ],
-    "series": "{{R|+250}} {{Cod|+450}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+250}} {{Cod|+450}}/30s"
   },
   {
     "id": "leisurely_flavors",
@@ -7026,8 +7026,8 @@
         "amount": 43000000
       }
     ],
-    "series": "{{R|+335}} {{Cod|+700}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+335}} {{Cod|+700}}/30s"
   },
   {
     "id": "sweet_enjoyment",
@@ -7041,8 +7041,8 @@
         "amount": 31300000
       }
     ],
-    "series": "{{R|+230}} {{Cod|+500}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+230}} {{Cod|+500}}/30s"
   },
   {
     "id": "maiden_black_tea",
@@ -7056,8 +7056,8 @@
         "amount": 57
       }
     ],
-    "series": "{{R|+22}} {{Cod|+220}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+22}} {{Cod|+220}}/30s"
   },
   {
     "id": "sweet_journey",
@@ -7071,8 +7071,8 @@
         "amount": 17600000
       }
     ],
-    "series": "{{R|+105}} {{Cod|+410}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+105}} {{Cod|+410}}/30s"
   },
   {
     "id": "peach_side_table",
@@ -7086,8 +7086,8 @@
         "amount": 32790000
       }
     ],
-    "series": "{{R|+200}} {{Cod|+450}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+200}} {{Cod|+450}}/30s"
   },
   {
     "id": "hypercaloric_energy",
@@ -7101,8 +7101,8 @@
         "amount": 13960000
       }
     ],
-    "series": "{{R|+112}} {{Cod|+360}}/30s",
-    "effects": []
+    "effects": [],
+    "series": "{{R|+112}} {{Cod|+360}}/30s"
   },
   {
     "id": "plain_fan",
@@ -7479,8 +7479,8 @@
         "amount": 29000000
       }
     ],
-    "series": "Murmuring Dusk Rose",
-    "effects": []
+    "effects": [],
+    "series": "Murmuring Dusk Rose"
   },
   {
     "id": "underwater_magic_mirror",
@@ -7544,8 +7544,8 @@
     "series": "Energy Fruit"
   },
   {
-    "id": "rock",
-    "name": "Rock",
+    "id": "rock_n_roll_stereo",
+    "name": "Rock 'n' Roll Stereo",
     "area": "terrace",
     "group": "Floor Decorations",
     "description": "No playing of anything other than rock 'n' roll!",

@@ -835,5 +835,25 @@
       }
     ],
     "series": "Creamy Kingdom"
+  },
+  {
+    "id": "fawns_best_choice",
+    "name": "Fawn's Best Choice",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Take a look at Fawn's daily recommendations.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 110
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Fantastical Party"
   }
 ]
