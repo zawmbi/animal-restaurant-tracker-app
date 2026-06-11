@@ -27,10 +27,7 @@ class FacilitiesRepository {
     FacilityArea.takeout: [
       'assets/data/facilities_jsons/takeout_facilities.json',
 
-      // Signature Store facilities shard (TRY this path first)
-      'assets/data/facilities_jsons/signature_store_facilities.json',
-
-      // Fallback path (in case your folder is misspelled in assets)
+      // Signature Store lives inside Takeout.
       'assets/data/facilities_jsons/signature_store_facilities.json',
     ],
     FacilityArea.terrace: [

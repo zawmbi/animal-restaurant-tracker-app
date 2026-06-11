@@ -1,0 +1,109 @@
+[
+  {
+    "id": "hoppy_the_pika",
+    "name": "Hoppy the Pika",
+    "description": "A cool and reticent pika. He seems aloof and distant, but he actually cares for his older brother very much.",
+    "promoLevel": "Local",
+    "promoCount": 30,
+    "requiredFoods": [
+      "Candied Strawberries"
+    ],
+    "dishesOrdered": [
+      "Sweet Dumplings",
+      "Candied Strawberries",
+      "Steamboat",
+      "Sycee Dumplings",
+      "Mango Sticky Rice",
+      "Matcha Cake Roll"
+    ],
+    "appearanceWeight": 1200
+  },
+  {
+    "id": "bouncy_the_pika",
+    "name": "Bouncy the Pika",
+    "description": "A loud-mouthed and flighty pika. However, he cares for his younger brother very much.",
+    "promoLevel": "Local",
+    "promoCount": 50,
+    "requiredFoods": [
+      "Mango Sticky Rice",
+      "Steamboat"
+    ],
+    "dishesOrdered": [
+      "Sweet Dumplings",
+      "Mushroom Pasta",
+      "Steamboat",
+      "Sycee Dumplings",
+      "Mango Sticky Rice",
+      "Matcha Cake Roll"
+    ],
+    "appearanceWeight": 800
+  },
+  {
+    "id": "dobermann",
+    "name": "Dobermann",
+    "description": "He will stare at you with a stern face no matter how many hilarious jokes you tell him.",
+    "promoLevel": "Regional",
+    "promoCount": 80,
+    "requiredFoods": [
+      "Matcha Cake Roll",
+      "Orange Juice"
+    ],
+    "dishesOrdered": [
+      "Sweet Dumplings",
+      "Mushroom Pasta",
+      "Orange Juice",
+      "Sycee Dumplings",
+      "Mango Sticky Rice",
+      "Matcha Cake Roll",
+      "Mulled Wine",
+      "Smoked Ham"
+    ],
+    "appearanceWeight": 500
+  },
+  {
+    "id": "sunny",
+    "name": "Sunny",
+    "description": "A popular food blogger.",
+    "promoLevel": "Regional",
+    "promoCount": 85,
+    "requiredFoods": [
+      "Mocha Cake Roll",
+      "Mango Sticky Rice",
+      "Orange Juice",
+      "Fried Potato"
+    ],
+    "dishesOrdered": [
+      "Sweet Dumplings",
+      "Mushroom Pasta",
+      "Orange Juice",
+      "Fried Potato",
+      "Mango Sticky Rice",
+      "Matcha Cake Roll",
+      "Mulled Wine",
+      "Smoked Ham"
+    ],
+    "appearanceWeight": 400
+  },
+  {
+    "id": "mad_hatter",
+    "name": "Mad Hatter",
+    "description": "Seems a bit mad, but a great hat maker.",
+    "promoLevel": "National",
+    "promoCount": 130,
+    "requiredFoods": [
+      "Matcha Cake Roll",
+      "Mango Sticky Rice",
+      "Rice Pudding",
+      "Fried Potato"
+    ],
+    "dishesOrdered": [
+      "Sweet Dumplings",
+      "Mushroom Pasta",
+      "Rice Pudding",
+      "Fried Potato",
+      "Mango Sticky Rice",
+      "Matcha Cake Roll"
+    ],
+    "appearanceWeight": 300
+  }
+]
