@@ -207,6 +207,16 @@ class _CustomersGridState extends State<_CustomersGrid> {
                           style: Theme.of(context).textTheme.titleMedium,
                         ),
                       ),
+                      if (total > 0)
+                        TextButton(
+                          onPressed: () => store.setManyUnlocked(
+                            _bucketCustomers,
+                            sorted.map((c) => c.id),
+                            unlocked != total,
+                          ),
+                          child: Text(
+                              unlocked == total ? 'Uncheck all' : 'Check all'),
+                        ),
                       PopupMenuButton<CustomerSort>(
                         initialValue: _sort,
                         onSelected: (v) => setState(() => _sort = v),

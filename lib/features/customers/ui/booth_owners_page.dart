@@ -234,6 +234,19 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
                       '$unlocked/$total unlocked',
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
+                    if (total > 0)
+                      TextButton(
+                        onPressed: () async {
+                          await store.setManyUnlocked(
+                            _bucketCustomers,
+                            sorted.map((c) => c.id),
+                            unlocked != total,
+                          );
+                          if (mounted) setState(() {});
+                        },
+                        child: Text(
+                            unlocked == total ? 'Uncheck all' : 'Check all'),
+                      ),
                   ],
                 ),
               ),

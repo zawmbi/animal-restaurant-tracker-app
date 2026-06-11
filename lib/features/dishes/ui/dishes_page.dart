@@ -156,8 +156,24 @@ class _DishesPageState extends State<DishesPage> {
       {bool showEvenIfEmpty = false}) {
     if (list.isEmpty && !showEvenIfEmpty) return const SizedBox.shrink();
 
+    final ids = list.map((d) => d.id).toList();
+    final allChecked =
+        ids.isNotEmpty && ids.every((id) => store.isUnlocked('dish', id));
+
     return ExpansionTile(
-      title: Text(title, style: const TextStyle(fontWeight: FontWeight.w600)),
+      title: Row(
+        children: [
+          Expanded(
+            child: Text(title,
+                style: const TextStyle(fontWeight: FontWeight.w600)),
+          ),
+          if (ids.isNotEmpty)
+            TextButton(
+              onPressed: () => store.setManyUnlocked('dish', ids, !allChecked),
+              child: Text(allChecked ? 'Uncheck all' : 'Check all'),
+            ),
+        ],
+      ),
       children: [
         if (list.isEmpty)
           Padding(

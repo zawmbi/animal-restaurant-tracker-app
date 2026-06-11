@@ -117,10 +117,25 @@ class _MementosPageState extends State<MementosPage> {
       return const Center(child: Text('No mementos match your filters.'));
     }
 
+    final ids = filtered.map((e) => e.key as String).toList();
+    final allChecked =
+        ids.every((k) => store.isUnlocked('memento_collected', k));
+
     return ListView.builder(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      itemCount: filtered.length,
-      itemBuilder: (context, index) {
+      itemCount: filtered.length + 1,
+      itemBuilder: (context, rawIndex) {
+        if (rawIndex == 0) {
+          return Align(
+            alignment: Alignment.centerRight,
+            child: TextButton(
+              onPressed: () => store.setManyUnlocked(
+                  'memento_collected', ids, !allChecked),
+              child: Text(allChecked ? 'Uncheck all' : 'Check all'),
+            ),
+          );
+        }
+        final index = rawIndex - 1;
         final e = filtered[index];
         final collected = store.isUnlocked('memento_collected', e.key);
         final tags = (e.tags ?? const <String>[]).cast<String>();

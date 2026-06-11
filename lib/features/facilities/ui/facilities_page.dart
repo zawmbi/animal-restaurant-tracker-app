@@ -307,10 +307,25 @@ class _FacilityGroupSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ids = items.map((f) => f.id).toList();
+    final allChecked =
+        ids.isNotEmpty && ids.every((id) => store.isUnlocked('facility', id));
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 4),
       child: ExpansionTile(
-        title: Text(title, style: const TextStyle(fontWeight: FontWeight.w600)),
+        title: Row(
+          children: [
+            Expanded(
+              child: Text(title,
+                  style: const TextStyle(fontWeight: FontWeight.w600)),
+            ),
+            TextButton(
+              onPressed: () =>
+                  store.setManyUnlocked('facility', ids, !allChecked),
+              child: Text(allChecked ? 'Uncheck all' : 'Check all'),
+            ),
+          ],
+        ),
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),

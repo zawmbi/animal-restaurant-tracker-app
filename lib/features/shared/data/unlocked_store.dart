@@ -165,6 +165,30 @@ class UnlockedStore extends ChangeNotifier {
     await setUnlocked(type, id, !isUnlocked(type, id));
   }
 
+  /// Set many ids at once (used by "Check all" / "Uncheck all" on a segment).
+  /// Persists and notifies a single time instead of once per id.
+  Future<void> setManyUnlocked(
+      String type, Iterable<String> ids, bool value) async {
+    if (!_inited) {
+      await init();
+    }
+    _sets[type] ??= <String>{};
+    final set = _sets[type]!;
+    var changed = false;
+    for (final id in ids) {
+      final c = value ? set.add(id) : set.remove(id);
+      changed = changed || c;
+    }
+    if (!changed) return;
+
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setStringList(_prefsKey(type), set.toList());
+    await _bumpLocalUpdatedAt(prefs);
+
+    notifyListeners();
+    _scheduleUpload();
+  }
+
   int count(String type) => _sets[type]?.length ?? 0;
 
   Future<void> clearType(String type) async {

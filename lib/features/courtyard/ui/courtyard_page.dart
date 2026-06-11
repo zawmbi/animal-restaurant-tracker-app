@@ -136,8 +136,29 @@ class _CourtyardPageState extends State<CourtyardPage> {
                             )
                           : ListView.builder(
                               padding: const EdgeInsets.all(8),
-                              itemCount: facilities.length,
-                              itemBuilder: (context, index) {
+                              itemCount: facilities.length + 1,
+                              itemBuilder: (context, rawIndex) {
+                                if (rawIndex == 0) {
+                                  final ids =
+                                      facilities.map((f) => f.id).toList();
+                                  final allChecked = ids.isNotEmpty &&
+                                      ids.every((id) =>
+                                          _store.isUnlocked(_bucket, id));
+                                  return Align(
+                                    alignment: Alignment.centerRight,
+                                    child: TextButton(
+                                      onPressed: () async {
+                                        await _store.setManyUnlocked(
+                                            _bucket, ids, !allChecked);
+                                        if (mounted) setState(() {});
+                                      },
+                                      child: Text(allChecked
+                                          ? 'Uncheck all'
+                                          : 'Check all'),
+                                    ),
+                                  );
+                                }
+                                final index = rawIndex - 1;
                                 final f = facilities[index];
                                 final checked = _store.isUnlocked(
                                   _bucket,

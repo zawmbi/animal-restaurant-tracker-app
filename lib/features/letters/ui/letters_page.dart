@@ -55,26 +55,59 @@ class _LettersPageState extends State<LettersPage> {
           return AnimatedBuilder(
             animation: store,
             builder: (context, _) {
-              return Padding(
-                padding: const EdgeInsets.all(12),
-                child: Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  children: list.map((l) {
-                    final owned = store.isUnlocked(_bucketLetter, l.id);
+              final ownedCount =
+                  list.where((l) => store.isUnlocked(_bucketLetter, l.id)).length;
+              final allChecked = list.isNotEmpty && ownedCount == list.length;
+              return Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text('Owned: $ownedCount/${list.length}',
+                              style: Theme.of(context).textTheme.titleMedium),
+                        ),
+                        TextButton(
+                          onPressed: () => store.setManyUnlocked(
+                            _bucketLetter,
+                            list.map((l) => l.id),
+                            !allChecked,
+                          ),
+                          child:
+                              Text(allChecked ? 'Uncheck all' : 'Check all'),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      padding: const EdgeInsets.all(12),
+                      child: Wrap(
+                        spacing: 8,
+                        runSpacing: 8,
+                        children: list.map((l) {
+                          final owned =
+                              store.isUnlocked(_bucketLetter, l.id);
 
-                    return EntityChip(
-                      label: l.name,
-                      checked: owned,
-                      showCheckbox: true,
-                      fillColor: owned ? ownedFill : null,
-                      onCheckChanged: (v) => store.setUnlocked(_bucketLetter, l.id, v),
-                      onTap: () => Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => LetterDetailPage(letter: l)),
+                          return EntityChip(
+                            label: l.name,
+                            checked: owned,
+                            showCheckbox: true,
+                            fillColor: owned ? ownedFill : null,
+                            onCheckChanged: (v) =>
+                                store.setUnlocked(_bucketLetter, l.id, v),
+                            onTap: () => Navigator.of(context).push(
+                              MaterialPageRoute(
+                                  builder: (_) => LetterDetailPage(letter: l)),
+                            ),
+                          );
+                        }).toList(),
                       ),
-                    );
-                  }).toList(),
-                ),
+                    ),
+                  ),
+                ],
               );
             },
           );
