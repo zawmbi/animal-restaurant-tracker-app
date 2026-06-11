@@ -1,1 +1,5819 @@
-[]
+[
+  {
+    "id": "retro_phone",
+    "name": "Retro Phone",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Makes a constant static noise.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 8
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 4
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "simple_landline_phone",
+    "name": "Simple Landline Phone",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Its cord is always entangled.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1050000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "cordless_phone",
+    "name": "Cordless Phone",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Has better reception and can receive calls from further away.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2550000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "tablet_computer",
+    "name": "Tablet Computer",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Do not let your boss catch you watching shows on the job.",
+    "requiredStars": 50000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4450000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 68
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "communication_banana",
+    "name": "Communication Banana",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Tate found it at the secondhand market. The signal is surprisingly good.",
+    "requiredStars": 70000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "midnight_call",
+    "name": "Midnight Call",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "It always rings at midnight...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 1
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "grandpa",
+    "name": "Grandpa",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "It looks kind of old. Will it still work?",
+    "requiredStars": 100000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 240
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "shell_microphone",
+    "name": "Shell Microphone",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Undersea electrical products with a hundred-year warranty!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 1
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "fortunetelling_crystal_ball",
+    "name": "Fortunetelling Crystal Ball",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Please don't use it for questions like, 'What should I eat today?'",
+    "requiredStars": 200000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "spacetime_phone",
+    "name": "Spacetime Phone",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "It occasionally receives bizarre calls from strangers.",
+    "requiredStars": 120000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "little_monster_order_table",
+    "name": "Little Monster Order Table",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "This little monster is rather grumpy. Don't keep it waiting for too long!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 150
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "snowball_operator",
+    "name": "Snowball Operator",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Beep beep, Snowball is connecting your call.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 1
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "wintersweet_hotline",
+    "name": "Wintersweet Hotline",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Thank you for calling, we hope to bring you some warmth during the cold winter.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 200
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "white_chocolate_moments",
+    "name": "White Chocolate Moments",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Don't chat for too long. The receiver will melt!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 75
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 1
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "happiness_phone",
+    "name": "Happiness Phone",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Your happiness is the piggy's peace of mind!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 190
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "elegant_call",
+    "name": "Elegant Call",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Speak slowly and enunciate clearly.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 225
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "intimate_whispers",
+    "name": "Intimate Whispers",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Take care not to fall asleep while the dragonling is still talking!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 200
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "cheesy_phone",
+    "name": "Cheesy Phone",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Although it smells creamy, it cannot be eaten!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 80000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 700
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "rabbit_audio_transmitter",
+    "name": "Rabbit Audio Transmitter",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "The rabbit's keen ears pick up every single word that's spoken.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "floral_telephone",
+    "name": "Floral Telephone",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Feels like I can hear flowers murmuring to each other.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 700
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 1
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "encrypted_typewriter",
+    "name": "Encrypted Typewriter",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Hurry up and decode this!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 210
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "sweet_call",
+    "name": "Sweet Call",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "There are always people who call but are then too shy to talk.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 62000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "afterdark_hotline",
+    "name": "Afterdark Hotline",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Don't be surprised when ghouls call in to order.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 23000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "retro_mobile_phone",
+    "name": "Retro Mobile Phone",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Rings deafeningly loud despite being an ancient phone model.",
+    "requiredStars": 180000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "snowman_hotline",
+    "name": "Snowman Hotline",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Hello, Snowman 7325 at your service.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "harmonious_interval",
+    "name": "Harmonious Interval",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Placed upon the exquisitely crafted rosewood table is a rather perplexing antique telephone.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 26000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 230
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "photon_transmitter",
+    "name": "Photon Transmitter",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Will I be charged extra for interstellar calls?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 1
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "morning_dew_chirps",
+    "name": "Morning Dew Chirps",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "If you require any services, please leave a message after the chirp.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 220
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "pink_messages",
+    "name": "Pink Messages",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Your words are as delightful as a spring breeze.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 71000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 340
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "retro_waves",
+    "name": "Retro Waves",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Although it looks a little old, it's still fully functional.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 34500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 186
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 3
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "jingleberry_hotline",
+    "name": "Jingleberry Hotline",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "Eeek! The orders are pilling up!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 27000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 116
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 3
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "sweet_hotline",
+    "name": "Sweet Hotline",
+    "area": "takeout",
+    "group": "Provision Table",
+    "description": "The sugary fragrance can even be transmitted to the other end of the line!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      },
+      {
+        "type": "ordersIncrease",
+        "amount": 2
+      }
+    ],
+    "series": "Creamy Kingdom"
+  },
+  {
+    "id": "log_snack_rack",
+    "name": "Log Snack Rack",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "A common rack.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "rattan_snack_rack",
+    "name": "Rattan Snack Rack",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Hand-woven and sturdy.",
+    "requiredStars": 5000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1650000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "elegant_snack_cabinet",
+    "name": "Elegant Snack Cabinet",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Its green paint emits an elegant glow.",
+    "requiredStars": 10000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2750000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "exclusive_snack_cabinet",
+    "name": "Exclusive Snack Cabinet",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "A cabinet made for VIPs.",
+    "requiredStars": 30000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5650000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "juicy_strawberry_snack_cabinet",
+    "name": "Juicy Strawberry Snack Cabinet",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "A cute snack cabinet will entice everyone to shop more.",
+    "requiredStars": 40000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 270
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "imp",
+    "name": "Imp",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Items are always inexplicably disappearing.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 34
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "cute_mushroom_snack_cabinet",
+    "name": "Cute Mushroom Snack Cabinet",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "The mini mushrooms on the cabinet are not for sale.",
+    "requiredStars": 140000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "sailor",
+    "name": "Sailor",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Oars with stories to tell.",
+    "requiredStars": 20000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "fine_wooden_cabinet",
+    "name": "Fine Wooden Cabinet",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "The bow on it is made of silk, giving it a high-class feel.",
+    "requiredStars": 220000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 40000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "iron_snack_rack",
+    "name": "Iron Snack Rack",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "It's made of multiple iron sheets and very solid.",
+    "requiredStars": 50000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 160
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "reindeer_snack_cabinet",
+    "name": "Reindeer Snack Cabinet",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "It just looks like a reindeer, but... maybe it can prance like one, too?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "carved_wooden_snack_rack",
+    "name": "Carved Wooden Snack Rack",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Made without using any glue, relying solely on exquisite techniques!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "sugar_bomb",
+    "name": "Sugar Bomb",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Don't let the fitness instructor see this.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "flower_lace_snack_rack",
+    "name": "Flower Lace Snack Rack",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "A collision of retro and modern.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "intertwined_stars",
+    "name": "Intertwined Stars",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Pearls have been wrapped around the rack various times, looking like a group of dazzling stars.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 37000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 330
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "awaking_dawn",
+    "name": "Awaking Dawn",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "A new day has begun. It's time to bid farewell to dreamland.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "enroaching_greenery",
+    "name": "Enroaching Greenery",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "The snacks look so appealing that even the green leaves are sneakily approaching.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 45000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 395
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "lacquered_rack",
+    "name": "Lacquered Rack",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "This lacquered rack can withstand even the harshest of snowstorms. It is a must-have!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "skyward_picnic",
+    "name": "Skyward Picnic",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Let me tell you a secret:the vines here can grow forever without stopping!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "bluescale_porcelain_rack",
+    "name": "Bluescale Porcelain Rack",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "The smooth porcelain is beautiful in its perfection.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "puppy",
+    "name": "Puppy",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Meticulously crafted recommendations for the adorable puppy!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 54000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 145
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "manor_antiquity",
+    "name": "Manor Antiquity",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Easily makes the items on display appear a lot more expensive.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "colorful_appeal",
+    "name": "Colorful Appeal",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "The vibrant colors will capture your full attention!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 38000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "cookie_cabinet",
+    "name": "Cookie Cabinet",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "The cabinet partitions exude the fragrance of cookies!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "veiled_silhouette",
+    "name": "Veiled Silhouette",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Touching the jade ornaments as you pass by will grand you good fortune!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 135
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "cloudy_star_station",
+    "name": "Cloudy Star Station",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Little Dino painstakingly carved these doodles with its claws.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "starry_satin",
+    "name": "Starry Satin",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "An exquisite rattan storage cabinet. Please take care not to hook the lace when you are using it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "tasty_attack",
+    "name": "Tasty Attack",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "How strange, snacks placed in this cabinet seem tastier than those placed elsewhere.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 62000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 158
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "frolicking_snack_cabinet",
+    "name": "Frolicking Snack Cabinet",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "I heard that the snacks on the shelves are all restocked by little ghost!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8100000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "eternal_wintry_night",
+    "name": "Eternal Wintry Night",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "Winter calls for a little extra calories!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9060000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 88
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "cheese_filled_cabinet",
+    "name": "Cheese-filled Cabinet",
+    "area": "takeout",
+    "group": "Snack Cabinet",
+    "description": "This snack cabinet looks so appetizing that you'll be tempered so swallow it whole!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Creamy Kingdom"
+  },
+  {
+    "id": "solid_drink_cabinet",
+    "name": "Solid Drink Cabinet",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "You can still smell the faint scent of wood from this cabinet.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 450000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "refreshing_drink_cabinet",
+    "name": "Refreshing Drink Cabinet",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "Simple but practical design.",
+    "requiredStars": 6000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "elegant_drink",
+    "name": "Elegant Drink",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "Gets you in the mood for a drink served in a wine glass.",
+    "requiredStars": 12000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2950000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "supreme_drink",
+    "name": "Supreme Drink",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "Accentuates the fine quality of the drink.",
+    "requiredStars": 35000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6650000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "big_pineapple_cabinet",
+    "name": "Big Pineapple Cabinet",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "(It doesn't only contain pineapple-flavored drinks.)",
+    "requiredStars": 45000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 275
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "phantom_drink_cabinet",
+    "name": "Phantom Drink Cabinet",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "Witches like to put their potions inside.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "jungle_drink_cabinet",
+    "name": "Jungle Drink Cabinet",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "I hope there's no moss in the drinks.",
+    "requiredStars": 150000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 27500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "beach_strongbox",
+    "name": "Beach Strongbox",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "This painted-red strongbox is perfect for placing on the beach.",
+    "requiredStars": 25000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "magic_wooden_cabinet",
+    "name": "Magic Wooden Cabinet",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "Anything that's placed on it will be kept fresh.",
+    "requiredStars": 230000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 45000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "steam_powered_drink_cabinet",
+    "name": "Steam-powered Drink Cabinet",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "Automatically keeps the temperature of drinks stored inside.",
+    "requiredStars": 60000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "christmas_drink_cabinet",
+    "name": "Christmas Drink Cabinet",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "The style looks familiar, like a cabinet granny would use.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "elegant_tea_cabinet",
+    "name": "Elegant Tea Cabinet",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "After storing tea leaves for a long time, the cabinet itself also smells of tea.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 125
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "energy_milk_cabinet",
+    "name": "Energy Milk Cabinet",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "Wait!That straw is just for decoration!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "summer_drink_cabinet",
+    "name": "Summer Drink Cabinet",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "Have some drinks and let the dry heat disappear.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "elegant_gift",
+    "name": "Elegant Gift",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "While this gift exudes luxury, the most valuable part is the inlaid pearl.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 40000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 335
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "mystical_codex",
+    "name": "Mystical Codex",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "The magic circle on the countertop seems to serve some kind of purpose, but nobody knows how to activate it anymore.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "daylight_gathering",
+    "name": "Daylight Gathering",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "The proper environment for photosynthesis will make the cacti healthier.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 48000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "blissful_moment",
+    "name": "Blissful Moment",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "The eighth person to take a drink from this cabinet will have an auspicious and successful year ahead.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "sweet_harvest",
+    "name": "Sweet Harvest",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "Customers chosen by the little bee will enjoy a 1-for-1 promotion on their next purchase.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "seashell_cold_drinks",
+    "name": "Seashell Cold Drinks",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "A cooling sensation amid the hot sea breeze.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "lily_of_the_valley_murmurs",
+    "name": "Lily-of-the-Valley Murmurs",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "Its overall design and contours are beautiful and elegant.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 85000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "elegant_creepers",
+    "name": "Elegant Creepers",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "These vines would automatically pick up anything that falls off!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "midnight_melody",
+    "name": "Midnight Melody",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "A lovely voice is like sweet dew to me.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 38000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 350
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "heartwarming_winter_drinks",
+    "name": "Heartwarming Winter Drinks",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "During the winter, you need a pipping hot beverage to warm your hands and body!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 96
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "snowy_roof",
+    "name": "Snowy Roof",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "As melted snow slowly drips down, the last bit of chill slowly dissapates in preparation for the arriing spring breeze.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 19800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 155
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "horizon_cabinet",
+    "name": "Horizon Cabinet",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "I want to snap off these two tentacles...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "iris_fragrance",
+    "name": "Iris Fragrance",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "How strange... Even the items on the shelf smell good.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "pleasant_tales",
+    "name": "Pleasant Tales",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "Drinking this beverage will liberate both your body and your soul.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 94000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 315
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "delightful_drinking",
+    "name": "Delightful Drinking",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "The shelves are completely filled with all kinds of beverages. I can't decide which I want.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "crispy_cocoa",
+    "name": "Crispy Cocoa",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "Keeps drinks warm. Hot drinks are a must in winter!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13050000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 102
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "sweet_syrup_shelf",
+    "name": "Sweet Syrup Shelf",
+    "area": "takeout",
+    "group": "Drink Cabinet",
+    "description": "I'll start cutting down my sugar intake tomorrow… Promise!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Creamy Kingdom"
+  },
+  {
+    "id": "foam_ice_box",
+    "name": "Foam Ice Box",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Does not keep its content cold for long.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 750000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "fast_freeze_refrigerator",
+    "name": "Fast Freeze Refrigerator",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Has superb performance with an excellent price-performance ratio.",
+    "requiredStars": 7000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1750000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "fashionable_ice_cream_cabinet",
+    "name": "Fashionable Ice Cream Cabinet",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Perfect for displaying merchandise.",
+    "requiredStars": 14000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3150000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "classy_ice_cream_cabinet",
+    "name": "Classy Ice Cream Cabinet",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Has a brass texture, giving it a high-class feel.",
+    "requiredStars": 40000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "sweet_pear_refrigerator",
+    "name": "Sweet Pear Refrigerator",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "It's the sweetness of pears.",
+    "requiredStars": 55000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "pumpkin_summoner_freezer",
+    "name": "Pumpkin Summoner Freezer",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Do NOT, under any circumstances, make a wish to it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "vintage_chest_refrigerator",
+    "name": "Vintage Chest Refrigerator",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Seems like the items in this refrigerator should be able to fetch a good price.",
+    "requiredStars": 160000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "cabin_refrigerator",
+    "name": "Cabin Refrigerator",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "An ocean-themed refrigerator.",
+    "requiredStars": 30000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "forest_respite",
+    "name": "Forest Respite",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "It was discovered in the forest and is unexpectedly suitable for chilling items.",
+    "requiredStars": 240000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 50000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "lost_refrigerator",
+    "name": "Lost Refrigerator",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "You can take it on your travels, but it's very heavy.",
+    "requiredStars": 70000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 200
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "snowy_refrigerator",
+    "name": "Snowy Refrigerator",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Use every winter snowflake well.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "quaint_refrigerator",
+    "name": "Quaint Refrigerator",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Looks ordinary but works very well.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "tempting_shaved_ice",
+    "name": "Tempting Shaved Ice",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Does the ice cream in the freezer really not melt?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "plush_refrigerator",
+    "name": "Plush Refrigerator",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "It looks hot, but it's actually cool inside.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "blooming_period",
+    "name": "Blooming Period",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Time seems to have stopped at some particular blooming period from long ago.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 43000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 340
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "slumberous_heart_lock",
+    "name": "Slumberous Heart Lock",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "With the key in hand, have you decided if you'll shut away or bare your heart to the world?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "crispy_refrigerator",
+    "name": "Crispy Refrigerator",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "It's ice cold and feels so comfortable!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 51000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 410
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "auspicious_ice_bucket",
+    "name": "Auspicious Ice Bucket",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Its vivid craftmanship will scare away all o your misfortunes!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "four_leaf_clover_refrigerator",
+    "name": "Four-Leaf Clover Refrigerator",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "The ice cream that are stored within have all been enchanted with magic for good luck.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 95
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "whale_refrigerator",
+    "name": "Whale Refrigerator",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Its enormous belly can hold a lot of things!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "eternal_mint",
+    "name": "Eternal Mint",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "A moment of coolness can last forever here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 60000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "stained_glass_cabinet",
+    "name": "Stained Glass Cabinet",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Do stained glass windows make food look more appetizing?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "cooling_moment",
+    "name": "Cooling Moment",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Is there anyone who doesn't like misty cold ice cream?",
+    "requiredStars": 180000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 45000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 360
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "frosted_candy_house",
+    "name": "Frosted Candy House",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "The stuff placed inside freezes in no time.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "enamel_icebox",
+    "name": "Enamel Icebox",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "An antique passed down from an ancient royal family, it can still be used for quite some time even when the power's out!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 150
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "star_freezer",
+    "name": "Star Freezer",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "The latest in interstellar technology for keeping food fresh. It has great reviews!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "mauve_promise",
+    "name": "Mauve Promise",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "It's hard to believe that the fridge is decorated with such exquisite stained glass.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "rose_sincerity",
+    "name": "Rose Sincerity",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "The roses on this fridge never seem to wither. I wonder who they're waiting for?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 67000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 315
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "little_ghost_refrigerator",
+    "name": "Little Ghost Refrigerator",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "I don't have any proof, but why do I feel like this ghost will sneak a bite of the food in the refrigerator?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8900000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "icing_treetop",
+    "name": "Icing Treetop",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "Keeps everything ice cold, as if buried in snow.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 102
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "honey_frost",
+    "name": "Honey Frost",
+    "area": "takeout",
+    "group": "Refrigerator",
+    "description": "The refrigeration proces of this frezer is undeniably superb!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Creamy Kingdom"
+  },
+  {
+    "id": "solid_fruit_counter",
+    "name": "Solid Fruit Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "At one with the nature.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "rattan_fruit_basket",
+    "name": "Rattan Fruit Basket",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "A delicate, hand-woven basket.",
+    "requiredStars": 8000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1850000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "refreshing_fruit_rack",
+    "name": "Refreshing Fruit Rack",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "The fruits look fresher when displayed here.",
+    "requiredStars": 16000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3350000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "classy_fruit_cabinet",
+    "name": "Classy Fruit Cabinet",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Has an ingenious design.",
+    "requiredStars": 45000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8050000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "sweet_and_sour_fruit_counter",
+    "name": "Sweet and Sour Fruit Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "The soft blanket will better help to protect the fruits.",
+    "requiredStars": 60000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 315
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "floating_fruit_counter",
+    "name": "Floating Fruit Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "It won't come down no matter how much weight you put on it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "reverie_fruit_counter",
+    "name": "Reverie Fruit Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "The dreamy palette makes fruits look even sweeter.",
+    "requiredStars": 170000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 37000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "fish_net_fruit_counter",
+    "name": "Fish Net Fruit Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "This table has been exposed to the sun, so it's very dry and suitable for fruits.",
+    "requiredStars": 35000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 44
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "starry_fruit_counter",
+    "name": "Starry Fruit Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "The fruits look even more delicious with the stars complementing them.",
+    "requiredStars": 250000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 55000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "suitcase_counter",
+    "name": "Suitcase Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Can be used as storage. How convenient!",
+    "requiredStars": 80000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "sleigh_fruit_rack",
+    "name": "Sleigh Fruit Rack",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Made using Eggy's old sleigh. It's quite unique.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 95
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "wicker_basket_fruit_rack",
+    "name": "Wicker Basket Fruit Rack",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "You can just remove the wicker basket when you change the fruits. It's so convenient.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 135
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "toy_fruit_cart",
+    "name": "Toy Fruit Cart",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Toot-toot!Your daily vitamins reporting for duty!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 95
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "light_green_fruit_rack",
+    "name": "Light Green Fruit Rack",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Light green gives off a fresh feeling.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "noble_etiquette",
+    "name": "Noble Etiquette",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Every inch of this extremely-soft fabric has been meticulously handled.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 46000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 345
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "restful_bed",
+    "name": "Restful Bed",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Do you know that fruits go to bed too? Hush, don't wake them up.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "checkered_fruit_counter",
+    "name": "Checkered Fruit Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "The counter was designed using the checkered cookies as inspiration.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 55000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 415
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "lucky_stone_counter",
+    "name": "Lucky Stone Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Made of cool stone from the mountains, it can keep fruits fresh over a longer period of time!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 145
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "rustic_meadow",
+    "name": "Rustic Meadow",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Premium fruits can simply be placed as is and they'll still look appealing.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "golden_fishtail_rack",
+    "name": "Golden Fishtail Rack",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "The most popular design among the ocean's denizens.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "fresh_fruits_counter",
+    "name": "Fresh Fruits Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "These fruits that are freshly picked from the forest taste incredible.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "velvet_burial",
+    "name": "Velvet Burial",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Let's all observe a moment of silence for the fruits we're about to sink our teeth into.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "daylight_butterfly",
+    "name": "Daylight Butterfly",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "It can store lots of fruits because of its ultra-large capacity!",
+    "requiredStars": 220000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 48000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 295
+      }
+    ],
+    "series": "Rock 'n'Roll Sweetheart"
+  },
+  {
+    "id": "azure_ice_fruit_counter",
+    "name": "Azure Ice Fruit Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "As it's icy cold, it keeps things fresher as compared to using a regular cabinet.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "asiatic_apple_embroidery",
+    "name": "Asiatic Apple Embroidery",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "The arome of fruits and the fragrance of flowers complement each other very well.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 21000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 155
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "rocket_display",
+    "name": "Rocket Display",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "I just needed a place to put all these rockets.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 115
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "verdant_whispers",
+    "name": "Verdant Whispers",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Could the fruits on top please make way? I wish to lie in it too.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "dreamy_fruit_counter",
+    "name": "Dreamy Fruit Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "The tablecloth looks as dreamy as an elegant dress.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 36000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 215
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "celebratory_fruit_cart",
+    "name": "Celebratory Fruit Cart",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Look!The bottom of the cart has such an interesting pumpkin design.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 58
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "coo_coo_fruit_counter",
+    "name": "Coo Coo Fruit Counter",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "Coo Coo! No way we'd sneak a bite!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 19200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 118
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "cotton_fruit_rack",
+    "name": "Cotton Fruit Rack",
+    "area": "takeout",
+    "group": "Fruit Cabinet",
+    "description": "This rack is so exquisite that it even makes the fruits that are placed on it look cute and elegant.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Creamy Kingdom"
+  },
+  {
+    "id": "log_takeout_counter",
+    "name": "Log Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "All takeout comes with an extra topping of the great nature.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 950000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "fine_takeout_counter",
+    "name": "Fine Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Enjoy the professional takeout process.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2050000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 77
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "classy_takeout_counter",
+    "name": "Classy Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Can you see the classiness oozing out of it?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 108
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "luxurious_takeout_counter",
+    "name": "Luxurious Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "The premium takeout experience, a top choice for upper echelons of the society.",
+    "requiredStars": 66000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 155
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "fruit_takeout_counter",
+    "name": "Fruit Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Great fruit basket sale!",
+    "requiredStars": 90000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 330
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "gothic_takeout_counter",
+    "name": "Gothic Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Is it just me, or did the food in the bento move?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 136
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "reverie_takeout_counter",
+    "name": "Reverie Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Take care not to eat the bread on it.",
+    "requiredStars": 100000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 340
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "steamboat_takeout_counter",
+    "name": "Steamboat Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Sailors can get some food they can't get on the high seas to-go here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 138
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "elegant_takeout_counter",
+    "name": "Elegant Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Limited quantities of Avocado Sandwich for sale every day!",
+    "requiredStars": 250000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 48000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "mechanical_takeout_counter",
+    "name": "Mechanical Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "The takeout boxes on the counter are too heavy!",
+    "requiredStars": 80000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 210
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "thorny_takeout_counter",
+    "name": "Thorny Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "The stuff on the table is dangerous!Watch out for the thorns!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "snowman_takeout_counter",
+    "name": "Snowman Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Each bento has a cute little snowman inside.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "pastry_takeout_counter",
+    "name": "Pastry Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Receiving red packets for ordering takeout? It's too good to be true!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 95
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "cream_takeout_counter",
+    "name": "Cream Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "All the takeout orders here carry a light aroma.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "wonder_takeout_counter",
+    "name": "Wonder Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "This is where you pack creative and delicious food.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "colorful_takeout_counter",
+    "name": "Colorful Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Pack it carefully, then add color to the packaging using paint!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 42000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "lazy_daydream",
+    "name": "Lazy Daydream",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "The mirror on the table will show you your deepest desires.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 170
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "toast_delivery",
+    "name": "Toast Delivery",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Want a piece of strawberry jelly toast?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 75000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 650
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "jade_counter",
+    "name": "Jade Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Apart from preparing takeaways, you can relax and have a drink here too.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "verdant_blissfulness",
+    "name": "Verdant Blissfulness",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "The fresh flowers and delicious food all belong to you.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "precious_dressing_table",
+    "name": "Precious Dressing Table",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Packages ocean delicacies for your tastebuds to enjoy.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 180
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "fine_aesthetics",
+    "name": "Fine Aesthetics",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Decorate and package your favourite items here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 55000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 150
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "swallowtail_kiss",
+    "name": "Swallowtail Kiss",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "The envelope on the table is proof that love once existed.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "romantic_present",
+    "name": "Romantic Present",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "I'll pack and send both food and my love to you.",
+    "requiredStars": 180000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 40000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Rock 'n'Roll Sweetheart"
+  },
+  {
+    "id": "teddy_and_cake_roll",
+    "name": "Teddy and Cake Roll",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "The teddy has selected delicious cake rolls and packed them for you to gie them a try!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 75
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "peach_blossom_splendor",
+    "name": "Peach Blossom Splendor",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Walking up early to dress up for the day with a veiled face to welcome spring with a beautiful countenance.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "rainbow_console",
+    "name": "Rainbow Console",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "You're not seeing things. A dinosaur is stealing bites of the cotton candy.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 92
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "berry_dreams",
+    "name": "Berry Dreams",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "A tiny sip will transport you to a splendid meadow that's full of flowers.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 190
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "sweet_wings",
+    "name": "Sweet Wings",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Let's bring back all of our happiness and bliss!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 60000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 170
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "jovial_takeout_counter",
+    "name": "Jovial Takeout Counter",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "When you're tired from packing takeout, you can play with the little trinkets.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 47000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 325
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "gingerbread_galore",
+    "name": "Gingerbread Galore",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "A tiny piece of gingerbread packs a boost of energy in winter!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 84
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "mellow_sweet_workshop",
+    "name": "Mellow Sweet Workshop",
+    "area": "takeout",
+    "group": "Takeout Counter",
+    "description": "Even the takeaway boxes have been meticulously designed!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Creamy Kingdom"
+  },
+  {
+    "id": "vines",
+    "name": "Vines",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "I swear I did not pick these up outside!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1420000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "cat_tree",
+    "name": "Cat Tree",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "No scratching allowed.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2250000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 82
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "minimalistic_ladder",
+    "name": "Minimalistic Ladder",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "More solid than it looks.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3750000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "elegant_starry_stairs",
+    "name": "Elegant Starry Stairs",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "The starry stairway to heaven.",
+    "requiredStars": 82000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9100000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 195
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "gumi_and_the_magic_beans",
+    "name": "Gumi and the Magic Beans",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "No one knows where the vine leads to.",
+    "requiredStars": 100000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 340
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "abandoned_cage",
+    "name": "Abandoned Cage",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "It hasn't been used in a long, long time. Who knows if it even still works.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 148
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "lost_rose_tree",
+    "name": "Lost Rose Tree",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "Crybabies seem to lose their way more easily.",
+    "requiredStars": 150000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 46000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 530
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "two_colored_slab",
+    "name": "Two-colored Slab",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "It's a bit wobbly when you climb on it, but it's quite strong.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "winding_stairs",
+    "name": "Winding Stairs",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "You might get dizzy if you go too fast.",
+    "requiredStars": 280000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 68000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 620
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "indicator_pipe_ladder",
+    "name": "Indicator Pipe Ladder",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "We used a bit too much water this month. Let's cut back next month!",
+    "requiredStars": 140000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 270
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "christmas_stocking_ladder",
+    "name": "Christmas Stocking Ladder",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "I hope gifts will appear in every stocking!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "fortune_lantern",
+    "name": "Fortune Lantern",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "Who sneakily made this paw print?!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "spring_stairs",
+    "name": "Spring Stairs",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "The stairs are so soft but bouncy!I could climb another three flights, easy!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "handmade_flower_ladder",
+    "name": "Handmade Flower Ladder",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "All handmade.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 145
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "time_graduated_ruler",
+    "name": "Time-Graduated Ruler",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "Different times are engraved onto the cylinder, as vines quietly surround it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 50000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 500
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "dreamy_reflections_stairway",
+    "name": "Dreamy Reflections Stairway",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "Step onto the stairway into an even more wondrous dreamscape.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 165
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "tall_cactus",
+    "name": "Tall Cactus",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "Be careful of the spines on the cactus!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 60000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 600
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "spiraling_crimson_pavilions",
+    "name": "Spiraling Crimson Pavilions",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "Spiraling toward the skies!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 27000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 235
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "floral_spring_stairs",
+    "name": "Floral Spring Stairs",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "Don't land too hard or you'll bounce right into the sky.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "magic_aquatic_plant",
+    "name": "Magic Aquatic Plant",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "This thriving plant is growing from the seabed toward the sky above.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 175
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "mini_bone_ladder",
+    "name": "Mini Bone Ladder",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "Cute and playful.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 78000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "afterdark_invitation",
+    "name": "Afterdark Invitation",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "No one knows what lies at the opposite end of these chains.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 155
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "winding_ladder",
+    "name": "Winding Ladder",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "Take care not to make yourself dizzy!",
+    "requiredStars": 250000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 52000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 550
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "wooden_leaves_stairs",
+    "name": "Wooden Leaves Stairs",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "The wood has been carefully carved into the shape of leaves.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 155
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "swimming_koi_lantern",
+    "name": "Swimming Koi Lantern",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "With good luck in tow, the koi fish swim toward the horizon!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 250
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "interstellar_flash",
+    "name": "Interstellar Flash",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "It may be the fastest elevator in the universe.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "long_tailed_birds_sunny_knots",
+    "name": "Long-tailed Birds & Sunny Knots",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "As you climb, the sparrows will cheer for you while you pant and gasp.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 185
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "ladder_of_love",
+    "name": "Ladder of Love",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "The power of love pushes you forward.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 86000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "floating_night",
+    "name": "Floating Night",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "I wonder where I'll be taken to.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 175
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "ding_dong_magic_stairs",
+    "name": "Ding Dong Magic Stairs",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "Hold onto the ribbon and let magic whisk you upstairs!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 172
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "fluffy_steps",
+    "name": "Fluffy Steps",
+    "area": "takeout",
+    "group": "Stairs",
+    "description": "They feel so soft when you step on tchem... Oh, don't worry, they won't collapse!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Creamy Kingdom"
+  },
+  {
+    "id": "memo_list",
+    "name": "Memo List",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Note to self:Write down the customer's order and address.",
+    "requiredStars": 4000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1250000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "cute_blackboard",
+    "name": "Cute Blackboard",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "No one can resist the temptation to draw some graffiti on this blackboard.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2450000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "forest_map",
+    "name": "Forest Map",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Remember to take note of the time and deliver on time!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3950000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 112
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "refreshing_mini_wall_art",
+    "name": "Refreshing Mini Wall Art",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Filled with drawings of what everybody likes.",
+    "requiredStars": 90000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 225
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "pineapple_clock",
+    "name": "Pineapple Clock",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Gives off the fragrance of pineapples.",
+    "requiredStars": 110000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 350
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "ghoul_brothers",
+    "name": "Ghoul Brothers",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "The whole family must be neat and orderly!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 156
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "bewitched_hanging_clock",
+    "name": "Bewitched Hanging Clock",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Who's that girl in the frame?",
+    "requiredStars": 90000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 36000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "pirate",
+    "name": "Pirate",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Fished out from the seabed. It looks pretty old.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "dream_catcher",
+    "name": "Dream Catcher",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "May you have a sweet dream.",
+    "requiredStars": 200000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 55000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "gear_hanging_clock",
+    "name": "Gear Hanging Clock",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Tick... Tock... The gears bear the weight of time.",
+    "requiredStars": 100000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "snowscape_painting",
+    "name": "Snowscape Painting",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Keep the most beautiful snowy days.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 145
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "tassel_fan",
+    "name": "Tassel Fan",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Makes the room feel a little more scholarly.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 250
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "rainbow_party",
+    "name": "Rainbow Party",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Weave rainbows into your dreams.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "wish_countdown_timer",
+    "name": "Wish Countdown Timer",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "All wishes will come true on that day!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 120
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "gorgeous_hanging_basket",
+    "name": "Gorgeous Hanging Basket",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "An indispensable decor for any palace!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 48000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 360
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "eros",
+    "name": "Eros",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Eros'arrow points to the sky whe it's time for love every day.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 125
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "creamy_little_blackboard",
+    "name": "Creamy Little Blackboard",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Today's recommendation is bread with meat floss!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 58000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 430
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "jade_dragon_clutching_ball",
+    "name": "Jade Dragon Clutching Ball",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "The dragon's ball shines brightly as is is bathed in light. Perhaps it'll bring you good luck!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 29000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 275
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "sparkling_clock",
+    "name": "Sparkling Clock",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "The hollow design makes it even more stylish.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 95
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "golden_conch",
+    "name": "Golden Conch",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "If you put it to your ear, you can hear the crashing of waves.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 130
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "lily_of_the_valley_mirror",
+    "name": "Lily-of-the-Valley Mirror",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Reflects your floral beauty.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 50000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "baron",
+    "name": "Baron",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "This blade needs no devil's blood for embellishment. Scented roses will do!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 150
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "rock",
+    "name": "Rock",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Little Mouse's very first bass that's full of precious memories.",
+    "requiredStars": 180000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 48000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "starry_night_prism",
+    "name": "Starry Night Prism",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "The vines have slowly grown out from behind the glass.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 156
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "springtime_peach",
+    "name": "Springtime Peach",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "If you're worried spring will arrive late, you can first enjoy the fruits of spring here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 260
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "rainbow_trail",
+    "name": "Rainbow Trail",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "It was left on the wall because they couldn't find a launcher.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "purple_butterfly_interlude",
+    "name": "Purple Butterfly Interlude",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Butterflies will fly around you as you perform.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 135
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "swan_hanging_clock",
+    "name": "Swan Hanging Clock",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "I can tell that he's a real prince from the opulent outfit that he's wearing!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 53000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "scherzo",
+    "name": "Scherzo",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Next, let us enjoy the performance by the little ghost choir!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 179
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "snow_bird_clock",
+    "name": "Snow Bird Clock",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Birdie appears whenever it wants!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 179
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "cake_hanging_clock",
+    "name": "Cake Hanging Clock",
+    "area": "takeout",
+    "group": "Wall Decor",
+    "description": "Time for dessert!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Creamy Kingdom"
+  },
+  {
+    "id": "casual_rug",
+    "name": "Casual Rug",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Have a cup of hot tea on this rug when you are feeling tired.",
+    "requiredStars": 7000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1480000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "kitty_seat",
+    "name": "Kitty Seat",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Come here, little kitty. Take a seat here.",
+    "requiredStars": 10000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2650000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 115
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "sloth_cushion",
+    "name": "Sloth Cushion",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Ideal for the lazy ones.",
+    "requiredStars": 33000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4150000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 148
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "luxurious_seat",
+    "name": "Luxurious Seat",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Enjoy a relaxing tea-time here.",
+    "requiredStars": 99000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 265
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "strawberry_rhapsody",
+    "name": "Strawberry Rhapsody",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Sinking into the soft sofa with a glass of orange juice helps to get rid of all that fatigue!",
+    "requiredStars": 120000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 26500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 360
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "sisily",
+    "name": "Sisily",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "After sitting down, you'll subconsciously start humming some songs you've never heard before.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 162
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "reverie_concert",
+    "name": "Reverie Concert",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "The kind of music for when you're sipping tea on the sofa.",
+    "requiredStars": 200000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 55000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 580
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "casual_summer",
+    "name": "Casual Summer",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Resting on a inflatable sofa is a must-do during summer!",
+    "requiredStars": 40000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 150
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "delightful_dream",
+    "name": "Delightful Dream",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "It's a dream about stars.",
+    "requiredStars": 300000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 80000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 700
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "afternoon_repose",
+    "name": "Afternoon Repose",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Have a cup of tea on the grass and take a little nap.",
+    "requiredStars": 100000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "fireside_moments",
+    "name": "Fireside Moments",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "The happiest winter moments are spent by a fireplace.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 160
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "incense_lounge",
+    "name": "Incense Lounge",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Relax to the aroma of the incense.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "jelly_sofa",
+    "name": "Jelly Sofa",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Come enjoy a wobbly sofa!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "gentle_sweet_dream",
+    "name": "Gentle Sweet Dream",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Sleep peacefully and have sweet, beautiful dreams.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 150
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "studio_corner",
+    "name": "Studio Corner",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Relax–pick up your brush and weave a beautiful dream...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 67000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 580
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "delusive_nightmares",
+    "name": "Delusive Nightmares",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Dreams may be wonderful, but don't get too caught up in them.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 160
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "delightful_fantasy",
+    "name": "Delightful Fantasy",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "The cute cacti will accompany you as you drift off to sleep.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 67000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 270
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "meditative_lotus_throne",
+    "name": "Meditative Lotus Throne",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Calm your mind and breathe to the rhythm of the world...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 33000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "cloud_collision",
+    "name": "Cloud Collision",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Come, have a glass of sweet honey tea and relax for a while!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "tidal_break",
+    "name": "Tidal Break",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Relax with the ebb and flow of the tide.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 180
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "gentle_tea_break",
+    "name": "Gentle Tea Break",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Provides the most comfortable if leisurely experiences.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 60000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 350
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "midnight_wine_party",
+    "name": "Midnight Wine Party",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "It's late and quiet tonight, and a good time for a glass of wine.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 165
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "relaxing_hour",
+    "name": "Relaxing Hour",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Will songwriting inspiration hit me if I sit here?",
+    "requiredStars": 250000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 70000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 650
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "polar_night_dream",
+    "name": "Polar Night Dream",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "You will not feel cold even if you doze off while sitting here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 170
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "springtime_scenery",
+    "name": "Springtime Scenery",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Several picture books are hidden amid the scrolls scattered across the couch.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 33000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "starry_rest_stop",
+    "name": "Starry Rest Stop",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "When you're tired, climb inside the planet for some beauty sleep.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "violet_expanse",
+    "name": "Violet Expanse",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "If I take an afternoon nap, will I dream of lavender fields?",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 200
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "rose_tinted_nostalgia",
+    "name": "Rose-tinted Nostalgia",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Just give me five more minutes... It's fine if I wake up a little later than usual.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 62500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 360
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "moments_of_relaxation",
+    "name": "Moments of Relaxation",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Have a glass of orange juice and get some rest here. That's what the little ghost said.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 17500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 188
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "cozy_sandwich_biscuit",
+    "name": "Cozy Sandwich Biscuit",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "Smells like cookies straight from the oven! It's hard to resist nibbling at it during breaktime...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "sugary_retreat",
+    "name": "Sugary Retreat",
+    "area": "takeout",
+    "group": "Resting Area",
+    "description": "These sweet desserts will treat your fatigue in no time!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Creamy Kingdom"
+  }
+]

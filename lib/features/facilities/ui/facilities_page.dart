@@ -742,6 +742,8 @@ class _FacilityDetailBody extends StatelessWidget {
         throw UnimplementedError();
       case FacilityEffectType.storageIncrease:
         throw UnimplementedError();
+      case FacilityEffectType.ordersIncrease:
+        return '+${e.amount?.toInt() ?? 0} orders';
     }
   }
 }

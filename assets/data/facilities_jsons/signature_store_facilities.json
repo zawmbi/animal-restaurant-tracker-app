@@ -7,11 +7,17 @@
     "series": "Signboard",
     "description": "A simple wooden signboard that grants access to the Signature Store.",
     "price": [
-      { "currency": "bells", "amount": 0 }
+      {
+        "currency": "bells",
+        "amount": 0
+      }
     ],
     "effects": [],
     "specialRequirements": [],
-    "tags": ["signature_store", "signboard"]
+    "tags": [
+      "signature_store",
+      "signboard"
+    ]
   },
   {
     "id": "signature_sign_blackboard",
@@ -21,13 +27,18 @@
     "series": "Signboard",
     "description": "A chalk-style signboard with a cozy café vibe.",
     "price": [
-      { "currency": "bells", "amount": 500 }
+      {
+        "currency": "bells",
+        "amount": 500
+      }
     ],
     "effects": [],
     "specialRequirements": [],
-    "tags": ["signature_store", "signboard"]
+    "tags": [
+      "signature_store",
+      "signboard"
+    ]
   },
-
   {
     "id": "ss_wallpaper_simple_elegance_restaurant",
     "name": "Simple Elegance Restaurant Wallpaper",
@@ -36,13 +47,22 @@
     "series": "Restaurant",
     "description": "A reserved, low-key look for the restaurant.",
     "price": [
-      { "currency": "bells", "amount": 4000 }
+      {
+        "currency": "bells",
+        "amount": 4000
+      }
     ],
     "effects": [
-      { "type": "ratingBonus", "amount": 50 }
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
     ],
     "specialRequirements": [],
-    "tags": ["signature_store", "wallpaper"]
+    "tags": [
+      "signature_store",
+      "wallpaper"
+    ]
   },
   {
     "id": "ss_wallpaper_reverie_blue_restaurant",
@@ -52,29 +72,50 @@
     "series": "Restaurant",
     "description": "It'll bring you into a blue dream.",
     "price": [
-      { "currency": "bells", "amount": 12000 }
+      {
+        "currency": "bells",
+        "amount": 12000
+      }
     ],
     "effects": [
-      { "type": "ratingBonus", "amount": 100 }
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
     ],
     "specialRequirements": [],
-    "tags": ["signature_store", "wallpaper"]
+    "tags": [
+      "signature_store",
+      "wallpaper"
+    ]
   },
-{
-  "id": "ss_garden_storage_rattan",
-  "name": "Rattan Flower Basket",
-  "area": "takeout",
-  "group": "Signature Store - Garden Storage",
-  "description": "A practical hand-woven flower basket.",
-  "requiredStars": 3500,
-  "price": [{ "currency": "bells", "amount": 1000 }],
-  "effects": [
-    { "type": "ratingBonus", "amount": 30 },
-    { "type": "storageIncrease", "amount": 30, "storageKind": "garden" }
-  ],
-  "series": "Signature Store",
-  "specialRequirements": []
-},
+  {
+    "id": "ss_garden_storage_rattan",
+    "name": "Rattan Flower Basket",
+    "area": "takeout",
+    "group": "Signature Store - Garden Storage",
+    "description": "A practical hand-woven flower basket.",
+    "requiredStars": 3500,
+    "price": [
+      {
+        "currency": "bells",
+        "amount": 1000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      },
+      {
+        "type": "storageIncrease",
+        "amount": 30,
+        "storageKind": "garden"
+      }
+    ],
+    "series": "Signature Store",
+    "specialRequirements": []
+  },
   {
     "id": "ss_garden_storage_fresh_flower",
     "name": "Fresh Flower Cupboard",
@@ -83,16 +124,28 @@
     "series": "Garden Storage",
     "description": "A cupboard designed to keep flowers fresh.",
     "price": [
-      { "currency": "bells", "amount": 2000 }
+      {
+        "currency": "bells",
+        "amount": 2000
+      }
     ],
     "effects": [
-      { "type": "ratingBonus", "amount": 60 },
-      { "type": "storageIncrease", "amount": 50, "storageKind": "garden"}
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      },
+      {
+        "type": "storageIncrease",
+        "amount": 50,
+        "storageKind": "garden"
+      }
     ],
     "specialRequirements": [],
-    "tags": ["signature_store", "storage"]
+    "tags": [
+      "signature_store",
+      "storage"
+    ]
   },
-
   {
     "id": "ss_memento_airplane_cap",
     "name": "Airplane Cap",
@@ -101,13 +154,22 @@
     "series": "Head Accessory",
     "description": "A super cool airplane-themed cap.",
     "price": [
-      { "currency": "bells", "amount": 200 }
+      {
+        "currency": "bells",
+        "amount": 200
+      }
     ],
     "effects": [
-      { "type": "ratingBonus", "amount": 5 }
+      {
+        "type": "ratingBonus",
+        "amount": 5
+      }
     ],
     "specialRequirements": [],
-    "tags": ["signature_store", "memento"]
+    "tags": [
+      "signature_store",
+      "memento"
+    ]
   },
   {
     "id": "ss_memento_pirate_hat",
@@ -117,12 +179,661 @@
     "series": "Head Accessory",
     "description": "Whoever wears it becomes the captain.",
     "price": [
-      { "currency": "bells", "amount": 400 }
+      {
+        "currency": "bells",
+        "amount": 400
+      }
     ],
     "effects": [
-      { "type": "ratingBonus", "amount": 10 }
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
     ],
     "specialRequirements": [],
-    "tags": ["signature_store", "memento"]
+    "tags": [
+      "signature_store",
+      "memento"
+    ]
+  },
+  {
+    "id": "wooden_signboard",
+    "name": "Wooden Signboard",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Looks generic, but the sign on it is special.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 350000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "blackboard_signboard",
+    "name": "Blackboard Signboard",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Do not scribble on the signboard.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1370000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 69
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "brass_signboard",
+    "name": "Brass Signboard",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Looks very extravagant.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2650000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 116
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "fresh_sign",
+    "name": "Fresh Sign",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Remember to water the plant on top!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4550000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 146
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "orange_flavored_sign",
+    "name": "Orange-flavored Sign",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Who drew grapes on it?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8900000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "sealed_signboard",
+    "name": "Sealed Signboard",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Who broke the seal?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "confusing_sign",
+    "name": "Confusing Sign",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Left or right? Where will it lead us?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 17000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 260
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "sea_breeze_sign",
+    "name": "Sea Breeze Sign",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Get your ice-cold sodas and sea salt ice cream here!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "magic_sign",
+    "name": "Magic Sign",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "The quill will automatically record every transaction.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 27000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "old_iron_sign",
+    "name": "Old Iron Sign",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Often grows moss, so be sure to clean it well.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "long_tongue_sign",
+    "name": "Long Tongue Sign",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "This sign loves to pull pranks on passers-by, but actually, it just wants to play with you.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "surprise_christmas_tree",
+    "name": "Surprise Christmas Tree",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Check and see if there's anything that could make a good Christmas gift!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "joyous_drum_stand",
+    "name": "Joyous Drum Stand",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Come over!Take a look!Our products offer great value for money!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "gummy_effect",
+    "name": "Gummy Effect",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Please do not poke the bear's cheeks!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "fawn",
+    "name": "[[Fawn",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Take a look at Fawn's daily recommendations.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 110
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "trumpeting_angel",
+    "name": "Trumpeting Angel",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Attracts customers to visit by performing music.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 250
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "awakening_dream",
+    "name": "Awakening Dream",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Do you feel disoriented after waking up from a wonderful dream?",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 130
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "baking_march",
+    "name": "Baking March",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Let's make a buttery and flaky croissant!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 26500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "mini_longevity_gong",
+    "name": "Mini Longevity Gong",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Strike it once for good health, twice for success in all of your endeavors, and three times for good fortune!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 135
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "honey_clover",
+    "name": "Honey Clover",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Mature four-leaf clovers must learn to attract customers themselves.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 75
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "seahorse_sign",
+    "name": "Seahorse Sign",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Dududu... This is the newest treasure that has been discovered on the seabed!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 135
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "budding_heart",
+    "name": "Budding Heart",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "There are many cute and interesting things here!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "butterfly_and_roses",
+    "name": "Butterfly and Roses",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Take the butterfly's guidance.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 45000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "romance_signal",
+    "name": "Romance Signal",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Is this skip in my heartbeat a sign of attraction?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "interweaving_stars",
+    "name": "Interweaving Stars",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Come and check out this December special!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "eight_treasure_gourd",
+    "name": "Eight Treasure Gourd",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Although the kitty doesn't know exactly what the eight treasures are, what's certain is that the cat's paw engraved upon the gourd is a form of blessing!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 19500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 146
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "starry_sign",
+    "name": "Starry Sign",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "It can produce infinite star fruits!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 92
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "birdie_murmurs",
+    "name": "Birdie Murmurs",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "If you aren't sure what to pick, just trust the birdie's intuition.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 140
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "swan_sign",
+    "name": "Swan Sign",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "It looks so elegant that everybody will pause in their tracks to take a good look at it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 42500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 205
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "whimsical_sign",
+    "name": "Whimsical Sign",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "What are you looking for? You can find everything here!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 51000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 152
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "guiding_aurora",
+    "name": "Guiding Aurora",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Follow its light, and you're sure to get what you desire...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10320000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 127
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "red_velvet_signboard",
+    "name": "Red Velvet Signboard",
+    "area": "takeout",
+    "group": "Signature Store",
+    "description": "Were you drawn here by the irresistible aroma of the cakes too?",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Creamy Kingdom"
   }
 ]

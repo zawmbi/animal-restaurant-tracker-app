@@ -1,1 +1,3946 @@
-[]
+[
+  {
+    "id": "bud_planter",
+    "name": "Bud Planter",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "The little buds here are getting ready to bloom",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 72500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": "blue_flower_bed",
+    "name": "Blue Flower Bed",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "The blooming bluebells sway in the wind.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 850000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "id": "fairy_bluebells",
+    "name": "Fairy Bluebells",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "When the bluebells sway in the wind, you can almost hear the sound of bells ringing.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ]
+  },
+  {
+    "id": "azure_sky",
+    "name": "Azure Sky",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "It is as if the bluebells are twinkling in the night sky.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "id": "innocent_memories",
+    "name": "Innocent Memories",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "The blue wind chime sways in the wind, invoking memories of innocent times.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5500000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "dash_of_red",
+    "name": "Dash Of Red",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "One beautiful little rose is growing here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 42000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 7
+      }
+    ]
+  },
+  {
+    "id": "red_flower_bed",
+    "name": "Red Flower Bed",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "The blooming roses are full of life!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 580000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 16
+      }
+    ]
+  },
+  {
+    "id": "ruby_sea",
+    "name": "Ruby Sea",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "Full of glittering red gems.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 900000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 24
+      }
+    ]
+  },
+  {
+    "id": "love_and_beauty",
+    "name": "Love And Beauty",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "Love as wide as the world and as deep as the sea.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      }
+    ]
+  },
+  {
+    "id": "white_romance",
+    "name": "White Romance",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "Romance is white, the color of snow and of clouds.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4000000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "terracotta_plant_pot",
+    "name": "Terracotta Plant Pot",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "Here's where the little sunflowers grow up!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": "rectangle_flower_bed",
+    "name": "Rectangle Flower Bed",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "The sunflowers greet the sunrise with a smile.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 450000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "id": "courtyard_flower_bed",
+    "name": "Courtyard Flower Bed",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "The courtyard is full of life!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 6
+      }
+    ]
+  },
+  {
+    "id": "modern_greenhouse",
+    "name": "Modern Greenhouse",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "Even without sunlight, the garden is still thriving!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "id": "wrought_iron_flowerbed",
+    "name": "Wrought Iron Flowerbed",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "Looks somewhat artistic.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3000000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "small_plant_pot",
+    "name": "Small Plant Pot",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "Can only fit a single flower.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "id": "yellow_flower_bed",
+    "name": "Yellow Flower Bed",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "The blooming daisies look so happy and carefree!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 180000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "id": "medium_flower_bed",
+    "name": "Medium Flower Bed",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "You can smell the scent of daisies.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 8
+      }
+    ]
+  },
+  {
+    "id": "greenhouse_garden",
+    "name": "Greenhouse Garden",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "The flowers have faded, leaving only the daisies in full bloom.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1260000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 12
+      }
+    ]
+  },
+  {
+    "id": "vintage_flowerbed",
+    "name": "Vintage Flowerbed",
+    "area": "garden",
+    "group": "Flowerbed",
+    "description": "Daisies blooming within a classic flowerbed, a dash of playfulness mixed with vintage.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2400000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "bowl_fountain",
+    "name": "Bowl Fountain",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.1: Can't be smashed. No climbing!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 3
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "bird_bath",
+    "name": "Bird Bath",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.2: A place for birds to splash about",
+    "requiredStars": 1000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 420000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "river_god_pond",
+    "name": "River God Pond",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.2: Sometimes the river god will help you get back things you've dropped in...",
+    "requiredStars": 2000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 860000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "bastet_fountain",
+    "name": "Bastet Fountain",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.3: The cat goddess will give you shelter!",
+    "requiredStars": 3600,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2350000
+      }
+    ],
+    "series": "Supreme Seat of Honor",
+    "effects": []
+  },
+  {
+    "id": "floating_teacup",
+    "name": "Floating Teacup",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: Why is the teacup flying?",
+    "requiredStars": 10000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "series": "Alice's Dream",
+    "effects": []
+  },
+  {
+    "id": "sadako",
+    "name": "Sadako",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: It's quite tiring to hang there as well.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8600000
+      }
+    ],
+    "series": "Marvelous Midnight",
+    "effects": []
+  },
+  {
+    "id": "sweet_dream",
+    "name": "Sweet Dream",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: A sweet dream will come true every time a wish is made.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 88
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "fruity_fountain",
+    "name": "Fruity Fountain",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: Come join in the fruity pool party!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "pirates",
+    "name": "Pirates",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.5: It's said that wine barrels that crossed the sea are better for making wishes.",
+    "requiredStars": 100000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze",
+    "effects": []
+  },
+  {
+    "id": "lucky_bell",
+    "name": "Lucky Bell",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.3: The snowman waits for his friend underneath the bell.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3800000
+      }
+    ],
+    "series": "Warm Winter Chimes",
+    "effects": []
+  },
+  {
+    "id": "carp_of_fortune",
+    "name": "Carp of Fortune",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: Make a wish to the carp to get a year of good luck!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8800000
+      }
+    ],
+    "series": "Stovetop Blessings",
+    "effects": []
+  },
+  {
+    "id": "celestial_spring",
+    "name": "Celestial Spring",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.5: Don't worry, at least the stars will keep you company.",
+    "requiredStars": 200000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25000000
+      }
+    ],
+    "series": "Starry Rose",
+    "effects": []
+  },
+  {
+    "id": "mid_air_imagination",
+    "name": "Mid-air Imagination",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: I wanna fly up into the sky. I'm sure the clouds are like cotton candy!",
+    "requiredStars": 20000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "series": "Steam-powered",
+    "effects": []
+  },
+  {
+    "id": "ghost_staff_fountain",
+    "name": "Ghost Staff Fountain",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: For any work inquiries, please find us during our business hours: 9:00AM - 5:00PM.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "series": "Marvelous Midnight",
+    "effects": []
+  },
+  {
+    "id": "sweet_loop",
+    "name": "Sweet Loop",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: The syrup inside is recycled for repeated use. Don't tell anyone!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "series": "Childhood Paradise",
+    "effects": []
+  },
+  {
+    "id": "fountain_goddess",
+    "name": "Fountain Goddess",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: It's said that some employee spent a serious sum of money in order to have this made.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14500000
+      }
+    ],
+    "series": "Fanciful Melody",
+    "effects": []
+  },
+  {
+    "id": "winter_skates",
+    "name": "Winter Skates",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: Winter is here! That can only mean one thing: ice skating!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "series": "Aurora Fairy Tale",
+    "effects": []
+  },
+  {
+    "id": "fine_wine",
+    "name": "Fine Wine",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: An intoxicating brew that lets one dream up a grand adventure.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "series": "Pleasant Dreams",
+    "effects": []
+  },
+  {
+    "id": "duckling_gathering",
+    "name": "Duckling Gathering",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.3: Quack, Quack, Quack. Can you understand what they are saying?",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 170
+      }
+    ],
+    "series": "Fantastical Party",
+    "effects": []
+  },
+  {
+    "id": "milky_flow",
+    "name": "Milky Flow",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: My greatest wish is to have unlimited snacks to enjoy!",
+    "requiredStars": 100000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 50000000
+      }
+    ],
+    "series": "Warm Bakery",
+    "effects": []
+  },
+  {
+    "id": "cupid",
+    "name": "Cupid",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.5: I heard that drinking from this spring allows one to find true love!",
+    "requiredStars": 18000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 48000000
+      }
+    ],
+    "series": "Murmuring Dusk Rose",
+    "effects": []
+  },
+  {
+    "id": "moonglow_spring",
+    "name": "Moonglow Spring",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.5: A dragonling will always be bubbling away here, waiting for its next encounter with you.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 180
+      }
+    ],
+    "series": "Slumberous Nights",
+    "effects": []
+  },
+  {
+    "id": "fervid_rainbow",
+    "name": "Fervid Rainbow",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: Put your hands up! Let's hear some noise! !",
+    "requiredStars": 120000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28000000
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart",
+    "effects": []
+  },
+  {
+    "id": "rippling_winged_pond",
+    "name": "Rippling Winged Pond",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: As sunlight permeates the wings, it casts a mesmerizing ray of light onto the wishing well below.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "ladies",
+    "name": "Ladies",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.5: Silently make a wish and the puppy will make it come true.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 52000000
+      }
+    ],
+    "series": "Milky Mint Chocolate",
+    "effects": []
+  },
+  {
+    "id": "pumpkin_ghoul_fountain",
+    "name": "Pumpkin Ghoul Fountain",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.5: You wish will be granted... no matter what it takes.",
+    "requiredStars": 20000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 55000000
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise",
+    "effects": []
+  },
+  {
+    "id": "azure_wish",
+    "name": "Azure Wish",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.5: Make a wish while facing the ocean and I'm sure that the ocean will grant it in return.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 190
+      }
+    ],
+    "series": "Deep-sea Ballad",
+    "effects": []
+  },
+  {
+    "id": "chickadee_singing_class",
+    "name": "Chickadee Singing Class",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: Each year, the chickadee performing on stage has to go through many rounds of selection!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "series": "Snowflake Journey",
+    "effects": []
+  },
+  {
+    "id": "lotus_fountain",
+    "name": "Lotus Fountain",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: Make a wish to the koi fish swimming inside the fountain!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "series": "Spring Pavilion Banquet",
+    "effects": []
+  },
+  {
+    "id": "floating_spring",
+    "name": "Floating Spring",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.4: You'll be released from the restrictions of gravity when you drink from this spring.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 38000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "spring_of_purity",
+    "name": "Spring of Purity",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.5: As pure as a swan's feathers.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 64000000
+      }
+    ],
+    "series": "Fleeting Feathers",
+    "effects": []
+  },
+  {
+    "id": "butterfly_wishes",
+    "name": "Butterfly Wishes",
+    "area": "garden",
+    "group": "Wishing Well",
+    "description": "Lv.5: Are you listening to my wish too, little butterfly?",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 216
+      }
+    ],
+    "series": "Midsummer Birdsong",
+    "effects": []
+  },
+  {
+    "id": "simple_table",
+    "name": "Simple Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Sip tea and enjoy the flowers",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "cozy_table",
+    "name": "Cozy Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "The whole family can enjoy the flowers, sweets, and coziness",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 290000
+      }
+    ],
+    "series": "Lattice Story",
+    "effects": []
+  },
+  {
+    "id": "artsy_table",
+    "name": "Artsy Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Tea followed by the scent of flowers tastes even stronger",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1360000
+      }
+    ],
+    "series": "Forest Humming",
+    "effects": []
+  },
+  {
+    "id": "ornate_table",
+    "name": "Ornate Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Fits right in with the flowerbeds",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3400000
+      }
+    ],
+    "series": "Supreme Sea of Honor",
+    "effects": []
+  },
+  {
+    "id": "halloween_table",
+    "name": "Halloween Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "It is laden with food you will eat on Halloween.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1000000
+      }
+    ],
+    "series": "Marvelous Midnight",
+    "effects": []
+  },
+  {
+    "id": "reverie_table",
+    "name": "Reverie Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Delicious desserts used for holding unbirthday parties.",
+    "requiredStars": 65000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18500000
+      }
+    ],
+    "series": "Alice's Dream",
+    "effects": []
+  },
+  {
+    "id": "dessert_long_table",
+    "name": "Dessert Long Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Flower viewing and having desserts go hand in hand!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 66
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "fruity_long_table",
+    "name": "Fruity Long Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Replenish your vitamins! It's healthy and tasty!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "seaside_table",
+    "name": "Seaside Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "You can almost feel the sea breeze.",
+    "requiredStars": 80000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze",
+    "effects": []
+  },
+  {
+    "id": "christmas_long_table",
+    "name": "Christmas Long Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Prince made the Christmas tree and wreath on the table.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "oriental_long_table",
+    "name": "Oriental Long Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "The Mengding tea it brews is full-bodied and sweet.",
+    "requiredStars": 85000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9600000
+      }
+    ],
+    "series": "Stovetop Blessings",
+    "effects": []
+  },
+  {
+    "id": "sky_gazing",
+    "name": "Sky Gazing",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Why not try looking for the brightest star with a telescope under the moon?",
+    "requiredStars": 190000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "series": "Starry Rose",
+    "effects": []
+  },
+  {
+    "id": "gear_long_table",
+    "name": "Gear Long Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "This strange flavor seems to have come from another planet!",
+    "requiredStars": 30000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "series": "Steam-powered",
+    "effects": []
+  },
+  {
+    "id": "antique_long_table",
+    "name": "Antique Long Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "It might look a bit worn, but the elegant taste of its former owner is still visible.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4000000
+      }
+    ],
+    "series": "Marvelous Midnight",
+    "effects": []
+  },
+  {
+    "id": "long_sketching_table",
+    "name": "Long Sketching Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "The carefree artist always leaves their painting tools lying around.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "series": "Fanciful Melody",
+    "effects": []
+  },
+  {
+    "id": "snowy_night_tea_party",
+    "name": "Snowy Night Tea Party",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "The little bear keeps the water hot so you can enjoy tea at any time.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "series": "Aurora Fairy Tale",
+    "effects": []
+  },
+  {
+    "id": "courtyard_snow",
+    "name": "Courtyard Snow",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "The sound of snow falling is its way of saying goodbye to the chilly depths of winter.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "series": "Pleasant Dreams",
+    "effects": []
+  },
+  {
+    "id": "cute_party",
+    "name": "Cute Party",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Little cuties often gather here to party.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 158
+      }
+    ],
+    "series": "Fantastical Party",
+    "effects": []
+  },
+  {
+    "id": "relaxing_taste",
+    "name": "Relaxing Taste",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Enjoy a rare, relaxing afternoon here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 19000000
+      }
+    ],
+    "series": "Warm Bakery",
+    "effects": []
+  },
+  {
+    "id": "true_love_never_dies",
+    "name": "True Love Never Dies",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Regardless how the food on the table changes, the roses in the cupboard will never wither.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "series": "Murmuring Dusk Rose",
+    "effects": []
+  },
+  {
+    "id": "dream_encounter",
+    "name": "Dream Encounter",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Once you step into the moonlit garden, you'll find someone who has been waiting for you here all night.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 170
+      }
+    ],
+    "series": "Slumberous Nights",
+    "effects": []
+  },
+  {
+    "id": "mirror_rhapsody",
+    "name": "Mirror Rhapsody",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Come have a taste of this lemon cake!",
+    "requiredStars": 45000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24000000
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart",
+    "effects": []
+  },
+  {
+    "id": "early_summertime_reunion",
+    "name": "Early Summertime Reunion",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "The beaming sunshine is nice, just as the time spent with friends is.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "aqua_tea_party",
+    "name": "Aqua Tea Party",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Are they cosmetic tools or mini desserts? You decide!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "series": "Milky Mint Chocolate",
+    "effects": []
+  },
+  {
+    "id": "late_night_rhapsody",
+    "name": "Late-Night Rhapsody",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Dum dee dum~ Finish the food on the table and something strange will happen!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 26000000
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise",
+    "effects": []
+  },
+  {
+    "id": "floating_afternoon_tea",
+    "name": "Floating Afternoon Tea",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "What would you like to eat?",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 180
+      }
+    ],
+    "series": "Deep-sea Ballad",
+    "effects": []
+  },
+  {
+    "id": "gingerbread_snow_carriage",
+    "name": "Gingerbread Snow Carriage",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Choo choo~ The train is entering the station! Please wait for the train to come to a stop before you touch it!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "arboretum_wonder",
+    "name": "Arboretum Wonder",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "Reciting poems in this courtyard with a couple of close friends is quite a lively activity indeed!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "series": "Spring Pavillion Banquet",
+    "effects": []
+  },
+  {
+    "id": "cosmic_afternoon_tea",
+    "name": "Cosmic Afternoon Tea",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "You can dine while listening to the latest cosmic news.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 95
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "romantic_long_table",
+    "name": "Romantic Long Table",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "During your spare time, you can sit by this table and listen to all sorts of fairytales.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22300000
+      }
+    ],
+    "series": "Fleeting Feathers",
+    "effects": []
+  },
+  {
+    "id": "elegant_afternoon",
+    "name": "Elegant Afternoon",
+    "area": "garden",
+    "group": "Garden Table",
+    "description": "An invitation from the flowers. Do come join us!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 190
+      }
+    ],
+    "series": "Midsummer Birdsong",
+    "effects": []
+  },
+  {
+    "id": "stump_mailbox",
+    "name": "Stump Mailbox",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "A simply-made mailbox",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 40000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 26
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "hummingbird_post",
+    "name": "Hummingbird Post",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Your mail will get there slowly but surely!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 480000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "eagle_express",
+    "name": "Eagle Express",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "The symbol of speed and quality!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 780000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "modern_mailbox",
+    "name": "Modern Mailbox",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Safe and reliable",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1080000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "gluttonous_kitty",
+    "name": "Gluttonous Kitty",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "It might eat your letters too...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 700
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "pumpkin_chest",
+    "name": "Pumpkin Chest",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "What exactly is in it?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 750
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "witch",
+    "name": "Witch",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "All of the witch's secrets are hidden in here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 800
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "ice_cream_mailbox",
+    "name": "Ice Cream Mailbox",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "I don't know where Hedwig hid the letter either.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 37
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "mr_banana",
+    "name": "Mr. Banana",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "A passionate banana who seems to want to greet you.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 205
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "blue_lighthouse",
+    "name": "Blue Lighthouse",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Lights the way for Hedwig to come home.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "letter_from_the_snow",
+    "name": "Letter from the Snow",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Let me tell you a secret—an elf lives in the mailbox!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 250
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "lucky_mailbox",
+    "name": "Lucky Mailbox",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Hedwig was the one who hung up the Chinese Knot.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 228
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "rose_house",
+    "name": "Rose House",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Your letters will carry the fragrance of roses.",
+    "requiredStars": 180000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "iron_clock_mailbox",
+    "name": "Iron Clock Mailbox",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Will we get a letter when the clock hands make a full rotation?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "fettering_mailbox",
+    "name": "Fettering Mailbox",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Pick up your mail as fast as possible, or else you might get caught.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "random_box",
+    "name": "Random Box",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "When you press the handle on the side, different candies will appear at random inside.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "morning_glory_memories",
+    "name": "Morning Glory Memories",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Store your memories here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 230
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "travel_case",
+    "name": "Travel Case",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "I've filled several suitcases with my longing for you!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "messenger_of_love",
+    "name": "Messenger of Love",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "When the icy snow melts, the spring breeze shall cover my longing.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 230
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "giraffe_mailbox",
+    "name": "Giraffe Mailbox",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "The giraffe carefully keeps every precious letter it receives.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 145
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 75
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "sweet_letter",
+    "name": "Sweet Letter",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "The words convey sweet thoughts of longing.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 270
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "murmuring_coffin",
+    "name": "Murmuring Coffin",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "If there's anything you wish to say, just bury it for eternity with this coffin.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 410
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "winged_glory",
+    "name": "Winged Glory",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Letters from afar are kept safe in the embrace of these wings.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 150
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 70
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "jenga",
+    "name": "Jenga",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "'Ugh, why is your letter in a complete mess?! ' demanded the little mouse furiously.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "honeyed_letter",
+    "name": "Honeyed Letter",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "A letter that smells like sweet honey! Who sent it, I wonder?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 70
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "treasure_box_of_memories",
+    "name": "Treasure Box of Memories",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Hello, hello! Puppy #1 at your service!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "ghoul_express",
+    "name": "Ghoul Express",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Ghouuul evening! You have mail!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 40000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 430
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "boat_of_drifting_letters",
+    "name": "Boat of Drifting Letters",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "It carries feelings of wistfulness from the opposite shore.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 160
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 72
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "chiming_bell_letter_box",
+    "name": "Chiming Bell Letter Box",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "As the bell chimes at twelve o'clock, the letters inside the clock will be updated.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "brocade_letters_from_afar",
+    "name": "Brocade Letters From Afar",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Please convey my distant feelings of my longing to my family.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 240
+      }
+    ],
+    "series": "Spring Pavillion Banquet"
+  },
+  {
+    "id": "cosmic_letter",
+    "name": "Cosmic Letter",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Will aliens send mail?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 82
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "fluttering_envelopes",
+    "name": "Fluttering Envelopes",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "Your yearnings will transform into little birds that fly toward the ones you miss.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 26500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "dream_mailbox",
+    "name": "Dream Mailbox",
+    "area": "garden",
+    "group": "Mailbox",
+    "description": "The birds will take good care of your letters!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 180
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "stone_path",
+    "name": "Stone Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "A commonly-seen stone path",
+    "requiredStars": 800,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 46500
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 10
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "wooden_path",
+    "name": "Wooden Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "Made with wood taken from some place's door planks",
+    "requiredStars": 1200,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 360000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "slab_path",
+    "name": "Slab Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "A modern cement path",
+    "requiredStars": 2400,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 680000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "moss_path",
+    "name": "Moss Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "A stone path made by the god of the Wishing Well",
+    "requiredStars": 5500,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1100000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 76
+      }
+    ],
+    "series": "Supreme Sea of Honor"
+  },
+  {
+    "id": "poker_avenue",
+    "name": "Poker Avenue",
+    "area": "garden",
+    "group": "Path",
+    "description": "Every victory makes it a bit brighter!",
+    "requiredStars": 18000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 800
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "skeleton_trail",
+    "name": "Skeleton Trail",
+    "area": "garden",
+    "group": "Path",
+    "description": "A path paved with bones. It seems a little creepy.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 850
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "chocolate_path",
+    "name": "Chocolate Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "Sweet every step of the way.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 77
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "watermelon_path",
+    "name": "Watermelon Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "It's exceptionally refreshing to walk on it after the rain.",
+    "requiredStars": 25000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 210
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "shell_path",
+    "name": "Shell Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "Colorful seashells found by the seashore.",
+    "requiredStars": 40000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 250
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "christmas_stocking_path",
+    "name": "Christmas Stocking Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "Good children will find a present from Santa in their stockings.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "fan_trail",
+    "name": "Fan Trail",
+    "area": "garden",
+    "group": "Path",
+    "description": "You can grab fans for a fan dance here.",
+    "requiredStars": 50000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9900000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 248
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "scattered_manuscripts",
+    "name": "Scattered Manuscripts",
+    "area": "garden",
+    "group": "Path",
+    "description": "Filled with words that you cannot read. Looks really mysterious.",
+    "requiredStars": 160000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 260
+      }
+    ],
+    "series": "Starry Rode"
+  },
+  {
+    "id": "lost_path",
+    "name": "Lost Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "People often lose their things on this path, so keep an eye on your belongings while you're walking!",
+    "requiredStars": 40000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 210
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "tattered_red_carpet",
+    "name": "Tattered Red Carpet",
+    "area": "garden",
+    "group": "Path",
+    "description": "This red carpet is used for welcoming guests, but somehow it's been torn into pieces.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "elegant_path",
+    "name": "Elegant Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "Strolling along this path is the epitome of contentment.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 200
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "swaying_stardust",
+    "name": "Swaying Stardust",
+    "area": "garden",
+    "group": "Path",
+    "description": "The stars accidentally fell and became decorations in the snow.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 150
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "landscape_painting_scroll",
+    "name": "Landscape Painting Scroll",
+    "area": "garden",
+    "group": "Path",
+    "description": "A painting that captures all the beauty of the world.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 200
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "polka_dot_path",
+    "name": "Polka Dot Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "The fluffy polka dots are very comfortable to walk on.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 135
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "cheesy_path",
+    "name": "Cheesy Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "Wouldn't mice come and eat the delicious cheese here?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 240
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "psyche",
+    "name": "Psyche",
+    "area": "garden",
+    "group": "Path",
+    "description": "Although the journey is arduous, we'll reunite eventually.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 360
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "moonlit_musings",
+    "name": "Moonlit Musings",
+    "area": "garden",
+    "group": "Path",
+    "description": "As I walk across these round bricks, will they light up with a magical glow?",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 145
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 70
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "neon_stars",
+    "name": "Neon Stars",
+    "area": "garden",
+    "group": "Path",
+    "description": "Extremely sturdy despite being made of glass.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "honeycomb_floor_tiles",
+    "name": "Honeycomb Floor Tiles",
+    "area": "garden",
+    "group": "Path",
+    "description": "Don't worry about breaking them. They're made from very sturdy glass!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "sweet_path",
+    "name": "Sweet Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "It smells so sweet and aromatic! It is really inedible?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "diamond_footpath",
+    "name": "Diamond Footpath",
+    "area": "garden",
+    "group": "Path",
+    "description": "This path seems to lead into a whole new world...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 35000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 385
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "ancient_deep_sea_path",
+    "name": "Ancient Deep-sea Path",
+    "area": "garden",
+    "group": "Path",
+    "description": "I wonder how long this road has been lying untouched on the ocean floor.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 150
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 75
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "abandoned_track",
+    "name": "Abandoned Track",
+    "area": "garden",
+    "group": "Path",
+    "description": "Although the track has been abandoned, children love playing hopscotch on it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "pastel_bricks",
+    "name": "Pastel Bricks",
+    "area": "garden",
+    "group": "Path",
+    "description": "Seeing the beautiful flowers blooming by the roadside makes me want to dance.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Spring Pavillion Banquet"
+  },
+  {
+    "id": "celestial_ring_road",
+    "name": "Celestial Ring Road",
+    "area": "garden",
+    "group": "Path",
+    "description": "Walking here feels like going on a space walk.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "path_of_adventure",
+    "name": "Path of Adventure",
+    "area": "garden",
+    "group": "Path",
+    "description": "Tenacious little rose, time to embark on your next adventure!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "flower_bud_long_carpet",
+    "name": "Flower Bud Long Carpet",
+    "area": "garden",
+    "group": "Path",
+    "description": "It feels soft when you step on it.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 155
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 78
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "simple_fence",
+    "name": "Simple Fence",
+    "area": "garden",
+    "group": "Fence",
+    "description": "A simply-made fence",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 170000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "birch_fence",
+    "name": "Birch Fence",
+    "area": "garden",
+    "group": "Fence",
+    "description": "No need to worry about the wind blowing it over!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 720000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "oak_fence",
+    "name": "Oak Fence",
+    "area": "garden",
+    "group": "Fence",
+    "description": "Solid and reliable",
+    "requiredStars": 2450,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1300000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "rustic_fence",
+    "name": "Rustic Fence",
+    "area": "garden",
+    "group": "Fence",
+    "description": "A meticulously-crafted fence",
+    "requiredStars": 4400,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "cemetery",
+    "name": "Cemetery",
+    "area": "garden",
+    "group": "Fence",
+    "description": "It leads to some mysterious places.",
+    "requiredStars": 4000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1350000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 68
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "reverie_fence",
+    "name": "Reverie Fence",
+    "area": "garden",
+    "group": "Fence",
+    "description": "A partition to an unknown fantasy world.",
+    "requiredStars": 50000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12050000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 580
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "sweet_hedge",
+    "name": "Sweet Hedge",
+    "area": "garden",
+    "group": "Fence",
+    "description": "Keeps all the sweetness in.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "persimmon_door",
+    "name": "Persimmon Door",
+    "area": "garden",
+    "group": "Fence",
+    "description": "Everything will be smooth sailing once you pass through this door.",
+    "requiredStars": 80000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 26000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "rope_fence",
+    "name": "Rope Fence",
+    "area": "garden",
+    "group": "Fence",
+    "description": "The rope is caked with dried sea salt.",
+    "requiredStars": 60000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "first_snowfall",
+    "name": "First Snowfall",
+    "area": "garden",
+    "group": "Fence",
+    "description": "The snowman secretly watches his friend from outside the fence.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 330
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "fortune_comes_knocking",
+    "name": "Fortune Comes Knocking",
+    "area": "garden",
+    "group": "Fence",
+    "description": "The gold ingot on the fence brings in wealth and fortune.",
+    "requiredStars": 65000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 308
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "fantasy_door",
+    "name": "Fantasy Door",
+    "area": "garden",
+    "group": "Fence",
+    "description": "Go through this door and enter a magical world.",
+    "requiredStars": 240000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "spring_fence",
+    "name": "Spring Fence",
+    "area": "garden",
+    "group": "Fence",
+    "description": "There are lots of springs in the grass. We can use them to jump!",
+    "requiredStars": 50000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 360
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "lavender_love",
+    "name": "Lavender Love",
+    "area": "garden",
+    "group": "Fence",
+    "description": "Wait- wait for the flower to bloom.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 39000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "snow_veil",
+    "name": "Snow Veil",
+    "area": "garden",
+    "group": "Fence",
+    "description": "It will appear before you if you know magic.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 350
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "misty_mountains",
+    "name": "Misty Mountains",
+    "area": "garden",
+    "group": "Fence",
+    "description": "It's as if the mountains and the rivers are painted in the same color.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 210
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "pink_memories",
+    "name": "Pink Memories",
+    "area": "garden",
+    "group": "Fence",
+    "description": "Pink flowers carry fond memories.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 165
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "daylight_party",
+    "name": "Daylight Party",
+    "area": "garden",
+    "group": "Fence",
+    "description": "With enough daylight, each plant will grow up tall and healthy!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 26000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 260
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "dark_moon_invitation",
+    "name": "Dark Moon Invitation",
+    "area": "garden",
+    "group": "Fence",
+    "description": "Pass through the thorns to come enjoy this feast!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 35000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "twilight_veil",
+    "name": "Twilight Veil",
+    "area": "garden",
+    "group": "Fence",
+    "description": "A whole new world awaits you behind this door.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 180
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "broken_musical_notes",
+    "name": "Broken Musical Notes",
+    "area": "garden",
+    "group": "Fence",
+    "description": "Wave those glow sticks in your hands!",
+    "requiredStars": 50000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 33000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "sunflowers",
+    "name": "Sunflowers",
+    "area": "garden",
+    "group": "Fence",
+    "description": "The sunflowers lift their heads as they anxiously search for the sun.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "bellflower_blessings",
+    "name": "Bellflower Blessings",
+    "area": "garden",
+    "group": "Fence",
+    "description": "Rumor has it that pushing open the love gate will grant you good fortune.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 350
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "shrieking_fence",
+    "name": "Shrieking Fence",
+    "area": "garden",
+    "group": "Fence",
+    "description": "A new face around here. Welcome, customer.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 40000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "elegant_ocean",
+    "name": "Elegant Ocean",
+    "area": "garden",
+    "group": "Fence",
+    "description": "Welcome to the calm and elegant part of the ocean.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 190
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "snowy_platform",
+    "name": "Snowy Platform",
+    "area": "garden",
+    "group": "Fence",
+    "description": "If you wish to go to World of Snow, please board the train from Platform 1.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "spring_garden",
+    "name": "Spring Garden",
+    "area": "garden",
+    "group": "Fence",
+    "description": "The blooming flowers symbolize the vitality of spring.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 230
+      }
+    ],
+    "series": "Spring Pavillion Banquet"
+  },
+  {
+    "id": "cloudy_language_of_stars",
+    "name": "Cloudy Language of Stars",
+    "area": "garden",
+    "group": "Fence",
+    "description": "What are the stars talking about?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "rose_promenade",
+    "name": "Rose Promenade",
+    "area": "garden",
+    "group": "Fence",
+    "description": "Freely run amid the rose bushes!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 39800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 382
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "silky_flower_garden",
+    "name": "Silky Flower Garden",
+    "area": "garden",
+    "group": "Fence",
+    "description": "It's the season for hydrangea blooms! Put on your best dress and come take a picture!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 200
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 115
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "simple_barbecue",
+    "name": "Simple Barbecue",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "It needs someone to keep turning it",
+    "requiredStars": 600,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 80000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 25
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "hanging_barbecue",
+    "name": "Hanging Barbecue",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Gives a primitive feel and a taste of the wild",
+    "requiredStars": 1000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "modern_barbecue",
+    "name": "Modern Barbecue",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "All the fixings for delicious color, aroma, and taste",
+    "requiredStars": 1800,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 720000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "rotating_barbecue",
+    "name": "Rotating Barbecue",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Provides both convenience and flavor",
+    "requiredStars": 3850,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Supreme Sea of Honor"
+  },
+  {
+    "id": "gleeful_gateball",
+    "name": "Gleeful Gateball",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "The latest in entertainment facilities! Though the mallet looks a bit familiar...",
+    "requiredStars": 23000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 900
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "bone_barbecue",
+    "name": "Bone Barbecue",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Who knows what living creature these bones came from.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 17600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 950
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "ice_cream_barbecue",
+    "name": "Ice Cream Barbecue",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Ice cream will definitely melt!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "durian_barbecue",
+    "name": "Durian Barbecue",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "You either love it or hate it.",
+    "requiredStars": 25000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "suitcase_barbecue",
+    "name": "Suitcase Barbecue",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "A must for travelers!",
+    "requiredStars": 35000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 295
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "reindeer_barbecue",
+    "name": "Reindeer Barbecue",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Have you heard the story of Rudolph the Red-nosed Reindeer?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "brazier_barbecue",
+    "name": "Brazier Barbecue",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "A roaring fire with big bites of meat!",
+    "requiredStars": 30000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 218
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "mysterious_seasoning",
+    "name": "Mysterious Seasoning",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Everyone wants to find out the secret behind the barbecue seasoning, but it seems nobody knows.",
+    "requiredStars": 220000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 27500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 360
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "steam_powered_barbecue",
+    "name": "Steam-powered Barbecue",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "A completely automatic barbeque that keeps your hands free.",
+    "requiredStars": 50000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 17500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 290
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "lava_monster_barbecue",
+    "name": "Lava Monster Barbecue",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "It'll spit fire, but it still provides a great service!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 200
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "fluffy_marshmallow_rack",
+    "name": "Fluffy Marshmallow Rack",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "It looks soft and fluffy. Slowly toast over low heat.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "pearl_flower_drying_rack",
+    "name": "Pearl Flower-Drying Rack",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "The mysterious artist dries the flowers to make them into pigments.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "igloo_oven",
+    "name": "Igloo Oven",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Even though it's made of snow, it doesn't melt when baking things!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 240
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "fireside_tales",
+    "name": "Fireside Tales",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Gather round the fireplace and pour your hearts out to one another.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 195
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "flavors_of_spring",
+    "name": "Flavors of Spring",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "What does spring taste like? It tastes like happiness.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 140
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 75
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "active_breakfast_machine",
+    "name": "Active Breakfast Machine",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "A great day starts with a great breakfast!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 38000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 360
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "forgotten_rack",
+    "name": "Forgotten Rack",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Tools that have been left behind for a very long time. You can occasionally hear crying when you pass by it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "nascent_spark",
+    "name": "Nascent Spark",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "The initial fiery spark has now become an endless source of energy.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 150
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 70
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "colorful_party",
+    "name": "Colorful Party",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Are you sure you don't want a kebab while you dance?",
+    "requiredStars": 55000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Rock'n'Roll Sweetheart"
+  },
+  {
+    "id": "skyward_delicacy",
+    "name": "Skyward Delicacy",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "These skewers taste heavenly!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 68
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "revolving_golden_dreams",
+    "name": "Revolving Golden Dreams",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Will barbecuing meat on a gemstone-inlaid grill make it taste better?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 40000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 250
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "aromatic_whiff",
+    "name": "Aromatic Whiff",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "The sound of meats sizzling on the grill is music to anyone's ears!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "slow_grilled_seafood",
+    "name": "Slow-grilled Seafood",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "A way of cooking that preserves the briny tang of the ocean.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 160
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 78
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "blazing_apple",
+    "name": "Blazing Apple",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "A warm oven that is protected from the winds is a necessity during the winter nights!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 260
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "tea_stove",
+    "name": "Tea Stove",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Aside from the tea, I also roasted an orange. Would you like one?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 240
+      }
+    ],
+    "series": "Spring Pavillion Banquet"
+  },
+  {
+    "id": "blazing_stardust",
+    "name": "Blazing Stardust",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "How hot do planets get?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 75
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "scorched_roses",
+    "name": "Scorched Roses",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "They naturally emit the aroma of rose sea salt.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 43000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 260
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "summer_flavors",
+    "name": "Summer Flavors",
+    "area": "garden",
+    "group": "Barbecue",
+    "description": "Smells of dampness and the color amber.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 190
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  }
+]

@@ -50,6 +50,7 @@ enum FacilityEffectType {
   gachaLevel, // level of the gachapon
   cookingEfficiencyBonus, // % faster cooking
   storageIncrease, // for signature store facilities +30 storage (with storageKind)
+  ordersIncrease, // +N takeout orders
 }
 
 /// ---- helpers: tolerant enum parsing ------------------------------------------------

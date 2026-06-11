@@ -1,1 +1,7707 @@
-[]
+[
+  {
+    "id": "stump_long_table",
+    "name": "Stump Long Table",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Still exudes the scent of nature.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "series": "Log Scenery",
+    "effects": []
+  },
+  {
+    "id": "natural_scenery",
+    "name": "Natural Scenery",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Feels like I'm having a picnic in the countryside.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "family_table",
+    "name": "Family Table",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "The retro colors make you relax subconsciously.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "academy_meeting",
+    "name": "Academy Meeting",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "It feels like delicious food will suddenly appear at any moment.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "christmas_long_table",
+    "name": "Christmas Long Table",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Have a big meal together",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "lively_reunion_table",
+    "name": "Lively Reunion Table",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Enjoy a lively reunion dinner!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 160
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "candy_feast",
+    "name": "Candy Feast",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Candies are great, but let's not be greedy.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 175
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "bustling_feast",
+    "name": "Bustling Feast",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "As night falls, the lights are lit. Welcome to the feast!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 330
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "monster_banquet",
+    "name": "Monster Banquet",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "The stool feels a little slimy.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 27500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 360
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "shaggy_long_table",
+    "name": "Shaggy Long Table",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Do you want to do some crafts while waiting for the food to arrive?",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 150
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "wonderland_banquet",
+    "name": "Wonderland Banquet",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Welcome to the Queen's banquet, our distinguished guest.",
+    "requiredStars": 320000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 50000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 600
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "beach_party",
+    "name": "Beach Party",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "You can feel the sea breeze here!",
+    "requiredStars": 380000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 65000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 710
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "magic_banquet",
+    "name": "Magic Banquet",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Magic does not make the food delicious, but love can.",
+    "requiredStars": 500000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 85000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 900
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "sea_salt_cream",
+    "name": "Sea Salt Cream",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Bread, meat, and a little bit of thought put in creates an unforgettable party.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 390
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "sunset_invitation",
+    "name": "Sunset Invitation",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "A gentle reminder that the event only begins after sunset!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 155
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "familial_greetings",
+    "name": "Familial Greetings",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "I sincerely invite all of you to gather around this table.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 46200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 440
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "early_summertime_gathering",
+    "name": "Early Summertime Gathering",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Let's go out and play before the weather turns scorching!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "shredded_coconut_macaron",
+    "name": "Shredded Coconut Macaron",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "The cosmetic tools on the table are ready for you to use!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 55000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 480
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "shardglass_banquet",
+    "name": "Shardglass Banquet",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "So, these mirrors all reflect differing images! Don't overthink things!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "oceanic_feast",
+    "name": "Oceanic Feast",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "The ocean has prepared a grand feast for you.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 160
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "snow_kingdom_tales",
+    "name": "Snow Kingdom Tales",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Just chatting here until daybreak...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 160
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "fruit_party",
+    "name": "Fruit Party",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Trust me, there's definitely enough fruit to go around!",
+    "requiredStars": 430000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 72000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 750
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "dusk_ballad",
+    "name": "Dusk Ballad",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Let's go on a date during sunset.",
+    "requiredStars": 430000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 78000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 780
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "tasty_feast",
+    "name": "Tasty Feast",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Like a wondrous journey, the flavors explode on your palate.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 35000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 410
+      }
+    ],
+    "series": "Steam-Powered"
+  },
+  {
+    "id": "floral_feast",
+    "name": "Floral Feast",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Enjoy a delicious meal in this romantic atmosphere.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 65000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 500
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "festive_celebrations",
+    "name": "Festive Celebrations",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "You can play with cards while waiting for your meal.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 35600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 388
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "summertime_invitation",
+    "name": "Summertime Invitation",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "I wish to admire the summer sunset with you.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 165
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "snow_kingdom_banquet",
+    "name": "Snow Kingdom Banquet",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Get a taste of Snow Kingdom's specialities.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 167
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "springtime_banquet",
+    "name": "Springtime Banquet",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "It's not every day we get together like this! Time to eat, drink, and be merry!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 52600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 440
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "galactic_invitation",
+    "name": "Galactic Invitation",
+    "area": "terrace",
+    "group": "Gathering Table",
+    "description": "Welcoming guests from millions of light-years away!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 23250000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 187
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "log_meal_side_cabinet",
+    "name": "Log Meal Side Cabinet",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "A simple meal side cabinet made from logs.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 5
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "simple_meal_side_cabinet",
+    "name": "Simple Meal Side Cabinet",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Simple yet able to store many things!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "elegant_cabinet",
+    "name": "Elegant Cabinet",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Please mind your dining etiquette.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 150
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "luxurious_meal_side_cabinet",
+    "name": "Luxurious Meal Side Cabinet",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "The cutlery placed on it all looks very exquisite.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "warm_meal_side_cabinet",
+    "name": "Warm Meal Side Cabinet",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "It has a heating function that makes it feel warm to touch.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 250
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "chinese_meal_side_cabinet",
+    "name": "Chinese Meal Side Cabinet",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Maybe there are some old treasures kept within the cabinet.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "food_truck_cabinet",
+    "name": "Food Truck Cabinet",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Modified from an abandoned food truck. Has incredible storage capacity.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "elegant_veil",
+    "name": "Elegant Veil",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "The thin layer of gauzy veil mitigates the metallic impact.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 34000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 550
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "mottled_antique_cabinet",
+    "name": "Mottled Antique Cabinet",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Seems quite old with all the dark red stains on it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 38000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 605
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "spring_cutlery_rack",
+    "name": "Spring Cutlery Rack",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Cute and practical!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 148
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 190
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "dreamland_travels",
+    "name": "Dreamland Travels",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Is this real, or just a dream?",
+    "requiredStars": 300000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 46000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 900
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "lost_treasure_trove",
+    "name": "Lost Treasure Trove",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Tons of long-lost treasures are haphazardly placed on the table.",
+    "requiredStars": 360000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 60000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1050
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "midnight_galaxy",
+    "name": "Midnight Galaxy",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Someone actually hid the stars here.",
+    "requiredStars": 500000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 78000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1350
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "sea_salt_chocolate",
+    "name": "Sea Salt Chocolate",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Could more desserts be hidden behind the curtain?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 50000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 660
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "tolling_of_time",
+    "name": "Tolling of Time",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Silently waiting here all this while has made me lose track of time.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 155
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 190
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "contemplative_beauty",
+    "name": "Contemplative Beauty",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Come, try the tea that I've just boiled!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 57600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 730
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "sunrise_glory",
+    "name": "Sunrise Glory",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "The rays of the rising sun shine upon the sweet honey water, warming it up!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 19000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 310
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "double_sweetness",
+    "name": "Double Sweetness",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Double the sugar! Double the sweetness!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 65000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 950
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "dusk_and_bones_table",
+    "name": "Dusk and Bones Table",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Aww, there's nothing to be afraid of. The glasses here are all clean and safe to drink from!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 45000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 630
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "tipsy_tide",
+    "name": "Tipsy Tide",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "The flavor of the waves dances upon your tongue.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 160
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 190
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "tranquil_hour",
+    "name": "Tranquil Hour",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Come and recite a poem about winter.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 270
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "cherry_impact",
+    "name": "Cherry Impact",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "What does orange juice mixed with cherries taste like?",
+    "requiredStars": 420000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 75000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1100
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "echoing_accent",
+    "name": "Echoing Accent",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Low and deep accents don't fade away easily.",
+    "requiredStars": 420000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 82000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1100
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "gear_meal_side_cabinet",
+    "name": "Gear Meal Side Cabinet",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "But you have to operate it manually...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 55000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 720
+      }
+    ],
+    "series": "Steam-Powered"
+  },
+  {
+    "id": "purifying_side_cabinet",
+    "name": "Purifying Side Cabinet",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Magically cleans any cutlery placed within it in only one second.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 68000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 960
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "sweet_moment",
+    "name": "Sweet Moment",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Come and try this unique drink that the little ghost has concocted for you!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 62000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 650
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "peaceful_summer",
+    "name": "Peaceful Summer",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "Hum a little tune while you finish the housework that has been left undone.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 165
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 190
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "purifying_snow",
+    "name": "Purifying Snow",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "The snow cleans eerything spotless.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 285
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "jade_terrace",
+    "name": "Jade Terrace",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "What a pleasure it is to share a drink with you!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 65080000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 738
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "meteoric_test_bench",
+    "name": "Meteoric Test Bench",
+    "area": "terrace",
+    "group": "Meal Side Cabinet",
+    "description": "The aliens seem to be very interested in the cutlery from earth.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 34180000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "bamboo_and_rock_sink",
+    "name": "Bamboo and Rock Sink",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "The flowing water is cool and refreshing.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "solid_wooden_sink",
+    "name": "Solid Wooden Sink",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Remember to wash your hands properly using the correct method.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "log_aroma",
+    "name": "Log Aroma",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Will there be additional smells when I wash my hands using this?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "elegant_style",
+    "name": "Elegant Style",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "It's only elegant when you cannot relax at all.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "starry_sink",
+    "name": "Starry Sink",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Be careful you don't get electrocuted!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 200
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "luck_changing_sink",
+    "name": "Luck Changing Sink",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Wash away the unhappiness of the previous year to welcome the new year!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "cherry_mirage",
+    "name": "Cherry Mirage",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Wanna try a cherry-flavored hand soap?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 235
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "trickling_moments",
+    "name": "Trickling Moments",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "As time trickles away alongside the flower petals, only their aroma remains.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 21000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "soul_cleansing",
+    "name": "Soul Cleansing",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "A cutie will inspect how everyone washes their hands.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 23000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "baby_elephant_sink",
+    "name": "Baby Elephant Sink",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "The baby elephant supervisor is reminding you to line up and wash your hands!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 138
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "colorful_teapot",
+    "name": "Colorful Teapot",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Who's fooling around? I'm hard at work right now!",
+    "requiredStars": 280000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 42000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "octopus_sink",
+    "name": "Octopus Sink",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Don't worry! The octopus employee makes it a point to gargle every day.",
+    "requiredStars": 340000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 54500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 540
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "galactic_dreams",
+    "name": "Galactic Dreams",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Will the water that flows past the moon turn into sweet dreams?",
+    "requiredStars": 440000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 71000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 700
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "sea_salt_bubble",
+    "name": "Sea Salt Bubble",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "If you take away the cheese the bear is holding, something amazing will happen.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 38000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "approaching_nightfall",
+    "name": "Approaching Nightfall",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Don't forget to bring your umbrella with you at night, or you'll be burned by the stars.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 145
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "fortuitous_encounters",
+    "name": "Fortuitous Encounters",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "As long as you wash your hands regularly and stay hygenic, good things will keep happening to you! Trust me!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 23200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 490
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "sunflower_sink",
+    "name": "Sunflower Sink",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "The little sunflower by the side will make sure that you wash your hands properly!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 240
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "lady",
+    "name": "Lady",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "The cute mirror makes you look even more adorable!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 40000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 430
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "skeletal_sink",
+    "name": "Skeletal Sink",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "The water's clean! Come wash your hands. What bones? Your eyes must be playing tricks on you.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "seashell_sink",
+    "name": "Seashell Sink",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Glug glug... let the bubbles carry all of the germs away.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 150
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "log_sink",
+    "name": "Log Sink",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Oh no, the water has frozen into ice!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "pineapple_bubbles",
+    "name": "Pineapple Bubbles",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Don't binge on too much pineapple, or you'll get pineapple tounge!",
+    "requiredStars": 380000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 62000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 600
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "starry_daydream",
+    "name": "Starry Daydream",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Do stars also make snot bubbles when thay dream during the day?",
+    "requiredStars": 400000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 69500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 650
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "mechanical_cleaning_station",
+    "name": "Mechanical Cleaning Station",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Keep it clean to ensure smooth operation.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 45000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 520
+      }
+    ],
+    "series": "Steam-Powered"
+  },
+  {
+    "id": "guardian_of_purity",
+    "name": "Guardian of Purity",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Dedicated to safeguarding the cleanlinessof your hands!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 52000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 470
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "reverly_sink",
+    "name": "Reverly Sink",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Don't worry! The water is actually very clean!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 31000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 458
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "unending_summers",
+    "name": "Unending Summers",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "The weather may be hot, but the water is ice cold.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 158
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "snowy_night_lake",
+    "name": "Snowy Night Lake",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Reflects your beautiful face.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10900000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 235
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "elegant_washstand",
+    "name": "Elegant Washstand",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "Made from precious rosewood, its design is both graceful and refined.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 27500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 497
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "starry_vine_sink",
+    "name": "Starry Vine Sink",
+    "area": "terrace",
+    "group": "Sink",
+    "description": "It is said that washing your hands with the dew of the starry vine will bring good fortune.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22850000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 256
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "simple_dining_table",
+    "name": "Simple Dining Table",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Although its simple, it has everything you'll need.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "afternoon_teatime",
+    "name": "Afternoon Teatime",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Afternoon is the perfect time for eating!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "grandma",
+    "name": "Grandma",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "You're eating too little! Is the dessert that Grandma made not nice?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 150
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "luxurious_desserts",
+    "name": "Luxurious Desserts",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "It has everything so you won't feel like leaving it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "sweet_sugar_frosting",
+    "name": "Sweet Sugar Frosting",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Eat more sweets in the winter to store energy.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 250
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "sichuan_style_snack_counter",
+    "name": "Sichuan Style Snack Counter",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "The spiciness keeps you warm in the winter.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "reverie_patchwork",
+    "name": "Reverie Patchwork",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Different desserts meet here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "fancy_display",
+    "name": "Fancy Display",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "The artist meticulously placed the fruits and accompanying cloth on the table in order to achieve the desired effect.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 34000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 550
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "creepy_dining_table",
+    "name": "Creepy Dining Table",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "The food on it always disappears mysteriously.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 38000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 605
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "floral_snacks",
+    "name": "Floral Snacks",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "These flowers bloom on your taste buds.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 145
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 190
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "curious_desserts",
+    "name": "Curious Desserts",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Watch out, you may turn into a giant if you munch on a certain one!",
+    "requiredStars": 300000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 46000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 900
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "summer_sun",
+    "name": "Summer Sun",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "The food items are using parasols to protect themselves from the scorching sun.",
+    "requiredStars": 360000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 60000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1050
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "rose_blossoms",
+    "name": "Rose Blossoms",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Be careful of the thorns on the roses when you approach the table.",
+    "requiredStars": 460000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 78000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1350
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "ocean_blue_flash",
+    "name": "Ocean Blue Flash",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Look! It's a blue-colored cake!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 40000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 660
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "dream_corner",
+    "name": "Dream Corner",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Let me sneak a bite... and another bite!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 165
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 190
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "dim_sum_assortment",
+    "name": "Dim Sum Assortment",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Who secretly ate the sim sum? Look, there are still crumbs at the corners of your mouth!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 52000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 680
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "summertime_beginnings",
+    "name": "Summertime Beginnings",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "An almost imperceptible sensation of heat indicates the imminent arrival of summer.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 35000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "cherry_mille_feuille",
+    "name": "Cherry Mille-Feuille",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Happiness is like cherries that are stacked atop each other in layers",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 55000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 880
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "thorny_coffin",
+    "name": "Thorny Coffin",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "This coffin comes with cool air circulation. Perfect for keeping ingredients cold and fresh!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 42000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 630
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "sweet_ballad",
+    "name": "Sweet Ballad",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Enjoy a taste of sweetness while you're serenaded by a beautiful ballad.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 170
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 190
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "cocoa_chocolate",
+    "name": "Cocoa Chocolate",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "You should eat food that is high in calories during the winter!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "fruity_flavors",
+    "name": "Fruity Flavors",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Let's play a game! Looser eats the lemon slice!",
+    "requiredStars": 420000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 71000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1150
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "orange_fruit_juice",
+    "name": "Orange Fruit Juice",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Don't you feel like haing a sip of iced orange juice in summer?",
+    "requiredStars": 450000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 75000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 1200
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "mechanical_snack",
+    "name": "Mechanical Snack",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Have a taste of a different flavor.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 45000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 680
+      }
+    ],
+    "series": "Steam-Powered"
+  },
+  {
+    "id": "fairytale_flavors",
+    "name": "Fairytale Flavors",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Flavors that seem like they came straight out of a fairytale.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 70000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 920
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "delicious_snack_counter",
+    "name": "Delicious Snack Counter",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "I just caught someoneblatantly sneaking a bite!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 58800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 652
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "butterfly_honey_feast",
+    "name": "Butterfly Honey Feast",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "What does a butterfly-shaped cake taste like?",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 178
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 190
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "icy_bites",
+    "name": "Icy Bites",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Sweet, cold, and yummy!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 21700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 288
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "tea_and_pastry_stand",
+    "name": "Tea and Pastry Stand",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Cold mist is still rising from the frosty cream dessert!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 69400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 695
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "interstellar_supply_point",
+    "name": "Interstellar Supply Point",
+    "area": "terrace",
+    "group": "Cold Food Section",
+    "description": "Someone here is trying to steal the cupcake!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 49700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 312
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "mysterious_bird_nest",
+    "name": "Mysterious Bird Nest",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "No idea whose nest this is but let's leave it as a decor.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "afternoon_nap",
+    "name": "Afternoon Nap",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Afternoon is the perfect time for eating!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "mini_wooden_house",
+    "name": "Mini Wooden House",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "The exterior has been meticulously painted.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "little_ingenuity",
+    "name": "Little Ingenuity",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Will flowers attract more pretty little birds here to stay?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "christmas_tree_house",
+    "name": "Christmas Tree House",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "A luxurious double-layered wood design.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "good_fortune_and_prosperity",
+    "name": "Good Fortune and Prosperity",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "May wealth come your way!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "magic_glasshouse",
+    "name": "Magic Glasshouse",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "It's a magical world within!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 235
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "vine_hanging_basket",
+    "name": "Vine Hanging Basket",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "When sitting here, you feel as though you've been transported to a garden.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 21000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "magnolia_wood_clock",
+    "name": "Magnolia Wood Clock",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "It lags by a few seconds every minute.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 23000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "cute_birdhouse",
+    "name": "Cute Birdhouse",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "You're a romantic at heart.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 135
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "tick_tock_pocket_watch",
+    "name": "Tick-tock Pocket Watch",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Tick tock, tick tock! Time's up!",
+    "requiredStars": 250000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 42000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "opalescent_shell",
+    "name": "Opalescent Shell",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Birds can never resist shiny items like this.",
+    "requiredStars": 310000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 54500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 540
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "rose_anthem",
+    "name": "Rose Anthem",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Where can such a unique rose be found?",
+    "requiredStars": 400000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 71000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 700
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "soft_toast_nest",
+    "name": "Soft Toast Nest",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Contentment is the most inconspicuous thief of time.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "lulling_crescent_bay",
+    "name": "Lulling Crescent Bay",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Go ahead and sleep. Once you do, you'll forget all of your worries.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 140
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "carved_bamboo_cage",
+    "name": "Carved Bamboo Cage",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Made of superior bamboo, this cage is exquisitely polished.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 19600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 430
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "honey_bee_hanging_basket",
+    "name": "Honey Bee Hanging Basket",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "When the bees are tired from gathering nectar, they gather here to rest... but shh! Keep this a secret!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 230
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "cream_pavilion",
+    "name": "Cream Pavilion",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "It must be really peaceful to sleep here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 38000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "mesmerizing_birdcage",
+    "name": "Mesmerizing Birdcage",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "You mustn't rest herefor too long.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "mysterious_boat",
+    "name": "Mysterious Boat",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "This seems to be the legendary missing treasure boat.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 145
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "snowfield_party",
+    "name": "Snowfield Party",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Warm yourselves up by coming inside for a dance!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 210
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "house_of_berries",
+    "name": "House of Berries",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Keep out unless you're a berry lover!",
+    "requiredStars": 360000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 61500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 580
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "purple_night_home",
+    "name": "Purple Night Home",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Have you ever seen a purple sky?",
+    "requiredStars": 360000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 65500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 620
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "steam_powered_bird_cage",
+    "name": "Steam-powered Bird Cage",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "The perfect blend of metal and nature.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 29200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 510
+      }
+    ],
+    "series": "Steam-Powered"
+  },
+  {
+    "id": "fragrant_flower_float",
+    "name": "Fragrant Flower Float",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "It's so relaxing to float around!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 43000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "magical_mini_theater",
+    "name": "Magical Mini Theater",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "This isn't just a performance! Everything that I conjure is real!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 41700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 474
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "glass_greenhouse",
+    "name": "Glass Greenhouse",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Fall asleep to the scent of flowers...",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 150
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 140
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "magical_carriage",
+    "name": "Magical Carriage",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "What could be inside?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 225
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "leisurely_peddler",
+    "name": "Leisurely Peddler",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Come over and take a look! I made all of these myself!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 26400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 445
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "galactic_tour",
+    "name": "Galactic Tour",
+    "area": "terrace",
+    "group": "Mysterious Bird Nest",
+    "description": "Make sure that you're wearing a spacesuit!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 35900000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 243
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "bamboo_floor_lamp",
+    "name": "Bamboo Floor Lamp",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Bursting with natural style. Brightness is guaranteed!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 450000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "countryside_lights",
+    "name": "Countryside Lights",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "May they light up the path before you.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1300000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "iron_floor_lamp",
+    "name": "Iron Floor Lamp",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "A reassuring sight.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "vibe_night_light",
+    "name": "Vibe Night Light",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Its warmth will make you sleepy.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "teddy_lamp",
+    "name": "Teddy Lamp",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "You no longer have to be afraid of walking in the dark!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "slumbering_angel",
+    "name": "Slumbering Angel",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Hush, don't wake him up!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "spooky_lamp",
+    "name": "Spooky Lamp",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Although it looks very unhappy, it does collect a salary.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 17000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 350
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "resplendent_star",
+    "name": "Resplendent Star",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Secretly pluck the stars from the sky and light them on a candle",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 200
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "cat_ear_lamp",
+    "name": "Cat Ear Lamp",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "A quiet lamp that always illuminates its surroundings.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 38
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "romantic_candlelight",
+    "name": "Romantic Candlelight",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Lights up the way to wonderland.",
+    "requiredStars": 230000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "jellyfish_lampshade",
+    "name": "Jellyfish Lampshade",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Are jellyfish this lonely when they glow in the sea?",
+    "requiredStars": 290000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 41500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 350
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "stardust_glimmer",
+    "name": "Stardust Glimmer",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "A glimmer that glows from a light year away.",
+    "requiredStars": 370000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 54000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "light_croissant",
+    "name": "Light Croissant",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "What guides you is not the stars, but a croissant.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "starry_staff",
+    "name": "Starry Staff",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "This does not seem like it was originally used for illumination. I wonder who placed it here?",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 45
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "wishing_paper_lantern",
+    "name": "Wishing Paper Lantern",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "If you write down your wish and place it in the lantern, it'll definitely come true next year!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 235
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "exquisite_palace_lantern",
+    "name": "Exquisite Palace Lantern",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Its dim gow can be sustained for an entire night.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 26100000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 500
+      }
+    ],
+    "series": "Pleasant Dream"
+  },
+  {
+    "id": "cozy_hive",
+    "name": "Cozy Hive",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "The bees will guide you on your way home!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2300000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 200
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "checkered_shade_lamp",
+    "name": "Checkered Shade Lamp",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "By adding cute bows to a classic design, I have put the finishing touches to my newest work of art!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 38500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "ghoulish_hand",
+    "name": "Ghoulish Hand",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Do not even think of remoing the rose in its hand. That's its treasure!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 370
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "fishtail_lamp",
+    "name": "Fishtail Lamp",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "The lamp's candle will never burn out even though it's underwater.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 50
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "glass_candle",
+    "name": "Glass Candle",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "A flame will not burn within the airtight glass.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "grape_floor_lamp",
+    "name": "Grape Floor Lamp",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Emits a faint purplish glow.",
+    "requiredStars": 320000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 48500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 360
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "neon_musical_notes",
+    "name": "Neon Musical Notes",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Party yo your heart'scontent here!",
+    "requiredStars": 360000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 55000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "copper_glass_lamp",
+    "name": "Copper Glass Lamp",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "The weak glow is carefully protected within the glass shade.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 21000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "imprisoned_light",
+    "name": "Imprisoned Light",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "The cage won't be able to stop this light from shining.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 52000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 480
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "hot_air_balloon_lamp",
+    "name": "Hot Air Balloon Lamp",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Don't worry, it won't fly away.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 382
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "cool_warm_light",
+    "name": "Cool Warm Light",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "The flame can't be extinguished by wind.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 56
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "snowflake_lantern",
+    "name": "Snowflake Lantern",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "Glows with a soft. icy light.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 238
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "gilded_candlestick",
+    "name": "Gilded Candlestick",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "The combination of gold and candlestick makes it sparkle.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 39670000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 520
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "autoluminescent_star",
+    "name": "Autoluminescent Star",
+    "area": "terrace",
+    "group": "Floor Lamp",
+    "description": "The warm light makes me feel warm and fuzzy inside too!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3756000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 206
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "stump_table1",
+    "name": "Stump Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Still exudes the scent of nature.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "fabric_round_table1",
+    "name": "Fabric Round Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Suitable for a family gathering.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "elegant_atmosphere1",
+    "name": "Elegant Atmosphere.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "You'll feel like drinking a little when sitting here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "elegant_customization1",
+    "name": "Elegant Customization.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "A luxurious table that was custom made in secret.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "first_snow_encounter1",
+    "name": "First Snow Encounter.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Who would you want to spend the day of first snow with?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "mini_reunion1",
+    "name": "Mini Reunion.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "The mini round table embodies the warmth of the family.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "sweet_palate_blue1",
+    "name": "Sweet Palate - Blue.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Smells like vanilla.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 135
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "exclusive_customization1",
+    "name": "Exclusive Customization.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Welcome, the table that you've reserved is over here. This way please!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 250
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "first_dinner1",
+    "name": "First Dinner.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Let's clean up the spider webs before eating.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 26500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 275
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "refreshing_table1",
+    "name": "Refreshing Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "It looks really good when the sun shines on it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "woodsy_afternoon_tea1",
+    "name": "Woodsy Afternoon Tea.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "No one's having any afternoon tea until the spell is broken.",
+    "requiredStars": 320000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 48000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 480
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "island_round_table1",
+    "name": "Island Round Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Making do with what we have at the beach: a table made from coconut trees.",
+    "requiredStars": 380000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 62500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 570
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "planetary_orbit1",
+    "name": "Planetary Orbit.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "The stars are silent, but you gave them meaning and brought them to life.",
+    "requiredStars": 500000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 81000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 740
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "bear_recess1",
+    "name": "Bear Recess.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Since it's over, let's just rest now!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 81000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "musing_round_table1",
+    "name": "Musing Round Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Come and take a seat. Take a deep breath and close your eyes, for the meditation is about to begin.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "jade_table1",
+    "name": "Jade Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "This table is so smooth and icy-cold that I can't help but want to run my hand across it even more.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 230000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 225
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "daisy_square_table1",
+    "name": "Daisy Square Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "The stools are soft and bouncy. There's even the aroma of daisies wafting in the air!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "butter_cookies_table1",
+    "name": "Butter Cookies Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Do you feel more relaxed that you've taken a seat here?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 42000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 550
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "duskfall_table1",
+    "name": "Duskfall Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "These candles will keep you company for as long as it's dusk.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 290
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "heart_of_the_ocean1",
+    "name": "Heart of the Ocean.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "It holds great power.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "prismatic_snowflake_table1",
+    "name": "Prismatic Snowflake Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "The reflation of the prisms makes the food loo even more appealing!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "season_of_strawberries1",
+    "name": "Season of Strawberries.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "I would like a strawberry cream cupcake, please!",
+    "requiredStars": 400000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 68500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 510
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "metal_frenzy1",
+    "name": "Metal Frenzy.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Beneath a cold and harsh exterior is a soft and tender core.",
+    "requiredStars": 450000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 75000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 620
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "tasty_adventures1",
+    "name": "Tasty Adventures.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "The arious delicious adventures bring about unending surprises!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "floral_waltz1",
+    "name": "Floral Waltz.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Twirl around with the music.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 46000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 580
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "vibrant_party_table1",
+    "name": "Vibrant Party Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Ding! Your exclusie set meal is on its way!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 36000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 314
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "precious_dream_dance1",
+    "name": "Precious Dream Dance.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "May I have a dance before dinner?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 19800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "sweet_cookie_table1",
+    "name": "Sweet Cookie Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "A tasty table, pertect for secretly snacking on after a meal as dessert.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1420000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 116
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "antique_round_table1",
+    "name": "Antique Round Table.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Before you know it, you are already composing poems and couplets.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 263000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 230
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "cloudy_stardust1",
+    "name": "Cloudy Stardust.1",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Are you willing to share with me stories about your adventures?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 136
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "stump_table2",
+    "name": "Stump Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Still exudes the scent of nature.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "fabric_round_table2",
+    "name": "Fabric Round Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Suitable for a family gathering.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "elegant_atmosphere2",
+    "name": "Elegant Atmosphere.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "You'll feel like drinking a little when sitting here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "elegant_customization2",
+    "name": "Elegant Customization.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "A luxurious table that was custom made in secret.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "first_snow_encounter2",
+    "name": "First Snow Encounter.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Who would you want to spend the day of first snow with?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "mini_reunion2",
+    "name": "Mini Reunion.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "The mini round table embodies the warmth of the family.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "sweet_palate_pink2",
+    "name": "Sweet Palate - Pink.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Smells like strawberries.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 135
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "exclusive_customization2",
+    "name": "Exclusive Customization.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Welcome, the table that you've reserved is over here. This way please!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 250
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "first_dinner2",
+    "name": "First Dinner.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Let's clean up the spider webs before eating.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 26500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 275
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "refreshing_table2",
+    "name": "Refreshing Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "It looks really good when the sun shines on it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "woodsy_afternoon_tea2",
+    "name": "Woodsy Afternoon Tea.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "No one's having any afternoon tea until the spell is broken.",
+    "requiredStars": 320000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 48000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 480
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "island_round_table2",
+    "name": "Island Round Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Making do with what we have at the beach: a table made from coconut trees.",
+    "requiredStars": 380000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 62500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 570
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "planetary_orbit2",
+    "name": "Planetary Orbit.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "The stars are silent, but you gave them meaning and brought them to life.",
+    "requiredStars": 500000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 81000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 740
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "bear_recess2",
+    "name": "Bear Recess.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Since it's over, let's just rest now!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 81000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "musing_round_table2",
+    "name": "Musing Round Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Come and take a seat. Take a deep breath and close your eyes, for the meditation is about to begin.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "jade_table2",
+    "name": "Jade Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "This table is so smooth and icy-cold that I can't help but want to run my hand across it even more.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 230000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 225
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "daisy_square_table2",
+    "name": "Daisy Square Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "The stools are soft and bouncy. There's even the aroma of daisies wafting in the air!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Buzzing Sweet Whisper"
+  },
+  {
+    "id": "butter_cookies_table2",
+    "name": "Butter Cookies Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Do you feel more relaxed that you've taken a seat here?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 42000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 550
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "duskfall_table2",
+    "name": "Duskfall Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "These candles will keep you company for as long as it's dusk.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 290
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "heart_of_the_ocean2",
+    "name": "Heart of the Ocean.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "It holds great power.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "prismatic_snowflake_table2",
+    "name": "Prismatic Snowflake Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "The reflation of the prisms makes the food loo even more appealing!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "season_of_strawberries2",
+    "name": "Season of Strawberries.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "I would like a strawberry cream cupcake, please!",
+    "requiredStars": 400000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 68500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 510
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "metal_frenzy2",
+    "name": "Metal Frenzy.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Beneath a cold and harsh exterior is a soft and tender core.",
+    "requiredStars": 450000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 75000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 620
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "tasty_adventures2",
+    "name": "Tasty Adventures.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "The arious delicious adventures bring about unending surprises!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "floral_waltz2",
+    "name": "Floral Waltz.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Twirl around with the music.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 46000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 580
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "vibrant_party_table2",
+    "name": "Vibrant Party Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Ding! Your exclusie set meal is on its way!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 36000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 314
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "precious_dream_dance2",
+    "name": "Precious Dream Dance.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "May I have a dance before dinner?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 19800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "sweet_cookie_table2",
+    "name": "Sweet Cookie Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "A tasty table, pertect for secretly snacking on after a meal as dessert.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1420000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 116
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "antique_round_table2",
+    "name": "Antique Round Table.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Before you know it, you are already composing poems and couplets.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 263000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 230
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "cloudy_stardust2",
+    "name": "Cloudy Stardust.2",
+    "area": "terrace",
+    "group": "Table",
+    "description": "Are you willing to share with me stories about your adventures?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 136
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "wooden_frame_cinema",
+    "name": "Wooden Frame Cinema",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "There are definitely films that you will like. The actors in this film all look very familiar.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 5
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "garden_mini_theater",
+    "name": "Garden Mini Theater",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "A warm viewing ambience. The actors in this film all look very familiar.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "childhood_memories",
+    "name": "Childhood Memories",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Return to the time when everyone sat in the courtyard and watched movies. The actors in this film all look very familiar.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "low_key_luxury",
+    "name": "Low-key Luxury",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "The style that Dad likes. The actors in this film all look very familiar.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "bear_party",
+    "name": "Bear Party",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "The bear huffs and puffs as it climbs up!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "happy_family",
+    "name": "Happy Family",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Watch some happy clips with your family.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "strawberry_ball_cinema",
+    "name": "Strawberry Ball Cinema",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "A limited number of ice-cream cones will be provided at the movies!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "subtle_floral_fragrance",
+    "name": "Subtle Floral Fragrance",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "This viewing spot is surrounded by a floral fragrance.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "floating_screen",
+    "name": "Floating Screen",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Supernatural occurrences always happen.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 240
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "teddy_bear",
+    "name": "Teddy Bear",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "The little bear can always dream of wondrous lands.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 145
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "hatter",
+    "name": "Hatter",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Are you ready for the wildest, most intense show ever?!",
+    "requiredStars": 340000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 44000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "underwater_theater",
+    "name": "Underwater Theater",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Is there a movie you want to watch? Mr. Octopus will put it on for you!",
+    "requiredStars": 400000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 57000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "theater_of_stars",
+    "name": "Theater of Stars",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "A show featuring the stars.",
+    "requiredStars": 520000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 74000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 580
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "cookie_slot_machine",
+    "name": "Cookie Slot Machine",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Let's just watch whichever movie that gets chose.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 74000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 260
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "lovers",
+    "name": "Lovers",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Why do I feel sadder than usual? It's as though an arrowhas just pierced my heart.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 150
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "celestial_palace",
+    "name": "Celestial Palace",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Strange images can be seen here. Could this be the place where celestial beings live?!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 19600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 235
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "four_leaf_clover_theater",
+    "name": "Four-leaf Clover Theater",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "As the four-leaf clover rotates do select the move you wish to watch!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 150
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "peachy_receiver",
+    "name": "Peachy Receiver",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Beep beep, roger! Now playing the newly received sweet moment.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 36000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "flutterdream_workshop",
+    "name": "Flutterdream Workshop",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Flap your wings of creativity and leave behind a beautiful dream here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 260
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "aquatic_cinema",
+    "name": "Aquatic Cinema",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Utilizes a unoque projection technique.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 160
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "teddy_cinema",
+    "name": "Teddy Cinema",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Screening movies perfect for a winter day. Come and check them out!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "summertime_oranges",
+    "name": "Summertime Oranges",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Orange you glad for this cool and refreshing summer?",
+    "requiredStars": 450000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 68000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 520
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "reverie_midnight_cinema",
+    "name": "Reverie Midnight Cinema",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "Watching a late-night movie is a rather novel experience.",
+    "requiredStars": 450000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 69500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 540
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "galactic_fantasy",
+    "name": "Galactic Fantasy",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "There are films here collected from all over the galaxy.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 320
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "white_swan_theater",
+    "name": "White Swan Theater",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "You can watch an interesting classical play here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 46000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 420
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "joyful_archives",
+    "name": "Joyful Archives",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "All the happiest films are stored here. Do you want to watch one?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 33000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 268
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "butterfly_theater",
+    "name": "Butterfly Theater",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "A beautiful dream brought to you by little butterflies.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 170
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "tick_tock_cinema",
+    "name": "Tick-Tock Cinema",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "If only this movie could go on forever...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 133
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "hidden_spring_pavilion",
+    "name": "Hidden Spring Pavilion",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "From a viewer to being part of the show.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22080000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 242
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "science_fiction_screening_room",
+    "name": "Science Fiction Screening Room",
+    "area": "terrace",
+    "group": "Open Air Cinema",
+    "description": "What to watch a science fiction movie together?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 19200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 155
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "log_cabinet",
+    "name": "Log Cabinet",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Large capacity, great for displaying your collectibles.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "simple_storage_shelf",
+    "name": "Simple Storage Shelf",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "A simple yet modern style.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "classical_collection_counter",
+    "name": "Classical Collection Counter",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Elegance will never become outdated.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "luxurious_display_case",
+    "name": "Luxurious Display Case",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Do your collectibles also need to be shielded from the sun?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "surprise_shelf",
+    "name": "Surprise Shelf",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "You should store presents from your friends carefully.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 95
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "rosewood_rack",
+    "name": "Rosewood Rack",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Made from high quality rosewood so it's extremely sturdy.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "cookie_display_stand",
+    "name": "Cookie Display Stand",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "A very sturdy cookie. You can rest assured placing things on it!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "artistic_shelf",
+    "name": "Artistic Shelf",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Suitable for displaying the works of artists.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "bony_display_stand",
+    "name": "Bony Display Stand",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "The bones replenish their calcium very often so it is very sturdy.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 240
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "fantasy_collection",
+    "name": "Fantasy Collection",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Unexpected things can be found here.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 140
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "dreamy_treasure_trove",
+    "name": "Dreamy Treasure Trove",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "All the treasures collected from the wonderland have been stored in here.",
+    "requiredStars": 340000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 44000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "sailing_log",
+    "name": "Sailing Log",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "These displayed items make up my sailing log.",
+    "requiredStars": 400000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 57000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "magic_display_stand",
+    "name": "Magic Display Stand",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Your collection is safeguarded with magic.",
+    "requiredStars": 520000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 74000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 580
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "cheese_display_sand",
+    "name": "Cheese Display Sand",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Who was it that sneaked a few bites of the stand?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 26000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 260
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "spun_satin",
+    "name": "Spun Satin",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Despite being used to showcase prized collections, this cabinet itself is extremely valuable.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 145
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "residual_snow",
+    "name": "Residual Snow",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Snow that has yet to melt is a decoration qnique to the winter season.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 250
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "memory_cultivation_center",
+    "name": "Memory Cultivation Center",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Let me plant a memory to harvest even more happiness!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "mint_soda",
+    "name": "Mint Soda",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "The creamy color helps to make your collection stand out even more.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 38500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 365
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "crimson_rose",
+    "name": "Crimson Rose",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "It may be an ominous red, but rest assured that your collection's in velvety safe protection.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "secret_treasures",
+    "name": "Secret Treasures",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Here are all of the precious treasures that were hidden beneath the chest!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 150
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "cozy_winter_treasure",
+    "name": "Cozy Winter Treasure",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Here, you can keep count of the joys that you have experienced.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "strawberry_invasion",
+    "name": "Strawberry Invasion",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "It's impossible for anyone to dislike the sweet fragrance of strawberries!",
+    "requiredStars": 460000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 65000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 520
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "acrylic_display_rack",
+    "name": "Acrylic Display Rack",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "The translucent material makes your products look even more exquisite!",
+    "requiredStars": 460000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 68000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 560
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "thick_wooden_display_stand",
+    "name": "Thick Wooden Display Stand",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "This wood is as tough as steel so you can place heavy objects on it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "fairytale_treasures",
+    "name": "Fairytale Treasures",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Each of the treasures displayed here has its own fairytale to tell.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 42000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 380
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "frozen_frame_of_dreams",
+    "name": "Frozen Frame of Dreams",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "No licking! The candy cane brackets are merely decorations!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 35000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 292
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "open_plains_display_stand",
+    "name": "Open Plains Display Stand",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "These are treasures that were found in the forest!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 155
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "frozen_treasure",
+    "name": "Frozen Treasure",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Keeps precious treasures and memories buried in the snow.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 107
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "rare_treasures_rack",
+    "name": "Rare Treasures Rack",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "How did you come by all these wonderful treasures?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28900000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 260
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "rainbow_stellar_treasure",
+    "name": "Rainbow Stellar Treasure",
+    "area": "terrace",
+    "group": "Display Stand",
+    "description": "Items seem to have a scecial splendor when placed on it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 17300000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "old_telescope",
+    "name": "Old Telescope",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Clean the lenses before using it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "wooden_telescope",
+    "name": "Wooden Telescope",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "The wooden texture is very smooth.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "classic_replica",
+    "name": "Classic Replica",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Is this a real antique or is it just replicating the texture?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "astronomer",
+    "name": "Astronomer",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Looks rather professional.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "fluffy_telescope",
+    "name": "Fluffy Telescope",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Would we see Santa Claus tonight?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "thousand_mile_telescope",
+    "name": "Thousand-Mile Telescope",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "You can see whether things will go smoothly in the coming year.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "bicolor_telescope",
+    "name": "Bicolor Telescope",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Can you see the mountain made of frosting in the distance?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "plaster_observatory",
+    "name": "Plaster Observatory",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Despite looking a little old, it still seems extremely specialized.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 220
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "prophetic_eye",
+    "name": "Prophetic Eye",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "It doesn't let you see what you want to see.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 240
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "floral_telescope",
+    "name": "Floral Telescope",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Faraway worlds are wonderful and varied.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 130
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "white_rabbit_vista_point",
+    "name": "White Rabbit Vista Point",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Viewings are limited to only ten minutes-the staff is real strict on that.",
+    "requiredStars": 340000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 44000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "little_submarine",
+    "name": "Little Submarine",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Slip into the submarine and observe the world go by!",
+    "requiredStars": 400000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 57000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 450
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "star_gazing",
+    "name": "Star Gazing",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "The stars are beautiful, because of a flower that cannot be seen.",
+    "requiredStars": 520000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 74000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 580
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "bear_telescope",
+    "name": "Bear Telescope",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "A very cute telescope with bear ears. Maybe it'll be better at finding bees?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 74000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 260
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "omniscient_view",
+    "name": "Omniscient View",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "You can look through this telescope, but what you see may not be what you're wishing for.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 135
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "fading_snow",
+    "name": "Fading Snow",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "As the snow melts, tiny green shoots can be seen sprouting out of the distant mountain.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 25500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 250
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "hexagonal_view",
+    "name": "Hexagonal View",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Do you want to try viewing the outside scenery from within the beehive?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 36000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 130
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "cheesy_milk_pudding",
+    "name": "Cheesy Milk Pudding",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Look through the puppy's gaze to find what you wish to see!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 37000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 360
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "unidentified_eyeball",
+    "name": "Unidentified Eyeball",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Some say this used to be from the left eye socket of a certain pirate...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 280
+      }
+    ],
+    "series": "Murmuring Dusk Rose"
+  },
+  {
+    "id": "fountain_of_knowledge",
+    "name": "Fountain of Knowledge",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Shows you the thing that you desire most.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 140
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "mysterious_guest",
+    "name": "Mysterious Guest",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Oh! Why is there an old man riding moose through the sky?!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "grape_vines",
+    "name": "Grape Vines",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Little by little, the vines creep up the pillar.",
+    "requiredStars": 450000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 62000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 510
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "farewell_night_sea",
+    "name": "Farewell Night Sea",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "A lonely youth hums a melody by the seashore at night.",
+    "requiredStars": 480000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 68000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 540
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "sky_observatory",
+    "name": "Sky Observatory",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Let's see if anything interesting happened today.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 33000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 300
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "sentimental_wings",
+    "name": "Sentimental Wings",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "I wonder whose inner thoughts I'll be able to see?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 48000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 390
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "visual_feast",
+    "name": "Visual Feast",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Allows you to easily witness all the spectacular performances!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 41000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 306
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "birdie_observer",
+    "name": "Birdie Observer",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Let the birdie see what's going on in Oak Bay.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 153
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "birdie_observatory",
+    "name": "Birdie Observatory",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Let's capture this beautiul starry sky together.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 138
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "enamel_telescope",
+    "name": "Enamel Telescope",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "With this, you can enjoy a full view of the landscape!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 34200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 268
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "interstellar_tracker",
+    "name": "Interstellar Tracker",
+    "area": "terrace",
+    "group": "Telescope",
+    "description": "Allows you to see very far away!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 65290000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 145
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "simple_snack_counter",
+    "name": "Simple Snack Counter",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "A few preserved plums have been placed on it as snacks during movies.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 600000
+      }
+    ],
+    "series": "{{R|+15}} {{Cod|+200}}/30s",
+    "effects": []
+  },
+  {
+    "id": "springtime_snack_mat",
+    "name": "Springtime Snack Mat",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "It's like having a picnic!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1500000
+      }
+    ],
+    "series": "{{R|+30}} {{Cod|+250}}/30s",
+    "effects": []
+  },
+  {
+    "id": "delectable_snack_table",
+    "name": "Delectable Snack Table",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Brimming with all kinds of snacks. So tempting!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3500000
+      }
+    ],
+    "series": "{{R|+50}} {{Cod|+300}}/30s",
+    "effects": []
+  },
+  {
+    "id": "luxurious_coffee_table",
+    "name": "Luxurious Coffee Table",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "The table looks expensive, but all the food is free.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7000000
+      }
+    ],
+    "series": "{{R|+80}} {{Cod|+350}}/30s",
+    "effects": []
+  },
+  {
+    "id": "sweet_cat_paw",
+    "name": "Sweet Cat Paw",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "The cake and the cat are both yours!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11000000
+      }
+    ],
+    "series": "{{R|+105}} {{Cod|+370}}/30s",
+    "effects": []
+  },
+  {
+    "id": "nibble_counter",
+    "name": "Nibble Counter",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Savor a drink as you enjoy the view...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "series": "{{R|+180}} {{Cod|+450}}/30s",
+    "effects": []
+  },
+  {
+    "id": "wondrous_pumpkin_box",
+    "name": "Wondrous Pumpkin Box",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Many witches seem to casually throw a variety of random objects into it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "series": "{{R|+200}} {{Cod|+480}}/30s",
+    "effects": []
+  },
+  {
+    "id": "snow_top_cookie_desk",
+    "name": "Snow-Top Cookie Desk",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Achoo! Th—the cookie is warm. Please don't worry about it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9500000
+      }
+    ],
+    "series": "{{R|+90}} {{Cod|+360}}/30s",
+    "effects": []
+  },
+  {
+    "id": "relaxing_moment",
+    "name": "Relaxing Moment",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Gentle breezes and warm sunshine... what a relaxing moment!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 36
+      }
+    ],
+    "series": "{{R|+22}} {{Cod|+220}}/30s",
+    "effects": []
+  },
+  {
+    "id": "mushroom_counter",
+    "name": "Mushroom Counter",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Delectable treats from the depths of the forest.",
+    "requiredStars": 300000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 40000000
+      }
+    ],
+    "series": "{{R|+350}} {{Cod|+850}}/30s",
+    "effects": []
+  },
+  {
+    "id": "sea_salt_breeze",
+    "name": "Sea Salt Breeze",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Don't worry about the sand, it's clean! It also helps to keep the snacks warm.",
+    "requiredStars": 360000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 52000000
+      }
+    ],
+    "series": "{{R|+400}} {{Cod|+1,000}}/30s",
+    "effects": []
+  },
+  {
+    "id": "galactic_retreat",
+    "name": "Galactic Retreat",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Pack your luggage, we'll set off tomorrow!",
+    "requiredStars": 470000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 67500000
+      }
+    ],
+    "series": "{{R|+520}} {{Cod|+1,300}}/30s",
+    "effects": []
+  },
+  {
+    "id": "captives_of_wheat",
+    "name": "Captives of Wheat",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Where can I go to grab another piece?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24000000
+      }
+    ],
+    "series": "{{R|+210}} {{Cod|+450}}/30s",
+    "effects": []
+  },
+  {
+    "id": "serendipitous_magic_mirror",
+    "name": "Serendipitous Magic Mirror",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Mirror, mirror on the wall, what will be the next thing to appear by your side?",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 45
+      }
+    ],
+    "series": "{{R|+22}} {{Cod|+220}}/30s",
+    "effects": []
+  },
+  {
+    "id": "morning_tea_counter",
+    "name": "Morning Tea Counter",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "There are so many kinds of dim sum to choose from... Which should I pick?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11500000
+      }
+    ],
+    "series": "{{R|+95}} {{Cod|+360}}/30s",
+    "effects": []
+  },
+  {
+    "id": "candlelit_drink",
+    "name": "Candlelit Drink",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Drinking alone in the dead of night... What could be better than this?!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 29900000
+      }
+    ],
+    "series": "{{R|+195}} {{Cod|+400}}/30s",
+    "effects": []
+  },
+  {
+    "id": "sweet_exclusivity",
+    "name": "Sweet Exclusivity",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "All of then snacks here are limited-edition honey-flavored ones!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10000000
+      }
+    ],
+    "series": "{{R|+100}} {{Cod|+350}}/30s",
+    "effects": []
+  },
+  {
+    "id": "woof_buffet",
+    "name": "Woof Buffet",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Irresistible to all puppies!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 38000000
+      }
+    ],
+    "series": "{{R|+320}} {{Cod|+680}}/30s",
+    "effects": []
+  },
+  {
+    "id": "ghoul_retailer",
+    "name": "Ghoul Retailer",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Give the ghoul a gold coin and it'll be of service to you!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28000000
+      }
+    ],
+    "series": "{{R|+220}} {{Cod|+500}}/30s",
+    "effects": []
+  },
+  {
+    "id": "sweet_seashell",
+    "name": "Sweet Seashell",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "These crunchy snacks are both sweet and fragrant.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 50
+      }
+    ],
+    "series": "{{R|+22}} {{Cod|+220}}/30s",
+    "effects": []
+  },
+  {
+    "id": "ginger_teatime",
+    "name": "Ginger Teatime",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "It's snowing. Would you like to have some ginger tea?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "series": "{{R|+100}} {{Cod|+400}}/30s",
+    "effects": []
+  },
+  {
+    "id": "taste_of_pear_fection",
+    "name": "Taste of Pear-fection",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Avocados are suprisingly high in caliries, but they are an excellent source of nutrients!",
+    "requiredStars": 420000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 52000000
+      }
+    ],
+    "series": "{{R|+450}} {{Cod|+1,000}}/30s",
+    "effects": []
+  },
+  {
+    "id": "ode_to_snacks",
+    "name": "Ode to Snacks",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "A movie experience without snacks is a lackluster one!",
+    "requiredStars": 450000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 63000000
+      }
+    ],
+    "series": "{{R|+480}} {{Cod|+1,000}}/30s",
+    "effects": []
+  },
+  {
+    "id": "ingenious_snack_counter",
+    "name": "Ingenious Snack Counter",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "*Crunch crunch*... Please select your favourite snack...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 30000000
+      }
+    ],
+    "series": "{{R|+250}} {{Cod|+450}}/30s",
+    "effects": []
+  },
+  {
+    "id": "leisurely_flavors",
+    "name": "Leisurely Flavors",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "In this moment. all you need to do is enjoy the delicious taste.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 43000000
+      }
+    ],
+    "series": "{{R|+335}} {{Cod|+700}}/30s",
+    "effects": []
+  },
+  {
+    "id": "sweet_enjoyment",
+    "name": "Sweet Enjoyment",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Have a piece of candy and stop playing tricks!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 31300000
+      }
+    ],
+    "series": "{{R|+230}} {{Cod|+500}}/30s",
+    "effects": []
+  },
+  {
+    "id": "maiden_black_tea",
+    "name": "Maiden Black Tea",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Enjoy a short break after a busy day at work.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 57
+      }
+    ],
+    "series": "{{R|+22}} {{Cod|+220}}/30s",
+    "effects": []
+  },
+  {
+    "id": "sweet_journey",
+    "name": "Sweet Journey",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Enjoy every tasty moment along the way.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 17600000
+      }
+    ],
+    "series": "{{R|+105}} {{Cod|+410}}/30s",
+    "effects": []
+  },
+  {
+    "id": "peach_side_table",
+    "name": "Peach Side Table",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Who can resist these sweet, juicy peaches!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32790000
+      }
+    ],
+    "series": "{{R|+200}} {{Cod|+450}}/30s",
+    "effects": []
+  },
+  {
+    "id": "hypercaloric_energy",
+    "name": "Hypercaloric Energy",
+    "area": "terrace",
+    "group": "Snack Counter",
+    "description": "Never mind! Let me have some high-calorie snacks first!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13960000
+      }
+    ],
+    "series": "{{R|+112}} {{Cod|+360}}/30s",
+    "effects": []
+  },
+  {
+    "id": "plain_fan",
+    "name": "Plain Fan",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Taken out of storage recently. There are still cobwebs on it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 15
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "rustic_breeze",
+    "name": "Rustic Breeze",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "A fragrance wafts in the air when passing by. Is it the scent of flowers or essential oils?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "classical_style",
+    "name": "Classical Style",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Has a beauty unique to bygone days.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "melodious_echo",
+    "name": "Melodious Echo",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "One can't help but be soothed by the calming bell chimes.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "aerial_adventure",
+    "name": "Aerial Adventure",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Take care not to drive into the clouds.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 105
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "engraved_story",
+    "name": "Engraved Story",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "As the veil blows in the wind, the sculpture seems to come to life.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 180
+      }
+    ],
+    "series": "Fanciful Melody"
+  },
+  {
+    "id": "ghost_hat_rack",
+    "name": "Ghost Hat Rack",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Don't worry, the ghosts will look after your hat dutifully!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 200
+      }
+    ],
+    "series": "Marvelous Midnight"
+  },
+  {
+    "id": "gift_teddy_bear",
+    "name": "Gift Teddy Bear",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Huff... Puff... Ah? Is it time to unwrap the presents?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      }
+    ],
+    "series": "Warm Winter Chimes"
+  },
+  {
+    "id": "flower_umbrella_rack",
+    "name": "Flower Umbrella Rack",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "There's no need to worry about sudden rain anymore.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 40
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Fantastical Party"
+  },
+  {
+    "id": "vine_clothes_hanger",
+    "name": "Vine Clothes Hanger",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Vines have wound around it surreptitiously while it was waiting for its master.",
+    "requiredStars": 300000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 40000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 350
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "lifeguard_chair",
+    "name": "Lifeguard Chair",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "I shall watch over and ensure everyone's safety!",
+    "requiredStars": 360000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 52000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 400
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "elegant_harp",
+    "name": "Elegant Harp",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Sometimes it'll play little-known songs on its own.",
+    "requiredStars": 470000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 67500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 520
+      }
+    ],
+    "series": "Starry Rose"
+  },
+  {
+    "id": "bread_mobilization",
+    "name": "Bread Mobilization",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "A bouquet made out of bread. It smells amazing!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 210
+      }
+    ],
+    "series": "Warm Bakery"
+  },
+  {
+    "id": "wishful_hot_air_balloon",
+    "name": "Wishful Hot Air Balloon",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "This hot air balloon shall carry my passions and fantasies into the uncharted depths of the sky.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 55
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Slumberous Nights"
+  },
+  {
+    "id": "natural_millstone",
+    "name": "Natural Millstone",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Would you like a glass of freshly ground soy milk? Authentic taste guaranteed!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 95
+      }
+    ],
+    "series": "Stovetop Blessings"
+  },
+  {
+    "id": "shelf_of_treasures",
+    "name": "Shelf of Treasures",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Come, place all of your treasured novelties upon this shelf!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 29900000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 195
+      }
+    ],
+    "series": "Pleasant Dreams"
+  },
+  {
+    "id": "childhood_slide",
+    "name": "Childhood Slide",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "A recreational facility that can be found in every neighborhood.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "brimming_pup_cup",
+    "name": "Brimming Pup Cup",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "The cup's full, so the puppy decided to pop its head out for a rest.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 33000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 330
+      }
+    ],
+    "series": "Milky Mint Chocolate"
+  },
+  {
+    "id": "decorative_ribcage_stand",
+    "name": "Decorative Ribcage Stand",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "The cold and dusty ribcage has been given a new lease of life.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 29000000
+      }
+    ],
+    "series": "Murmuring Dusk Rose",
+    "effects": []
+  },
+  {
+    "id": "underwater_magic_mirror",
+    "name": "Underwater Magic Mirror",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Try out the latest underwater fashion trends!",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 62
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Deep-sea Ballad"
+  },
+  {
+    "id": "dance_in_the_snow",
+    "name": "Dance in the Snow",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Let's dancce to celebrate our friendship!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Aurora Fairy Tale"
+  },
+  {
+    "id": "fruity_cat_tree",
+    "name": "Fruity Cat Tree",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "No cat can resist this!",
+    "requiredStars": 400000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 58000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 500
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "rock",
+    "name": "Rock",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "No playing of anything other than rock 'n' roll!",
+    "requiredStars": 420000,
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 65500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 510
+      }
+    ],
+    "series": "Rock 'n' Roll Sweetheart"
+  },
+  {
+    "id": "assembled_floor_mirror",
+    "name": "Assembled Floor Mirror",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Don't worry about it transforming.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 28500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 240
+      }
+    ],
+    "series": "Steam-powered"
+  },
+  {
+    "id": "valorous_trial",
+    "name": "Valorous Trial",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Dear princess, I've come to pull out this sword of valor!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 47000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 365
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "juggling_prodigy",
+    "name": "Juggling Prodigy",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "It's time to showcase my true abilities!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 38600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 248
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "broken_glass_screen",
+    "name": "Broken Glass Screen",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "A beautiful screen pieced together using broken glass.",
+    "price": [
+      {
+        "currency": "diamonds",
+        "amount": 70
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Midsummer Birdsong"
+  },
+  {
+    "id": "snowman_inspector",
+    "name": "Snowman Inspector",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Hello! Your ticket, please!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 114
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "soaring_fairy",
+    "name": "Soaring Fairy",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "Looks just like a celestial fairy!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 40150000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 210
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "cosmic_bubble_dino",
+    "name": "Cosmic Bubble Dino",
+    "area": "terrace",
+    "group": "Floor Decorations",
+    "description": "The dinosaur egg is about to hatch!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 20360000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 116
+      }
+    ],
+    "series": "Starry Whisper"
+  }
+]

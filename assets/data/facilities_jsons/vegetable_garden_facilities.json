@@ -1,1 +1,2774 @@
-[]
+[
+  {
+    "id": "second_hand_sprinkler1",
+    "name": "Second-hand Sprinkler.1",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Stops working every once in a while. Just smack it lightly and it'll work just fine again.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "brass_sprinkler1",
+    "name": "Brass Sprinkler.1",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Durable and pratical.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 180000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "gold_sprinkler1",
+    "name": "Gold Sprinkler.1",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Gives your crops the royal treatment!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 880000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "second_hand_sprinkler2",
+    "name": "Second-hand Sprinkler.2",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Stops working every once in a while. Just smack it lightly and it'll work just fine again.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 250000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "brass_sprinkler2",
+    "name": "Brass Sprinkler.2",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Durable and pratical.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 180000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "gold_sprinkler2",
+    "name": "Gold Sprinkler.2",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Gives your crops the royal treatment!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1500000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "second_hand_sprinkler3",
+    "name": "Second-hand Sprinkler.3",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Stops working every once in a while. Just smack it lightly and it'll work just fine again.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 580000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "brass_sprinkler3",
+    "name": "Brass Sprinkler.3",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Durable and pratical.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2500000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "gold_sprinkler3",
+    "name": "Gold Sprinkler.3",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Gives your crops the royal treatment!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3500000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "second_hand_sprinkler4",
+    "name": "Second-hand Sprinkler.4",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Stops working every once in a while. Just smack it lightly and it'll work just fine again.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1800000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "brass_sprinkler4",
+    "name": "Brass Sprinkler.4",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Durable and pratical.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4500000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "gold_sprinkler4",
+    "name": "Gold Sprinkler.4",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Gives your crops the royal treatment!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6500000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "second_hand_sprinkler5",
+    "name": "Second-hand Sprinkler.5",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Stops working every once in a while. Just smack it lightly and it'll work just fine again.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2800000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "brass_sprinkler5",
+    "name": "Brass Sprinkler.5",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Durable and pratical.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6500000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "gold_sprinkler5",
+    "name": "Gold Sprinkler.5",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Gives your crops the royal treatment!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8800000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "second_hand_sprinkler6",
+    "name": "Second-hand Sprinkler.6",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Stops working every once in a while. Just smack it lightly and it'll work just fine again.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4000000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "brass_sprinkler6",
+    "name": "Brass Sprinkler.6",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Durable and pratical.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8500000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "gold_sprinkler6",
+    "name": "Gold Sprinkler.6",
+    "area": "garden",
+    "group": "Automatic Sprinkler",
+    "description": "Gives your crops the royal treatment!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 12000000
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "wooden_food_truck",
+    "name": "Wooden Food Truck",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "The creaking of wooden wheels means yummy food is on the way!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 450000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 150
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "bamboo_food_truck",
+    "name": "Bamboo Food Truck",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "The fragrance of bamboo and the mouthwatering aroma of the food combined in one.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 155
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "vintage_food_truck",
+    "name": "Vintage Food Truck",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "How about some freshly baked bread made from homegrown wheat?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 153
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "ornate_food_truck",
+    "name": "Ornate Food Truck",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "You can find all sorts of exquisite and delicious treats here!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 156
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "world_of_flavor",
+    "name": "World of Flavor",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "Let your taste buds soar alongside these wings.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 375000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 190
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "baker",
+    "name": "Baker",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "Stomachs growl along as the boiling pumpkin soup bubbles away.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 51000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 214
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "first_snow_food_truck",
+    "name": "First Snow Food Truck",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "Don't miss out on the festive Christmas treats on the menu!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 42800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 206
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "tasty_mirage",
+    "name": "Tasty Mirage",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "Is this delicious flavor even real?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13920000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 170
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "leisurely_food_truck",
+    "name": "Leisurely Food Truck",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "You can smell the delicious food even from far away.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 21800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 176
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "coastline_food_truck",
+    "name": "Coastline Food Truck",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "Would you like some sea salt soda?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 22700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 177
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "fruity_food_truck",
+    "name": "Fruity Food Truck",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "Wanna try a freshly baked fruit tart?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15740000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 172
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "whipped_cream_food_truck",
+    "name": "Whipped Cream Food Truck",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "What dessert I should make today?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7910000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 160
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "honey_bee_food_truck",
+    "name": "Honey Bee Food Truck",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "The most delicious kitchen of the bee kingdom.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10830000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 165
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "cloudy_food_truck",
+    "name": "Cloudy Food Truck",
+    "area": "garden",
+    "group": "Mystery Food Trucks",
+    "description": "Taste the flavors of the cosmos!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16575000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 173
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "wooden_vegetable_rack",
+    "name": "Wooden Vegetable Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "Au natural flavors on display.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 100
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "handmade_vegetable_rack",
+    "name": "Handmade Vegetable Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "A lovingly crafted rack made of fine wood.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 850000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 105
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "classy_vegetable_rack",
+    "name": "Classy Vegetable Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "Presents the most natural and authentic flavors to you.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1280000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 108
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "precious_vegetable_rack",
+    "name": "Precious Vegetable Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "Every harvest is precious.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "fancy_vegetable_rack",
+    "name": "Fancy Vegetable Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "It automatically swats away an mosquitos that come close.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 24650000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 145
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "playful_vegetable_rack",
+    "name": "Playful Vegetable Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "The vibrant colors give the ingredients a joyful touch!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 32200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 158
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "starlight_display_rack",
+    "name": "Starlight Display Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "This display rack keeps ingredients incredibly fresh!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 21700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 129
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "dotted_mushroom_vegetable_rack",
+    "name": "Dotted Mushroom Vegetable Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "These mushrooms cannot be eaten!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8730000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 115
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "carved_vegetable_rack",
+    "name": "Carved Vegetable Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "Made from precious wood and embellished with exquisite carvings. It's simply beautiful!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14250000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 120
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "humming_waves",
+    "name": "Humming Waves",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "So fresh even the denizens of the ocean want to buy some.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15710000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 123
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "fruity_double_rack",
+    "name": "Fruity Double Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "Enjoy two different flavors at once!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9745000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 116
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "flatbread_vegetable_rack",
+    "name": "Flatbread Vegetable Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "Vegetable flavored flatbread sound very healthy!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5320000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 111
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "floral_vegetable_rack",
+    "name": "Floral Vegetable Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "All the vegetables here are freshly picked!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7550000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 114
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "interstellar_vegetable_rack",
+    "name": "Interstellar Vegetable Rack",
+    "area": "garden",
+    "group": "Vegetable Racks",
+    "description": "The vegetables on the rack are kept fresh by being in a vacuum.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11450000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 118
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "cheerful_houseplants",
+    "name": "Cheerful Houseplants",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "Adds a touch of elegance to the surroundings.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 80000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 20
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "green_fortune_tree",
+    "name": "Green Fortune Tree",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "Brings good fortune, apparently.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 300000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 22
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "cooling_cactus",
+    "name": "Cooling Cactus",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "Stay calm and chill.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 42000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 25
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "exquisite_snacks",
+    "name": "Exquisite Snacks",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "Grab a bite to take the edge off that hunger.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "blooming_flowers",
+    "name": "Blooming Flowers",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "Only the most dazzling moment will be displayed for your enjoyment.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 78
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "celebratory_rhythm",
+    "name": "Celebratory Rhythm",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "Wait a minute, is that something hiding among the balloons?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 21700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 85
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "snowfield_clock",
+    "name": "Snowfield Clock",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "Has a classic color scheme. It heralds the arrival of winter.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 14800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 63
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "lost_wonderland",
+    "name": "Lost Wonderland",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "It's covered in fine, delicate moss.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5520000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "banana_bonsai",
+    "name": "Banana Bonsai",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "It'd look even better with an ornamental rock.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6530000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "sailor",
+    "name": "Sailor",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "You must pick up this anchor to become a true sailor.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7726000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 53
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "berry_record_player",
+    "name": "Berry Record Player",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "Listen! Is that the sound of berries singing?!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5690000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 43
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "cotton_candy_potted_plant",
+    "name": "Cotton Candy Potted Plant",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "I'm a little hesitant to tell you that this is only for decoration.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2420000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "midsummer_sunflower",
+    "name": "Midsummer Sunflower",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "Is this what summer feels like?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3680000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 34
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "galactic_flower",
+    "name": "Galactic Flower",
+    "area": "garden",
+    "group": "Truck-Side Decorations",
+    "description": "I picked the prettiest flower in the galaxy just for you.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6019000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "simple_order_box",
+    "name": "Simple Order Box",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "What would you like today?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 150000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "metal_order_box",
+    "name": "Metal Order Box",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "I'll leave the meal planning to you!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 360000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "tall_order_box",
+    "name": "Tall Order Box",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "You won't believe what kind of orders you'll find inside!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 850000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 58
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "classic_order_box",
+    "name": "Classic Order Box",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "How about some retro delicacies?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 62
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "swan_dedications",
+    "name": "Swan Dedications",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "You can tell the swan anything.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 94000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 96
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "magic_boxes",
+    "name": "Magic Boxes",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "With this magic wand, I can satisfy all your wants!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 16300000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 114
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "chickadee_notebook",
+    "name": "Chickadee Notebook",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "Let's see what orders have come in.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13700000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 103
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "white_rabbit_order_box",
+    "name": "White Rabbit Order Box",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "Don't worry! White Rabbit will take everyone's orders properly!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4610000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 72
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "eight_treasure_delicacy",
+    "name": "Eight Treasure Delicacy",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "Please wait a moment. Your meal is on its way!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5768000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 77
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "sky_blue_letter",
+    "name": "Sky Blue Letter",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "Hang on to a floaty if you can't swim!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6474000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 82
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "avocado_order_box",
+    "name": "Avocado Order Box",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "I Wonder where the other half of the avocado went.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4060000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 70
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "ice_cream_order_box",
+    "name": "Ice Cream Order Box",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "Wait! Your tongue will get stuck if you try to lick it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1880000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 64
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "honey_dedications",
+    "name": "Honey Dedications",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "Secretly whisper your thoughts to the bees!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2940000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 67
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "galactic_shuttle_box",
+    "name": "Galactic Shuttle Box",
+    "area": "garden",
+    "group": "Order Boxes",
+    "description": "Sometimes there are mystery orders.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5583000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 76
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "tree_stump_seat",
+    "name": "Tree Stump Seat",
+    "area": "garden",
+    "group": "Seating",
+    "description": "Have a break and take it easy!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 60000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "bamboo_stool",
+    "name": "Bamboo Stool",
+    "area": "garden",
+    "group": "Seating",
+    "description": "Come take a seat on this sturdy stool.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 320000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "soft_cushioned_chair",
+    "name": "Soft Cushioned Chair",
+    "area": "garden",
+    "group": "Seating",
+    "description": "A comfortable and value-for-money cushioned chair.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 630000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 38
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "relaxing_rocking_chair",
+    "name": "Relaxing Rocking Chair",
+    "area": "garden",
+    "group": "Seating",
+    "description": "People always ending up falling asleep in this chair without realizing it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 880000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 42
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "creaky_antique_chair",
+    "name": "Creaky Antique Chair",
+    "area": "garden",
+    "group": "Seating",
+    "description": "You can tell how old it is from the way it creaks.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 75
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "guide_to_napping",
+    "name": "Guide to Napping",
+    "area": "garden",
+    "group": "Seating",
+    "description": "As resting is also part of work, come and take a quick nap!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9460000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 88
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "crispy_gingerbread_chair",
+    "name": "Crispy Gingerbread Chair",
+    "area": "garden",
+    "group": "Seating",
+    "description": "Sit down and be greeted by the scent of gingerbread.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4850000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 62
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "time_lounge_chair",
+    "name": "Time Lounge Chair",
+    "area": "garden",
+    "group": "Seating",
+    "description": "Will time rewind if you sit on it?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2176000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 54
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "antique_armchair",
+    "name": "Antique Armchair",
+    "area": "garden",
+    "group": "Seating",
+    "description": "Relieves all your fatigue in an instant!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3408000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 59
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "beach_break",
+    "name": "Beach Break",
+    "area": "garden",
+    "group": "Seating",
+    "description": "Remember to use sunscreen!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3750000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "soft_cherry_shaped_chair",
+    "name": "Soft Cherry-Shaped Chair",
+    "area": "garden",
+    "group": "Seating",
+    "description": "Oof, what a close call. The chair is so comfortable that I almost didn't want to get up anymore.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2569000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "donut_stool",
+    "name": "Donut Stool",
+    "area": "garden",
+    "group": "Seating",
+    "description": "Oh! You'll gradually sink in while sitting on it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1332000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "fluffy_cloud_stool",
+    "name": "Fluffy Cloud Stool",
+    "area": "garden",
+    "group": "Seating",
+    "description": "It feels very comfortable to sit among the clouds.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1860000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 51
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "interstellar_relaxation",
+    "name": "Interstellar Relaxation",
+    "area": "garden",
+    "group": "Seating",
+    "description": "Take a breather beneath a lovely rainbow.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2679000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 56
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "wattle_fence",
+    "name": "Wattle Fence",
+    "area": "garden",
+    "group": "Fences",
+    "description": "The wooden stakes are firmly embedded in the ground.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 100000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 25
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "countryside_fence",
+    "name": "Countryside Fence",
+    "area": "garden",
+    "group": "Fences",
+    "description": "Has a unique countryside vibe to it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 450000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 28
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "artsy_fence",
+    "name": "Artsy Fence",
+    "area": "garden",
+    "group": "Fences",
+    "description": "You brighten the place up more than anything else.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 650000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "cozy_fence",
+    "name": "Cozy Fence",
+    "area": "garden",
+    "group": "Fences",
+    "description": "Makes you feel warm and fuzzy AND safe.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 980000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 110
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "pure_white_fence",
+    "name": "Pure White Fence",
+    "area": "garden",
+    "group": "Fences",
+    "description": "It feels quite romantic.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6550000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 70
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "carnival_party",
+    "name": "Carnival Party",
+    "area": "garden",
+    "group": "Fences",
+    "description": "The little ghost is currently helping set up the party.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10800000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 84
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "gingerbread_fence",
+    "name": "Gingerbread Fence",
+    "area": "garden",
+    "group": "Fences",
+    "description": "The gingerbreads are all dressed up for winter to welcome everyone!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5390000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 57
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "rabbit_sonata",
+    "name": "Rabbit Sonata",
+    "area": "garden",
+    "group": "Fences",
+    "description": "Did the rabbits' expressions change? Or... is it just my imagination?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2195000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 46
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "springtime",
+    "name": "Springtime",
+    "area": "garden",
+    "group": "Fences",
+    "description": "Let's go on a spring outing together!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3910000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "blue_white_braid",
+    "name": "Blue-white Braid",
+    "area": "garden",
+    "group": "Fences",
+    "description": "Uses a special coat of paint that resists corrosion from seawater.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4180000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "fruity_fence",
+    "name": "Fruity Fence",
+    "area": "garden",
+    "group": "Fences",
+    "description": "I can't believe what I'm seeing: There are gigantic fruits along the side of the field!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2830000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "cookie_fence",
+    "name": "Cookie Fence",
+    "area": "garden",
+    "group": "Fences",
+    "description": "Don't worry! This fence is extremely sturdy. After all, I tried biting into it just now.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1375000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 37
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "cloth_fence",
+    "name": "Cloth Fence",
+    "area": "garden",
+    "group": "Fences",
+    "description": "Has a clean and retro look.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1960000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "starlight_fence",
+    "name": "Starlight Fence",
+    "area": "garden",
+    "group": "Fences",
+    "description": "Made from starlight.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2993000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 49
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "wooden_vegetable_rack_2",
+    "name": "Wooden Vegetable Rack",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "Stores the gifts of nature.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 0
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 40
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "homey_warehouse",
+    "name": "Homey Warehouse",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "A home for the seeds.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 550000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "nature_warehouse",
+    "name": "Nature Warehouse",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "Simulates the natural environment to better store seeds.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 680000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "budding_warehouse",
+    "name": "Budding Warehouse",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "Full of life inside.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "magic_seed_station",
+    "name": "Magic Seed Station",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "What are we planting today?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 82
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "carnival_tent",
+    "name": "Carnival Tent",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "The seeds lie comfortably in the tent, no longer afraid of moisture.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 23000000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 90
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "sugar_igloo",
+    "name": "Sugar Igloo",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "Do seeds have sweet dreams inside?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 13200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 70
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "eternal_teapot",
+    "name": "Eternal Teapot",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "Seeds placed inside are frozen in time, staying fresh indefinitely!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6840000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 60
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "springtime_granary",
+    "name": "Springtime Granary",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "The seeds have just awakened from their winter slumber.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9120000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 65
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "leisurely_pinwheel",
+    "name": "Leisurely Pinwheel",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "It creaks when the wind starts to blow.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 9910000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 67
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "lemony_warehouse",
+    "name": "Lemony Warehouse",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "Take a guess, where is the lemon's seed?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7020000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 61
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "jelly_warehouse",
+    "name": "Jelly Warehouse",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "Not only does it look cute, but it can also effectively protect the seeds!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3170000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 54
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "cloudy_seed_station",
+    "name": "Cloudy Seed Station",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "The ideal temperaturę for storing seeds.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4450000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "space_plant_station",
+    "name": "Space Plant Station",
+    "area": "garden",
+    "group": "Mini Warehouses",
+    "description": "Researching newly discovered seeds.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 8164000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 63
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "cobblestone_pathway",
+    "name": "Cobblestone Pathway",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "Feels cold to the touch.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 88000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 33
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "wooden_pathway",
+    "name": "Wooden Pathway",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "Makes a clacking sound each time you take a step.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 280000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 36
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "whitewood_pathway",
+    "name": "Whitewood Pathway",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "Made from a special type of whitewood.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 580000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "multicolored_pathway",
+    "name": "Multicolored Pathway",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "A perfect mix of colors.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 850000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "blooming_path",
+    "name": "Blooming Path",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "Take a walk among the flowers.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5100000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 76
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "candy_temptation",
+    "name": "Candy Temptation",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "Huh? I wonder where the candy on the ground leads to.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6050000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 80
+      }
+    ],
+    "series": "Forgotten Fantasies Paradise"
+  },
+  {
+    "id": "fondant_cookie",
+    "name": "Fondant Cookie",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "Its sweet scent draws you in before you know it.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 4660000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 68
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "dreamland_forest",
+    "name": "Dreamland Forest",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "It seems to take you into another world...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1884000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 52
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "falling_blossom_tiles",
+    "name": "Falling Blossom Tiles",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "One can't help but pause to admire these exquisite tiles.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3270000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 58
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "between_the_tides",
+    "name": "Between the Tides",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "A gift from the ocean!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3590000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 63
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "fruity_cushions",
+    "name": "Fruity Cushions",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "They're made out of rubber. So soft anf squishy!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2360000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 55
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "honey_mat",
+    "name": "Honey Mat",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "I wonder who left these candy behind.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1190000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 49
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "hive_floor_tiles",
+    "name": "Hive Floor Tiles",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "Don't worry, there aren't any bees here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 1673000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 51
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "scattered_stardust",
+    "name": "Scattered Stardust",
+    "area": "garden",
+    "group": "Field Mat",
+    "description": "Scattered stardust sparkles quietly here.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2537000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 56
+      }
+    ],
+    "series": "Starry Whisper"
+  },
+  {
+    "id": "shabby_scarecrow",
+    "name": "Shabby Scarecrow",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "A cute doll made from random materials found nearby.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 105000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 30
+      }
+    ],
+    "series": "Log Scenery"
+  },
+  {
+    "id": "countryside_scarecrow",
+    "name": "Countryside Scarecrow",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "A unsophisticated-looking scarecrow.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 320000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 32
+      }
+    ],
+    "series": "Lattice Story"
+  },
+  {
+    "id": "harvest_scarecrow",
+    "name": "Harvest Scarecrow",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "May you be blessed with a bountiful harvest this year!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 450000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 33
+      }
+    ],
+    "series": "Forest Humming"
+  },
+  {
+    "id": "exquisite_scarecrow",
+    "name": "Exquisite Scarecrow",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "Shall we go on a picnic together?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 2600000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 35
+      }
+    ],
+    "series": "Supreme Seat of Honor"
+  },
+  {
+    "id": "gentle_guardian",
+    "name": "Gentle Guardian",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "Hi, nice to meet you!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 18300000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 63
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "playful_scarecrow",
+    "name": "Playful Scarecrow",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "Actually, I can perform acrobatics as well!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 23500000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 70
+      }
+    ],
+    "series": "Fleeting Feathers"
+  },
+  {
+    "id": "bus_stop_snowman",
+    "name": "Bus Stop Snowman",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "Always watching over you.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 15900000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 54
+      }
+    ],
+    "series": "Snowflake Journey"
+  },
+  {
+    "id": "down_the_rabbit_hole",
+    "name": "Down the Rabbit Hole",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "I shall be late! Are you ready to set off with me?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 6270000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 43
+      }
+    ],
+    "series": "Alice's Dream"
+  },
+  {
+    "id": "tranquil_scarecrow",
+    "name": "Tranquil Scarecrow",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "Want to harvest the fruits with me today?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 10400000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 48
+      }
+    ],
+    "series": "Spring Pavilion Banquet"
+  },
+  {
+    "id": "sailor_scarecrow",
+    "name": "Sailor Scarecrow",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "Yearining for the deep ocean...",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 11280000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 50
+      }
+    ],
+    "series": "Of Coconut Trees and the Sea Breeze"
+  },
+  {
+    "id": "energetic_fruit_farmer",
+    "name": "Energetic Fruit Farmer",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "Good news! The fruits tha have been harvested this year are especially huge!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7180000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 44
+      }
+    ],
+    "series": "Energy Fruit"
+  },
+  {
+    "id": "teddy_bear",
+    "name": "Teddy Bear",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "It's always protecting the field with a smile.",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 3620000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 37
+      }
+    ],
+    "series": "Childhood Paradise"
+  },
+  {
+    "id": "lively_scarecrow",
+    "name": "Lively Scarecrow",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "La, la, la! I'm the liveliest scarecrow!",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 5200000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 41
+      }
+    ],
+    "series": "Buzzing Sweet Whispers"
+  },
+  {
+    "id": "space_watcher",
+    "name": "Space Watcher",
+    "area": "garden",
+    "group": "Field Scarecrows",
+    "description": "Do you often look up at the stars?",
+    "price": [
+      {
+        "currency": "cod",
+        "amount": 7920000
+      }
+    ],
+    "effects": [
+      {
+        "type": "ratingBonus",
+        "amount": 45
+      }
+    ],
+    "series": "Starry Whisper"
+  }
+]
