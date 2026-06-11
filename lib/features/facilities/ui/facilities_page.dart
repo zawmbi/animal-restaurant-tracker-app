@@ -737,11 +737,11 @@ class _FacilityDetailBody extends StatelessWidget {
       case FacilityEffectType.gachaLevel:
         return 'Gachapon level ${e.level ?? e.amount?.toInt() ?? 0}';
       case FacilityEffectType.cookingEfficiencyBonus:
-        throw UnimplementedError();
+        return '+${e.percent?.toStringAsFixed(0) ?? amountStr}% cooking speed';
       case FacilityEffectType.friendLimitIncrease:
-        throw UnimplementedError();
+        return '+${e.amount?.toInt() ?? 0} friends limit';
       case FacilityEffectType.storageIncrease:
-        throw UnimplementedError();
+        return '+${e.amount?.toInt() ?? 0} storage';
       case FacilityEffectType.ordersIncrease:
         return '+${e.amount?.toInt() ?? 0} orders';
     }
