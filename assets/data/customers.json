@@ -12,12 +12,12 @@
     "appearanceWeight": 10000,
     "requiredFoodId": "Taiyaki",
     "dishesOrderedIds": [
-      "taiyaki"
+      "Taiyaki"
     ],
     "customerDescription": "Little white bunny, ever so white; with two pointy ears, that stand upright.",
     "requirements": {
       "recipes": [
-        "taiyaki"
+        "Taiyaki"
       ]
     },
     "mementos": [
@@ -156,6 +156,9 @@
     "requirements": {
       "facilities": [
         "wild_fern"
+      ],
+      "recipes": [
+        "Adzuki Bean Dumpling"
       ]
     },
     "mementos": [
@@ -191,6 +194,7 @@
       "Log Cake",
       "Raspberry Yogurt",
       "Pineapple Rice",
+      "Pearl Milk Tea",
       "Planet Cake"
     ],
     "customerDescription": "Very shy but wants to make friends.",
@@ -216,11 +220,11 @@
     "appearanceWeight": 3921,
     "requiredFoodId": null,
     "dishesOrderedIds": [
-      "mushroom_pasta",
-      "kimbap",
-      "shaved_ice",
-      "scrambled_eggs_and_tomatoes",
-      "fragrant_flower_pastry"
+      "Mushroom Pasta",
+      "Kimbap",
+      "Shaved Ice",
+      "Scrambled Eggs & Tomatoes",
+      "Fragrant Flower Pastry"
     ],
     "customerDescription": "White, chubby foodies that only like sweets.",
     "requirements": {
@@ -5262,7 +5266,7 @@
       "customer",
       "special"
     ],
-    "livesIn": null,
+    "livesIn": "Nearby",
     "customerDescription": "Always borrows without returning. When will it end?",
     "requirements": {},
     "mementos": []
@@ -5274,7 +5278,7 @@
       "customer",
       "special"
     ],
-    "livesIn": null,
+    "livesIn": "Nearby",
     "customerDescription": "He's extremely troubled by his own habitual nature and can only try his best to avoid crowded spaces.",
     "requirements": {},
     "mementos": []
@@ -5286,7 +5290,7 @@
       "customer",
       "special"
     ],
-    "livesIn": null,
+    "livesIn": "Village",
     "customerDescription": "A famous magician in Las Vegas who excels at reading minds.",
     "requirements": {},
     "mementos": []
@@ -5298,7 +5302,7 @@
       "customer",
       "special"
     ],
-    "livesIn": null,
+    "livesIn": "Village",
     "customerDescription": "When the parrot begins to sing, the area becomes his own stage.",
     "requirements": {},
     "mementos": []
@@ -5518,7 +5522,7 @@
       "customer",
       "special"
     ],
-    "livesIn": null,
+    "livesIn": "Town",
     "customerDescription": "The legendary Fortuneteller who can use the forest's mysterious forces, but whether or not you believe is up to you.",
     "requirements": {},
     "mementos": []
@@ -5530,7 +5534,7 @@
       "customer",
       "special"
     ],
-    "livesIn": null,
+    "livesIn": "City",
     "customerDescription": "Covered head-to-toe in black, with eyes that peer all around. Likes shiny things, such as money.",
     "requirements": {},
     "mementos": []
@@ -5554,7 +5558,7 @@
       "customer",
       "special"
     ],
-    "livesIn": null,
+    "livesIn": "City",
     "customerDescription": "This cutthroat competitor will stop at nothing to ruin our restaurant's business.",
     "requirements": {},
     "mementos": []
@@ -5566,7 +5570,7 @@
       "customer",
       "special"
     ],
-    "livesIn": null,
+    "livesIn": "Nearby",
     "customerDescription": "Keep an eye out for him! He may steal your crops if you don't!",
     "requirements": {},
     "mementos": []
@@ -5579,8 +5583,17 @@
       "regular"
     ],
     "customerDescription": "They're always chanting 'Fresh guts!' and 'Yay, guts!'",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Purple Sweet Potato Bun",
+        "Americano",
+        "Steamed Clams"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 8802,
+    "requiredFoodId": "Purple Sweet Potato Bun"
   },
   {
     "id": "badger",
@@ -5591,7 +5604,15 @@
     ],
     "customerDescription": "DON'T let him eat too many beans. If he farts, the entire restaurant is done for.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 8020,
+    "dishesOrderedIds": [
+      "Seaweed Rice Ball",
+      "Purple Sweet Potato Bun",
+      "Americano",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "spotted_deer",
@@ -5601,8 +5622,23 @@
       "regular"
     ],
     "customerDescription": "Everyone always thinks of this kind of spotted deer, but they're pretty rare around here.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Adzuki Bean Dumpling"
+      ],
+      "facilities": [
+        "fruit_platter"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 8745,
+    "requiredFoodId": "Adzuki Bean Dumpling",
+    "dishesOrderedIds": [
+      "Bagel",
+      "Adzuki Bean Dumpling",
+      "Americano"
+    ]
   },
   {
     "id": "artist_badger",
@@ -5613,7 +5649,16 @@
     ],
     "customerDescription": "He is overconfident about his talent, very fussy about food, and is always pulling all-nighters to make finishing touches... but nobody has ever seen any of his paintings.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 7768,
+    "dishesOrderedIds": [
+      "Ramen",
+      "Adzuki Bean Bun",
+      "Espresso",
+      "Taiyaki",
+      "Pumpkin Soup"
+    ]
   },
   {
     "id": "wounded_bear",
@@ -5624,7 +5669,14 @@
     ],
     "customerDescription": "There's an unheard story behind the knife wound. The bear is a regular, and also our fish supplier!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 7605,
+    "dishesOrderedIds": [
+      "Cappuccino",
+      "Purple Sweet Potato Bun",
+      "Taiyaki"
+    ]
   },
   {
     "id": "hedgehog",
@@ -5634,8 +5686,22 @@
       "regular"
     ],
     "customerDescription": "They're covered in spines but still want to hug everyone.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Matcha Taiyaki",
+        "Porridge & Jam"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 6453,
+    "requiredFoodId": "Matcha Taiyaki",
+    "dishesOrderedIds": [
+      "Matcha Taiyaki",
+      "Strawberry Pancake",
+      "Purple Sweet Potato Bun",
+      "Porridge & Jam"
+    ]
   },
   {
     "id": "brown_wolf",
@@ -5645,8 +5711,21 @@
       "regular"
     ],
     "customerDescription": "They're highly sociable and always go out in groups, so different from cats!",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Cappuccino",
+        "Adzuki Bean Dumpling"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 6385,
+    "requiredFoodId": "Cappuccino",
+    "dishesOrderedIds": [
+      "Cappuccino",
+      "Adzuki Bean Dumpling",
+      "Steamed Clams"
+    ]
   },
   {
     "id": "striped_jackal",
@@ -5656,8 +5735,26 @@
       "regular"
     ],
     "customerDescription": "They're very sensitive to expiration dates and like cold-tossed pancreas.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Blueberry Pancake",
+        "Omurice"
+      ],
+      "facilities": [
+        "cute_sketch"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 6391,
+    "requiredFoodId": "Blueberry Pancake",
+    "dishesOrderedIds": [
+      "Blueberry Pancake",
+      "Omurice",
+      "Adzuki Bean Bun",
+      "Bagel",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "blueberry_hedgehog",
@@ -5670,9 +5767,21 @@
     "requirements": {
       "facilities": [
         "daisy"
+      ],
+      "recipes": [
+        "Bibimbap"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 6346,
+    "requiredFoodId": "Bibimbap",
+    "dishesOrderedIds": [
+      "Bibimbap",
+      "Americano",
+      "Ramen",
+      "Taiyaki"
+    ]
   },
   {
     "id": "sheep",
@@ -5682,8 +5791,24 @@
       "regular"
     ],
     "customerDescription": "During grazing season, they're all over the mountains and plains. A type of sheep from the neighbor's pasture.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Fries"
+      ],
+      "facilities": [
+        "casual_log"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 6324,
+    "requiredFoodId": "Fries",
+    "dishesOrderedIds": [
+      "Fries",
+      "Espresso",
+      "Bagel",
+      "Americano"
+    ]
   },
   {
     "id": "yellow_jackal",
@@ -5693,8 +5818,22 @@
       "regular"
     ],
     "customerDescription": "They've got bright eyes and look like they're ready to pounce at any moment.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Candied Hawthorn",
+        "Fries"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 6150,
+    "requiredFoodId": "Candied Hawthorn",
+    "dishesOrderedIds": [
+      "Candied Hawthorn",
+      "Fries",
+      "Buttered Toast",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "swan",
@@ -5704,8 +5843,24 @@
       "regular"
     ],
     "customerDescription": "When he was little he thought he was a duck, but when he grew up he still thought he was a duck, so he's not too mean.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Curry Rice",
+        "Porridge & Jam"
+      ],
+      "facilities": [
+        "blinds"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 6074,
+    "requiredFoodId": "Curry Rice",
+    "dishesOrderedIds": [
+      "Curry Rice",
+      "Porridge & Jam",
+      "Buttered Toast"
+    ]
   },
   {
     "id": "wolf",
@@ -5715,8 +5870,25 @@
       "regular"
     ],
     "customerDescription": "Normal wolves. They eat meat with every meal.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Adzuki Bean Bun",
+        "Strawberry Pancake"
+      ],
+      "facilities": [
+        "fine_wooden_table"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 5901,
+    "requiredFoodId": "Adzuki Bean Bun",
+    "dishesOrderedIds": [
+      "Adzuki Bean Bun",
+      "Strawberry Pancake",
+      "Buttered Toast",
+      "Taiyaki"
+    ]
   },
   {
     "id": "scarred_bear",
@@ -5727,7 +5899,15 @@
     ],
     "customerDescription": "There's a faint scar on his belly. He always looks down.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 5879,
+    "dishesOrderedIds": [
+      "Porridge & Jam",
+      "Sake",
+      "Purple Sweet Potato Bun",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "granny_wolf",
@@ -5740,9 +5920,23 @@
     "requirements": {
       "facilities": [
         "sunflower"
+      ],
+      "recipes": [
+        "Roast Shrimp",
+        "Fried Shrimp Sushi"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 5843,
+    "requiredFoodId": "Roast Shrimp",
+    "dishesOrderedIds": [
+      "Roast Shrimp",
+      "Fried Shrimp Sushi",
+      "Espresso",
+      "Steamed Clams",
+      "Pumpkin Soup"
+    ]
   },
   {
     "id": "border_collie",
@@ -5752,8 +5946,25 @@
       "regular"
     ],
     "customerDescription": "If you ever lose something, you can go find them. They can get it back with a single sniff and never ask for compensation.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Scrambled Eggs & Tomatoes",
+        "Blueberry Pancake"
+      ],
+      "facilities": [
+        "elegant_cafe"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 5840,
+    "requiredFoodId": "Scrambled Eggs & Tomatoes",
+    "dishesOrderedIds": [
+      "Scrambled Eggs & Tomatoes",
+      "Blueberry Pancake",
+      "Fries",
+      "Omurice"
+    ]
   },
   {
     "id": "french_bulldog",
@@ -5763,8 +5974,24 @@
       "regular"
     ],
     "customerDescription": "They're quite pompous, and they all think they're of noble blood.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Sake",
+        "Cappuccino"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 5772,
+    "requiredFoodId": "Sake",
+    "dishesOrderedIds": [
+      "Sake",
+      "Cappuccino",
+      "Strawberry Pancake",
+      "Buttered Toast",
+      "Mango Sticky Rice",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "bald_sheep",
@@ -5779,7 +6006,15 @@
         "red_rose"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "village",
+    "appearanceWeight": 5378,
+    "dishesOrderedIds": [
+      "Whiskey",
+      "Bibimbap",
+      "Omurice",
+      "Fries"
+    ]
   },
   {
     "id": "lop_eared_rabbit",
@@ -5789,8 +6024,29 @@
       "regular"
     ],
     "customerDescription": "They're always chewing on pieces of grass.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Beer",
+        "Scrambled Eggs & Tomatoes",
+        "Fries"
+      ],
+      "facilities": [
+        "stone_path",
+        "rustic_curtain"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 5215,
+    "requiredFoodId": "Beer",
+    "dishesOrderedIds": [
+      "Beer",
+      "Scrambled Eggs & Tomatoes",
+      "Fries",
+      "Taiyaki",
+      "Mango Sticky Rice",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "otter",
@@ -5800,8 +6056,27 @@
       "regular"
     ],
     "customerDescription": "They handle all the woodworking in this area. The houses and furniture they make are all sturdy and durable. They're saving the money they earn to build an even bigger dam.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Croissant",
+        "Adzuki Bean Bun",
+        "Sake"
+      ],
+      "facilities": [
+        "wooden_path",
+        "pretty_fridge"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 5104,
+    "requiredFoodId": "Croissant",
+    "dishesOrderedIds": [
+      "Croissant",
+      "Adzuki Bean Bun",
+      "Sake",
+      "Purple Sweet Potato Bun"
+    ]
   },
   {
     "id": "one_eyed_papillon",
@@ -5814,9 +6089,23 @@
     "requirements": {
       "facilities": [
         "bluebell"
+      ],
+      "recipes": [
+        "Kimbap",
+        "Curry Rice",
+        "Matcha Taiyaki"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 4675,
+    "requiredFoodId": "Kimbap",
+    "dishesOrderedIds": [
+      "Kimbap",
+      "Curry Rice",
+      "Matcha Taiyaki",
+      "Cappuccino"
+    ]
   },
   {
     "id": "fox",
@@ -5826,8 +6115,27 @@
       "regular"
     ],
     "customerDescription": "Even though he's fully grown, he still tries to act cute to get what he wants. Just give him whatever he asks for. The chef'll pay for it.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Dumplings",
+        "Bagel",
+        "Candied Hawthorn"
+      ],
+      "facilities": [
+        "fine_oven",
+        "ornate_oven"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 4565,
+    "requiredFoodId": "Dumplings",
+    "dishesOrderedIds": [
+      "Dumplings",
+      "Bagel",
+      "Candied Hawthorn",
+      "Porridge & Jam"
+    ]
   },
   {
     "id": "raccoon",
@@ -5838,7 +6146,15 @@
     ],
     "customerDescription": "Their tummies are always rumbling, but they never go hungry.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 4402,
+    "dishesOrderedIds": [
+      "Pizza",
+      "Kebabs",
+      "Custard Bun",
+      "Roast Shrimp"
+    ]
   },
   {
     "id": "terrier",
@@ -5848,8 +6164,23 @@
       "regular"
     ],
     "customerDescription": "They look like old men.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Custard Bun",
+        "Ramen",
+        "Scrambled Eggs & Tomatoes"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 4284,
+    "requiredFoodId": "Custard Bun",
+    "dishesOrderedIds": [
+      "Custard Bun",
+      "Ramen",
+      "Scrambled Eggs & Tomatoes",
+      "Strawberry Pancake"
+    ]
   },
   {
     "id": "field_dog",
@@ -5859,8 +6190,27 @@
       "regular"
     ],
     "customerDescription": "Has a bit of an underbite and may not be well-liked among humans. I hear they can't even live in the city.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Fried Shrimp Sushi",
+        "Cup Noodles",
+        "Roe Sushi"
+      ],
+      "facilities": [
+        "fine_produce"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 3969,
+    "requiredFoodId": "Fried Shrimp Sushi",
+    "dishesOrderedIds": [
+      "Fried Shrimp Sushi",
+      "Cup Noodles",
+      "Roe Sushi",
+      "Candied Hawthorn",
+      "Matcha Cake Roll"
+    ]
   },
   {
     "id": "shiba",
@@ -5873,9 +6223,23 @@
     "requirements": {
       "facilities": [
         "white_rose"
+      ],
+      "recipes": [
+        "Salmon Sushi",
+        "Tea",
+        "Fries"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 2200,
+    "requiredFoodId": "Salmon Sushi",
+    "dishesOrderedIds": [
+      "Salmon Sushi",
+      "Tea",
+      "Fries",
+      "Bibimbap"
+    ]
   },
   {
     "id": "ostrich",
@@ -5885,8 +6249,27 @@
       "regular"
     ],
     "customerDescription": "We made the door higher just for them.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Shaved Ice",
+        "Fried Shrimp Sushi",
+        "Croissant"
+      ],
+      "facilities": [
+        "celebrity_chef"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 3919,
+    "requiredFoodId": "Shaved Ice",
+    "dishesOrderedIds": [
+      "Shaved Ice",
+      "Fried Shrimp Sushi",
+      "Croissant",
+      "Adzuki Bean Bun",
+      "Raspberry Yogurt"
+    ]
   },
   {
     "id": "paper_bagged_ostrich",
@@ -5897,7 +6280,12 @@
     ],
     "customerDescription": "A shy guy.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 3905,
+    "dishesOrderedIds": [
+      "Candied Hawthorn"
+    ]
   },
   {
     "id": "berry_hedgehog",
@@ -5907,8 +6295,27 @@
       "regular"
     ],
     "customerDescription": "They tend to worry, so they like to hoard food. They'll curl up into a ball if they get frightened.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Kebabs",
+        "Shaved Ice",
+        "Kimbap"
+      ],
+      "facilities": [
+        "lavish_cakes"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 3864,
+    "requiredFoodId": "Kebabs",
+    "dishesOrderedIds": [
+      "Kebabs",
+      "Shaved Ice",
+      "Kimbap",
+      "Porridge & Jam",
+      "Raspberry Yogurt"
+    ]
   },
   {
     "id": "chocolate_lab",
@@ -5922,9 +6329,23 @@
       "facilities": [
         "daisy",
         "red_rose"
+      ],
+      "recipes": [
+        "Hot Pot",
+        "Wrap",
+        "Cup Noodles"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 3855,
+    "requiredFoodId": "Hot Pot",
+    "dishesOrderedIds": [
+      "Hot Pot",
+      "Wrap",
+      "Cup Noodles",
+      "Matcha Taiyaki"
+    ]
   },
   {
     "id": "chocolate_border_collie",
@@ -5934,8 +6355,27 @@
       "regular"
     ],
     "customerDescription": "These city-slickers get all suave whenever they see a human.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Roe Sushi",
+        "Salmon Sushi",
+        "Tea"
+      ],
+      "facilities": [
+        "elegant_window",
+        "elegant_cabinets"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 3540,
+    "requiredFoodId": "Roe Sushi",
+    "dishesOrderedIds": [
+      "Roe Sushi",
+      "Salmon Sushi",
+      "Tea",
+      "Porridge & Jam"
+    ]
   },
   {
     "id": "boar",
@@ -5946,7 +6386,16 @@
     ],
     "customerDescription": "They're related to pigs, but they've got an entirely different temper, so take care when you're serving them",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 3292,
+    "dishesOrderedIds": [
+      "Beer",
+      "Kebabs",
+      "Spaghetti",
+      "Croissant",
+      "Fries"
+    ]
   },
   {
     "id": "black_shiba",
@@ -5956,8 +6405,25 @@
       "regular"
     ],
     "customerDescription": "They love to go for walks and play tug-of-war.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Soy Milk & Cruller",
+        "Custard Bun",
+        "Fried Shrimp Sushi",
+        "Pizza"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 3123,
+    "requiredFoodId": "Soy Milk & Cruller",
+    "dishesOrderedIds": [
+      "Soy Milk & Cruller",
+      "Custard Bun",
+      "Fried Shrimp Sushi",
+      "Pizza",
+      "Blueberry Pancake"
+    ]
   },
   {
     "id": "black_lab",
@@ -5967,8 +6433,29 @@
       "regular"
     ],
     "customerDescription": "Has unlimited energy, a huge appetite, good teeth, and stinky breath, possibly from chewing too many shoes...",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Spaghetti",
+        "Salmon Sushi",
+        "Whiskey",
+        "Ramen"
+      ],
+      "facilities": [
+        "oval_mat",
+        "artsy_table"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 3110,
+    "requiredFoodId": "Spaghetti",
+    "dishesOrderedIds": [
+      "Spaghetti",
+      "Salmon Sushi",
+      "Whiskey",
+      "Ramen",
+      "Bibimbap"
+    ]
   },
   {
     "id": "boston_terrier",
@@ -5982,9 +6469,25 @@
       "facilities": [
         "white_rose",
         "sunflower"
+      ],
+      "recipes": [
+        "Tea",
+        "Cup Noodles",
+        "Dumplings",
+        "Blueberry Pancake"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 2757,
+    "requiredFoodId": "Tea",
+    "dishesOrderedIds": [
+      "Tea",
+      "Cup Noodles",
+      "Dumplings",
+      "Blueberry Pancake",
+      "Croissant"
+    ]
   },
   {
     "id": "merle_border_collie",
@@ -5994,8 +6497,28 @@
       "regular"
     ],
     "customerDescription": "These dogs look super cool, but they'd rather play with people than dogs.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Taco",
+        "Wrap",
+        "Hot Pot",
+        "Roe Sushi"
+      ],
+      "facilities": [
+        "advanced_counter"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 2744,
+    "requiredFoodId": "Taco",
+    "dishesOrderedIds": [
+      "Taco",
+      "Wrap",
+      "Hot Pot",
+      "Roe Sushi",
+      "Custard Bun"
+    ]
   },
   {
     "id": "pug",
@@ -6006,7 +6529,16 @@
     ],
     "customerDescription": "They're so stinky that the chef stays far away whenever he sees them, but they're welcomed by the other animals because they're good at playing dumb and listening in on the humans' secrets. They're always gossiping.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 2576,
+    "dishesOrderedIds": [
+      "Baked Fish",
+      "Shaved Ice",
+      "Kimbap",
+      "Mushroom Pasta",
+      "Croissant"
+    ]
   },
   {
     "id": "corgi",
@@ -6016,8 +6548,28 @@
       "regular"
     ],
     "customerDescription": "A stingy pup who likes fighting with others. If he breaks the tableware, make sure he pays up!",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Cupcake",
+        "Soy Milk & Cruller",
+        "Beer",
+        "Fried Shrimp Sushi"
+      ],
+      "facilities": [
+        "lux_red_curtain"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 1748,
+    "requiredFoodId": "Cupcake",
+    "dishesOrderedIds": [
+      "Cupcake",
+      "Soy Milk & Cruller",
+      "Beer",
+      "Fried Shrimp Sushi",
+      "Roast Shrimp"
+    ]
   },
   {
     "id": "speckled_pig",
@@ -6033,7 +6585,16 @@
         "bluebell"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 1505,
+    "dishesOrderedIds": [
+      "Spaghetti",
+      "Cup Noodles",
+      "Roe Sushi",
+      "Sake",
+      "Fried Shrimp Sushi"
+    ]
   },
   {
     "id": "husky",
@@ -6043,8 +6604,28 @@
       "regular"
     ],
     "customerDescription": "These easy-going kings of destruction are always liked by female dogs, but nobody cares for their wisdom.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Chocolate Cake",
+        "Tea",
+        "Hot Pot",
+        "Whiskey"
+      ],
+      "facilities": [
+        "lux_shade"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 1272,
+    "requiredFoodId": "Chocolate Cake",
+    "dishesOrderedIds": [
+      "Chocolate Cake",
+      "Tea",
+      "Hot Pot",
+      "Whiskey",
+      "Dumplings"
+    ]
   },
   {
     "id": "tri_colored_corgi",
@@ -6054,8 +6635,25 @@
       "regular"
     ],
     "customerDescription": "As pretty as any other corgi.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Martini",
+        "Spaghetti",
+        "Hot Pot",
+        "Dumplings"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 1046,
+    "requiredFoodId": "Martini",
+    "dishesOrderedIds": [
+      "Martini",
+      "Spaghetti",
+      "Hot Pot",
+      "Dumplings",
+      "Salmon Sushi"
+    ]
   },
   {
     "id": "pig",
@@ -6071,7 +6669,16 @@
         "bluebell"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 792,
+    "dishesOrderedIds": [
+      "Fried Rice",
+      "Beer",
+      "Kimbap",
+      "Custard Bun",
+      "Pizza"
+    ]
   },
   {
     "id": "old_collie",
@@ -6081,8 +6688,22 @@
       "regular"
     ],
     "customerDescription": "You usually won't see them on rainy days.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "facilities": [
+        "yellow_flower_bed",
+        "blue_flower_bed",
+        "cozy_table"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 772,
+    "dishesOrderedIds": [
+      "Bento",
+      "Beer",
+      "Shaved Ice",
+      "Kebabs"
+    ]
   },
   {
     "id": "fennec_fox",
@@ -6092,8 +6713,28 @@
       "regular"
     ],
     "customerDescription": "They may look young, but they're actually menopausal! They always feel hot, so they like cold foods and drinks.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Ramen",
+        "Salmon Sushi",
+        "Tea",
+        "Espresso"
+      ],
+      "facilities": [
+        "patisserie_counter"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 612,
+    "requiredFoodId": "Ramen",
+    "dishesOrderedIds": [
+      "Ramen",
+      "Salmon Sushi",
+      "Tea",
+      "Espresso",
+      "Roast Shrimp"
+    ]
   },
   {
     "id": "penguin",
@@ -6103,8 +6744,22 @@
       "regular"
     ],
     "customerDescription": "Don't ask me why there are penguins here. I have no idea! Everyone likes hearing their stories about faraway glaciers.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "facilities": [
+        "high_end_fridge"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 570,
+    "dishesOrderedIds": [
+      "Shaved Ice",
+      "Whiskey",
+      "Cup Noodles",
+      "Croissant",
+      "Cappuccino",
+      "Sweet and Sour Pork"
+    ]
   },
   {
     "id": "white_collar_fox",
@@ -6114,8 +6769,22 @@
       "regular"
     ],
     "customerDescription": "They're always in a hurry to pay and seem to do business with some dangerous man. We like these kinds of customers!",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "facilities": [
+        "artsy_table"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 541,
+    "dishesOrderedIds": [
+      "Kebabs",
+      "Salmon Sushi",
+      "Whiskey",
+      "Wrap",
+      "Roast Shrimp",
+      "Sweet and Sour Pork"
+    ]
   },
   {
     "id": "lynx",
@@ -6129,9 +6798,25 @@
       "facilities": [
         "red_rose",
         "bluebell"
+      ],
+      "recipes": [
+        "Hot Pot",
+        "Fried Rice",
+        "Kimbap",
+        "Cup Noodles"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 332,
+    "requiredFoodId": "Hot Pot",
+    "dishesOrderedIds": [
+      "Hot Pot",
+      "Fried Rice",
+      "Kimbap",
+      "Cup Noodles",
+      "Dumplings"
+    ]
   },
   {
     "id": "dachshund",
@@ -6141,8 +6826,28 @@
       "regular"
     ],
     "customerDescription": "Loves waxing herself.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Wrap",
+        "Shaved Ice",
+        "Roe Sushi",
+        "Ramen"
+      ],
+      "facilities": [
+        "fine_liquor"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 295,
+    "requiredFoodId": "Wrap",
+    "dishesOrderedIds": [
+      "Wrap",
+      "Shaved Ice",
+      "Roe Sushi",
+      "Ramen",
+      "Hot Pot"
+    ]
   },
   {
     "id": "rescue_dog",
@@ -6155,9 +6860,22 @@
     "requirements": {
       "letters": [
         "party_puppys_response"
+      ],
+      "facilities": [
+        "vip_treatment",
+        "eagle_express"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 287,
+    "dishesOrderedIds": [
+      "Cola",
+      "Taco",
+      "Spaghetti",
+      "Cup Noodles",
+      "Fried Shrimp Sushi"
+    ]
   },
   {
     "id": "sloth",
@@ -6171,9 +6889,22 @@
       "facilities": [
         "daisy",
         "sunflower"
+      ],
+      "recipes": [
+        "Soy Milk & Cruller",
+        "Fried Tofu",
+        "Cola"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 280,
+    "requiredFoodId": "Soy Milk & Cruller",
+    "dishesOrderedIds": [
+      "Soy Milk & Cruller",
+      "Fried Tofu",
+      "Cola"
+    ]
   },
   {
     "id": "polar_bear",
@@ -6183,8 +6914,23 @@
       "regular"
     ],
     "customerDescription": "A homeless and rare type of bear.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Whiskey",
+        "Sweet Dumplings",
+        "Cupcake"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 274,
+    "requiredFoodId": "Whiskey",
+    "dishesOrderedIds": [
+      "Whiskey",
+      "Sweet Dumplings",
+      "Cupcake",
+      "Mushroom Pasta"
+    ]
   },
   {
     "id": "slim_white_dog",
@@ -6199,7 +6945,14 @@
         "daisy"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 268,
+    "dishesOrderedIds": [
+      "Orange Juice",
+      "Bento",
+      "Baked Fish"
+    ]
   },
   {
     "id": "insta_pup",
@@ -6211,12 +6964,20 @@
     "customerDescription": "He always has the latest mobile camera on his neck.",
     "requirements": {
       "facilities": [
-        "daisy",
-        "sunflower",
-        "bluebell"
+        "stump_mailbox",
+        "hummingbird_post",
+        "eagle_express"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 262,
+    "dishesOrderedIds": [
+      "Bento",
+      "Sweet Dumplings",
+      "Cup Noodles",
+      "Dumplings"
+    ]
   },
   {
     "id": "flamingo",
@@ -6226,8 +6987,24 @@
       "regular"
     ],
     "customerDescription": "Enjoys sleep and has a slight inferiority complex.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Chocolate Cake",
+        "Popcorn",
+        "Bento"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 256,
+    "requiredFoodId": "Chocolate Cake",
+    "dishesOrderedIds": [
+      "Chocolate Cake",
+      "Popcorn",
+      "Bento",
+      "Taco",
+      "Pizza"
+    ]
   },
   {
     "id": "gnome",
@@ -6237,8 +7014,24 @@
       "regular"
     ],
     "customerDescription": "He's rarely seen, but those who do see him will be in luck.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Fried Rice",
+        "Takoyaki",
+        "Chocolate Cake"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 250,
+    "requiredFoodId": "Fried Rice",
+    "dishesOrderedIds": [
+      "Fried Rice",
+      "Takoyaki",
+      "Chocolate Cake",
+      "Salmon Sushi",
+      "Kimbap"
+    ]
   },
   {
     "id": "mushroom_sloth",
@@ -6248,8 +7041,26 @@
       "regular"
     ],
     "customerDescription": "He's so lazy a mushroom's grown on his head.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Wrap",
+        "Candied Strawberries",
+        "Fried Rice"
+      ],
+      "facilities": [
+        "simple_barbecue",
+        "hanging_barbecue"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 244,
+    "requiredFoodId": "Wrap",
+    "dishesOrderedIds": [
+      "Wrap",
+      "Candied Strawberries",
+      "Fried Rice"
+    ]
   },
   {
     "id": "influencer_flamingo",
@@ -6266,7 +7077,15 @@
         "bluebell"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 238,
+    "dishesOrderedIds": [
+      "Orange Juice",
+      "Spaghetti",
+      "Martini",
+      "Chocolate Cake"
+    ]
   },
   {
     "id": "tiger",
@@ -6276,8 +7095,25 @@
       "regular"
     ],
     "customerDescription": "Looks like he could be Jiji's distant relative.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Fried Tofu",
+        "Cookies",
+        "Taco"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 232,
+    "requiredFoodId": "Fried Tofu",
+    "dishesOrderedIds": [
+      "Fried Tofu",
+      "Cookies",
+      "Taco",
+      "Baked Fish",
+      "Custard Bun",
+      "Matcha Cake Roll"
+    ]
   },
   {
     "id": "little_black_dog",
@@ -6287,8 +7123,23 @@
       "regular"
     ],
     "customerDescription": "Nobody knows what breed he is, but everyone likes him!",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "facilities": [
+        "modern_barbecue",
+        "rotating_barbecue"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 226,
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Cookies",
+      "Roe Sushi",
+      "Ramen",
+      "Hot Pot",
+      "Colonel Nuggets"
+    ]
   },
   {
     "id": "white_rabbit",
@@ -6301,9 +7152,22 @@
     "requirements": {
       "facilities": [
         "white_rose"
+      ],
+      "recipes": [
+        "Chicken Burger",
+        "Montblanc",
+        "Cookies"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 330,
+    "requiredFoodId": "Chicken Burger",
+    "dishesOrderedIds": [
+      "Chicken Burger",
+      "Montblanc",
+      "Cookies"
+    ]
   },
   {
     "id": "cheshire_cat",
@@ -6313,8 +7177,20 @@
       "regular"
     ],
     "customerDescription": "He's always grinning. Don't believe anything he says! I do think I've seen him in some fairytale, though...",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "facilities": [
+        "fine_liquor"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 214,
+    "dishesOrderedIds": [
+      "Orange Juice",
+      "Mango Surprise",
+      "Roe Sushi",
+      "Ramen"
+    ]
   },
   {
     "id": "reporter",
@@ -6331,7 +7207,17 @@
         "red_rose"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 208,
+    "dishesOrderedIds": [
+      "Orange Juice",
+      "Chicken Burger",
+      "Sweet Dumplings",
+      "Takoyaki",
+      "Steamboat",
+      "Sycee Dumplings"
+    ]
   },
   {
     "id": "glamourous_lady",
@@ -6344,9 +7230,24 @@
     "requirements": {
       "letters": [
         "sunset_luxury_tours"
+      ],
+      "recipes": [
+        "Fried Tofu",
+        "Sweet Dumplings"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 202,
+    "requiredFoodId": "Fried Tofu",
+    "dishesOrderedIds": [
+      "Fried Tofu",
+      "Sweet Dumplings",
+      "Rice Pudding",
+      "Eggscellent Bowl",
+      "Cold Watermelon",
+      "Sycee Dumplings"
+    ]
   },
   {
     "id": "scotch_collie",
@@ -6356,8 +7257,29 @@
       "regular"
     ],
     "customerDescription": "Has a very long face.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Martini",
+        "Takoyaki",
+        "Mango Surprise",
+        "Orange Juice"
+      ],
+      "facilities": [
+        "fine_liquor"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 196,
+    "requiredFoodId": "Martini",
+    "dishesOrderedIds": [
+      "Martini",
+      "Takoyaki",
+      "Mango Surprise",
+      "Orange Juice",
+      "Steamboat",
+      "Colonel Nuggets"
+    ]
   },
   {
     "id": "programmers_dog",
@@ -6368,7 +7290,19 @@
     ],
     "customerDescription": "The colors have been washed from his clothes.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 190,
+    "dishesOrderedIds": [
+      "Dumplings",
+      "Pizza",
+      "Taco",
+      "Rice Pudding",
+      "Eggscellent Bowl",
+      "Strawberry Shaved Ice",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "dalmatian",
@@ -6380,12 +7314,21 @@
     "customerDescription": "A very loyal dog.",
     "requirements": {
       "facilities": [
-        "daisy",
-        "red_rose",
-        "bluebell"
+        "fairy_bluebells"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 183,
+    "dishesOrderedIds": [
+      "Pizza",
+      "Tea",
+      "Fried Rice",
+      "Spaghetti",
+      "Rice Pudding",
+      "Sycee Dumplings",
+      "Colonel Nuggets"
+    ]
   },
   {
     "id": "party_puppy",
@@ -6395,8 +7338,27 @@
       "regular"
     ],
     "customerDescription": "Just came back from a party without even removing her hat.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Montblanc",
+        "Candied Strawberries",
+        "Chicken Burger",
+        "Fried Tofu"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 178,
+    "requiredFoodId": "Montblanc",
+    "dishesOrderedIds": [
+      "Montblanc",
+      "Candied Strawberries",
+      "Chicken Burger",
+      "Fried Tofu",
+      "Cup Noodles",
+      "Whiskey",
+      "Steamboat"
+    ]
   },
   {
     "id": "green_hat_gnome",
@@ -6406,8 +7368,25 @@
       "regular"
     ],
     "customerDescription": "An even rarer gnome. If you see him, you'll be super-duper lucky!",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "facilities": [
+        "bird_bath",
+        "river_god_pond",
+        "bastet_fountain"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 20,
+    "dishesOrderedIds": [
+      "Takoyaki",
+      "Orange Juice",
+      "Fried Rice",
+      "Spaghetti",
+      "Shaved Ice",
+      "Spicy Crawdads",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "cici",
@@ -6422,9 +7401,25 @@
         "party_puppys_response",
         "new_zealand_journal_page_1",
         "new_zealand_journal_page_2"
+      ],
+      "recipes": [
+        "Mango Surprise",
+        "Coconut Cassia Wine"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 100,
+    "requiredFoodId": "Mango Surprise",
+    "dishesOrderedIds": [
+      "Mango Surprise",
+      "Coconut Cassia Wine",
+      "Cold Watermelon",
+      "Spicy Crawdads",
+      "Candied Strawberries",
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich"
+    ]
   },
   {
     "id": "lucky_pig",
@@ -6434,8 +7429,30 @@
       "regular"
     ],
     "customerDescription": "Happy Year of the Pig! All is well in the world!",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Eggscellent Bowl",
+        "Takoyaki"
+      ],
+      "facilities": [
+        "hummingbird_post"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 160,
+    "requiredFoodId": "Eggscellent Bowl",
+    "dishesOrderedIds": [
+      "Eggscellent Bowl",
+      "Takoyaki",
+      "Mango Surprise",
+      "Cold Watermelon",
+      "Martini",
+      "Avocado Sandwich",
+      "Steamboat",
+      "Fish of Abundance",
+      "Mango Sticky Rice"
+    ]
   },
   {
     "id": "shiba_puppy",
@@ -6448,9 +7465,28 @@
     "requirements": {
       "letters": [
         "shiba_puppys_photo"
+      ],
+      "recipes": [
+        "Soy Milk & Cruller",
+        "Bento",
+        "Popcorn",
+        "Cookies"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 150,
+    "requiredFoodId": "Soy Milk & Cruller",
+    "dishesOrderedIds": [
+      "Chicken Burger",
+      "Soy Milk & Cruller",
+      "Spaghetti",
+      "Popcorn",
+      "Cookies",
+      "Coconut Cassia Wine",
+      "Strawberry Shaved Ice",
+      "Sycee Dumplings"
+    ]
   },
   {
     "id": "alpaca",
@@ -6463,9 +7499,28 @@
     "requirements": {
       "letters": [
         "new_zealand_journal_page_1"
+      ],
+      "recipes": [
+        "Cupcake",
+        "Hot Pot",
+        "Cola",
+        "Spaghetti"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 140,
+    "requiredFoodId": "Cupcake",
+    "dishesOrderedIds": [
+      "Cupcake",
+      "Hot Pot",
+      "Cola",
+      "Spaghetti",
+      "Cookies",
+      "Spicy Crawdads",
+      "Avocado Sandwich",
+      "Raspberry Yogurt"
+    ]
   },
   {
     "id": "little_lion",
@@ -6475,8 +7530,32 @@
       "regular"
     ],
     "customerDescription": "Has a head of golden fur that makes the bald animals jealous. Loves meat, but is very gentle.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Coconut Cassia Wine",
+        "Cold Watermelon",
+        "Spicy Crawdads"
+      ],
+      "facilities": [
+        "blue_folding_curtain",
+        "dreams_of_tattered_leaves"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 130,
+    "requiredFoodId": "Coconut Cassia Wine",
+    "dishesOrderedIds": [
+      "Coconut Cassia Wine",
+      "Cold Watermelon",
+      "Spicy Crawdads",
+      "Chicken Burger",
+      "Candied Strawberries",
+      "Rice Pudding",
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "abi",
@@ -6488,12 +7567,28 @@
     "customerDescription": "A bald programmer. He needs to be ready to fix bugs at any time, so he's always holding a computer.",
     "requirements": {
       "facilities": [
-        "white_rose",
-        "red_rose",
-        "bluebell"
+        "starry_fantasy"
+      ],
+      "recipes": [
+        "Coconut Cassia Wine",
+        "Cold Watermelon",
+        "Spicy Crawdads",
+        "Strawberry Shaved Ice",
+        "Avocado Sandwich"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 120,
+    "requiredFoodId": "Coconut Cassia Wine",
+    "dishesOrderedIds": [
+      "Coconut Cassia Wine",
+      "Cold Watermelon",
+      "Spicy Crawdads",
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Sycee Dumplings"
+    ]
   },
   {
     "id": "little_fox",
@@ -6511,9 +7606,23 @@
       ],
       "letters": [
         "little_foxs_letter"
+      ],
+      "recipes": [
+        "Buckwheat Noodles",
+        "Chilled Edamame"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 100,
+    "requiredFoodId": "Buckwheat Noodles",
+    "dishesOrderedIds": [
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Iced Lemon Tea",
+      "Buckwheat Noodles",
+      "Chilled Edamame"
+    ]
   },
   {
     "id": "squirrel",
@@ -6523,8 +7632,27 @@
       "regular"
     ],
     "customerDescription": "Enjoys meddling in others' affairs.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Buckwheat Noodles"
+      ],
+      "facilities": [
+        "the_days_of_old",
+        "mushroom_love"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 100,
+    "requiredFoodId": "Buckwheat Noodles",
+    "dishesOrderedIds": [
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Iced Lemon Tea",
+      "Buckwheat Noodles",
+      "Chilled Edamame",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "wild_duck",
@@ -6538,9 +7666,25 @@
       "letters": [
         "eggys_diary_2",
         "old_journal_page_2"
+      ],
+      "recipes": [
+        "Chilled Edamame"
+      ],
+      "facilities": [
+        "sweet_love"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 100,
+    "requiredFoodId": "Chilled Edamame",
+    "dishesOrderedIds": [
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Iced Lemon Tea",
+      "Buckwheat Noodles",
+      "Chilled Edamame"
+    ]
   },
   {
     "id": "wood_chuckin_beaver",
@@ -6553,9 +7697,29 @@
     "requirements": {
       "letters": [
         "otters_letter_1"
+      ],
+      "recipes": [
+        "Coconut Cassia Wine",
+        "Cold Watermelon",
+        "Iced Lemon Tea"
+      ],
+      "facilities": [
+        "mushroom_forest"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 50,
+    "requiredFoodId": "Coconut Cassia Wine",
+    "dishesOrderedIds": [
+      "Coconut Cassia Wine",
+      "Cold Watermelon",
+      "Iced Lemon Tea",
+      "Buckwheat Noodles",
+      "Chilled Edamame",
+      "Fish of Abundance",
+      "Matcha Cake Roll"
+    ]
   },
   {
     "id": "brown_horse",
@@ -6565,8 +7729,31 @@
       "regular"
     ],
     "customerDescription": "People think he is lonely, but he enjoys his freedom. That is his nose, not his eyes.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Takoyaki",
+        "Spicy Crawdads",
+        "Chilled Edamame",
+        "Snail Noodles"
+      ],
+      "facilities": [
+        "sadakos_well",
+        "pumpkin_chest",
+        "tree_of_despair",
+        "monster_dessert"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 80,
+    "requiredFoodId": "Takoyaki",
+    "dishesOrderedIds": [
+      "Takoyaki",
+      "Cold Watermelon",
+      "Spicy Crawdads",
+      "Chilled Edamame",
+      "Snail Noodles"
+    ]
   },
   {
     "id": "yorkie_mom",
@@ -6576,8 +7763,31 @@
       "regular"
     ],
     "customerDescription": "Mom is a high class VIP member of the hair salon. She insists on eating walnuts and black sesame paste every day. She spends an average of 8 hours a day brushing her hair. While this might seem like a daily chore to others, she enjoys it very much.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Takoyaki",
+        "Spicy Crawdads",
+        "Snail Noodles",
+        "Black Sesame Paste"
+      ],
+      "facilities": [
+        "reverie_fridge",
+        "fantasy_carrot",
+        "mushroom_forest",
+        "monster_dessert"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 80,
+    "requiredFoodId": "Takoyaki",
+    "dishesOrderedIds": [
+      "Takoyaki",
+      "Cold Watermelon",
+      "Spicy Crawdads",
+      "Snail Noodles",
+      "Black Sesame Paste"
+    ]
   },
   {
     "id": "yorkie_dad",
@@ -6587,8 +7797,33 @@
       "regular"
     ],
     "customerDescription": "Dad wants to go to the salon for a haircut, because his hair is so long that his eyes are covered. However, Mom says 'Hair gives us life! Cutting off your hair is like cutting away our life!'",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Coconut Cassia Wine",
+        "Strawberry Shaved Ice",
+        "Mapo Tofu",
+        "Black Sesame Paste"
+      ],
+      "facilities": [
+        "tree_of_despair",
+        "bone_shelf",
+        "scrumptious_dinner"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 100,
+    "requiredFoodId": "Coconut Cassia Wine",
+    "dishesOrderedIds": [
+      "Coconut Cassia Wine",
+      "Cold Watermelon",
+      "Strawberry Shaved Ice",
+      "Chilled Edamame",
+      "Black Sesame Paste",
+      "Mapo Tofu",
+      "Eight Treasure Rice Pudding",
+      "Mango Sticky Rice"
+    ]
   },
   {
     "id": "pink_piggy",
@@ -6598,8 +7833,32 @@
       "regular"
     ],
     "customerDescription": "Pink Piggy is always happy. His smile and chubby face can rid friends of all bad luck!",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Spicy Crawdads",
+        "Avocado Sandwich",
+        "Mapo Tofu",
+        "Black Sesame Paste"
+      ],
+      "facilities": [
+        "tree_of_despair",
+        "bone_shelf",
+        "scrumptious_dinner",
+        "reverie_fridge"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 80,
+    "requiredFoodId": "Spicy Crawdads",
+    "dishesOrderedIds": [
+      "Spicy Crawdads",
+      "Avocado Sandwich",
+      "Strawberry Shaved Ice",
+      "Chilled Edamame",
+      "Mapo Tofu",
+      "Black Sesame Paste"
+    ]
   },
   {
     "id": "yorkie_pup",
@@ -6609,8 +7868,31 @@
       "regular"
     ],
     "customerDescription": "Pup is a boy but Mom insists that he not cut his hair, so he looks very cute. Everyone always compliments him, 'Such a cute little girl!'",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Cookies",
+        "Spicy Crawdads",
+        "Snail Noodles",
+        "Black Sesame Paste"
+      ],
+      "facilities": [
+        "reverie_table",
+        "reverie_coffee_bar",
+        "reverie_fence"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 60,
+    "requiredFoodId": "Cookies",
+    "dishesOrderedIds": [
+      "Cookies",
+      "Sweet Dumplings",
+      "Spicy Crawdads",
+      "Snail Noodles",
+      "Black Sesame Paste",
+      "Fried Potato"
+    ]
   },
   {
     "id": "bean",
@@ -6620,8 +7902,31 @@
       "regular"
     ],
     "customerDescription": "Has sharp little teeth that are especially good at gnawing through cables.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Spicy Crawdads",
+        "Snail Noodles",
+        "Pearl Milk Tea"
+      ],
+      "facilities": [
+        "reverie_table",
+        "reverie_wall_lamp",
+        "mysterious_tree_hole",
+        "heartwarming_dessert"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 90,
+    "requiredFoodId": "Spicy Crawdads",
+    "dishesOrderedIds": [
+      "Spicy Crawdads",
+      "Snail Noodles",
+      "Pearl Milk Tea",
+      "Roasted Sweet Potato",
+      "Black Sesame Paste",
+      "Fried Potato"
+    ]
   },
   {
     "id": "dr_puppy",
@@ -6631,8 +7936,33 @@
       "regular"
     ],
     "customerDescription": "The skin on his hand is peeling from repeated hand-washing. Has strange marks on his face.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Spicy Crawdads",
+        "Black Sesame Paste",
+        "Roasted Sweet Potato"
+      ],
+      "facilities": [
+        "reverie_table",
+        "mysterious_tree_hole",
+        "heartwarming_dessert"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 130,
+    "requiredFoodId": "Spicy Crawdads",
+    "dishesOrderedIds": [
+      "Roasted Sweet Potato",
+      "Mapo Tofu",
+      "Spicy Crawdads",
+      "Snail Noodles",
+      "Black Sesame Paste",
+      "Fried Potato",
+      "Eight Treasure Rice Pudding",
+      "Pineapple Bun",
+      "Coconut Milk Pudding"
+    ]
   },
   {
     "id": "moon_rabbit",
@@ -6642,8 +7972,32 @@
       "regular"
     ],
     "customerDescription": "A rabbit with a story. He used to work in an office but quit to live in a small town in the country. He likes to fish.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Eight Treasure Rice Pudding",
+        "Rice Pudding",
+        "Black Sesame Paste",
+        "Roasted Sweet Potato"
+      ],
+      "facilities": [
+        "heartwarming_dessert",
+        "mysterious_tree_hole",
+        "seashell_counter"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 130,
+    "requiredFoodId": "Eight Treasure Rice Pudding",
+    "dishesOrderedIds": [
+      "Roasted Sweet Potato",
+      "Mapo Tofu",
+      "Spicy Crawdads",
+      "Fried Potato",
+      "Black Sesame Paste",
+      "Eight Treasure Rice Pudding",
+      "Dongpo Pork"
+    ]
   },
   {
     "id": "capybara",
@@ -6653,8 +8007,28 @@
       "regular"
     ],
     "customerDescription": "The favorite kindergarten teacher of the children. She is peace-loving and takes good care of her health.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Fried Shrimp Sushi",
+        "Kimbap",
+        "Kebabs",
+        "Salmon Sushi"
+      ],
+      "facilities": [
+        "cod_under_the_sun"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 666,
+    "requiredFoodId": "Fried Shrimp Sushi",
+    "dishesOrderedIds": [
+      "Fried Shrimp Sushi",
+      "Kimbap",
+      "Kebabs",
+      "Salmon Sushi",
+      "Dongpo Pork"
+    ]
   },
   {
     "id": "pangolin_baby",
@@ -6664,8 +8038,27 @@
       "regular"
     ],
     "customerDescription": "Got separated from his mother and is going around everywhere asking about her.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Eggscellent Bowl",
+        "Mugwort Dumpling",
+        "Takoyaki"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 200,
+    "requiredFoodId": "Eggscellent Bowl",
+    "dishesOrderedIds": [
+      "Eggscellent Bowl",
+      "Takoyaki",
+      "Mango Surprise",
+      "Avocado Sandwich",
+      "Steamboat",
+      "Fish of Abundance",
+      "Mugwort Dumpling",
+      "Dongpo Pork"
+    ]
   },
   {
     "id": "pangolin_mama",
@@ -6675,8 +8068,27 @@
       "regular"
     ],
     "customerDescription": "The gentle animal was caught by the poachers before but managed to escape. She is now looking for her own baby when she hears on the radio that some ancient book seems to have changed some things.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Eight Treasure Rice Pudding",
+        "Strawberry Pudding",
+        "Mugwort Dumpling"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 150,
+    "requiredFoodId": "Eight Treasure Rice Pudding",
+    "dishesOrderedIds": [
+      "Roasted Sweet Potato",
+      "Mapo Tofu",
+      "Spicy Crawdads",
+      "Fried Potato",
+      "Strawberry Pudding",
+      "Mugwort Dumpling",
+      "Pineapple Bun",
+      "Glutinous Rice Cake"
+    ]
   },
   {
     "id": "guru",
@@ -6686,8 +8098,27 @@
       "regular"
     ],
     "customerDescription": "Gumi's distant cousin. She's a gentle and cute little girl, but Gumi is always afraid of her.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Sweet Dumplings",
+        "Crispy Fried Meat",
+        "Snail Noodles",
+        "Black Sesame Paste"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 120,
+    "requiredFoodId": "Sweet Dumplings",
+    "dishesOrderedIds": [
+      "Sweet Dumplings",
+      "Crispy Fried Meat",
+      "Snail Noodles",
+      "Black Sesame Paste",
+      "Fried Potato",
+      "Curried Crab",
+      "Roujiamo"
+    ]
   },
   {
     "id": "red_squirrel",
@@ -6697,8 +8128,27 @@
       "regular"
     ],
     "customerDescription": "Fur as red as fire. Looks a bit like Little Fox.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Eggscellent Bowl",
+        "Mugwort Dumpling",
+        "Takoyaki",
+        "Parfait"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 180,
+    "requiredFoodId": "Eggscellent Bowl",
+    "dishesOrderedIds": [
+      "Eggscellent Bowl",
+      "Mugwort Dumpling",
+      "Takoyaki",
+      "Parfait",
+      "Fried Potato",
+      "Lucky Biscuits",
+      "Pineapple Bun"
+    ]
   },
   {
     "id": "beaver_engineer",
@@ -6708,8 +8158,28 @@
       "regular"
     ],
     "customerDescription": "A student learning ecological engineering with excellent results. Can build dams, help to fight drought, improve water quality, and even combat climate change.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Sweet Dumplings",
+        "Crispy Fried Meat",
+        "Snail Noodles",
+        "Hot Dry Noodles"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 150,
+    "requiredFoodId": "Sweet Dumplings",
+    "dishesOrderedIds": [
+      "Roasted Sweet Potato",
+      "Mapo Tofu",
+      "Spicy Crawdads",
+      "Lucky Biscuits",
+      "Strawberry Pudding",
+      "Mugwort Dumpling",
+      "Hot Dry Noodles",
+      "Curried Crab"
+    ]
   },
   {
     "id": "alaska",
@@ -6719,8 +8189,33 @@
       "regular"
     ],
     "customerDescription": "A calm and composed big dog, but is often mistaken for Husky.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Sweet and Sour Pork",
+        "Salmon Sushi",
+        "Whiskey"
+      ],
+      "facilities": [
+        "the_days_of_old",
+        "message_bottle",
+        "kitty_seat"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 650,
+    "requiredFoodId": "Sweet and Sour Pork",
+    "dishesOrderedIds": [
+      "Sweet and Sour Pork",
+      "Kebabs",
+      "Salmon Sushi",
+      "Whiskey",
+      "Wrap",
+      "Spicy Crawdads",
+      "Roast Shrimp",
+      "Pineapple Rice",
+      "Pineapple Bun"
+    ]
   },
   {
     "id": "asian_elephant",
@@ -6730,8 +8225,30 @@
       "regular"
     ],
     "customerDescription": "Tall and large. Likes playing with kids.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Colonel Nuggets",
+        "Montblanc",
+        "Fried Tofu"
+      ],
+      "facilities": [
+        "reverie_takeout_counter"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 160,
+    "requiredFoodId": "Colonel Nuggets",
+    "dishesOrderedIds": [
+      "Colonel Nuggets",
+      "Montblanc",
+      "Candied Strawberries",
+      "Fried Tofu",
+      "Cup Noodles",
+      "Steamboat",
+      "Boston Lobster",
+      "Pumpkin Soup"
+    ]
   },
   {
     "id": "hippopotamus",
@@ -6741,8 +8258,27 @@
       "regular"
     ],
     "customerDescription": "An unemployed youth who loves playing games.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Rice Pudding",
+        "Snail Noodles",
+        "Iced Lemon Tea",
+        "Curried Crab"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 260,
+    "requiredFoodId": "Rice Pudding",
+    "dishesOrderedIds": [
+      "Pizza",
+      "Curried Crab",
+      "Snail Noodles",
+      "Bento",
+      "Rice Pudding",
+      "Sycee Dumplings",
+      "Iced Lemon Tea"
+    ]
   },
   {
     "id": "snow_leopard_pup",
@@ -6752,8 +8288,27 @@
       "regular"
     ],
     "customerDescription": "Adorable but very playful, and a little rebellious too.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Rice Pudding",
+        "Bah Kut Teh",
+        "Spicy Chicken Skewers",
+        "Colonel Nuggets"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 260,
+    "requiredFoodId": "Rice Pudding",
+    "dishesOrderedIds": [
+      "Rice Pudding",
+      "Colonel Nuggets",
+      "Snail Noodles",
+      "Bento",
+      "Bah Kut Teh",
+      "Sycee Dumplings",
+      "Spicy Chicken Skewers"
+    ]
   },
   {
     "id": "snow_leopard",
@@ -6763,8 +8318,29 @@
       "regular"
     ],
     "customerDescription": "A father who is trying hard to learn parenting techniques.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Pineapple Rice",
+        "Bah Kut Teh",
+        "Spicy Chicken Skewers",
+        "Eight Treasure Rice Pudding"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 120,
+    "requiredFoodId": "Pineapple Rice",
+    "dishesOrderedIds": [
+      "Bah Kut Teh",
+      "Eight Treasure Rice Pudding",
+      "Strawberry Pudding",
+      "Pineapple Rice",
+      "Rice Pudding",
+      "Sycee Dumplings",
+      "Spicy Chicken Skewers",
+      "Roujiamo",
+      "Boston Lobster"
+    ]
   },
   {
     "id": "adventurer_stoat",
@@ -6774,8 +8350,25 @@
       "regular"
     ],
     "customerDescription": "Comes from a faraway planet. Rumor has it that she has been to countless places.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Fried Shrimp Sushi",
+        "Fried Rice",
+        "Kebabs",
+        "Salmon Sushi"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 800,
+    "requiredFoodId": "Fried Shrimp Sushi",
+    "dishesOrderedIds": [
+      "Fried Shrimp Sushi",
+      "Fried Rice",
+      "Kebabs",
+      "Salmon Sushi",
+      "Matcha Cake Roll"
+    ]
   },
   {
     "id": "beancurd",
@@ -6785,8 +8378,24 @@
       "regular"
     ],
     "customerDescription": "Mumbles a bit due to the recent tooth extraction.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Beer",
+        "Kebabs"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 800,
+    "requiredFoodId": "Beer",
+    "dishesOrderedIds": [
+      "Bento",
+      "Beer",
+      "Shaved Ice",
+      "Kebabs",
+      "Orange Juice",
+      "Coconut Milk Pudding"
+    ]
   },
   {
     "id": "rice_cake",
@@ -6796,8 +8405,27 @@
       "regular"
     ],
     "customerDescription": "Her loud voice contrasts sharply with her cute look.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Martini",
+        "Takoyaki",
+        "Mango Surprise",
+        "Orange Juice"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 200,
+    "requiredFoodId": "Martini",
+    "dishesOrderedIds": [
+      "Martini",
+      "Takoyaki",
+      "Mango Surprise",
+      "Orange Juice",
+      "Steamboat",
+      "Colonel Nuggets",
+      "Coconut Milk Pudding"
+    ]
   },
   {
     "id": "moose",
@@ -6807,8 +8435,23 @@
       "regular"
     ],
     "customerDescription": "The antlers on its head are too big and are always hitting into others.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Buckwheat Noodles",
+        "Chilled Edamame"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 100,
+    "requiredFoodId": "Buckwheat Noodles",
+    "dishesOrderedIds": [
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Iced Lemon Tea",
+      "Chilled Edamame",
+      "Buckwheat Noodles"
+    ]
   },
   {
     "id": "aries",
@@ -6818,8 +8461,28 @@
       "regular"
     ],
     "customerDescription": "A dependable and gentle member of the Forest Firefighters.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Beer",
+        "Fried Rice",
+        "Eight Treasure Rice Pudding",
+        "Orange Juice",
+        "Roast Turkey"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 180,
+    "requiredFoodId": "Beer",
+    "dishesOrderedIds": [
+      "Beer",
+      "Fried Rice",
+      "Eight Treasure Rice Pudding",
+      "Orange Juice",
+      "Bah Kut Teh",
+      "Sweet and Sour Pork",
+      "Roast Turkey"
+    ]
   },
   {
     "id": "curly",
@@ -6829,8 +8492,27 @@
       "regular"
     ],
     "customerDescription": "Despite the young age, she's an absolute connoisseur of food.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Bah Kut Teh",
+        "Pizza",
+        "Mugwort Dumpling",
+        "Fish of Abundance",
+        "Curried Crab"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 350,
+    "requiredFoodId": "Bah Kut Teh",
+    "dishesOrderedIds": [
+      "Bah Kut Teh",
+      "Pizza",
+      "Mugwort Dumpling",
+      "Fish of Abundance",
+      "Curried Crab",
+      "Sycee Dumplings"
+    ]
   },
   {
     "id": "dorkie",
@@ -6844,9 +8526,27 @@
       "facilities": [
         "daisy",
         "red_rose"
+      ],
+      "recipes": [
+        "Glutinous Rice Cake",
+        "Black Sesame Paste",
+        "Steamboat",
+        "Mushroom Pasta"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 550,
+    "requiredFoodId": "Glutinous Rice Cake",
+    "dishesOrderedIds": [
+      "Bah Kut Teh",
+      "Black Sesame Paste",
+      "Glutinous Rice Cake",
+      "Fish of Abundance",
+      "Curried Crab",
+      "Mushroom Pasta",
+      "Steamboat"
+    ]
   },
   {
     "id": "little_koala",
@@ -6856,8 +8556,29 @@
       "regular"
     ],
     "customerDescription": "New transfer student in Oak Bay Elementary School.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Boston Lobster",
+        "Cold Watermelon",
+        "Strawberry Shaved Ice",
+        "Chilled Edamame"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 80,
+    "requiredFoodId": "Boston Lobster",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Boston Lobster",
+      "Glutinous Rice Cake",
+      "Rice Pudding",
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Chilled Edamame",
+      "Curried Crab",
+      "Mulled Wine"
+    ]
   },
   {
     "id": "yannis",
@@ -6867,8 +8588,27 @@
       "regular"
     ],
     "customerDescription": "A muscular hunk who works out a lot.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Roujiamo",
+        "Takoyaki",
+        "Mango Surprise",
+        "Orange Juice"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 200,
+    "requiredFoodId": "Roujiamo",
+    "dishesOrderedIds": [
+      "Roujiamo",
+      "Glutinous Rice Cake",
+      "Mango Surprise",
+      "Orange Juice",
+      "Boston Lobster",
+      "Colonel Nuggets",
+      "Takoyaki"
+    ]
   },
   {
     "id": "mooey",
@@ -6878,8 +8618,27 @@
       "regular"
     ],
     "customerDescription": "It's still teething, so it constantly wants to chew on something.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Cola Wings",
+        "Mango Sticky Rice",
+        "Cola",
+        "Mapo Tofu"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 500,
+    "requiredFoodId": "Cola Wings",
+    "dishesOrderedIds": [
+      "Cola",
+      "Mushroom Pasta",
+      "Orange Juice",
+      "Sycee Dumplings",
+      "Mango Sticky Rice",
+      "Cola Wings",
+      "Banana Boat"
+    ]
   },
   {
     "id": "mr_bharal",
@@ -6889,8 +8648,28 @@
       "regular"
     ],
     "customerDescription": "A teacher in charge of outdoor activities at summer camp. Extremely skilled at rock climbing.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Banana Boat",
+        "Mango Sticky Rice",
+        "Rice Pudding",
+        "Sweet Dumplings"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 200,
+    "requiredFoodId": "Banana Boat",
+    "dishesOrderedIds": [
+      "Sweet Dumplings",
+      "Mushroom Pasta",
+      "Rice Pudding",
+      "Fried Potato",
+      "Mango Sticky Rice",
+      "Matcha Cake Roll",
+      "Cola Wings",
+      "Banana Boat"
+    ]
   },
   {
     "id": "chihuahua",
@@ -6901,7 +8680,14 @@
     ],
     "customerDescription": "Nobody knows why he becomes so aggressive when someone gets too close.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 8000,
+    "dishesOrderedIds": [
+      "Seaweed Rice Ball",
+      "Purple Sweet Potato Bun",
+      "Americano"
+    ]
   },
   {
     "id": "brown_chihuahua",
@@ -6911,8 +8697,21 @@
       "regular"
     ],
     "customerDescription": "A connoisseur who is determined to find out the recipe when presented with a delectable dish.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Curry Rice",
+        "Porridge & Jam"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 6000,
+    "requiredFoodId": "Curry Rice",
+    "dishesOrderedIds": [
+      "Curry Rice",
+      "Porridge & Jam",
+      "Buttered Toast"
+    ]
   },
   {
     "id": "black_and_white_chihuahua",
@@ -6927,7 +8726,15 @@
         "bluebell"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 4000,
+    "dishesOrderedIds": [
+      "Mushroom Pasta",
+      "Kimbap",
+      "Shaved Ice",
+      "Scrambled Eggs & Tomatoes"
+    ]
   },
   {
     "id": "lilith",
@@ -6937,8 +8744,29 @@
       "regular"
     ],
     "customerDescription": "Elegant and full of artistic eloquence.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Cola Wings",
+        "Mango Sticky Rice",
+        "Cola",
+        "Mapo Tofu",
+        "Coconut Cassia Wine"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 800,
+    "requiredFoodId": "Cola Wings",
+    "dishesOrderedIds": [
+      "Coconut Cassia Wine",
+      "Cola",
+      "Mushroom Pasta",
+      "Orange Juice",
+      "Sycee Dumplings",
+      "Mango Sticky Rice",
+      "Cola Wings",
+      "Banana Boat"
+    ]
   },
   {
     "id": "rose",
@@ -6959,8 +8787,28 @@
       "regular"
     ],
     "customerDescription": "Loves everything related to snow! Travels to wherever there is snow to be found.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Roujiamo",
+        "Takoyaki",
+        "Mango Surprise",
+        "Orange Juice",
+        "Mulled Wine"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 200,
+    "requiredFoodId": "Roujiamo",
+    "dishesOrderedIds": [
+      "Roujiamo",
+      "Glutinous Rice Cake",
+      "Mango Surprise",
+      "Orange Juice",
+      "Boston Lobster",
+      "Colonel Nuggets",
+      "Takoyaki"
+    ]
   },
   {
     "id": "sleepwalking_little_lion",
@@ -6970,8 +8818,27 @@
       "regular"
     ],
     "customerDescription": "9 out of 10 dreams he has are related to food.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Roujiamo",
+        "Chilled Edamame",
+        "Pineapple Rice",
+        "Orange Juice"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 500,
+    "requiredFoodId": "Roujiamo",
+    "dishesOrderedIds": [
+      "Roujiamo",
+      "Glutinous Rice Cake",
+      "Pineapple Rice",
+      "Orange Juice",
+      "Chilled Edamame",
+      "Colonel Nuggets",
+      "Takoyaki"
+    ]
   },
   {
     "id": "arctic_hare",
@@ -6981,8 +8848,30 @@
       "regular"
     ],
     "customerDescription": "He's always on the beet phone looking extremely busy. However, no one knows what he's busy with.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Roujiamo",
+        "Chilled Edamame",
+        "Boston Lobster",
+        "Orange Juice",
+        "Mulled Wine"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 1300,
+    "requiredFoodId": "Roujiamo",
+    "dishesOrderedIds": [
+      "Roujiamo",
+      "Glutinous Rice Cake",
+      "Boston Lobster",
+      "Orange Juice",
+      "Chilled Edamame",
+      "Colonel Nuggets",
+      "Takoyaki",
+      "Mulled Wine",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "mystifying_crane",
@@ -6992,8 +8881,32 @@
       "regular"
     ],
     "customerDescription": "A mystifying and enigmatic swordsman who seems to be highly skilled in martial arts.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Roujiamo",
+        "Chilled Edamame",
+        "Boston Lobster",
+        "Orange Juice",
+        "Mulled Wine",
+        "Chicken Feet in Black Bean Sauce"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 700,
+    "requiredFoodId": "Roujiamo",
+    "dishesOrderedIds": [
+      "Roujiamo",
+      "Glutinous Rice Cake",
+      "Boston Lobster",
+      "Orange Juice",
+      "Chilled Edamame",
+      "Colonel Nuggets",
+      "Mulled Wine",
+      "Smoked Ham",
+      "Chicken Feet in Black Bean Sauce",
+      "Shumai"
+    ]
   },
   {
     "id": "nozy",
@@ -7003,8 +8916,32 @@
       "regular"
     ],
     "customerDescription": "Enjoys watching and listening in on others' affairs with poker face. You'll find him wherever there is gossip.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Roujiamo",
+        "Chilled Edamame",
+        "Boston Lobster",
+        "Orange Juice",
+        "Mulled Wine",
+        "Shumai"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 500,
+    "requiredFoodId": "Roujiamo",
+    "dishesOrderedIds": [
+      "Roujiamo",
+      "Glutinous Rice Cake",
+      "Boston Lobster",
+      "Orange Juice",
+      "Chilled Edamame",
+      "Takoyaki",
+      "Mulled Wine",
+      "Smoked Ham",
+      "Shumai",
+      "Chicken Feet in Black Bean Sauce"
+    ]
   },
   {
     "id": "black_papillon",
@@ -7017,9 +8954,22 @@
     "requirements": {
       "facilities": [
         "daisy"
+      ],
+      "recipes": [
+        "Pumpkin Soup"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 3000,
+    "requiredFoodId": "Pumpkin Soup",
+    "dishesOrderedIds": [
+      "Kimbap",
+      "Curry Rice",
+      "Matcha Taiyaki",
+      "Cappuccino",
+      "Pumpkin Soup"
+    ]
   },
   {
     "id": "eugene_the_tree_kangaroo",
@@ -7029,8 +8979,26 @@
       "regular"
     ],
     "customerDescription": "Applied for a yearly pass to a boxing class so that he would stand out among the programmers.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Meat, Egg, and Mushroom Beancurd Roll",
+        "Shumai"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 150,
+    "requiredFoodId": "Meat, Egg, and Mushroom Beancurd Roll",
+    "dishesOrderedIds": [
+      "Sweet and Sour Pork",
+      "Kebabs",
+      "Salmon Sushi",
+      "Whiskey",
+      "Smoked Ham",
+      "Shumai",
+      "Meat, Egg, and Mushroom Beancurd Roll",
+      "Pumpkin Soup"
+    ]
   },
   {
     "id": "bernese_mountain_pup",
@@ -7046,7 +9014,20 @@
         "bluebell"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 105,
+    "dishesOrderedIds": [
+      "Matcha Cake Roll",
+      "Cola Wings",
+      "Banana Boat",
+      "Dongpo Pork",
+      "Coconut Milk Pudding",
+      "Eight Treasure Rice Pudding",
+      "Mugwort Dumpling",
+      "Shumai",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "miss_rhino",
@@ -7056,8 +9037,26 @@
       "regular"
     ],
     "customerDescription": "Likes cute clothes.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "facilities": [
+        "starry_fantasy",
+        "scrumptious_dinner"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 75,
+    "dishesOrderedIds": [
+      "Pearl Milk Tea",
+      "Bah Kut Teh",
+      "Curried Crab",
+      "Pineapple Bun",
+      "Boston Lobster",
+      "Mango Sticky Rice",
+      "Sweet and Sour Pork",
+      "Cola Wings",
+      "Meat, Egg, and Mushroom Beancurd Roll"
+    ]
   },
   {
     "id": "manager_bear",
@@ -7074,7 +9073,20 @@
         "bluebell"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 80,
+    "dishesOrderedIds": [
+      "Roast Turkey",
+      "Sweet and Sour Pork",
+      "Pineapple Rice",
+      "Spicy Chicken Skewers",
+      "Dongpo Pork",
+      "Coconut Milk Pudding",
+      "Roujiamo",
+      "Smoked Ham",
+      "Meat, Egg, and Mushroom Beancurd Roll"
+    ]
   },
   {
     "id": "golden_retriever",
@@ -7085,7 +9097,17 @@
     ],
     "customerDescription": "So amiable that he'll still come up and talk to you even if you responded coldly the last time.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 225,
+    "dishesOrderedIds": [
+      "Roast Turkey",
+      "Spaghetti",
+      "Beer",
+      "Fried Shrimp Sushi",
+      "Boneless Chicken Tenders",
+      "Raspberry Yogurt"
+    ]
   },
   {
     "id": "little_colt",
@@ -7095,8 +9117,24 @@
       "regular"
     ],
     "customerDescription": "Sports natural curls in his mane, but because they're difficult to maintain, he spends a lot of time styling them every day.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Bouquet Cake"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 145,
+    "requiredFoodId": "Bouquet Cake",
+    "dishesOrderedIds": [
+      "Parfait",
+      "Black Sesame Paste",
+      "Pearl Milk Tea",
+      "Bouquet Cake",
+      "Avocado Sandwich",
+      "Sycee Dumplings",
+      "Coconut Milk Pudding"
+    ]
   },
   {
     "id": "white_mouse",
@@ -7106,8 +9144,25 @@
       "regular"
     ],
     "customerDescription": "Looks much cleaner than other types of rodents.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Buttered Toast",
+        "Fries"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 7200,
+    "requiredFoodId": "Buttered Toast",
+    "dishesOrderedIds": [
+      "Americano",
+      "Espresso",
+      "Adzuki Bean Bun",
+      "Taiyaki",
+      "Adzuki Bean Dumpling",
+      "Matcha Taiyaki",
+      "Bagel"
+    ]
   },
   {
     "id": "fancy_rat",
@@ -7122,7 +9177,21 @@
         "sunflower"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 3200,
+    "dishesOrderedIds": [
+      "Custard Bun",
+      "Fries",
+      "Kebabs",
+      "Soy Milk & Cruller",
+      "Fried Shrimp Sushi",
+      "Blueberry Pancake",
+      "Spaghetti",
+      "Croissant",
+      "Beer",
+      "Pizza"
+    ]
   },
   {
     "id": "grandpa_spirit_bear",
@@ -7133,7 +9202,20 @@
     ],
     "customerDescription": "You can smell the scent of butter when you're near the super friendly bear.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 100,
+    "dishesOrderedIds": [
+      "Parfait",
+      "Black Sesame Paste",
+      "Beef Wellington",
+      "Strawberry and Cream Toast",
+      "Bouquet Cake",
+      "Pearl Milk Tea",
+      "Cupcake",
+      "Coconut Milk Pudding",
+      "Sycee Dumplings"
+    ]
   },
   {
     "id": "amber",
@@ -7143,8 +9225,23 @@
       "regular"
     ],
     "customerDescription": "An aloof and secretive customer with a personality that doesn't match her appearance.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Cream of Mushroom Soup",
+        "Escargot"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 200,
+    "requiredFoodId": "Cream of Mushroom Soup",
+    "dishesOrderedIds": [
+      "Strawberry and Cream Toast",
+      "Cream of Mushroom Soup",
+      "Beef Wellington",
+      "Black Sesame Paste",
+      "Escargot"
+    ]
   },
   {
     "id": "dracula",
@@ -7155,7 +9252,18 @@
     ],
     "customerDescription": "What?! Could it be one in the legends?!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 100,
+    "dishesOrderedIds": [
+      "Parfait",
+      "Black Sesame Paste",
+      "Cupcake",
+      "Coconut Milk Pudding",
+      "Bouquet Cake",
+      "Strawberry and Cream Toast",
+      "Beef Wellington"
+    ]
   },
   {
     "id": "ahau",
@@ -7165,8 +9273,26 @@
       "regular"
     ],
     "customerDescription": "Anyone who locks eyes with him can't help but surreptitiously take a step back and keep their distance from him.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Boston Lobster",
+        "Beef Wellington",
+        "Escargot"
+      ],
+      "facilities": [
+        "automated_refills"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 220,
+    "requiredFoodId": "Boston Lobster",
+    "dishesOrderedIds": [
+      "Strawberry and Cream Toast",
+      "Boston Lobster",
+      "Beef Wellington",
+      "Escargot"
+    ]
   },
   {
     "id": "lil_duckling",
@@ -7176,8 +9302,25 @@
       "regular"
     ],
     "customerDescription": "A restless little duckling.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Hot Dry Noodles",
+        "Snail Noodles",
+        "Pearl Milk Tea",
+        "Parfait"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 220,
+    "requiredFoodId": "Hot Dry Noodles",
+    "dishesOrderedIds": [
+      "Meat, Egg, and Mushroom Beancurd Roll",
+      "Hot Dry Noodles",
+      "Parfait",
+      "Snail Noodles",
+      "Shumai"
+    ]
   },
   {
     "id": "longevity_fox",
@@ -7187,8 +9330,24 @@
       "regular"
     ],
     "customerDescription": "Despite its small stature, it can run rapidly even when there's someone riding on its back.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Kebabs",
+        "Tea",
+        "Wrap"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 1200,
+    "requiredFoodId": "Kebabs",
+    "dishesOrderedIds": [
+      "Wrap",
+      "Soy Milk & Cruller",
+      "Kebabs",
+      "Baked Fish",
+      "Tea"
+    ]
   },
   {
     "id": "deer_of_nine_colors",
@@ -7201,9 +9360,23 @@
     "requirements": {
       "facilities": [
         "red_rose"
+      ],
+      "recipes": [
+        "Longjing Prawns",
+        "Hot Dry Noodles",
+        "Exquisite Eggnog"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 210,
+    "requiredFoodId": "Longjing Prawns",
+    "dishesOrderedIds": [
+      "Longjing Prawns",
+      "Hot Dry Noodles",
+      "Chinese Cabbage Broth",
+      "Christmas Pudding"
+    ]
   },
   {
     "id": "dragony",
@@ -7213,8 +9386,28 @@
       "regular"
     ],
     "customerDescription": "Wears a dragon-shaped headgear, seemingly to conceal his identity. How mysterious...",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Chinese Cabbage Broth",
+        "Longjing Prawns",
+        "Chicken Feet in Black Bean Sauce",
+        "Roast Turkey"
+      ],
+      "facilities": [
+        "banana_peel_capsule_machine"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 260,
+    "requiredFoodId": "Chinese Cabbage Broth",
+    "dishesOrderedIds": [
+      "Longjing Prawns",
+      "Chicken Feet in Black Bean Sauce",
+      "Blueberry Pancake",
+      "Roast Turkey",
+      "Baked Fish"
+    ]
   },
   {
     "id": "weeping_croc",
@@ -7227,9 +9420,27 @@
     "requirements": {
       "facilities": [
         "daisy"
+      ],
+      "recipes": [
+        "Parfait",
+        "Spicy Chicken Skewers",
+        "Cola Wings",
+        "Chicken Feet in Black Bean Sauce",
+        "Springtime Bamboo Stuffed Rice"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 280,
+    "requiredFoodId": "Parfait",
+    "dishesOrderedIds": [
+      "Spicy Chicken Skewers",
+      "Cream of Mushroom Soup",
+      "Springtime Bamboo Stuffed Rice",
+      "Chicken Feet in Black Bean Sauce",
+      "Escargot",
+      "Parfait"
+    ]
   },
   {
     "id": "axolotl",
@@ -7239,8 +9450,28 @@
       "regular"
     ],
     "customerDescription": "Could someone as cute as her truly harbor any bad intentions?",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Glutinous Rice Cake",
+        "Mango Sticky Rice",
+        "Banana Boat",
+        "Shumai",
+        "Pumpkin Soup"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 280,
+    "requiredFoodId": "Glutinous Rice Cake",
+    "dishesOrderedIds": [
+      "Banana Boat",
+      "Glutinous Rice Cake",
+      "Exquisite Eggnog",
+      "Beef Wellington",
+      "Mango Sticky Rice",
+      "Pumpkin Soup",
+      "Boneless Chicken Tenders"
+    ]
   },
   {
     "id": "goofy",
@@ -7253,9 +9484,27 @@
     "requirements": {
       "facilities": [
         "sunflower"
+      ],
+      "recipes": [
+        "Pineapple Bun",
+        "Cola Wings",
+        "Coconut Milk Pudding",
+        "Boneless Chicken Tenders",
+        "Christmas Pudding"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 260,
+    "requiredFoodId": "Pineapple Bun",
+    "dishesOrderedIds": [
+      "Raspberry Yogurt",
+      "Cola Wings",
+      "Christmas Pudding",
+      "Banana Boat",
+      "Avocado Sandwich",
+      "Pineapple Bun"
+    ]
   },
   {
     "id": "honey_badger",
@@ -7268,9 +9517,27 @@
     "requirements": {
       "facilities": [
         "daisy"
+      ],
+      "recipes": [
+        "Beef Wellington",
+        "Cream of Mushroom Soup",
+        "Pumpkin Soup",
+        "Longjing Prawns",
+        "Christmas Pudding"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 150,
+    "requiredFoodId": "Beef Wellington",
+    "dishesOrderedIds": [
+      "Pumpkin Soup",
+      "Cream of Mushroom Soup",
+      "Soy Milk & Cruller",
+      "Chicken Feet in Black Bean Sauce",
+      "Christmas Pudding",
+      "Teddy Bento"
+    ]
   },
   {
     "id": "lil_giraffe",
@@ -7283,9 +9550,29 @@
     "requirements": {
       "facilities": [
         "bluebell"
+      ],
+      "recipes": [
+        "Mango Sticky Rice",
+        "Soy Milk & Cruller",
+        "Taco",
+        "Chinese Cabbage Broth",
+        "Wrap"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 260,
+    "requiredFoodId": "Mango Sticky Rice",
+    "dishesOrderedIds": [
+      "Wrap",
+      "Avocado Sandwich",
+      "Chinese Cabbage Broth",
+      "Chicken Feet in Black Bean Sauce",
+      "Taco",
+      "Soy Milk & Cruller",
+      "Boneless Chicken Tenders",
+      "Playful Cake"
+    ]
   },
   {
     "id": "quokka",
@@ -7298,9 +9585,26 @@
     "requirements": {
       "facilities": [
         "sunflower"
+      ],
+      "recipes": [
+        "Eggscellent Bowl",
+        "Blueberry Pancake",
+        "Pumpkin Soup",
+        "Crispy Fried Meat",
+        "Strawberry and Cream Toast"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 260,
+    "requiredFoodId": "Eggscellent Bowl",
+    "dishesOrderedIds": [
+      "Blueberry Pancake",
+      "Strawberry and Cream Toast",
+      "Eggscellent Bowl",
+      "Bouquet Cake",
+      "Playful Cake"
+    ]
   },
   {
     "id": "german_shepherd",
@@ -7313,9 +9617,28 @@
     "requirements": {
       "facilities": [
         "bluebell"
+      ],
+      "recipes": [
+        "Longjing Prawns",
+        "Spicy Chicken Skewers",
+        "Cola Wings",
+        "Beef Wellington",
+        "Soy Milk & Cruller"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 260,
+    "requiredFoodId": "Longjing Prawns",
+    "dishesOrderedIds": [
+      "Boneless Chicken Tenders",
+      "Christmas Pudding",
+      "Cola Wings",
+      "Longjing Prawns",
+      "Mulled Wine",
+      "Soy Milk & Cruller",
+      "Spicy Chicken Skewers"
+    ]
   },
   {
     "id": "annie",
@@ -7328,9 +9651,25 @@
     "requirements": {
       "facilities": [
         "sunflower"
+      ],
+      "recipes": [
+        "Hot Dry Noodles",
+        "Soy Milk & Cruller",
+        "Taco",
+        "Boneless Chicken Tenders",
+        "Exquisite Eggnog"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 250,
+    "requiredFoodId": "Hot Dry Noodles",
+    "dishesOrderedIds": [
+      "Curried Crab",
+      "Iced Lemon Tea",
+      "Taco",
+      "Escargot"
+    ]
   },
   {
     "id": "harpy_eagle_wizard",
@@ -7341,7 +9680,19 @@
     ],
     "customerDescription": "A mysterious wizard from a faraway nation. Only ever shows three-quarters of his profile.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 100,
+    "dishesOrderedIds": [
+      "Parfait",
+      "Popcorn",
+      "Playful Cake",
+      "Strawberry and Cream Toast",
+      "Pineapple Bun",
+      "Omurice",
+      "Pumpkin Soup",
+      "Teddy Bento"
+    ]
   },
   {
     "id": "black_panther",
@@ -7351,8 +9702,27 @@
       "regular"
     ],
     "customerDescription": "A ticket inspector who is very passionate about the job.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Coconut Milk Pudding",
+        "Exquisite Eggnog",
+        "Strawberry and Cream Toast",
+        "Pumpkin Soup",
+        "Omurice"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 280,
+    "requiredFoodId": "Coconut Milk Pudding",
+    "dishesOrderedIds": [
+      "Hot Pot",
+      "Coconut Milk Pudding",
+      "Exquisite Eggnog",
+      "Strawberry and Cream Toast",
+      "Pumpkin Soup",
+      "Omurice"
+    ]
   },
   {
     "id": "cong_cong",
@@ -7362,8 +9732,25 @@
       "regular"
     ],
     "customerDescription": "Owing to its six legs, this bold creature can move incredibly fast. It is said to have a tendency to emphasize words that share the consonant in its name when it speaks.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Fried Shrimp in Red Rice Noodle Rolls",
+        "Hot Pot",
+        "Popcorn"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 1200,
+    "requiredFoodId": "Fried Shrimp in Red Rice Noodle Rolls",
+    "dishesOrderedIds": [
+      "Chicken Burger",
+      "Fried Shrimp in Red Rice Noodle Rolls",
+      "Popcorn",
+      "Pineapple Bun",
+      "Lotus Root Glutinous Rice Balls",
+      "Hot Pot"
+    ]
   },
   {
     "id": "er_shu",
@@ -7376,9 +9763,23 @@
     "requirements": {
       "facilities": [
         "red_rose"
+      ],
+      "recipes": [
+        "Hot Dry Noodles",
+        "Crab-Stuffed Orange",
+        "Steamboat"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 210,
+    "requiredFoodId": "Hot Dry Noodles",
+    "dishesOrderedIds": [
+      "Steamboat",
+      "Taco",
+      "Hot Dry Noodles",
+      "Crab-Stuffed Orange"
+    ]
   },
   {
     "id": "cyborg_danny",
@@ -7391,9 +9792,24 @@
     "requirements": {
       "facilities": [
         "sunflower"
+      ],
+      "recipes": [
+        "Chinese Cabbage Broth",
+        "Spicy Chicken Skewers",
+        "Baked Fish",
+        "Taco",
+        "Playful Cake"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 260,
+    "requiredFoodId": "Chinese Cabbage Broth",
+    "dishesOrderedIds": [
+      "Spicy Chicken Skewers",
+      "Playful Cake",
+      "Taco"
+    ]
   },
   {
     "id": "fuzzy",
@@ -7406,9 +9822,25 @@
     "requirements": {
       "facilities": [
         "bluebell"
+      ],
+      "recipes": [
+        "Longjing Prawns",
+        "Crispy Fried Meat",
+        "Soy Milk & Cruller",
+        "Smoked Ham",
+        "Boneless Chicken Tenders"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 260,
+    "requiredFoodId": "Longjing Prawns",
+    "dishesOrderedIds": [
+      "Crispy Fried Meat",
+      "Lotus Root Glutinous Rice Balls",
+      "Smoked Ham",
+      "Blueberry Pancake"
+    ]
   },
   {
     "id": "meery",
@@ -7421,9 +9853,22 @@
     "requirements": {
       "facilities": [
         "sunflower"
+      ],
+      "recipes": [
+        "Playful Cake",
+        "Jellybean Snow Cone",
+        "Banana Boat",
+        "Parfait",
+        "Pineapple Bun"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "requiredFoodId": "Playful Cake",
+    "dishesOrderedIds": [
+      "Jellybean Snow Cone",
+      "Playful Cake"
+    ]
   },
   {
     "id": "squiddy",
@@ -7436,9 +9881,24 @@
     "requirements": {
       "facilities": [
         "bluebell"
+      ],
+      "recipes": [
+        "Smoked Ham",
+        "Steamboat",
+        "Fried Shrimp in Red Rice Noodle Rolls",
+        "Baked Fish",
+        "Eggscellent Bowl"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "requiredFoodId": "Smoked Ham",
+    "dishesOrderedIds": [
+      "Baked Fish",
+      "Eggscellent Bowl",
+      "Coconut Milk Pudding",
+      "Crab-Stuffed Orange"
+    ]
   },
   {
     "id": "lemur",
@@ -7448,8 +9908,26 @@
       "regular"
     ],
     "customerDescription": "Able to sunbathe for an entire day if the sun is out.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Spicy Chicken Skewers",
+        "Pearl Milk Tea",
+        "Roast Turkey",
+        "Chilled Edamame",
+        "Ramen"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "requiredFoodId": "Spicy Chicken Skewers",
+    "dishesOrderedIds": [
+      "Mushroom Pasta",
+      "Chilled Edamame",
+      "Cold Watermelon",
+      "Pineapple Bun",
+      "Roast Turkey",
+      "Pearl Milk Tea"
+    ]
   },
   {
     "id": "elephant_shrew",
@@ -7461,10 +9939,26 @@
     "customerDescription": "The tip of its nose is so long that it looks like it might break anytime.",
     "requirements": {
       "facilities": [
-        "white_rose"
+        "chocolate_time"
+      ],
+      "recipes": [
+        "Hot Dry Noodles",
+        "Mapo Tofu",
+        "Coconut Milk Pudding",
+        "Cola Wings",
+        "Chicken Feet in Black Bean Sauce"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "requiredFoodId": "Hot Dry Noodles",
+    "dishesOrderedIds": [
+      "Hot Pot",
+      "Coconut Milk Pudding",
+      "Chicken Feet in Black Bean Sauce",
+      "Cola Wings",
+      "Kebabs"
+    ]
   },
   {
     "id": "alicia",
@@ -7477,9 +9971,26 @@
     "requirements": {
       "facilities": [
         "red_rose"
+      ],
+      "recipes": [
+        "Bouquet Cake",
+        "Coconut Cassia Wine",
+        "Cola Wings",
+        "Mango Sticky Rice",
+        "Chicken Cordon Bleu"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "requiredFoodId": "Bouquet Cake",
+    "dishesOrderedIds": [
+      "Bouquet Cake",
+      "Fragrant Flower Pastry",
+      "Cola Wings",
+      "Eggs Benedict",
+      "Coconut Cassia Wine",
+      "Chicken Cordon Bleu"
+    ]
   },
   {
     "id": "damascus_goat",
@@ -7492,9 +10003,21 @@
     "requirements": {
       "facilities": [
         "sunflower"
+      ],
+      "recipes": [
+        "Candied Hawthorn",
+        "Spaghetti",
+        "Strawberry Pudding",
+        "Cream of Mushroom Soup",
+        "Fried Shrimp in Red Rice Noodle Rolls"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "requiredFoodId": "Candied Hawthorn",
+    "dishesOrderedIds": [
+      "Iced Lemon Tea"
+    ]
   },
   {
     "id": "hansel",
@@ -7504,8 +10027,28 @@
       "regular"
     ],
     "customerDescription": "He's said to be looking for a candy house in Oak Bay with his sister.",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "recipes": [
+        "Chocolate Cake",
+        "Strawberry Pancake",
+        "Pineapple Bun",
+        "Matcha Cake Roll",
+        "Log Cake"
+      ],
+      "facilities": [
+        "delicious_trap"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "requiredFoodId": "Chocolate Cake",
+    "dishesOrderedIds": [
+      "Log Cake",
+      "Strawberry Pancake",
+      "Matcha Cake Roll",
+      "Chocolate Cake",
+      "Avocado Sandwich"
+    ]
   },
   {
     "id": "gretel",
@@ -7518,9 +10061,23 @@
     "requirements": {
       "facilities": [
         "red_rose"
+      ],
+      "recipes": [
+        "Roasted Sweet Potato",
+        "Blueberry Pancake",
+        "Cream of Mushroom Soup",
+        "Teddy Bento"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "requiredFoodId": "Roasted Sweet Potato",
+    "dishesOrderedIds": [
+      "Roasted Sweet Potato",
+      "Lotus Root Glutinous Rice Balls",
+      "Blueberry Pancake",
+      "Cream of Mushroom Soup"
+    ]
   },
   {
     "id": "emperor_tamarin",
@@ -7532,10 +10089,23 @@
     "customerDescription": "Not everyone with a white beard is a grandpa!",
     "requirements": {
       "facilities": [
-        "bluebell"
+        "forest_respite"
+      ],
+      "recipes": [
+        "Cola",
+        "Iced Lemon Tea",
+        "Banana Boat",
+        "Steamboat",
+        "Exquisite Eggnog"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "requiredFoodId": "Cola",
+    "dishesOrderedIds": [
+      "Iced Lemon Tea",
+      "Escargot"
+    ]
   },
   {
     "id": "clown",
@@ -7547,7 +10117,9 @@
     ],
     "customerDescription": "Little children hide in fright when they see the clown (not exactly). Can you guess who this is?",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 2000
   },
   {
     "id": "vampire",
@@ -7559,7 +10131,9 @@
     ],
     "customerDescription": "The clothes don't really fit. Can you guess who this is?",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 1000
   },
   {
     "id": "werewolf",
@@ -7571,7 +10145,9 @@
     ],
     "customerDescription": "Will grow muscles and fangs when the moon is full. The werewolf even wear underwear. Can you guess who this is?",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 500
   },
   {
     "id": "ghoul",
@@ -7583,7 +10159,9 @@
     ],
     "customerDescription": "Bed sheets cannot hide the big tail. Can you guess who this is?",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 250
   },
   {
     "id": "mummy",
@@ -7595,7 +10173,9 @@
     ],
     "customerDescription": "Tightly-wrapped bandages, freshly resurrected from inside the pyramid. Can you guess who this is?",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 150
   },
   {
     "id": "witch",
@@ -7607,7 +10187,9 @@
     ],
     "customerDescription": "Graduated from Hogwarts, but unable to find a job. Can you guess who this is?",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 88
   },
   {
     "id": "infernal_emissary",
@@ -7619,7 +10201,9 @@
     ],
     "customerDescription": "This robed figure comes and goes like a shadow, with a hat covering most of their face.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 1500
   },
   {
     "id": "old_captain",
@@ -7631,7 +10215,9 @@
     ],
     "customerDescription": "A mean-looking old captain. Shh, don't talk about his height to his face!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 600
   },
   {
     "id": "hopping_zombie",
@@ -7643,7 +10229,9 @@
     ],
     "customerDescription": "Its legs may be short, but it sure can jump!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 200
   },
   {
     "id": "little_dino",
@@ -7655,7 +10243,9 @@
     ],
     "customerDescription": "A dinosaur that loves every second of work.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 120
   },
   {
     "id": "gnome_bean",
@@ -7667,7 +10257,9 @@
     ],
     "customerDescription": "Loves to wield its wand and make things disappear.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 800
   },
   {
     "id": "frankenpooch",
@@ -7679,7 +10271,9 @@
     ],
     "customerDescription": "His brows are locked in a huge frown, and there are unidentified stains on his clothes.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": 1200
   },
   {
     "id": "party_skeleton",
@@ -7691,7 +10285,9 @@
     ],
     "customerDescription": "Wears fluorescent party wristbands that glow in the dark.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 700
   },
   {
     "id": "invisible_bunny",
@@ -7703,7 +10299,9 @@
     ],
     "customerDescription": "Unless you look closely, you'll mistake her for a pile of moving clothes.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 400
   },
   {
     "id": "little_red_riding_hood",
@@ -7715,7 +10313,9 @@
     ],
     "customerDescription": "Adorable but taciturn, she rarely shows anyone what is in her basket.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 300
   },
   {
     "id": "little_yeti",
@@ -7727,7 +10327,9 @@
     ],
     "customerDescription": "Roars cutely as he ambles along.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 220
   },
   {
     "id": "ghost_soldier",
@@ -7739,7 +10341,9 @@
     ],
     "customerDescription": "His head looks like it weighs a ton.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 180
   },
   {
     "id": "chainsaw_puppy",
@@ -7751,7 +10355,9 @@
     ],
     "customerDescription": "It looks very scary holding a chainsaw, but it's actually just a plastic toy.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 2000
   },
   {
     "id": "nine_tailed_fox",
@@ -7763,7 +10369,9 @@
     ],
     "customerDescription": "She walks with light steps and has a graceful posture.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 1600
   },
   {
     "id": "old_fan",
@@ -7775,7 +10383,9 @@
     ],
     "customerDescription": "Holding cuffs in its hands, it specializes in capturing disobedient spirits. Looking closely at its hat, you can see the words 'World Peace'.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 1200
   },
   {
     "id": "old_xie",
@@ -7787,7 +10397,9 @@
     ],
     "customerDescription": "He has a long tongue that hangs outside his mouth and is always smiling. Looking closely at his hat, you can see the words 'Fortune at a glance'.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 1200
   },
   {
     "id": "supernatural_enthusiast",
@@ -7799,7 +10411,9 @@
     ],
     "customerDescription": "Believes that there are spirits in this world. During Halloween every year, he goes around looking for places with strong magnetic field fluctuations.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 600
   },
   {
     "id": "exorcism_descendant",
@@ -7811,7 +10425,9 @@
     ],
     "customerDescription": "A lonely traveler. His faith is reflected on his icy crossbow bolt.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby",
+    "appearanceWeight": 180
   },
   {
     "id": "god_of_wine",
@@ -7823,7 +10439,8 @@
     ],
     "customerDescription": "He smells more like grapes than wine.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby"
   },
   {
     "id": "spartan_warrior",
@@ -7835,7 +10452,8 @@
     ],
     "customerDescription": "His armor looks very heavy.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby"
   },
   {
     "id": "trumpeting_angel",
@@ -7847,7 +10465,8 @@
     ],
     "customerDescription": "Flies around everywhere on wings, especially adored by everyone.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby"
   },
   {
     "id": "imp",
@@ -7859,7 +10478,8 @@
     ],
     "customerDescription": "Who knows when another silly idea will pop into his head.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby"
   },
   {
     "id": "wolf_magistrate",
@@ -7871,7 +10491,8 @@
     ],
     "customerDescription": "He has a stern businesslike demeanor.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby"
   },
   {
     "id": "anubis",
@@ -7883,7 +10504,8 @@
     ],
     "customerDescription": "Guardian of the Dead",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby"
   },
   {
     "id": "fox_bride",
@@ -7895,7 +10517,8 @@
     ],
     "customerDescription": "It is said that on the day a fox gets married, rain will fall while the sun shines in the sky.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby"
   },
   {
     "id": "granny_meng",
@@ -7907,7 +10530,8 @@
     ],
     "customerDescription": "Should you really drink the soup that she's holding...",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby"
   },
   {
     "id": "praying_samoyed",
@@ -7921,9 +10545,24 @@
     "requirements": {
       "facilities": [
         "sakura"
+      ],
+      "recipes": [
+        "Fried Shrimp Sushi",
+        "Kimbap",
+        "Kebabs",
+        "Salmon Sushi"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 666,
+    "requiredFoodId": "Fried Shrimp Sushi",
+    "dishesOrderedIds": [
+      "Fried Shrimp Sushi",
+      "Kimbap",
+      "Kebabs",
+      "Salmon Sushi"
+    ]
   },
   {
     "id": "tom",
@@ -7937,9 +10576,24 @@
     "requirements": {
       "facilities": [
         "sakura"
+      ],
+      "recipes": [
+        "Beer",
+        "Pizza",
+        "Fried Rice",
+        "Montblanc"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 222,
+    "requiredFoodId": "Beer",
+    "dishesOrderedIds": [
+      "Beer",
+      "Pizza",
+      "Fried Rice",
+      "Montblanc"
+    ]
   },
   {
     "id": "duke_swallow",
@@ -7953,9 +10607,28 @@
     "requirements": {
       "facilities": [
         "sakura"
+      ],
+      "recipes": [
+        "Coconut Cassia Wine",
+        "Cold Watermelon",
+        "Spicy Crawdads",
+        "Strawberry Shaved Ice",
+        "Chilled Edamame"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 160,
+    "requiredFoodId": "Coconut Cassia Wine",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Coconut Cassia Wine",
+      "Cold Watermelon",
+      "Rice Pudding",
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Chilled Edamame"
+    ]
   },
   {
     "id": "mister_gecko",
@@ -7969,9 +10642,29 @@
     "requirements": {
       "facilities": [
         "sakura"
+      ],
+      "recipes": [
+        "Pineapple Rice",
+        "Cold Watermelon",
+        "Strawberry Shaved Ice",
+        "Chilled Edamame"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 130,
+    "requiredFoodId": "Pineapple Rice",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Coconut Cassia Wine",
+      "Pineapple Rice",
+      "Rice Pudding",
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Chilled Edamame",
+      "Curried Crab",
+      "Roujiamo"
+    ]
   },
   {
     "id": "sheepie",
@@ -7985,9 +10678,28 @@
     "requirements": {
       "facilities": [
         "sakura"
+      ],
+      "recipes": [
+        "Pineapple Rice",
+        "Cold Watermelon",
+        "Strawberry Shaved Ice",
+        "Chilled Edamame"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 150,
+    "requiredFoodId": "Pineapple Rice",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Coconut Cassia Wine",
+      "Pineapple Rice",
+      "Rice Pudding",
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Chilled Edamame",
+      "Curried Crab"
+    ]
   },
   {
     "id": "little_beagle",
@@ -8001,9 +10713,28 @@
     "requirements": {
       "facilities": [
         "sakura"
+      ],
+      "recipes": [
+        "Banana Boat",
+        "Dongpo Pork",
+        "Mulled Wine",
+        "Meat, Egg, and Mushroom Beancurd Roll"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 120,
+    "requiredFoodId": "Banana Boat",
+    "dishesOrderedIds": [
+      "Banana Boat",
+      "Dongpo Pork",
+      "Mulled Wine",
+      "Rice Pudding",
+      "Strawberry Shaved Ice",
+      "Meat, Egg, and Mushroom Beancurd Roll",
+      "Chilled Edamame",
+      "Curried Crab"
+    ]
   },
   {
     "id": "platypus",
@@ -8017,9 +10748,28 @@
     "requirements": {
       "facilities": [
         "sakura"
+      ],
+      "recipes": [
+        "Matcha Taiyaki",
+        "Longjing Prawns",
+        "Blueberry Pancake",
+        "Beef Wellington",
+        "Bouquet Cake"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 150,
+    "requiredFoodId": "Matcha Taiyaki",
+    "dishesOrderedIds": [
+      "Crispy Fried Meat",
+      "Strawberry and Cream Toast",
+      "Beef Wellington",
+      "Longjing Prawns",
+      "Bouquet Cake",
+      "Exquisite Eggnog",
+      "Blueberry Pancake"
+    ]
   },
   {
     "id": "bigmouth_bird",
@@ -8033,9 +10783,25 @@
     "requirements": {
       "facilities": [
         "sakura"
+      ],
+      "recipes": [
+        "Longjing Prawns",
+        "Matcha Taiyaki",
+        "Pumpkin Soup",
+        "Omurice",
+        "Raspberry Yogurt"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 150,
+    "requiredFoodId": "Longjing Prawns",
+    "dishesOrderedIds": [
+      "Bouquet Cake",
+      "Longjing Prawns",
+      "Matcha Taiyaki",
+      "Raspberry Yogurt"
+    ]
   },
   {
     "id": "penniless_toad",
@@ -8049,9 +10815,24 @@
     "requirements": {
       "facilities": [
         "clover"
+      ],
+      "recipes": [
+        "Roast Shrimp",
+        "Pizza",
+        "Porridge & Jam",
+        "Scrambled Eggs & Tomatoes"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 666,
+    "requiredFoodId": "Roast Shrimp",
+    "dishesOrderedIds": [
+      "Roast Shrimp",
+      "Pizza",
+      "Porridge & Jam",
+      "Scrambled Eggs & Tomatoes"
+    ]
   },
   {
     "id": "little_turtle",
@@ -8065,9 +10846,24 @@
     "requirements": {
       "facilities": [
         "clover"
+      ],
+      "recipes": [
+        "Beer",
+        "Pizza",
+        "Fried Rice",
+        "Montblanc"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 222,
+    "requiredFoodId": "Beer",
+    "dishesOrderedIds": [
+      "Beer",
+      "Pizza",
+      "Fried Rice",
+      "Montblanc"
+    ]
   },
   {
     "id": "fashionable_zebra",
@@ -8081,9 +10877,29 @@
     "requirements": {
       "facilities": [
         "clover"
+      ],
+      "recipes": [
+        "Coconut Cassia Wine",
+        "Cold Watermelon",
+        "Spicy Crawdads",
+        "Strawberry Shaved Ice",
+        "Chilled Edamame",
+        "Strawberry Pudding"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 160,
+    "requiredFoodId": "Coconut Cassia Wine",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Coconut Cassia Wine",
+      "Cold Watermelon",
+      "Rice Pudding",
+      "Strawberry Shaved Ice",
+      "Strawberry Pudding",
+      "Chilled Edamame"
+    ]
   },
   {
     "id": "tapir",
@@ -8097,9 +10913,28 @@
     "requirements": {
       "facilities": [
         "clover"
+      ],
+      "recipes": [
+        "Pineapple Rice",
+        "Cold Watermelon",
+        "Spicy Crawdads",
+        "Chilled Edamame",
+        "Strawberry Pudding"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 130,
+    "requiredFoodId": "Pineapple Rice",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Cold Watermelon",
+      "Pineapple Rice",
+      "Spicy Crawdads",
+      "Strawberry Shaved Ice",
+      "Strawberry Pudding",
+      "Chilled Edamame"
+    ]
   },
   {
     "id": "old_gene",
@@ -8113,9 +10948,29 @@
     "requirements": {
       "facilities": [
         "clover"
+      ],
+      "recipes": [
+        "Pineapple Rice",
+        "Cold Watermelon",
+        "Strawberry Shaved Ice",
+        "Chilled Edamame"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 150,
+    "requiredFoodId": "Pineapple Rice",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Coconut Cassia Wine",
+      "Pineapple Rice",
+      "Rice Pudding",
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Chilled Edamame",
+      "Curried Crab",
+      "Coconut Milk Pudding"
+    ]
   },
   {
     "id": "greedy_hedgehog",
@@ -8129,9 +10984,23 @@
     "requirements": {
       "facilities": [
         "clover"
+      ],
+      "recipes": [
+        "Meat, Egg, and Mushroom Beancurd Roll",
+        "Bouquet Cake",
+        "Boneless Chicken Tenders"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 120,
+    "requiredFoodId": "Meat, Egg, and Mushroom Beancurd Roll",
+    "dishesOrderedIds": [
+      "Pearl Milk Tea",
+      "Boneless Chicken Tenders",
+      "Cupcake",
+      "Coconut Milk Pudding"
+    ]
   },
   {
     "id": "goober",
@@ -8145,9 +11014,27 @@
     "requirements": {
       "facilities": [
         "clover"
+      ],
+      "recipes": [
+        "Parfait",
+        "Bibimbap",
+        "Pineapple Bun",
+        "Playful Cake",
+        "Popcorn"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 180,
+    "requiredFoodId": "Parfait",
+    "dishesOrderedIds": [
+      "Escargot",
+      "Bibimbap",
+      "Beef Wellington",
+      "Popcorn",
+      "Pineapple Bun",
+      "Strawberry and Cream Toast"
+    ]
   },
   {
     "id": "uncle_marty",
@@ -8161,9 +11048,22 @@
     "requirements": {
       "facilities": [
         "clover"
+      ],
+      "recipes": [
+        "Exquisite Eggnog",
+        "Matcha Taiyaki",
+        "Pumpkin Soup",
+        "Smoked Ham",
+        "Eight Treasure Rice Pudding"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "requiredFoodId": "Exquisite Eggnog",
+    "dishesOrderedIds": [
+      "Matcha Taiyaki",
+      "Sycee Dumplings"
+    ]
   },
   {
     "id": "hamster",
@@ -8177,9 +11077,24 @@
     "requirements": {
       "facilities": [
         "maple_leaf"
+      ],
+      "recipes": [
+        "Roast Shrimp",
+        "Pizza",
+        "Porridge & Jam",
+        "Scrambled Eggs & Tomatoes"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 666,
+    "requiredFoodId": "Roast Shrimp",
+    "dishesOrderedIds": [
+      "Roast Shrimp",
+      "Pizza",
+      "Porridge & Jam",
+      "Scrambled Eggs & Tomatoes"
+    ]
   },
   {
     "id": "devil_squirrel",
@@ -8193,9 +11108,24 @@
     "requirements": {
       "facilities": [
         "maple_leaf"
+      ],
+      "recipes": [
+        "Beer",
+        "Pizza",
+        "Fried Rice",
+        "Montblanc"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 222,
+    "requiredFoodId": "Beer",
+    "dishesOrderedIds": [
+      "Beer",
+      "Pizza",
+      "Fried Rice",
+      "Montblanc"
+    ]
   },
   {
     "id": "wandering_bard",
@@ -8209,9 +11139,28 @@
     "requirements": {
       "facilities": [
         "maple_leaf"
+      ],
+      "recipes": [
+        "Coconut Cassia Wine",
+        "Cold Watermelon",
+        "Spicy Crawdads",
+        "Bah Kut Teh",
+        "Chilled Edamame"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 160,
+    "requiredFoodId": "Coconut Cassia Wine",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Coconut Cassia Wine",
+      "Cold Watermelon",
+      "Rice Pudding",
+      "Bah Kut Teh",
+      "Strawberry Pudding",
+      "Chilled Edamame"
+    ]
   },
   {
     "id": "prawny",
@@ -8225,9 +11174,29 @@
     "requirements": {
       "facilities": [
         "maple_leaf"
+      ],
+      "recipes": [
+        "Pineapple Rice",
+        "Cold Watermelon",
+        "Chilled Edamame",
+        "Strawberry Pudding",
+        "Pineapple Bun"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 130,
+    "requiredFoodId": "Pineapple Rice",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Cold Watermelon",
+      "Pineapple Rice",
+      "Spicy Crawdads",
+      "Strawberry Shaved Ice",
+      "Strawberry Pudding",
+      "Chilled Edamame",
+      "Pineapple Bun"
+    ]
   },
   {
     "id": "leopard",
@@ -8241,9 +11210,32 @@
     "requirements": {
       "facilities": [
         "maple_leaf"
+      ],
+      "recipes": [
+        "Pineapple Rice",
+        "Cold Watermelon",
+        "Strawberry Shaved Ice",
+        "Chilled Edamame",
+        "Dongpo Pork"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 130,
+    "requiredFoodId": "Pineapple Rice",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Coconut Cassia Wine",
+      "Pineapple Rice",
+      "Rice Pudding",
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Chilled Edamame",
+      "Curried Crab",
+      "Dongpo Pork",
+      "Coconut Milk Pudding",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "binturong",
@@ -8256,10 +11248,24 @@
     "customerDescription": "A cartoonist new to the business, working hard on scripts and storyboards every day.",
     "requirements": {
       "facilities": [
-        "maple_leaf"
+        "delicious_baskets_of_bread",
+        "yellow_silk_curtain"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 120,
+    "dishesOrderedIds": [
+      "Coconut Milk Pudding",
+      "Parfait",
+      "Black Sesame Paste",
+      "Cupcake",
+      "Sycee Dumplings",
+      "Pearl Milk Tea",
+      "Strawberry and Cream Toast",
+      "Bouquet Cake",
+      "Boneless Chicken Tenders"
+    ]
   },
   {
     "id": "donkey",
@@ -8272,10 +11278,28 @@
     "customerDescription": "Carrots are the only thing this perennially happy customer eats.",
     "requirements": {
       "facilities": [
-        "maple_leaf"
+        "moonlight_aria",
+        "rose_of_truth"
+      ],
+      "recipes": [
+        "Eggscellent Bowl",
+        "Crispy Fried Meat",
+        "Coconut Milk Pudding",
+        "Pumpkin Soup",
+        "Strawberry and Cream Toast"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 160,
+    "requiredFoodId": "Eggscellent Bowl",
+    "dishesOrderedIds": [
+      "Eggscellent Bowl",
+      "Crispy Fried Meat",
+      "Coconut Milk Pudding",
+      "Pumpkin Soup",
+      "Strawberry and Cream Toast"
+    ]
   },
   {
     "id": "prince_secretarybird",
@@ -8289,9 +11313,21 @@
     "requirements": {
       "facilities": [
         "maple_leaf"
+      ],
+      "recipes": [
+        "Mapo Tofu",
+        "Glutinous Rice Cake",
+        "Mulled Wine",
+        "Paella",
+        "Spicy Chicken Skewers"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "requiredFoodId": "Mapo Tofu",
+    "dishesOrderedIds": [
+      "Glutinous Rice Cake"
+    ]
   },
   {
     "id": "cher",
@@ -8305,9 +11341,24 @@
     "requirements": {
       "facilities": [
         "snowflake"
+      ],
+      "recipes": [
+        "Roast Shrimp",
+        "Pizza",
+        "Porridge & Jam",
+        "Scrambled Eggs & Tomatoes"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": 666,
+    "requiredFoodId": "Roast Shrimp",
+    "dishesOrderedIds": [
+      "Roast Shrimp",
+      "Pizza",
+      "Porridge & Jam",
+      "Scrambled Eggs & Tomatoes"
+    ]
   },
   {
     "id": "lady_snow_fox",
@@ -8321,9 +11372,24 @@
     "requirements": {
       "facilities": [
         "snowflake"
+      ],
+      "recipes": [
+        "Beer",
+        "Pizza",
+        "Fried Rice",
+        "Montblanc"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 222,
+    "requiredFoodId": "Beer",
+    "dishesOrderedIds": [
+      "Beer",
+      "Pizza",
+      "Fried Rice",
+      "Montblanc"
+    ]
   },
   {
     "id": "mister_tibetan_fox",
@@ -8337,9 +11403,26 @@
     "requirements": {
       "facilities": [
         "snowflake"
+      ],
+      "recipes": [
+        "Coconut Cassia Wine",
+        "Cold Watermelon",
+        "Spicy Crawdads",
+        "Roast Turkey"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 160,
+    "requiredFoodId": "Coconut Cassia Wine",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Coconut Cassia Wine",
+      "Cold Watermelon",
+      "Roast Turkey",
+      "Strawberry Pudding",
+      "Chilled Edamame"
+    ]
   },
   {
     "id": "seal_pup",
@@ -8353,9 +11436,30 @@
     "requirements": {
       "facilities": [
         "snowflake"
+      ],
+      "recipes": [
+        "Pineapple Rice",
+        "Cold Watermelon",
+        "Chilled Edamame",
+        "Strawberry Pudding",
+        "Pineapple Bun"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 130,
+    "requiredFoodId": "Pineapple Rice",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Cold Watermelon",
+      "Pineapple Rice",
+      "Spicy Crawdads",
+      "Strawberry Shaved Ice",
+      "Strawberry Pudding",
+      "Chilled Edamame",
+      "Pineapple Bun",
+      "Dongpo Pork"
+    ]
   },
   {
     "id": "upturned_brows_penguin",
@@ -8369,9 +11473,31 @@
     "requirements": {
       "facilities": [
         "snowflake"
+      ],
+      "recipes": [
+        "Pineapple Rice",
+        "Cold Watermelon",
+        "Strawberry Shaved Ice",
+        "Chilled Edamame",
+        "Dongpo Pork"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 130,
+    "requiredFoodId": "Pineapple Rice",
+    "dishesOrderedIds": [
+      "Candied Strawberries",
+      "Coconut Cassia Wine",
+      "Pineapple Rice",
+      "Rice Pudding",
+      "Strawberry Shaved Ice",
+      "Avocado Sandwich",
+      "Chilled Edamame",
+      "Curried Crab",
+      "Dongpo Pork",
+      "Coconut Milk Pudding"
+    ]
   },
   {
     "id": "arctic_wolf",
@@ -8385,9 +11511,25 @@
     "requirements": {
       "facilities": [
         "snowflake"
+      ],
+      "recipes": [
+        "Baked Fish",
+        "Roast Turkey",
+        "Boneless Chicken Tenders",
+        "Crispy Fried Meat"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 120,
+    "requiredFoodId": "Baked Fish",
+    "dishesOrderedIds": [
+      "Roast Turkey",
+      "Shumai",
+      "Pumpkin Soup",
+      "Crispy Fried Meat",
+      "Pearl Milk Tea"
+    ]
   },
   {
     "id": "mole",
@@ -8401,9 +11543,25 @@
     "requirements": {
       "facilities": [
         "snowflake"
+      ],
+      "recipes": [
+        "Snail Noodles",
+        "Hot Dry Noodles",
+        "Soy Milk & Cruller",
+        "Roast Turkey"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 120,
+    "requiredFoodId": "Snail Noodles",
+    "dishesOrderedIds": [
+      "Boston Lobster",
+      "Snail Noodles",
+      "Hot Dry Noodles",
+      "Soy Milk & Cruller",
+      "Roast Turkey"
+    ]
   },
   {
     "id": "forest_ranger_tibetan_mastiff",
@@ -8417,9 +11575,22 @@
     "requirements": {
       "facilities": [
         "snowflake"
+      ],
+      "recipes": [
+        "Omurice",
+        "Cup Noodles",
+        "Buckwheat Noodles",
+        "Spicy Chicken Skewers",
+        "Hot Dry Noodles"
       ]
     },
-    "mementos": []
+    "mementos": [],
+    "livesIn": "Nearby",
+    "requiredFoodId": "Omurice",
+    "dishesOrderedIds": [
+      "Omurice",
+      "Meat, Egg, and Mushroom Beancurd Roll"
+    ]
   },
   {
     "id": "painter_penguin_doll",
@@ -8430,7 +11601,14 @@
     ],
     "customerDescription": "Clumsy and pessimistic, often blames himself for being good for nothing. Wishes to paint a new wall.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 1000,
+    "dishesOrderedIds": [
+      "Spaghetti",
+      "Hot Pot",
+      "Dumplings",
+      "Salmon Sushi"
+    ]
   },
   {
     "id": "kimono_goose",
@@ -8441,7 +11619,15 @@
     ],
     "customerDescription": "Just returned from a tour in Japan, still wearing a kimono. Complains about how her feet hurt but refuses to take off the clogs.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 850,
+    "dishesOrderedIds": [
+      "Fried Rice",
+      "Beer",
+      "Kimbap",
+      "Custard Bun",
+      "Pizza"
+    ]
   },
   {
     "id": "unyoung_lady",
@@ -8452,7 +11638,15 @@
     ],
     "customerDescription": "Age is just a number, you are never too old to do something.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 700,
+    "dishesOrderedIds": [
+      "Ramen",
+      "Salmon Sushi",
+      "Tea",
+      "Espresso",
+      "Roast Shrimp"
+    ]
   },
   {
     "id": "hip_hop_toad",
@@ -8463,7 +11657,14 @@
     ],
     "customerDescription": "Got hooked onto hip-hop recently. Settles differences with rap battles.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 600,
+    "dishesOrderedIds": [
+      "Kebabs",
+      "Salmon Sushi",
+      "Whiskey",
+      "Wrap"
+    ]
   },
   {
     "id": "picnic_lop_eared_rabbit",
@@ -8474,7 +11675,15 @@
     ],
     "customerDescription": "Fears loneliness. Often tries to blend into other's social circles.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 550,
+    "dishesOrderedIds": [
+      "Hot Pot",
+      "Fried Rice",
+      "Kimbap",
+      "Cup Noodles",
+      "Dumplings"
+    ]
   },
   {
     "id": "sporty_dog",
@@ -8485,7 +11694,14 @@
     ],
     "customerDescription": "Has a workout plan to complete. Bought some new clothes of subpar quality, but they will suffice.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 500,
+    "dishesOrderedIds": [
+      "Hot Pot",
+      "Fried Rice",
+      "Kimbap",
+      "Fries"
+    ]
   },
   {
     "id": "indoor_toad",
@@ -8496,7 +11712,14 @@
     ],
     "customerDescription": "Loves staying at home. Snacks and dramas are enough.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 400,
+    "dishesOrderedIds": [
+      "Wrap",
+      "Roe Sushi",
+      "Ramen",
+      "Hot Pot"
+    ]
   },
   {
     "id": "uniformed_shiba_puppy",
@@ -8507,7 +11730,16 @@
     ],
     "customerDescription": "Loves going to school in the new uniform. Hides candies in its pocket.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 300,
+    "dishesOrderedIds": [
+      "Fried Rice",
+      "Takoyaki",
+      "Chocolate Cake",
+      "Salmon Sushi",
+      "Kimbap",
+      "Colonel Nuggets"
+    ]
   },
   {
     "id": "uniformed_yorkie_pup",
@@ -8518,7 +11750,16 @@
     ],
     "customerDescription": "Received the wrong uniform from the teacher. Hates being jeered by his peers.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 200,
+    "dishesOrderedIds": [
+      "Pizza",
+      "Tea",
+      "Fried Rice",
+      "Bento",
+      "Rice Pudding",
+      "Sycee Dumplings"
+    ]
   },
   {
     "id": "student_samoyed",
@@ -8529,7 +11770,13 @@
     ],
     "customerDescription": "Looks happy and carefree, but his faint smile hides dark secrets.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 180,
+    "dishesOrderedIds": [
+      "Bento",
+      "Rice Pudding",
+      "Orange Juice"
+    ]
   },
   {
     "id": "bully_husky",
@@ -8540,7 +11787,14 @@
     ],
     "customerDescription": "Husky in his high school days, very particular about being manly.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 180,
+    "dishesOrderedIds": [
+      "Fried Tofu",
+      "Popcorn",
+      "Fried Rice",
+      "Chicken Burger"
+    ]
   },
   {
     "id": "student_president_merle_border_collie",
@@ -8551,7 +11805,14 @@
     ],
     "customerDescription": "A student who is self-disciplined, the role model for everyone.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 180,
+    "dishesOrderedIds": [
+      "Tea",
+      "Fried Rice",
+      "Cookies",
+      "Rice Pudding"
+    ]
   },
   {
     "id": "hanfu_white_bunny",
@@ -8562,7 +11823,14 @@
     ],
     "customerDescription": "A refined, elegant, classical rabbit.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 230,
+    "dishesOrderedIds": [
+      "Sweet Dumplings",
+      "Beer",
+      "Takoyaki",
+      "Raspberry Yogurt"
+    ]
   },
   {
     "id": "starstruck_corgi",
@@ -8573,7 +11841,15 @@
     ],
     "customerDescription": "Aaaaahh, my idol is the best in the world!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 150,
+    "dishesOrderedIds": [
+      "Roasted Sweet Potato",
+      "Mapo Tofu",
+      "Spicy Crawdads",
+      "Fried Potato",
+      "Strawberry Pudding"
+    ]
   },
   {
     "id": "ballet_piggy",
@@ -8584,7 +11860,15 @@
     ],
     "customerDescription": "A piggy can be graceful and charming too!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Fried Rice",
+      "Takoyaki",
+      "Chocolate Cake",
+      "Salmon Sushi",
+      "Kimbap"
+    ]
   },
   {
     "id": "lucky",
@@ -8606,7 +11890,15 @@
     ],
     "customerDescription": "Wishing you a year of progress!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Fried Rice",
+      "Takoyaki",
+      "Chocolate Cake",
+      "Salmon Sushi",
+      "Kimbap"
+    ]
   },
   {
     "id": "hale",
@@ -8617,7 +11909,15 @@
     ],
     "customerDescription": "Wishing you a healthy new year!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Fried Rice",
+      "Takoyaki",
+      "Chocolate Cake",
+      "Salmon Sushi",
+      "Kimbap"
+    ]
   },
   {
     "id": "wild_duck_navigator",
@@ -8628,7 +11928,14 @@
     ],
     "customerDescription": "One small step for me, one big step for the ducks!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Strawberry Shaved Ice",
+      "Buckwheat Noodles",
+      "Fish of Abundance",
+      "Sweet and Sour Pork"
+    ]
   },
   {
     "id": "little_racer",
@@ -8639,7 +11946,16 @@
     ],
     "customerDescription": "Beep! I lose if I see the tail lights of the toy car.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Mango Surprise",
+      "Takoyaki",
+      "Chocolate Cake",
+      "Mugwort Dumpling",
+      "Kimbap",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "tropical_island",
@@ -8650,7 +11966,16 @@
     ],
     "customerDescription": "Move your body to the rhythm of the waves.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Mango Surprise",
+      "Takoyaki",
+      "Chocolate Cake",
+      "Mugwort Dumpling",
+      "Kimbap",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "white_shiba_bride",
@@ -8661,7 +11986,15 @@
     ],
     "customerDescription": "Wearing a white wedding dress on this special day.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Takoyaki",
+      "Chocolate Cake",
+      "Fish of Abundance",
+      "Kimbap"
+    ]
   },
   {
     "id": "shiba_groom",
@@ -8672,7 +12005,16 @@
     ],
     "customerDescription": "I do!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Takoyaki",
+      "Chocolate Cake",
+      "Pineapple Rice",
+      "Dumplings",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "little_turtle_sailor",
@@ -8683,7 +12025,16 @@
     ],
     "customerDescription": "He has a small body but a big dream to conquer the seas.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Mango Surprise",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Kimbap",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "kungfu_kid",
@@ -8694,7 +12045,16 @@
     ],
     "customerDescription": "The kungfu of the family can never be shared with others!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "part_timer_cici",
@@ -8705,7 +12065,16 @@
     ],
     "customerDescription": "Went to work in the store because seeing the store uniform was too cute.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "little_lady",
@@ -8716,7 +12085,16 @@
     ],
     "customerDescription": "It's hard to resist spinning around after putting on a dress.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "magic_chihuahua",
@@ -8727,7 +12105,16 @@
     ],
     "customerDescription": "A reluctant champion of world peace who attentively performs his duty.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "gentleman_dobermann",
@@ -8738,7 +12125,16 @@
     ],
     "customerDescription": "The umbrella is his soul.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "sweet_nurse",
@@ -8749,7 +12145,16 @@
     ],
     "customerDescription": "Such a cute nurse. I'm sure her injections won't hurt!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "sleeping_baby_elephant",
@@ -8760,7 +12165,16 @@
     ],
     "customerDescription": "Wear this one-piece pajamas and be a baby elephant in your dreams.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "demure_maiden",
@@ -8771,7 +12185,16 @@
     ],
     "customerDescription": "Bring along a beach umbrella and enjoy a leisurely vacation before autumn ends!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "little_fox_in_raincoat",
@@ -8782,7 +12205,16 @@
     ],
     "customerDescription": "Who can resist the temptation of stepping in a puddle?",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "frog_prince",
@@ -8793,7 +12225,16 @@
     ],
     "customerDescription": "They say that a kiss can turn him back to his original state.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "volleyball_second_spiker",
@@ -8804,7 +12245,16 @@
     ],
     "customerDescription": "Volleyball is not a one-man battle!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "frosting_elf",
@@ -8815,7 +12265,17 @@
     ],
     "customerDescription": "Ring the bell and he will appear with candy!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "clockwork_penguin",
@@ -8826,7 +12286,16 @@
     ],
     "customerDescription": "Turn the key counterclockwise three times and clockwise five times, and it'll start moving!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "snow_queen",
@@ -8837,7 +12306,16 @@
     ],
     "customerDescription": "She brings the first snow of winter.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "lucky_curly",
@@ -8848,7 +12326,17 @@
     ],
     "customerDescription": "New clothes are a must for the new year!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "mister_fox",
@@ -8859,7 +12347,17 @@
     ],
     "customerDescription": "Fox's new part-time job: background actor in a TV drama.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "unicorn",
@@ -8870,7 +12368,16 @@
     ],
     "customerDescription": "Every single strand of hair has been impeccably conditioned, giving off an alluring scent.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Smoked Ham",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance",
+      "Sycee Dumplings"
+    ]
   },
   {
     "id": "hot_dog_promoter",
@@ -8881,7 +12388,14 @@
     ],
     "customerDescription": "Hot dogs are no doubt tasty, but you should also finish all the lettuce!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Hot Pot",
+      "Fish of Abundance",
+      "Smoked Ham",
+      "Sycee Dumplings"
+    ]
   },
   {
     "id": "cowboy_fennec_fox",
@@ -8892,7 +12406,16 @@
     ],
     "customerDescription": "It's never the silver bullets that defeat you. Instead, it's the relentless march of time.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Steamboat",
+      "Fish of Abundance",
+      "Mugwort Dumpling",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Pineapple Bun"
+    ]
   },
   {
     "id": "cha_cha_scotch_collie",
@@ -8903,7 +12426,15 @@
     ],
     "customerDescription": "Dance passionately to the beat!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Sycee Dumplings",
+      "Pineapple Bun",
+      "Mugwort Dumpling",
+      "Hot Pot",
+      "Steamboat"
+    ]
   },
   {
     "id": "fragrant_fairy",
@@ -8914,7 +12445,17 @@
     ],
     "customerDescription": "With a dress made of fresh flowers and clothes made from morning dew, it's another fragrant day!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Steamboat",
+      "Mugwort Dumpling",
+      "Hot Pot",
+      "Fish of Abundance",
+      "Smoked Ham"
+    ]
   },
   {
     "id": "rising_star_curly",
@@ -8925,7 +12466,15 @@
     ],
     "customerDescription": "Born among beauty and hope in a faraway galaxy! Let me introduce you to-Rising Star Curly!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Sycee Dumplings",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
   },
   {
     "id": "moon_goddess",
@@ -8936,7 +12485,17 @@
     ],
     "customerDescription": "A goddess from an ancient and mysterious civilization that commands a profound deference.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 150,
+    "dishesOrderedIds": [
+      "Hot Dry Noodles",
+      "Crispy Fried Meat",
+      "Cream of Mushroom Soup",
+      "Escargot",
+      "Bouquet Cake",
+      "Strawberry and Cream Toast",
+      "Beef Wellington"
+    ]
   },
   {
     "id": "ditzy_crocheter",
@@ -8947,7 +12506,18 @@
     ],
     "customerDescription": "Always having to undo their stitches to start all over because they can't remember where they left off.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 175,
+    "dishesOrderedIds": [
+      "Baked Fish",
+      "Escargot",
+      "Strawberry and Cream Toast",
+      "Spicy Chicken Skewers",
+      "Cola Wings",
+      "Coconut Milk Pudding",
+      "Cookies",
+      "Chicken Feet in Black Bean Sauce"
+    ]
   },
   {
     "id": "mime_actor",
@@ -8958,7 +12528,16 @@
     ],
     "customerDescription": "Has an occupational habit so ingrained that they never speak, only gesturing to express themselves.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Roasted Sweet Potato",
+      "Mapo Tofu",
+      "Bagel",
+      "Chicken Feet in Black Bean Sauce",
+      "Taco",
+      "Baked Fish"
+    ]
   },
   {
     "id": "trainee_postman",
@@ -8969,7 +12548,15 @@
     ],
     "customerDescription": "He may be new, but he takes extremely good care of letter assigned to him.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Escargot",
+      "Strawberry Pancake",
+      "Steamed Clams",
+      "Buckwheat Noodles",
+      "Chicken Burger"
+    ]
   },
   {
     "id": "phantom_of_the_raccoon",
@@ -8980,7 +12567,17 @@
     ],
     "customerDescription": "He must have a full stomach each time he performs. Otherwise, he'll feel fatigued during the performance.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Hot Dry Noodles",
+      "Popcorn",
+      "Crispy Fried Meat",
+      "Roast Turkey",
+      "Soy Milk & Cruller",
+      "Curry Rice",
+      "Omurice"
+    ]
   },
   {
     "id": "miss_hydrangea",
@@ -8991,7 +12588,15 @@
     ],
     "customerDescription": "The invariably shy customer has a fan with her at all times so that nobody can recognize her.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Adzuki Bean Dumpling",
+      "Curry Rice",
+      "Eight Treasure Rice Pudding",
+      "Candied Hawthorn",
+      "Iced Lemon Tea"
+    ]
   },
   {
     "id": "tuxedo_thief",
@@ -9002,7 +12607,13 @@
     ],
     "customerDescription": "He seems to think very highly of his appearance.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Bibimbap",
+      "Omurice",
+      "Spaghetti"
+    ]
   },
   {
     "id": "forest_elf",
@@ -9013,7 +12624,14 @@
     ],
     "customerDescription": "Finds joy in collecting different-colored maple leaves.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Cola",
+      "Banana Boat",
+      "Boneless Chicken Tenders",
+      "Cream of Mushroom Soup"
+    ]
   },
   {
     "id": "reindeer_curly",
@@ -9024,7 +12642,15 @@
     ],
     "customerDescription": "She's Santa's little helper!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Mulled Wine",
+      "Boston Lobster",
+      "Banana Boat",
+      "Christmas Pudding",
+      "Beef Wellington"
+    ]
   },
   {
     "id": "apple_girl",
@@ -9034,8 +12660,21 @@
       "gachapon"
     ],
     "customerDescription": "Would you like to buy some apples? They're crisp and sweet!",
-    "requirements": {},
-    "mementos": []
+    "requirements": {
+      "facilities": [
+        "fruit_takeout_counter"
+      ]
+    },
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Christmas Pudding",
+      "Meat, Egg, and Mushroom Beancurd Roll",
+      "Exquisite Eggnog",
+      "Mulled Wine",
+      "Smoked Ham",
+      "Popcorn"
+    ]
   },
   {
     "id": "rotund_little_snowman",
@@ -9046,7 +12685,15 @@
     ],
     "customerDescription": "Round and bouncy.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Smoked Ham",
+      "Christmas Pudding",
+      "Martini",
+      "Crispy Fried Meat",
+      "Spicy Chicken Skewers"
+    ]
   },
   {
     "id": "peach_garden_eldest_brother",
@@ -9057,7 +12704,17 @@
     ],
     "customerDescription": "The eldest of the Peach Garden sworn brothers, he is forthright and sincere.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 280,
+    "dishesOrderedIds": [
+      "Bibimbap",
+      "Buckwheat Noodles",
+      "Spicy Chicken Skewers",
+      "Longjing Prawns",
+      "Chicken Feet in Black Bean Sauce",
+      "Taco",
+      "Chinese Cabbage Broth"
+    ]
   },
   {
     "id": "peach_garden_middle_brother",
@@ -9068,7 +12725,17 @@
     ],
     "customerDescription": "The second of the Peach Garden sworn brothers, he is brave and loyal.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 280,
+    "dishesOrderedIds": [
+      "Popcorn",
+      "Exquisite Eggnog",
+      "Omurice",
+      "Crispy Fried Meat",
+      "Strawberry and Cream Toast",
+      "Hot Dry Noodles",
+      "Christmas Pudding"
+    ]
   },
   {
     "id": "peach_garden_youngest_brother",
@@ -9079,7 +12746,18 @@
     ],
     "customerDescription": "The youngest of the Peach Garden sworn brothers, he is carefree and upright.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 280,
+    "dishesOrderedIds": [
+      "Exquisite Eggnog",
+      "Soy Milk & Cruller",
+      "Matcha Taiyaki",
+      "Crispy Fried Meat",
+      "Bah Kut Teh",
+      "Christmas Pudding",
+      "Longjing Prawns",
+      "Cola Wings"
+    ]
   },
   {
     "id": "fisherman_old_gin",
@@ -9101,7 +12779,15 @@
     ],
     "customerDescription": "All the little fishes seem to appear green in the water!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 280,
+    "dishesOrderedIds": [
+      "Christmas Pudding",
+      "Baked Fish",
+      "Blueberry Pancake",
+      "Longjing Prawns",
+      "Banana Boat"
+    ]
   },
   {
     "id": "strawberry_sweetie",
@@ -9112,7 +12798,18 @@
     ],
     "customerDescription": "I'm the bunny who loves strawberries the most in the whole wide world!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 280,
+    "dishesOrderedIds": [
+      "Smoked Ham",
+      "Hot Dry Noodles",
+      "Blueberry Pancake",
+      "Bibimbap",
+      "Crispy Fried Meat",
+      "Longjing Prawns",
+      "Spicy Chicken Skewers",
+      "Shumai"
+    ]
   },
   {
     "id": "bee_puppy",
@@ -9123,7 +12820,18 @@
     ],
     "customerDescription": "Can I play with the bees if I dress like this?",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 280,
+    "dishesOrderedIds": [
+      "Wrap",
+      "Cola Wings",
+      "Spicy Chicken Skewers",
+      "Taco",
+      "Shumai",
+      "Exquisite Eggnog",
+      "Boneless Chicken Tenders",
+      "Chinese Cabbage Broth"
+    ]
   },
   {
     "id": "summer_waitress",
@@ -9134,7 +12842,16 @@
     ],
     "customerDescription": "What a cheery outfit! But I'll be happier if I was wearing this to somewhere other than work.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 280,
+    "dishesOrderedIds": [
+      "Baked Fish",
+      "Beef Wellington",
+      "Eight Treasure Rice Pudding",
+      "Hot Pot",
+      "Matcha Taiyaki",
+      "Cola Wings"
+    ]
   },
   {
     "id": "street_artist",
@@ -9145,7 +12862,15 @@
     ],
     "customerDescription": "A cool guy with his own way of doing things.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 280,
+    "dishesOrderedIds": [
+      "Sake",
+      "Bagel",
+      "Boneless Chicken Tenders",
+      "Crispy Fried Meat",
+      "Mapo Tofu"
+    ]
   },
   {
     "id": "novice_baker",
@@ -9156,7 +12881,15 @@
     ],
     "customerDescription": "Having just dipped his toes into baking, he follows the recipe down to the letter, including the required ingredients and stated durations.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 280,
+    "dishesOrderedIds": [
+      "Baked Fish",
+      "Steamed Clams",
+      "Boneless Chicken Tenders",
+      "Bah Kut Teh",
+      "Hot Dry Noodles"
+    ]
   },
   {
     "id": "black_shiba_pilot",
@@ -9167,7 +12900,18 @@
     ],
     "customerDescription": "Only obtained his pilot's license recently.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 280,
+    "dishesOrderedIds": [
+      "Crispy Fried Meat",
+      "Banana Boat",
+      "Exquisite Eggnog",
+      "Snail Noodles",
+      "Spicy Chicken Skewers",
+      "Shumai",
+      "Bibimbap",
+      "Taco"
+    ]
   },
   {
     "id": "formal_granny_wolf",
@@ -9178,7 +12922,12 @@
     ],
     "customerDescription": "Dress like the main character you wish to be.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Smoked Ham",
+      "Crispy Fried Meat"
+    ]
   },
   {
     "id": "strange_doll",
@@ -9189,7 +12938,14 @@
     ],
     "customerDescription": "Looks cute but has a weird vibe about her.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Exquisite Eggnog",
+      "Crispy Fried Meat",
+      "Banana Boat",
+      "Hot Pot"
+    ]
   },
   {
     "id": "exotic_dancer",
@@ -9200,7 +12956,15 @@
     ],
     "customerDescription": "Whenever it walks, the gossamer fabric sways in the wind and the trinkets tickle merrily. How delightful!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Steamed Clams",
+      "Sycee Dumplings",
+      "Mapo Tofu",
+      "Chinese Cabbage Broth",
+      "Coconut Milk Pudding"
+    ]
   },
   {
     "id": "sideline_piggy",
@@ -9211,7 +12975,11 @@
     ],
     "customerDescription": "With that cheerful and bright smile of hers, who can resist buying her products before the soccer match begins?",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Hot Pot"
+    ]
   },
   {
     "id": "lady_yellow_rose",
@@ -9222,7 +12990,16 @@
     ],
     "customerDescription": "A black veil enshrouds the rose's beauty. Just what does fate have in store for her...",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Popcorn",
+      "Playful Cake",
+      "Parfait",
+      "Bouquet Cake",
+      "Taco"
+    ]
   },
   {
     "id": "king_chihuahua",
@@ -9233,7 +13010,13 @@
     ],
     "customerDescription": "It looks rather imposing for some reason...",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Omurice",
+      "Pumpkin Soup",
+      "Teddy Bento"
+    ]
   },
   {
     "id": "little_bunny_bear",
@@ -9244,7 +13027,13 @@
     ],
     "customerDescription": "Although he looks rather stern at first, once he puts on his headgear, he suddenly seems very cute and unassuming.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Buckwheat Noodles",
+      "Boneless Chicken Tenders",
+      "Hot Dry Noodles"
+    ]
   },
   {
     "id": "water_loving_dalmatian",
@@ -9255,7 +13044,12 @@
     ],
     "customerDescription": "It likes to spray water at you when you least expect it.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Curried Crab",
+      "Matcha Taiyaki"
+    ]
   },
   {
     "id": "starlight_researcher",
@@ -9266,7 +13060,14 @@
     ],
     "customerDescription": "Every clear and tranquil night, they would sit atop a mountain and study the starlight.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Sake",
+      "Playful Cake",
+      "Bagel",
+      "Teddy Bento"
+    ]
   },
   {
     "id": "candy_emissary",
@@ -9277,7 +13078,12 @@
     ],
     "customerDescription": "With so much candy hidden under the hat, you'll be sure to find anything that you want.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Boneless Chicken Tenders",
+      "Blueberry Pancake"
+    ]
   },
   {
     "id": "madam_white_snake",
@@ -9288,7 +13094,16 @@
     ],
     "customerDescription": "A thousand-year-old snake spirit who has taken on human form, she finds everything around her new and intriguing.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Eggscellent Bowl",
+      "Crab-Stuffed Orange",
+      "Pineapple Bun",
+      "Curried Crab",
+      "Pumpkin Soup",
+      "Blueberry Pancake"
+    ]
   },
   {
     "id": "xu_xian",
@@ -9299,7 +13114,14 @@
     ],
     "customerDescription": "A kindhearted man who often offers a helping hand to those in need.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Buckwheat Noodles",
+      "Omurice",
+      "Lotus Root Glutinous Rice Balls",
+      "Sycee Dumplings"
+    ]
   },
   {
     "id": "speckled_pig_caveman",
@@ -9310,7 +13132,17 @@
     ],
     "customerDescription": "Follow your primitive instincts.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Bagel",
+      "Bouquet Cake",
+      "Strawberry and Cream Toast",
+      "Steamed Clams",
+      "Fried Shrimp in Red Rice Noodle Rolls",
+      "Parfait",
+      "Curried Crab"
+    ]
   },
   {
     "id": "lion_farmer",
@@ -9321,7 +13153,14 @@
     ],
     "customerDescription": "Searching for serenity in the fields.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Crab-Stuffed Orange",
+      "Bibimbap",
+      "Sycee Dumplings",
+      "Eight Treasure Rice Pudding"
+    ]
   },
   {
     "id": "scientist_terrier",
@@ -9332,7 +13171,13 @@
     ],
     "customerDescription": "Seeks truth from facts and engages in research.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Bah Kut Teh",
+      "Banana Boat",
+      "Bibimbap"
+    ]
   },
   {
     "id": "super_pitcher",
@@ -9343,7 +13188,15 @@
     ],
     "customerDescription": "In search of the perfect trajectory.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Hot Pot",
+      "Crispy Fried Meat",
+      "Blueberry Pancake",
+      "Curried Crab",
+      "Soy Milk & Cruller",
+      "Parfait"
+    ]
   },
   {
     "id": "mysterious_detective",
@@ -9354,7 +13207,14 @@
     ],
     "customerDescription": "When everyone else is baffled and uncertain about their next step, he always manages to find the critical piece of evidence that solves the case.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Popcorn",
+      "Teddy Bento",
+      "Smoked Ham",
+      "Matcha Taiyaki",
+      "Eggscellent Bowl"
+    ]
   },
   {
     "id": "nameless_swordsman",
@@ -9365,7 +13225,13 @@
     ],
     "customerDescription": "A straw cape and a wine gourd are all he needs to wander the world.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Sake",
+      "Eight Treasure Rice Pudding",
+      "Exquisite Eggnog",
+      "Bouquet Cake"
+    ]
   },
   {
     "id": "qipao_granny_wolf",
@@ -9376,7 +13242,14 @@
     ],
     "customerDescription": "The picture of elegance.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Bibimbap",
+      "Hot Dry Noodles",
+      "Bagel",
+      "Baked Fish",
+      "Blueberry Pancake"
+    ]
   },
   {
     "id": "gentle_poet",
@@ -9387,7 +13260,15 @@
     ],
     "customerDescription": "Sitting under a tree and feeling the cool breeze while drinking hot green tea. There's no better way to enjoy life than this!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Sycee Dumplings",
+      "Pumpkin Soup",
+      "Playful Cake",
+      "Shumai",
+      "Steamboat",
+      "Buckwheat Noodles"
+    ]
   },
   {
     "id": "mural_artist",
@@ -9398,7 +13279,15 @@
     ],
     "customerDescription": "Works on each piece of art with utmost dedication.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Steamboat",
+      "Crab-Stuffed Orange",
+      "Boneless Chicken Tenders",
+      "Fried Shrimp in Red Rice Noodle Rolls",
+      "Sycee Dumplings",
+      "Chinese Cabbage Broth"
+    ]
   },
   {
     "id": "greedy_hedgehog_doll_figure",
@@ -9409,7 +13298,17 @@
     ],
     "customerDescription": "Who took a bite of the donut?!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Omurice",
+      "Longjing Prawns",
+      "Mapo Tofu",
+      "Steamboat",
+      "Curried Crab",
+      "Crispy Fried Meat",
+      "Steamed Clams"
+    ]
   },
   {
     "id": "ranger_squirrel",
@@ -9420,7 +13319,16 @@
     ],
     "customerDescription": "Travels far and wide to uphold justice.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Spicy Chicken Skewers",
+      "Sake",
+      "Parfait",
+      "Jellybean Snow Cone",
+      "Lotus Root Glutinous Rice Balls",
+      "Omurice"
+    ]
   },
   {
     "id": "countess",
@@ -9431,7 +13339,14 @@
     ],
     "customerDescription": "Has a haughty gaze.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Parfait",
+      "Pumpkin Soup",
+      "Beef Wellington",
+      "Exquisite Eggnog",
+      "Strawberry Pudding"
+    ]
   },
   {
     "id": "soprano_performer",
@@ -9442,7 +13357,14 @@
     ],
     "customerDescription": "They may be able to sing in a beautiful voice, but doing so out of nowhere still startles people around.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Chinese Cabbage Broth",
+      "Escargot",
+      "Crispy Fried Meat",
+      "Bah Kut Teh",
+      "Mushroom Pasta"
+    ]
   },
   {
     "id": "velvet_bean",
@@ -9453,7 +13375,15 @@
     ],
     "customerDescription": "Will be photographed when he goes to the mall.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Steamboat",
+      "Curried Crab",
+      "Pearl Milk Tea",
+      "Spicy Chicken Skewers",
+      "Matcha Taiyaki",
+      "Hot Dry Noodles"
+    ]
   },
   {
     "id": "skilled_handyman",
@@ -9464,7 +13394,14 @@
     ],
     "customerDescription": "Reassures everybody with the way they calmly complete their tasks at hand.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Banana Boat",
+      "Candied Strawberries",
+      "Pineapple Rice",
+      "Cold Watermelon",
+      "Spicy Crawdads"
+    ]
   },
   {
     "id": "ace_mixologist",
@@ -9475,7 +13412,16 @@
     ],
     "customerDescription": "As the breadwinner of his family, he also works part-time at the bar.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Avocado Sandwich",
+      "Whiskey",
+      "Curried Crab",
+      "Croissant",
+      "Paella",
+      "Eggs Benedict",
+      "Mulled Wine"
+    ]
   },
   {
     "id": "pirate_stoat",
@@ -9486,7 +13432,15 @@
     ],
     "customerDescription": "Looks like she's wearing local fashion from another planet.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Beer",
+      "Purr-fect Chocolate Cake",
+      "Longjing Prawns",
+      "Green Grasshopper",
+      "Seared Scallops",
+      "Lucky Biscuits"
+    ]
   },
   {
     "id": "yuki_onna",
@@ -9497,7 +13451,12 @@
     ],
     "customerDescription": "The surrounding temperature seems to lower when you get close to her.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Crab-Stuffed Orange",
+      "Paella",
+      "Takoyaki"
+    ]
   },
   {
     "id": "barista",
@@ -9508,7 +13467,10 @@
     ],
     "customerDescription": "Looks like he is mature and considerate.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Seared Scallops"
+    ]
   },
   {
     "id": "basketball_forward",
@@ -9519,7 +13481,11 @@
     ],
     "customerDescription": "Able to twirl a basketball while walking.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Chicken Burger",
+      "Paella"
+    ]
   },
   {
     "id": "autumn_quokka",
@@ -9530,7 +13496,11 @@
     ],
     "customerDescription": "Loves every autumntime dish!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Mango Sticky Rice",
+      "Seared Scallops"
+    ]
   },
   {
     "id": "balloon_artist",
@@ -9541,7 +13511,11 @@
     ],
     "customerDescription": "It's said that she can twist balloons into all sorts of interesting shapes.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Christmas Pudding",
+      "Log Cake"
+    ]
   },
   {
     "id": "miss_florist",
@@ -9552,7 +13526,10 @@
     ],
     "customerDescription": "She's surrounded by a light floral fragrance.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Fragrant Flower Pastry"
+    ]
   },
   {
     "id": "bathrobe_platypus",
@@ -9563,7 +13540,10 @@
     ],
     "customerDescription": "And so, a precious day of free time from agricultural research comes to an end.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Rice Pudding"
+    ]
   },
   {
     "id": "christmas_tree_donny",
@@ -9574,7 +13554,10 @@
     ],
     "customerDescription": "It's hard not to wonder why he's dressed like this.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Meat, Egg, and Mushroom Beancurd Roll"
+    ]
   },
   {
     "id": "candy_salesman",
@@ -9585,6 +13568,11 @@
     ],
     "customerDescription": "A friendly Candy Salesman who is well-liked by everyone.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "dishesOrderedIds": [
+      "Cookies",
+      "Cola Wings",
+      "Curry Rice"
+    ]
   }
 ]
