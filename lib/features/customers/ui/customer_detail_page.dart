@@ -8,6 +8,8 @@ import 'poster_detail_page.dart';
 
 import '../../dishes/ui/dish_detail_page.dart';
 import '../../facilities/ui/facility_detail_page.dart';
+import '../../shared/utils/display_names.dart';
+import 'band_page.dart';
 import '../../letters/ui/letter_detail_page.dart';
 import '../../shared/widgets/entity_chip.dart';
 import '../../mementos/data/mementos_index.dart';
@@ -44,6 +46,16 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     super.initState();
     store.registerType(_bucketCustomers);
     _mementoEntries = _resolveMementoEntries();
+
+    // FishNames.nameFor is a synchronous lookup, so the map has to be warm
+    // before the booth section builds. It falls back to prettifying the id,
+    // so an in-flight or failed load degrades to "Hermit Crab" rather than
+    // breaking the row.
+    if (customer.boothOwner != null) {
+      FishNames.instance.load().then((_) {
+        if (mounted) setState(() {});
+      }).catchError((_) => <String, String>{});
+    }
   }
 
   Future<Map<String, MementoEntry>> _resolveMementoEntries() async {
@@ -387,7 +399,12 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     }
 
     if (b.requiredFishIds.isNotEmpty) {
-      lines.add(_section('Required Fish', Text(b.requiredFishIds.join(', '))));
+      // Booth owners reference fish by id; the readable name lives in
+      // fish.json. This printed raw slugs like "hermit_crab" before.
+      lines.add(_section(
+        'Required Fish',
+        Text(b.requiredFishIds.map(FishNames.instance.nameFor).join(', ')),
+      ));
     }
 
     if (b.customerDrop != null) {
@@ -409,7 +426,8 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
         final pct = (r.chance * 100).toStringAsFixed(0);
         lines.add(Padding(
           padding: const EdgeInsets.only(top: 4),
-          child: Text('$pct% chance to get ${r.currency} ${r.amount}'),
+          child: Text(
+              '$pct% chance to get ${prettyCurrency(r.currency)} ${r.amount}'),
         ));
       }
     }
@@ -447,7 +465,25 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     final lines = <Widget>[];
 
     if (p.band != null && p.band!.trim().isNotEmpty) {
-      lines.add(_section('Band', Text(p.band!)));
+      // The band was plain text, which was a dead end: no way to see the
+      // other members. Opens the band's roster instead.
+      lines.add(_section(
+        'Band',
+        Align(
+          alignment: Alignment.centerLeft,
+          child: EntityChip(
+            label: p.band!,
+            onTap: () async {
+              await Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => BandPage(band: p.band!)),
+              );
+              if (!mounted) return;
+              setState(() {});
+            },
+          ),
+        ),
+      ));
     }
 
     if (p.showDurationMinutes != null) {
@@ -461,7 +497,8 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     if (p.baseEarnings != null) {
       lines.add(_section(
         'Base Earnings',
-        Text('${p.baseEarnings!.currency}+${p.baseEarnings!.amountPerMinute}/min'),
+        Text('${prettyCurrency(p.baseEarnings!.currency)} '
+            '+${p.baseEarnings!.amountPerMinute}/min'),
       ));
     }
 

@@ -6,6 +6,8 @@ import '../model/customer.dart';
 import 'customer_detail_page.dart';
 
 enum BoothSort {
+  /// Source order, i.e. the wiki's order, which is the game's order.
+  wikiOrder,
   nameAZ,
   nameZA,
   stayShortest,
@@ -24,7 +26,7 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
   static const String _bucketCustomers = 'customers';
   final store = UnlockedStore.instance;
 
-  BoothSort _sort = BoothSort.nameAZ;
+  BoothSort _sort = BoothSort.wikiOrder;
   String? _fishFilterId;
 
   static const _regularFish = [
@@ -101,7 +103,16 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
   List<Customer> _applySort(List<Customer> list) {
     final out = [...list];
 
+    // List.sort is unstable, so ties fall back to source position.
+    final order = <String, int>{
+      for (var i = 0; i < list.length; i++) list[i].id: i,
+    };
+    int bySource(Customer a, Customer b) =>
+        (order[a.id] ?? 0).compareTo(order[b.id] ?? 0);
+
     switch (_sort) {
+      case BoothSort.wikiOrder:
+        break;
       case BoothSort.nameAZ:
         out.sort((a, b) => a.name.compareTo(b.name));
         break;
@@ -109,14 +120,23 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
         out.sort((a, b) => b.name.compareTo(a.name));
         break;
       case BoothSort.stayShortest:
-        out.sort((a, b) => _stayMin(a).compareTo(_stayMin(b)));
+        out.sort((a, b) {
+          final c = _stayMin(a).compareTo(_stayMin(b));
+          return c != 0 ? c : bySource(a, b);
+        });
         break;
       case BoothSort.stayLongest:
-        out.sort((a, b) => _stayMax(b).compareTo(_stayMax(a)));
+        out.sort((a, b) {
+          final c = _stayMax(b).compareTo(_stayMax(a));
+          return c != 0 ? c : bySource(a, b);
+        });
         break;
       case BoothSort.incomeBestExpected:
-        out.sort((a, b) =>
-            _expectedIncomeEvery5Min(b).compareTo(_expectedIncomeEvery5Min(a)));
+        out.sort((a, b) {
+          final c = _expectedIncomeEvery5Min(b)
+              .compareTo(_expectedIncomeEvery5Min(a));
+          return c != 0 ? c : bySource(a, b);
+        });
         break;
     }
 
@@ -180,6 +200,10 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
             initialValue: _sort,
             onSelected: (v) => setState(() => _sort = v),
             itemBuilder: (context) => const [
+              PopupMenuItem(
+                value: BoothSort.wikiOrder,
+                child: Text('Game order'),
+              ),
               PopupMenuItem(
                 value: BoothSort.nameAZ,
                 child: Text('Name (A–Z)'),

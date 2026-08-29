@@ -137,8 +137,8 @@ class CourtyardRepository {
         return f.series == series;
       }
       return true;
-    }).toList()
-      ..sort((a, b) => a.name.compareTo(b.name));
+    }).toList();
+    // Source order = wiki order = the order the game lists them in.
 
     if (_loaded) _byGroupAndSeries[key] = out;
     return out;

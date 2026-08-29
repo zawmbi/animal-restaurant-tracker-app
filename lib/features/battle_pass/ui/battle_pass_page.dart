@@ -65,8 +65,8 @@ class _BattlePassPageState extends State<BattlePassPage> {
       repo.midsummerBirdsong(),
     ]);
 
-    // Stable ordering for UI.
-    passes.sort((a, b) => a.name.compareTo(b.name));
+    // Listed in the order they were fetched above, which is release order.
+    // Alphabetising them put unrelated seasons next to each other.
     return passes;
   }
 

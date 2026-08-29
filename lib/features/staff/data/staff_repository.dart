@@ -19,8 +19,8 @@ class StaffRepository {
       final data = await JsonLoader.load(_asset) as List<dynamic>;
       final out = data
           .map((e) => StaffMember.fromJson(e as Map<String, dynamic>))
-          .toList()
-        ..sort((a, b) => a.name.compareTo(b.name));
+          .toList();
+      // Left in source order, which is the wiki's (and the game's) order.
       // Sole consumer of this asset; the parsed models replace the raw maps.
       JsonLoader.evict(_asset);
       _cache = out;

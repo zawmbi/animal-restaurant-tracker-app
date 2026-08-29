@@ -90,9 +90,12 @@ class _StaffPageState extends State<StaffPage> {
                       (s.series ?? '').toLowerCase().contains(q);
                 }).toList();
 
-          // Sort (default = JSON order; alphabetical is optional)
+          // Default is the repository's source order, which is the wiki's
+          // (and the game's) order. The repository used to alphabetise on
+          // load, which silently defeated this option.
           if (_sortMode == _StaffSortMode.alphabetical) {
-            filtered.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+            filtered.sort(
+                (a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
           }
 
           final ids = filtered.map((s) => s.id).toList();

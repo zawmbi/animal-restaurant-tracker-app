@@ -6,6 +6,9 @@ import '../model/customer.dart';
 import 'customer_detail_page.dart';
 
 enum CustomerSort {
+  /// The order the data ships in, which is the wiki's order and therefore the
+  /// game's own order. This is the default: alphabetising hid it.
+  wikiOrder,
   nameAZ,
   nameZA,
   ownedFirst,
@@ -87,7 +90,7 @@ class _CustomersGridState extends State<_CustomersGrid> {
 
   static const String _bucketCustomers = 'customers';
 
-  CustomerSort _sort = CustomerSort.nameAZ;
+  CustomerSort _sort = CustomerSort.wikiOrder;
 
   @override
   void initState() {
@@ -112,7 +115,18 @@ class _CustomersGridState extends State<_CustomersGrid> {
   List<Customer> _applySort(List<Customer> list) {
     final out = [...list];
 
+    // Dart's List.sort is not stable, so every comparator below falls back to
+    // the source position rather than to the name. That keeps game order as
+    // the tie-breaker instead of scrambling equal entries alphabetically.
+    final order = <String, int>{
+      for (var i = 0; i < list.length; i++) list[i].id: i,
+    };
+    int bySource(Customer a, Customer b) =>
+        (order[a.id] ?? 0).compareTo(order[b.id] ?? 0);
+
     switch (_sort) {
+      case CustomerSort.wikiOrder:
+        break;
       case CustomerSort.nameAZ:
         out.sort((a, b) => a.name.compareTo(b.name));
         break;
@@ -124,7 +138,7 @@ class _CustomersGridState extends State<_CustomersGrid> {
           final aOwned = store.isUnlocked(_bucketCustomers, a.id) ? 0 : 1;
           final bOwned = store.isUnlocked(_bucketCustomers, b.id) ? 0 : 1;
           final cmp = aOwned.compareTo(bOwned);
-          return cmp != 0 ? cmp : a.name.compareTo(b.name);
+          return cmp != 0 ? cmp : bySource(a, b);
         });
         break;
       case CustomerSort.unownedFirst:
@@ -132,7 +146,7 @@ class _CustomersGridState extends State<_CustomersGrid> {
           final aOwned = store.isUnlocked(_bucketCustomers, a.id) ? 1 : 0;
           final bOwned = store.isUnlocked(_bucketCustomers, b.id) ? 1 : 0;
           final cmp = aOwned.compareTo(bOwned);
-          return cmp != 0 ? cmp : a.name.compareTo(b.name);
+          return cmp != 0 ? cmp : bySource(a, b);
         });
         break;
       case CustomerSort.bySeason:
@@ -140,7 +154,7 @@ class _CustomersGridState extends State<_CustomersGrid> {
           final aSeason = a.season ?? '';
           final bSeason = b.season ?? '';
           final cmp = aSeason.compareTo(bSeason);
-          return cmp != 0 ? cmp : a.name.compareTo(b.name);
+          return cmp != 0 ? cmp : bySource(a, b);
         });
         break;
     }
@@ -162,6 +176,8 @@ class _CustomersGridState extends State<_CustomersGrid> {
 
   String _sortLabel(CustomerSort sort) {
     switch (sort) {
+      case CustomerSort.wikiOrder:
+        return 'Game order';
       case CustomerSort.nameAZ:
         return 'Name (A\u2013Z)';
       case CustomerSort.nameZA:
@@ -223,6 +239,10 @@ class _CustomersGridState extends State<_CustomersGrid> {
                         tooltip: 'Sort',
                         icon: const Icon(Icons.sort),
                         itemBuilder: (context) => [
+                          PopupMenuItem(
+                            value: CustomerSort.wikiOrder,
+                            child: Text(_sortLabel(CustomerSort.wikiOrder)),
+                          ),
                           PopupMenuItem(
                             value: CustomerSort.nameAZ,
                             child: Text(_sortLabel(CustomerSort.nameAZ)),
