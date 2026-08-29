@@ -14494,7 +14494,7 @@
     "appearanceWeight": 280,
     "dishesOrderedIds": [
       "Chinese Cabbage Broth",
-      "Pork on Rice",
+      "Eggscellent Bowl",
       "Beef Wellington",
       "Curried Crab",
       "Boneless Chicken Tenders",
@@ -16171,11 +16171,10 @@
     "customerDescription": "A popular food blogger.",
     "requirements": {
       "recipes": [
-        "Mocha Cake Roll",
+        "Matcha Cake Roll",
         "Mango Sticky Rice",
         "Orange Juice",
-        "Fried Potato",
-        "Matcha Cake Roll"
+        "Fried Potato"
       ],
       "facilities": [
         "springtime_snack_mat"

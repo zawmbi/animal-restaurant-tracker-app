@@ -7035,5 +7035,49 @@
     "flavor": "Salty",
     "requiredStars": 0,
     "price": []
+  },
+  {
+    "id": "bat_candy",
+    "name": "Bat Candy",
+    "sections": [
+      "Halloween Candy"
+    ],
+    "description": "Looks a little like a bat.",
+    "earningsMax": 800,
+    "requiredStars": 0,
+    "price": []
+  },
+  {
+    "id": "eyeball_candy",
+    "name": "Eyeball Candy",
+    "sections": [
+      "Halloween Candy"
+    ],
+    "description": "This is the first time I'm hearing of making candy in the shape of eyeballs.",
+    "earningsMax": 1200,
+    "requiredStars": 0,
+    "price": []
+  },
+  {
+    "id": "mummy_gingersnap",
+    "name": "Mummy Gingersnap",
+    "sections": [
+      "Halloween Candy"
+    ],
+    "description": "I hear that this gingersnap was imported from Egypt. Chant loudly and it will move.",
+    "earningsMax": 1600,
+    "requiredStars": 0,
+    "price": []
+  },
+  {
+    "id": "spider_dessert",
+    "name": "Spider Dessert",
+    "sections": [
+      "Halloween Candy"
+    ],
+    "description": "Adding spiders to dessert, but the sweet threads keep tangling together.",
+    "earningsMax": 2000,
+    "requiredStars": 0,
+    "price": []
   }
 ]

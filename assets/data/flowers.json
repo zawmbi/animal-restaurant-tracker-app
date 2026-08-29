@@ -1,0 +1,247 @@
+[
+  {
+    "id": "daisy",
+    "name": "Daisy",
+    "kind": "regular",
+    "levels": [
+      {
+        "level": 1,
+        "baseView": 2,
+        "avgStarPerView": 0.17
+      },
+      {
+        "level": 2,
+        "baseView": 3,
+        "avgStarPerView": 0.51
+      },
+      {
+        "level": 3,
+        "baseView": 4,
+        "avgStarPerView": 1.02
+      },
+      {
+        "level": 4,
+        "baseView": 5,
+        "avgStarPerView": 1.62
+      }
+    ]
+  },
+  {
+    "id": "sunflower",
+    "name": "Sunflower",
+    "kind": "regular",
+    "levels": [
+      {
+        "level": 1,
+        "baseView": 2,
+        "avgStarPerView": 0.2
+      },
+      {
+        "level": 2,
+        "baseView": 3,
+        "avgStarPerView": 0.56
+      },
+      {
+        "level": 3,
+        "baseView": 4,
+        "avgStarPerView": 1.06
+      },
+      {
+        "level": 4,
+        "baseView": 5,
+        "avgStarPerView": 2.03
+      }
+    ]
+  },
+  {
+    "id": "red_rose",
+    "name": "Red Rose",
+    "kind": "regular",
+    "levels": [
+      {
+        "level": 1,
+        "baseView": 3,
+        "avgStarPerView": 0.36
+      },
+      {
+        "level": 2,
+        "baseView": 4,
+        "avgStarPerView": 0.94
+      },
+      {
+        "level": 3,
+        "baseView": 5,
+        "avgStarPerView": 1.52
+      },
+      {
+        "level": 4,
+        "baseView": 6,
+        "avgStarPerView": 2.63
+      }
+    ]
+  },
+  {
+    "id": "bluebell",
+    "name": "Bluebell",
+    "kind": "regular",
+    "levels": [
+      {
+        "level": 1,
+        "baseView": 4,
+        "avgStarPerView": 0.42
+      },
+      {
+        "level": 2,
+        "baseView": 5,
+        "avgStarPerView": 0.97
+      },
+      {
+        "level": 3,
+        "baseView": 6,
+        "avgStarPerView": 1.7
+      },
+      {
+        "level": 4,
+        "baseView": 7,
+        "avgStarPerView": 2.72
+      }
+    ]
+  },
+  {
+    "id": "white_rose",
+    "name": "White Rose",
+    "kind": "seasonal",
+    "levels": [
+      {
+        "level": 1,
+        "baseView": 6,
+        "avgStarPerView": 0.5
+      },
+      {
+        "level": 2,
+        "baseView": 8,
+        "avgStarPerView": 1.06
+      },
+      {
+        "level": 3,
+        "baseView": 10,
+        "avgStarPerView": 2.15
+      },
+      {
+        "level": 4,
+        "baseView": 12,
+        "avgStarPerView": 3.52
+      }
+    ]
+  },
+  {
+    "id": "sakura",
+    "name": "Sakura",
+    "kind": "seasonal",
+    "levels": [
+      {
+        "level": 1,
+        "baseView": 6,
+        "avgStarPerView": 0.61
+      },
+      {
+        "level": 2,
+        "baseView": 8,
+        "avgStarPerView": 1.48
+      },
+      {
+        "level": 3,
+        "baseView": 10,
+        "avgStarPerView": 2.25
+      },
+      {
+        "level": 4,
+        "baseView": 12,
+        "avgStarPerView": 3.25
+      }
+    ],
+    "availability": "March to May"
+  },
+  {
+    "id": "clover",
+    "name": "Four Leaf Clover",
+    "kind": "seasonal",
+    "levels": [
+      {
+        "level": 1,
+        "baseView": 6,
+        "avgStarPerView": 0.61
+      },
+      {
+        "level": 2,
+        "baseView": 8,
+        "avgStarPerView": 1.48
+      },
+      {
+        "level": 3,
+        "baseView": 10,
+        "avgStarPerView": 2.25
+      },
+      {
+        "level": 4,
+        "baseView": 12,
+        "avgStarPerView": 3.25
+      }
+    ],
+    "availability": "June to August"
+  },
+  {
+    "id": "maple_leaf",
+    "name": "Maple Leaf",
+    "kind": "seasonal",
+    "levels": [
+      {
+        "level": 1,
+        "baseView": 6,
+        "avgStarPerView": 0.61
+      },
+      {
+        "level": 2,
+        "baseView": 8,
+        "avgStarPerView": 1.48
+      },
+      {
+        "level": 3,
+        "baseView": 10,
+        "avgStarPerView": 2.25
+      },
+      {
+        "level": 4,
+        "baseView": 12,
+        "avgStarPerView": 3.25
+      }
+    ]
+  },
+  {
+    "id": "snowflake",
+    "name": "Snowflake",
+    "kind": "seasonal",
+    "levels": [
+      {
+        "level": 1,
+        "baseView": 6,
+        "avgStarPerView": 0.61
+      },
+      {
+        "level": 2,
+        "baseView": 8,
+        "avgStarPerView": 1.48
+      },
+      {
+        "level": 3,
+        "baseView": 10,
+        "avgStarPerView": 2.25
+      },
+      {
+        "level": 4,
+        "baseView": 12,
+        "avgStarPerView": 3.25
+      }
+    ]
+  }
+]

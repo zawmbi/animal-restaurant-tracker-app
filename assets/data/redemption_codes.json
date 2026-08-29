@@ -5,23 +5,29 @@
     "validUntil": "2026-03-14",
     "reason": "Lunar New Year Event 2026",
     "giftMementoId": "rainbow_bead_headpiece",
-    "giftLabel": "Rainbow Bead Headpiece"
-  },  
+    "giftLabel": "Rainbow Bead Headpiece",
+    "giftKind": "memento",
+    "giftRefId": "rainbow_bead_headpiece"
+  },
   {
     "code": "ARLOVE2026",
     "validFrom": "2026-02-14",
     "validUntil": "2026-02-28",
     "reason": "Valentine's Day 2026",
     "giftMementoId": "telephone_bear",
-    "giftLabel": "Telephone Bear"
+    "giftLabel": "Telephone Bear",
+    "giftKind": "facility",
+    "giftRefId": "telephone_bear"
   },
-   {
+  {
     "code": "LUCKYCAT2026",
     "validFrom": "2026-01-31",
     "validUntil": "2026-02-28",
     "reason": "Lunar New Year Event 2026",
     "giftMementoId": "lotus_teacup",
-    "giftLabel": "Lotus Teacup"
+    "giftLabel": "Lotus Teacup",
+    "giftKind": "facility",
+    "giftRefId": "lotus_teacup"
   },
   {
     "code": "ARXMASPARTY",
@@ -29,7 +35,9 @@
     "validUntil": "2026-01-23",
     "reason": "Christmas Event 2025",
     "giftMementoId": "apple_birdie",
-    "giftLabel": "Apple Birdie"
+    "giftLabel": "Apple Birdie",
+    "giftKind": "facility",
+    "giftRefId": "apple_birdie"
   },
   {
     "code": "GUMIPREPXMAS",
@@ -37,7 +45,9 @@
     "validUntil": "2026-01-10",
     "reason": "Christmas Event 2025",
     "giftMementoId": "gingerbread_wall_pockets",
-    "giftLabel": "Gingerbread Wall Pockets"
+    "giftLabel": "Gingerbread Wall Pockets",
+    "giftKind": "memento",
+    "giftRefId": "gingerbread_wall_pockets"
   },
   {
     "code": "PUMPKINBOO",
@@ -45,7 +55,9 @@
     "validUntil": "2025-11-29",
     "reason": "Halloween Event 2025",
     "giftMementoId": "spooky_pumpkin",
-    "giftLabel": "Spooky Pumpkin"
+    "giftLabel": "Spooky Pumpkin",
+    "giftKind": "facility",
+    "giftRefId": "spooky_pumpkin"
   },
   {
     "code": "GUMITREAT",
@@ -53,7 +65,9 @@
     "validUntil": "2025-11-15",
     "reason": "Halloween Event 2025",
     "giftMementoId": "pair_of_jokers",
-    "giftLabel": "Pair of Jokers"
+    "giftLabel": "Pair of Jokers",
+    "giftKind": "facility",
+    "giftRefId": "pair_of_jokers"
   },
   {
     "code": "FULLMOON",
@@ -61,7 +75,9 @@
     "validUntil": "2025-11-04",
     "reason": "Mid-Autumn Festival 2025",
     "giftMementoId": "moon_rabbit_lamp",
-    "giftLabel": "Moon Rabbit Lamp"
+    "giftLabel": "Moon Rabbit Lamp",
+    "giftKind": "facility",
+    "giftRefId": "moon_rabbit_lamp"
   },
   {
     "code": "AR6THANNI",
@@ -69,7 +85,9 @@
     "validUntil": "2025-10-27",
     "reason": "Anniversary Event 2025",
     "giftMementoId": "arrow_of_love",
-    "giftLabel": "Arrow of Love"
+    "giftLabel": "Arrow of Love",
+    "giftKind": "facility",
+    "giftRefId": "arrow_of_love"
   },
   {
     "code": "PARTYTIME",
@@ -77,7 +95,9 @@
     "validUntil": "2025-10-10",
     "reason": "Anniversary Event 2025",
     "giftMementoId": "brilliant_fragrance",
-    "giftLabel": "Brilliant Fragrance"
+    "giftLabel": "Brilliant Fragrance",
+    "giftKind": "facility",
+    "giftRefId": "brilliant_fragrance"
   },
   {
     "code": "LOVEQIXI",
@@ -85,7 +105,9 @@
     "validUntil": "2025-09-27",
     "reason": "Qixi Festival 2025",
     "giftMementoId": "joyful_pairing",
-    "giftLabel": "Joyful Pairing"
+    "giftLabel": "Joyful Pairing",
+    "giftKind": "facility",
+    "giftRefId": "joyful_pairing"
   },
   {
     "code": "FISHMASTER",
@@ -93,7 +115,9 @@
     "validUntil": "2025-09-03",
     "reason": "App Store “Game of The Day” in Hong Kong, Macau, Taiwan",
     "giftMementoId": "azure_sailor_cap",
-    "giftLabel": "Azure Sailor Cap"
+    "giftLabel": "Azure Sailor Cap",
+    "giftKind": "memento",
+    "giftRefId": "azure_sailor_cap"
   },
   {
     "code": "SUMMERINAR",
@@ -101,7 +125,9 @@
     "validUntil": "2025-09-03",
     "reason": null,
     "giftMementoId": "sacred_sanctuary",
-    "giftLabel": "Sacred Sanctuary"
+    "giftLabel": "Sacred Sanctuary",
+    "giftKind": "facility",
+    "giftRefId": "sacred_sanctuary"
   },
   {
     "code": "NEWGARDEN",
@@ -109,7 +135,9 @@
     "validUntil": "2025-07-29",
     "reason": "Welcoming a new staff member, Paddy",
     "giftMementoId": "natures_leaf",
-    "giftLabel": "Nature's Leaf"
+    "giftLabel": "Nature's Leaf",
+    "giftKind": "memento",
+    "giftRefId": "natures_leaf"
   },
   {
     "code": "RAWRRR",
@@ -117,7 +145,9 @@
     "validUntil": "2025-06-29",
     "reason": "Children's Day Event 2025",
     "giftMementoId": "dino_check_in_stand",
-    "giftLabel": "Dino Check-in Stand"
+    "giftLabel": "Dino Check-in Stand",
+    "giftKind": "facility",
+    "giftRefId": "dino_check_in_stand"
   },
   {
     "code": "STARDREAM",
@@ -125,7 +155,9 @@
     "validUntil": "2025-06-14",
     "reason": "Children's Day Event 2025",
     "giftMementoId": "big_cosmic_dream",
-    "giftLabel": "Big Cosmic Dream"
+    "giftLabel": "Big Cosmic Dream",
+    "giftKind": "memento",
+    "giftRefId": "big_cosmic_dream"
   },
   {
     "code": "BIGSECRET",
@@ -133,7 +165,9 @@
     "validUntil": "2025-04-29",
     "reason": "April Fool's 2025",
     "giftMementoId": "secret_mirror",
-    "giftLabel": "Secret Mirror"
+    "giftLabel": "Secret Mirror",
+    "giftKind": "facility",
+    "giftRefId": "secret_mirror"
   },
   {
     "code": "SWEETLOVEAR",
@@ -141,7 +175,8 @@
     "validUntil": "2025-03-13",
     "reason": "Valentine's Day 2025",
     "giftMementoId": "gift_teddy_bear_2",
-    "giftLabel": "Gift Teddy Bear"
+    "giftLabel": "Gift Teddy Bear",
+    "giftKind": "unresolved"
   },
   {
     "code": "NEWYEARINAR",
@@ -149,7 +184,9 @@
     "validUntil": "2025-02-27",
     "reason": "Lunar New Year Event 2025",
     "giftMementoId": "embroidered_opera_flags",
-    "giftLabel": "Embroidered Opera Flags"
+    "giftLabel": "Embroidered Opera Flags",
+    "giftKind": "memento",
+    "giftRefId": "embroidered_opera_flags"
   },
   {
     "code": "GOODLUCK2025",
@@ -157,7 +194,9 @@
     "validUntil": "2025-02-08",
     "reason": "Lunar New Year Event 2025",
     "giftMementoId": "fortuitous_lantern",
-    "giftLabel": "Fortuitous Lantern"
+    "giftLabel": "Fortuitous Lantern",
+    "giftKind": "facility",
+    "giftRefId": "fortuitous_lantern"
   },
   {
     "code": "MERRYGUMI",
@@ -165,7 +204,9 @@
     "validUntil": "2025-01-23",
     "reason": "Christmas Event 2024",
     "giftMementoId": "birdie_train",
-    "giftLabel": "Birdie Train"
+    "giftLabel": "Birdie Train",
+    "giftKind": "memento",
+    "giftRefId": "birdie_train"
   },
   {
     "code": "XMASTIMER",
@@ -173,7 +214,9 @@
     "validUntil": "2025-01-04",
     "reason": "Christmas Event 2024",
     "giftMementoId": "crunchy_apple_clock",
-    "giftLabel": "Crunchy Apple Clock"
+    "giftLabel": "Crunchy Apple Clock",
+    "giftKind": "facility",
+    "giftRefId": "crunchy_apple_clock"
   },
   {
     "code": "HALLOWEENIMP",
@@ -181,7 +224,9 @@
     "validUntil": "2024-11-29",
     "reason": "Halloween Event 2024",
     "giftMementoId": "imps_wings",
-    "giftLabel": "Imp's Wings"
+    "giftLabel": "Imp's Wings",
+    "giftKind": "memento",
+    "giftRefId": "imps_wings"
   },
   {
     "code": "SHOWTIME",
@@ -189,7 +234,9 @@
     "validUntil": "2024-11-16",
     "reason": "Halloween Event 2024",
     "giftMementoId": "show_sign",
-    "giftLabel": "Show Sign"
+    "giftLabel": "Show Sign",
+    "giftKind": "facility",
+    "giftRefId": "show_sign"
   },
   {
     "code": "HAPPY5THANN",
@@ -197,7 +244,9 @@
     "validUntil": "2024-10-26",
     "reason": "Anniversary Event 2024",
     "giftMementoId": "jade_stars",
-    "giftLabel": "Jade Stars"
+    "giftLabel": "Jade Stars",
+    "giftKind": "facility",
+    "giftRefId": "jade_stars"
   },
   {
     "code": "BUNNYHUG",
@@ -205,7 +254,9 @@
     "validUntil": "2024-10-15",
     "reason": "Mid Autumn Festival 2024",
     "giftMementoId": "coconut_milk_bunnies",
-    "giftLabel": "Coconut Milk Bunnies"
+    "giftLabel": "Coconut Milk Bunnies",
+    "giftKind": "facility",
+    "giftRefId": "coconut_milk_bunnies"
   },
   {
     "code": "GIVEME5",
@@ -213,7 +264,9 @@
     "validUntil": "2024-10-11",
     "reason": "Anniversary Event 2024",
     "giftMementoId": "interlinked_hearts",
-    "giftLabel": "Interlinked Hearts"
+    "giftLabel": "Interlinked Hearts",
+    "giftKind": "facility",
+    "giftRefId": "interlinked_hearts"
   },
   {
     "code": "MUSHROOM",
@@ -221,7 +274,9 @@
     "validUntil": "2024-09-14",
     "reason": null,
     "giftMementoId": "yummy_mushroom_hat",
-    "giftLabel": "Yummy Mushroom Hat"
+    "giftLabel": "Yummy Mushroom Hat",
+    "giftKind": "memento",
+    "giftRefId": "yummy_mushroom_hat"
   },
   {
     "code": "TOMYLOVERS",
@@ -229,7 +284,9 @@
     "validUntil": "2024-09-07",
     "reason": "Qixi Festival 2024",
     "giftMementoId": "branch_affection",
-    "giftLabel": "Branch Affection"
+    "giftLabel": "Branch Affection",
+    "giftKind": "facility",
+    "giftRefId": "branch_affection"
   },
   {
     "code": "DUAWNU",
@@ -237,7 +294,9 @@
     "validUntil": "2024-07-08",
     "reason": null,
     "giftMementoId": "summer_butterfly",
-    "giftLabel": "Summer Butterfly"
+    "giftLabel": "Summer Butterfly",
+    "giftKind": "memento",
+    "giftRefId": "summer_butterfly"
   },
   {
     "code": "SINGWITHUS",
@@ -245,7 +304,9 @@
     "validUntil": "2024-06-30",
     "reason": "Children's Day Event 2024",
     "giftMementoId": "floral_guitar",
-    "giftLabel": "Floral Guitar"
+    "giftLabel": "Floral Guitar",
+    "giftKind": "facility",
+    "giftRefId": "floral_guitar"
   },
   {
     "code": "ITSAPRANK",
@@ -253,7 +314,9 @@
     "validUntil": "2024-05-01",
     "reason": "April Fool's 2024",
     "giftMementoId": "happy_clown",
-    "giftLabel": "Happy Clown"
+    "giftLabel": "Happy Clown",
+    "giftKind": "facility",
+    "giftRefId": "happy_clown"
   },
   {
     "code": "UNIQUELOVE",
@@ -261,7 +324,9 @@
     "validUntil": "2024-03-14",
     "reason": "Valentine's Day 2024",
     "giftMementoId": "love_letter_bear",
-    "giftLabel": "Love Letter Bear"
+    "giftLabel": "Love Letter Bear",
+    "giftKind": "facility",
+    "giftRefId": "love_letter_bear"
   },
   {
     "code": "DRGYEAR2024",
@@ -269,7 +334,9 @@
     "validUntil": "2024-03-10",
     "reason": "Lunar New Year Event 2024",
     "giftMementoId": "lotus_incense_burner",
-    "giftLabel": "Lotus Incense Burner"
+    "giftLabel": "Lotus Incense Burner",
+    "giftKind": "memento",
+    "giftRefId": "lotus_incense_burner"
   },
   {
     "code": "FESTIVALVIBE",
@@ -277,7 +344,9 @@
     "validUntil": "2024-02-24",
     "reason": "Lunar New Year Event 2024",
     "giftMementoId": "auspicious_gourd",
-    "giftLabel": "Auspicious Gourd"
+    "giftLabel": "Auspicious Gourd",
+    "giftKind": "memento",
+    "giftRefId": "auspicious_gourd"
   },
   {
     "code": "BUNNYYOLKY",
@@ -285,7 +354,9 @@
     "validUntil": "2024-02-22",
     "reason": "Lunar New Year Event 2024",
     "giftMementoId": "big_eared_hat",
-    "giftLabel": "Big-Eared Hat"
+    "giftLabel": "Big-Eared Hat",
+    "giftKind": "memento",
+    "giftRefId": "big_eared_hat"
   },
   {
     "code": "PRAISEOFXMAS",
@@ -293,7 +364,9 @@
     "validUntil": "2024-01-23",
     "reason": "Christmas Event 2023",
     "giftMementoId": "first_snow_hymn",
-    "giftLabel": "First Snow Hymn"
+    "giftLabel": "First Snow Hymn",
+    "giftKind": "memento",
+    "giftRefId": "first_snow_hymn"
   },
   {
     "code": "BLOOMON25TH",
@@ -301,7 +374,9 @@
     "validUntil": "2024-01-06",
     "reason": "Christmas Event 2023",
     "giftMementoId": "christmas_bouquet",
-    "giftLabel": "Christmas Bouquet"
+    "giftLabel": "Christmas Bouquet",
+    "giftKind": "facility",
+    "giftRefId": "christmas_bouquet"
   },
   {
     "code": "SPOOKYNIGHT",
@@ -309,7 +384,9 @@
     "validUntil": "2023-11-27",
     "reason": "Halloween Event 2023",
     "giftMementoId": "crystal_resting_place",
-    "giftLabel": "Crystal Resting Place"
+    "giftLabel": "Crystal Resting Place",
+    "giftKind": "memento",
+    "giftRefId": "crystal_resting_place"
   },
   {
     "code": "MEOWGICTIME",
@@ -317,7 +394,9 @@
     "validUntil": "2023-11-12",
     "reason": "Halloween Event 2023",
     "giftMementoId": "skeletal_lamp",
-    "giftLabel": "Skeletal Lamp"
+    "giftLabel": "Skeletal Lamp",
+    "giftKind": "memento",
+    "giftRefId": "skeletal_lamp"
   },
   {
     "code": "WARM4THANN",
@@ -325,7 +404,9 @@
     "validUntil": "2023-10-22",
     "reason": "Anniversary Event 2023",
     "giftMementoId": "milky_white_bear",
-    "giftLabel": "Milky White Bear"
+    "giftLabel": "Milky White Bear",
+    "giftKind": "facility",
+    "giftRefId": "milky_white_bear"
   },
   {
     "code": "FLUFFY4THANN",
@@ -333,7 +414,9 @@
     "validUntil": "2023-10-06",
     "reason": "Anniversary Event 2023",
     "giftMementoId": "soft_round_rug",
-    "giftLabel": "Soft Round Rug"
+    "giftLabel": "Soft Round Rug",
+    "giftKind": "facility",
+    "giftRefId": "soft_round_rug"
   },
   {
     "code": "QIXISTARLOVE",
@@ -341,7 +424,9 @@
     "validUntil": "2023-09-21",
     "reason": "Qixi Festival 2023",
     "giftMementoId": "peach_blossom_knot",
-    "giftLabel": "Peach Blossom Knot"
+    "giftLabel": "Peach Blossom Knot",
+    "giftKind": "facility",
+    "giftRefId": "peach_blossom_knot"
   },
   {
     "code": "APRICATSGIFT",
@@ -349,7 +434,9 @@
     "validUntil": "2023-08-30",
     "reason": null,
     "giftMementoId": "apple_sweetheart",
-    "giftLabel": "Apple Sweetheart"
+    "giftLabel": "Apple Sweetheart",
+    "giftKind": "memento",
+    "giftRefId": "apple_sweetheart"
   },
   {
     "code": "BEELOVEDONES",
@@ -357,7 +444,9 @@
     "validUntil": "2023-06-30",
     "reason": "Children’s Day 2023",
     "giftMementoId": "little_bee",
-    "giftLabel": "Little Bee"
+    "giftLabel": "Little Bee",
+    "giftKind": "memento",
+    "giftRefId": "little_bee"
   },
   {
     "code": "ECOFRIENDLY",
@@ -365,7 +454,9 @@
     "validUntil": "2023-06-14",
     "reason": null,
     "giftMementoId": "blooming_arch",
-    "giftLabel": "Blooming Arch"
+    "giftLabel": "Blooming Arch",
+    "giftKind": "facility",
+    "giftRefId": "blooming_arch"
   },
   {
     "code": "PRANKCANDLE",
@@ -373,7 +464,9 @@
     "validUntil": "2023-04-30",
     "reason": "April Fool's 2023",
     "giftMementoId": "blooming_candle",
-    "giftLabel": "Blooming Candle"
+    "giftLabel": "Blooming Candle",
+    "giftKind": "facility",
+    "giftRefId": "blooming_candle"
   },
   {
     "code": "LOVESTORY",
@@ -381,7 +474,9 @@
     "validUntil": "2023-03-13",
     "reason": "Valentine's Day 2023",
     "giftMementoId": "rose_bear",
-    "giftLabel": "Rose Bear"
+    "giftLabel": "Rose Bear",
+    "giftKind": "facility",
+    "giftRefId": "rose_bear"
   },
   {
     "code": "YEAROFRABBIT",
@@ -389,7 +484,9 @@
     "validUntil": "2023-02-21",
     "reason": "Lunar New Year Event 2023",
     "giftMementoId": "fleece_lined_cap",
-    "giftLabel": "Fleece-lined Cap"
+    "giftLabel": "Fleece-lined Cap",
+    "giftKind": "memento",
+    "giftRefId": "fleece_lined_cap"
   },
   {
     "code": "EGGYTROPHY",
@@ -397,7 +494,9 @@
     "validUntil": "2023-01-30",
     "reason": "To promote new merchandise release",
     "giftMementoId": "golden_housekeeper_trophy",
-    "giftLabel": "Golden Housekeeper Trophy"
+    "giftLabel": "Golden Housekeeper Trophy",
+    "giftKind": "memento",
+    "giftRefId": "golden_housekeeper_trophy"
   },
   {
     "code": "MERRYXMAS22",
@@ -405,7 +504,9 @@
     "validUntil": "2023-01-23",
     "reason": "Christmas Event 2022",
     "giftMementoId": "winter_felt_cap",
-    "giftLabel": "Winter Felt Cap"
+    "giftLabel": "Winter Felt Cap",
+    "giftKind": "memento",
+    "giftRefId": "winter_felt_cap"
   },
   {
     "code": "GUMISPEARL",
@@ -413,7 +514,9 @@
     "validUntil": "2022-12-23",
     "reason": "Thanksgiving 2022",
     "giftMementoId": "famous_painting_headscarf",
-    "giftLabel": "Famous Painting Headscarf"
+    "giftLabel": "Famous Painting Headscarf",
+    "giftKind": "memento",
+    "giftRefId": "famous_painting_headscarf"
   },
   {
     "code": "HALLOWEEN22",
@@ -421,7 +524,9 @@
     "validUntil": "2022-11-30",
     "reason": "Halloween Event 2022",
     "giftMementoId": "rose_hat",
-    "giftLabel": "Rose Hat"
+    "giftLabel": "Rose Hat",
+    "giftKind": "memento",
+    "giftRefId": "rose_hat"
   },
   {
     "code": "HAPPY3RDANN",
@@ -429,7 +534,9 @@
     "validUntil": "2022-10-23",
     "reason": "Anniversary Event 2022",
     "giftMementoId": "floral_crown",
-    "giftLabel": "Floral Crown"
+    "giftLabel": "Floral Crown",
+    "giftKind": "memento",
+    "giftRefId": "floral_crown"
   },
   {
     "code": "3RDANNGALA",
@@ -437,7 +544,9 @@
     "validUntil": "2022-10-15",
     "reason": "Anniversary Event 2022",
     "giftMementoId": "artist_sculpture",
-    "giftLabel": "Artist Sculpture"
+    "giftLabel": "Artist Sculpture",
+    "giftKind": "facility",
+    "giftRefId": "artist_sculpture"
   },
   {
     "code": "MOONFESTIVAL",
@@ -445,7 +554,8 @@
     "validUntil": "2022-10-10",
     "reason": "Mid-Autumn Festival 2022",
     "giftMementoId": "osmanthus_hanging_ornament",
-    "giftLabel": "Osmanthus Hanging Ornament"
+    "giftLabel": "Osmanthus Hanging Ornament",
+    "giftKind": "unresolved"
   },
   {
     "code": "GUMILOVEU",
@@ -453,7 +563,9 @@
     "validUntil": "2022-09-21",
     "reason": "5,000 likes on Instagram",
     "giftMementoId": "handmade_scarf",
-    "giftLabel": "Handmade Scarf"
+    "giftLabel": "Handmade Scarf",
+    "giftKind": "memento",
+    "giftRefId": "handmade_scarf"
   },
   {
     "code": "HAPPYASACHILD",
@@ -461,7 +573,9 @@
     "validUntil": "2022-07-01",
     "reason": "Children's Day Event 2022",
     "giftMementoId": "golden_ponytail",
-    "giftLabel": "Golden Ponytail"
+    "giftLabel": "Golden Ponytail",
+    "giftKind": "memento",
+    "giftRefId": "golden_ponytail"
   },
   {
     "code": "DORISAIMEOW",
@@ -469,7 +583,9 @@
     "validUntil": "2022-05-06",
     "reason": "Saimeow Contest Prize [Social Media Event]",
     "giftMementoId": "bunny_ears_top_hat",
-    "giftLabel": "Bunny Ears Top Hat"
+    "giftLabel": "Bunny Ears Top Hat",
+    "giftKind": "memento",
+    "giftRefId": "bunny_ears_top_hat"
   },
   {
     "code": "LOVEUMORE",
@@ -477,7 +593,9 @@
     "validUntil": "2022-03-14",
     "reason": "Valentine's Day 2022",
     "giftMementoId": "romantic_frame",
-    "giftLabel": "Romantic Frame"
+    "giftLabel": "Romantic Frame",
+    "giftKind": "facility",
+    "giftRefId": "romantic_frame"
   },
   {
     "code": "HAPPY2022",
@@ -485,7 +603,9 @@
     "validUntil": "2022-03-01",
     "reason": "Lunar New Year Event 2022",
     "giftMementoId": "cloth_tiger",
-    "giftLabel": "Cloth Tiger"
+    "giftLabel": "Cloth Tiger",
+    "giftKind": "facility",
+    "giftRefId": "cloth_tiger"
   },
   {
     "code": "thx4following",
@@ -493,7 +613,9 @@
     "validUntil": "2022-02-25",
     "reason": "Lunar New Year Event",
     "giftMementoId": "helmet",
-    "giftLabel": "Helmet"
+    "giftLabel": "Helmet",
+    "giftKind": "memento",
+    "giftRefId": "helmet"
   },
   {
     "code": "jinglebells",
@@ -501,7 +623,9 @@
     "validUntil": "2022-01-24",
     "reason": "Christmas Event 2021",
     "giftMementoId": "small_wooden_reindeer",
-    "giftLabel": "Small Wooden Reindeer"
+    "giftLabel": "Small Wooden Reindeer",
+    "giftKind": "facility",
+    "giftRefId": "small_wooden_reindeer"
   },
   {
     "code": "XMAS2021",
@@ -509,7 +633,9 @@
     "validUntil": "2022-01-06",
     "reason": "15,000 likes on Instagram/Christmas 2021",
     "giftMementoId": "gumis_happy_box",
-    "giftLabel": "Gumi's Happy Box"
+    "giftLabel": "Gumi's Happy Box",
+    "giftKind": "facility",
+    "giftRefId": "gumis_happy_box"
   },
   {
     "code": "thanksgiving",
@@ -517,7 +643,9 @@
     "validUntil": "2021-12-26",
     "reason": "10,000 likes on Instagram/Thanksgiving 2021",
     "giftMementoId": "fried_egg",
-    "giftLabel": "Fried Egg"
+    "giftLabel": "Fried Egg",
+    "giftKind": "memento",
+    "giftRefId": "fried_egg"
   },
   {
     "code": "halloween2021",
@@ -525,7 +653,9 @@
     "validUntil": "2021-11-30",
     "reason": "Halloween Event 2021",
     "giftMementoId": "strange_box",
-    "giftLabel": "Strange Box"
+    "giftLabel": "Strange Box",
+    "giftKind": "facility",
+    "giftRefId": "strange_box"
   },
   {
     "code": "2ndanniversary",
@@ -533,7 +663,9 @@
     "validUntil": "2021-10-13",
     "reason": "Anniversary Event 2021",
     "giftMementoId": "brown_top_hat",
-    "giftLabel": "Brown Top Hat"
+    "giftLabel": "Brown Top Hat",
+    "giftKind": "memento",
+    "giftRefId": "brown_top_hat"
   },
   {
     "code": "midautumn2021",
@@ -541,7 +673,9 @@
     "validUntil": "2021-10-20",
     "reason": "Mid-Autumn Festival 2021",
     "giftMementoId": "lantern_car",
-    "giftLabel": "Lantern Car"
+    "giftLabel": "Lantern Car",
+    "giftKind": "memento",
+    "giftRefId": "lantern_car"
   },
   {
     "code": "followus",
@@ -549,7 +683,9 @@
     "validUntil": "2021-10-14",
     "reason": "For reaching 400,000 followers on Instagram",
     "giftMementoId": "seaweed_brows",
-    "giftLabel": "Seaweed Brows"
+    "giftLabel": "Seaweed Brows",
+    "giftKind": "memento",
+    "giftRefId": "seaweed_brows"
   },
   {
     "code": "qixi2021",
@@ -557,7 +693,9 @@
     "validUntil": "2021-09-15",
     "reason": "For reaching 10,000 likes on Instagram",
     "giftMementoId": "fairy_chignon",
-    "giftLabel": "Fairy Chignon"
+    "giftLabel": "Fairy Chignon",
+    "giftKind": "memento",
+    "giftRefId": "fairy_chignon"
   },
   {
     "code": "celebration2021",
@@ -565,7 +703,9 @@
     "validUntil": "2021-08-20",
     "reason": "For reaching 500,000 followers on Facebook",
     "giftMementoId": "speedy_teacup",
-    "giftLabel": "Speedy Teacup"
+    "giftLabel": "Speedy Teacup",
+    "giftKind": "memento",
+    "giftRefId": "speedy_teacup"
   },
   {
     "code": "tsuyu2021",
@@ -573,7 +713,9 @@
     "validUntil": "2021-07-22",
     "reason": "For reaching 5,000 likes on Instagram",
     "giftMementoId": "hydrangea_accessory",
-    "giftLabel": "Hydrangea Accessory"
+    "giftLabel": "Hydrangea Accessory",
+    "giftKind": "memento",
+    "giftRefId": "hydrangea_accessory"
   },
   {
     "code": "happyjune",
@@ -581,7 +723,9 @@
     "validUntil": "2021-06-15",
     "reason": "Children's Day Event 2021",
     "giftMementoId": "candy_wall_hangings",
-    "giftLabel": "Candy Wall Hangings"
+    "giftLabel": "Candy Wall Hangings",
+    "giftKind": "facility",
+    "giftRefId": "candy_wall_hangings"
   },
   {
     "code": "superstar2021",
@@ -589,7 +733,9 @@
     "validUntil": "2021-06-13",
     "reason": "For reaching 1,000 likes on Twitter/Facebook/Instagram",
     "giftMementoId": "strawberry_knitted_cap",
-    "giftLabel": "Strawberry Knitted Cap"
+    "giftLabel": "Strawberry Knitted Cap",
+    "giftKind": "memento",
+    "giftRefId": "strawberry_knitted_cap"
   },
   {
     "code": "onecod",
@@ -597,7 +743,9 @@
     "validUntil": "2021-04-07",
     "reason": "April Fool's Day 2021",
     "giftMementoId": "golden_cod",
-    "giftLabel": "Golden Cod"
+    "giftLabel": "Golden Cod",
+    "giftKind": "memento",
+    "giftRefId": "golden_cod"
   },
   {
     "code": "love2021",
@@ -605,7 +753,9 @@
     "validUntil": "2021-03-14",
     "reason": "Valentine's Day 2021",
     "giftMementoId": "guitar",
-    "giftLabel": "Guitar"
+    "giftLabel": "Guitar",
+    "giftKind": "memento",
+    "giftRefId": "guitar"
   },
   {
     "code": "2021oxyear",
@@ -613,7 +763,9 @@
     "validUntil": "2021-02-21",
     "reason": "Lunar New Year 2021",
     "giftMementoId": "big_headed_stone_lion",
-    "giftLabel": "Big-headed Stone Lion"
+    "giftLabel": "Big-headed Stone Lion",
+    "giftKind": "facility",
+    "giftRefId": "big_headed_stone_lion"
   },
   {
     "code": "5sYtuqu7pf",
@@ -653,7 +805,9 @@
     "validUntil": "2020-11-30",
     "reason": "Thanksgiving 2020",
     "giftMementoId": "thanksgiving_cat",
-    "giftLabel": "Thanksgiving Cat"
+    "giftLabel": "Thanksgiving Cat",
+    "giftKind": "facility",
+    "giftRefId": "thanksgiving_cat"
   },
   {
     "code": "xF3XbHWDOJ",
@@ -669,7 +823,9 @@
     "validUntil": "2020-10-08",
     "reason": "Moon Festival 2020",
     "giftMementoId": "mini_convertible",
-    "giftLabel": "Mini Convertible"
+    "giftLabel": "Mini Convertible",
+    "giftKind": "memento",
+    "giftRefId": "mini_convertible"
   },
   {
     "code": "20200918",
@@ -677,7 +833,9 @@
     "validUntil": "2020-09-30",
     "reason": "Anniversary Celebration 2020",
     "giftMementoId": "shark_hat",
-    "giftLabel": "Shark Hat"
+    "giftLabel": "Shark Hat",
+    "giftKind": "memento",
+    "giftRefId": "shark_hat"
   },
   {
     "code": "happybirthday",
@@ -685,7 +843,9 @@
     "validUntil": "2020-09-30",
     "reason": "Anniversary Celebration 2020",
     "giftMementoId": "apple_hat",
-    "giftLabel": "Apple Hat"
+    "giftLabel": "Apple Hat",
+    "giftKind": "memento",
+    "giftRefId": "apple_hat"
   },
   {
     "code": "bccuRSbpqm",
@@ -701,7 +861,9 @@
     "validUntil": "2020-06-10",
     "reason": "Children's Day 2020",
     "giftMementoId": "lollipop",
-    "giftLabel": "Lollipop Memento"
+    "giftLabel": "Lollipop Memento",
+    "giftKind": "memento",
+    "giftRefId": "lollipop"
   },
   {
     "code": "eMoYchJEd3",
@@ -725,6 +887,8 @@
     "validUntil": "2020-02-28",
     "reason": "100,000 Fans Commemoration",
     "giftMementoId": "100000_fans_commemoration",
-    "giftLabel": "100,000 Fans Commemoration Memento"
+    "giftLabel": "100,000 Fans Commemoration Memento",
+    "giftKind": "memento",
+    "giftRefId": "100000_fans_commemoration"
   }
 ]

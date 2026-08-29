@@ -110,12 +110,16 @@ class CustomerRequirements {
   // optional prereq customers
   final List<String> customers;
 
+  /// Seasonal customers gate on flowers; ids resolve against flowers.json.
+  final List<String> flowers;
+
   CustomerRequirements({
     required this.requiredStars,
     required this.recipes,
     required this.facilities,
     required this.letters,
     required this.customers,
+    this.flowers = const <String>[],
   });
 
   bool get hasAny =>
@@ -123,7 +127,8 @@ class CustomerRequirements {
       recipes.isNotEmpty ||
       facilities.isNotEmpty ||
       letters.isNotEmpty ||
-      customers.isNotEmpty;
+      customers.isNotEmpty ||
+      flowers.isNotEmpty;
 
   factory CustomerRequirements.fromJson(Map<String, dynamic> json) {
     List<String> _stringList(dynamic v) {
@@ -138,11 +143,16 @@ class CustomerRequirements {
     }
 
     return CustomerRequirements(
-      requiredStars: _nullableInt(json['requiredStars']),
+      // The data carries the star requirement under 'rating' far more often
+      // than under 'requiredStars', so accept either rather than silently
+      // dropping the requirement for most customers.
+      requiredStars:
+          _nullableInt(json['requiredStars'] ?? json['rating']),
       recipes: _stringList(json['recipes']),
       facilities: _stringList(json['facilities']),
       letters: _stringList(json['letters']),
       customers: _stringList(json['customers']),
+      flowers: _stringList(json['flowers']),
     );
   }
 }
@@ -151,12 +161,23 @@ class CustomerMemento {
   final String id;
   final String name;
 
-  CustomerMemento({required this.id, required this.name});
+  /// Stars this memento awards. Present in the data but previously dropped.
+  final int? earnedStars;
+
+  CustomerMemento({
+    required this.id,
+    required this.name,
+    this.earnedStars,
+  });
 
   factory CustomerMemento.fromJson(Map<String, dynamic> json) {
+    final rawStars = json['earnedStars'];
     return CustomerMemento(
       id: json['id'].toString(),
       name: (json['name'] ?? '').toString(),
+      earnedStars: rawStars is num
+          ? rawStars.toInt()
+          : (rawStars == null ? null : int.tryParse(rawStars.toString())),
     );
   }
 }
