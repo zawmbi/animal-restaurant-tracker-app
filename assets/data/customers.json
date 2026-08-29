@@ -245,7 +245,6 @@
       "letters": [
         "white_shiba_intro_letter"
       ],
-      "facilities": [],
       "recipes": [],
       "flowers": [
         "white_rose"
@@ -278,7 +277,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -296,7 +294,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "shiba"
@@ -316,7 +313,6 @@
     "requirements": {
       "rating": 6000,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "requiredStars": 6000
@@ -335,7 +331,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -353,7 +348,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -371,7 +365,6 @@
       "rating": 10000,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "requiredStars": 10000
     },
@@ -391,7 +384,6 @@
         "chocolate_lab"
       ],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -408,7 +400,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -425,7 +416,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -444,7 +434,6 @@
         "boston_terrier"
       ],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -461,7 +450,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -478,7 +466,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -495,7 +482,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -512,7 +498,6 @@
       "rating": 22000,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "requiredStars": 22000
     },
@@ -532,7 +517,6 @@
         "husky"
       ],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -549,7 +533,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -566,7 +549,6 @@
       "rating": 30000,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "requiredStars": 30000
     },
@@ -584,7 +566,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -601,7 +582,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -620,7 +600,6 @@
         "sloth"
       ],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -637,7 +616,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -654,7 +632,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -671,7 +648,6 @@
       "rating": 70000,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "requiredStars": 70000
     },
@@ -689,7 +665,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -706,7 +681,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -725,7 +699,6 @@
         "white_rabbit"
       ],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -742,7 +715,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -759,7 +731,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -776,7 +747,6 @@
       "rating": 90000,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "requiredStars": 90000
     },
@@ -796,7 +766,6 @@
         "dalmatian"
       ],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -813,7 +782,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -830,7 +798,6 @@
       "rating": 14000,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "requiredStars": 14000
     },
@@ -848,7 +815,6 @@
       "rating": 18000,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "requiredStars": 18000
     },
@@ -866,7 +832,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -883,7 +848,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -902,7 +866,6 @@
         "penguin"
       ],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -919,7 +882,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -936,7 +898,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -953,7 +914,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -970,7 +930,6 @@
       "rating": null,
       "customers": [],
       "recipes": [],
-      "facilities": [],
       "letters": []
     },
     "mementos": []
@@ -988,7 +947,6 @@
     "customerDescription": "Professional hairdresser. Satisfaction guaranteed!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1008,7 +966,6 @@
     "customerDescription": "Fried to a golden brown. It tastes even better with condiments.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1028,7 +985,6 @@
     "customerDescription": "Many flavors to choose from. Bring your own stool!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1048,7 +1004,6 @@
     "customerDescription": "Although he is wearing a paper bag over his head, he looks really familiar!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1068,7 +1023,6 @@
     "customerDescription": "A bowl of handmade iced jelly full of ingredients on a hot summer day is one of the best indulgences in life!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1088,7 +1042,6 @@
     "customerDescription": "The customers are all frequent patrons, and the stall often stays open till 2 or 3 in the morning.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1108,7 +1061,6 @@
     "customerDescription": "The therapist has top-tier techniques and strength but is also quite talkative.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1128,7 +1080,6 @@
     "customerDescription": "Often gets lost in storybooks and forgets that customers are here.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1148,7 +1099,6 @@
     "customerDescription": "Always has dirty face and palms.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1168,7 +1118,6 @@
     "customerDescription": "Starts to feel uncomfortable if they don't take a few photos every day.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1188,7 +1137,6 @@
     "customerDescription": "Has a gaze filled with countless stories.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1208,7 +1156,6 @@
     "customerDescription": "Has a mysterious look.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1228,7 +1175,6 @@
     "customerDescription": "I hear they were an office worker back in the day.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1248,7 +1194,6 @@
     "customerDescription": "Equally honest with all customers!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1268,7 +1213,6 @@
     "customerDescription": "Another, and another! There's no stopping!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1288,7 +1232,6 @@
     "customerDescription": "I recommend the pineapple flavor. It's sweet, crunchy, and delicious!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1308,7 +1251,6 @@
     "customerDescription": "Just by looking at it, you know it was braided by a master!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1328,7 +1270,6 @@
     "customerDescription": "Want a sweet potato? It'll make your winter days warmer!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": 110000,
@@ -1349,7 +1290,6 @@
     "customerDescription": "Otto's been roasting chestnuts here for years, just waiting for that girl with the braces...",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "little_lion"
@@ -1371,7 +1311,6 @@
     "customerDescription": "I want to bring you to the romantic Oak Bay!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1391,7 +1330,6 @@
     "customerDescription": "Huh? Why does this bowl of soup taste kinda... gooey and salty?",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1411,7 +1349,6 @@
     "customerDescription": "Bang bang bang. It's the melody of the glutinous rice bouncing on drums.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1431,7 +1368,6 @@
     "customerDescription": "You can smell the fragrance of the ink and paper from a distance.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1451,7 +1387,6 @@
     "customerDescription": "He always appears on time and disappears once he finishes selling his herbs.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1471,7 +1406,6 @@
     "customerDescription": "Vegetables sold without the use of middlemen.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "brown_horse"
@@ -1493,7 +1427,6 @@
     "customerDescription": "Just standard magic tricks. The magician doesn't seem to mind that no one is watching.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": 150000,
@@ -1514,7 +1447,6 @@
     "customerDescription": "The shopkeeper is always smiling. He prepares the coconuts with speed and precision.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "asian_elephant"
@@ -1536,7 +1468,6 @@
     "customerDescription": "The stall only opens late at night, specifically for those who go home late.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1556,7 +1487,6 @@
     "customerDescription": "Delicious and healthy.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1576,7 +1506,6 @@
     "customerDescription": "I like to do yoga outdoors when the weather is nice outside.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": 200000,
@@ -1597,7 +1526,6 @@
     "customerDescription": "Are you feeling down? Come and watch my performance!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1617,7 +1545,6 @@
     "customerDescription": "He finished twisting these balloons before I could even blink.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1637,7 +1564,6 @@
     "customerDescription": "Paint it just the way you like it!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1657,7 +1583,6 @@
     "customerDescription": "Appears out of the blue at night and vanishes abruptly before dawn.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1677,7 +1602,6 @@
     "customerDescription": "All the pumpkins carved by the boss look incredibly lifelike.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1697,7 +1621,6 @@
     "customerDescription": "It's clearly unmanned, yet the pumpkin automatically dispenses candy whenever customers step up.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1717,7 +1640,6 @@
     "customerDescription": "Although the boss has a nasty temper, his skills are first-rate.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1737,7 +1659,6 @@
     "customerDescription": "Don't worry, everyone. Rest assured that all our performers have undergone professional training.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1757,7 +1678,6 @@
     "customerDescription": "Would you like a warm glass of fresh red wine to keep the cold at bay this Christmas Eve?",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1777,7 +1697,6 @@
     "customerDescription": "Strange singing can be heard each time someone picks up a bun.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1797,7 +1716,6 @@
     "customerDescription": "Have a listen when you pass by. Who knows when you'll get to enjoy it again?",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1817,7 +1735,6 @@
     "customerDescription": "As long as you're brave enough to pawn it, we'll take it.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -1837,7 +1754,6 @@
     "customerDescription": "Fresh from the oven! They're crispy and delicious.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "alaska"
@@ -1859,7 +1775,6 @@
     "customerDescription": "This booth owner can craft anything upon request.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "chihuahua"
@@ -1881,7 +1796,6 @@
     "customerDescription": "Don't stare at the welding sparks for too long. It'll hurt your eyes!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "dalmatian"
@@ -1903,7 +1817,6 @@
     "customerDescription": "Your support will motivate him to do even better!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "lynx"
@@ -1925,7 +1838,6 @@
     "customerDescription": "I'm not upset, I'm just trying to squeeze as much juice from the lemons as I can!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "yannis"
@@ -1948,7 +1860,6 @@
     "customerDescription": "Take a bite and let the toast's aroma linger in your mouth!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "hamster"
@@ -1970,7 +1881,6 @@
     "customerDescription": "Don't water the succulent plants too frequently!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "praying_samoyed"
@@ -1992,7 +1902,6 @@
     "customerDescription": "Although it tastes strange, it possesses mysterious effects.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "little_turtle"
@@ -2014,7 +1923,6 @@
     "customerDescription": "The fastest broom in the world!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "dachshund"
@@ -2036,7 +1944,6 @@
     "customerDescription": "It will give you the correct answers to all your questions.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "rice_cake"
@@ -2058,7 +1965,6 @@
     "customerDescription": "The tea on the table is always hot, regardless of the time of day.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "mad_hatter"
@@ -2080,7 +1986,6 @@
     "customerDescription": "Fancy making a wish? It's likely to come true!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "adventurer_stoat"
@@ -2102,7 +2007,6 @@
     "customerDescription": "What wondrous place will this tiny train take me this time?",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "binturong"
@@ -2124,7 +2028,6 @@
     "customerDescription": "Ding-a-ling! Tastes like the sweet memories of my childhood.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "wood_chuckin_beaver"
@@ -2146,7 +2049,6 @@
     "customerDescription": "Don't let the rundown exterior fool you–the boss' tofu-grilling skills are top-notch!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "fennec_fox"
@@ -2168,7 +2070,6 @@
     "customerDescription": "A spoonful warms you right up.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "aries"
@@ -2190,7 +2091,6 @@
     "customerDescription": "Sticky rice by itself is 100% delicious, but if you add a sausage, the tastiness shoots up to 10,000%!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "dalmatian"
@@ -2212,7 +2112,6 @@
     "customerDescription": "Three bucks for one, five bucks for two!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "fancy_rat"
@@ -2234,7 +2133,6 @@
     "customerDescription": "This lone booth owner controls legions on the stage!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "chocolate_lab"
@@ -2256,7 +2154,6 @@
     "customerDescription": "Available in all sorts of designs under the sun.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "rice_cake"
@@ -2278,7 +2175,6 @@
     "customerDescription": "Little pilot, are you up for the challenge?",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "wood_chuckin_beaver"
@@ -2300,7 +2196,6 @@
     "customerDescription": "Even though the stall keeper seems quite fierce, in reality he won't chase you away, even if you exceed the allocated time.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "one_eyed_papillon"
@@ -2322,7 +2217,6 @@
     "customerDescription": "Ten seconds is all we need to make a kite!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "pug"
@@ -2344,7 +2238,6 @@
     "customerDescription": "Exquisite coffee beans for an exquisite experience.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "penguin"
@@ -2366,7 +2259,6 @@
     "customerDescription": "100% made by hand, the cones emit a rich aroma.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "white_mouse"
@@ -2388,7 +2280,6 @@
     "customerDescription": "This stall's products are all made of 100% wool. It is said that the stall owner can knit the trendiest designs.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "sheepie"
@@ -2410,7 +2301,6 @@
     "customerDescription": "Only the strongest of warriors are worthy of this challenge.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "sleepwalking_little_lion"
@@ -2432,7 +2322,6 @@
     "customerDescription": "The puppet is far more flexible than the puppeteer.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "party_puppy"
@@ -2454,7 +2343,6 @@
     "customerDescription": "A booth selling handicrafts by Oak Bay Elementary School students. All proceeds go to charity! The students apparently worked really hard on the handicrafts when they learned that they'd be helping those in need.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "little_koala"
@@ -2476,7 +2364,6 @@
     "customerDescription": "Get a super detailed guidebook on snowboarding techniques with every purchase!",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "cher"
@@ -2498,7 +2385,6 @@
     "customerDescription": "Just like memories, time must also be preserved.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -2518,7 +2404,6 @@
     "customerDescription": "Many valuable books can be found here.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "weeping_croc"
@@ -2540,7 +2425,6 @@
     "customerDescription": "It's best to eat something warm and toasty during wintertime.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "manager_bear"
@@ -2562,7 +2446,6 @@
     "customerDescription": "Does any of the lanterns catch your fancy?",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "curly"
@@ -2584,7 +2467,6 @@
     "customerDescription": "The booth owner is a master of the kungfu move known as 'The White Goose Spreads Its Wings.'",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [],
       "rating": null
@@ -2604,7 +2486,6 @@
     "customerDescription": "His dominant arm is much more muscular than his other arm.",
     "requirements": {
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "wounded_bear"
@@ -2627,7 +2508,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "french_bulldog"
@@ -2649,7 +2529,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "dobermann"
@@ -2671,7 +2550,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "green_hat_gnome"
@@ -2693,7 +2571,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "guru"
@@ -2715,7 +2592,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "artist_badger"
@@ -2737,7 +2613,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "striped_yellow_jackal"
@@ -2759,7 +2634,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "terrier"
@@ -2781,7 +2655,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -2801,7 +2674,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -2821,7 +2693,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -2841,7 +2712,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -2861,7 +2731,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "pink_piggy"
@@ -2883,7 +2752,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": [
         "bernese_mountain_pup"
@@ -2906,7 +2774,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3027,7 +2894,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3061,7 +2927,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3095,7 +2960,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3129,7 +2993,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3163,7 +3026,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3197,7 +3059,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3231,7 +3092,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3265,7 +3125,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3299,7 +3158,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3333,7 +3191,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3367,7 +3224,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3401,7 +3257,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3435,7 +3290,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3469,7 +3323,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3503,7 +3356,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3537,7 +3389,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3571,7 +3422,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3605,7 +3455,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3639,7 +3488,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3673,7 +3521,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3707,7 +3554,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3741,7 +3587,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3775,7 +3620,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3809,7 +3653,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3843,7 +3686,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3877,7 +3719,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3911,7 +3752,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3945,7 +3785,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -3979,7 +3818,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4013,7 +3851,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4047,7 +3884,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4081,7 +3917,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4115,7 +3950,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4149,7 +3983,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4183,7 +4016,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4217,7 +4049,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4251,7 +4082,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4285,7 +4115,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4319,7 +4148,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4353,7 +4181,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4387,7 +4214,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4421,7 +4247,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4455,7 +4280,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4489,7 +4313,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4523,7 +4346,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4557,7 +4379,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4591,7 +4412,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4625,7 +4445,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4659,7 +4478,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4693,7 +4511,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4727,7 +4544,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4761,7 +4577,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4795,7 +4610,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4829,7 +4643,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4863,7 +4676,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4897,7 +4709,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4931,7 +4742,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4965,7 +4775,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -4999,7 +4808,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -5033,7 +4841,6 @@
     "requirements": {
       "rating": null,
       "recipes": [],
-      "facilities": [],
       "letters": [],
       "customers": []
     },
@@ -5929,9 +5736,6 @@
     ],
     "customerDescription": "Blueberry fanatics.",
     "requirements": {
-      "facilities": [
-        "daisy"
-      ],
       "recipes": [
         "Bibimbap"
       ],
@@ -6134,9 +5938,6 @@
     ],
     "customerDescription": "Even though he's male, he's taken to wearing a silk scarf that he found somewhere and learned to tie from watching humans.",
     "requirements": {
-      "facilities": [
-        "sunflower"
-      ],
       "recipes": [
         "Roast Shrimp",
         "Fried Shrimp Sushi"
@@ -6259,13 +6060,10 @@
     ],
     "customerDescription": "Isn't he cold? At the very least he could wear some clothes. Everyone feels kinda awkward looking at him.",
     "requirements": {
-      "facilities": [
-        "red_rose"
-      ],
       "rating": 440,
       "requiredStars": 440,
       "flowers": [
-        "rose"
+        "red_rose"
       ]
     },
     "mementos": [
@@ -6372,9 +6170,6 @@
     ],
     "customerDescription": "He's a dog of few words, and nobody dares talk to him. He seems to hate humans.",
     "requirements": {
-      "facilities": [
-        "bluebell"
-      ],
       "recipes": [
         "Kimbap",
         "Curry Rice",
@@ -6555,16 +6350,13 @@
     ],
     "customerDescription": "They're always waiting for something by the intersection. Don't be fooled by their serious faces; they often think of something and start laughing.",
     "requirements": {
-      "facilities": [
-        "white_rose"
-      ],
       "recipes": [
         "Salmon Sushi",
         "Tea",
         "Fries"
       ],
       "flowers": [
-        "wrose"
+        "white_rose"
       ]
     },
     "mementos": [
@@ -6687,10 +6479,6 @@
     ],
     "customerDescription": "These city-slickers get all suave whenever they see a human.",
     "requirements": {
-      "facilities": [
-        "daisy",
-        "red_rose"
-      ],
       "recipes": [
         "Hot Pot",
         "Wrap",
@@ -6698,7 +6486,7 @@
       ],
       "flowers": [
         "daisy",
-        "rose"
+        "red_rose"
       ]
     },
     "mementos": [],
@@ -6858,10 +6646,6 @@
     ],
     "customerDescription": "The chef doesn't like these kinds of customers.",
     "requirements": {
-      "facilities": [
-        "white_rose",
-        "sunflower"
-      ],
       "recipes": [
         "Tea",
         "Cup Noodles",
@@ -6869,8 +6653,8 @@
         "Blueberry Pancake"
       ],
       "flowers": [
-        "wrose",
-        "sunflower"
+        "sunflower",
+        "white_rose"
       ]
     },
     "mementos": [],
@@ -7003,10 +6787,6 @@
     ],
     "customerDescription": "They used to be farm animals, but they were abandoned because they grew too fast. How could a pig NOT grow?",
     "requirements": {
-      "facilities": [
-        "sunflower",
-        "bluebell"
-      ],
       "flowers": [
         "bluebell",
         "sunflower"
@@ -7091,10 +6871,6 @@
     ],
     "customerDescription": "They're always asking if they've lost weight...but they're still as chubby as ever.",
     "requirements": {
-      "facilities": [
-        "daisy",
-        "bluebell"
-      ],
       "rating": 2000,
       "requiredStars": 2000,
       "flowers": [
@@ -7269,10 +7045,6 @@
     ],
     "customerDescription": "They look a bit strange... Nobody's seen this kind of cat before.",
     "requirements": {
-      "facilities": [
-        "red_rose",
-        "bluebell"
-      ],
       "recipes": [
         "Hot Pot",
         "Fried Rice",
@@ -7281,7 +7053,7 @@
       ],
       "flowers": [
         "bluebell",
-        "rose"
+        "red_rose"
       ]
     },
     "mementos": [],
@@ -7387,10 +7159,6 @@
     ],
     "customerDescription": "These sloths are probably more active than others, as they haven't got any mushrooms growing on them.",
     "requirements": {
-      "facilities": [
-        "daisy",
-        "sunflower"
-      ],
       "recipes": [
         "Soy Milk & Cruller",
         "Fried Tofu",
@@ -7454,9 +7222,6 @@
     ],
     "customerDescription": "She always likes to stay in shape.",
     "requirements": {
-      "facilities": [
-        "daisy"
-      ],
       "rating": 3400,
       "requiredStars": 3400,
       "flowers": [
@@ -7487,9 +7252,9 @@
         "eagle_express"
       ],
       "flowers": [
+        "bluebell",
         "daisy",
-        "sunflower",
-        "bluebell"
+        "sunflower"
       ]
     },
     "mementos": [
@@ -7610,17 +7375,12 @@
     ],
     "customerDescription": "She puts on sunglasses and thinks she's all that, but even influencers will go out in style!",
     "requirements": {
-      "facilities": [
-        "daisy",
-        "red_rose",
-        "bluebell"
-      ],
       "rating": 3500,
       "requiredStars": 3500,
       "flowers": [
+        "bluebell",
         "daisy",
-        "rose",
-        "bluebell"
+        "red_rose"
       ]
     },
     "mementos": [
@@ -7718,16 +7478,13 @@
     ],
     "customerDescription": "He's holding his watch like he's late for something.",
     "requirements": {
-      "facilities": [
-        "white_rose"
-      ],
       "recipes": [
         "Chicken Burger",
         "Montblanc",
         "Cookies"
       ],
       "flowers": [
-        "wrose"
+        "white_rose"
       ]
     },
     "mementos": [
@@ -7787,16 +7544,11 @@
     ],
     "customerDescription": "He's carrying a backpack and a camera. He doesn't seem like a bad guy.",
     "requirements": {
-      "facilities": [
-        "daisy",
-        "sunflower",
-        "red_rose"
-      ],
       "rating": 5000,
       "requiredStars": 5000,
       "flowers": [
         "daisy",
-        "rose",
+        "red_rose",
         "sunflower"
       ]
     },
@@ -7944,9 +7696,9 @@
         "fairy_bluebells"
       ],
       "flowers": [
+        "bluebell",
         "daisy",
-        "rose",
-        "bluebell"
+        "red_rose"
       ]
     },
     "mementos": [
@@ -8310,9 +8062,9 @@
         "Avocado Sandwich"
       ],
       "flowers": [
-        "wrose",
-        "rose",
-        "bluebell"
+        "bluebell",
+        "red_rose",
+        "white_rose"
       ]
     },
     "mementos": [
@@ -8352,11 +8104,6 @@
     ],
     "customerDescription": "A little red fox with a big, bushy tail.",
     "requirements": {
-      "facilities": [
-        "sunflower",
-        "red_rose",
-        "bluebell"
-      ],
       "letters": [
         "little_foxs_letter"
       ],
@@ -8365,9 +8112,9 @@
         "Chilled Edamame"
       ],
       "flowers": [
-        "sunflower",
-        "rose",
-        "bluebell"
+        "bluebell",
+        "red_rose",
+        "sunflower"
       ]
     },
     "mementos": [
@@ -9366,10 +9113,6 @@
     ],
     "customerDescription": "A bookworm who carries an encyclopedia wherever he goes.",
     "requirements": {
-      "facilities": [
-        "daisy",
-        "red_rose"
-      ],
       "recipes": [
         "Glutinous Rice Cake",
         "Black Sesame Paste",
@@ -9378,7 +9121,7 @@
       ],
       "flowers": [
         "daisy",
-        "rose"
+        "red_rose"
       ]
     },
     "mementos": [
@@ -9614,9 +9357,6 @@
     ],
     "customerDescription": "Lover of corny jokes. He gets angry if no one laughs at them.",
     "requirements": {
-      "facilities": [
-        "bluebell"
-      ],
       "rating": 1200,
       "requiredStars": 1200,
       "flowers": [
@@ -9888,9 +9628,6 @@
     ],
     "customerDescription": "A math genius whose mental calculation skills outperform those of someone using a calculator.",
     "requirements": {
-      "facilities": [
-        "daisy"
-      ],
       "recipes": [
         "Pumpkin Soup"
       ],
@@ -9958,15 +9695,11 @@
     ],
     "customerDescription": "A scatterbrain that always listens to her owner.",
     "requirements": {
-      "facilities": [
-        "white_rose",
-        "bluebell"
-      ],
       "rating": 25000,
       "requiredStars": 25000,
       "flowers": [
-        "wrose",
-        "bluebell"
+        "bluebell",
+        "white_rose"
       ]
     },
     "mementos": [],
@@ -10030,15 +9763,10 @@
     ],
     "customerDescription": "The manager of a certain influencer. It's rumored that the two of them argue all the time.",
     "requirements": {
-      "facilities": [
-        "daisy",
-        "red_rose",
-        "bluebell"
-      ],
       "flowers": [
+        "bluebell",
         "daisy",
-        "rose",
-        "bluebell"
+        "red_rose"
       ]
     },
     "mementos": [
@@ -10167,9 +9895,6 @@
     ],
     "customerDescription": "A pet rat that slips out of the master's house in search of a nice meal.",
     "requirements": {
-      "facilities": [
-        "sunflower"
-      ],
       "flowers": [
         "sunflower"
       ]
@@ -10365,16 +10090,13 @@
     ],
     "customerDescription": "Lingers near kind people and brings good luck to them.",
     "requirements": {
-      "facilities": [
-        "red_rose"
-      ],
       "recipes": [
         "Longjing Prawns",
         "Hot Dry Noodles",
         "Exquisite Eggnog"
       ],
       "flowers": [
-        "rose"
+        "red_rose"
       ]
     },
     "mementos": [],
@@ -10428,9 +10150,6 @@
     ],
     "customerDescription": "A romance novelist who weeps in distress whenever he suffers from a lack of inspiration.",
     "requirements": {
-      "facilities": [
-        "daisy"
-      ],
       "recipes": [
         "Parfait",
         "Spicy Chicken Skewers",
@@ -10505,9 +10224,6 @@
     ],
     "customerDescription": "A seemingly goofy and good-natured customer.",
     "requirements": {
-      "facilities": [
-        "sunflower"
-      ],
       "recipes": [
         "Pineapple Bun",
         "Cola Wings",
@@ -10557,9 +10273,6 @@
     ],
     "customerDescription": "Works as a beekeeper because he loves honey very much.",
     "requirements": {
-      "facilities": [
-        "daisy"
-      ],
       "recipes": [
         "Beef Wellington",
         "Cream of Mushroom Soup",
@@ -10593,9 +10306,6 @@
     ],
     "customerDescription": "Despite her small age, she's already quite tall.",
     "requirements": {
-      "facilities": [
-        "bluebell"
-      ],
       "recipes": [
         "Mango Sticky Rice",
         "Soy Milk & Cruller",
@@ -10631,9 +10341,6 @@
     ],
     "customerDescription": "This happy and positive customer is always seen with a smile.",
     "requirements": {
-      "facilities": [
-        "sunflower"
-      ],
       "recipes": [
         "Eggscellent Bowl",
         "Blueberry Pancake",
@@ -10674,9 +10381,6 @@
     ],
     "customerDescription": "A retired police dog, but highly dependable to have around.",
     "requirements": {
-      "facilities": [
-        "bluebell"
-      ],
       "recipes": [
         "Longjing Prawns",
         "Spicy Chicken Skewers",
@@ -10719,9 +10423,6 @@
     ],
     "customerDescription": "Always buys lots of stuff with a smile on her face.",
     "requirements": {
-      "facilities": [
-        "sunflower"
-      ],
       "recipes": [
         "Hot Dry Noodles",
         "Soy Milk & Cruller",
@@ -10842,16 +10543,13 @@
     ],
     "customerDescription": "A legendary being that is neither a mouse nor a rabbit, despite its resemblance to both.",
     "requirements": {
-      "facilities": [
-        "red_rose"
-      ],
       "recipes": [
         "Hot Dry Noodles",
         "Crab-Stuffed Orange",
         "Steamboat"
       ],
       "flowers": [
-        "rose"
+        "red_rose"
       ]
     },
     "mementos": [],
@@ -10874,9 +10572,6 @@
     ],
     "customerDescription": "Are they human... or an android?",
     "requirements": {
-      "facilities": [
-        "sunflower"
-      ],
       "recipes": [
         "Chinese Cabbage Broth",
         "Spicy Chicken Skewers",
@@ -10907,9 +10602,6 @@
     ],
     "customerDescription": "Looks perpetually tired.",
     "requirements": {
-      "facilities": [
-        "bluebell"
-      ],
       "recipes": [
         "Longjing Prawns",
         "Crispy Fried Meat",
@@ -10941,9 +10633,6 @@
     ],
     "customerDescription": "An alien enthusiast. Strongly believes in the existence of extraterrestrial life.",
     "requirements": {
-      "facilities": [
-        "sunflower"
-      ],
       "recipes": [
         "Playful Cake",
         "Jellybean Snow Cone",
@@ -10972,9 +10661,6 @@
     ],
     "customerDescription": "A customer from another planet. Makes squishy noises when walking.",
     "requirements": {
-      "facilities": [
-        "bluebell"
-      ],
       "recipes": [
         "Smoked Ham",
         "Steamboat",
@@ -11045,7 +10731,7 @@
         "Chicken Feet in Black Bean Sauce"
       ],
       "flowers": [
-        "wrose"
+        "white_rose"
       ]
     },
     "mementos": [],
@@ -11068,9 +10754,6 @@
     ],
     "customerDescription": "To save her brother, she has never stopped crocheting.",
     "requirements": {
-      "facilities": [
-        "red_rose"
-      ],
       "recipes": [
         "Bouquet Cake",
         "Coconut Cassia Wine",
@@ -11079,7 +10762,7 @@
         "Chicken Cordon Bleu"
       ],
       "flowers": [
-        "rose"
+        "red_rose"
       ]
     },
     "mementos": [],
@@ -11103,9 +10786,6 @@
     ],
     "customerDescription": "His favorite color is pink.",
     "requirements": {
-      "facilities": [
-        "sunflower"
-      ],
       "recipes": [
         "Candied Hawthorn",
         "Spaghetti",
@@ -11178,9 +10858,6 @@
     ],
     "customerDescription": "Looking for the Candy House with her brother in the oak forest.",
     "requirements": {
-      "facilities": [
-        "red_rose"
-      ],
       "recipes": [
         "Roasted Sweet Potato",
         "Blueberry Pancake",
@@ -11189,7 +10866,7 @@
         "Buttery Apple"
       ],
       "flowers": [
-        "rose"
+        "red_rose"
       ]
     },
     "mementos": [],
@@ -12022,9 +11699,6 @@
     "season": "spring",
     "customerDescription": "A dog who loves going to shrines in the springtime to pray for himself and his friends.",
     "requirements": {
-      "facilities": [
-        "sakura"
-      ],
       "recipes": [
         "Fried Shrimp Sushi",
         "Kimbap",
@@ -12064,9 +11738,6 @@
     "season": "spring",
     "customerDescription": "His droopy eyes make him look a bit down, but he's actually a very gentle cat. He's Gumi's friend.",
     "requirements": {
-      "facilities": [
-        "sakura"
-      ],
       "recipes": [
         "Beer",
         "Pizza",
@@ -12106,9 +11777,6 @@
     "season": "spring",
     "customerDescription": "A foreign swallow here on holiday. Loves Chinese culture and food.",
     "requirements": {
-      "facilities": [
-        "sakura"
-      ],
       "recipes": [
         "Coconut Cassia Wine",
         "Cold Watermelon",
@@ -12152,9 +11820,6 @@
     "season": "spring",
     "customerDescription": "A professional mosquito killer who often finds it hard to forget when he's not working.",
     "requirements": {
-      "facilities": [
-        "sakura"
-      ],
       "recipes": [
         "Pineapple Rice",
         "Cold Watermelon",
@@ -12191,9 +11856,6 @@
     "season": "spring",
     "customerDescription": "First time going outside alone. Curious about almost anything.",
     "requirements": {
-      "facilities": [
-        "sakura"
-      ],
       "recipes": [
         "Pineapple Rice",
         "Cold Watermelon",
@@ -12237,9 +11899,6 @@
     "season": "spring",
     "customerDescription": "It's always 110% chock-full of energy. One can't help but wonder where it gets all that vigor from.",
     "requirements": {
-      "facilities": [
-        "sakura"
-      ],
       "recipes": [
         "Banana Boat",
         "Dongpo Pork",
@@ -12283,9 +11942,6 @@
     "season": "spring",
     "customerDescription": "An agriculture major up to their neck in their final year project.",
     "requirements": {
-      "facilities": [
-        "sakura"
-      ],
       "recipes": [
         "Matcha Taiyaki",
         "Longjing Prawns",
@@ -12335,9 +11991,6 @@
     "season": "spring",
     "customerDescription": "Don't ever let it overhear anything you say. It's already privy to too much gossip in town.",
     "requirements": {
-      "facilities": [
-        "sakura"
-      ],
       "recipes": [
         "Longjing Prawns",
         "Matcha Taiyaki",
@@ -12378,9 +12031,6 @@
     "season": "summer",
     "customerDescription": "A poor and defeated toad who's always saying his savings are only in the double digits. He's unwilling to spend anything on himself, but he's always generous toward others. He only comes out on the hottest days.",
     "requirements": {
-      "facilities": [
-        "clover"
-      ],
       "recipes": [
         "Roast Shrimp",
         "Pizza",
@@ -12420,9 +12070,6 @@
     "season": "summer",
     "customerDescription": "It's summer vacation! This little turtle is learning to find food at restaurants alone and wants to make more friends.",
     "requirements": {
-      "facilities": [
-        "clover"
-      ],
       "recipes": [
         "Beer",
         "Pizza",
@@ -12454,9 +12101,6 @@
     "season": "summer",
     "customerDescription": "A very fashionable zebra who is especially nit-picky and talkative. He thinks he's the top influencer.",
     "requirements": {
-      "facilities": [
-        "clover"
-      ],
       "recipes": [
         "Coconut Cassia Wine",
         "Cold Watermelon",
@@ -12493,9 +12137,6 @@
     "season": "summer",
     "customerDescription": "Summer is the season of many dreams. Maybe you'll meet him in your dreams.",
     "requirements": {
-      "facilities": [
-        "clover"
-      ],
       "recipes": [
         "Pineapple Rice",
         "Cold Watermelon",
@@ -12531,9 +12172,6 @@
     "season": "summer",
     "customerDescription": "With a wave of his straw fan, everything will be fine.",
     "requirements": {
-      "facilities": [
-        "clover"
-      ],
       "recipes": [
         "Pineapple Rice",
         "Cold Watermelon",
@@ -12570,13 +12208,13 @@
     "season": "summer",
     "customerDescription": "Always eats until its belly is round and full.",
     "requirements": {
-      "facilities": [
-        "clover"
-      ],
       "recipes": [
         "Meat, Egg, and Mushroom Beancurd Roll",
         "Bouquet Cake",
         "Boneless Chicken Tenders"
+      ],
+      "flowers": [
+        "clover"
       ]
     },
     "mementos": [],
@@ -12606,9 +12244,6 @@
     "season": "summer",
     "customerDescription": "A guinea pig who is on a diet.",
     "requirements": {
-      "facilities": [
-        "clover"
-      ],
       "recipes": [
         "Parfait",
         "Bibimbap",
@@ -12643,9 +12278,6 @@
     "season": "summer",
     "customerDescription": "Runs a farm that grows tons of lemons.",
     "requirements": {
-      "facilities": [
-        "clover"
-      ],
       "recipes": [
         "Exquisite Eggnog",
         "Matcha Taiyaki",
@@ -12675,9 +12307,6 @@
     "season": "autumn",
     "customerDescription": "Its puffy cheeks are like a bottomless pit.",
     "requirements": {
-      "facilities": [
-        "maple_leaf"
-      ],
       "recipes": [
         "Roast Shrimp",
         "Pizza",
@@ -12685,7 +12314,7 @@
         "Scrambled Eggs & Tomatoes"
       ],
       "flowers": [
-        "mleaf"
+        "maple_leaf"
       ]
     },
     "mementos": [],
@@ -12709,9 +12338,6 @@
     "season": "autumn",
     "customerDescription": "Has quite a bad temper and is skittish, always running away at the slightest noise or movement.",
     "requirements": {
-      "facilities": [
-        "maple_leaf"
-      ],
       "recipes": [
         "Beer",
         "Pizza",
@@ -12719,7 +12345,7 @@
         "Montblanc"
       ],
       "flowers": [
-        "mleaf"
+        "maple_leaf"
       ]
     },
     "mementos": [],
@@ -12743,9 +12369,6 @@
     "season": "autumn",
     "customerDescription": "A little panda who enjoys traveling and adventure. He collects various stories and sings of them.",
     "requirements": {
-      "facilities": [
-        "maple_leaf"
-      ],
       "recipes": [
         "Coconut Cassia Wine",
         "Cold Watermelon",
@@ -12754,7 +12377,7 @@
         "Chilled Edamame"
       ],
       "flowers": [
-        "mleaf"
+        "maple_leaf"
       ]
     },
     "mementos": [],
@@ -12781,9 +12404,6 @@
     "season": "autumn",
     "customerDescription": "Her friends think that she's a sophisticated and elegant teddy, but her personality is the opposite in private.",
     "requirements": {
-      "facilities": [
-        "maple_leaf"
-      ],
       "recipes": [
         "Pineapple Rice",
         "Cold Watermelon",
@@ -12792,7 +12412,7 @@
         "Pineapple Bun"
       ],
       "flowers": [
-        "mleaf"
+        "maple_leaf"
       ]
     },
     "mementos": [],
@@ -12820,9 +12440,6 @@
     "season": "autumn",
     "customerDescription": "Has a melancholic look in his eyes. Nobody knows what is on his mind.",
     "requirements": {
-      "facilities": [
-        "maple_leaf"
-      ],
       "recipes": [
         "Pineapple Rice",
         "Cold Watermelon",
@@ -12831,7 +12448,7 @@
         "Dongpo Pork"
       ],
       "flowers": [
-        "mleaf"
+        "maple_leaf"
       ]
     },
     "mementos": [
@@ -12875,7 +12492,7 @@
         "yellow_silk_curtain"
       ],
       "flowers": [
-        "mleaf"
+        "maple_leaf"
       ]
     },
     "mementos": [
@@ -12923,7 +12540,7 @@
         "Strawberry and Cream Toast"
       ],
       "flowers": [
-        "mleaf"
+        "maple_leaf"
       ]
     },
     "mementos": [],
@@ -12948,9 +12565,6 @@
     "season": "autumn",
     "customerDescription": "Excudes an air of notability and elegance.",
     "requirements": {
-      "facilities": [
-        "maple_leaf"
-      ],
       "recipes": [
         "Mapo Tofu",
         "Glutinous Rice Cake",
@@ -12959,7 +12573,7 @@
         "Spicy Chicken Skewers"
       ],
       "flowers": [
-        "mleaf"
+        "maple_leaf"
       ]
     },
     "mementos": [
@@ -12987,9 +12601,6 @@
     "season": "winter",
     "customerDescription": "A novice skier who injured her arm while skiing.",
     "requirements": {
-      "facilities": [
-        "snowflake"
-      ],
       "recipes": [
         "Roast Shrimp",
         "Pizza",
@@ -13021,9 +12632,6 @@
     "season": "winter",
     "customerDescription": "Has a youthful appearance, and is always up-to-date with the latest fashion trends.",
     "requirements": {
-      "facilities": [
-        "snowflake"
-      ],
       "recipes": [
         "Beer",
         "Pizza",
@@ -13055,9 +12663,6 @@
     "season": "winter",
     "customerDescription": "Lady Snow Fox's husband. He loves and respects her very much—if Lady Snow Fox says she's going east, he won't dare go west.",
     "requirements": {
-      "facilities": [
-        "snowflake"
-      ],
       "recipes": [
         "Coconut Cassia Wine",
         "Cold Watermelon",
@@ -13091,9 +12696,6 @@
     "season": "winter",
     "customerDescription": "Dazed as if he just woke up, confused about his whereabouts.",
     "requirements": {
-      "facilities": [
-        "snowflake"
-      ],
       "recipes": [
         "Pineapple Rice",
         "Cold Watermelon",
@@ -13131,9 +12733,6 @@
     "season": "winter",
     "customerDescription": "His flashy brows and the scar at the corner of his eye make him look like there's more to him than meets the eye.",
     "requirements": {
-      "facilities": [
-        "snowflake"
-      ],
       "recipes": [
         "Pineapple Rice",
         "Cold Watermelon",
@@ -13180,9 +12779,6 @@
     "season": "winter",
     "customerDescription": "A wolf native to the Arctic. Why does it look a little weird?",
     "requirements": {
-      "facilities": [
-        "snowflake"
-      ],
       "recipes": [
         "Baked Fish",
         "Roast Turkey",
@@ -13223,9 +12819,6 @@
     "season": "winter",
     "customerDescription": "Although he's getting on in years, he still has a keen sense of smell.",
     "requirements": {
-      "facilities": [
-        "snowflake"
-      ],
       "recipes": [
         "Snail Noodles",
         "Hot Dry Noodles",
@@ -13258,9 +12851,6 @@
     "season": "winter",
     "customerDescription": "Looks commanding at first glance, but is actually very amiable.",
     "requirements": {
-      "facilities": [
-        "snowflake"
-      ],
       "recipes": [
         "Omurice",
         "Cup Noodles",
@@ -15748,7 +15338,7 @@
         "Seared Scallops"
       ],
       "flowers": [
-        "rose"
+        "red_rose"
       ]
     },
     "mementos": [],
@@ -16024,7 +15614,7 @@
         "summer_breeze"
       ],
       "flowers": [
-        "rose"
+        "red_rose"
       ]
     },
     "mementos": [],

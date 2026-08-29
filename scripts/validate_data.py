@@ -59,7 +59,11 @@ for c in cust:
     r=c.get('requirements') or {}
     for x in r.get('recipes',[]): chk(x in dnames,'customer.req.recipes',x)
     for x in c.get('dishesOrderedIds',[]): chk(x in dnames,'customer.dishesOrdered',x)
-    for x in r.get('facilities',[]): chk(x in fids or x in flowers,'customer.req.facilities',x)
+    # Flowers are NOT facilities: accepting them here let 84 flower ids sit in
+    # requirements.facilities and render as facility chips linking to a
+    # FacilityDetailPage that cannot resolve them.
+    for x in r.get('facilities',[]): chk(x in fids,'customer.req.facilities',x)
+    for x in r.get('flowers',[]): chk(x in flowers,'customer.req.flowers',x)
     for x in r.get('customers',[]): chk(x in cids,'customer.req.customers',x)
 for s in staff:
     for w in s['wearableMementos']: chk(w['mementoId'] in mids,'staff.wearable',w['mementoId'])

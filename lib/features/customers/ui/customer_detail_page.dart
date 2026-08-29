@@ -225,6 +225,19 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               },
             ),
 
+            // Flowers are grown in the Vegetable Garden and are not facilities,
+            // so they get their own section and no tap target: there is no
+            // flower detail page to navigate to. They previously sat in
+            // requirements.facilities and rendered as facility chips that led
+            // to a FacilityDetailPage which could never resolve them.
+            _simpleLinks(
+              context: context,
+              title: 'Required Flowers',
+              ids: r.flowers,
+              isOwned: (_) => false,
+              fillIfOwned: ownedFill,
+            ),
+
             _simpleLinks(
               context: context,
               title: 'Required Letters',
