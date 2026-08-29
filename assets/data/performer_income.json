@@ -1,0 +1,496 @@
+{
+ "schemaVersion": 1,
+ "retrieved": "2026-08-29",
+ "source": "https://animalrestaurant.fandom.com/wiki/<performer name> ({{Performer}} infobox)",
+ "note": "Concert performer earnings, keyed by the customer ids in assets/data/customers.json. A performer earns amountPerMinute of their currency for the whole show, so one uninterrupted show pays amountPerMinute * showDurationMinutes. Fan tips during a Courtyard gather and the displayed poster bonus are on top of this and are not included here.",
+ "performers": {
+  "aaron": {
+   "name": "Aaron",
+   "band": "Minty Popping Candy",
+   "currency": "film",
+   "amountPerMinute": 12,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 48
+  },
+  "accompanist_beaver": {
+   "name": "Accompanist Beaver",
+   "band": "Aloha Band",
+   "currency": "film",
+   "amountPerMinute": 14,
+   "showDurationMinutes": 35,
+   "callbackRequirementHours": 51
+  },
+  "accompanist_penguin": {
+   "name": "Accompanist Penguin",
+   "band": "Sakura Soda",
+   "currency": "cod",
+   "amountPerMinute": 1120,
+   "showDurationMinutes": 45,
+   "callbackRequirementHours": 51
+  },
+  "backing_vocalist_beaver": {
+   "name": "Backing Vocalist Beaver",
+   "band": "Aloha Band",
+   "currency": "film",
+   "amountPerMinute": 12,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 72
+  },
+  "backup_dancer_beaver": {
+   "name": "Backup Dancer Beaver",
+   "band": "Aloha Band",
+   "currency": "cod",
+   "amountPerMinute": 1150,
+   "showDurationMinutes": 35,
+   "callbackRequirementHours": 42
+  },
+  "bamboo_hand_fan": {
+   "name": "Bamboo Hand Fan",
+   "band": "Laughing Out Loud",
+   "currency": "cod",
+   "amountPerMinute": 840,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 48
+  },
+  "bassist_border_collie": {
+   "name": "Bassist Border Collie",
+   "band": "Sakura Soda",
+   "currency": "film",
+   "amountPerMinute": 14,
+   "showDurationMinutes": 45,
+   "callbackRequirementHours": 51
+  },
+  "bassist_brown_wolf": {
+   "name": "Bassist Brown Wolf",
+   "band": "Ball Lightning",
+   "currency": "film",
+   "amountPerMinute": 16,
+   "showDurationMinutes": 55,
+   "callbackRequirementHours": 54
+  },
+  "bassist_toad": {
+   "name": "Bassist Toad",
+   "band": "The Croaks",
+   "currency": "film",
+   "amountPerMinute": 10,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 38
+  },
+  "belle": {
+   "name": "Belle",
+   "band": "Minty Popping Candy",
+   "currency": "cod",
+   "amountPerMinute": 1200,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 48
+  },
+  "busy_bee_trice": {
+   "name": "Busy Bee-trice",
+   "band": "Pomegranate Dance Troupe",
+   "currency": "film",
+   "amountPerMinute": 12,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 36
+  },
+  "chopper": {
+   "name": "Chopper",
+   "band": "Laughing Out Loud",
+   "currency": "cod",
+   "amountPerMinute": 1120,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 48
+  },
+  "chris": {
+   "name": "Chris",
+   "band": "Minty Popping Candy",
+   "currency": "cod",
+   "amountPerMinute": 1250,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 60
+  },
+  "cloudmaster": {
+   "name": "Cloudmaster",
+   "band": "Cloudrise Tai Chi",
+   "currency": "film",
+   "amountPerMinute": 15,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": null
+  },
+  "cutie_goose": {
+   "name": "Cutie Goose",
+   "band": "Cutie Girlies",
+   "currency": "film",
+   "amountPerMinute": 14,
+   "showDurationMinutes": 30,
+   "callbackRequirementHours": 12
+  },
+  "cutie_guru": {
+   "name": "Cutie Guru",
+   "band": "Cutie Girlies",
+   "currency": "cod",
+   "amountPerMinute": 1120,
+   "showDurationMinutes": 30,
+   "callbackRequirementHours": 12
+  },
+  "cutie_hamster": {
+   "name": "Cutie Hamster",
+   "band": "Cutie Girlies",
+   "currency": "cod",
+   "amountPerMinute": 840,
+   "showDurationMinutes": 30,
+   "callbackRequirementHours": 10
+  },
+  "cutie_white_bunny": {
+   "name": "Cutie White Bunny",
+   "band": "Cutie Girlies",
+   "currency": "film",
+   "amountPerMinute": 10,
+   "showDurationMinutes": 30,
+   "callbackRequirementHours": 5
+  },
+  "danielle": {
+   "name": "Danielle",
+   "band": "Sunshine Symphony",
+   "currency": "film",
+   "amountPerMinute": 14,
+   "showDurationMinutes": 45,
+   "callbackRequirementHours": 51
+  },
+  "dingle_dangle": {
+   "name": "Dingle-dangle",
+   "band": "Cheesy Notes",
+   "currency": "cod",
+   "amountPerMinute": 840,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 40
+  },
+  "dj_wolf": {
+   "name": "DJ Wolf",
+   "band": "Ball Lightning",
+   "currency": "cod",
+   "amountPerMinute": 1200,
+   "showDurationMinutes": 55,
+   "callbackRequirementHours": 54
+  },
+  "drummer_toad": {
+   "name": "Drummer Toad",
+   "band": "The Croaks",
+   "currency": "cod",
+   "amountPerMinute": 1120,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 40
+  },
+  "drunken_rouge": {
+   "name": "Drunken Rouge",
+   "band": "Eight Tones Band",
+   "currency": "cod",
+   "amountPerMinute": 840,
+   "showDurationMinutes": 35,
+   "callbackRequirementHours": 38
+  },
+  "dubond": {
+   "name": "DuBond",
+   "band": "Sunshine Symphony",
+   "currency": "film",
+   "amountPerMinute": 10,
+   "showDurationMinutes": 45,
+   "callbackRequirementHours": 48
+  },
+  "elegant_emily": {
+   "name": "Elegant Emily",
+   "band": "Pomegranate Dance Troupe",
+   "currency": "cod",
+   "amountPerMinute": 1150,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 60
+  },
+  "ella": {
+   "name": "Ella",
+   "band": "Minty Popping Candy",
+   "currency": "film",
+   "amountPerMinute": 15,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 54
+  },
+  "exquisite_jade": {
+   "name": "Exquisite Jade",
+   "band": "Eight Tones Band",
+   "currency": "film",
+   "amountPerMinute": 14,
+   "showDurationMinutes": 35,
+   "callbackRequirementHours": 40
+  },
+  "frisky_pangolin": {
+   "name": "Frisky Pangolin",
+   "band": "Sweet Yogurt",
+   "currency": "cod",
+   "amountPerMinute": 840,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 38
+  },
+  "gentle_grace": {
+   "name": "Gentle Grace",
+   "band": "Pomegranate Dance Troupe",
+   "currency": "film",
+   "amountPerMinute": 15,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 54
+  },
+  "guitarist_husky": {
+   "name": "Guitarist Husky",
+   "band": "Sakura Soda",
+   "currency": "cod",
+   "amountPerMinute": 840,
+   "showDurationMinutes": 45,
+   "callbackRequirementHours": 48
+  },
+  "guitarist_jackal": {
+   "name": "Guitarist Jackal",
+   "band": "Ball Lightning",
+   "currency": "cod",
+   "amountPerMinute": 900,
+   "showDurationMinutes": 55,
+   "callbackRequirementHours": 54
+  },
+  "guitarist_toad": {
+   "name": "Guitarist Toad",
+   "band": "The Croaks",
+   "currency": "cod",
+   "amountPerMinute": 840,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 38
+  },
+  "lead_dancer_slim_white_dog": {
+   "name": "Lead Dancer Slim White Dog",
+   "band": "Nebulae",
+   "currency": "film",
+   "amountPerMinute": 12,
+   "showDurationMinutes": 50,
+   "callbackRequirementHours": 51
+  },
+  "lead_singer_dalmatian": {
+   "name": "Lead Singer Dalmatian",
+   "band": "Nebulae",
+   "currency": "cod",
+   "amountPerMinute": 900,
+   "showDurationMinutes": 50,
+   "callbackRequirementHours": 51
+  },
+  "leader_pug": {
+   "name": "Leader Pug",
+   "band": "Ball Lightning",
+   "currency": "film",
+   "amountPerMinute": 12,
+   "showDurationMinutes": 55,
+   "callbackRequirementHours": 54
+  },
+  "leader_scotch_collie": {
+   "name": "Leader Scotch Collie",
+   "band": "Nebulae",
+   "currency": "cod",
+   "amountPerMinute": 1200,
+   "showDurationMinutes": 50,
+   "callbackRequirementHours": 51
+  },
+  "little_piggy_angel": {
+   "name": "Little Piggy Angel",
+   "band": "Little Angels Chorus",
+   "currency": "film",
+   "amountPerMinute": 10,
+   "showDurationMinutes": 35,
+   "callbackRequirementHours": 24
+  },
+  "little_shiba_angel": {
+   "name": "Little Shiba Angel",
+   "band": "Little Angels Chorus",
+   "currency": "cod",
+   "amountPerMinute": 1120,
+   "showDurationMinutes": 35,
+   "callbackRequirementHours": 28
+  },
+  "little_turtle_angel": {
+   "name": "Little Turtle Angel",
+   "band": "Little Angels Chorus",
+   "currency": "cod",
+   "amountPerMinute": 840,
+   "showDurationMinutes": 35,
+   "callbackRequirementHours": 24
+  },
+  "little_yorkie_angel": {
+   "name": "Little Yorkie Angel",
+   "band": "Little Angels Chorus",
+   "currency": "film",
+   "amountPerMinute": 14,
+   "showDurationMinutes": 35,
+   "callbackRequirementHours": 28
+  },
+  "louise": {
+   "name": "Louise",
+   "band": "Sunshine Symphony",
+   "currency": "cod",
+   "amountPerMinute": 840,
+   "showDurationMinutes": 45,
+   "callbackRequirementHours": 48
+  },
+  "marcus": {
+   "name": "Marcus",
+   "band": "Sunshine Symphony",
+   "currency": "cod",
+   "amountPerMinute": 1120,
+   "showDurationMinutes": 45,
+   "callbackRequirementHours": 51
+  },
+  "minty_star": {
+   "name": "Minty Star",
+   "band": "Puff Planet",
+   "currency": "film",
+   "amountPerMinute": 12,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 72
+  },
+  "moondancer": {
+   "name": "Moondancer",
+   "band": "Cloudrise Tai Chi",
+   "currency": "cod",
+   "amountPerMinute": 880,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": null
+  },
+  "natural_comedian": {
+   "name": "Natural Comedian",
+   "band": "Laughing Out Loud",
+   "currency": "film",
+   "amountPerMinute": 14,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 48
+  },
+  "piano_contender": {
+   "name": "Piano Contender",
+   "band": "Laughing Out Loud",
+   "currency": "film",
+   "amountPerMinute": 10,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 48
+  },
+  "pretty_face": {
+   "name": "Pretty Face",
+   "band": "Eight Tones Band",
+   "currency": "film",
+   "amountPerMinute": 10,
+   "showDurationMinutes": 35,
+   "callbackRequirementHours": 38
+  },
+  "princess_feather": {
+   "name": "Princess Feather",
+   "band": "Eight Tones Band",
+   "currency": "cod",
+   "amountPerMinute": 1120,
+   "showDurationMinutes": 35,
+   "callbackRequirementHours": 40
+  },
+  "probiotic_panther": {
+   "name": "Probiotic Panther",
+   "band": "Sweet Yogurt",
+   "currency": "film",
+   "amountPerMinute": 10,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 38
+  },
+  "rapper_bean": {
+   "name": "Rapper Bean",
+   "band": "Nebulae",
+   "currency": "film",
+   "amountPerMinute": 16,
+   "showDurationMinutes": 50,
+   "callbackRequirementHours": 51
+  },
+  "rat_a_tat": {
+   "name": "Rat-a-tat",
+   "band": "Cheesy Notes",
+   "currency": "film",
+   "amountPerMinute": 10,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 40
+  },
+  "snowwalker": {
+   "name": "Snowwalker",
+   "band": "Cloudrise Tai Chi",
+   "currency": "cod",
+   "amountPerMinute": 1150,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 60
+  },
+  "soloist_beaver": {
+   "name": "Soloist Beaver",
+   "band": "Aloha Band",
+   "currency": "cod",
+   "amountPerMinute": 1120,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 48
+  },
+  "steady_sally": {
+   "name": "Steady Sally",
+   "band": "Pomegranate Dance Troupe",
+   "currency": "cod",
+   "amountPerMinute": 880,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 42
+  },
+  "sweetie_curly": {
+   "name": "Sweetie Curly",
+   "band": "Sweet Yogurt",
+   "currency": "cod",
+   "amountPerMinute": 1120,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 40
+  },
+  "ta_da_da": {
+   "name": "Ta-da-da",
+   "band": "Cheesy Notes",
+   "currency": "film",
+   "amountPerMinute": 14,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 48
+  },
+  "thump_thump": {
+   "name": "Thump-thump",
+   "band": "Cheesy Notes",
+   "currency": "cod",
+   "amountPerMinute": 1120,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 48
+  },
+  "vocalist_samoyed": {
+   "name": "Vocalist Samoyed",
+   "band": "Sakura Soda",
+   "currency": "film",
+   "amountPerMinute": 10,
+   "showDurationMinutes": 45,
+   "callbackRequirementHours": 48
+  },
+  "vocalist_toad": {
+   "name": "Vocalist Toad",
+   "band": "The Croaks",
+   "currency": "film",
+   "amountPerMinute": 14,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 40
+  },
+  "windrider": {
+   "name": "Windrider",
+   "band": "Cloudrise Tai Chi",
+   "currency": "film",
+   "amountPerMinute": 12,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 48
+  },
+  "zippy_koala": {
+   "name": "Zippy Koala",
+   "band": "Sweet Yogurt",
+   "currency": "film",
+   "amountPerMinute": 14,
+   "showDurationMinutes": 40,
+   "callbackRequirementHours": 40
+  }
+ }
+}

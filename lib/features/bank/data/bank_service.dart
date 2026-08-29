@@ -1,206 +1,184 @@
-// ignore_for_file: unnecessary_nullable_for_final_variable_declarations
-
-// ignore: depend_on_referenced_packages
-import 'package:collection/collection.dart';
-
-import '../../shared/data/unlocked_store.dart';
+import '../../economy/data/income_repository.dart';
+import '../../economy/data/side_income_repository.dart';
+import '../../economy/logic/earnings_calculator.dart';
+import '../../economy/model/income.dart';
 import '../../facilities/data/facilities_repository.dart';
 import '../../facilities/model/facility.dart';
+import '../../shared/data/unlocked_store.dart';
 
+/// Everything the Bank page needs, computed once per load.
+///
+/// The numbers come from `assets/data/income.json`, which was transcribed
+/// from the wiki facility tables with the printed units intact. The previous
+/// version of this service read `facilities_jsons/*.json` instead, where the
+/// Buffet's "+4,200/h" rows had been stored as `incomePerMinute`; multiplying
+/// those by 60 produced a buffet rate about 38x too high, while the tip jar
+/// rate came out ~700x too low because the restaurant, kitchen, garden and
+/// takeout "+N/min" rows were missing from that file entirely.
 class BankStats {
-  /// Buffet cod per hour from checked buffet facilities.
-  final int buffetPerHourCurrent;
-
-  /// Buffet cod per hour if all buffet facilities that make cod were checked.
-  final int buffetPerHourAll;
-
-  /// Tip jar maximum capacity (sum of tipCapIncrease) from checked facilities.
-  final int tipCapCurrent;
-
-  /// Tip jar maximum capacity from all tip desk facilities.
-  final int tipCapAll;
-
-  /// Tip jar fill rate: cod per hour from checked restaurant facilities.
-  final int tipFillPerHourCurrent;
-
-  /// Tip jar fill rate: cod per hour from all restaurant facilities.
-  final int tipFillPerHourAll;
-
-  /// Online-only cod per hour (incomePerInterval cod), checked facilities.
-  final int onlineCodPerHourCurrent;
-
-  /// Online-only cod per hour, all facilities.
-  final int onlineCodPerHourAll;
-
-  /// Plates per day from checked facilities.
-  final int platesPerDayCurrent;
-
-  /// Plates per day from all plate-making facilities.
-  final int platesPerDayAll;
-
   const BankStats({
-    required this.buffetPerHourCurrent,
-    required this.buffetPerHourAll,
-    required this.tipCapCurrent,
-    required this.tipCapAll,
-    required this.tipFillPerHourCurrent,
-    required this.tipFillPerHourAll,
-    required this.onlineCodPerHourCurrent,
-    required this.onlineCodPerHourAll,
-    required this.platesPerDayCurrent,
-    required this.platesPerDayAll,
+    required this.owned,
+    required this.everything,
+    required this.ownedFacilityCount,
+    required this.facilitiesWithIncome,
+    required this.totalFacilityCount,
+    required this.dataRetrieved,
+    required this.booths,
+    required this.staff,
+    required this.performers,
   });
+
+  /// Totals from the facilities the player has ticked off.
+  final IncomeSummary owned;
+
+  /// Totals if every facility with a verified income effect were owned.
+  final IncomeSummary everything;
+
+  /// How many facilities the player has ticked off, across every bucket.
+  final int ownedFacilityCount;
+
+  /// How many facilities in the game have a verified income effect.
+  final int facilitiesWithIncome;
+
+  /// How many facilities exist in the app's data at all.
+  final int totalFacilityCount;
+
+  /// Date the wiki income table was transcribed.
+  final String? dataRetrieved;
+
+  /// Fishing-pond booths that pay out, id ascending.
+  final List<BoothIncome> booths;
+
+  /// Staff whose raise levels carry an income figure, keyed by staff id.
+  final Map<String, StaffIncome> staff;
+
+  /// Concert performers, sorted by band then by name.
+  final List<PerformerIncome> performers;
+
+  bool get hasAnyOwned => owned.facilitiesCounted > 0;
 }
+
 class BankService {
   final FacilitiesRepository _facilities = FacilitiesRepository.instance;
+  final IncomeRepository _income = IncomeRepository.instance;
+  final SideIncomeRepository _side = SideIncomeRepository.instance;
   final UnlockedStore _store = UnlockedStore.instance;
 
+  /// Progress buckets that hold facility ids.
+  ///
+  /// The Facilities page writes `facility`; the Courtyard page writes
+  /// `courtyard_facility_purchased` for the very same ids; and
+  /// `facility_purchased` is the legacy spelling kept so old saves still
+  /// load. Reading only the first, as this service used to, silently ignored
+  /// every Courtyard purchase. Ids are de-duplicated before they are summed,
+  /// so a facility recorded in two buckets is still counted once.
+  static const List<String> facilityBuckets = <String>[
+    'facility',
+    'courtyard_facility_purchased',
+    'facility_purchased',
+  ];
+
   Future<BankStats> compute() async {
+    // init() memoises its own future, so this is a no-op once the app has
+    // started up; without it a cold start would read an empty store.
+    await _store.init();
+    await _income.ensureLoaded();
+    await _side.ensureLoaded();
     final allFacilities = await _facilities.all();
 
-    bool isUnlocked(Facility f) => _store.isUnlocked('facility', f.id);
-
-    // ----- Helpers -----
-
-    int codPerMinute(Facility f) {
-      return f.effects
-          .where((e) =>
-              e.type == FacilityEffectType.incomePerMinute &&
-              e.currency == MoneyCurrency.cod)
-          .map((e) => (e.amount ?? 0).round())
-          .sum;
+    final ownedIds = <String>{};
+    for (final bucket in facilityBuckets) {
+      ownedIds.addAll(_store.ids(bucket));
     }
 
-    int codPerHourFromInterval(Facility f) {
-      int total = 0;
-      for (final e in f.effects) {
-        if (e.type != FacilityEffectType.incomePerInterval) continue;
-        if (e.currency != MoneyCurrency.cod) continue;
+    final owned = EarningsCalculator.summarize(
+      facilityIds: ownedIds,
+      repository: _income,
+    );
+    final everything = EarningsCalculator.summarize(
+      facilityIds: _income.facilityIdsWithIncome,
+      repository: _income,
+    );
 
-        final minutes = e.intervalMinutes ?? 0;
-        if (minutes <= 0) continue;
-        final amt = (e.amount ?? 0).toDouble();
-        final perHour = amt * (60.0 / minutes);
-        total += perHour.round();
-      }
-      return total;
-    }
-
-    int platesPerDay(Facility f) {
-      int total = 0;
-      for (final e in f.effects) {
-        if (e.currency != MoneyCurrency.plates) continue;
-
-        switch (e.type) {
-          case FacilityEffectType.incomePerMinute:
-            final amt = (e.amount ?? 0).toDouble();
-            // 24 hours * 60 minutes
-            total += (amt * 60 * 24).round();
-            break;
-          case FacilityEffectType.incomePerInterval:
-            final minutes = e.intervalMinutes ?? 0;
-            if (minutes <= 0) continue;
-            final amt = (e.amount ?? 0).toDouble();
-            final intervalsPerDay = 1440.0 / minutes;
-            total += (amt * intervalsPerDay).round();
-            break;
-          default:
-            break;
-        }
-      }
-      return total;
-    }
-
-    // ----- Tip cap from tipCapIncrease effects -----
-
-    int tipCap(Facility f) {
-      return f.effects
-          .where((e) => e.type == FacilityEffectType.tipCapIncrease)
-          .map((e) => e.capIncrease ?? 0)
-          .sum;
-    }
-
-    final tipCapFacilities = allFacilities
-        .where((f) => tipCap(f) > 0)
-        .toList();
-
-    final tipCapAllTotal = tipCapFacilities.map(tipCap).sum;
-    final tipCapCurrentTotal =
-        tipCapFacilities.where(isUnlocked).map(tipCap).sum;
-
-    // ----- Split buffet vs tip-jar vs online-only cod -----
-
-    // BUFFET: area == buffet, any cod income (per-minute OR interval)
-    final buffetFacilities = allFacilities
-        .where((f) => f.area == FacilityArea.buffet)
-        .toList();
-
-    // TIP JAR FILL RATE: restaurant area, per-minute cod
-    final restaurantCodFacilities = allFacilities
-        .where((f) =>
-            f.area == FacilityArea.restaurant && codPerMinute(f) > 0)
-        .toList();
-
-    // ONLINE-ONLY: NON-buffet, interval-based cod
-    final intervalCodFacilities = allFacilities
-        .where((f) =>
-            f.area != FacilityArea.buffet &&
-            codPerHourFromInterval(f) > 0)
-        .toList();
-
-    // Buffet per HOUR (includes both per-minute and interval-based income)
-    int buffetAllPerHour = 0;
-    int buffetCurrentPerHour = 0;
-
-    for (final f in buffetFacilities) {
-      final perHourFromMinute = codPerMinute(f) * 60;
-      final perHourFromInterval = codPerHourFromInterval(f);
-      final perHourTotal = perHourFromMinute + perHourFromInterval;
-
-      buffetAllPerHour += perHourTotal;
-      if (isUnlocked(f)) {
-        buffetCurrentPerHour += perHourTotal;
-      }
-    }
-
-    // Tip jar fill rate (restaurant area cod-per-minute)
-    final tipFillAllPerMinute =
-        restaurantCodFacilities.map(codPerMinute).sum;
-    final tipFillCurrentPerMinute = restaurantCodFacilities
-        .where(isUnlocked)
-        .map(codPerMinute)
-        .sum;
-
-    // Online cod per hour from intervals (non-buffet only)
-    final onlineAllPerHour =
-        intervalCodFacilities.map(codPerHourFromInterval).sum;
-    final onlineCurrentPerHour = intervalCodFacilities
-        .where(isUnlocked)
-        .map(codPerHourFromInterval)
-        .sum;
-
-    // Plates per day
-    final platesAllPerDay =
-        allFacilities.map(platesPerDay).where((v) => v > 0).sum;
-    final platesCurrentPerDay = allFacilities
-        .where(isUnlocked)
-        .map(platesPerDay)
-        .where((v) => v > 0)
-        .sum;
+    final performers = _income.performers.values.toList();
+    // Explicit total order: List.sort is not stable in Dart, so the tie-break
+    // on name is what keeps this list from reshuffling between builds.
+    performers.sort((a, b) {
+      final band = (a.band ?? '').compareTo(b.band ?? '');
+      if (band != 0) return band;
+      return a.name.compareTo(b.name);
+    });
 
     return BankStats(
-      buffetPerHourCurrent: buffetCurrentPerHour,
-      buffetPerHourAll: buffetAllPerHour,
-      tipCapCurrent: tipCapCurrentTotal,
-      tipCapAll: tipCapAllTotal,
-      tipFillPerHourCurrent: tipFillAllPerMinute > 0
-          ? tipFillCurrentPerMinute * 60
-          : 0,
-      tipFillPerHourAll: tipFillAllPerMinute * 60,
-      onlineCodPerHourCurrent: onlineCurrentPerHour,
-      onlineCodPerHourAll: onlineAllPerHour,
-      platesPerDayCurrent: platesCurrentPerDay,
-      platesPerDayAll: platesAllPerDay,
+      owned: owned,
+      everything: everything,
+      ownedFacilityCount: ownedIds.length,
+      facilitiesWithIncome: _income.facilityIdsWithIncome.length,
+      totalFacilityCount: allFacilities.length,
+      dataRetrieved: _income.retrieved,
+      booths: _side.payingBooths,
+      staff: _side.staff,
+      performers: performers,
     );
   }
+
+  /// The facilities that contribute to one channel, best first.
+  ///
+  /// Used by the Bank page's "what is feeding this number" breakdowns.
+  Future<List<FacilityContribution>> contributors(
+    IncomeChannel channel, {
+    bool ownedOnly = true,
+    int limit = 10,
+  }) async {
+    await _store.init();
+    await _income.ensureLoaded();
+    final all = await _facilities.all();
+
+    final ownedIds = <String>{};
+    for (final bucket in facilityBuckets) {
+      ownedIds.addAll(_store.ids(bucket));
+    }
+
+    final byId = <String, Facility>{for (final f in all) f.id: f};
+    final out = <FacilityContribution>[];
+    for (final id in _income.facilityIdsWithIncome) {
+      if (ownedOnly && !ownedIds.contains(id)) continue;
+      for (final e in _income.forFacility(id)) {
+        if (e.channel != channel) continue;
+        final f = byId[id];
+        out.add(FacilityContribution(
+          facilityId: id,
+          name: f?.name ?? id,
+          group: f?.group ?? '',
+          minAmount: e.minAmount,
+          maxAmount: e.maxAmount,
+        ));
+      }
+    }
+    out.sort((a, b) {
+      final byAmount = b.maxAmount.compareTo(a.maxAmount);
+      if (byAmount != 0) return byAmount;
+      return a.facilityId.compareTo(b.facilityId);
+    });
+    return out.length > limit ? out.sublist(0, limit) : out;
+  }
+}
+
+/// One facility's share of a channel.
+class FacilityContribution {
+  const FacilityContribution({
+    required this.facilityId,
+    required this.name,
+    required this.group,
+    required this.minAmount,
+    required this.maxAmount,
+  });
+
+  final String facilityId;
+  final String name;
+  final String group;
+  final double minAmount;
+  final double maxAmount;
+
+  bool get isRange => (maxAmount - minAmount).abs() > 1e-9;
 }

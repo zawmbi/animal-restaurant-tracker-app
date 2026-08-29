@@ -1,89 +1,59 @@
 import 'package:flutter/material.dart';
-import 'facility.dart'; // import your existing model + extension
 
-class StoveCookCalculator extends StatefulWidget {
-  final List<Facility> stoves;
+import 'facility.dart';
 
+/// Lists the cooking-efficiency bonus of each stove.
+///
+/// It deliberately does **not** turn that percentage into a cook time. The
+/// wiki prints stoves as "+N% efficiency" and the game's own tutorial only
+/// says "buy a few more stoves and the cooking speed will increase"; neither
+/// publishes how the percentage maps onto seconds, and the percentages of
+/// every stove in the game add up to over 3,000%, which cannot be a
+/// straight subtraction from cook time. Showing a confident "cook time:
+/// 43.2 s" from an unpublished formula would be worse than showing nothing,
+/// so this widget shows the bonus and says what is not known.
+class StoveCookCalculator extends StatelessWidget {
   const StoveCookCalculator({super.key, required this.stoves});
 
-  @override
-  State<StoveCookCalculator> createState() => _StoveCookCalculatorState();
-}
-
-class _StoveCookCalculatorState extends State<StoveCookCalculator> {
-  final _controller = TextEditingController();
-  double? _baseSeconds;
-
-  void _onCalculate() {
-    final text = _controller.text.trim();
-    final value = double.tryParse(text);
-    if (value == null || value <= 0) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Enter a number of seconds > 0')),
-      );
-      return;
-    }
-    setState(() => _baseSeconds = value);
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
+  final List<Facility> stoves;
 
   @override
   Widget build(BuildContext context) {
+    // Sorted by bonus, with an id tie-break: Dart's List.sort is not stable,
+    // so equal bonuses would otherwise reshuffle between builds.
+    final sorted = stoves.toList()
+      ..sort((a, b) {
+        final byBonus =
+            b.cookingEfficiencyPercent.compareTo(a.cookingEfficiencyPercent);
+        return byBonus != 0 ? byBonus : a.id.compareTo(b.id);
+      });
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          'Dish cook length (seconds)',
+          'Stove cooking efficiency',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
-        const SizedBox(height: 8),
-        Row(
-          children: [
-            Expanded(
-              child: TextField(
-                controller: _controller,
-                keyboardType:
-                    const TextInputType.numberWithOptions(decimal: true),
-                decoration: const InputDecoration(
-                  hintText: 'e.g. 120',
-                  border: OutlineInputBorder(),
-                  isDense: true,
-                ),
-              ),
-            ),
-            const SizedBox(width: 8),
-            ElevatedButton(
-              onPressed: _onCalculate,
-              child: const Text('Calculate'),
-            ),
-          ],
+        const SizedBox(height: 4),
+        Text(
+          'The game does not publish how a stove\'s efficiency percentage '
+          'converts into cook time, so this list shows the bonus itself '
+          'rather than a cook time derived from a formula nobody has.',
+          style: Theme.of(context).textTheme.bodySmall,
         ),
-        const SizedBox(height: 16),
-        if (_baseSeconds != null)
-          Expanded(
-            child: ListView(
-              children: widget.stoves.map((stove) {
-                final eff = stove.cookingEfficiencyPercent;
-                final cook = stove.cookTimeFor(_baseSeconds!);
-                final saved = _baseSeconds! - cook;
-                return Card(
-                  margin: const EdgeInsets.symmetric(vertical: 4),
-                  child: ListTile(
-                    title: Text(stove.name),
-                    subtitle: Text(
-                      'Efficiency: +${eff.toStringAsFixed(1)}%\n'
-                      'Cook time: ${cook.toStringAsFixed(1)}s '
-                      '(saved ${saved.toStringAsFixed(1)}s)',
-                    ),
-                    trailing: Text(stove.group),
-                  ),
-                );
-              }).toList(),
+        const SizedBox(height: 12),
+        for (final stove in sorted)
+          Card(
+            margin: const EdgeInsets.symmetric(vertical: 4),
+            child: ListTile(
+              title: Text(stove.name),
+              subtitle: Text(
+                stove.cookingEfficiencyPercent > 0
+                    ? 'Efficiency: +${stove.cookingEfficiencyPercent.toStringAsFixed(1)}%'
+                    : 'No published efficiency bonus',
+              ),
+              trailing: Text(stove.group),
             ),
           ),
       ],
