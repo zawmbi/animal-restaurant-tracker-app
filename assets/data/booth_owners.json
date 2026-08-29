@@ -3803,5 +3803,108 @@
         "night": null
       }
     ]
+  },
+  "artificial_butterfly_specimens": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "starfish",
+      "ray",
+      "butterflyfish"
+    ],
+    "incomeEvery5Min": [],
+    "customerDrop": null,
+    "appearanceRatesByFish": []
+  },
+  "crecrepe": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "crab",
+      "seahorse"
+    ],
+    "incomeEvery5Min": [],
+    "customerDrop": null,
+    "appearanceRatesByFish": []
+  },
+  "dazzling_iron_fireworks": {
+    "timeRange": {
+      "label": "19:00 to 06:00"
+    },
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "goldfish",
+      "shark",
+      "jellyfish"
+    ],
+    "incomeEvery5Min": [],
+    "customerDrop": null,
+    "appearanceRatesByFish": []
+  },
+  "exquisite_embroidery": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "pink_shell",
+      "ray"
+    ],
+    "incomeEvery5Min": [],
+    "customerDrop": null,
+    "appearanceRatesByFish": []
+  },
+  "finger_licking_fried_food": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "flounder",
+      "sea_urchin"
+    ],
+    "incomeEvery5Min": [],
+    "customerDrop": null,
+    "appearanceRatesByFish": []
+  },
+  "lucky_string_pull_game": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "pink_shell",
+      "butterflyfish"
+    ],
+    "incomeEvery5Min": [],
+    "customerDrop": null,
+    "appearanceRatesByFish": []
+  },
+  "pineneedle_lacquer_fans": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "hermit_crab",
+      "red_puffer"
+    ],
+    "incomeEvery5Min": [],
+    "customerDrop": null,
+    "appearanceRatesByFish": []
+  },
+  "speedy_street_stir_fries": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "squid",
+      "goldfish"
+    ],
+    "incomeEvery5Min": [],
+    "customerDrop": null,
+    "appearanceRatesByFish": []
+  },
+  "traditional_rattan_weaving": {
+    "timeRange": null,
+    "stayDurationMinutes": null,
+    "requiredFishIds": [
+      "flounder",
+      "cuttlefish"
+    ],
+    "incomeEvery5Min": [],
+    "customerDrop": null,
+    "appearanceRatesByFish": []
   }
 }
