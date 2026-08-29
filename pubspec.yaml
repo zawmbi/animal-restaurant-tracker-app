@@ -90,24 +90,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
 
   fonts:
-    - family: MondayFeelings
-      fonts:
-        - asset: assets/fonts/MondayFeelings-7BD2l.ttf
-        # Uncomment or add more weights if you have them:
-        # - asset: assets/fonts/MondayFeelings-Bold.ttf
-        #   weight: 700
-        # - asset: assets/fonts/MondayFeelings-Italic.ttf
-        #   style: italic
-
-    - family: HighwayGothicD
-      fonts:
-
-        - asset: assets/fonts/Highwaygothiccplus100-MAzqr.otf
-    - family: PerfectLemonade
-      fonts:
-
-        - asset: assets/fonts/PerfectLemonade.otf
+    # Only Quano is referenced by the app (lib/theme/app_theme.dart, the sole
+    # `fontFamily:` in lib/). MondayFeelings, HighwayGothicD and
+    # PerfectLemonade were declared here but named by no code anywhere in the
+    # repo, so they were bundled into every build for nothing (89 KB). The
+    # .ttf/.otf files are still in assets/fonts/ if they are ever wanted.
     - family: Quano
       fonts:
-
         - asset: assets/fonts/Quano.otf

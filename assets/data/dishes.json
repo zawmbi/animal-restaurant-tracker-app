@@ -7003,21 +7003,5 @@
         "amount": 6100000
       }
     ]
-  },
-  {
-    "id": "yogurt_drink_buffet",
-    "name": "Yogurt Drink",
-    "sections": [
-      "Buffet"
-    ],
-    "description": "I'm tart and sweet!",
-    "earningsPerHour": 4700,
-    "requiredStars": 10000,
-    "price": [
-      {
-        "currency": "plates",
-        "amount": 2200
-      }
-    ]
   }
 ]

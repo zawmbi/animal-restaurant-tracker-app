@@ -46,6 +46,7 @@ class CompletionCategory {
     required this.label,
     required this.parts,
     this.countsTowardTotal = true,
+    this.subgroups = const <CompletionCategory>[],
     this.note,
     this.error,
   });
@@ -58,8 +59,13 @@ class CompletionCategory {
   final List<CompletionPart> parts;
 
   /// False for sets that are a subset of another category (booth owners are
-  /// customers), so the overall percentage does not count them twice.
+  /// customers; memento source subgroups are slices of Mementos), so the
+  /// overall percentage does not count them twice.
   final bool countsTowardTotal;
+
+  /// Optional breakdown *inside* this category. Subgroups partition this
+  /// category's own ids, so they always have countsTowardTotal == false.
+  final List<CompletionCategory> subgroups;
 
   /// Small explanatory line under the row.
   final String? note;
@@ -163,7 +169,7 @@ class CompletionService {
 
     final categories = <CompletionCategory>[
       await _guard('customers', 'Customers', _customers),
-      await _guard('mementos', 'Mementos', _mementos),
+      await _mementosCategory(),
       await _guard('recipes', 'Recipes', _recipes),
       await _guard('letters', 'Letters', _letters),
       await _guard('facilities', 'Facilities', _facilities),
@@ -239,37 +245,85 @@ class CompletionService {
     ];
   }
 
-  /// Mementos live in two places: the standalone index (mementos.json +
-  /// mementos_extra.json) and the `mementos` array embedded in each customer
-  /// inside customers.json. Both resolve to the same `m:<customerId>/<id>` key
-  /// shape, so the union is deduplicated here.
-  Future<List<CompletionPart>> _mementos() async {
-    final keys = <String>{};
+  /// Mementos are counted from `assets/data/mementos.json` ONLY, via
+  /// MementosIndex.
+  ///
+  /// DO NOT also add the `mementos` array embedded in each customer inside
+  /// customers.json: those embedded entries are the same collectibles with the
+  /// same ids (123 of the 1184 mementos are customer-linked), not extra ones.
+  /// Summing both sets would double count them and the percentage would be
+  /// permanently wrong. The customer page renders its embedded array purely as
+  /// a display/link.
+  ///
+  /// The list is deduplicated by memento `id` anyway, defensively: this data
+  /// has drifted once already, and a duplicate id must never inflate the
+  /// denominator.
+  Future<CompletionCategory> _mementosCategory() async {
+    try {
+      final entries = await MementosIndex.instance.all();
 
-    for (final entry in await MementosIndex.instance.all()) {
-      keys.add(entry.key);
-    }
-
-    for (final customer in await CustomersRepository.instance.all()) {
-      for (final m in customer.mementos) {
-        keys.add(mementoKeyFor(customerId: customer.id, mementoId: m.id));
+      final seenIds = <String>{};
+      final unique = <MementoEntry>[];
+      for (final e in entries) {
+        if (seenIds.add(e.id)) unique.add(e);
       }
-    }
 
-    return <CompletionPart>[
-      CompletionPart(
-        ProgressTypes.mementoCollected,
-        keys.toList(growable: false),
-      ),
-    ];
+      // Mementos are a first-class set, not a customer sub-collection: only
+      // 123 of them belong to a customer at all. The useful breakdown is by
+      // where you grind them out, i.e. `source`.
+      final bySource = <String, List<String>>{};
+      for (final e in unique) {
+        final label = prettyMementoSource(e.source);
+        (bySource[label] ??= <String>[]).add(e.key);
+      }
+
+      final sourceLabels = bySource.keys.toList()
+        ..sort((a, b) {
+          final bySize = bySource[b]!.length.compareTo(bySource[a]!.length);
+          return bySize != 0 ? bySize : a.compareTo(b);
+        });
+
+      return CompletionCategory(
+        key: 'mementos',
+        label: 'Mementos',
+        parts: <CompletionPart>[
+          CompletionPart(
+            ProgressTypes.mementoCollected,
+            unique.map((e) => e.key).toList(growable: false),
+          ),
+        ],
+        subgroups: <CompletionCategory>[
+          for (final label in sourceLabels)
+            CompletionCategory(
+              key: 'mementos:$label',
+              label: label,
+              parts: <CompletionPart>[
+                CompletionPart(ProgressTypes.mementoCollected, bySource[label]!),
+              ],
+              countsTowardTotal: false,
+            ),
+        ],
+      );
+    } catch (e) {
+      return CompletionCategory(
+        key: 'mementos',
+        label: 'Mementos',
+        parts: const <CompletionPart>[],
+        error: e.toString(),
+      );
+    }
   }
 
-  /// Same shape MementosIndex uses for a customer-owned memento.
-  static String mementoKeyFor({
-    required String customerId,
-    required String mementoId,
-  }) =>
-      'm:$customerId/$mementoId';
+  /// 'signature_store' -> 'Signature Store'; null/empty -> 'Other'.
+  static String prettyMementoSource(String? source) {
+    final s = (source ?? '').trim();
+    if (s.isEmpty) return 'Other';
+    return s
+        .split('_')
+        .where((w) => w.isNotEmpty)
+        .map((w) => '${w[0].toUpperCase()}${w.substring(1)}')
+        .join(' ');
+  }
 
   Future<List<CompletionPart>> _recipes() async {
     final all = await DishesRepository.instance.all();

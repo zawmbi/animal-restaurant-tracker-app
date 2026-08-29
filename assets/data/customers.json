@@ -39,7 +39,7 @@
         "name": "Calculator",
         "earnedStars": 30,
         "description": "Continuously pressing buttons will produce cool robotic sounds.",
-        "requirement": "Serve White Bunny 1500 times. Sell 2000 Taiyaki.",
+        "requirement": "Serve White Bunny 1500 times.\nSell Taiyaki 2000 times.",
         "shareReward": 10000
       },
       {
@@ -47,7 +47,7 @@
         "name": "Rabbit Hat",
         "earnedStars": 15,
         "description": "Knitted from the fur that Rabbit gave to the chef. It's very warm.",
-        "requirement": "Serve White Bunny 3000 times. Sell 3500 Taiyaki."
+        "requirement": "Serve White Bunny 3000 times.\nSell Taiyaki 3500 times."
       }
     ]
   },
@@ -88,7 +88,7 @@
         "name": "Sturdy Flower",
         "earnedStars": 25,
         "description": "This flower was dug out of nowhere, but it has survived and thrived.",
-        "requirement": "Serve Brown Bunny 1330 times.",
+        "requirement": "Serve Brown Bunny 1300 times.",
         "tags": [
           "customer_gift"
         ],
@@ -171,7 +171,7 @@
         "name": "Gold Chain",
         "earnedStars": 20,
         "description": "Put it on and you'll be the richest kid in Animal Restaurant.",
-        "requirement": "Serve Mouse to get.",
+        "requirement": "Serve Mouse to get\nRating must reach 1,000",
         "shareReward": 8000,
         "tags": [
           "customer_gift"
@@ -217,7 +217,7 @@
         "name": "Lucky Barrette",
         "earnedStars": 32,
         "description": "Will something good happen when I wear it?",
-        "requirement": "Serve PAGENAME 30 times."
+        "requirement": "Serve Gloomy 30 times."
       }
     ]
   },
@@ -5394,7 +5394,7 @@
         "name": "Shapely Peach",
         "earnedStars": 30,
         "description": "A uniquely-shaped peach.",
-        "requirement": "Dropped by Rascal when you lose his game."
+        "requirement": "Dropped by Rascal when you lose his game.\nPurchasable via the Mysterious Bird Nest"
       },
       {
         "id": "bang_snaps",
@@ -5433,7 +5433,7 @@
         "name": "Feather Duster",
         "earnedStars": 30,
         "description": "Mum's favorite weapon.",
-        "requirement": "Dropped by Rascal's Mom."
+        "requirement": "Dropped by Rascal's Mom.\nPurchasable via the Mysterious Bird Nest"
       },
       {
         "id": "toddler_watch",
@@ -5682,7 +5682,19 @@
     "mementos": [],
     "livesIn": "Nearby",
     "appearanceWeight": 8802,
-    "requiredFoodId": "Purple Sweet Potato Bun"
+    "requiredFoodId": "Purple Sweet Potato Bun",
+    "dishesOrderedIds": [
+      "Americano",
+      "Purple Sweet Potato Bun",
+      "Steamed Clams"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Americano",
+        "Purple Sweet Potato Bun",
+        "Steamed Clams"
+      ]
+    }
   },
   {
     "id": "badger",
@@ -5737,8 +5749,8 @@
         "id": "deer_antler_cap",
         "name": "Deer Antler Cap",
         "earnedStars": 15,
-        "description": "Put on the Deer Antler Cap to look like a deer",
-        "requirement": "Serve Spotted Deer 450 times.\nSell 800 Adzuki Bean Dumpling."
+        "description": "Put on the Deer Antler Cap to look like a deer.",
+        "requirement": "Serve Spotted Deer 450 times.\nSell Adzuki Bean Dumpling 800 times."
       }
     ],
     "livesIn": "Nearby",
@@ -5765,7 +5777,7 @@
         "name": "Artist Hat",
         "earnedStars": 15,
         "description": "Put on the red beret to look the part of an artist.",
-        "requirement": "Serve Artist Badger to get."
+        "requirement": "Serve Artist Badger to get\nRestaurant in business for 7 days"
       },
       {
         "id": "palette",
@@ -5834,7 +5846,7 @@
         "name": "Tiny Socks",
         "earnedStars": 45,
         "description": "Tiny and adorable.",
-        "requirement": "Serve Hedgehog 200 times. Sell 1000 Porridge & Jam."
+        "requirement": "Serve Hedgehog 200 times.\nSell Porridge & Jam 1000 times."
       }
     ],
     "livesIn": "Nearby",
@@ -5968,7 +5980,7 @@
         "name": "Knitted Beanie",
         "earnedStars": 15,
         "description": "Woolly and fluffy, it offers protection from the cold in winter.",
-        "requirement": "Serve Sheep 200 times.\nSell 500 Fries."
+        "requirement": "Serve Sheep 200 times.\nSell Fries 500 times."
       }
     ],
     "livesIn": "Nearby",
@@ -6036,7 +6048,7 @@
         "name": "Swim Cap",
         "earnedStars": 15,
         "description": "An essential for swimming champions.",
-        "requirement": "Restaurant in business for 14 days.\nServe Swan to get."
+        "requirement": "Serve Swan to get\nRestaurant in business for 14 days"
       },
       {
         "id": "bath_bomb",
@@ -6176,7 +6188,7 @@
         "name": "Toy Train",
         "earnedStars": 60,
         "description": "A toy belonging to Border Collie who likes railways and traveling by train.",
-        "requirement": "Rating must reach 3,000. Serve Border Collie to get."
+        "requirement": "Serve Border Collie to get\nRating must reach 3,000"
       },
       {
         "id": "train_conductors_hat",
@@ -6222,7 +6234,7 @@
         "id": "noble_wig",
         "name": "Noble Wig",
         "earnedStars": 35,
-        "description": "Noble! Gracious! And a bit heavy ...",
+        "description": "Noble! Gracious! And a bit heavy...",
         "requirement": "Serve French Bulldog 550 times."
       }
     ],
@@ -6330,7 +6342,7 @@
         "id": "tool",
         "name": "Tool",
         "earnedStars": 70,
-        "description": "You need a convinient tool like this if you want to live in the forest.",
+        "description": "You need a convenient tool like this if you want to live in the forest.",
         "requirement": "Serve Otter 180 times."
       },
       {
@@ -6378,7 +6390,7 @@
         "name": "Butterfly Bow",
         "earnedStars": 15,
         "description": "Not a real butterfly, but realistic enough to attract other butterflies.",
-        "requirement": "Restaurant in business for 30 days. Serve One-Eyed Papillon to get."
+        "requirement": "Serve One-Eyed Papillon to get\nRestaurant in business for 30 days"
       }
     ],
     "livesIn": "Town",
@@ -6426,8 +6438,14 @@
       "Dumplings",
       "Bagel",
       "Candied Hawthorn",
-      "Porridge & Jam"
-    ]
+      "Porridge & Jam",
+      "Shaved Ice"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Shaved Ice"
+      ]
+    }
   },
   {
     "id": "raccoon",
@@ -6443,8 +6461,8 @@
         "id": "raccoon_noodle_snack",
         "name": "Raccoon Noodle Snack",
         "earnedStars": 75,
-        "description": "A favorite snack from childhood. It is becoming very popular.",
-        "requirement": "Rating must reach 5,000. Serve Raccoon to get."
+        "description": "A favorite snack from childhood. It is now becoming very popular.",
+        "requirement": "Serve Raccoon to get\nRating must reach 5,000"
       }
     ],
     "livesIn": "Town",
@@ -6476,7 +6494,7 @@
         "id": "white_beard",
         "name": "White Beard",
         "earnedStars": 15,
-        "description": "Put it on and you might become the Pirate King of Animal Restaurant",
+        "description": "Put it on and you might become the Pirate King of Animal Restaurant.",
         "requirement": "Serve Terrier 220 times."
       }
     ],
@@ -6923,8 +6941,8 @@
         "id": "moldy_bone",
         "name": "Moldy Bone",
         "earnedStars": 95,
-        "description": "There's someone name carved on the bone.",
-        "requirement": "Rating must reach 10,000. Serve Pug to get."
+        "description": "There's someone's name carved on the bone.",
+        "requirement": "Serve Pug to get\nRating must reach 10,000"
       }
     ],
     "livesIn": "City",
@@ -6961,8 +6979,8 @@
         "id": "crown",
         "name": "Crown",
         "earnedStars": 15,
-        "description": "Experience living like a king",
-        "requirement": "Restaurant in business for 90 days. Serve Corgi to get."
+        "description": "Experience living like a king.",
+        "requirement": "Serve Corgi to get\nRestaurant in business for 90 days"
       }
     ],
     "livesIn": "City",
@@ -7340,7 +7358,7 @@
         "name": "First Aid Certificate",
         "earnedStars": 115,
         "description": "You must have a first aid certificate to be qualified to administer first aid.",
-        "requirement": "Rating must reach 20,000. Serve Rescue Dog to get."
+        "requirement": "Serve Rescue Dog to get\nRating must reach 20,000"
       },
       {
         "id": "nurse_hat",
@@ -7620,8 +7638,14 @@
       "Orange Juice",
       "Spaghetti",
       "Martini",
-      "Chocolate Cake"
-    ]
+      "Chocolate Cake",
+      "Bento"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Bento"
+      ]
+    }
   },
   {
     "id": "tiger",
@@ -7643,7 +7667,7 @@
         "id": "pink_umbrella",
         "name": "Pink Umbrella",
         "earnedStars": 40,
-        "description": "A girl umbrella",
+        "description": "A girly umbrella.",
         "requirement": "Serve Tiger 15 times."
       }
     ],
@@ -7890,7 +7914,7 @@
         "id": "earphones",
         "name": "Earphones",
         "earnedStars": 15,
-        "description": "Can give Temp Worker Yolky wear",
+        "description": "Sound waves to rock your world.",
         "requirement": "Serve Programmer's Dog 15 times."
       }
     ],
@@ -7944,8 +7968,14 @@
       "Spaghetti",
       "Rice Pudding",
       "Sycee Dumplings",
-      "Colonel Nuggets"
-    ]
+      "Colonel Nuggets",
+      "Bento"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Bento"
+      ]
+    }
   },
   {
     "id": "party_puppy",
@@ -7969,7 +7999,7 @@
         "name": "Party Hat",
         "earnedStars": 15,
         "description": "Put on this party hat to gain access to all parties in Animal Restaurant.",
-        "requirement": "Serve Party Puppy 12 times. Sell 100 Montblanc."
+        "requirement": "Serve Party Puppy 12 times.\nSell Montblanc 100 times."
       },
       {
         "id": "star_glasses",
@@ -8060,7 +8090,7 @@
         "name": "Hat with Braids",
         "earnedStars": 15,
         "description": "Put it on to become a little girl.",
-        "requirement": "Serve Cici 20 times. Sell 100 Coconut Cassia Wine."
+        "requirement": "Serve Cici 20 times.\nSell Coconut Cassia Wine 100 times."
       }
     ],
     "livesIn": "City",
@@ -8105,7 +8135,7 @@
         "id": "oriental_cap",
         "name": "Oriental Cap",
         "earnedStars": 15,
-        "description": "I hear that only the nobles of the Qing Dyansty owned caps like this.",
+        "description": "I hear that only the nobles of the Qing Dynasty owned caps like this.",
         "requirement": "Serve Lucky Pig 30 times."
       }
     ],
@@ -8172,8 +8202,14 @@
       "Cookies",
       "Coconut Cassia Wine",
       "Strawberry Shaved Ice",
-      "Sycee Dumplings"
-    ]
+      "Sycee Dumplings",
+      "Bento"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Bento"
+      ]
+    }
   },
   {
     "id": "alpaca",
@@ -8703,7 +8739,7 @@
         "id": "n95_mask",
         "name": "N95 Mask",
         "earnedStars": 30,
-        "description": "Provides extra protection. Medical personell need it.",
+        "description": "Provides extra protection. Medical personnel need it.",
         "requirement": "Serve Dr. Puppy 5 times."
       }
     ],
@@ -8790,7 +8826,7 @@
         "name": "Capybara's Thermos",
         "earnedStars": 50,
         "description": "Finish up this cup of wolfberry tea and you'll be the healthiest kid.",
-        "requirement": "Serve Capybara."
+        "requirement": "Serve Capybara to get"
       }
     ],
     "livesIn": "Town",
@@ -8961,8 +8997,14 @@
       "Strawberry Pudding",
       "Mugwort Dumpling",
       "Hot Dry Noodles",
-      "Curried Crab"
-    ]
+      "Curried Crab",
+      "Crispy Fried Meat"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Crispy Fried Meat"
+      ]
+    }
   },
   {
     "id": "alaska",
@@ -9173,7 +9215,7 @@
         "name": "Essential Oil Handmade Soap",
         "earnedStars": 30,
         "description": "Clumsily made, but it's a display of great efforts.",
-        "requirement": "Serve PAGENAME 150 times."
+        "requirement": "Serve Beancurd 150 times."
       }
     ],
     "livesIn": "City",
@@ -9415,7 +9457,7 @@
         "name": "Boxing Gloves",
         "earnedStars": 50,
         "description": "Enroll boxing lessons and get a pair of gloves for free.",
-        "requirement": "Serve PAGENAME 55 times."
+        "requirement": "Serve Yannis 55 times."
       }
     ],
     "livesIn": "City",
@@ -9673,8 +9715,14 @@
       "Orange Juice",
       "Boston Lobster",
       "Colonel Nuggets",
-      "Takoyaki"
-    ]
+      "Takoyaki",
+      "Mulled Wine"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Mulled Wine"
+      ]
+    }
   },
   {
     "id": "sleepwalking_little_lion",
@@ -9752,8 +9800,14 @@
       "Colonel Nuggets",
       "Takoyaki",
       "Mulled Wine",
-      "Smoked Ham"
-    ]
+      "Smoked Ham",
+      "Iced Lemon Tea"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Iced Lemon Tea"
+      ]
+    }
   },
   {
     "id": "mystifying_crane",
@@ -9992,7 +10046,7 @@
         "id": "business_card",
         "name": "Business Card",
         "earnedStars": 38,
-        "description": "Is exchanging business cards part of a grown-up's spirit of romanticism?",
+        "description": "Is exchanging business cards part of a grown-up's spiriit of romanticism?",
         "requirement": "Serve Manager Bear 40 times."
       }
     ],
@@ -10182,7 +10236,7 @@
         "name": "Archaeology Shovel",
         "earnedStars": 30,
         "description": "A simple little tool that unearths credible pieces of history.",
-        "requirement": "Serve PAGENAME 10 times."
+        "requirement": "Serve Amber 10 times."
       }
     ],
     "livesIn": "City",
@@ -10433,8 +10487,14 @@
       "Beef Wellington",
       "Mango Sticky Rice",
       "Pumpkin Soup",
-      "Boneless Chicken Tenders"
-    ]
+      "Boneless Chicken Tenders",
+      "Shumai"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Shumai"
+      ]
+    }
   },
   {
     "id": "goofy",
@@ -10465,7 +10525,7 @@
         "name": "Furry Eyepatch",
         "earnedStars": 30,
         "description": "Wear this for a comfortable sleep.",
-        "requirement": "Serve PAGENAME 25 times."
+        "requirement": "Serve Goofy 25 times."
       }
     ],
     "livesIn": "City",
@@ -10477,8 +10537,16 @@
       "Christmas Pudding",
       "Banana Boat",
       "Avocado Sandwich",
-      "Pineapple Bun"
-    ]
+      "Pineapple Bun",
+      "Boneless Chicken Tenders",
+      "Coconut Milk Pudding"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Boneless Chicken Tenders",
+        "Coconut Milk Pudding"
+      ]
+    }
   },
   {
     "id": "honey_badger",
@@ -10583,7 +10651,7 @@
         "name": "Polaroid Camera",
         "earnedStars": 15,
         "description": "Beautiful moments in life must be instantly recorded on film.",
-        "requirement": "Serve PAGENAME 25 times."
+        "requirement": "Serve Quokka 25 times."
       }
     ],
     "livesIn": "City",
@@ -10626,7 +10694,7 @@
         "name": "Walkie-talkie",
         "earnedStars": 12,
         "description": "Hello? Hello? Can you hear me?",
-        "requirement": "Serve PAGENAME 20 times."
+        "requirement": "Serve German Shepherd 20 times."
       }
     ],
     "livesIn": "City",
@@ -10671,7 +10739,7 @@
         "name": "Origami Star Wishing Bottle",
         "earnedStars": 39,
         "description": "I will write all of our stories down, fold them into stars, and store them inside this wishing bottle!",
-        "requirement": "Serve PAGENAME 30 times."
+        "requirement": "Serve Annie 30 times."
       }
     ],
     "livesIn": "City",
@@ -11054,8 +11122,8 @@
         "id": "punk_bracelet",
         "name": "Punk Bracelet",
         "earnedStars": 38,
-        "description": "",
-        "requirement": "Serve PAGENAME 40 times."
+        "description": "The strap is a little worn but it's obvious the owner has taken great care of it.",
+        "requirement": "Serve Damascus Goat 40 times."
       }
     ],
     "livesIn": "City",
@@ -11092,8 +11160,14 @@
       "Strawberry Pancake",
       "Matcha Cake Roll",
       "Chocolate Cake",
-      "Avocado Sandwich"
-    ]
+      "Avocado Sandwich",
+      "Snowman Lava Toast"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Snowman Lava Toast"
+      ]
+    }
   },
   {
     "id": "gretel",
@@ -11111,7 +11185,8 @@
         "Roasted Sweet Potato",
         "Blueberry Pancake",
         "Cream of Mushroom Soup",
-        "Teddy Bento"
+        "Teddy Bento",
+        "Buttery Apple"
       ],
       "flowers": [
         "rose"
@@ -11124,8 +11199,17 @@
       "Roasted Sweet Potato",
       "Lotus Root Glutinous Rice Balls",
       "Blueberry Pancake",
-      "Cream of Mushroom Soup"
-    ]
+      "Cream of Mushroom Soup",
+      "Buttery Apple"
+    ],
+    "derivedLinks": {
+      "requirements.recipes": [
+        "Buttery Apple"
+      ],
+      "dishesOrderedIds": [
+        "Buttery Apple"
+      ]
+    }
   },
   {
     "id": "emperor_tamarin",
@@ -12172,7 +12256,7 @@
         "name": "Badly-Chewed Slippers",
         "earnedStars": 30,
         "description": "Slippers that exude an inexplicable allure.",
-        "requirement": "Serve PAGENAME 25 times."
+        "requirement": "Serve Little Beagle 25 times."
       }
     ],
     "livesIn": "City",
@@ -12218,8 +12302,8 @@
         "id": "sweet_potato_seeds",
         "name": "Sweet Potato Seeds",
         "earnedStars": 30,
-        "description": "Isn’t it immensely satisfying to plant a tiny little seed and have it grow into a delightful sweet potato?",
-        "requirement": "Serve PAGENAME 15 times."
+        "description": "Isn't it immensely satisfying to plant a tiny little seed and have it grow into a delightful sweet potato?",
+        "requirement": "Serve Platypus 15 times."
       }
     ],
     "livesIn": "City",
@@ -12232,8 +12316,14 @@
       "Longjing Prawns",
       "Bouquet Cake",
       "Exquisite Eggnog",
-      "Blueberry Pancake"
-    ]
+      "Blueberry Pancake",
+      "Matcha Taiyaki"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Matcha Taiyaki"
+      ]
+    }
   },
   {
     "id": "bigmouth_bird",
@@ -12265,7 +12355,7 @@
         "name": "Pen Recorder",
         "earnedStars": 30,
         "description": "Contains some of Oak Bay's little secrets.",
-        "requirement": "Serve PAGENAME 15 times."
+        "requirement": "Serve Bigmouth Bird 15 times."
       }
     ],
     "livesIn": "City",
@@ -12497,8 +12587,14 @@
       "Pearl Milk Tea",
       "Boneless Chicken Tenders",
       "Cupcake",
-      "Coconut Milk Pudding"
-    ]
+      "Coconut Milk Pudding",
+      "Bouquet Cake"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Bouquet Cake"
+      ]
+    }
   },
   {
     "id": "goober",
@@ -12788,7 +12884,7 @@
         "name": "Sketch Pad",
         "earnedStars": 35,
         "description": "It's a display of daily inspiration.",
-        "requirement": "Serve PAGENAME 5 times."
+        "requirement": "Serve Binturong 5 times."
       }
     ],
     "livesIn": "City",
@@ -12871,8 +12967,8 @@
         "id": "dawn_feather",
         "name": "Dawn Feather",
         "earnedStars": 34,
-        "description": "Symbolizes hope and limitless possbilities.",
-        "requirement": "Serve PAGENAME 30 times."
+        "description": "Symbolizes hope and limitless possibilities.",
+        "requirement": "Serve Prince Secretarybird 30 times."
       }
     ],
     "livesIn": "City",
@@ -13103,7 +13199,7 @@
         "name": "Beanie",
         "earnedStars": 40,
         "description": "It seems more useful for decoration than for warmth.",
-        "requirement": "Serve PAGENAME 5 times."
+        "requirement": "Serve Arctic Wolf 5 times."
       }
     ],
     "livesIn": "City",
@@ -13182,7 +13278,7 @@
         "name": "Tibetan Urdah",
         "earnedStars": 40,
         "description": "Although it's slightly worn, it can still be made into an accessory.",
-        "requirement": "Serve PAGENAME 40 times."
+        "requirement": "Serve Forest Ranger Tibetan Mastiff 40 times."
       }
     ],
     "livesIn": "Nearby",
@@ -13375,8 +13471,18 @@
     "dishesOrderedIds": [
       "Bento",
       "Rice Pudding",
-      "Orange Juice"
-    ]
+      "Orange Juice",
+      "Cookies",
+      "Fried Rice",
+      "Tea"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Cookies",
+        "Fried Rice",
+        "Tea"
+      ]
+    }
   },
   {
     "id": "bully_husky",
@@ -13411,8 +13517,16 @@
       "Tea",
       "Fried Rice",
       "Cookies",
-      "Rice Pudding"
-    ]
+      "Rice Pudding",
+      "Bento",
+      "Orange Juice"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Bento",
+        "Orange Juice"
+      ]
+    }
   },
   {
     "id": "hanfu_white_bunny",
@@ -15190,8 +15304,14 @@
     "dishesOrderedIds": [
       "Cookies",
       "Cola Wings",
-      "Curry Rice"
-    ]
+      "Curry Rice",
+      "Buttery Apple"
+    ],
+    "derivedLinks": {
+      "dishesOrderedIds": [
+        "Buttery Apple"
+      ]
+    }
   },
   {
     "id": "anteater",
@@ -15779,7 +15899,7 @@
         "name": "Soccer Ball",
         "earnedStars": 10,
         "description": "Although it has been used for a long time, it still looks as good as new.",
-        "requirement": "Serve Prince Michael 18 times.\nObtain from the Wishing Well."
+        "requirement": "Serve Prince Michael 18 times.\nObtain from Wishing Well that is Lv. 1+"
       }
     ],
     "livesIn": null,
@@ -15964,7 +16084,7 @@
         "name": "Chew Toy Rope",
         "earnedStars": 36,
         "description": "Gnaw on it whenever you feel the urge to bite something!",
-        "requirement": "Serve PAGENAME 35 times."
+        "requirement": "Serve Sheltie 35 times."
       }
     ],
     "livesIn": "City",
@@ -16054,7 +16174,8 @@
         "Mocha Cake Roll",
         "Mango Sticky Rice",
         "Orange Juice",
-        "Fried Potato"
+        "Fried Potato",
+        "Matcha Cake Roll"
       ],
       "facilities": [
         "springtime_snack_mat"
@@ -16073,7 +16194,12 @@
       "Matcha Cake Roll",
       "Mulled Wine",
       "Smoked Ham"
-    ]
+    ],
+    "derivedLinks": {
+      "requirements.recipes": [
+        "Matcha Cake Roll"
+      ]
+    }
   },
   {
     "id": "super_gamer",

@@ -15,7 +15,6 @@ import '../../letters/data/letters_repository.dart';
 import '../../letters/model/letter.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../../shared/widgets/check_all_button.dart';
-import '../../completion/data/completion_service.dart';
 import '../../mementos/ui/mementos_detail_page.dart';
 
 class CustomerDetailPage extends StatefulWidget {
@@ -67,15 +66,16 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     return out;
   }
 
-  /// The UnlockedStore key for one of this customer's mementos. Uses the
-  /// indexed key when the memento is in MementosIndex, otherwise the same
-  /// `m:<customerId>/<mementoId>` shape the index would have produced.
-  String _mementoKey(String mementoId, Map<String, MementoEntry> entries) =>
-      entries[mementoId]?.key ??
-      CompletionService.mementoKeyFor(
-        customerId: customer.id,
-        mementoId: mementoId,
-      );
+  /// The UnlockedStore key for one of this customer's mementos, or null when
+  /// the memento is not in MementosIndex.
+  ///
+  /// mementos.json is the single source of truth for mementos; the array
+  /// embedded in a customer is the same collectibles, rendered here as a
+  /// convenience. Deriving a key for an unindexed memento would let the player
+  /// check something the completion percentage does not count, so mementos the
+  /// index does not know simply have no checkbox.
+  String? _mementoKey(String mementoId, Map<String, MementoEntry> entries) =>
+      entries[mementoId]?.key;
 
   bool get _isCustomerUnlocked =>
       store.isUnlocked(_bucketCustomers, customer.id);
@@ -268,6 +268,7 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
 
                 final keys = customer.mementos
                     .map((m) => _mementoKey(m.id, entries))
+                    .whereType<String>()
                     .toList();
                 final collectedCount = keys
                     .where((k) => store.isUnlocked(_bucketMementoCollected, k))
@@ -302,14 +303,17 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
                       children: customer.mementos.map((m) {
                         final entry = entries[m.id];
                         final key = _mementoKey(m.id, entries);
-                        final collected =
+                        final collected = key != null &&
                             store.isUnlocked(_bucketMementoCollected, key);
 
                         // Only mementos present in MementosIndex have a
-                        // detail page to open.
+                        // detail page to open and a key to track.
                         VoidCallback? openDetail;
+                        ValueChanged<bool>? onCheckChanged;
                         if (entry != null) {
                           final target = entry;
+                          final storeKey = target.key;
+
                           openDetail = () async {
                             await Navigator.push(
                               context,
@@ -320,18 +324,20 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
                             );
                             if (mounted) setState(() {});
                           };
+
+                          onCheckChanged = (v) async {
+                            await store.setUnlocked(
+                                _bucketMementoCollected, storeKey, v);
+                            if (mounted) setState(() {});
+                          };
                         }
 
                         return EntityChip(
                           label: m.name,
                           checked: collected,
-                          showCheckbox: true,
+                          showCheckbox: onCheckChanged != null,
                           fillColor: collected ? ownedFill : null,
-                          onCheckChanged: (v) async {
-                            await store.setUnlocked(
-                                _bucketMementoCollected, key, v);
-                            if (mounted) setState(() {});
-                          },
+                          onCheckChanged: onCheckChanged,
                           onTap: openDetail,
                         );
                       }).toList(),

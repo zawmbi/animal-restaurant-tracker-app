@@ -1,11 +1,50 @@
 import 'package:flutter/material.dart';
 
-import '../../completion/data/completion_service.dart';
 import '../../shared/data/unlocked_store.dart';
+import '../../shared/json_loader.dart';
+import '../../shared/utils/entity_linker.dart';
 import '../../shared/widgets/check_all_button.dart';
+import '../../shared/widgets/entity_chip.dart';
 import '../data/mementos_index.dart';
 import '../../customers/data/customers_repository.dart';
 import '../../customers/ui/customer_detail_page.dart';
+
+/// Structured `requirements` objects from `assets/data/mementos.json`, keyed by
+/// memento id.
+///
+/// This field is additive and is NOT populated for every memento, so a missing
+/// entry just means "render the free-text `requirement` instead". Read here
+/// rather than through MementosIndex because MementoEntry does not expose it
+/// yet. Loaded once and shared; JsonLoader already caches the decode.
+Future<Map<String, Map<String, dynamic>>>? _mementoRequirementsFuture;
+
+Future<Map<String, Map<String, dynamic>>> _loadMementoRequirements() {
+  final cached = _mementoRequirementsFuture;
+  if (cached != null) return cached;
+  final future = _readMementoRequirements();
+  _mementoRequirementsFuture = future;
+  return future;
+}
+
+Future<Map<String, Map<String, dynamic>>> _readMementoRequirements() async {
+  final out = <String, Map<String, dynamic>>{};
+  try {
+    final raw = await JsonLoader.load('assets/data/mementos.json');
+    if (raw is! List) return out;
+    for (final entry in raw) {
+      if (entry is! Map) continue;
+      final id = entry['id']?.toString();
+      if (id == null || id.isEmpty) continue;
+      final requirements = entry['requirements'];
+      if (requirements is Map) {
+        out[id] = Map<String, dynamic>.from(requirements);
+      }
+    }
+  } catch (_) {
+    // Structured requirements are optional; the free-text line still renders.
+  }
+  return out;
+}
 
 /// Detail page for a single memento.
 /// Navigate here from MementosPage with:
@@ -32,10 +71,17 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
   /// group can be checked off in one go.
   late final Future<List<String>> _customerMementoKeys;
 
+  /// The structured requirement object for this memento, or empty when the
+  /// data does not carry one.
+  late final Future<Map<String, dynamic>> _structuredRequirement;
+
   @override
   void initState() {
     super.initState();
     _customerMementoKeys = _loadCustomerMementoKeys();
+    _structuredRequirement = _loadMementoRequirements().then(
+      (index) => index[memento.id] ?? const <String, dynamic>{},
+    );
   }
 
   Future<List<String>> _loadCustomerMementoKeys() async {
@@ -46,6 +92,10 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
       final all = await MementosIndex.instance.all();
       final byId = <String, MementoEntry>{for (final e in all) e.id: e};
 
+      // Keys come from MementosIndex only, so this group always matches what
+      // the completion percentage counts. The customer's embedded `mementos`
+      // array holds the same ids, not extra ones, so it is only used to catch
+      // anything the customerId scan missed.
       final keys = <String>{};
       for (final e in all) {
         if (e.customerId == customerId) keys.add(e.key);
@@ -54,13 +104,8 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
       final customer = await CustomersRepository.instance.byId(customerId);
       if (customer != null) {
         for (final m in customer.mementos) {
-          keys.add(
-            byId[m.id]?.key ??
-                CompletionService.mementoKeyFor(
-                  customerId: customerId,
-                  mementoId: m.id,
-                ),
-          );
+          final entry = byId[m.id];
+          if (entry != null) keys.add(entry.key);
         }
       }
 
@@ -247,7 +292,7 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
                     children: [
                       Expanded(
                         child: Text(
-                          'All ${memento.customerName} mementos: '
+                          'Mementos from this customer: '
                           '$collected/${keys.length}',
                           style: theme.textTheme.bodyMedium,
                         ),
@@ -378,19 +423,148 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
   // ----- Requirements / "Memento Requirements" -----
 
   Widget _buildRequirementsSection(ThemeData theme) {
-    final req = memento.requirement.trim();
-    if (req.isEmpty) return const SizedBox.shrink();
+    return FutureBuilder<Map<String, dynamic>>(
+      future: _structuredRequirement,
+      builder: (context, snap) {
+        final structured = snap.data ?? const <String, dynamic>{};
+        final raw = memento.requirement.trim();
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        _sectionTitle(theme, 'Memento Requirements'),
-        Text(
-          req,
-          style: theme.textTheme.bodyMedium,
-        ),
-      ],
+        final structuredRows =
+            _structuredRequirementRows(context, theme, structured);
+
+        if (structuredRows.isEmpty && raw.isEmpty) {
+          return const SizedBox.shrink();
+        }
+
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _sectionTitle(theme, 'Memento Requirements'),
+            // Structured chips when the data has them, otherwise the
+            // free-text requirement. A missing structured field must never
+            // blank the section out.
+            if (structuredRows.isNotEmpty)
+              ...structuredRows
+            else
+              _rawRequirement(context, theme, raw),
+          ],
+        );
+      },
     );
+  }
+
+  /// Renders a structured `requirements` object using the same chip vocabulary
+  /// the rest of the app uses for linked entities.
+  List<Widget> _structuredRequirementRows(
+    BuildContext context,
+    ThemeData theme,
+    Map<String, dynamic> structured,
+  ) {
+    final out = <Widget>[];
+    if (structured.isEmpty) return out;
+
+    final keys = structured.keys.toList()..sort();
+    for (final key in keys) {
+      final value = structured[key];
+      final label = _prettyRequirementKey(key);
+
+      if (value is List) {
+        var items = value.map((e) => e.toString()).toList();
+
+        // This memento's own customer is already stated by the "Customer: X"
+        // link above; rendering it again as a requirement chip would be the
+        // same fact twice on one page.
+        if (_normalizeKey(key) == 'customers' && memento.customerId != null) {
+          items = items.where((e) => e != memento.customerId).toList();
+        }
+
+        if (items.isEmpty) continue;
+        out.add(Padding(
+          padding: const EdgeInsets.only(top: 8, bottom: 6),
+          child: Text(label,
+              style: const TextStyle(fontWeight: FontWeight.bold)),
+        ));
+        out.add(Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: [
+            for (final item in items)
+              EntityChip(
+                label: item,
+                onTap: _openerFor(context, key, item),
+              ),
+          ],
+        ));
+      } else if (value != null && value.toString().trim().isNotEmpty) {
+        out.add(Padding(
+          padding: const EdgeInsets.only(top: 8),
+          child: Text('$label: $value', style: theme.textTheme.bodyMedium),
+        ));
+      }
+    }
+
+    return out;
+  }
+
+  /// Free-text requirement, with the app's existing link affordance when the
+  /// line is one EntityLinker understands.
+  Widget _rawRequirement(BuildContext context, ThemeData theme, String raw) {
+    if (raw.isEmpty) return const SizedBox.shrink();
+
+    final linker = EntityLinker.instance;
+    if (!linker.looksLinkable(raw)) {
+      return Text(raw, style: theme.textTheme.bodyMedium);
+    }
+
+    return InkWell(
+      onTap: () => linker.openFromLine(context, raw),
+      child: Row(
+        children: [
+          Expanded(child: Text(raw, style: theme.textTheme.bodyMedium)),
+          const Padding(
+            padding: EdgeInsets.only(left: 8),
+            child: Icon(Icons.open_in_new, size: 18),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Normalised requirement key, e.g. 'requiredStars' -> 'requiredstars'.
+  String _normalizeKey(String key) => key.toLowerCase();
+
+  /// Reuses EntityLinker rather than inventing new navigation.
+  VoidCallback? _openerFor(BuildContext context, String kind, String name) {
+    final kind0 = _normalizeKey(kind);
+    String? line;
+    if (kind0 == 'recipes' ||
+        kind0 == 'recipe' ||
+        kind0 == 'dishes' ||
+        kind0 == 'dish') {
+      line = 'Learn recipe: $name';
+    } else if (kind0 == 'facilities' || kind0 == 'facility') {
+      line = 'Must unlock $name';
+    }
+    if (line == null) return null;
+
+    final target = line;
+    return () => EntityLinker.instance.openFromLine(context, target);
+  }
+
+  /// 'requiredStars' -> 'Required Stars'; 'customer_gift' -> 'Customer Gift'.
+  String _prettyRequirementKey(String key) {
+    final spaced = key
+        .replaceAllMapped(
+          RegExp(r'([a-z0-9])([A-Z])'),
+          (m) => '${m[1]} ${m[2]}',
+        )
+        .replaceAll('_', ' ');
+
+    return spaced
+        .split(' ')
+        .where((w) => w.isNotEmpty)
+        .map((w) => '${w[0].toUpperCase()}${w.substring(1)}')
+        .join(' ');
   }
 
   // ----- Rating + Hidden section -----

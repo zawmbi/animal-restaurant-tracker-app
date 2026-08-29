@@ -12,6 +12,7 @@ import '../../mementos/ui/mementos_page.dart';
 import '../../movies/ui/movies_page.dart';
 import '../../pets/ui/pets_page.dart';
 import '../../shared/data/unlocked_store.dart';
+import '../../shared/widgets/check_all_button.dart';
 import '../../staff/ui/staff_page.dart';
 import '../data/completion_service.dart';
 
@@ -331,6 +332,10 @@ class _ProgressPageState extends State<ProgressPage> {
             const SizedBox(height: 4),
             Text(category.note!, style: theme.textTheme.bodySmall),
           ],
+          if (category.subgroups.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            for (final sub in category.subgroups) _subgroupRow(context, sub),
+          ],
         ],
       );
     }
@@ -355,6 +360,34 @@ class _ProgressPageState extends State<ProgressPage> {
           ),
         ),
       ),
+    );
+  }
+
+  /// A slice of a category (e.g. mementos from the Signature Store), with its
+  /// own "Check all" — this is where bulk checking earns its keep, because the
+  /// memento set alone is over a thousand items.
+  Widget _subgroupRow(BuildContext context, CompletionCategory sub) {
+    final theme = Theme.of(context);
+    final collected = sub.collected(_store);
+    final total = sub.total(_store);
+
+    return Row(
+      children: [
+        Expanded(
+          child: Text(
+            sub.label,
+            overflow: TextOverflow.ellipsis,
+            style: theme.textTheme.bodyMedium,
+          ),
+        ),
+        Text('$collected / $total', style: theme.textTheme.bodySmall),
+        CheckAllButton.multi(
+          targets: <CheckAllTarget>[
+            for (final p in sub.parts) CheckAllTarget(p.bucket, p.ids),
+          ],
+          groupLabel: sub.label,
+        ),
+      ],
     );
   }
 }
