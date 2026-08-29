@@ -46,6 +46,18 @@ Future<Map<String, Map<String, dynamic>>> _readMementoRequirements() async {
   return out;
 }
 
+/// Everything the requirements section needs, resolved once.
+class _RequirementData {
+  const _RequirementData(this.structured, this.customerNames);
+
+  /// The memento's `requirements` object, or empty when it has none.
+  final Map<String, dynamic> structured;
+
+  /// customer id -> display name, for turning `card_playing_mouse` into
+  /// "Card-Playing Mouse".
+  final Map<String, String> customerNames;
+}
+
 /// Detail page for a single memento.
 /// Navigate here from MementosPage with:
 ///   Navigator.of(context).push(
@@ -71,17 +83,31 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
   /// group can be checked off in one go.
   late final Future<List<String>> _customerMementoKeys;
 
-  /// The structured requirement object for this memento, or empty when the
-  /// data does not carry one.
-  late final Future<Map<String, dynamic>> _structuredRequirement;
+  /// The structured requirement object for this memento (plus the names it
+  /// refers to), or empty when the data does not carry one.
+  late final Future<_RequirementData> _requirementData;
 
   @override
   void initState() {
     super.initState();
     _customerMementoKeys = _loadCustomerMementoKeys();
-    _structuredRequirement = _loadMementoRequirements().then(
-      (index) => index[memento.id] ?? const <String, dynamic>{},
-    );
+    _requirementData = _loadRequirementData();
+  }
+
+  Future<_RequirementData> _loadRequirementData() async {
+    final index = await _loadMementoRequirements();
+    final structured = index[memento.id] ?? const <String, dynamic>{};
+
+    final names = <String, String>{};
+    try {
+      for (final c in await CustomersRepository.instance.all()) {
+        names[c.id] = c.name;
+      }
+    } catch (_) {
+      // Ids still render, just not as display names.
+    }
+
+    return _RequirementData(structured, names);
   }
 
   Future<List<String>> _loadCustomerMementoKeys() async {
