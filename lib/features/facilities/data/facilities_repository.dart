@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_is_not_operator
 
-import 'dart:convert';
-import 'package:flutter/services.dart' show rootBundle;
+import '../../shared/json_loader.dart';
 import '../model/facility.dart';
 
 class FacilitiesRepository {
@@ -46,52 +45,73 @@ class FacilitiesRepository {
   };
 
   final Map<FacilityArea, List<Facility>> _byArea = {};
+
+  /// Cached *futures*, not just results: `byArea` is called straight from
+  /// `FacilitiesPage.build()` and concurrently by `all()`, so without this two
+  /// callers would each load and decode the same shard.
+  final Map<FacilityArea, Future<List<Facility>>> _byAreaFutures = {};
+
   List<Facility>? _allCache;
+  Future<List<Facility>>? _allFuture;
 
   /// Load and merge shards for a single area (cached).
-  Future<List<Facility>> byArea(FacilityArea area) async {
-    if (_byArea.containsKey(area)) return _byArea[area]!;
+  Future<List<Facility>> byArea(FacilityArea area) =>
+      _byAreaFutures[area] ??= _loadArea(area);
 
-    final paths = _assetsForArea[area] ?? const <String>[];
-    final out = <Facility>[];
+  Future<List<Facility>> _loadArea(FacilityArea area) async {
+    try {
+      final paths = _assetsForArea[area] ?? const <String>[];
+      final out = <Facility>[];
 
-    for (final path in paths) {
-      final raw = await _tryLoadString(path);
-      if (raw == null) {
-        // If a shard path doesn't exist (e.g., fallback not needed), skip quietly.
-        continue;
+      for (final path in paths) {
+        final decoded = await _tryLoad(path);
+        if (decoded == null) {
+          // If a shard path doesn't exist (e.g., fallback not needed), skip quietly.
+          continue;
+        }
+
+        if (decoded is! List) {
+          throw FormatException('Facility shard is not a JSON list: $path');
+        }
+
+        final list = decoded.cast<Map<String, dynamic>>();
+
+        // Ensure correct 'area' string in each row for Facility.fromJson
+        for (final m in list) {
+          final withArea = {
+            ...m,
+            if (!(m['area'] is String) || (m['area'] as String).trim().isEmpty)
+              'area': area.name,
+          };
+          out.add(Facility.fromJson(withArea));
+        }
       }
 
-      final decoded = jsonDecode(raw);
-      if (decoded is! List) {
-        throw FormatException('Facility shard is not a JSON list: $path');
-      }
-
-      final list = decoded.cast<Map<String, dynamic>>();
-
-      // Ensure correct 'area' string in each row for Facility.fromJson
-      for (final m in list) {
-        final withArea = {
-          ...m,
-          if (!(m['area'] is String) || (m['area'] as String).trim().isEmpty)
-            'area': area.name,
-        };
-        out.add(Facility.fromJson(withArea));
-      }
+      _byArea[area] = out;
+      return out;
+    } catch (_) {
+      _byAreaFutures.remove(area); // allow a retry
+      rethrow;
     }
-
-    _byArea[area] = out;
-    _allCache = null; // invalidate merged cache
-    return out;
   }
 
   /// Merge all areas (cached). Includes Signature Store automatically via Takeout shards.
-  Future<List<Facility>> all() async {
-    if (_allCache != null) return _allCache!;
-    final lists = await Future.wait(_assetsForArea.keys.map(byArea));
-    _allCache = lists.expand((e) => e).toList(growable: false);
-    return _allCache!;
+  Future<List<Facility>> all() => _allFuture ??= _loadAll();
+
+  Future<List<Facility>> _loadAll() async {
+    try {
+      final lists = await Future.wait(_assetsForArea.keys.map(byArea));
+      final merged = lists.expand((e) => e).toList(growable: false);
+      _allCache = merged;
+      return merged;
+    } catch (_) {
+      _allFuture = null; // allow a retry
+      rethrow;
+    }
   }
+
+  /// Synchronously available once [all] has completed.
+  List<Facility>? get cached => _allCache;
 
   /// Find a facility by id across all areas.
   Future<Facility?> byId(String id) async {
@@ -106,16 +126,21 @@ class FacilitiesRepository {
   /// Clear caches after you edit JSON during development.
   Future<void> reload() async {
     _byArea.clear();
+    _byAreaFutures.clear();
     _allCache = null;
+    _allFuture = null;
   }
 
-  /// Loads an asset string, but returns null if the asset doesn't exist.
+  /// Decodes a shard through [JsonLoader] (shared cache + off-main-isolate
+  /// decode for the big shards), returning null if the asset doesn't exist.
   /// This lets us include optional fallback paths safely.
-  Future<String?> _tryLoadString(String path) async {
+  Future<dynamic> _tryLoad(String path) async {
     try {
-      return await rootBundle.loadString(path);
+      return await JsonLoader.load(path);
+    } on FormatException {
+      rethrow; // malformed JSON is a real error, as before
     } catch (_) {
-      return null;
+      return null; // shard simply isn't bundled
     }
   }
 }

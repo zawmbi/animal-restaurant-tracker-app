@@ -21,15 +21,26 @@ final AppSettingsController appSettings = AppSettingsController();
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  // These three were awaited one after another, behind Firebase, so cold start
+  // paid for four round trips end to end. None of them touches Firebase during
+  // init (TimerService only sets up local notifications + timezones;
+  // UnlockedStore and AppSettingsController only read SharedPreferences, and
+  // UnlockedStore's Firestore sync is triggered later by AuthBinder), so they
+  // are started immediately and run concurrently with Firebase's init.
+  //
+  // Everything is still awaited before runApp, so the first frame sees exactly
+  // the same fully-initialised state as before.
+  final localInit = Future.wait<void>(<Future<void>>[
+    TimerService.instance.init(),
+    UnlockedStore.instance.init(),
+    appSettings.load(),
+  ]);
+
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  await TimerService.instance.init();
-  await UnlockedStore.instance.init();
-
-  //  ADD: load saved theme mode before building UI
-  await appSettings.load();
+  await localInit;
 
   runApp(const AnimalRestaurantApp());
 }

@@ -7,8 +7,610 @@
     "requiredPerformerIds": [],
     "requirements": {
       "customers": [],
-      "facilities": ["log_plank"],
+      "facilities": [
+        "log_plank"
+      ],
       "notes": []
+    }
+  },
+  {
+    "id": "melt_your_heart",
+    "name": "Melt Your Heart",
+    "description": "The sweetest smiles can be a secret weapon.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "cutie_hamster"
+    ],
+    "requirements": {
+      "customers": [
+        "cutie_hamster"
+      ],
+      "facilities": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "imperfect_idol",
+    "name": "Imperfect Idol",
+    "description": "So what if we're not perfect? Just be true to yourself!",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "cutie_guru"
+    ],
+    "requirements": {
+      "customers": [
+        "cutie_guru"
+      ],
+      "facilities": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "internal_monologue",
+    "name": "Internal Monologue",
+    "description": "A pure sound to soothe your soul.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "little_turtle_angel"
+    ],
+    "requirements": {
+      "customers": [
+        "little_turtle_angel"
+      ],
+      "facilities": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "purest_song",
+    "name": "Purest Song",
+    "description": "The best songs are sung with the purest voice.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "little_yorkie_angel"
+    ],
+    "requirements": {
+      "customers": [
+        "little_yorkie_angel"
+      ],
+      "facilities": [],
+      "notes": [
+        "Fulfill Little Yorkie Angel call back condition"
+      ]
+    }
+  },
+  {
+    "id": "tender_sunset",
+    "name": "Tender Sunset",
+    "description": "A gentle solo under the setting sun.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "bassist_toad"
+    ],
+    "requirements": {
+      "customers": [
+        "bassist_toad"
+      ],
+      "facilities": [],
+      "notes": [
+        "Fulfill Bassist Toad call back condition"
+      ]
+    }
+  },
+  {
+    "id": "rainbow_rush",
+    "name": "Rainbow Rush",
+    "description": "Our passion shall soar through the heavens!",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "guitarist_toad"
+    ],
+    "requirements": {
+      "customers": [
+        "guitarist_toad"
+      ],
+      "facilities": [],
+      "notes": [
+        "Fulfill Guitarist Toad call back condition"
+      ]
+    }
+  },
+  {
+    "id": "the_language_of_stars",
+    "name": "The Language of Stars",
+    "description": "Listen to what the stars have to say.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "leader_scotch_collie"
+    ],
+    "requirements": {
+      "customers": [
+        "leader_scotch_collie"
+      ],
+      "facilities": [
+        "galactic_news"
+      ],
+      "notes": [
+        "Fulfill Leader Scotch Collie call back condition"
+      ]
+    }
+  },
+  {
+    "id": "lucky_star",
+    "name": "Lucky Star",
+    "description": "Who is your lucky star?",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "lead_singer_dalmatian"
+    ],
+    "requirements": {
+      "customers": [
+        "lead_singer_dalmatian"
+      ],
+      "facilities": [
+        "galactic_news"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "clear_sky_and_soda",
+    "name": "Clear Sky & Soda",
+    "description": "Nice weather and a sparkling soda can put you in a brighter mood.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "vocalist_samoyed"
+    ],
+    "requirements": {
+      "customers": [
+        "vocalist_samoyed"
+      ],
+      "facilities": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "sneak_a_break",
+    "name": "Sneak a Break",
+    "description": "Happiness is out of my reach. All I want is just a little nap.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "accompanist_penguin"
+    ],
+    "requirements": {
+      "customers": [
+        "accompanist_penguin"
+      ],
+      "facilities": [],
+      "notes": [
+        "Fulfill Accompanist Penguin call back condition"
+      ]
+    }
+  },
+  {
+    "id": "restless_notes",
+    "name": "Restless Notes",
+    "description": "Sweat plus passion equals music.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "leader_pug"
+    ],
+    "requirements": {
+      "customers": [
+        "leader_pug"
+      ],
+      "facilities": [
+        "moment_of_silence"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "soloist",
+    "name": "Soloist",
+    "description": "At this moment, I am the only one who's real.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "bassist_brown_wolf"
+    ],
+    "requirements": {
+      "customers": [
+        "bassist_brown_wolf"
+      ],
+      "facilities": [
+        "moment_of_silence"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "freestyle_sanctuary",
+    "name": "Freestyle Sanctuary",
+    "description": "Free and at ease, this is my sanctuary.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "chopper"
+    ],
+    "requirements": {
+      "customers": [
+        "chopper"
+      ],
+      "facilities": [
+        "emergency_rose"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "bamboo_groves_gentleman",
+    "name": "Bamboo Grove's Gentleman",
+    "description": "I live in the mortal world, but my heart rests in the bamboo grove.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "bamboo_hand_fan"
+    ],
+    "requirements": {
+      "customers": [
+        "bamboo_hand_fan"
+      ],
+      "facilities": [
+        "starry_night_tales"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "floral_field",
+    "name": "Floral Field",
+    "description": "An afternoon reverie in the flower field.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "probiotic_panther"
+    ],
+    "requirements": {
+      "customers": [
+        "probiotic_panther"
+      ],
+      "facilities": [
+        "little_rainbow"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "thumbelina",
+    "name": "Thumbelina",
+    "description": "Will Mr. Swallow take me to the land of pixies?",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "sweetie_curly"
+    ],
+    "requirements": {
+      "customers": [
+        "sweetie_curly"
+      ],
+      "facilities": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "call_a_friend",
+    "name": "Call a Friend",
+    "description": "Hello? Today's weather is wonderful. Let's go out and play!",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "zippy_koala"
+    ],
+    "requirements": {
+      "customers": [
+        "zippy_koala"
+      ],
+      "facilities": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "childhood_echo",
+    "name": "Childhood Echo",
+    "description": "We must be friends forever!",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "frisky_pangolin"
+    ],
+    "requirements": {
+      "customers": [
+        "frisky_pangolin"
+      ],
+      "facilities": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "harpist_maiden",
+    "name": "Harpist Maiden",
+    "description": "The harp's mellifluous song brings the music of nature to listeners.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "danielle"
+    ],
+    "requirements": {
+      "customers": [
+        "danielle"
+      ],
+      "facilities": [],
+      "notes": [
+        "Fulfill Danielle call back condition"
+      ]
+    }
+  },
+  {
+    "id": "melodious_symphony",
+    "name": "Melodious Symphony",
+    "description": "The lively melody carries the listener's thoughts into the distance.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "louise"
+    ],
+    "requirements": {
+      "customers": [
+        "louise"
+      ],
+      "facilities": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "sound_of_silence",
+    "name": "Sound of Silence",
+    "description": "As my fingers dance, music shall take the place of my voice and tell my story.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "dubond"
+    ],
+    "requirements": {
+      "customers": [
+        "dubond"
+      ],
+      "facilities": [
+        "golden_brush"
+      ],
+      "notes": [
+        "Fulfill DuBond call back condition"
+      ]
+    }
+  },
+  {
+    "id": "full_control",
+    "name": "Full Control",
+    "description": "Music, lights, and action are the very components that form the exhilarating moments of my life.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "marcus"
+    ],
+    "requirements": {
+      "customers": [
+        "marcus"
+      ],
+      "facilities": [
+        "bleeding_pigment"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "a_wee_skiff",
+    "name": "A Wee Skiff",
+    "description": "As the gentle breeze blows, my heart is free.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "princess_feather"
+    ],
+    "requirements": {
+      "customers": [
+        "princess_feather"
+      ],
+      "facilities": [
+        "a_night_to_remember"
+      ],
+      "notes": [
+        "Fulfill Princess Feather call back condition"
+      ]
+    }
+  },
+  {
+    "id": "music_by_the_water",
+    "name": "Music by the Water",
+    "description": "Right by the water my fair lady stands.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "pretty_face"
+    ],
+    "requirements": {
+      "customers": [
+        "pretty_face"
+      ],
+      "facilities": [
+        "a_night_to_remember"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "the_united_drums",
+    "name": "The United Drums",
+    "description": "As the drums sound, the girl dances gracefully among the clouds.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "exquisite_jade"
+    ],
+    "requirements": {
+      "customers": [
+        "exquisite_jade"
+      ],
+      "facilities": [
+        "a_night_to_remember"
+      ],
+      "notes": [
+        "Fulfill Exquisite Jade call back condition"
+      ]
+    }
+  },
+  {
+    "id": "celestial_music",
+    "name": "Celestial Music",
+    "description": "This song befits even the heavens.",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "drunken_rouge"
+    ],
+    "requirements": {
+      "customers": [
+        "drunken_rouge"
+      ],
+      "facilities": [
+        "a_night_to_remember"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "milky_sincerity",
+    "name": "Milky Sincerity",
+    "description": "Prepare to catch... my heart that is full of affection!",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "dingle_dangle"
+    ],
+    "requirements": {
+      "customers": [
+        "dingle_dangle"
+      ],
+      "facilities": [
+        "marvelous_roast"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "cloudy_wheat",
+    "name": "Cloudy Wheat",
+    "description": "",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "thump_thump"
+    ],
+    "requirements": {
+      "customers": [
+        "thump_thump"
+      ],
+      "facilities": [
+        "marvelous_roast"
+      ],
+      "notes": [
+        "Fulfill Thump-thump call back condition"
+      ]
+    }
+  },
+  {
+    "id": "cheesy_tour",
+    "name": "Cheesy Tour",
+    "description": "Swimming freely amid the aroma of milk!",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "ta_da_da"
+    ],
+    "requirements": {
+      "customers": [
+        "ta_da_da"
+      ],
+      "facilities": [
+        "marvelous_roast"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "planet_cheese",
+    "name": "Planet Cheese",
+    "description": "",
+    "earningIncreasePercent": 50,
+    "requiredPerformerIds": [
+      "rat_a_tat"
+    ],
+    "requirements": {
+      "customers": [
+        "rat_a_tat"
+      ],
+      "facilities": [
+        "marvelous_roast"
+      ],
+      "notes": [
+        "Fulfill Rat-a-tat call back condition"
+      ]
+    }
+  },
+  {
+    "id": "theme_park_of_joy",
+    "name": "Theme Park of Joy",
+    "description": "Fantastical music in a fantasy world.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "cutie_guru",
+      "little_piggy_angel"
+    ],
+    "requirements": {
+      "customers": [
+        "cutie_guru",
+        "little_piggy_angel"
+      ],
+      "facilities": [
+        "secret_of_the_vines"
+      ],
+      "notes": [
+        "Fulfill Cutie Guru, Little Piggy Angel call back condition"
+      ]
+    }
+  },
+  {
+    "id": "song_of_nature",
+    "name": "Song of Nature",
+    "description": "Who says different styles don't go together?",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "cutie_goose"
+    ],
+    "requirements": {
+      "customers": [
+        "cutie_goose"
+      ],
+      "facilities": [
+        "secret_of_the_vines"
+      ],
+      "notes": [
+        "Fulfill Cutie Goose call back condition"
+      ]
+    }
+  },
+  {
+    "id": "rainbow_slide",
+    "name": "Rainbow Slide",
+    "description": "Age matters not in a musical paradise.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "little_turtle_angel",
+      "guitarist_toad"
+    ],
+    "requirements": {
+      "customers": [
+        "little_turtle_angel",
+        "guitarist_toad"
+      ],
+      "facilities": [
+        "secret_of_the_vines"
+      ],
+      "notes": [
+        "Fulfill Little Turtle Angel, Guitarist Toad call back condition"
+      ]
     }
   },
   {
@@ -16,11 +618,2627 @@
     "name": "Butterflies in my Stomach",
     "description": "I've never felt like this before! What is this feeling?",
     "earningIncreasePercent": 100,
-    "requiredPerformerIds": ["cutie_white_bunny", "accompanist_penguin"],
+    "requiredPerformerIds": [
+      "cutie_white_bunny",
+      "accompanist_penguin"
+    ],
     "requirements": {
-      "customers": ["cutie_white_bunny", "accompanist_penguin"],
-      "facilities": ["secret_of_the_vines"],
+      "customers": [
+        "cutie_white_bunny",
+        "accompanist_penguin"
+      ],
+      "facilities": [
+        "secret_of_the_vines"
+      ],
       "notes": []
+    }
+  },
+  {
+    "id": "poems_and_odes",
+    "name": "Poems and Odes",
+    "description": "A song that slowly melts your heart.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "bassist_toad",
+      "vocalist_samoyed"
+    ],
+    "requirements": {
+      "customers": [
+        "bassist_toad",
+        "vocalist_samoyed"
+      ],
+      "facilities": [
+        "secret_of_the_vines"
+      ],
+      "notes": [
+        "Fulfill Bassist Toad, Vocalist Samoyed call back condition"
+      ]
+    }
+  },
+  {
+    "id": "air_of_youth",
+    "name": "Air of Youth",
+    "description": "I want to go back to those carefree days.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "guitarist_husky",
+      "bassist_border_collie"
+    ],
+    "requirements": {
+      "customers": [
+        "guitarist_husky",
+        "bassist_border_collie"
+      ],
+      "facilities": [
+        "secret_of_the_vines"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "lets_dance",
+    "name": "Let's dance!",
+    "description": "Turn up your stereo!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "lead_dancer_slim_white_dog",
+      "lead_singer_dalmatian"
+    ],
+    "requirements": {
+      "customers": [
+        "lead_dancer_slim_white_dog",
+        "lead_singer_dalmatian"
+      ],
+      "facilities": [
+        "galactic_news"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "reverse_city",
+    "name": "Reverse City",
+    "description": "Continue to sing your heart out even if the city has been turned upside down!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "little_shiba_angel",
+      "rapper_bean"
+    ],
+    "requirements": {
+      "customers": [
+        "little_shiba_angel",
+        "rapper_bean"
+      ],
+      "facilities": [
+        "galactic_news"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "dark_night_tales",
+    "name": "Dark Night Tales",
+    "description": "What does the edge of light and darkness look like?",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "dj_wolf"
+    ],
+    "requirements": {
+      "customers": [
+        "dj_wolf"
+      ],
+      "facilities": [
+        "moment_of_silence"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "moonlight_trap",
+    "name": "Moonlight Trap",
+    "description": "Watch your step! You might get lost here!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "guitarist_jackal",
+      "bassist_brown_wolf"
+    ],
+    "requirements": {
+      "customers": [
+        "guitarist_jackal",
+        "bassist_brown_wolf"
+      ],
+      "facilities": [
+        "moment_of_silence"
+      ],
+      "notes": [
+        "Fulfill Guitarist Jackal, Bassist Brown Wolf call back condition"
+      ]
+    }
+  },
+  {
+    "id": "prime_time_drama",
+    "name": "Prime-Time Drama",
+    "description": "Catch us at 8 PM every evening!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "piano_contender",
+      "natural_comedian"
+    ],
+    "requirements": {
+      "customers": [
+        "piano_contender",
+        "natural_comedian"
+      ],
+      "facilities": [
+        "elegant_water_fountain"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "revamping_old_tunes",
+    "name": "Revamping Old Tunes",
+    "description": "What's going to come out of a cross-style collaboration?",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "leader_scotch_collie",
+      "chopper"
+    ],
+    "requirements": {
+      "customers": [
+        "leader_scotch_collie",
+        "chopper"
+      ],
+      "facilities": [
+        "elegant_water_fountain"
+      ],
+      "notes": [
+        "Fulfill Leader Scotch Collie, Chopper call back condition"
+      ]
+    }
+  },
+  {
+    "id": "gloomy_fragrance",
+    "name": "Gloomy Fragrance",
+    "description": "A plum blossom blooms quietly in the corner.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "cutie_guru",
+      "bamboo_hand_fan"
+    ],
+    "requirements": {
+      "customers": [
+        "cutie_guru",
+        "bamboo_hand_fan"
+      ],
+      "facilities": [
+        "summer_dream"
+      ],
+      "notes": [
+        "Fulfill Cutie Guru, Bamboo Hand Fan call back condition"
+      ]
+    }
+  },
+  {
+    "id": "recess_fun",
+    "name": "Recess Fun",
+    "description": "Shush, keep it down. Don't wake him up.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "accompanist_penguin",
+      "zippy_koala"
+    ],
+    "requirements": {
+      "customers": [
+        "accompanist_penguin",
+        "zippy_koala"
+      ],
+      "facilities": [
+        "mini_caramel_pudding",
+        "popsicle_impact"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "splash_memories",
+    "name": "Splash Memories",
+    "description": "I'll always remember the rainbow fun times from the water fight.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "probiotic_panther",
+      "frisky_pangolin"
+    ],
+    "requirements": {
+      "customers": [
+        "probiotic_panther",
+        "frisky_pangolin"
+      ],
+      "facilities": [
+        "little_dancing_bear",
+        "chocolate_lounge_chair"
+      ],
+      "notes": [
+        "Fulfill Probiotic Panther, Frisky Pangolin call back condition"
+      ]
+    }
+  },
+  {
+    "id": "verdant_section",
+    "name": "Verdant Section",
+    "description": "What kind of song would the vines play?",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "little_piggy_angel",
+      "louise"
+    ],
+    "requirements": {
+      "customers": [
+        "little_piggy_angel",
+        "louise"
+      ],
+      "facilities": [
+        "fine_gown"
+      ],
+      "notes": [
+        "Fulfill Little Piggy Angel, Louise call back condition"
+      ]
+    }
+  },
+  {
+    "id": "disco_night",
+    "name": "Disco Night",
+    "description": "Put your hands up and groove to the beat!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "leader_pug",
+      "marcus"
+    ],
+    "requirements": {
+      "customers": [
+        "leader_pug",
+        "marcus"
+      ],
+      "facilities": [
+        "prized_books"
+      ],
+      "notes": [
+        "Fulfill Leader Pug, Marcus call back condition"
+      ]
+    }
+  },
+  {
+    "id": "dancing_on_the_strings",
+    "name": "Dancing on the Strings",
+    "description": "The classic combination and perfect complement to each other.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "dubond",
+      "louise"
+    ],
+    "requirements": {
+      "customers": [
+        "dubond",
+        "louise"
+      ],
+      "facilities": [
+        "musician_sculpture"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "strings_and_axles",
+    "name": "Strings and Axles",
+    "description": "Descend into this dream of flying apsaras with me.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "pretty_face",
+      "drunken_rouge"
+    ],
+    "requirements": {
+      "customers": [
+        "pretty_face",
+        "drunken_rouge"
+      ],
+      "facilities": [
+        "a_night_to_remember"
+      ],
+      "notes": [
+        "Fulfill Pretty Face, Drunken Rouge call back condition"
+      ]
+    }
+  },
+  {
+    "id": "whispers_in_the_bamboo_grove",
+    "name": "Whispers in the Bamboo Grove",
+    "description": "The wind will tell you everything.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "chopper",
+      "princess_feather"
+    ],
+    "requirements": {
+      "customers": [
+        "chopper",
+        "princess_feather"
+      ],
+      "facilities": [
+        "a_night_to_remember"
+      ],
+      "notes": [
+        "Fulfill Chopper, Princess Feather call back condition"
+      ]
+    }
+  },
+  {
+    "id": "painting_in_painting",
+    "name": "Painting in Painting",
+    "description": "As you look at the painting, someone is looking at you too.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "bamboo_hand_fan",
+      "exquisite_jade"
+    ],
+    "requirements": {
+      "customers": [
+        "bamboo_hand_fan",
+        "exquisite_jade"
+      ],
+      "facilities": [
+        "a_night_to_remember"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "macaron_tempest",
+    "name": "Macaron Tempest",
+    "description": "If you stack them on top of each other, they'll all turn into macaron fillings!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "rat_a_tat",
+      "thump_thump"
+    ],
+    "requirements": {
+      "customers": [
+        "rat_a_tat",
+        "thump_thump"
+      ],
+      "facilities": [
+        "marvelous_roast"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "spinning_halo",
+    "name": "Spinning Halo",
+    "description": "I'm feeling dizzy, but whether it's because of the dazzling light, or because of you, I can't tell.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "rat_a_tat",
+      "zippy_koala"
+    ],
+    "requirements": {
+      "customers": [
+        "rat_a_tat",
+        "zippy_koala"
+      ],
+      "facilities": [
+        "marvelous_roast"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "candy_rain",
+    "name": "Candy Rain",
+    "description": "",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "dingle_dangle",
+      "ta_da_da"
+    ],
+    "requirements": {
+      "customers": [
+        "dingle_dangle",
+        "ta_da_da"
+      ],
+      "facilities": [
+        "marvelous_roast"
+      ],
+      "notes": [
+        "Fulfill Dingle-dangle, Ta-da-da call back condition"
+      ]
+    }
+  },
+  {
+    "id": "green_trap",
+    "name": "Green Trap",
+    "description": "Let your individuality shine.",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "cutie_white_bunny",
+      "guitarist_toad"
+    ],
+    "requirements": {
+      "customers": [
+        "cutie_white_bunny",
+        "guitarist_toad"
+      ],
+      "facilities": [
+        "windmill_memories"
+      ],
+      "notes": [
+        "Fulfill Cutie White Bunny, Guitarist Toad call back condition"
+      ]
+    }
+  },
+  {
+    "id": "resplendent_star",
+    "name": "Resplendent Star",
+    "description": "We're born to be superstars.",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "cutie_goose",
+      "little_shiba_angel"
+    ],
+    "requirements": {
+      "customers": [
+        "cutie_goose",
+        "little_shiba_angel"
+      ],
+      "facilities": [
+        "windmill_memories"
+      ],
+      "notes": [
+        "Fulfill Cutie Goose, Little Shiba Angel call back condition"
+      ]
+    }
+  },
+  {
+    "id": "elemental_impression",
+    "name": "Elemental Impression",
+    "description": "I'll impress you with a variety of elements!",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "cutie_guru",
+      "guitarist_husky",
+      "bassist_border_collie"
+    ],
+    "requirements": {
+      "customers": [
+        "cutie_guru",
+        "guitarist_husky",
+        "bassist_border_collie"
+      ],
+      "facilities": [
+        "windmill_memories"
+      ],
+      "notes": [
+        "Fulfill Cutie Guru, Guitarist Husky, Bassist Border Collie call back condition"
+      ]
+    }
+  },
+  {
+    "id": "lonely_troubles",
+    "name": "Lonely Troubles",
+    "description": "Loneliness is a period of reflection.",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "cutie_white_bunny",
+      "rapper_bean",
+      "leader_scotch_collie"
+    ],
+    "requirements": {
+      "customers": [
+        "cutie_white_bunny",
+        "rapper_bean",
+        "leader_scotch_collie"
+      ],
+      "facilities": [
+        "galactic_news"
+      ],
+      "notes": [
+        "Fulfill Cutie White Bunny, Rapper Bean, Leader Scotch Collie call back condition"
+      ]
+    }
+  },
+  {
+    "id": "nostalgic_hymn",
+    "name": "Nostalgic Hymn",
+    "description": "Lay down your restless soul and pursue your old dream with me.",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "guitarist_husky",
+      "leader_pug",
+      "guitarist_jackal"
+    ],
+    "requirements": {
+      "customers": [
+        "guitarist_husky",
+        "leader_pug",
+        "guitarist_jackal"
+      ],
+      "facilities": [
+        "moment_of_silence"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "glow_stick_party",
+    "name": "Glow Stick Party",
+    "description": "EDM and glow sticks are a perfect match!",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "cutie_hamster",
+      "cutie_goose",
+      "dj_wolf"
+    ],
+    "requirements": {
+      "customers": [
+        "cutie_hamster",
+        "cutie_goose",
+        "dj_wolf"
+      ],
+      "facilities": [
+        "moment_of_silence"
+      ],
+      "notes": [
+        "Fulfill Cutie Hamster, Cutie Goose, DJ Wolf call back condition"
+      ]
+    }
+  },
+  {
+    "id": "the_trios_act",
+    "name": "The Trio's Act",
+    "description": "Hello everyone! We are the Happy Brothers!",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "guitarist_toad",
+      "piano_contender",
+      "bamboo_hand_fan"
+    ],
+    "requirements": {
+      "customers": [
+        "guitarist_toad",
+        "piano_contender",
+        "bamboo_hand_fan"
+      ],
+      "facilities": [
+        "summer_dream"
+      ],
+      "notes": [
+        "Fulfill Guitarist Toad, Piano Contender, Bamboo Hand Fan call back condition"
+      ]
+    }
+  },
+  {
+    "id": "team_rainbow",
+    "name": "Team Rainbow",
+    "description": "Where should we liven up today?",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "bassist_border_collie",
+      "frisky_pangolin",
+      "sweetie_curly"
+    ],
+    "requirements": {
+      "customers": [
+        "bassist_border_collie",
+        "frisky_pangolin",
+        "sweetie_curly"
+      ],
+      "facilities": [
+        "colorful_toy_blocks",
+        "ice_cream_cone_photo_panel"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "beneath_the_stars",
+    "name": "Beneath the Stars",
+    "description": "Can the shooting stars allay my longing?",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "little_piggy_angel",
+      "little_yorkie_angel",
+      "zippy_koala"
+    ],
+    "requirements": {
+      "customers": [
+        "little_piggy_angel",
+        "little_yorkie_angel",
+        "zippy_koala"
+      ],
+      "facilities": [
+        "sweet_baseball",
+        "tangerine_bubble_pillar"
+      ],
+      "notes": [
+        "Fulfill Little Piggy Angel, Little Yorkie Angel, Zippy Koala call back condition"
+      ]
+    }
+  },
+  {
+    "id": "twilight_trail",
+    "name": "Twilight Trail",
+    "description": "The roar of the engine is the perfect accompaniment to this.",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "lead_dancer_slim_white_dog",
+      "bassist_brown_wolf",
+      "dubond"
+    ],
+    "requirements": {
+      "customers": [
+        "lead_dancer_slim_white_dog",
+        "bassist_brown_wolf",
+        "dubond"
+      ],
+      "facilities": [
+        "dyed_candlestick"
+      ],
+      "notes": [
+        "Fulfill Lead Dancer Slim White Dog, Bassist Brown Wolf, DuBond call back condition"
+      ]
+    }
+  },
+  {
+    "id": "island_memories",
+    "name": "Island Memories",
+    "description": "The ocean breeze delivers joy and carries away one's troubles.",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "cutie_white_bunny",
+      "bassist_toad",
+      "danielle"
+    ],
+    "requirements": {
+      "customers": [
+        "cutie_white_bunny",
+        "bassist_toad",
+        "danielle"
+      ],
+      "facilities": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "night_sky_adventure",
+    "name": "Night Sky Adventure",
+    "description": "Make a wish to the stars to meet once again.",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "drummer_toad",
+      "accompanist_penguin",
+      "exquisite_jade"
+    ],
+    "requirements": {
+      "customers": [
+        "drummer_toad",
+        "accompanist_penguin",
+        "exquisite_jade"
+      ],
+      "facilities": [
+        "a_night_to_remember"
+      ],
+      "notes": [
+        "Fulfill Drummer Toad, Accompanist Penguin, Exquisite Jade call back condition"
+      ]
+    }
+  },
+  {
+    "id": "longing_under_the_bright_moon",
+    "name": "Longing Under the Bright Moon",
+    "description": "Place your wishes on the sky lantern and let it fly.",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "sweetie_curly",
+      "pretty_face",
+      "drunken_rouge"
+    ],
+    "requirements": {
+      "customers": [
+        "sweetie_curly",
+        "pretty_face",
+        "drunken_rouge"
+      ],
+      "facilities": [
+        "a_night_to_remember"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "sweet_donut_dreams",
+    "name": "Sweet Donut Dreams",
+    "description": "",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "dingle_dangle",
+      "sweetie_curly",
+      "vocalist_samoyed"
+    ],
+    "requirements": {
+      "customers": [
+        "dingle_dangle",
+        "sweetie_curly",
+        "vocalist_samoyed"
+      ],
+      "facilities": [
+        "marvelous_roast"
+      ],
+      "notes": [
+        "Fulfill Dingle-dangle, Sweetie Curly, Vocalist Samoyed call back condition"
+      ]
+    }
+  },
+  {
+    "id": "featherlight_sweetness",
+    "name": "Featherlight Sweetness",
+    "description": "Let a cute girl take you soaring through the sweetest sky.",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "cutie_white_bunny",
+      "cutie_hamster",
+      "cutie_goose",
+      "cutie_guru"
+    ],
+    "requirements": {
+      "customers": [
+        "cutie_white_bunny",
+        "cutie_hamster",
+        "cutie_goose",
+        "cutie_guru"
+      ],
+      "facilities": [
+        "sweet_impression"
+      ],
+      "notes": [
+        "Fulfill Cutie White Bunny, Cutie Hamster, Cutie Goose, Cutie Guru call back condition"
+      ]
+    }
+  },
+  {
+    "id": "song_of_spring",
+    "name": "Song of Spring",
+    "description": "Beautiful music to awaken you from your wintry slumber.",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "little_piggy_angel",
+      "little_turtle_angel",
+      "little_yorkie_angel",
+      "little_shiba_angel"
+    ],
+    "requirements": {
+      "customers": [
+        "little_piggy_angel",
+        "little_turtle_angel",
+        "little_yorkie_angel",
+        "little_shiba_angel"
+      ],
+      "facilities": [
+        "sweet_impression"
+      ],
+      "notes": [
+        "Fulfill Little Piggy Angel, Little Turtle Angel, Little Yorkie Angel, Little Shiba Angel call back condition"
+      ]
+    }
+  },
+  {
+    "id": "soul_voyage",
+    "name": "Soul Voyage",
+    "description": "Rock to the beat while your soul sings to a different tune.",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "bassist_toad",
+      "guitarist_toad",
+      "vocalist_toad",
+      "drummer_toad"
+    ],
+    "requirements": {
+      "customers": [
+        "bassist_toad",
+        "guitarist_toad",
+        "vocalist_toad",
+        "drummer_toad"
+      ],
+      "facilities": [
+        "sweet_impression"
+      ],
+      "notes": [
+        "Fulfill Bassist Toad, Guitarist Toad, Vocalist Toad, Drummer Toad call back condition"
+      ]
+    }
+  },
+  {
+    "id": "flight_path",
+    "name": "Flight Path",
+    "description": "Let your young dreams take flight.",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "vocalist_samoyed",
+      "guitarist_husky",
+      "bassist_border_collie",
+      "accompanist_penguin"
+    ],
+    "requirements": {
+      "customers": [
+        "vocalist_samoyed",
+        "guitarist_husky",
+        "bassist_border_collie",
+        "accompanist_penguin"
+      ],
+      "facilities": [
+        "sweet_impression"
+      ],
+      "notes": [
+        "Fulfill Vocalist Samoyed, Guitarist Husky, Bassist Border Collie, Accompanist Penguin call back condition"
+      ]
+    }
+  },
+  {
+    "id": "keepers_of_the_universe",
+    "name": "Keepers of the Universe",
+    "description": "Keeping the universe safe to keep you safe.",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "lead_dancer_slim_white_dog",
+      "lead_singer_dalmatian",
+      "rapper_bean",
+      "leader_scotch_collie"
+    ],
+    "requirements": {
+      "customers": [
+        "lead_dancer_slim_white_dog",
+        "lead_singer_dalmatian",
+        "rapper_bean",
+        "leader_scotch_collie"
+      ],
+      "facilities": [
+        "galactic_news"
+      ],
+      "notes": [
+        "Fulfill Lead Dancer Slim White Dog, Lead Singer Dalmatian, Rapper Bean, Leader Scotch Collie call back condition"
+      ]
+    }
+  },
+  {
+    "id": "classic_climax",
+    "name": "Classic Climax",
+    "description": "You already know it. But you'll still scream with us!",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "leader_pug",
+      "guitarist_jackal",
+      "bassist_brown_wolf",
+      "dj_wolf"
+    ],
+    "requirements": {
+      "customers": [
+        "leader_pug",
+        "guitarist_jackal",
+        "bassist_brown_wolf",
+        "dj_wolf"
+      ],
+      "facilities": [
+        "moment_of_silence"
+      ],
+      "notes": [
+        "Fulfill Leader Pug, Guitarist Jackal, Bassist Brown Wolf, DJ Wolf call back condition"
+      ]
+    }
+  },
+  {
+    "id": "happy_talk_show",
+    "name": "Happy Talk Show",
+    "description": "A classic that's suitable for all ages!",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "piano_contender",
+      "bamboo_hand_fan",
+      "natural_comedian",
+      "chopper"
+    ],
+    "requirements": {
+      "customers": [
+        "piano_contender",
+        "bamboo_hand_fan",
+        "natural_comedian",
+        "chopper"
+      ],
+      "facilities": [
+        "summer_dream"
+      ],
+      "notes": [
+        "Fulfill Piano Contender, Bamboo Hand Fan, Natural Comedian, Chopper call back condition"
+      ]
+    }
+  },
+  {
+    "id": "yogurt_attack",
+    "name": "Yogurt Attack",
+    "description": "Windy day, clear skies. Watch out for Team Yogurt!",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "probiotic_panther",
+      "frisky_pangolin",
+      "zippy_koala",
+      "sweetie_curly"
+    ],
+    "requirements": {
+      "customers": [
+        "probiotic_panther",
+        "frisky_pangolin",
+        "zippy_koala",
+        "sweetie_curly"
+      ],
+      "facilities": [
+        "donut_flowerpot",
+        "sweetheart_stool",
+        "gummy_slide"
+      ],
+      "notes": [
+        "Fulfill Probiotic Panther, Frisky Pangolin, Zippy Koala, Sweetie Curly call back condition"
+      ]
+    }
+  },
+  {
+    "id": "divine_resonance",
+    "name": "Divine Resonance",
+    "description": "Come and enjoy this audio-visual feast.",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "dubond",
+      "louise",
+      "danielle",
+      "marcus"
+    ],
+    "requirements": {
+      "customers": [
+        "dubond",
+        "louise",
+        "danielle",
+        "marcus"
+      ],
+      "facilities": [
+        "golden_age"
+      ],
+      "notes": [
+        "Fulfill DuBond, Louise, Danielle, Marcus call back condition"
+      ]
+    }
+  },
+  {
+    "id": "smiling_by_the_window",
+    "name": "Smiling By the Window",
+    "description": "Girls are always whispering to one another by the window.",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "pretty_face",
+      "drunken_rouge",
+      "exquisite_jade",
+      "princess_feather"
+    ],
+    "requirements": {
+      "customers": [
+        "pretty_face",
+        "drunken_rouge",
+        "exquisite_jade",
+        "princess_feather"
+      ],
+      "facilities": [
+        "a_night_to_remember"
+      ],
+      "notes": [
+        "Fulfill Pretty Face, Drunken Rouge, Exquisite Jade, Princess Feather call back condition"
+      ]
+    }
+  },
+  {
+    "id": "energetic_morning",
+    "name": "Energetic Morning",
+    "description": "Feeling the Monday blues? Don't worry! Your energetic assistant is here to help!",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "rat_a_tat",
+      "dingle_dangle",
+      "ta_da_da",
+      "thump_thump"
+    ],
+    "requirements": {
+      "customers": [
+        "rat_a_tat",
+        "dingle_dangle",
+        "ta_da_da",
+        "thump_thump"
+      ],
+      "facilities": [
+        "marvelous_roast"
+      ],
+      "notes": [
+        "Fulfill Rat-a-tat, Dingle-dangle, Ta-da-da, Thump-thump call back condition"
+      ]
+    }
+  },
+  {
+    "id": "ravishing_rose",
+    "name": "Ravishing Rose",
+    "description": "Only when nurtured with love does a rose bloom in beauty.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "elegant_emily"
+    ],
+    "requirements": {
+      "customers": [
+        "elegant_emily"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "noble_of_character",
+    "name": "Noble of Character",
+    "description": "As I blossom, the wind shall blow of its own accord.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "busy_bee_trice"
+    ],
+    "requirements": {
+      "customers": [
+        "busy_bee_trice"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "elegant_virtuoso",
+    "name": "Elegant Virtuoso",
+    "description": "Life is like tea - you only appreciate its finer points when you savor it.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "steady_sally"
+    ],
+    "requirements": {
+      "customers": [
+        "steady_sally"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": [
+        "Fulfill Steady Sally call back condition"
+      ]
+    }
+  },
+  {
+    "id": "sweet_smile",
+    "name": "Sweet Smile",
+    "description": "Love yourselves, ladies, for you're as beautiful as blooming flowers.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "gentle_grace"
+    ],
+    "requirements": {
+      "customers": [
+        "gentle_grace"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "spring_blossoms",
+    "name": "Spring Blossoms",
+    "description": "Spring never ends, so long as your heart wishes it so.",
+    "earningIncreasePercent": 150,
+    "requiredPerformerIds": [
+      "elegant_emily",
+      "gentle_grace"
+    ],
+    "requirements": {
+      "customers": [
+        "elegant_emily",
+        "gentle_grace"
+      ],
+      "facilities": [
+        "hazy_vow",
+        "mini_watering_can"
+      ],
+      "notes": [
+        "Fulfill Elegant Emily, Gentle Grace call back condition"
+      ]
+    }
+  },
+  {
+    "id": "cordoned_off_danger",
+    "name": "Cordoned-Off Danger",
+    "description": "Beware! Energetic music incoming!",
+    "earningIncreasePercent": 175,
+    "requiredPerformerIds": [
+      "dj_wolf",
+      "busy_bee_trice"
+    ],
+    "requirements": {
+      "customers": [
+        "dj_wolf",
+        "busy_bee_trice"
+      ],
+      "facilities": [
+        "hazy_vow",
+        "winding_sign"
+      ],
+      "notes": [
+        "Fulfill DJ Wolf, Busy Bee-trice call back condition"
+      ]
+    }
+  },
+  {
+    "id": "moonlit_lotuses",
+    "name": "Moonlit Lotuses",
+    "description": "Be as free and unfettered as tranquil lotuses floating on the surface of a pond.",
+    "earningIncreasePercent": 135,
+    "requiredPerformerIds": [
+      "steady_sally",
+      "drummer_toad"
+    ],
+    "requirements": {
+      "customers": [
+        "steady_sally",
+        "drummer_toad"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": [
+        "Fulfill Steady Sally, Drummer Toad call back condition"
+      ]
+    }
+  },
+  {
+    "id": "lively_shooting_stars",
+    "name": "Lively Shooting Stars",
+    "description": "My energy rains down upon everybody like shooting stars!",
+    "earningIncreasePercent": 150,
+    "requiredPerformerIds": [
+      "steady_sally",
+      "cutie_white_bunny",
+      "cutie_hamster"
+    ],
+    "requirements": {
+      "customers": [
+        "steady_sally",
+        "cutie_white_bunny",
+        "cutie_hamster"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "late_night_plum_blossoms",
+    "name": "Late Night Plum Blossoms",
+    "description": "May the music never end, like the lingering fragrance of plum blossoms.",
+    "earningIncreasePercent": 175,
+    "requiredPerformerIds": [
+      "piano_contender",
+      "elegant_emily",
+      "gentle_grace"
+    ],
+    "requirements": {
+      "customers": [
+        "piano_contender",
+        "elegant_emily",
+        "gentle_grace"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "exquisite_ladies",
+    "name": "Exquisite Ladies",
+    "description": "A woman lives her best life when she is independent and knows how to appreciate herself!",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "busy_bee_trice",
+      "gentle_grace",
+      "steady_sally",
+      "elegant_emily"
+    ],
+    "requirements": {
+      "customers": [
+        "busy_bee_trice",
+        "gentle_grace",
+        "steady_sally",
+        "elegant_emily"
+      ],
+      "facilities": [
+        "hazy_vow",
+        "openwork_screen"
+      ],
+      "notes": [
+        "Fulfill Busy Bee-trice, Gentle Grace, Steady Sally, Elegant Emily call back condition"
+      ]
+    }
+  },
+  {
+    "id": "midsummer_breeze",
+    "name": "Midsummer Breeze",
+    "description": "So relaxing, it almost made my heart stop.",
+    "earningIncreasePercent": 125,
+    "requiredPerformerIds": [
+      "backing_vocalist_beaver"
+    ],
+    "requirements": {
+      "customers": [
+        "backing_vocalist_beaver"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": [
+        "Fulfill Backing Vocalist Beaver call back condition"
+      ]
+    }
+  },
+  {
+    "id": "prettiest_sunset",
+    "name": "Prettiest Sunset",
+    "description": "The pleasing tune can heal even the most terrible of moods.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "soloist_beaver"
+    ],
+    "requirements": {
+      "customers": [
+        "soloist_beaver"
+      ],
+      "facilities": [
+        "floral_noticeboard",
+        "hive_painting"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "colorful_frangipani",
+    "name": "Colorful Frangipani",
+    "description": "Come, shake your body to the beat!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "backup_dancer_beaver"
+    ],
+    "requirements": {
+      "customers": [
+        "backup_dancer_beaver"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "dancing_waves",
+    "name": "Dancing Waves",
+    "description": "Cleanse your soul with the sounds of drifting waves and drum beats.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "accompanist_beaver"
+    ],
+    "requirements": {
+      "customers": [
+        "accompanist_beaver"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": [
+        "Fulfill Accompanist Beaver call back condition"
+      ]
+    }
+  },
+  {
+    "id": "sea_salt_malibu",
+    "name": "Sea Salt Malibu",
+    "description": "",
+    "earningIncreasePercent": 150,
+    "requiredPerformerIds": [
+      "soloist_beaver",
+      "bassist_border_collie"
+    ],
+    "requirements": {
+      "customers": [
+        "soloist_beaver",
+        "bassist_border_collie"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": [
+        "Fulfill Soloist Beaver, Bassist Border Collie call back condition"
+      ]
+    }
+  },
+  {
+    "id": "midsummer_beat",
+    "name": "Midsummer Beat",
+    "description": "",
+    "earningIncreasePercent": 160,
+    "requiredPerformerIds": [
+      "backup_dancer_beaver",
+      "vocalist_samoyed"
+    ],
+    "requirements": {
+      "customers": [
+        "backup_dancer_beaver",
+        "vocalist_samoyed"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": [
+        "Fulfill Backup Dancer Beaver, Vocalist Samoyed call back condition"
+      ]
+    }
+  },
+  {
+    "id": "featherfall_voices",
+    "name": "Featherfall Voices",
+    "description": "Are there angels singing in the forest?",
+    "earningIncreasePercent": 150,
+    "requiredPerformerIds": [
+      "backing_vocalist_beaver",
+      "little_yorkie_angel",
+      "little_turtle_angel"
+    ],
+    "requirements": {
+      "customers": [
+        "backing_vocalist_beaver",
+        "little_yorkie_angel",
+        "little_turtle_angel"
+      ],
+      "facilities": [
+        "floral_noticeboard",
+        "nectar_gathering_indicator"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "peppermint_soda",
+    "name": "Peppermint Soda",
+    "description": "A chance encounter awaits if you follow the singing voices.",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "backup_dancer_beaver",
+      "guitarist_toad",
+      "vocalist_toad"
+    ],
+    "requirements": {
+      "customers": [
+        "backup_dancer_beaver",
+        "guitarist_toad",
+        "vocalist_toad"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "passing_breeze",
+    "name": "Passing Breeze",
+    "description": "Enjoy this authentic tropical feeling!",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "backing_vocalist_beaver",
+      "soloist_beaver",
+      "accompanist_beaver",
+      "backup_dancer_beaver"
+    ],
+    "requirements": {
+      "customers": [
+        "backing_vocalist_beaver",
+        "soloist_beaver",
+        "accompanist_beaver",
+        "backup_dancer_beaver"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": [
+        "Fulfill Backing Vocalist Beaver, Soloist Beaver, Accompanist Beaver, Backup Dancer Beaver call back condition"
+      ]
+    }
+  },
+  {
+    "id": "smooth_cream",
+    "name": "Smooth Cream",
+    "description": "I'm slowly sliding toward you!",
+    "earningIncreasePercent": 190,
+    "requiredPerformerIds": [
+      "backing_vocalist_beaver",
+      "ta_da_da",
+      "cutie_hamster"
+    ],
+    "requirements": {
+      "customers": [
+        "backing_vocalist_beaver",
+        "ta_da_da",
+        "cutie_hamster"
+      ],
+      "facilities": [
+        "floral_noticeboard",
+        "romantic_flowers"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "minty_sweet_dreams",
+    "name": "Minty Sweet Dreams",
+    "description": "In my dreams, whatever I say goes!",
+    "earningIncreasePercent": 125,
+    "requiredPerformerIds": [
+      "chris"
+    ],
+    "requirements": {
+      "customers": [
+        "chris"
+      ],
+      "facilities": [
+        "puppy_news"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "rhythmic_bow",
+    "name": "Rhythmic Bow",
+    "description": "Dance to the beat of my drum!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "ella"
+    ],
+    "requirements": {
+      "customers": [
+        "ella"
+      ],
+      "facilities": [
+        "puppy_news",
+        "sweetheart_frame"
+      ],
+      "notes": [
+        "Fulfill Ella call back condition"
+      ]
+    }
+  },
+  {
+    "id": "creamy_trombone",
+    "name": "Creamy Trombone",
+    "description": "I hereby proclaim that desserts shall reign supreme!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "belle"
+    ],
+    "requirements": {
+      "customers": [
+        "belle"
+      ],
+      "facilities": [
+        "puppy_news"
+      ],
+      "notes": [
+        "Fulfill Belle call back condition"
+      ]
+    }
+  },
+  {
+    "id": "mint_chocolate_menu",
+    "name": "Mint Chocolate Menu",
+    "description": "Should I go for mint chocolate coffee, cake, or donuts?",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "aaron"
+    ],
+    "requirements": {
+      "customers": [
+        "aaron"
+      ],
+      "facilities": [
+        "puppy_news"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "creamy_bubbles",
+    "name": "Creamy Bubbles",
+    "description": "We're floating into the air, along with our sweet dreams...",
+    "earningIncreasePercent": 150,
+    "requiredPerformerIds": [
+      "chris",
+      "rat_a_tat"
+    ],
+    "requirements": {
+      "customers": [
+        "chris",
+        "rat_a_tat"
+      ],
+      "facilities": [
+        "puppy_news",
+        "butterfly_bow_frame"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "musical_daydream",
+    "name": "Musical Daydream",
+    "description": "The moment sunlight shines upon your face, you'll start to hear vibrant melodies in your mind.",
+    "earningIncreasePercent": 175,
+    "requiredPerformerIds": [
+      "belle",
+      "probiotic_panther"
+    ],
+    "requirements": {
+      "customers": [
+        "belle",
+        "probiotic_panther"
+      ],
+      "facilities": [
+        "puppy_news"
+      ],
+      "notes": [
+        "Fulfill Belle, Probiotic Panther call back condition"
+      ]
+    }
+  },
+  {
+    "id": "lively_drumbeats",
+    "name": "Lively Drumbeats",
+    "description": "What kind of rhythm will be formed when two drums start beating simultaneously?",
+    "earningIncreasePercent": 135,
+    "requiredPerformerIds": [
+      "ella",
+      "zippy_koala"
+    ],
+    "requirements": {
+      "customers": [
+        "ella",
+        "zippy_koala"
+      ],
+      "facilities": [
+        "puppy_news",
+        "energetic_hanging_ring"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "sunny_hot_air_balloon",
+    "name": "Sunny Hot Air Balloon",
+    "description": "While soaring into the skies on a hot air balloon, sing at the top of your lungs!",
+    "earningIncreasePercent": 150,
+    "requiredPerformerIds": [
+      "aaron",
+      "little_piggy_angel",
+      "little_turtle_angel"
+    ],
+    "requirements": {
+      "customers": [
+        "aaron",
+        "little_piggy_angel",
+        "little_turtle_angel"
+      ],
+      "facilities": [
+        "puppy_news"
+      ],
+      "notes": [
+        "Fulfill Aaron, Little Piggy Angel, Little Turtle Angel call back condition"
+      ]
+    }
+  },
+  {
+    "id": "romance_signal",
+    "name": "Romance Signal",
+    "description": "Listen to my command... *thump thump, thump thump*",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "chris",
+      "vocalist_samoyed",
+      "accompanist_penguin"
+    ],
+    "requirements": {
+      "customers": [
+        "chris",
+        "vocalist_samoyed",
+        "accompanist_penguin"
+      ],
+      "facilities": [
+        "puppy_news"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "wandering_music",
+    "name": "Wandering Music",
+    "description": "Let's hold a grand musical parade!",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "aaron",
+      "belle",
+      "ella",
+      "chris"
+    ],
+    "requirements": {
+      "customers": [
+        "aaron",
+        "belle",
+        "ella",
+        "chris"
+      ],
+      "facilities": [
+        "puppy_news"
+      ],
+      "notes": [
+        "Fulfill Aaron, Belle, Ella, Chris call back condition"
+      ]
+    }
+  },
+  {
+    "id": "waterfall_of_emptiness",
+    "name": "Waterfall of Emptiness",
+    "description": "The water lingers only fleetingly before flowing away, but the sensation it leaves behind is forever.",
+    "earningIncreasePercent": 125,
+    "requiredPerformerIds": [
+      "cloudmaster"
+    ],
+    "requirements": {
+      "customers": [
+        "cloudmaster"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": [
+        "Fulfill Cloudmaster call back condition"
+      ]
+    }
+  },
+  {
+    "id": "waterfall_in_the_clouds",
+    "name": "Waterfall in the Clouds",
+    "description": "Even mere water droplets will eventually form a great river, much like how every bit of hard work will surely count.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "windrider"
+    ],
+    "requirements": {
+      "customers": [
+        "windrider"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "setting_sun",
+    "name": "Setting Sun",
+    "description": "The sun sets and the fish return to their homes, but practice never stops.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "snowwalker"
+    ],
+    "requirements": {
+      "customers": [
+        "snowwalker"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": [
+        "Fulfill Snowwalker call back condition"
+      ]
+    }
+  },
+  {
+    "id": "moon_in_the_water",
+    "name": "Moon in the Water",
+    "description": "Life is but an ephemeral dream.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "moondancer"
+    ],
+    "requirements": {
+      "customers": [
+        "moondancer"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "vernal_birdsong",
+    "name": "Vernal Birdsong",
+    "description": "When the seeds of the first dandelion blow in the wind, let's fly a kite!",
+    "earningIncreasePercent": 150,
+    "requiredPerformerIds": [
+      "snowwalker",
+      "probiotic_panther"
+    ],
+    "requirements": {
+      "customers": [
+        "snowwalker",
+        "probiotic_panther"
+      ],
+      "facilities": [
+        "hazy_vow",
+        "mini_watering_can"
+      ],
+      "notes": [
+        "Fulfill Snowwalker, Probiotic Panther call back condition"
+      ]
+    }
+  },
+  {
+    "id": "bamboo_shadows_in_twilight_fog",
+    "name": "Bamboo Shadows in Twilight Fog",
+    "description": "Is your sword swifter than the swirling leaves?",
+    "earningIncreasePercent": 175,
+    "requiredPerformerIds": [
+      "windrider",
+      "cloudmaster"
+    ],
+    "requirements": {
+      "customers": [
+        "windrider",
+        "cloudmaster"
+      ],
+      "facilities": [
+        "hazy_vow",
+        "winding_sign"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "twilight_boat",
+    "name": "Twilight Boat",
+    "description": "The setting sun bears witness to our promise to meet again.",
+    "earningIncreasePercent": 135,
+    "requiredPerformerIds": [
+      "moondancer",
+      "pretty_face"
+    ],
+    "requirements": {
+      "customers": [
+        "moondancer",
+        "pretty_face"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "merging_mountains_and_rivers",
+    "name": "Merging Mountains and Rivers",
+    "description": "From high above, even the boundary that separates mountain and river disappears.",
+    "earningIncreasePercent": 150,
+    "requiredPerformerIds": [
+      "cloudmaster",
+      "danielle",
+      "marcus"
+    ],
+    "requirements": {
+      "customers": [
+        "cloudmaster",
+        "danielle",
+        "marcus"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": [
+        "Fulfill Cloudmaster, Danielle, Marcus call back condition"
+      ]
+    }
+  },
+  {
+    "id": "our_hearts_connected",
+    "name": "Our Hearts Connected",
+    "description": "If we form a bond with our hearts, we will never lose our way!",
+    "earningIncreasePercent": 175,
+    "requiredPerformerIds": [
+      "moondancer",
+      "ta_da_da",
+      "sweetie_curly"
+    ],
+    "requirements": {
+      "customers": [
+        "moondancer",
+        "ta_da_da",
+        "sweetie_curly"
+      ],
+      "facilities": [
+        "hazy_vow"
+      ],
+      "notes": [
+        "Fulfill Moondancer, Ta-da-da, Sweetie Curly call back condition"
+      ]
+    }
+  },
+  {
+    "id": "misty_peaks",
+    "name": "Misty Peaks",
+    "description": "Travel the world and comprehend the mysteries of all creation.",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "windrider",
+      "moondancer",
+      "cloudmaster",
+      "snowwalker"
+    ],
+    "requirements": {
+      "customers": [
+        "windrider",
+        "moondancer",
+        "cloudmaster",
+        "snowwalker"
+      ],
+      "facilities": [
+        "hazy_vow",
+        "openwork_screen"
+      ],
+      "notes": [
+        "Fulfill Windrider, Moondancer, Cloudmaster, Snowwalker call back condition"
+      ]
+    }
+  },
+  {
+    "id": "fluffy_star",
+    "name": "Fluffy Star",
+    "description": "I want to dance on every cotton candy cloud!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "minty_star"
+    ],
+    "requirements": {
+      "customers": [
+        "minty_star"
+      ],
+      "facilities": [
+        "floral_noticeboard",
+        "milk_pudding"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "shooting_star_rest_stop",
+    "name": "Shooting Star Rest Stop",
+    "description": "Take a break from your galactic retreat!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "frosty_star"
+    ],
+    "requirements": {
+      "customers": [
+        "frosty_star"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": [
+        "Fulfill Frosty Star call back condition"
+      ]
+    }
+  },
+  {
+    "id": "inter_dimensional_conversations",
+    "name": "Inter-Dimensional Conversations",
+    "description": "We may not speak the same language, but we understand each other all the same!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "pudding_star"
+    ],
+    "requirements": {
+      "customers": [
+        "pudding_star"
+      ],
+      "facilities": [
+        "floral_noticeboard",
+        "snuggly_potted_plant"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "cretaceous_ventures",
+    "name": "Cretaceous Ventures",
+    "description": "What would you do with the dinosaurs if you could go back to the past?",
+    "earningIncreasePercent": 150,
+    "requiredPerformerIds": [
+      "honey_star"
+    ],
+    "requirements": {
+      "customers": [
+        "honey_star"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": [
+        "Fulfill Honey Star call back condition"
+      ]
+    }
+  },
+  {
+    "id": "interstellar_appeal",
+    "name": "Interstellar Appeal",
+    "description": "Forget your worries and journey into space!",
+    "earningIncreasePercent": 175,
+    "requiredPerformerIds": [
+      "minty_star",
+      "frosty_star"
+    ],
+    "requirements": {
+      "customers": [
+        "minty_star",
+        "frosty_star"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "revolving_starcandy",
+    "name": "Revolving Starcandy",
+    "description": "Spin with the starcandy!",
+    "earningIncreasePercent": 135,
+    "requiredPerformerIds": [
+      "pudding_star",
+      "honey_star"
+    ],
+    "requirements": {
+      "customers": [
+        "pudding_star",
+        "honey_star"
+      ],
+      "facilities": [
+        "floral_noticeboard",
+        "strange_flying_machine"
+      ],
+      "notes": [
+        "Fulfill Pudding Star, Honey Star call back condition"
+      ]
+    }
+  },
+  {
+    "id": "shade_of_coconut_grove",
+    "name": "Shade of Coconut Grove",
+    "description": "The fragrance and sweetness of flowers and coconuts accompany memories of the beach.",
+    "earningIncreasePercent": 150,
+    "requiredPerformerIds": [
+      "frosty_star",
+      "backup_dancer_beaver"
+    ],
+    "requirements": {
+      "customers": [
+        "frosty_star",
+        "backup_dancer_beaver"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "rainbow_cloud",
+    "name": "Rainbow Cloud",
+    "description": "The rainbow ties us together.",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "minty_star",
+      "honey_star",
+      "princess_feather"
+    ],
+    "requirements": {
+      "customers": [
+        "minty_star",
+        "honey_star",
+        "princess_feather"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": [
+        "Fulfill Minty Star, Honey Star, Princess Feather call back condition"
+      ]
+    }
+  },
+  {
+    "id": "resounding_universe",
+    "name": "Resounding Universe",
+    "description": "A true musician would play the melody of the universe!",
+    "earningIncreasePercent": 250,
+    "requiredPerformerIds": [
+      "pudding_star",
+      "vocalist_samoyed",
+      "marcus"
+    ],
+    "requirements": {
+      "customers": [
+        "pudding_star",
+        "vocalist_samoyed",
+        "marcus"
+      ],
+      "facilities": [
+        "floral_noticeboard",
+        "plush_star_strings"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "lightspeed_comet",
+    "name": "Lightspeed Comet",
+    "description": "Who is it dashing across the sky with their dazzling tail?",
+    "earningIncreasePercent": 175,
+    "requiredPerformerIds": [
+      "minty_star",
+      "frosty_star",
+      "pudding_star",
+      "honey_star"
+    ],
+    "requirements": {
+      "customers": [
+        "minty_star",
+        "frosty_star",
+        "pudding_star",
+        "honey_star"
+      ],
+      "facilities": [
+        "floral_noticeboard"
+      ],
+      "notes": [
+        "Fulfill Minty Star, Frosty Star, Pudding Star, Honey Star call back condition"
+      ]
+    }
+  },
+  {
+    "id": "lightseeking_dance",
+    "name": "Lightseeking Dance",
+    "description": "The spotlights on stage will guide me forward.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "dancing_flamingo"
+    ],
+    "requirements": {
+      "customers": [
+        "dancing_flamingo"
+      ],
+      "facilities": [
+        "golden_promise",
+        "eternal_sanctuary"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "evening_trail",
+    "name": "Evening Trail",
+    "description": "With each leap, I experience the beauty of life once more.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "dancing_swan"
+    ],
+    "requirements": {
+      "customers": [
+        "dancing_swan"
+      ],
+      "facilities": [
+        "golden_promise"
+      ],
+      "notes": [
+        "Fulfill Dancing Swan callback condition"
+      ]
+    }
+  },
+  {
+    "id": "gracefull_steps",
+    "name": "Gracefull Steps",
+    "description": "As I tiptoe, I become a gentle ray that emits light and warmth.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "dancing_ostrich"
+    ],
+    "requirements": {
+      "customers": [
+        "dancing_ostrich"
+      ],
+      "facilities": [
+        "golden_promise"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "moonlit_solo",
+    "name": "Moonlit Solo",
+    "description": "Only the moon can understand my feelings.",
+    "earningIncreasePercent": 125,
+    "requiredPerformerIds": [
+      "dancing_wild_duck"
+    ],
+    "requirements": {
+      "customers": [
+        "dancing_wild_duck"
+      ],
+      "facilities": [
+        "golden_promise",
+        "rose_colored_carpet"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "garden_of_fragrant_winds",
+    "name": "Garden of Fragrant Winds",
+    "description": "Dance along to the lively beat!",
+    "earningIncreasePercent": 150,
+    "requiredPerformerIds": [
+      "bassist_toad",
+      "dancing_flamingo"
+    ],
+    "requirements": {
+      "customers": [
+        "bassist_toad",
+        "dancing_flamingo"
+      ],
+      "facilities": [
+        "golden_promise"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "cloud_river",
+    "name": "Cloud River",
+    "description": "As gentle wind caresses the mountains, I am reminded how hard it is to find a kindred spirit.",
+    "earningIncreasePercent": 160,
+    "requiredPerformerIds": [
+      "drunken_rouge",
+      "dancing_ostrich"
+    ],
+    "requirements": {
+      "customers": [
+        "drunken_rouge",
+        "dancing_ostrich"
+      ],
+      "facilities": [
+        "golden_promise",
+        "fragrance_of_remnant_dreams"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "deep_conversation",
+    "name": "Deep Conversation",
+    "description": "Listening to each other's thoughts will bring us closer together.",
+    "earningIncreasePercent": 175,
+    "requiredPerformerIds": [
+      "dancing_flamingo",
+      "dancing_ostrich"
+    ],
+    "requirements": {
+      "customers": [
+        "dancing_flamingo",
+        "dancing_ostrich"
+      ],
+      "facilities": [
+        "golden_promise"
+      ],
+      "notes": [
+        "Fulfill Dancing Flamingo, Dancing Ostrich callback condition"
+      ]
+    }
+  },
+  {
+    "id": "refreshing_summer",
+    "name": "Refreshing Summer",
+    "description": "Beep... Your summertime guide has been delievered.",
+    "earningIncreasePercent": 185,
+    "requiredPerformerIds": [
+      "soloist_beaver",
+      "dancing_wild_duck",
+      "little_turtle_angel"
+    ],
+    "requirements": {
+      "customers": [
+        "soloist_beaver",
+        "dancing_wild_duck",
+        "little_turtle_angel"
+      ],
+      "facilities": [
+        "golden_promise"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "soaring_dance",
+    "name": "Soaring Dance",
+    "description": "You can't hold on to past memories, no matter how beautiful they are. It's more important to seize the present moment.",
+    "earningIncreasePercent": 200,
+    "requiredPerformerIds": [
+      "steady_sally",
+      "elegant_emily",
+      "dancing_swan"
+    ],
+    "requirements": {
+      "customers": [
+        "steady_sally",
+        "elegant_emily",
+        "dancing_swan"
+      ],
+      "facilities": [
+        "golden_promise",
+        "breezy_encounter"
+      ],
+      "notes": [
+        "Fulfill Steady Sally, Elegant Emily, Dancing Swan callback condition"
+      ]
+    }
+  },
+  {
+    "id": "feathery_dreams",
+    "name": "Feathery Dreams",
+    "description": "Presenting to you the most elegant dance you've ever seen!",
+    "earningIncreasePercent": 275,
+    "requiredPerformerIds": [
+      "dancing_flamingo",
+      "dancing_ostrich",
+      "dancing_swan",
+      "dancing_wild_duck"
+    ],
+    "requirements": {
+      "customers": [
+        "dancing_flamingo",
+        "dancing_ostrich",
+        "dancing_swan",
+        "dancing_wild_duck"
+      ],
+      "facilities": [],
+      "notes": [
+        "Fulfill Dancing Flamingo, Dancing Ostrich, Dancing Swan, Dancing Wild Duck callback condition"
+      ]
+    }
+  },
+  {
+    "id": "stellar_wish",
+    "name": "Stellar Wish",
+    "description": "Wish for what your heart desires.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "aurora_polar_bear"
+    ],
+    "requirements": {
+      "customers": [
+        "aurora_polar_bear"
+      ],
+      "facilities": [
+        "starry_snow_dream"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "snowy_drummer",
+    "name": "Snowy Drummer",
+    "description": "Follow the rhythm of the falling snow!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "aurora_fuzzy"
+    ],
+    "requirements": {
+      "customers": [
+        "aurora_fuzzy"
+      ],
+      "facilities": [
+        "starry_snow_dream"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "lakeside_song",
+    "name": "Lakeside Song",
+    "description": "A beautiful melody that echoes across the quiet lake.",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "aurora_sheep"
+    ],
+    "requirements": {
+      "customers": [
+        "aurora_sheep"
+      ],
+      "facilities": [
+        "starry_snow_dream"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "blossoms_and_snow",
+    "name": "Blossoms and Snow",
+    "description": "The fleeting moment where spring meets winter.",
+    "earningIncreasePercent": 155,
+    "requiredPerformerIds": [
+      "aurora_polar_bear",
+      "vocalist_samoyed"
+    ],
+    "requirements": {
+      "customers": [
+        "aurora_polar_bear",
+        "vocalist_samoyed"
+      ],
+      "facilities": [
+        "starry_snow_dream"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "astral_sweetheart",
+    "name": "Astral Sweetheart",
+    "description": "Here comes a burst of sweet, starry energy!",
+    "earningIncreasePercent": 140,
+    "requiredPerformerIds": [
+      "aurora_fuzzy",
+      "little_yorkie_angel"
+    ],
+    "requirements": {
+      "customers": [
+        "aurora_fuzzy",
+        "little_yorkie_angel"
+      ],
+      "facilities": [
+        "starry_snow_dream"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "snowy_night_march",
+    "name": "Snowy Night March",
+    "description": "Let's take a stroll together on this snowy night.",
+    "earningIncreasePercent": 215,
+    "requiredPerformerIds": [
+      "aurora_arctic_hare",
+      "frosty_star",
+      "rapper_bean"
+    ],
+    "requirements": {
+      "customers": [
+        "aurora_arctic_hare",
+        "frosty_star",
+        "rapper_bean"
+      ],
+      "facilities": [
+        "starry_snow_dream",
+        "bunting_lights"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "tenacious_blast",
+    "name": "Tenacious Blast",
+    "description": "See how powerful us boxers are!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "coach_roo"
+    ],
+    "requirements": {
+      "customers": [
+        "coach_roo"
+      ],
+      "facilities": [
+        "geometric_planet"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "seize_the_opportunity",
+    "name": "Seize the Opportunity",
+    "description": "The flesh may be weak, but there's always a chance to beat the odds!",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "trainee_stripey"
+    ],
+    "requirements": {
+      "customers": [
+        "trainee_stripey"
+      ],
+      "facilities": [
+        "geometric_planet"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "running_fox",
+    "name": "Running Fox",
+    "description": "",
+    "earningIncreasePercent": 125,
+    "requiredPerformerIds": [
+      "trainee_foxy"
+    ],
+    "requirements": {
+      "customers": [
+        "trainee_foxy"
+      ],
+      "facilities": [
+        "geometric_planet"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "lets_lift_together",
+    "name": "Let's Lift Together!",
+    "description": "",
+    "earningIncreasePercent": 100,
+    "requiredPerformerIds": [
+      "trainee_mingo"
+    ],
+    "requirements": {
+      "customers": [
+        "trainee_mingo"
+      ],
+      "facilities": [
+        "geometric_planet",
+        "pink_star_tambourine"
+      ],
+      "notes": [
+        "Fulfill Trainee Mingo callback condition"
+      ]
+    }
+  },
+  {
+    "id": "red_mini_pickup_truck",
+    "name": "Red Mini Pickup Truck",
+    "description": "Wanna go for a ride, fellas?",
+    "earningIncreasePercent": 140,
+    "requiredPerformerIds": [],
+    "requirements": {
+      "customers": [],
+      "facilities": [
+        "geometric_planet",
+        "alien_planet_ice_cream"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "parallel_lines",
+    "name": "Parallel Lines",
+    "description": "Why close your eyes, you ask? Because the sun's simply too bright!",
+    "earningIncreasePercent": 180,
+    "requiredPerformerIds": [
+      "trainee_stripey",
+      "cutie_white_bunny"
+    ],
+    "requirements": {
+      "customers": [
+        "trainee_stripey",
+        "cutie_white_bunny"
+      ],
+      "facilities": [
+        "geometric_planet"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "theory_of_relative_despair",
+    "name": "Theory of Relative Despair",
+    "description": "",
+    "earningIncreasePercent": 165,
+    "requiredPerformerIds": [
+      "trainee_foxy",
+      "little_shiba_angel"
+    ],
+    "requirements": {
+      "customers": [
+        "trainee_foxy",
+        "little_shiba_angel"
+      ],
+      "facilities": [
+        "geometric_planet"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "glistening_gluttony",
+    "name": "Glistening Gluttony",
+    "description": "Sometimes we train not to lose weight, but to feel less guilty when eating.",
+    "earningIncreasePercent": 245,
+    "requiredPerformerIds": [
+      "trainee_mingo",
+      "sweetie_curly",
+      "thump_thump"
+    ],
+    "requirements": {
+      "customers": [
+        "trainee_mingo",
+        "sweetie_curly",
+        "thump_thump"
+      ],
+      "facilities": [
+        "geometric_planet"
+      ],
+      "notes": []
+    }
+  },
+  {
+    "id": "muscle_squad",
+    "name": "Muscle Squad",
+    "description": "",
+    "earningIncreasePercent": 295,
+    "requiredPerformerIds": [
+      "coach_roo",
+      "trainee_mingo",
+      "trainee_stripey",
+      "trainee_foxy"
+    ],
+    "requirements": {
+      "customers": [
+        "coach_roo",
+        "trainee_mingo",
+        "trainee_stripey",
+        "trainee_foxy"
+      ],
+      "facilities": [
+        "geometric_planet",
+        "interstellar_stage"
+      ],
+      "notes": [
+        "Fulfill Coach Roo, Trainee Mingo, Trainee Stripey, Trainee Foxy callback condition"
+      ]
     }
   }
 ]

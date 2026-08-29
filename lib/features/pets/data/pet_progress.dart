@@ -29,15 +29,18 @@ class PetProgress {
   Future<void> setPhotoTaskDone(String taskId, bool v) =>
       _store.setUnlocked(_photoBucket, taskId, v);
 
-  Future<void> setAllRooms(bool v, List<String> roomIds) async {
-    for (final id in roomIds) {
-      await setRoomUnlocked(id, v);
-    }
-  }
+  // Bulk writes go through setManyUnlocked: one persist + one notify for the
+  // whole batch instead of one per id.
 
-  Future<void> setAllPhotoTasks(bool v, List<String> taskIds) async {
-    for (final id in taskIds) {
-      await setPhotoTaskDone(id, v);
-    }
-  }
+  Future<void> setAllOwned(bool v, List<String> petIds) =>
+      _store.setManyUnlocked(_ownedBucket, petIds, v);
+
+  Future<void> setAllMature(bool v, List<String> petIds) =>
+      _store.setManyUnlocked(_matureBucket, petIds, v);
+
+  Future<void> setAllRooms(bool v, List<String> roomIds) =>
+      _store.setManyUnlocked(_roomBucket, roomIds, v);
+
+  Future<void> setAllPhotoTasks(bool v, List<String> taskIds) =>
+      _store.setManyUnlocked(_photoBucket, taskIds, v);
 }

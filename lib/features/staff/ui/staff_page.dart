@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import '../../completion/data/progress_types.dart';
+import '../../shared/data/unlocked_store.dart';
+import '../../shared/widgets/check_all_button.dart';
 import '../data/staff_repository.dart';
 import '../model/staff_member.dart';
 import 'staff_detail_page.dart';
@@ -14,9 +17,16 @@ class StaffPage extends StatefulWidget {
 
 class _StaffPageState extends State<StaffPage> {
   final _repo = StaffRepository.instance;
+  final _store = UnlockedStore.instance;
 
   String _query = '';
   _StaffSortMode _sortMode = _StaffSortMode.jsonOrder;
+
+  @override
+  void initState() {
+    super.initState();
+    _store.registerType(ProgressTypes.staffUnlocked);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -85,44 +95,86 @@ class _StaffPageState extends State<StaffPage> {
             filtered.sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
           }
 
-          return Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.fromLTRB(12, 12, 12, 8),
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Search staff...',
-                    prefixIcon: const Icon(Icons.search),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
+          final ids = filtered.map((s) => s.id).toList();
+
+          return AnimatedBuilder(
+            animation: _store,
+            builder: (context, _) {
+              final unlocked = ids
+                  .where((id) =>
+                      _store.isUnlocked(ProgressTypes.staffUnlocked, id))
+                  .length;
+
+              return Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(12, 12, 12, 8),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Search staff...',
+                        prefixIcon: const Icon(Icons.search),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                      ),
+                      onChanged: (v) => setState(() => _query = v),
                     ),
                   ),
-                  onChanged: (v) => setState(() => _query = v),
-                ),
-              ),
-              Expanded(
-                child: GridView.builder(
-                  padding: const EdgeInsets.fromLTRB(12, 8, 12, 16),
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3, //  3 boxes per row
-                    crossAxisSpacing: 12,
-                    mainAxisSpacing: 12,
-                    childAspectRatio: 1.0,
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(12, 0, 12, 0),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            'Unlocked: $unlocked/${ids.length}',
+                            style: Theme.of(context).textTheme.titleMedium,
+                          ),
+                        ),
+                        CheckAllButton(
+                          bucket: ProgressTypes.staffUnlocked,
+                          ids: ids,
+                          groupLabel: 'Staff',
+                        ),
+                      ],
+                    ),
                   ),
-                  itemCount: filtered.length,
-                  itemBuilder: (context, i) {
-                    final s = filtered[i];
-                    return _StaffTile(
-                      name: s.name,
-                      series: s.series,
-                      onTap: () => Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => StaffDetailPage(staff: s)),
-                      ), blurb: '',
-                    );
-                  },
-                ),
-              ),
-            ],
+                  Expanded(
+                    child: GridView.builder(
+                      padding: const EdgeInsets.fromLTRB(12, 8, 12, 16),
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 3, //  3 boxes per row
+                        crossAxisSpacing: 12,
+                        mainAxisSpacing: 12,
+                        childAspectRatio: 1.0,
+                      ),
+                      itemCount: filtered.length,
+                      itemBuilder: (context, i) {
+                        final s = filtered[i];
+                        return _StaffTile(
+                          name: s.name,
+                          series: s.series,
+                          unlocked: _store.isUnlocked(
+                            ProgressTypes.staffUnlocked,
+                            s.id,
+                          ),
+                          onUnlockedChanged: (v) => _store.setUnlocked(
+                            ProgressTypes.staffUnlocked,
+                            s.id,
+                            v,
+                          ),
+                          onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                                builder: (_) => StaffDetailPage(staff: s)),
+                          ),
+                          blurb: '',
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              );
+            },
           );
         },
       ),
@@ -136,12 +188,16 @@ class _StaffTile extends StatelessWidget {
     required this.series,
     required this.blurb,
     required this.onTap,
+    required this.unlocked,
+    required this.onUnlockedChanged,
   });
 
   final String name;
   final String? series;
   final String? blurb;
   final VoidCallback onTap;
+  final bool unlocked;
+  final ValueChanged<bool> onUnlockedChanged;
 
   @override
   Widget build(BuildContext context) {
@@ -151,42 +207,58 @@ class _StaffTile extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.all(10),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Icon(Icons.badge_outlined, size: 22),
-              const SizedBox(height: 8),
-              Text(
-                name,
-                textAlign: TextAlign.center,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: Theme.of(context).textTheme.titleSmall,
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: Padding(
+                padding: const EdgeInsets.all(10),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(Icons.badge_outlined, size: 22),
+                    const SizedBox(height: 8),
+                    Text(
+                      name,
+                      textAlign: TextAlign.center,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: Theme.of(context).textTheme.titleSmall,
+                    ),
+                    if (subtitle != null) ...[
+                      const SizedBox(height: 4),
+                      Text(
+                        subtitle,
+                        textAlign: TextAlign.center,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
+                    ],
+                    if ((blurb ?? '').trim().isNotEmpty) ...[
+                      const SizedBox(height: 6),
+                      Text(
+                        blurb!.trim(),
+                        textAlign: TextAlign.center,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: Theme.of(context).textTheme.bodySmall,
+                      ),
+                    ],
+                  ],
+                ),
               ),
-              if (subtitle != null) ...[
-                const SizedBox(height: 4),
-                Text(
-                  subtitle,
-                  textAlign: TextAlign.center,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: Theme.of(context).textTheme.bodySmall,
-                ),
-              ],
-              if ((blurb ?? '').trim().isNotEmpty) ...[
-                const SizedBox(height: 6),
-                Text(
-                  blurb!.trim(),
-                  textAlign: TextAlign.center,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: Theme.of(context).textTheme.bodySmall,
-                ),
-              ],
-            ],
-          ),
+            ),
+            Positioned(
+              top: 2,
+              right: 2,
+              child: Checkbox(
+                value: unlocked,
+                materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                visualDensity: VisualDensity.compact,
+                onChanged: (v) => onUnlockedChanged(v ?? false),
+              ),
+            ),
+          ],
         ),
       ),
     );

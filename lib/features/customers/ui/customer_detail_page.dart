@@ -14,6 +14,8 @@ import '../../mementos/data/mementos_index.dart';
 import '../../letters/data/letters_repository.dart';
 import '../../letters/model/letter.dart';
 import '../../shared/data/unlocked_store.dart';
+import '../../shared/widgets/check_all_button.dart';
+import '../../completion/data/completion_service.dart';
 import '../../mementos/ui/mementos_detail_page.dart';
 
 class CustomerDetailPage extends StatefulWidget {
@@ -35,11 +37,45 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
 
   Customer get customer => widget.customer;
 
+  /// memento id -> the indexed entry, when the memento is in MementosIndex.
+  late final Future<Map<String, MementoEntry>> _mementoEntries;
+
   @override
   void initState() {
     super.initState();
     store.registerType(_bucketCustomers);
+    _mementoEntries = _resolveMementoEntries();
   }
+
+  Future<Map<String, MementoEntry>> _resolveMementoEntries() async {
+    if (customer.mementos.isEmpty) return <String, MementoEntry>{};
+
+    List<MementoEntry> all = const <MementoEntry>[];
+    try {
+      all = await MementosIndex.instance.all();
+    } catch (_) {
+      // Fall back to derived keys below rather than losing the section.
+    }
+
+    final byId = <String, MementoEntry>{for (final e in all) e.id: e};
+
+    final out = <String, MementoEntry>{};
+    for (final m in customer.mementos) {
+      final entry = byId[m.id];
+      if (entry != null) out[m.id] = entry;
+    }
+    return out;
+  }
+
+  /// The UnlockedStore key for one of this customer's mementos. Uses the
+  /// indexed key when the memento is in MementosIndex, otherwise the same
+  /// `m:<customerId>/<mementoId>` shape the index would have produced.
+  String _mementoKey(String mementoId, Map<String, MementoEntry> entries) =>
+      entries[mementoId]?.key ??
+      CompletionService.mementoKeyFor(
+        customerId: customer.id,
+        mementoId: mementoId,
+      );
 
   bool get _isCustomerUnlocked =>
       store.isUnlocked(_bucketCustomers, customer.id);
@@ -224,45 +260,85 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
 
           if (customer.mementos.isNotEmpty) ...[
             const SizedBox(height: 24),
-            const Text(
-              'Mementos',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: customer.mementos.map((m) {
-                return FutureBuilder(
-                  future: MementosIndex.instance.byId(m.id),
-                  builder: (context, snap) {
-                    final entry = snap.data;
+            FutureBuilder<Map<String, MementoEntry>>(
+              future: _mementoEntries,
+              builder: (context, snap) {
+                final entries =
+                    snap.data ?? const <String, MementoEntry>{};
 
-                    final collected = (entry != null)
-                        ? store.isUnlocked(_bucketMementoCollected, entry.key)
-                        : false;
+                final keys = customer.mementos
+                    .map((m) => _mementoKey(m.id, entries))
+                    .toList();
+                final collectedCount = keys
+                    .where((k) => store.isUnlocked(_bucketMementoCollected, k))
+                    .length;
 
-                    return EntityChip(
-                      label: m.name,
-                      fillColor:
-                          collected ? Colors.green.withOpacity(0.18) : null,
-                      onTap: () async {
-                        final real =
-                            entry ?? await MementosIndex.instance.byId(m.id);
-                        if (real == null || !context.mounted) return;
-
-                        await Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => MementoDetailPage(memento: real),
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        const Expanded(
+                          child: Text(
+                            'Mementos',
+                            style: TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold),
                           ),
-                        );
+                        ),
+                        Text('$collectedCount/${keys.length}'),
+                        CheckAllButton(
+                          bucket: _bucketMementoCollected,
+                          ids: keys,
+                          groupLabel: "${customer.name}'s mementos",
+                          onApplied: (_) {
+                            if (mounted) setState(() {});
+                          },
+                        ),
+                      ],
+                    ),
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 8,
+                      children: customer.mementos.map((m) {
+                        final entry = entries[m.id];
+                        final key = _mementoKey(m.id, entries);
+                        final collected =
+                            store.isUnlocked(_bucketMementoCollected, key);
 
-                        if (mounted) setState(() {});
-                      },
-                    );
-                  },
+                        // Only mementos present in MementosIndex have a
+                        // detail page to open.
+                        VoidCallback? openDetail;
+                        if (entry != null) {
+                          final target = entry;
+                          openDetail = () async {
+                            await Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) =>
+                                    MementoDetailPage(memento: target),
+                              ),
+                            );
+                            if (mounted) setState(() {});
+                          };
+                        }
+
+                        return EntityChip(
+                          label: m.name,
+                          checked: collected,
+                          showCheckbox: true,
+                          fillColor: collected ? ownedFill : null,
+                          onCheckChanged: (v) async {
+                            await store.setUnlocked(
+                                _bucketMementoCollected, key, v);
+                            if (mounted) setState(() {});
+                          },
+                          onTap: openDetail,
+                        );
+                      }).toList(),
+                    ),
+                  ],
                 );
-              }).toList(),
+              },
             ),
           ],
         ],

@@ -9,14 +9,23 @@ class FacilitiesRepository {
   List<Facility>? _cache;
   List<Facility>? get cached => _cache;
 
-  Future<List<Facility>> all() async {
-    // Return cache if already loaded
-    if (_cache != null) return _cache!;
+  /// Cached *future* so concurrent callers share one load + parse, and so
+  /// `FutureBuilder`s that call `all()` from `build()` see a stable Future.
+  Future<List<Facility>>? _future;
+
+  Future<List<Facility>> all() => _future ??= _load();
+
+  Future<List<Facility>> _load() async {
     try {
       final data = await JsonLoader.load(_asset) as List<dynamic>;
-      _cache = data.map((e) => Facility.fromJson(e as Map<String, dynamic>)).toList();
-      return _cache!;
+      final out =
+          data.map((e) => Facility.fromJson(e as Map<String, dynamic>)).toList();
+      // Sole consumer of this asset; the parsed models replace the raw maps.
+      JsonLoader.evict(_asset);
+      _cache = out;
+      return out;
     } catch (e) {
+      _future = null; // allow a retry
       throw Exception('Error loading $_asset: $e');
     }
   }

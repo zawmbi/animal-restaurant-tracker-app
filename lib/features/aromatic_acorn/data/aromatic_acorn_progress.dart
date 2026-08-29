@@ -13,6 +13,11 @@ class AromaticAcornProgress {
     await _store.registerType(_type);
   }
 
+  /// Registers the bucket so previously saved checks are readable.
+  /// Call this before the first read (e.g. from a page's initState);
+  /// safe to call repeatedly.
+  Future<void> ensureLoaded() => _ensureType();
+
   String _reqId(String stageId, int i) => 'stage:$stageId:req:$i';
   String _taskId(String stageId, int i) => 'stage:$stageId:task:$i';
 
@@ -34,6 +39,22 @@ class AromaticAcornProgress {
     await _store.setUnlocked(_type, _taskId(stageId, index), v);
   }
 
+  /// Every checkbox id for a stage, in display order.
+  List<String> idsForStage({
+    required String stageId,
+    required int reqCount,
+    required int taskCount,
+  }) {
+    final ids = <String>[];
+    for (int i = 0; i < reqCount; i++) {
+      ids.add(_reqId(stageId, i));
+    }
+    for (int i = 0; i < taskCount; i++) {
+      ids.add(_taskId(stageId, i));
+    }
+    return ids;
+  }
+
   Future<void> setAllForStage({
     required String stageId,
     required int reqCount,
@@ -41,12 +62,12 @@ class AromaticAcornProgress {
     required bool value,
   }) async {
     await _ensureType();
-    for (int i = 0; i < reqCount; i++) {
-      await _store.setUnlocked(_type, _reqId(stageId, i), value);
-    }
-    for (int i = 0; i < taskCount; i++) {
-      await _store.setUnlocked(_type, _taskId(stageId, i), value);
-    }
+    // One persist + one notify for the whole stage.
+    await _store.setManyUnlocked(
+      _type,
+      idsForStage(stageId: stageId, reqCount: reqCount, taskCount: taskCount),
+      value,
+    );
   }
 
   bool stageComplete({

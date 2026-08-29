@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../completion/data/progress_types.dart';
+import '../../shared/widgets/check_all_button.dart';
 import '../data/pets_repository.dart';
 import '../data/pet_progress.dart';
 import '../model/pet.dart';
@@ -77,6 +79,7 @@ class _PetsPageState extends State<PetsPage> {
           final data = snap.data!;
           final pets = data.pets;
 
+          final petIds = pets.map((p) => p.id).toList();
           final ownedCount = pets.where((p) => progress.isOwned(p.id)).length;
           final matureCount = pets.where((p) => progress.isMature(p.id)).length;
 
@@ -100,8 +103,46 @@ class _PetsPageState extends State<PetsPage> {
                         Text(data.notes),
                       ],
                       const Divider(height: 20),
-                      Text('Owned: $ownedCount / ${pets.length}'),
-                      Text('Mature: $matureCount / ${pets.length}'),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text('Owned: $ownedCount / ${pets.length}'),
+                          ),
+                          CheckAllButton(
+                            bucket: ProgressTypes.petOwned,
+                            ids: petIds,
+                            groupLabel: 'Pets owned',
+                            onApplied: (value) async {
+                              // A pet cannot be mature if it is not owned.
+                              if (!value) {
+                                await progress.setAllMature(false, petIds);
+                              }
+                              if (!mounted) return;
+                              setState(() {});
+                            },
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text('Mature: $matureCount / ${pets.length}'),
+                          ),
+                          CheckAllButton(
+                            bucket: ProgressTypes.petMature,
+                            ids: petIds,
+                            groupLabel: 'Pets matured',
+                            onApplied: (value) async {
+                              // Marking every pet mature implies owning them.
+                              if (value) {
+                                await progress.setAllOwned(true, petIds);
+                              }
+                              if (!mounted) return;
+                              setState(() {});
+                            },
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -292,6 +333,14 @@ class _PetRoomsAndPhotosPageState extends State<_PetRoomsAndPhotosPage> {
                       ),
                       OutlinedButton(
                         onPressed: () async {
+                          if (unlockedRooms > 0) {
+                            final ok = await CheckAllButton.confirmUncheck(
+                              context,
+                              count: unlockedRooms,
+                              groupLabel: 'Pet Rooms',
+                            );
+                            if (!ok) return;
+                          }
                           await progress.setAllRooms(false, roomIds);
                           if (!mounted) return;
                           setState(() {});
@@ -308,6 +357,14 @@ class _PetRoomsAndPhotosPageState extends State<_PetRoomsAndPhotosPage> {
                       ),
                       OutlinedButton(
                         onPressed: () async {
+                          if (doneTasks > 0) {
+                            final ok = await CheckAllButton.confirmUncheck(
+                              context,
+                              count: doneTasks,
+                              groupLabel: 'Photo Tasks',
+                            );
+                            if (!ok) return;
+                          }
                           await progress.setAllPhotoTasks(false, taskIds);
                           if (!mounted) return;
                           setState(() {});

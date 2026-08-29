@@ -9,6 +9,7 @@ import 'package:animal_restaurant_tracker/features/pets/ui/pets_page.dart';
 
 import 'package:animal_restaurant_tracker/features/bank/ui/bank_page.dart';
 import 'package:animal_restaurant_tracker/features/completion/ui/completion_page.dart';
+import 'package:animal_restaurant_tracker/features/completion/ui/progress_page.dart';
 import 'package:animal_restaurant_tracker/features/facilities/data/facilities_repository.dart'
     as facrepo;
 
@@ -208,7 +209,8 @@ class _HomePageState extends State<HomePage> {
                         String? bucket;
                         switch (h.type) {
                           case HitType.customer:
-                            bucket = 'customer';
+                            // Pages store customers under 'customers'.
+                            bucket = 'customers';
                             break;
                           case HitType.letter:
                             bucket = 'letter';
@@ -217,7 +219,8 @@ class _HomePageState extends State<HomePage> {
                             bucket = 'dish';
                             break;
                           case HitType.facility:
-                            bucket = 'facility_purchased';
+                            // Pages store facilities under 'facility'.
+                            bucket = 'facility';
                             break;
                           case HitType.memento:
                             bucket = 'memento_collected';
@@ -312,6 +315,12 @@ class _HomePageState extends State<HomePage> {
                 Icons.checklist,
                 'Cost to Complete',
                 const CompletionPage(),
+              ),
+              _navTile(
+                context,
+                Icons.donut_large,
+                '% Complete',
+                const ProgressPage(),
               ),
               _navTile(
                 context,

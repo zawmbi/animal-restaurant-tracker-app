@@ -1,20 +1,37 @@
-import 'dart:convert';
-import 'package:flutter/services.dart' show rootBundle;
+import '../../shared/json_loader.dart';
 import '../model/dish.dart';
 
 class DishesRepository {
   DishesRepository._();
   static final DishesRepository instance = DishesRepository._();
 
+  static const String _asset = 'assets/data/dishes.json';
+
   // Cache + indexes
   List<Dish>? _cache;
   Map<String, Dish>? _byId;
   Map<String, Dish>? _byNameLower;
 
-  Future<void> _ensure() async {
-    if (_cache != null) return;
-    _cache = await _loadAllFromAssets();
-    _reindex();
+  /// Cached *future* so concurrent callers share one load + parse, and so
+  /// `FutureBuilder`s that call `all()` from `build()` see a stable Future.
+  Future<List<Dish>>? _future;
+
+  Future<List<Dish>> _ensure() => _future ??= _load();
+
+  Future<List<Dish>> _load() async {
+    try {
+      final data = await JsonLoader.load(_asset) as List<dynamic>;
+      final out =
+          data.map((e) => Dish.fromJson(e as Map<String, dynamic>)).toList();
+      // Sole consumer of this asset; the parsed models replace the raw maps.
+      JsonLoader.evict(_asset);
+      _cache = out;
+      _reindex();
+      return out;
+    } catch (_) {
+      _future = null; // allow a retry
+      rethrow;
+    }
   }
 
   void _reindex() {
@@ -24,17 +41,7 @@ class DishesRepository {
     };
   }
 
-  // Adjust this to your actual asset path/loader if different.
-  Future<List<Dish>> _loadAllFromAssets() async {
-    final raw = await rootBundle.loadString('assets/data/dishes.json');
-    final list = jsonDecode(raw) as List;
-    return list.map((e) => Dish.fromJson(e as Map<String, dynamic>)).toList();
-  }
-
-  Future<List<Dish>> all() async {
-    await _ensure();
-    return _cache!;
-  }
+  Future<List<Dish>> all() => _ensure();
 
   Future<Dish?> byId(String id) async {
     await _ensure();

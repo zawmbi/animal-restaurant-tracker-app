@@ -27,19 +27,20 @@
         "earnedStars": 5,
         "description": "Looks very light, as if there is nothing inside.",
         "requirement": "Serve White Bunny 350 times.",
+        "shareReward": 5000,
         "tags": [
           "customer_gift",
           "logbook_default"
         ],
-        "source": "customer_gift",
-        "shareReward": 5000
+        "source": "customer_gift"
       },
       {
         "id": "calculator",
         "name": "Calculator",
         "earnedStars": 30,
         "description": "Continuously pressing buttons will produce cool robotic sounds.",
-        "requirement": "Serve White Bunny 1500 times. \nSell 2000 Taiyaki."
+        "requirement": "Serve White Bunny 1500 times. Sell 2000 Taiyaki.",
+        "shareReward": 10000
       },
       {
         "id": "rabbit_hat",
@@ -76,11 +77,11 @@
         "earnedStars": 10,
         "description": "Although it's a cellphone, it looks like it's only good for eating.",
         "requirement": "Serve Brown Bunny 500 times.",
+        "shareReward": 6000,
         "tags": [
           "customer_gift"
         ],
-        "source": "customer_gift",
-        "shareReward": 6000
+        "source": "customer_gift"
       },
       {
         "id": "sturdy_flower",
@@ -117,7 +118,9 @@
     "requirements": {
       "facilities": [
         "star_rating_board"
-      ]
+      ],
+      "rating": 9,
+      "requiredStars": 9
     },
     "mementos": [
       {
@@ -126,6 +129,7 @@
         "earnedStars": 10,
         "description": "It will bestow you with Deer's good fortune.",
         "requirement": "Serve Deer 700 times.",
+        "shareReward": 7000,
         "tags": [
           "customer_gift"
         ],
@@ -167,7 +171,8 @@
         "name": "Gold Chain",
         "earnedStars": 20,
         "description": "Put it on and you'll be the richest kid in Animal Restaurant.",
-        "requirement": "Serve Mouse 1 time.",
+        "requirement": "Serve Mouse to get.",
+        "shareReward": 8000,
         "tags": [
           "customer_gift"
         ],
@@ -206,7 +211,15 @@
         "halloween_decorations"
       ]
     },
-    "mementos": []
+    "mementos": [
+      {
+        "id": "lucky_barrette",
+        "name": "Lucky Barrette",
+        "earnedStars": 32,
+        "description": "Will something good happen when I wear it?",
+        "requirement": "Serve PAGENAME 30 times."
+      }
+    ]
   },
   {
     "id": "white_shiba",
@@ -236,15 +249,16 @@
       "recipes": [],
       "flowers": [
         "white_rose"
-      ]
+      ],
+      "requiredStars": 920
     },
     "mementos": [
       {
         "id": "kibble",
         "name": "Kibble",
-        "earnedStars": 10,
-        "description": "Crunchy dog food.",
-        "requirement": "Serve White Shiba 500 times.",
+        "earnedStars": 85,
+        "description": "Only one word to describe it—delicious!",
+        "requirement": "Serve White Shiba 195 times.",
         "tags": [
           "customer_gift"
         ],
@@ -304,7 +318,8 @@
       "recipes": [],
       "facilities": [],
       "letters": [],
-      "customers": []
+      "customers": [],
+      "requiredStars": 6000
     },
     "mementos": []
   },
@@ -357,7 +372,8 @@
       "customers": [],
       "recipes": [],
       "facilities": [],
-      "letters": []
+      "letters": [],
+      "requiredStars": 10000
     },
     "mementos": []
   },
@@ -497,7 +513,8 @@
       "customers": [],
       "recipes": [],
       "facilities": [],
-      "letters": []
+      "letters": [],
+      "requiredStars": 22000
     },
     "mementos": []
   },
@@ -550,7 +567,8 @@
       "customers": [],
       "recipes": [],
       "facilities": [],
-      "letters": []
+      "letters": [],
+      "requiredStars": 30000
     },
     "mementos": []
   },
@@ -654,7 +672,8 @@
       "customers": [],
       "recipes": [],
       "facilities": [],
-      "letters": []
+      "letters": [],
+      "requiredStars": 70000
     },
     "mementos": []
   },
@@ -758,7 +777,8 @@
       "customers": [],
       "recipes": [],
       "facilities": [],
-      "letters": []
+      "letters": [],
+      "requiredStars": 90000
     },
     "mementos": []
   },
@@ -811,7 +831,8 @@
       "customers": [],
       "recipes": [],
       "facilities": [],
-      "letters": []
+      "letters": [],
+      "requiredStars": 14000
     },
     "mementos": []
   },
@@ -828,7 +849,8 @@
       "customers": [],
       "recipes": [],
       "facilities": [],
-      "letters": []
+      "letters": [],
+      "requiredStars": 18000
     },
     "mementos": []
   },
@@ -1309,7 +1331,8 @@
       "facilities": [],
       "letters": [],
       "customers": [],
-      "rating": 110000
+      "rating": 110000,
+      "requiredStars": 110000
     },
     "mementos": []
   },
@@ -1473,7 +1496,8 @@
       "facilities": [],
       "letters": [],
       "customers": [],
-      "rating": 150000
+      "rating": 150000,
+      "requiredStars": 150000
     },
     "mementos": []
   },
@@ -1555,7 +1579,8 @@
       "facilities": [],
       "letters": [],
       "customers": [],
-      "rating": 200000
+      "rating": 200000,
+      "requiredStars": 200000
     },
     "mementos": []
   },
@@ -1905,7 +1930,8 @@
       "customers": [
         "yannis"
       ],
-      "rating": 220000
+      "rating": 220000,
+      "requiredStars": 220000
     },
     "mementos": []
   },
@@ -5043,7 +5069,10 @@
     "canBeInvitedBy": [],
     "posters": [],
     "facilities": [],
-    "categories": []
+    "categories": [],
+    "customerDescription": "The calm member of Puff Planet. He likes playing the flute in a corner by himself.",
+    "requirements": {},
+    "mementos": []
   },
   {
     "id": "pudding_star",
@@ -5062,7 +5091,10 @@
     "canBeInvitedBy": [],
     "posters": [],
     "facilities": [],
-    "categories": []
+    "categories": [],
+    "customerDescription": "The member of Puff Planet with a muddle-headed personality, but it makes it easy to distinguish him from his twin.",
+    "requirements": {},
+    "mementos": []
   },
   {
     "id": "honey_star",
@@ -5081,7 +5113,10 @@
     "canBeInvitedBy": [],
     "posters": [],
     "facilities": [],
-    "categories": []
+    "categories": [],
+    "customerDescription": "A member of Puff Planet. Joined the band for stress relief from work, but takes his performances very seriously.",
+    "requirements": {},
+    "mementos": []
   },
   {
     "id": "dancing_flamingo",
@@ -5100,7 +5135,10 @@
     "canBeInvitedBy": [],
     "posters": [],
     "facilities": [],
-    "categories": []
+    "categories": [],
+    "customerDescription": "A member of the Lightseeker Ballet Troupe and aiming to become the principal dancer. I heard that they can continue dancing even when they're asleep.",
+    "requirements": {},
+    "mementos": []
   },
   {
     "id": "dancing_ostrich",
@@ -5119,7 +5157,10 @@
     "canBeInvitedBy": [],
     "posters": [],
     "facilities": [],
-    "categories": []
+    "categories": [],
+    "customerDescription": "A member of the Lightseeker Ballet Troupe and the face of the group. They can learn new dance moves very quickly.",
+    "requirements": {},
+    "mementos": []
   },
   {
     "id": "dancing_swan",
@@ -5138,7 +5179,10 @@
     "canBeInvitedBy": [],
     "posters": [],
     "facilities": [],
-    "categories": []
+    "categories": [],
+    "customerDescription": "A member of the Lightseeker Ballet Troupe. Although she often complains when it comes to dance training, she always excels when it's time for the performance itself.",
+    "requirements": {},
+    "mementos": []
   },
   {
     "id": "dancing_wild_duck",
@@ -5157,7 +5201,10 @@
     "canBeInvitedBy": [],
     "posters": [],
     "facilities": [],
-    "categories": []
+    "categories": [],
+    "customerDescription": "A member of the Lightseeker Ballet Troupe. She's always calm and composed, allowing her to solve any problems that she encounters with ease.",
+    "requirements": {},
+    "mementos": []
   },
   {
     "id": "aurora_polar_bear",
@@ -5176,7 +5223,10 @@
     "canBeInvitedBy": [],
     "posters": [],
     "facilities": [],
-    "categories": []
+    "categories": [],
+    "customerDescription": "A member of Aurora Puppet Club. Nods off sometimes during performances.",
+    "requirements": {},
+    "mementos": []
   },
   {
     "id": "aurora_arctic_hare",
@@ -5195,7 +5245,10 @@
     "canBeInvitedBy": [],
     "posters": [],
     "facilities": [],
-    "categories": []
+    "categories": [],
+    "customerDescription": "A member of Aurora Puppet Club. Frequently surprises with his performances.",
+    "requirements": {},
+    "mementos": []
   },
   {
     "id": "aurora_fuzzy",
@@ -5214,7 +5267,10 @@
     "canBeInvitedBy": [],
     "posters": [],
     "facilities": [],
-    "categories": []
+    "categories": [],
+    "customerDescription": "A member of Aurora Puppet Club. Has an incredible sense of rhythm.",
+    "requirements": {},
+    "mementos": []
   },
   {
     "id": "aurora_sheep",
@@ -5233,7 +5289,10 @@
     "canBeInvitedBy": [],
     "posters": [],
     "facilities": [],
-    "categories": []
+    "categories": [],
+    "customerDescription": "A member of Aurora Puppet Club. A musical genius who effortlessly creates exquisite melodies.",
+    "requirements": {},
+    "mementos": []
   },
   {
     "id": "rich_kid",
@@ -5329,7 +5388,22 @@
     "livesIn": null,
     "customerDescription": "A mischievous rascal that everyone dislikes.",
     "requirements": {},
-    "mementos": []
+    "mementos": [
+      {
+        "id": "shapely_peach",
+        "name": "Shapely Peach",
+        "earnedStars": 30,
+        "description": "A uniquely-shaped peach.",
+        "requirement": "Dropped by Rascal when you lose his game."
+      },
+      {
+        "id": "bang_snaps",
+        "name": "Bang Snaps",
+        "earnedStars": 12,
+        "description": "Pops when you throw it onto the ground. A bratty kid's weapon of choice' whenever they want to scare someone.",
+        "requirement": "Dropped by Rascal when you lose his game."
+      }
+    ]
   },
   {
     "id": "rascals_dad",
@@ -5353,7 +5427,22 @@
     "livesIn": null,
     "customerDescription": "Behind every rascal, lurks a pair of rapscallion parents.",
     "requirements": {},
-    "mementos": []
+    "mementos": [
+      {
+        "id": "feather_duster",
+        "name": "Feather Duster",
+        "earnedStars": 30,
+        "description": "Mum's favorite weapon.",
+        "requirement": "Dropped by Rascal's Mom."
+      },
+      {
+        "id": "toddler_watch",
+        "name": "Toddler Watch",
+        "earnedStars": 15,
+        "description": "A multifunctional watch that serves as entertainment, a telephone, and a clock.",
+        "requirement": "Dropped by Rascal's Mom."
+      }
+    ]
   },
   {
     "id": "christmas_elf",
@@ -5603,8 +5692,19 @@
       "regular"
     ],
     "customerDescription": "DON'T let him eat too many beans. If he farts, the entire restaurant is done for.",
-    "requirements": {},
-    "mementos": [],
+    "requirements": {
+      "rating": 20,
+      "requiredStars": 20
+    },
+    "mementos": [
+      {
+        "id": "antacid",
+        "name": "Antacid",
+        "earnedStars": 15,
+        "description": "A must-have medicine in every home!",
+        "requirement": "Serve Badger 400 times."
+      }
+    ],
     "livesIn": "Village",
     "appearanceWeight": 8020,
     "dishesOrderedIds": [
@@ -5628,9 +5728,19 @@
       ],
       "facilities": [
         "fruit_platter"
-      ]
+      ],
+      "rating": 120,
+      "requiredStars": 120
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "deer_antler_cap",
+        "name": "Deer Antler Cap",
+        "earnedStars": 15,
+        "description": "Put on the Deer Antler Cap to look like a deer",
+        "requirement": "Serve Spotted Deer 450 times.\nSell 800 Adzuki Bean Dumpling."
+      }
+    ],
     "livesIn": "Nearby",
     "appearanceWeight": 8745,
     "requiredFoodId": "Adzuki Bean Dumpling",
@@ -5649,7 +5759,23 @@
     ],
     "customerDescription": "He is overconfident about his talent, very fussy about food, and is always pulling all-nighters to make finishing touches... but nobody has ever seen any of his paintings.",
     "requirements": {},
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "artist_hat",
+        "name": "Artist Hat",
+        "earnedStars": 15,
+        "description": "Put on the red beret to look the part of an artist.",
+        "requirement": "Serve Artist Badger to get."
+      },
+      {
+        "id": "palette",
+        "name": "Palette",
+        "earnedStars": 25,
+        "description": "A tool commonly used by artists. I hear it can turn emptiness into pictures of love.",
+        "requirement": "Serve Artist Badger 310 times.",
+        "shareReward": 9000
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 7768,
     "dishesOrderedIds": [
@@ -5669,7 +5795,15 @@
     ],
     "customerDescription": "There's an unheard story behind the knife wound. The bear is a regular, and also our fish supplier!",
     "requirements": {},
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "animal_trap",
+        "name": "Animal Trap",
+        "earnedStars": 35,
+        "description": "Heavy and dangerous, even a bear would not be able to escape once trapped in it.",
+        "requirement": "Serve Wounded Bear 305 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 7605,
     "dishesOrderedIds": [
@@ -5690,9 +5824,19 @@
       "recipes": [
         "Matcha Taiyaki",
         "Porridge & Jam"
-      ]
+      ],
+      "rating": 160,
+      "requiredStars": 160
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "tiny_socks",
+        "name": "Tiny Socks",
+        "earnedStars": 45,
+        "description": "Tiny and adorable.",
+        "requirement": "Serve Hedgehog 200 times. Sell 1000 Porridge & Jam."
+      }
+    ],
     "livesIn": "Nearby",
     "appearanceWeight": 6453,
     "requiredFoodId": "Matcha Taiyaki",
@@ -5744,7 +5888,15 @@
         "cute_sketch"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "food_storage_box",
+        "name": "Food Storage Box",
+        "earnedStars": 45,
+        "description": "Used to preserve the freshness of internal organs and other food.",
+        "requirement": "Serve Striped Jackal 255 times."
+      }
+    ],
     "livesIn": "Village",
     "appearanceWeight": 6391,
     "requiredFoodId": "Blueberry Pancake",
@@ -5770,9 +5922,20 @@
       ],
       "recipes": [
         "Bibimbap"
+      ],
+      "flowers": [
+        "daisy"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "blueberries_and_cream_hat",
+        "name": "Blueberries and Cream Hat",
+        "earnedStars": 15,
+        "description": "It smells amazing.",
+        "requirement": "Serve Blueberry Hedgehog 255 times."
+      }
+    ],
     "livesIn": "Village",
     "appearanceWeight": 6346,
     "requiredFoodId": "Bibimbap",
@@ -5799,7 +5962,15 @@
         "casual_log"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "knitted_beanie",
+        "name": "Knitted Beanie",
+        "earnedStars": 15,
+        "description": "Woolly and fluffy, it offers protection from the cold in winter.",
+        "requirement": "Serve Sheep 200 times.\nSell 500 Fries."
+      }
+    ],
     "livesIn": "Nearby",
     "appearanceWeight": 6324,
     "requiredFoodId": "Fries",
@@ -5852,7 +6023,29 @@
         "blinds"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "swim_ring",
+        "name": "Swim Ring",
+        "earnedStars": 50,
+        "description": "Everybody will be able to learn how to swim with this swim ring.",
+        "requirement": "Serve Swan 240 times."
+      },
+      {
+        "id": "swim_cap",
+        "name": "Swim Cap",
+        "earnedStars": 15,
+        "description": "An essential for swimming champions.",
+        "requirement": "Restaurant in business for 14 days.\nServe Swan to get."
+      },
+      {
+        "id": "bath_bomb",
+        "name": "Bath Bomb",
+        "earnedStars": 80,
+        "description": "No one can resist a scented bath on a weekend evening.",
+        "requirement": "Serve Swan 600 times."
+      }
+    ],
     "livesIn": "Village",
     "appearanceWeight": 6074,
     "requiredFoodId": "Curry Rice",
@@ -5898,8 +6091,19 @@
       "regular"
     ],
     "customerDescription": "There's a faint scar on his belly. He always looks down.",
-    "requirements": {},
-    "mementos": [],
+    "requirements": {
+      "rating": 220,
+      "requiredStars": 220
+    },
+    "mementos": [
+      {
+        "id": "iron_vest",
+        "name": "Iron Vest",
+        "earnedStars": 55,
+        "description": "This vest provides protection for soft underbellies.",
+        "requirement": "Serve Scarred Bear 235 times."
+      }
+    ],
     "livesIn": "Village",
     "appearanceWeight": 5879,
     "dishesOrderedIds": [
@@ -5924,9 +6128,20 @@
       "recipes": [
         "Roast Shrimp",
         "Fried Shrimp Sushi"
+      ],
+      "flowers": [
+        "sunflower"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "rainbow_hat",
+        "name": "Rainbow Hat",
+        "earnedStars": 15,
+        "description": "A dream expertly made with rainbows.",
+        "requirement": "Serve Granny Wolf 235 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 5843,
     "requiredFoodId": "Roast Shrimp",
@@ -5955,7 +6170,22 @@
         "elegant_cafe"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "toy_train",
+        "name": "Toy Train",
+        "earnedStars": 60,
+        "description": "A toy belonging to Border Collie who likes railways and traveling by train.",
+        "requirement": "Rating must reach 3,000. Serve Border Collie to get."
+      },
+      {
+        "id": "train_conductors_hat",
+        "name": "Train Conductor's Hat",
+        "earnedStars": 15,
+        "description": "Choo choo! The train for Animal Restaurant is leaving now.",
+        "requirement": "Serve Border Collie 1000 times."
+      }
+    ],
     "livesIn": "Village",
     "appearanceWeight": 5840,
     "requiredFoodId": "Scrambled Eggs & Tomatoes",
@@ -5980,7 +6210,22 @@
         "Cappuccino"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "mustache",
+        "name": "Mustache",
+        "earnedStars": 15,
+        "description": "Rumored to be taken off from Stin's face.",
+        "requirement": "Serve French Bulldog 230 times."
+      },
+      {
+        "id": "noble_wig",
+        "name": "Noble Wig",
+        "earnedStars": 35,
+        "description": "Noble! Gracious! And a bit heavy ...",
+        "requirement": "Serve French Bulldog 550 times."
+      }
+    ],
     "livesIn": "Village",
     "appearanceWeight": 5772,
     "requiredFoodId": "Sake",
@@ -6004,9 +6249,22 @@
     "requirements": {
       "facilities": [
         "red_rose"
+      ],
+      "rating": 440,
+      "requiredStars": 440,
+      "flowers": [
+        "rose"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "moisturizer",
+        "name": "Moisturizer",
+        "earnedStars": 65,
+        "description": "An essential for females who want to look beautiful.",
+        "requirement": "Serve Bald Sheep 215 times."
+      }
+    ],
     "livesIn": "village",
     "appearanceWeight": 5378,
     "dishesOrderedIds": [
@@ -6067,7 +6325,22 @@
         "pretty_fridge"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "tool",
+        "name": "Tool",
+        "earnedStars": 70,
+        "description": "You need a convinient tool like this if you want to live in the forest.",
+        "requirement": "Serve Otter 180 times."
+      },
+      {
+        "id": "engineers_helmet",
+        "name": "Engineer's Helmet",
+        "earnedStars": 15,
+        "description": "Equipped with a lamp to provide a sense of security in dark places.",
+        "requirement": "Serve Otter 800 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 5104,
     "requiredFoodId": "Croissant",
@@ -6094,9 +6367,20 @@
         "Kimbap",
         "Curry Rice",
         "Matcha Taiyaki"
+      ],
+      "flowers": [
+        "bluebell"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "butterfly_bow",
+        "name": "Butterfly Bow",
+        "earnedStars": 15,
+        "description": "Not a real butterfly, but realistic enough to attract other butterflies.",
+        "requirement": "Restaurant in business for 30 days. Serve One-Eyed Papillon to get."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 4675,
     "requiredFoodId": "Kimbap",
@@ -6126,7 +6410,15 @@
         "ornate_oven"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "fox_ear_knitted_hat",
+        "name": "Fox Ear Knitted Hat",
+        "earnedStars": 18,
+        "description": "A by-product of the shedding season.",
+        "requirement": "Serve Fox 235 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 4565,
     "requiredFoodId": "Dumplings",
@@ -6146,7 +6438,15 @@
     ],
     "customerDescription": "Their tummies are always rumbling, but they never go hungry.",
     "requirements": {},
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "raccoon_noodle_snack",
+        "name": "Raccoon Noodle Snack",
+        "earnedStars": 75,
+        "description": "A favorite snack from childhood. It is becoming very popular.",
+        "requirement": "Rating must reach 5,000. Serve Raccoon to get."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 4402,
     "dishesOrderedIds": [
@@ -6171,7 +6471,15 @@
         "Scrambled Eggs & Tomatoes"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "white_beard",
+        "name": "White Beard",
+        "earnedStars": 15,
+        "description": "Put it on and you might become the Pirate King of Animal Restaurant",
+        "requirement": "Serve Terrier 220 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 4284,
     "requiredFoodId": "Custard Bun",
@@ -6200,7 +6508,15 @@
         "fine_produce"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "ham_sausage",
+        "name": "Ham Sausage",
+        "earnedStars": 80,
+        "description": "Is it ham or sausage?",
+        "requirement": "Serve Field Dog 200 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 3969,
     "requiredFoodId": "Fried Shrimp Sushi",
@@ -6228,9 +6544,20 @@
         "Salmon Sushi",
         "Tea",
         "Fries"
+      ],
+      "flowers": [
+        "wrose"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "shiba_hat",
+        "name": "Shiba Hat",
+        "earnedStars": 15,
+        "description": "Woof woof! I'm a cute shiba too.",
+        "requirement": "Serve Shiba 110 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 2200,
     "requiredFoodId": "Salmon Sushi",
@@ -6280,7 +6607,15 @@
     ],
     "customerDescription": "A shy guy.",
     "requirements": {},
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "paper_bag",
+        "name": "Paper Bag",
+        "earnedStars": 15,
+        "description": "An environmentally friendly paper bag that is loved by all animals in Animal Restaurant.",
+        "requirement": "Serve Paper Bagged Ostrich 190 times."
+      }
+    ],
     "livesIn": "Village",
     "appearanceWeight": 3905,
     "dishesOrderedIds": [
@@ -6305,7 +6640,15 @@
         "lavish_cakes"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "wild_flower_garland",
+        "name": "Wild Flower Garland",
+        "earnedStars": 15,
+        "description": "A crown made from flowers that will bring luck to the person who wears it.",
+        "requirement": "Serve Berry Hedgehog 185 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 3864,
     "requiredFoodId": "Kebabs",
@@ -6334,6 +6677,10 @@
         "Hot Pot",
         "Wrap",
         "Cup Noodles"
+      ],
+      "flowers": [
+        "daisy",
+        "rose"
       ]
     },
     "mementos": [],
@@ -6385,8 +6732,19 @@
       "regular"
     ],
     "customerDescription": "They're related to pigs, but they've got an entirely different temper, so take care when you're serving them",
-    "requirements": {},
-    "mementos": [],
+    "requirements": {
+      "rating": 1165,
+      "requiredStars": 1165
+    },
+    "mementos": [
+      {
+        "id": "tooth_specimen",
+        "name": "Tooth Specimen",
+        "earnedStars": 90,
+        "description": "It's a sharp tooth. Probably dropped by Gumi.",
+        "requirement": "Serve Boar 160 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 3292,
     "dishesOrderedIds": [
@@ -6413,7 +6771,15 @@
         "Pizza"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "plant_bookmark",
+        "name": "Plant Bookmark",
+        "earnedStars": 22,
+        "description": "Hand-picked and hand-crafted!",
+        "requirement": "Serve Black Shiba 200 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 3123,
     "requiredFoodId": "Soy Milk & Cruller",
@@ -6445,7 +6811,15 @@
         "artsy_table"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "slipper_with_teeth_marks",
+        "name": "Slipper with Teeth Marks",
+        "earnedStars": 15,
+        "description": "Who bit down so hard on it to cause such deep teeth marks?",
+        "requirement": "Serve Black Lab 155 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 3110,
     "requiredFoodId": "Spaghetti",
@@ -6475,6 +6849,10 @@
         "Cup Noodles",
         "Dumplings",
         "Blueberry Pancake"
+      ],
+      "flowers": [
+        "wrose",
+        "sunflower"
       ]
     },
     "mementos": [],
@@ -6508,7 +6886,15 @@
         "advanced_counter"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "straw_hat",
+        "name": "Straw Hat",
+        "earnedStars": 15,
+        "description": "A straw hat with a butterfly bow.",
+        "requirement": "Serve Merle Border Collie 140 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 2744,
     "requiredFoodId": "Taco",
@@ -6528,8 +6914,19 @@
       "regular"
     ],
     "customerDescription": "They're so stinky that the chef stays far away whenever he sees them, but they're welcomed by the other animals because they're good at playing dumb and listening in on the humans' secrets. They're always gossiping.",
-    "requirements": {},
-    "mementos": [],
+    "requirements": {
+      "rating": 1500,
+      "requiredStars": 1500
+    },
+    "mementos": [
+      {
+        "id": "moldy_bone",
+        "name": "Moldy Bone",
+        "earnedStars": 95,
+        "description": "There's someone name carved on the bone.",
+        "requirement": "Rating must reach 10,000. Serve Pug to get."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 2576,
     "dishesOrderedIds": [
@@ -6559,7 +6956,15 @@
         "lux_red_curtain"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "crown",
+        "name": "Crown",
+        "earnedStars": 15,
+        "description": "Experience living like a king",
+        "requirement": "Restaurant in business for 90 days. Serve Corgi to get."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 1748,
     "requiredFoodId": "Cupcake",
@@ -6583,6 +6988,10 @@
       "facilities": [
         "sunflower",
         "bluebell"
+      ],
+      "flowers": [
+        "bluebell",
+        "sunflower"
       ]
     },
     "mementos": [],
@@ -6667,9 +7076,23 @@
       "facilities": [
         "daisy",
         "bluebell"
+      ],
+      "rating": 2000,
+      "requiredStars": 2000,
+      "flowers": [
+        "bluebell",
+        "daisy"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "pigs_nose",
+        "name": "Pig's Nose",
+        "earnedStars": 15,
+        "description": "It feels like something is missing to make it complete.",
+        "requirement": "Serve Pig 40 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 792,
     "dishesOrderedIds": [
@@ -6724,7 +7147,15 @@
         "patisserie_counter"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "thermos",
+        "name": "Thermos",
+        "earnedStars": 100,
+        "description": "Drink more warm water.",
+        "requirement": "Serve Fennec Fox 30 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 612,
     "requiredFoodId": "Ramen",
@@ -6749,7 +7180,22 @@
         "high_end_fridge"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "pilot_hat",
+        "name": "Pilot Hat",
+        "earnedStars": 15,
+        "description": "Monty and Gadget are our good friends.",
+        "requirement": "Serve Penguin 30 times."
+      },
+      {
+        "id": "sweat_emoji_barrette",
+        "name": "Sweat Emoji Barrette",
+        "earnedStars": 30,
+        "description": "The ultimate embodiment of the sweat face emoji.",
+        "requirement": "Serve Penguin 68 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 570,
     "dishesOrderedIds": [
@@ -6772,9 +7218,19 @@
     "requirements": {
       "facilities": [
         "artsy_table"
-      ]
+      ],
+      "rating": 2800,
+      "requiredStars": 2800
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "briefcase",
+        "name": "Briefcase",
+        "earnedStars": 105,
+        "description": "It contains all of Animal Restaurant's confidential documents.",
+        "requirement": "Serve White-Collar Fox 36 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 541,
     "dishesOrderedIds": [
@@ -6804,6 +7260,10 @@
         "Fried Rice",
         "Kimbap",
         "Cup Noodles"
+      ],
+      "flowers": [
+        "bluebell",
+        "rose"
       ]
     },
     "mementos": [],
@@ -6837,7 +7297,15 @@
         "fine_liquor"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "waxing_brush",
+        "name": "Waxing Brush",
+        "earnedStars": 110,
+        "description": "Use the brush to wax the floor and bring back its former shine.",
+        "requirement": "Serve Dachshund 20 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 295,
     "requiredFoodId": "Wrap",
@@ -6866,7 +7334,22 @@
         "eagle_express"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "first_aid_certificate",
+        "name": "First Aid Certificate",
+        "earnedStars": 115,
+        "description": "You must have a first aid certificate to be qualified to administer first aid.",
+        "requirement": "Rating must reach 20,000. Serve Rescue Dog to get."
+      },
+      {
+        "id": "nurse_hat",
+        "name": "Nurse Hat",
+        "earnedStars": 15,
+        "description": "Transform into an angel in white by putting on this nurse hat.",
+        "requirement": "Serve Rescue Dog 50 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 287,
     "dishesOrderedIds": [
@@ -6894,6 +7377,10 @@
         "Soy Milk & Cruller",
         "Fried Tofu",
         "Cola"
+      ],
+      "flowers": [
+        "daisy",
+        "sunflower"
       ]
     },
     "mementos": [],
@@ -6921,7 +7408,15 @@
         "Cupcake"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "canned_fish",
+        "name": "Canned Fish",
+        "earnedStars": 20,
+        "description": "Portable emergency food in case of a food shortage.",
+        "requirement": "Serve Polar Bear 18 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 274,
     "requiredFoodId": "Whiskey",
@@ -6942,6 +7437,11 @@
     "customerDescription": "She always likes to stay in shape.",
     "requirements": {
       "facilities": [
+        "daisy"
+      ],
+      "rating": 3400,
+      "requiredStars": 3400,
+      "flowers": [
         "daisy"
       ]
     },
@@ -6967,9 +7467,22 @@
         "stump_mailbox",
         "hummingbird_post",
         "eagle_express"
+      ],
+      "flowers": [
+        "daisy",
+        "sunflower",
+        "bluebell"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "camera",
+        "name": "Camera",
+        "earnedStars": 120,
+        "description": "Use this camera to capture every beautiful memory of Animal Restaurant.",
+        "requirement": "Serve Insta-Pup 20 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 262,
     "dishesOrderedIds": [
@@ -7021,7 +7534,15 @@
         "Chocolate Cake"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "wishing_gem",
+        "name": "Wishing Gem",
+        "earnedStars": 145,
+        "description": "A gem picked from the Wishing Well. It seems to work in the same way.",
+        "requirement": "Serve Gnome 16 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 250,
     "requiredFoodId": "Fried Rice",
@@ -7075,9 +7596,24 @@
         "daisy",
         "red_rose",
         "bluebell"
+      ],
+      "rating": 3500,
+      "requiredStars": 3500,
+      "flowers": [
+        "daisy",
+        "rose",
+        "bluebell"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "sunglasses",
+        "name": "Sunglasses",
+        "earnedStars": 15,
+        "description": "Put on sunglasses to prevent your eyes from being damaged by bright light.",
+        "requirement": "Serve Influencer Flamingo 18 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 238,
     "dishesOrderedIds": [
@@ -7102,7 +7638,15 @@
         "Taco"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "pink_umbrella",
+        "name": "Pink Umbrella",
+        "earnedStars": 40,
+        "description": "A girl umbrella",
+        "requirement": "Serve Tiger 15 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 232,
     "requiredFoodId": "Fried Tofu",
@@ -7157,9 +7701,27 @@
         "Chicken Burger",
         "Montblanc",
         "Cookies"
+      ],
+      "flowers": [
+        "wrose"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "pocket_watch",
+        "name": "Pocket Watch",
+        "earnedStars": 125,
+        "description": "Time is money, my friend.",
+        "requirement": "Serve White Rabbit 22 times."
+      },
+      {
+        "id": "trilby",
+        "name": "Trilby",
+        "earnedStars": 15,
+        "description": "Even a lion can look refined after putting this on.",
+        "requirement": "Serve White Rabbit 45 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 330,
     "requiredFoodId": "Chicken Burger",
@@ -7205,9 +7767,24 @@
         "daisy",
         "sunflower",
         "red_rose"
+      ],
+      "rating": 5000,
+      "requiredStars": 5000,
+      "flowers": [
+        "daisy",
+        "rose",
+        "sunflower"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "film",
+        "name": "Film",
+        "earnedStars": 135,
+        "description": "So many stories are recorded on it.",
+        "requirement": "Serve Reporter 12 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 208,
     "dishesOrderedIds": [
@@ -7236,7 +7813,22 @@
         "Sweet Dumplings"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "banknote",
+        "name": "Banknote",
+        "earnedStars": 130,
+        "description": "This currency is not accepted in Animal Restaurant.",
+        "requirement": "Serve Glamourous Lady 15 times."
+      },
+      {
+        "id": "curly_wig",
+        "name": "Curly Wig",
+        "earnedStars": 15,
+        "description": "The latest in fashion. You can get Penniless Toad to lick it straight if you are not satisfied.",
+        "requirement": "Serve Glamourous Lady 30 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 202,
     "requiredFoodId": "Fried Tofu",
@@ -7289,8 +7881,19 @@
       "regular"
     ],
     "customerDescription": "The colors have been washed from his clothes.",
-    "requirements": {},
-    "mementos": [],
+    "requirements": {
+      "rating": 7000,
+      "requiredStars": 7000
+    },
+    "mementos": [
+      {
+        "id": "earphones",
+        "name": "Earphones",
+        "earnedStars": 15,
+        "description": "Can give Temp Worker Yolky wear",
+        "requirement": "Serve Programmer's Dog 15 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 190,
     "dishesOrderedIds": [
@@ -7315,9 +7918,23 @@
     "requirements": {
       "facilities": [
         "fairy_bluebells"
+      ],
+      "flowers": [
+        "daisy",
+        "rose",
+        "bluebell"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "boomerang",
+        "name": "Boomerang",
+        "earnedStars": 20,
+        "description": "Good dogs' favorite game!",
+        "requirement": "Serve Dalmatian 2 times.",
+        "shareReward": 6000
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 183,
     "dishesOrderedIds": [
@@ -7346,7 +7963,22 @@
         "Fried Tofu"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "party_hat",
+        "name": "Party Hat",
+        "earnedStars": 15,
+        "description": "Put on this party hat to gain access to all parties in Animal Restaurant.",
+        "requirement": "Serve Party Puppy 12 times. Sell 100 Montblanc."
+      },
+      {
+        "id": "star_glasses",
+        "name": "Star Glasses",
+        "earnedStars": 15,
+        "description": "Put two stars together to form star glasses.",
+        "requirement": "Serve Party Puppy 28 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 178,
     "requiredFoodId": "Montblanc",
@@ -7375,7 +8007,15 @@
         "bastet_fountain"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "green_hat",
+        "name": "Green Hat",
+        "earnedStars": 15,
+        "description": "The hat of a gnome. Put it on for luck.",
+        "requirement": "Serve Green-Hat Gnome 4 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 20,
     "dishesOrderedIds": [
@@ -7407,7 +8047,22 @@
         "Coconut Cassia Wine"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "pencil",
+        "name": "Pencil",
+        "earnedStars": 150,
+        "description": "The black lead of the pencil can be used to draw colorful dreams.",
+        "requirement": "Serve Cici 10 times."
+      },
+      {
+        "id": "hat_with_braids",
+        "name": "Hat with Braids",
+        "earnedStars": 15,
+        "description": "Put it on to become a little girl.",
+        "requirement": "Serve Cici 20 times. Sell 100 Coconut Cassia Wine."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 100,
     "requiredFoodId": "Mango Surprise",
@@ -7438,7 +8093,22 @@
         "hummingbird_post"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "pig_year_red_packet",
+        "name": "Pig Year Red Packet",
+        "earnedStars": 140,
+        "description": "Chef Gumi is giving out red packets to everybody.",
+        "requirement": "Serve Lucky Pig 10 times."
+      },
+      {
+        "id": "oriental_cap",
+        "name": "Oriental Cap",
+        "earnedStars": 15,
+        "description": "I hear that only the nobles of the Qing Dyansty owned caps like this.",
+        "requirement": "Serve Lucky Pig 30 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 160,
     "requiredFoodId": "Eggscellent Bowl",
@@ -7471,9 +8141,26 @@
         "Bento",
         "Popcorn",
         "Cookies"
-      ]
+      ],
+      "rating": 10000,
+      "requiredStars": 10000
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "diaper",
+        "name": "Diaper",
+        "earnedStars": 155,
+        "description": "A present from Shiba Puppy to Animal Restaurant. Don't worry, it has never been used.",
+        "requirement": "Serve Shiba Puppy 15 times."
+      },
+      {
+        "id": "kindergartener_hat",
+        "name": "Kindergartener Hat",
+        "earnedStars": 15,
+        "description": "Put on this yellow hat and the big animals will give way to you.",
+        "requirement": "Serve Shiba Puppy 35 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 150,
     "requiredFoodId": "Soy Milk & Cruller",
@@ -7505,7 +8192,9 @@
         "Hot Pot",
         "Cola",
         "Spaghetti"
-      ]
+      ],
+      "rating": 14000,
+      "requiredStars": 14000
     },
     "mementos": [],
     "livesIn": "City",
@@ -7541,7 +8230,15 @@
         "dreams_of_tattered_leaves"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "melon_cap",
+        "name": "Melon Cap",
+        "earnedStars": 15,
+        "description": "How to make: Cut a watermelon and remove the flesh.",
+        "requirement": "Serve Little Lion 14 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 130,
     "requiredFoodId": "Coconut Cassia Wine",
@@ -7575,9 +8272,29 @@
         "Spicy Crawdads",
         "Strawberry Shaved Ice",
         "Avocado Sandwich"
+      ],
+      "flowers": [
+        "wrose",
+        "rose",
+        "bluebell"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "notebook",
+        "name": "Notebook",
+        "earnedStars": 160,
+        "description": "Write down everything in the notebook so you can treasure it all your life.",
+        "requirement": "Serve Abi 12 times."
+      },
+      {
+        "id": "bald_cap",
+        "name": "Bald Cap",
+        "earnedStars": 15,
+        "description": "Is Abi really bald or not, that is the question.",
+        "requirement": "Serve Abi 30 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 120,
     "requiredFoodId": "Coconut Cassia Wine",
@@ -7610,9 +8327,22 @@
       "recipes": [
         "Buckwheat Noodles",
         "Chilled Edamame"
+      ],
+      "flowers": [
+        "sunflower",
+        "rose",
+        "bluebell"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "rose_garland",
+        "name": "Rose Garland",
+        "earnedStars": 15,
+        "description": "The lingering scent of roses is pleasing to the nose.",
+        "requirement": "Serve Little Fox 10 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 100,
     "requiredFoodId": "Buckwheat Noodles",
@@ -7777,7 +8507,15 @@
         "monster_dessert"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "brush",
+        "name": "Brush",
+        "earnedStars": 180,
+        "description": "Yorkshire Dad's gift for Mom.",
+        "requirement": "Serve Yorkie Mom 35 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 80,
     "requiredFoodId": "Takoyaki",
@@ -7808,9 +8546,19 @@
         "tree_of_despair",
         "bone_shelf",
         "scrumptious_dinner"
-      ]
+      ],
+      "rating": 45000,
+      "requiredStars": 45000
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "hardware_store_scissors",
+        "name": "Hardware Store Scissors",
+        "earnedStars": 200,
+        "description": "The scissors Dad secretly bought at the hardware store.",
+        "requirement": "Serve Yorkie Dad 2 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 100,
     "requiredFoodId": "Coconut Cassia Wine",
@@ -7845,7 +8593,9 @@
         "bone_shelf",
         "scrumptious_dinner",
         "reverie_fridge"
-      ]
+      ],
+      "rating": 48000,
+      "requiredStars": 48000
     },
     "mementos": [],
     "livesIn": "City",
@@ -7948,7 +8698,15 @@
         "heartwarming_dessert"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "n95_mask",
+        "name": "N95 Mask",
+        "earnedStars": 30,
+        "description": "Provides extra protection. Medical personell need it.",
+        "requirement": "Serve Dr. Puppy 5 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 130,
     "requiredFoodId": "Spicy Crawdads",
@@ -7985,7 +8743,15 @@
         "seashell_counter"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "moon_rabbits_ticket",
+        "name": "Moon Rabbit's Ticket",
+        "earnedStars": 30,
+        "description": "A return ticket from Oak Bay to Mushroom Village.",
+        "requirement": "Serve Moon Rabbit 8 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 130,
     "requiredFoodId": "Eight Treasure Rice Pudding",
@@ -8018,7 +8784,15 @@
         "cod_under_the_sun"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "capybaras_thermos",
+        "name": "Capybara's Thermos",
+        "earnedStars": 50,
+        "description": "Finish up this cup of wolfberry tea and you'll be the healthiest kid.",
+        "requirement": "Serve Capybara."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 666,
     "requiredFoodId": "Fried Shrimp Sushi",
@@ -8166,7 +8940,16 @@
         "Hot Dry Noodles"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "doodle_book",
+        "name": "Doodle Book",
+        "earnedStars": 15,
+        "description": "They're sketches, but they were drawn very seriously.",
+        "requirement": "Serve Beaver Engineer 5 times.",
+        "shareReward": 6000
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 150,
     "requiredFoodId": "Sweet Dumplings",
@@ -8384,7 +9167,15 @@
         "Kebabs"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "essential_oil_handmade_soap",
+        "name": "Essential Oil Handmade Soap",
+        "earnedStars": 30,
+        "description": "Clumsily made, but it's a display of great efforts.",
+        "requirement": "Serve PAGENAME 150 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 800,
     "requiredFoodId": "Beer",
@@ -8413,7 +9204,15 @@
         "Orange Juice"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "sisterhood_photo_sticker",
+        "name": "Sisterhood Photo Sticker",
+        "earnedStars": 30,
+        "description": "The words 'Best friends forever' were written on the photo.",
+        "requirement": "Serve Rice Cake 50 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 200,
     "requiredFoodId": "Martini",
@@ -8468,7 +9267,9 @@
         "Eight Treasure Rice Pudding",
         "Orange Juice",
         "Roast Turkey"
-      ]
+      ],
+      "rating": 15000,
+      "requiredStars": 15000
     },
     "mementos": [],
     "livesIn": "City",
@@ -8532,9 +9333,21 @@
         "Black Sesame Paste",
         "Steamboat",
         "Mushroom Pasta"
+      ],
+      "flowers": [
+        "daisy",
+        "rose"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "pen_cap",
+        "name": "Pen Cap",
+        "earnedStars": 35,
+        "description": "Where did the pen go?",
+        "requirement": "Serve Dorkie 80 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 550,
     "requiredFoodId": "Glutinous Rice Cake",
@@ -8596,7 +9409,15 @@
         "Orange Juice"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "boxing_gloves",
+        "name": "Boxing Gloves",
+        "earnedStars": 50,
+        "description": "Enroll boxing lessons and get a pair of gloves for free.",
+        "requirement": "Serve PAGENAME 55 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 200,
     "requiredFoodId": "Roujiamo",
@@ -8626,7 +9447,15 @@
         "Mapo Tofu"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "compass",
+        "name": "Compass",
+        "earnedStars": 10,
+        "description": "A must-have when adventuring in the great outdoors!",
+        "requirement": "Serve Mooey 75 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 500,
     "requiredFoodId": "Cola Wings",
@@ -8656,7 +9485,15 @@
         "Sweet Dumplings"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "morning_glory_headband",
+        "name": "Morning Glory Headband",
+        "earnedStars": 10,
+        "description": "Who would have thought that morning glory flowers could be used as a headband?",
+        "requirement": "Serve Mr. Bharal 35 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 200,
     "requiredFoodId": "Banana Boat",
@@ -8679,7 +9516,10 @@
       "regular"
     ],
     "customerDescription": "Nobody knows why he becomes so aggressive when someone gets too close.",
-    "requirements": {},
+    "requirements": {
+      "rating": 30,
+      "requiredStars": 30
+    },
     "mementos": [],
     "livesIn": "Village",
     "appearanceWeight": 8000,
@@ -8701,9 +9541,19 @@
       "recipes": [
         "Curry Rice",
         "Porridge & Jam"
-      ]
+      ],
+      "rating": 150,
+      "requiredStars": 150
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "whistle",
+        "name": "Whistle",
+        "earnedStars": 15,
+        "description": "When in danger, it can be used to send a distress signal.",
+        "requirement": "Serve Brown Chihuahua 200 times."
+      }
+    ],
     "livesIn": "Village",
     "appearanceWeight": 6000,
     "requiredFoodId": "Curry Rice",
@@ -8723,6 +9573,11 @@
     "customerDescription": "Lover of corny jokes. He gets angry if no one laughs at them.",
     "requirements": {
       "facilities": [
+        "bluebell"
+      ],
+      "rating": 1200,
+      "requiredStars": 1200,
+      "flowers": [
         "bluebell"
       ]
     },
@@ -8777,7 +9632,18 @@
     ],
     "customerDescription": "Always brimming with passion and bringing joy to everyone. Nobody has ever seen her downcast.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": 3000,
+    "dishesOrderedIds": [
+      "Roe Sushi",
+      "Mushroom Pasta",
+      "Kimbap",
+      "Salmon Sushi",
+      "Scrambled Eggs & Tomatoes",
+      "Taiyaki",
+      "Bagel"
+    ]
   },
   {
     "id": "snowy",
@@ -8826,7 +9692,15 @@
         "Orange Juice"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "toddler_pillow",
+        "name": "Toddler Pillow",
+        "earnedStars": 50,
+        "description": "This fluffy pillow guarantees a night of sweet dreams.",
+        "requirement": "Serve Sleepwalking Little Lion 130 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 500,
     "requiredFoodId": "Roujiamo",
@@ -8857,7 +9731,15 @@
         "Mulled Wine"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "frost_crown",
+        "name": "Frost Crown",
+        "earnedStars": 20,
+        "description": "Made with ice found 8,848m above sea level. It is adorned with snowflakes that never melt.",
+        "requirement": "Serve Arctic Hare 165 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 1300,
     "requiredFoodId": "Roujiamo",
@@ -8957,6 +9839,9 @@
       ],
       "recipes": [
         "Pumpkin Soup"
+      ],
+      "flowers": [
+        "daisy"
       ]
     },
     "mementos": [],
@@ -8983,9 +9868,19 @@
       "recipes": [
         "Meat, Egg, and Mushroom Beancurd Roll",
         "Shumai"
-      ]
+      ],
+      "rating": 10000,
+      "requiredStars": 10000
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "huge_enter_key",
+        "name": "Huge Enter Key",
+        "earnedStars": 15,
+        "description": "Slam down on it whenever someone makes you mad.",
+        "requirement": "Serve Eugene the Tree-kangaroo 50 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 150,
     "requiredFoodId": "Meat, Egg, and Mushroom Beancurd Roll",
@@ -9011,6 +9906,12 @@
     "requirements": {
       "facilities": [
         "white_rose",
+        "bluebell"
+      ],
+      "rating": 25000,
+      "requiredStars": 25000,
+      "flowers": [
+        "wrose",
         "bluebell"
       ]
     },
@@ -9043,7 +9944,15 @@
         "scrumptious_dinner"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "counter_jump_rope",
+        "name": "Counter Jump Rope",
+        "earnedStars": 30,
+        "description": "Watch out for knee injuries when you jump rope!",
+        "requirement": "Serve Miss Rhino 28 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 75,
     "dishesOrderedIds": [
@@ -9071,9 +9980,22 @@
         "daisy",
         "red_rose",
         "bluebell"
+      ],
+      "flowers": [
+        "daisy",
+        "rose",
+        "bluebell"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "business_card",
+        "name": "Business Card",
+        "earnedStars": 38,
+        "description": "Is exchanging business cards part of a grown-up's spirit of romanticism?",
+        "requirement": "Serve Manager Bear 40 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 80,
     "dishesOrderedIds": [
@@ -9097,7 +10019,15 @@
     ],
     "customerDescription": "So amiable that he'll still come up and talk to you even if you responded coldly the last time.",
     "requirements": {},
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "special_award",
+        "name": "Special Award",
+        "earnedStars": 15,
+        "description": "The artist may be young, but the drawing holds heartfelt gratitude.",
+        "requirement": "Serve Golden Retriever 25 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 225,
     "dishesOrderedIds": [
@@ -9122,7 +10052,15 @@
         "Bouquet Cake"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "hair_straightener",
+        "name": "Hair Straightener",
+        "earnedStars": 40,
+        "description": "Heats up in 30 seconds! Guarantees silky smooth hair all the way to the ends.",
+        "requirement": "Serve Little Colt 50 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 145,
     "requiredFoodId": "Bouquet Cake",
@@ -9148,7 +10086,9 @@
       "recipes": [
         "Buttered Toast",
         "Fries"
-      ]
+      ],
+      "rating": 80,
+      "requiredStars": 80
     },
     "mementos": [],
     "livesIn": "Nearby",
@@ -9174,6 +10114,9 @@
     "customerDescription": "A pet rat that slips out of the master's house in search of a nice meal.",
     "requirements": {
       "facilities": [
+        "sunflower"
+      ],
+      "flowers": [
         "sunflower"
       ]
     },
@@ -9229,9 +10172,19 @@
       "recipes": [
         "Cream of Mushroom Soup",
         "Escargot"
-      ]
+      ],
+      "rating": 20000,
+      "requiredStars": 20000
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "archaeology_shovel",
+        "name": "Archaeology Shovel",
+        "earnedStars": 30,
+        "description": "A simple little tool that unearths credible pieces of history.",
+        "requirement": "Serve PAGENAME 10 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 200,
     "requiredFoodId": "Cream of Mushroom Soup",
@@ -9365,6 +10318,9 @@
         "Longjing Prawns",
         "Hot Dry Noodles",
         "Exquisite Eggnog"
+      ],
+      "flowers": [
+        "rose"
       ]
     },
     "mementos": [],
@@ -9427,6 +10383,11 @@
         "Cola Wings",
         "Chicken Feet in Black Bean Sauce",
         "Springtime Bamboo Stuffed Rice"
+      ],
+      "rating": 28000,
+      "requiredStars": 28000,
+      "flowers": [
+        "daisy"
       ]
     },
     "mementos": [],
@@ -9457,7 +10418,9 @@
         "Banana Boat",
         "Shumai",
         "Pumpkin Soup"
-      ]
+      ],
+      "rating": 28000,
+      "requiredStars": 28000
     },
     "mementos": [],
     "livesIn": "City",
@@ -9491,9 +10454,20 @@
         "Coconut Milk Pudding",
         "Boneless Chicken Tenders",
         "Christmas Pudding"
+      ],
+      "flowers": [
+        "sunflower"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "furry_eyepatch",
+        "name": "Furry Eyepatch",
+        "earnedStars": 30,
+        "description": "Wear this for a comfortable sleep.",
+        "requirement": "Serve PAGENAME 25 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 260,
     "requiredFoodId": "Pineapple Bun",
@@ -9524,6 +10498,9 @@
         "Pumpkin Soup",
         "Longjing Prawns",
         "Christmas Pudding"
+      ],
+      "flowers": [
+        "daisy"
       ]
     },
     "mementos": [],
@@ -9557,6 +10534,9 @@
         "Taco",
         "Chinese Cabbage Broth",
         "Wrap"
+      ],
+      "flowers": [
+        "bluebell"
       ]
     },
     "mementos": [],
@@ -9592,9 +10572,20 @@
         "Pumpkin Soup",
         "Crispy Fried Meat",
         "Strawberry and Cream Toast"
+      ],
+      "flowers": [
+        "sunflower"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "polaroid_camera",
+        "name": "Polaroid Camera",
+        "earnedStars": 15,
+        "description": "Beautiful moments in life must be instantly recorded on film.",
+        "requirement": "Serve PAGENAME 25 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 260,
     "requiredFoodId": "Eggscellent Bowl",
@@ -9624,9 +10615,20 @@
         "Cola Wings",
         "Beef Wellington",
         "Soy Milk & Cruller"
+      ],
+      "flowers": [
+        "bluebell"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "walkie_talkie",
+        "name": "Walkie-talkie",
+        "earnedStars": 12,
+        "description": "Hello? Hello? Can you hear me?",
+        "requirement": "Serve PAGENAME 20 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 260,
     "requiredFoodId": "Longjing Prawns",
@@ -9658,9 +10660,20 @@
         "Taco",
         "Boneless Chicken Tenders",
         "Exquisite Eggnog"
+      ],
+      "flowers": [
+        "sunflower"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "origami_star_wishing_bottle",
+        "name": "Origami Star Wishing Bottle",
+        "earnedStars": 39,
+        "description": "I will write all of our stories down, fold them into stars, and store them inside this wishing bottle!",
+        "requirement": "Serve PAGENAME 30 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 250,
     "requiredFoodId": "Hot Dry Noodles",
@@ -9768,6 +10781,9 @@
         "Hot Dry Noodles",
         "Crab-Stuffed Orange",
         "Steamboat"
+      ],
+      "flowers": [
+        "rose"
       ]
     },
     "mementos": [],
@@ -9799,6 +10815,9 @@
         "Baked Fish",
         "Taco",
         "Playful Cake"
+      ],
+      "flowers": [
+        "sunflower"
       ]
     },
     "mementos": [],
@@ -9829,6 +10848,9 @@
         "Soy Milk & Cruller",
         "Smoked Ham",
         "Boneless Chicken Tenders"
+      ],
+      "flowers": [
+        "bluebell"
       ]
     },
     "mementos": [],
@@ -9860,6 +10882,9 @@
         "Banana Boat",
         "Parfait",
         "Pineapple Bun"
+      ],
+      "flowers": [
+        "sunflower"
       ]
     },
     "mementos": [],
@@ -9888,6 +10913,9 @@
         "Fried Shrimp in Red Rice Noodle Rolls",
         "Baked Fish",
         "Eggscellent Bowl"
+      ],
+      "flowers": [
+        "bluebell"
       ]
     },
     "mementos": [],
@@ -9947,6 +10975,9 @@
         "Coconut Milk Pudding",
         "Cola Wings",
         "Chicken Feet in Black Bean Sauce"
+      ],
+      "flowers": [
+        "wrose"
       ]
     },
     "mementos": [],
@@ -9978,6 +11009,9 @@
         "Cola Wings",
         "Mango Sticky Rice",
         "Chicken Cordon Bleu"
+      ],
+      "flowers": [
+        "rose"
       ]
     },
     "mementos": [],
@@ -10010,9 +11044,20 @@
         "Strawberry Pudding",
         "Cream of Mushroom Soup",
         "Fried Shrimp in Red Rice Noodle Rolls"
+      ],
+      "flowers": [
+        "sunflower"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "punk_bracelet",
+        "name": "Punk Bracelet",
+        "earnedStars": 38,
+        "description": "",
+        "requirement": "Serve PAGENAME 40 times."
+      }
+    ],
     "livesIn": "City",
     "requiredFoodId": "Candied Hawthorn",
     "dishesOrderedIds": [
@@ -10067,6 +11112,9 @@
         "Blueberry Pancake",
         "Cream of Mushroom Soup",
         "Teddy Bento"
+      ],
+      "flowers": [
+        "rose"
       ]
     },
     "mementos": [],
@@ -10097,6 +11145,9 @@
         "Banana Boat",
         "Steamboat",
         "Exquisite Eggnog"
+      ],
+      "flowers": [
+        "bluebell"
       ]
     },
     "mementos": [],
@@ -10116,10 +11167,24 @@
       "halloween"
     ],
     "customerDescription": "Little children hide in fright when they see the clown (not exactly). Can you guess who this is?",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
     "livesIn": "Nearby",
-    "appearanceWeight": 2000
+    "appearanceWeight": 2000,
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Bat Candy",
+      "Mummy Gingersnap",
+      "Eyeball Candy",
+      "Spider Dessert"
+    ]
   },
   {
     "id": "vampire",
@@ -10130,10 +11195,26 @@
       "halloween"
     ],
     "customerDescription": "The clothes don't really fit. Can you guess who this is?",
-    "requirements": {},
+    "requirements": {
+      "rating": 500,
+      "requiredStars": 500,
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
     "livesIn": "Village",
-    "appearanceWeight": 1000
+    "appearanceWeight": 1000,
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Bat Candy",
+      "Mummy Gingersnap",
+      "Eyeball Candy",
+      "Spider Dessert"
+    ]
   },
   {
     "id": "werewolf",
@@ -10144,10 +11225,26 @@
       "halloween"
     ],
     "customerDescription": "Will grow muscles and fangs when the moon is full. The werewolf even wear underwear. Can you guess who this is?",
-    "requirements": {},
+    "requirements": {
+      "rating": 1500,
+      "requiredStars": 1500,
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
     "livesIn": "Town",
-    "appearanceWeight": 500
+    "appearanceWeight": 500,
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Bat Candy",
+      "Mummy Gingersnap",
+      "Eyeball Candy",
+      "Spider Dessert"
+    ]
   },
   {
     "id": "ghoul",
@@ -10158,10 +11255,22 @@
       "halloween"
     ],
     "customerDescription": "Bed sheets cannot hide the big tail. Can you guess who this is?",
-    "requirements": {},
+    "requirements": {
+      "rating": 3000,
+      "requiredStars": 3000,
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap"
+      ]
+    },
     "mementos": [],
     "livesIn": "City",
-    "appearanceWeight": 250
+    "appearanceWeight": 250,
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Bat Candy",
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "mummy",
@@ -10172,10 +11281,22 @@
       "halloween"
     ],
     "customerDescription": "Tightly-wrapped bandages, freshly resurrected from inside the pyramid. Can you guess who this is?",
-    "requirements": {},
+    "requirements": {
+      "rating": 6000,
+      "requiredStars": 6000,
+      "recipes": [
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
     "livesIn": "City",
-    "appearanceWeight": 150
+    "appearanceWeight": 150,
+    "requiredFoodId": "Eyeball Candy",
+    "dishesOrderedIds": [
+      "Eyeball Candy",
+      "Spider Dessert"
+    ]
   },
   {
     "id": "witch",
@@ -10186,10 +11307,20 @@
       "halloween"
     ],
     "customerDescription": "Graduated from Hogwarts, but unable to find a job. Can you guess who this is?",
-    "requirements": {},
+    "requirements": {
+      "rating": 12000,
+      "requiredStars": 12000,
+      "recipes": [
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
     "livesIn": "City",
-    "appearanceWeight": 88
+    "appearanceWeight": 88,
+    "requiredFoodId": "Spider Dessert",
+    "dishesOrderedIds": [
+      "Spider Dessert"
+    ]
   },
   {
     "id": "infernal_emissary",
@@ -10203,7 +11334,13 @@
     "requirements": {},
     "mementos": [],
     "livesIn": "City",
-    "appearanceWeight": 1500
+    "appearanceWeight": 1500,
+    "dishesOrderedIds": [
+      "Bat Candy",
+      "Mummy Gingersnap",
+      "Eyeball Candy",
+      "Spider Dessert"
+    ]
   },
   {
     "id": "old_captain",
@@ -10214,10 +11351,17 @@
       "halloween"
     ],
     "customerDescription": "A mean-looking old captain. Shh, don't talk about his height to his face!",
-    "requirements": {},
+    "requirements": {
+      "rating": 1200,
+      "requiredStars": 1200
+    },
     "mementos": [],
     "livesIn": "City",
-    "appearanceWeight": 600
+    "appearanceWeight": 600,
+    "dishesOrderedIds": [
+      "Mummy Gingersnap",
+      "Spider Dessert"
+    ]
   },
   {
     "id": "hopping_zombie",
@@ -10228,10 +11372,17 @@
       "halloween"
     ],
     "customerDescription": "Its legs may be short, but it sure can jump!",
-    "requirements": {},
+    "requirements": {
+      "rating": 4500,
+      "requiredStars": 4500
+    },
     "mementos": [],
     "livesIn": "City",
-    "appearanceWeight": 200
+    "appearanceWeight": 200,
+    "dishesOrderedIds": [
+      "Eyeball Candy",
+      "Spider Dessert"
+    ]
   },
   {
     "id": "little_dino",
@@ -10242,10 +11393,16 @@
       "halloween"
     ],
     "customerDescription": "A dinosaur that loves every second of work.",
-    "requirements": {},
+    "requirements": {
+      "rating": 8000,
+      "requiredStars": 8000
+    },
     "mementos": [],
     "livesIn": "City",
-    "appearanceWeight": 120
+    "appearanceWeight": 120,
+    "dishesOrderedIds": [
+      "Bat Candy"
+    ]
   },
   {
     "id": "gnome_bean",
@@ -10259,7 +11416,11 @@
     "requirements": {},
     "mementos": [],
     "livesIn": "Nearby",
-    "appearanceWeight": 800
+    "appearanceWeight": 800,
+    "dishesOrderedIds": [
+      "Bat Candy",
+      "Spider Dessert"
+    ]
   },
   {
     "id": "frankenpooch",
@@ -10273,7 +11434,13 @@
     "requirements": {},
     "mementos": [],
     "livesIn": "Village",
-    "appearanceWeight": 1200
+    "appearanceWeight": 1200,
+    "dishesOrderedIds": [
+      "Bat Candy",
+      "Mummy Gingersnap",
+      "Eyeball Candy",
+      "Spider Dessert"
+    ]
   },
   {
     "id": "party_skeleton",
@@ -10287,7 +11454,13 @@
     "requirements": {},
     "mementos": [],
     "livesIn": "Town",
-    "appearanceWeight": 700
+    "appearanceWeight": 700,
+    "dishesOrderedIds": [
+      "Bat Candy",
+      "Mummy Gingersnap",
+      "Eyeball Candy",
+      "Spider Dessert"
+    ]
   },
   {
     "id": "invisible_bunny",
@@ -10298,10 +11471,18 @@
       "halloween"
     ],
     "customerDescription": "Unless you look closely, you'll mistake her for a pile of moving clothes.",
-    "requirements": {},
+    "requirements": {
+      "rating": 2000,
+      "requiredStars": 2000
+    },
     "mementos": [],
     "livesIn": "Town",
-    "appearanceWeight": 400
+    "appearanceWeight": 400,
+    "dishesOrderedIds": [
+      "Bat Candy",
+      "Mummy Gingersnap",
+      "Eyeball Candy"
+    ]
   },
   {
     "id": "little_red_riding_hood",
@@ -10312,10 +11493,17 @@
       "halloween"
     ],
     "customerDescription": "Adorable but taciturn, she rarely shows anyone what is in her basket.",
-    "requirements": {},
+    "requirements": {
+      "rating": 4500,
+      "requiredStars": 4500
+    },
     "mementos": [],
     "livesIn": "City",
-    "appearanceWeight": 300
+    "appearanceWeight": 300,
+    "dishesOrderedIds": [
+      "Bat Candy",
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "little_yeti",
@@ -10326,10 +11514,16 @@
       "halloween"
     ],
     "customerDescription": "Roars cutely as he ambles along.",
-    "requirements": {},
+    "requirements": {
+      "rating": 8000,
+      "requiredStars": 8000
+    },
     "mementos": [],
     "livesIn": "City",
-    "appearanceWeight": 220
+    "appearanceWeight": 220,
+    "dishesOrderedIds": [
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "ghost_soldier",
@@ -10340,10 +11534,16 @@
       "halloween"
     ],
     "customerDescription": "His head looks like it weighs a ton.",
-    "requirements": {},
+    "requirements": {
+      "rating": 10000,
+      "requiredStars": 10000
+    },
     "mementos": [],
     "livesIn": "City",
-    "appearanceWeight": 180
+    "appearanceWeight": 180,
+    "dishesOrderedIds": [
+      "Eyeball Candy"
+    ]
   },
   {
     "id": "chainsaw_puppy",
@@ -10354,10 +11554,24 @@
       "halloween"
     ],
     "customerDescription": "It looks very scary holding a chainsaw, but it's actually just a plastic toy.",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
     "livesIn": "Nearby",
-    "appearanceWeight": 2000
+    "appearanceWeight": 2000,
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Mummy Gingersnap",
+      "Eyeball Candy",
+      "Spider Dessert",
+      "Bat Candy"
+    ]
   },
   {
     "id": "nine_tailed_fox",
@@ -10368,10 +11582,24 @@
       "halloween"
     ],
     "customerDescription": "She walks with light steps and has a graceful posture.",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
     "livesIn": "Nearby",
-    "appearanceWeight": 1600
+    "appearanceWeight": 1600,
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Mummy Gingersnap",
+      "Spider Dessert",
+      "Bat Candy",
+      "Eyeball Candy"
+    ]
   },
   {
     "id": "old_fan",
@@ -10382,10 +11610,24 @@
       "halloween"
     ],
     "customerDescription": "Holding cuffs in its hands, it specializes in capturing disobedient spirits. Looking closely at its hat, you can see the words 'World Peace'.",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
     "livesIn": "Nearby",
-    "appearanceWeight": 1200
+    "appearanceWeight": 1200,
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Spider Dessert",
+      "Bat Candy",
+      "Eyeball Candy",
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "old_xie",
@@ -10396,10 +11638,24 @@
       "halloween"
     ],
     "customerDescription": "He has a long tongue that hangs outside his mouth and is always smiling. Looking closely at his hat, you can see the words 'Fortune at a glance'.",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
     "livesIn": "Nearby",
-    "appearanceWeight": 1200
+    "appearanceWeight": 1200,
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Eyeball Candy",
+      "Spider Dessert",
+      "Mummy Gingersnap",
+      "Bat Candy"
+    ]
   },
   {
     "id": "supernatural_enthusiast",
@@ -10410,10 +11666,24 @@
       "halloween"
     ],
     "customerDescription": "Believes that there are spirits in this world. During Halloween every year, he goes around looking for places with strong magnetic field fluctuations.",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
     "livesIn": "Nearby",
-    "appearanceWeight": 600
+    "appearanceWeight": 600,
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Bat Candy",
+      "Eyeball Candy",
+      "Spider Dessert",
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "exorcism_descendant",
@@ -10424,10 +11694,23 @@
       "halloween"
     ],
     "customerDescription": "A lonely traveler. His faith is reflected on his icy crossbow bolt.",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
     "livesIn": "Nearby",
-    "appearanceWeight": 180
+    "appearanceWeight": 180,
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Bat Candy",
+      "Mummy Gingersnap",
+      "Spider Dessert"
+    ]
   },
   {
     "id": "god_of_wine",
@@ -10438,9 +11721,23 @@
       "halloween"
     ],
     "customerDescription": "He smells more like grapes than wine.",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
-    "livesIn": "Nearby"
+    "livesIn": "Nearby",
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Spider Dessert",
+      "Bat Candy",
+      "Eyeball Candy",
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "spartan_warrior",
@@ -10451,9 +11748,23 @@
       "halloween"
     ],
     "customerDescription": "His armor looks very heavy.",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
-    "livesIn": "Nearby"
+    "livesIn": "Nearby",
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Spider Dessert",
+      "Bat Candy",
+      "Eyeball Candy",
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "trumpeting_angel",
@@ -10464,9 +11775,23 @@
       "halloween"
     ],
     "customerDescription": "Flies around everywhere on wings, especially adored by everyone.",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
-    "livesIn": "Nearby"
+    "livesIn": "Nearby",
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Spider Dessert",
+      "Bat Candy",
+      "Eyeball Candy",
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "imp",
@@ -10477,9 +11802,23 @@
       "halloween"
     ],
     "customerDescription": "Who knows when another silly idea will pop into his head.",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
-    "livesIn": "Nearby"
+    "livesIn": "Nearby",
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Spider Dessert",
+      "Bat Candy",
+      "Eyeball Candy",
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "wolf_magistrate",
@@ -10490,9 +11829,23 @@
       "halloween"
     ],
     "customerDescription": "He has a stern businesslike demeanor.",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
-    "livesIn": "Nearby"
+    "livesIn": "Nearby",
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Spider Dessert",
+      "Bat Candy",
+      "Eyeball Candy",
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "anubis",
@@ -10503,9 +11856,23 @@
       "halloween"
     ],
     "customerDescription": "Guardian of the Dead",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
-    "livesIn": "Nearby"
+    "livesIn": "Nearby",
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Spider Dessert",
+      "Bat Candy",
+      "Eyeball Candy",
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "fox_bride",
@@ -10516,9 +11883,23 @@
       "halloween"
     ],
     "customerDescription": "It is said that on the day a fox gets married, rain will fall while the sun shines in the sky.",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
-    "livesIn": "Nearby"
+    "livesIn": "Nearby",
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Spider Dessert",
+      "Bat Candy",
+      "Eyeball Candy",
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "granny_meng",
@@ -10529,9 +11910,23 @@
       "halloween"
     ],
     "customerDescription": "Should you really drink the soup that she's holding...",
-    "requirements": {},
+    "requirements": {
+      "recipes": [
+        "Bat Candy",
+        "Mummy Gingersnap",
+        "Eyeball Candy",
+        "Spider Dessert"
+      ]
+    },
     "mementos": [],
-    "livesIn": "Nearby"
+    "livesIn": "Nearby",
+    "requiredFoodId": "Bat Candy",
+    "dishesOrderedIds": [
+      "Spider Dessert",
+      "Bat Candy",
+      "Eyeball Candy",
+      "Mummy Gingersnap"
+    ]
   },
   {
     "id": "praying_samoyed",
@@ -10551,9 +11946,20 @@
         "Kimbap",
         "Kebabs",
         "Salmon Sushi"
+      ],
+      "flowers": [
+        "sakura"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "flower_accessory",
+        "name": "Flower Accessory",
+        "earnedStars": 15,
+        "description": "A flower accessory brought back from Japan. It looks exotic.",
+        "requirement": "Serve Praying Samoyed 8 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 666,
     "requiredFoodId": "Fried Shrimp Sushi",
@@ -10582,9 +11988,20 @@
         "Pizza",
         "Fried Rice",
         "Montblanc"
+      ],
+      "flowers": [
+        "sakura"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "cap_with_wings",
+        "name": "Cap with Wings",
+        "earnedStars": 15,
+        "description": "A cap left behind by Arale when she visited Animal Restaurant. May everybody be as happy always.",
+        "requirement": "Serve Tom 22 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 222,
     "requiredFoodId": "Beer",
@@ -10614,9 +12031,20 @@
         "Spicy Crawdads",
         "Strawberry Shaved Ice",
         "Chilled Edamame"
+      ],
+      "flowers": [
+        "sakura"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "golden_wicker",
+        "name": "Golden Wicker",
+        "earnedStars": 30,
+        "description": "A wicker exuding an air of nobility.",
+        "requirement": "Serve Duke Swallow 5 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 160,
     "requiredFoodId": "Coconut Cassia Wine",
@@ -10648,6 +12076,9 @@
         "Cold Watermelon",
         "Strawberry Shaved Ice",
         "Chilled Edamame"
+      ],
+      "flowers": [
+        "sakura"
       ]
     },
     "mementos": [],
@@ -10684,9 +12115,20 @@
         "Cold Watermelon",
         "Strawberry Shaved Ice",
         "Chilled Edamame"
+      ],
+      "flowers": [
+        "sakura"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "old_map",
+        "name": "Old Map",
+        "earnedStars": 35,
+        "description": "An item that was found somewhere inside the house. It looks old.",
+        "requirement": "Serve Sheepie 20 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 150,
     "requiredFoodId": "Pineapple Rice",
@@ -10719,9 +12161,20 @@
         "Dongpo Pork",
         "Mulled Wine",
         "Meat, Egg, and Mushroom Beancurd Roll"
+      ],
+      "flowers": [
+        "sakura"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "badly_chewed_slippers",
+        "name": "Badly-Chewed Slippers",
+        "earnedStars": 30,
+        "description": "Slippers that exude an inexplicable allure.",
+        "requirement": "Serve PAGENAME 25 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 120,
     "requiredFoodId": "Banana Boat",
@@ -10755,9 +12208,20 @@
         "Blueberry Pancake",
         "Beef Wellington",
         "Bouquet Cake"
+      ],
+      "flowers": [
+        "sakura"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "sweet_potato_seeds",
+        "name": "Sweet Potato Seeds",
+        "earnedStars": 30,
+        "description": "Isn’t it immensely satisfying to plant a tiny little seed and have it grow into a delightful sweet potato?",
+        "requirement": "Serve PAGENAME 15 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 150,
     "requiredFoodId": "Matcha Taiyaki",
@@ -10790,9 +12254,20 @@
         "Pumpkin Soup",
         "Omurice",
         "Raspberry Yogurt"
+      ],
+      "flowers": [
+        "sakura"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "pen_recorder",
+        "name": "Pen Recorder",
+        "earnedStars": 30,
+        "description": "Contains some of Oak Bay's little secrets.",
+        "requirement": "Serve PAGENAME 15 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 150,
     "requiredFoodId": "Longjing Prawns",
@@ -10821,9 +12296,20 @@
         "Pizza",
         "Porridge & Jam",
         "Scrambled Eggs & Tomatoes"
+      ],
+      "flowers": [
+        "clover"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "bamboo_copter",
+        "name": "Bamboo-copter",
+        "earnedStars": 15,
+        "description": "Similar to Nobita's bamboo-copter, it can take you to any part of Animal Restaurant.",
+        "requirement": "Serve Penniless Toad 10 times."
+      }
+    ],
     "livesIn": "Town",
     "appearanceWeight": 666,
     "requiredFoodId": "Roast Shrimp",
@@ -10852,6 +12338,9 @@
         "Pizza",
         "Fried Rice",
         "Montblanc"
+      ],
+      "flowers": [
+        "clover"
       ]
     },
     "mementos": [],
@@ -10885,6 +12374,9 @@
         "Strawberry Shaved Ice",
         "Chilled Edamame",
         "Strawberry Pudding"
+      ],
+      "flowers": [
+        "clover"
       ]
     },
     "mementos": [],
@@ -10920,6 +12412,9 @@
         "Spicy Crawdads",
         "Chilled Edamame",
         "Strawberry Pudding"
+      ],
+      "flowers": [
+        "clover"
       ]
     },
     "mementos": [],
@@ -10954,6 +12449,9 @@
         "Cold Watermelon",
         "Strawberry Shaved Ice",
         "Chilled Edamame"
+      ],
+      "flowers": [
+        "clover"
       ]
     },
     "mementos": [],
@@ -11021,6 +12519,9 @@
         "Pineapple Bun",
         "Playful Cake",
         "Popcorn"
+      ],
+      "flowers": [
+        "clover"
       ]
     },
     "mementos": [],
@@ -11055,6 +12556,9 @@
         "Pumpkin Soup",
         "Smoked Ham",
         "Eight Treasure Rice Pudding"
+      ],
+      "flowers": [
+        "clover"
       ]
     },
     "mementos": [],
@@ -11083,6 +12587,9 @@
         "Pizza",
         "Porridge & Jam",
         "Scrambled Eggs & Tomatoes"
+      ],
+      "flowers": [
+        "mleaf"
       ]
     },
     "mementos": [],
@@ -11114,6 +12621,9 @@
         "Pizza",
         "Fried Rice",
         "Montblanc"
+      ],
+      "flowers": [
+        "mleaf"
       ]
     },
     "mementos": [],
@@ -11146,6 +12656,9 @@
         "Spicy Crawdads",
         "Bah Kut Teh",
         "Chilled Edamame"
+      ],
+      "flowers": [
+        "mleaf"
       ]
     },
     "mementos": [],
@@ -11181,6 +12694,9 @@
         "Chilled Edamame",
         "Strawberry Pudding",
         "Pineapple Bun"
+      ],
+      "flowers": [
+        "mleaf"
       ]
     },
     "mementos": [],
@@ -11217,9 +12733,20 @@
         "Strawberry Shaved Ice",
         "Chilled Edamame",
         "Dongpo Pork"
+      ],
+      "flowers": [
+        "mleaf"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "leopard_print_scarf",
+        "name": "Leopard Print Scarf",
+        "earnedStars": 50,
+        "description": "A scarf inspired by leopard spots.",
+        "requirement": "Serve Leopard 30 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 130,
     "requiredFoodId": "Pineapple Rice",
@@ -11250,9 +12777,20 @@
       "facilities": [
         "delicious_baskets_of_bread",
         "yellow_silk_curtain"
+      ],
+      "flowers": [
+        "mleaf"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "sketch_pad",
+        "name": "Sketch Pad",
+        "earnedStars": 35,
+        "description": "It's a display of daily inspiration.",
+        "requirement": "Serve PAGENAME 5 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 120,
     "dishesOrderedIds": [
@@ -11287,6 +12825,9 @@
         "Coconut Milk Pudding",
         "Pumpkin Soup",
         "Strawberry and Cream Toast"
+      ],
+      "flowers": [
+        "mleaf"
       ]
     },
     "mementos": [],
@@ -11320,9 +12861,20 @@
         "Mulled Wine",
         "Paella",
         "Spicy Chicken Skewers"
+      ],
+      "flowers": [
+        "mleaf"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "dawn_feather",
+        "name": "Dawn Feather",
+        "earnedStars": 34,
+        "description": "Symbolizes hope and limitless possbilities.",
+        "requirement": "Serve PAGENAME 30 times."
+      }
+    ],
     "livesIn": "City",
     "requiredFoodId": "Mapo Tofu",
     "dishesOrderedIds": [
@@ -11347,6 +12899,9 @@
         "Pizza",
         "Porridge & Jam",
         "Scrambled Eggs & Tomatoes"
+      ],
+      "flowers": [
+        "snowflake"
       ]
     },
     "mementos": [],
@@ -11378,6 +12933,9 @@
         "Pizza",
         "Fried Rice",
         "Montblanc"
+      ],
+      "flowers": [
+        "snowflake"
       ]
     },
     "mementos": [],
@@ -11409,6 +12967,9 @@
         "Cold Watermelon",
         "Spicy Crawdads",
         "Roast Turkey"
+      ],
+      "flowers": [
+        "snowflake"
       ]
     },
     "mementos": [],
@@ -11443,6 +13004,9 @@
         "Chilled Edamame",
         "Strawberry Pudding",
         "Pineapple Bun"
+      ],
+      "flowers": [
+        "snowflake"
       ]
     },
     "mementos": [],
@@ -11480,9 +13044,20 @@
         "Strawberry Shaved Ice",
         "Chilled Edamame",
         "Dongpo Pork"
+      ],
+      "flowers": [
+        "snowflake"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "intriguing_brows",
+        "name": "Intriguing Brows",
+        "earnedStars": 50,
+        "description": "These will make you look like you've gone through a lot in life.",
+        "requirement": "Serve Upturned-Brows Penguin 75 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 130,
     "requiredFoodId": "Pineapple Rice",
@@ -11517,9 +13092,20 @@
         "Roast Turkey",
         "Boneless Chicken Tenders",
         "Crispy Fried Meat"
+      ],
+      "flowers": [
+        "snowflake"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "beanie",
+        "name": "Beanie",
+        "earnedStars": 40,
+        "description": "It seems more useful for decoration than for warmth.",
+        "requirement": "Serve PAGENAME 5 times."
+      }
+    ],
     "livesIn": "City",
     "appearanceWeight": 120,
     "requiredFoodId": "Baked Fish",
@@ -11549,6 +13135,9 @@
         "Hot Dry Noodles",
         "Soy Milk & Cruller",
         "Roast Turkey"
+      ],
+      "flowers": [
+        "snowflake"
       ]
     },
     "mementos": [],
@@ -11582,9 +13171,20 @@
         "Buckwheat Noodles",
         "Spicy Chicken Skewers",
         "Hot Dry Noodles"
+      ],
+      "flowers": [
+        "snowflake"
       ]
     },
-    "mementos": [],
+    "mementos": [
+      {
+        "id": "tibetan_urdah",
+        "name": "Tibetan Urdah",
+        "earnedStars": 40,
+        "description": "Although it's slightly worn, it can still be made into an accessory.",
+        "requirement": "Serve PAGENAME 40 times."
+      }
+    ],
     "livesIn": "Nearby",
     "requiredFoodId": "Omurice",
     "dishesOrderedIds": [
@@ -11879,7 +13479,15 @@
     ],
     "customerDescription": "Wishing you a fortunate new year!",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 240,
+    "dishesOrderedIds": [
+      "Fried Rice",
+      "Takoyaki",
+      "Chocolate Cake",
+      "Salmon Sushi",
+      "Kimbap"
+    ]
   },
   {
     "id": "prospero",
@@ -12768,7 +14376,17 @@
     ],
     "customerDescription": "He fishes up anything but fish.",
     "requirements": {},
-    "mementos": []
+    "mementos": [],
+    "appearanceWeight": 280,
+    "dishesOrderedIds": [
+      "Chinese Cabbage Broth",
+      "Pork on Rice",
+      "Beef Wellington",
+      "Curried Crab",
+      "Boneless Chicken Tenders",
+      "Mulled Wine",
+      "Crispy Fried Meat"
+    ]
   },
   {
     "id": "green_snorkeler",
@@ -13573,6 +15191,1101 @@
       "Cookies",
       "Cola Wings",
       "Curry Rice"
+    ]
+  },
+  {
+    "id": "anteater",
+    "name": "Anteater",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "The owner of a nearby jujitsu dojo that is popular with kids.",
+    "requirements": {
+      "recipes": [
+        "Omurice",
+        "Cold Watermelon",
+        "Roasted Sweet Potato",
+        "Buttery Apple",
+        "Beef Wellington"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": null,
+    "requiredFoodId": "Omurice",
+    "dishesOrderedIds": [
+      "Roasted Sweet Potato"
+    ]
+  },
+  {
+    "id": "artificial_butterfly_specimens",
+    "name": "Artificial Butterfly Specimens",
+    "tags": [
+      "customer",
+      "booth_owner"
+    ],
+    "customerDescription": "Capturing the beauty of butterflies in a different way.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "artisan_gardener",
+    "name": "Artisan Gardener",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "The plants all flourish under her care. A special guest, obtained via collecting 30 dolls through Gachapon.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [
+      "Fragrant Flower Pastry",
+      "Parfait"
+    ]
+  },
+  {
+    "id": "aten",
+    "name": "Aten",
+    "tags": [
+      "customer",
+      "event",
+      "special"
+    ],
+    "customerDescription": "Owner of a small shop named Momicafe. Adventurer, bookworm, and coffee lover. Special customers will not stay to eat.\nWill not appear in the Catalog.\nOnly appears during the Stamp & Puzzle Event.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "bouncy_the_pika",
+    "name": "Bouncy the Pika",
+    "tags": [
+      "customer",
+      "terrace"
+    ],
+    "customerDescription": "A loud-mouthed and flighty pika. However, he cares for his younger brother very much.",
+    "requirements": {
+      "recipes": [
+        "Mango Sticky Rice",
+        "Steamboat"
+      ]
+    },
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": 800,
+    "requiredFoodId": "Mango Sticky Rice",
+    "dishesOrderedIds": [
+      "Sweet Dumplings",
+      "Mushroom Pasta",
+      "Steamboat",
+      "Sycee Dumplings",
+      "Mango Sticky Rice",
+      "Matcha Cake Roll"
+    ]
+  },
+  {
+    "id": "cheerleading_team_member",
+    "name": "Cheerleading Team Member",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "It seems like they practice very hard every single day. A special guest, obtained via collecting 45 dolls through Gachapon.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [
+      "Lotus Root Glutinous Rice Balls",
+      "Wrap",
+      "Roujiamo"
+    ]
+  },
+  {
+    "id": "coach_roo",
+    "name": "Coach Roo",
+    "tags": [
+      "customer",
+      "performer"
+    ],
+    "customerDescription": "A member of Energy Dash. His daily training has led to his unbeatable physique. He's a truly reassuring presence.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "crecrepe",
+    "name": "CreCrepe",
+    "tags": [
+      "customer",
+      "booth_owner"
+    ],
+    "customerDescription": "Cute and yummy! There are many flavors for you to choose from!",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "dazzling_iron_fireworks",
+    "name": "Dazzling Iron Fireworks",
+    "tags": [
+      "customer",
+      "booth_owner"
+    ],
+    "customerDescription": "Thanks to her tough scales, she handles molten iron like it's nothing.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "director_moose",
+    "name": "Director Moose",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Hidden beneath the sunglasses is a pair of tired eyes. A special guest, obtained via collecting 45 dolls through Gachapon.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "dobermann",
+    "name": "Dobermann",
+    "tags": [
+      "customer",
+      "terrace"
+    ],
+    "customerDescription": "He will stare at you with a stern face no matter how many hilarious jokes you tell him.",
+    "requirements": {
+      "recipes": [
+        "Matcha Cake Roll",
+        "Orange Juice"
+      ],
+      "facilities": [
+        "astronomer",
+        "classical_collection_counter"
+      ]
+    },
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": 500,
+    "requiredFoodId": "Matcha Cake Roll",
+    "dishesOrderedIds": [
+      "Sweet Dumplings",
+      "Mushroom Pasta",
+      "Orange Juice",
+      "Sycee Dumplings",
+      "Mango Sticky Rice",
+      "Matcha Cake Roll",
+      "Mulled Wine",
+      "Smoked Ham"
+    ]
+  },
+  {
+    "id": "exquisite_embroidery",
+    "name": "Exquisite Embroidery",
+    "tags": [
+      "customer",
+      "booth_owner"
+    ],
+    "customerDescription": "Their intricate pieces are all 100% made by hand.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "finger_licking_fried_food",
+    "name": "Finger-Licking Fried Food",
+    "tags": [
+      "customer",
+      "booth_owner"
+    ],
+    "customerDescription": "Fried chicken drumsticks, fried hotdogs, fried chicken nuggets... You name it, we have it!",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "football_captain",
+    "name": "Football Captain",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Has been scurrying about trying to recruit new team members as of late. A special guest, obtained via collecting 30 dolls through Gachapon.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "fur_seal",
+    "name": "Fur Seal",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "What? I don't clap for show, okay?",
+    "requirements": {
+      "recipes": [
+        "Roe Sushi",
+        "Salmon Sushi",
+        "Fried Shrimp Sushi",
+        "Curried Crab"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": null,
+    "requiredFoodId": "Roe Sushi",
+    "dishesOrderedIds": [
+      "Curried Crab",
+      "Boston Lobster"
+    ]
+  },
+  {
+    "id": "hoppy_the_pika",
+    "name": "Hoppy the Pika",
+    "tags": [
+      "customer",
+      "terrace"
+    ],
+    "customerDescription": "A cool and reticent pika. He seems aloof and distant, but he actually cares for his older brother very much.",
+    "requirements": {
+      "recipes": [
+        "Candied Strawberries"
+      ],
+      "facilities": [
+        "vibe_night_light",
+        "log_aroma"
+      ]
+    },
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": 1200,
+    "requiredFoodId": "Candied Strawberries",
+    "dishesOrderedIds": [
+      "Sweet Dumplings",
+      "Candied Strawberries",
+      "Steamboat",
+      "Sycee Dumplings",
+      "Mango Sticky Rice",
+      "Matcha Cake Roll"
+    ]
+  },
+  {
+    "id": "lucky_string_pull_game",
+    "name": "Lucky String Pull Game",
+    "tags": [
+      "customer",
+      "booth_owner"
+    ],
+    "customerDescription": "5 dollars for 1 pull! Enjoy a special discount when you pull 10 times!",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "luckyhoof",
+    "name": "Luckyhoof",
+    "tags": [
+      "customer",
+      "event",
+      "special"
+    ],
+    "customerDescription": "Quick on their feet, their hooves go 'clop clop clop' as they move. Special customers will not stay to eat.\nOnly appears during the Lunar New Year event.\n\nWhen launching red packets, firecrackers are sometimes launched too.\n\nThey hand out red envelopes containing Cod, Stars, Plates, Diamonds, fireworks and firecrackers.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [],
+    "season": "lunar new year"
+  },
+  {
+    "id": "mad_hatter",
+    "name": "Mad Hatter",
+    "tags": [
+      "customer",
+      "terrace"
+    ],
+    "customerDescription": "Seems a bit mad, but a great hat maker.",
+    "requirements": {
+      "recipes": [
+        "Matcha Cake Roll",
+        "Mango Sticky Rice",
+        "Rice Pudding",
+        "Fried Potato"
+      ],
+      "facilities": [
+        "melodious_echo"
+      ]
+    },
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": 300,
+    "requiredFoodId": "Matcha Cake Roll",
+    "dishesOrderedIds": [
+      "Sweet Dumplings",
+      "Mushroom Pasta",
+      "Rice Pudding",
+      "Fried Potato",
+      "Mango Sticky Rice",
+      "Matcha Cake Roll"
+    ]
+  },
+  {
+    "id": "miss_fawn",
+    "name": "Miss Fawn",
+    "tags": [
+      "customer",
+      "event",
+      "gachapon"
+    ],
+    "customerDescription": "Elegant and full of artistic eloquence. A special guest, obtained via collecting 30 dolls through Fantastical Party event.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": 240,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance"
+    ]
+  },
+  {
+    "id": "miss_linsang",
+    "name": "Miss Linsang",
+    "tags": [
+      "customer",
+      "event",
+      "gachapon"
+    ],
+    "customerDescription": "Loves to bake and stores many of her homemade biscuits in a little purse. A special guest, obtained via collecting 30 dolls through Midsummer Birdsong event.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [
+      "Eggscellent Bowl",
+      "Playful Cake"
+    ]
+  },
+  {
+    "id": "money_toad",
+    "name": "Money Toad",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Forever sporting a confident smile.",
+    "requirements": {
+      "recipes": [
+        "Baked Fish",
+        "Takoyaki",
+        "Escargot",
+        "Seared Scallops"
+      ],
+      "flowers": [
+        "rose"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": null,
+    "requiredFoodId": "Baked Fish",
+    "dishesOrderedIds": [
+      "Baked Fish",
+      "Seared Scallops"
+    ]
+  },
+  {
+    "id": "night_heron",
+    "name": "Night Heron",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Frequently mistaken for a penguin.",
+    "requirements": {
+      "recipes": [
+        "Taiyaki",
+        "Salmon Sushi",
+        "Black Sesame Paste",
+        "Boston Lobster",
+        "Paella"
+      ],
+      "flowers": [
+        "sakura"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": null,
+    "requiredFoodId": "Taiyaki",
+    "dishesOrderedIds": [
+      "Black Sesame Paste",
+      "Boston Lobster"
+    ]
+  },
+  {
+    "id": "novice_camper",
+    "name": "Novice Camper",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Each time, they believe thatthey have picked all their camping gear, but they always end up forgetting something. A special guest, obtained via collecting 45 dolls through Gachapon.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "parasaurolophus",
+    "name": "Parasaurolophus",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A highly inquisitive child!",
+    "requirements": {
+      "recipes": [
+        "Adzuki Bean Dumpling",
+        "Cola",
+        "Cupcake",
+        "Montblanc",
+        "Cloud Cake"
+      ],
+      "facilities": [
+        "wispy_clouds"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": null,
+    "requiredFoodId": "Adzuki Bean Dumpling",
+    "dishesOrderedIds": [
+      "Teddy Bento"
+    ]
+  },
+  {
+    "id": "peacock_sage",
+    "name": "Peacock Sage",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Can chat with you about a variety of topics, from poem appreciation to life philisophies. Picky: Rating must reach 50,000.",
+    "requirements": {
+      "rating": 50000,
+      "requiredStars": 50000,
+      "recipes": [
+        "Strawberry Pancake",
+        "Taco",
+        "Log Cake",
+        "Chinese Cabbage Broth",
+        "Buttery Apple"
+      ],
+      "facilities": [
+        "fluttering_envelopes",
+        "winged_poetry"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": null,
+    "requiredFoodId": "Strawberry Pancake",
+    "dishesOrderedIds": [
+      "Buttery Apple",
+      "Adzuki Bean Bun"
+    ]
+  },
+  {
+    "id": "pineneedle_lacquer_fans",
+    "name": "Pineneedle Lacquer Fans",
+    "tags": [
+      "customer",
+      "booth_owner"
+    ],
+    "customerDescription": "No two fans are alike here!",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "prince_michael",
+    "name": "Prince Michael",
+    "tags": [
+      "customer",
+      "event"
+    ],
+    "customerDescription": "Me name is Michael. Prince Michael. Me lyke fish. And me lyke naps. But me LOVE my best friend Aaron. Follow our adventures on YouTube Only visits the Restaurant from September 18th 2020 to December 15th 2020. Will not appear in the Catalog.",
+    "requirements": {
+      "recipes": [
+        "Matcha Taiyaki",
+        "Porridge & Jam"
+      ]
+    },
+    "mementos": [
+      {
+        "id": "soccer_ball",
+        "name": "Soccer Ball",
+        "earnedStars": 10,
+        "description": "Although it has been used for a long time, it still looks as good as new.",
+        "requirement": "Serve Prince Michael 18 times.\nObtain from the Wishing Well."
+      }
+    ],
+    "livesIn": null,
+    "appearanceWeight": 5605,
+    "requiredFoodId": "Matcha Taiyaki",
+    "dishesOrderedIds": [
+      "Matcha Taiyaki",
+      "Strawberry Pancake",
+      "Purple Sweet Potato Bun",
+      "Porridge & Jam",
+      "Lucky Biscuits"
+    ]
+  },
+  {
+    "id": "puff",
+    "name": "Puff",
+    "tags": [
+      "customer",
+      "event",
+      "gachapon"
+    ],
+    "customerDescription": "A girl who's determined to eat every delicious dessert under the sun. A special guest, obtained via collecting 30 dolls through Creamy Kingdom event.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [
+      "Rice Pudding"
+    ]
+  },
+  {
+    "id": "red_panda_tour_guide",
+    "name": "Red Panda Tour Guide",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "He radiated the joy of someone who truly loves his job. A special guest, obtained via collecting 30 dolls through Gachapon.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [
+      "Cappuccino"
+    ]
+  },
+  {
+    "id": "ryan",
+    "name": "Ryan",
+    "tags": [
+      "customer",
+      "event",
+      "gachapon"
+    ],
+    "customerDescription": "A small adventurer with a big calling. The timid boy is never seen without the lamp he got from his mother. A special guest, obtained via collecting 30 dolls through Slumberous Nights event.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": 240,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [
+      "Pineapple Bun",
+      "Sycee Dumplings",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Steamboat",
+      "Fish of Abundance",
+      "Smoked Ham"
+    ]
+  },
+  {
+    "id": "sea_lion",
+    "name": "Sea Lion",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Twist and turn to stir up a huge wave anytime, anywhere!",
+    "requirements": {
+      "recipes": [
+        "Peach Blossom Sliced Fish",
+        "Baked Fish",
+        "Fish of Abundance",
+        "Paella",
+        "Seared Scallops"
+      ],
+      "facilities": [
+        "ocean_fishing_net",
+        "tipsy_tide",
+        "seaside_table"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": null,
+    "requiredFoodId": "Peach Blossom Sliced Fish",
+    "dishesOrderedIds": [
+      "Seared Scallops"
+    ]
+  },
+  {
+    "id": "serval",
+    "name": "Serval",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Always treats others with aloofness, with one notable exception.",
+    "requirements": {
+      "recipes": [
+        "Cupcake",
+        "Coconut Milk Pudding",
+        "Teddy Bento",
+        "Colonel Nuggets",
+        "Iced Lemon Tea"
+      ],
+      "facilities": [
+        "summertime_oranges",
+        "sweet_love",
+        "summer_breeze"
+      ],
+      "flowers": [
+        "rose"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": null,
+    "requiredFoodId": "Cupcake",
+    "dishesOrderedIds": [
+      "Coconut Milk Pudding"
+    ]
+  },
+  {
+    "id": "shelly",
+    "name": "Shelly",
+    "tags": [
+      "customer",
+      "event",
+      "gachapon"
+    ],
+    "customerDescription": "A mermaid who has big dreams. A special guest, obtained via collecting 30 dolls through Deep-sea Ballad event.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": 240,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [
+      "Fish of Abundance",
+      "Hot Pot",
+      "Mugwort Dumpling",
+      "Pineapple Bun",
+      "Steamboat",
+      "Sycee Dumplings"
+    ]
+  },
+  {
+    "id": "sheltie",
+    "name": "Sheltie",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Trains hard every day so he can grow taller!",
+    "requirements": {
+      "recipes": [
+        "Bagel",
+        "Cold Watermelon",
+        "Mugwort Dumpling",
+        "Roujiamo",
+        "Bah Kut Teh"
+      ],
+      "flowers": [
+        "clover"
+      ]
+    },
+    "mementos": [
+      {
+        "id": "chew_toy_rope",
+        "name": "Chew Toy Rope",
+        "earnedStars": 36,
+        "description": "Gnaw on it whenever you feel the urge to bite something!",
+        "requirement": "Serve PAGENAME 35 times."
+      }
+    ],
+    "livesIn": "City",
+    "appearanceWeight": null,
+    "requiredFoodId": "Bagel",
+    "dishesOrderedIds": [
+      "Mugwort Dumpling",
+      "Bah Kut Teh"
+    ]
+  },
+  {
+    "id": "shentu",
+    "name": "Shentu",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Together with Yulei, the brothers are gate deities dedicated to protecting their homeland. A special guest, obtained via collecting 45 dolls through Gachapon.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [
+      "Fried Shrimp in Red Rice Noodle Rolls",
+      "Mugwort Dumpling"
+    ]
+  },
+  {
+    "id": "speedy_street_stir_fries",
+    "name": "Speedy Street Stir-Fries",
+    "tags": [
+      "customer",
+      "booth_owner"
+    ],
+    "customerDescription": "All orders ready in five minutes! We won't keep your tummy growling for even a second more!",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "stegosaurus",
+    "name": "Stegosaurus",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Loves to run around and is always full of energy!",
+    "requirements": {
+      "recipes": [
+        "Chocolate Cake",
+        "Coconut Cassia Wine",
+        "Playful Cake",
+        "Cream of Mushroom Soup",
+        "Two-colored Macaron"
+      ],
+      "facilities": [
+        "greenhouse_rose",
+        "snowball_brew",
+        "candy_hearts_cabinet"
+      ],
+      "flowers": [
+        "sunflower"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": null,
+    "requiredFoodId": "Chocolate Cake",
+    "dishesOrderedIds": [
+      "Cream of Mushroom Soup"
+    ]
+  },
+  {
+    "id": "sunny",
+    "name": "Sunny",
+    "tags": [
+      "customer",
+      "terrace"
+    ],
+    "customerDescription": "A popular food blogger.",
+    "requirements": {
+      "recipes": [
+        "Mocha Cake Roll",
+        "Mango Sticky Rice",
+        "Orange Juice",
+        "Fried Potato"
+      ],
+      "facilities": [
+        "springtime_snack_mat"
+      ]
+    },
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": 400,
+    "requiredFoodId": "Mocha Cake Roll",
+    "dishesOrderedIds": [
+      "Sweet Dumplings",
+      "Mushroom Pasta",
+      "Orange Juice",
+      "Fried Potato",
+      "Mango Sticky Rice",
+      "Matcha Cake Roll",
+      "Mulled Wine",
+      "Smoked Ham"
+    ]
+  },
+  {
+    "id": "super_gamer",
+    "name": "Super Gamer",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "For some reason, he trips over himself all the time. A special guest, obtained via collecting 45 dolls through Gachapon.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [
+      "Planet Cake",
+      "Chicken Burger"
+    ]
+  },
+  {
+    "id": "taowu",
+    "name": "Taowu",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "A spirit that resides atop the ancient tree. They're said to bestow good luck on those fortunate enough to catch a glimpse of them.",
+    "requirements": {
+      "recipes": [
+        "Adzuki Bean Dumpling",
+        "Custard Bun",
+        "Sweet Sticky Rice in Lotus Root with Osmanthus Syrup"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Village",
+    "appearanceWeight": null,
+    "requiredFoodId": "Adzuki Bean Dumpling",
+    "dishesOrderedIds": [
+      "Sweet Sticky Rice in Lotus Root with Osmanthus Syrup",
+      "Tea",
+      "Coconut Cassia Wine"
+    ]
+  },
+  {
+    "id": "three_legged_crow",
+    "name": "Three-Legged Crow",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "It's hard to look directly at them because they shine so bright.",
+    "requirements": {
+      "recipes": [
+        "Mango Surprise",
+        "Roasted Sweet Potato",
+        "Fish of Abundance",
+        "Steamed Garlic Shrimp with Vermicelli",
+        "Cream of Mushroom Soup"
+      ],
+      "facilities": [
+        "gilded_antique_cabinet",
+        "gilded_conveyor_belt"
+      ],
+      "flowers": [
+        "bluebell"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": null,
+    "requiredFoodId": "Mango Surprise",
+    "dishesOrderedIds": [
+      "Avocado Sandwich",
+      "Steamed Garlic Shrimp with Vermicelli",
+      "Fried Shrimp in Red Rice Noodle Rolls"
+    ]
+  },
+  {
+    "id": "traditional_rattan_weaving",
+    "name": "Traditional Rattan Weaving",
+    "tags": [
+      "customer",
+      "booth_owner"
+    ],
+    "customerDescription": "Able to weave anything that you can think of.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "trainee_foxy",
+    "name": "Trainee Foxy",
+    "tags": [
+      "customer",
+      "performer"
+    ],
+    "customerDescription": "A member of Energy Dash. He constantly works overtime, leaving him with a frail physique and scrawny limbs. Thus, he's devoted himself to strengthening his own body.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "trainee_mingo",
+    "name": "Trainee Mingo",
+    "tags": [
+      "customer",
+      "performer"
+    ],
+    "customerDescription": "A member of Energy Dash. Years of prolonged sitting have left him with weak legs and a round tummy. Now, he is determined to get back into shape.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "trainee_stripey",
+    "name": "Trainee Stripey",
+    "tags": [
+      "customer",
+      "performer"
+    ],
+    "customerDescription": "A member of Energy Dash. He can always be found rowing during training. His reason for training is unclear.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": []
+  },
+  {
+    "id": "triceratops",
+    "name": "Triceratops",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "The head of the dinosaur orphanage who has taken in many little dinosaurs.",
+    "requirements": {
+      "recipes": [
+        "Seaweed Rice Ball",
+        "Meat, Egg, and Mushroom Beancurd Roll",
+        "Iced Lemon Tea",
+        "Chinese Cabbage Broth"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "Town",
+    "appearanceWeight": null,
+    "requiredFoodId": "Seaweed Rice Ball",
+    "dishesOrderedIds": [
+      "Meat, Egg, and Mushroom Beancurd Roll",
+      "Taco"
+    ]
+  },
+  {
+    "id": "walrus",
+    "name": "Walrus",
+    "tags": [
+      "customer",
+      "regular"
+    ],
+    "customerDescription": "Always looking to lie down and suntan, regardless of where they are.",
+    "requirements": {
+      "recipes": [
+        "Steamed Clams",
+        "Escargot",
+        "Crab-Stuffed Orange",
+        "Takoyaki",
+        "Longjing Prawns"
+      ],
+      "facilities": [
+        "afternoon_teatime",
+        "summer_sun"
+      ],
+      "flowers": [
+        "sunflower"
+      ]
+    },
+    "mementos": [],
+    "livesIn": "City",
+    "appearanceWeight": null,
+    "requiredFoodId": "Steamed Clams",
+    "dishesOrderedIds": [
+      "Curried Crab"
+    ]
+  },
+  {
+    "id": "yulei",
+    "name": "Yulei",
+    "tags": [
+      "customer",
+      "gachapon"
+    ],
+    "customerDescription": "Together with Shentu, the brothers are gate deities dedicated to protecting their homeland. A special guest, obtained via collecting 30 dolls through Gachapon.",
+    "requirements": {},
+    "mementos": [],
+    "livesIn": null,
+    "appearanceWeight": null,
+    "requiredFoodId": null,
+    "dishesOrderedIds": [
+      "Eggscellent Bowl",
+      "Lotus Root Glutinous Rice Balls",
+      "Beef Wellington"
     ]
   }
 ]

@@ -14,6 +14,12 @@ class BattlePassRepository {
 
   final Map<String, BattlePass> _cacheById = {};
 
+  /// Cached *futures*, so two widgets asking for the same pass before the
+  /// first load finishes share one load + parse instead of racing.
+  final Map<String, Future<BattlePass>> _futuresById = {};
+
+  // Kept `async` so an unknown id surfaces as a failed Future, exactly as
+  // before, rather than throwing synchronously inside a caller's build().
   Future<BattlePass> byId(String id) async {
     final cached = _cacheById[id];
     if (cached != null) return cached;
@@ -27,10 +33,21 @@ class BattlePassRepository {
       );
     }
 
-    final raw = await JsonLoader.load(asset) as Map<String, dynamic>;
-    final pass = BattlePass.fromJson(raw);
-    _cacheById[id] = pass;
-    return pass;
+    return _futuresById[id] ??= _load(id, asset);
+  }
+
+  Future<BattlePass> _load(String id, String asset) async {
+    try {
+      final raw = await JsonLoader.load(asset) as Map<String, dynamic>;
+      final pass = BattlePass.fromJson(raw);
+      // Sole consumer of this asset; the parsed model replaces the raw maps.
+      JsonLoader.evict(asset);
+      _cacheById[id] = pass;
+      return pass;
+    } catch (_) {
+      _futuresById.remove(id); // allow a retry
+      rethrow;
+    }
   }
 
   Future<BattlePass> fantasticalParty() => byId('fantastical_party');
@@ -43,5 +60,6 @@ class BattlePassRepository {
 
   Future<void> reload() async {
     _cacheById.clear();
+    _futuresById.clear();
   }
 }

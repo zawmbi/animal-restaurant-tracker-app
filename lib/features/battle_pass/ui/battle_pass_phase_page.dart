@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../completion/data/completion_service.dart';
+import '../../completion/data/progress_types.dart';
+import '../../shared/data/unlocked_store.dart';
+import '../../shared/widgets/check_all_button.dart';
 import '../model/battle_pass.dart';
 import 'battle_pass_reward_box.dart';
 
@@ -13,9 +17,35 @@ class BattlePassPhasePage extends StatelessWidget {
     required this.phase,
   });
 
+  /// Claim keys for this phase. Super only counts once the pass's premium tier
+  /// is owned, matching BattlePassDetailPage.
+  List<String> _claimKeys(UnlockedStore store) {
+    final premium =
+        store.isUnlocked(ProgressTypes.battlePassPremium, pass.id);
+    final keys = <String>[];
+    for (final tier in phase.tiers) {
+      keys.add(CompletionService.battlePassClaimKey(
+        passId: pass.id,
+        phaseId: phase.id,
+        track: 'normal',
+        exp: tier.exp,
+      ));
+      if (premium) {
+        keys.add(CompletionService.battlePassClaimKey(
+          passId: pass.id,
+          phaseId: phase.id,
+          track: 'super',
+          exp: tier.exp,
+        ));
+      }
+    }
+    return keys;
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final store = UnlockedStore.instance;
 
     return ListView(
       padding: const EdgeInsets.all(12),
@@ -43,6 +73,38 @@ class BattlePassPhasePage extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 10),
+
+        // Claim-all for this whole phase
+        AnimatedBuilder(
+          animation: store,
+          builder: (context, _) {
+            final keys = _claimKeys(store);
+            final claimed = keys
+                .where((k) =>
+                    store.isUnlocked(ProgressTypes.battlePassClaimed, k))
+                .length;
+
+            return Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Text(
+                      'Claimed: $claimed/${keys.length}',
+                      style: theme.textTheme.titleMedium,
+                    ),
+                  ),
+                  CheckAllButton(
+                    bucket: ProgressTypes.battlePassClaimed,
+                    ids: keys,
+                    groupLabel: phase.name,
+                  ),
+                ],
+              ),
+            );
+          },
+        ),
+        const SizedBox(height: 8),
 
         // Rewards header
         Card(

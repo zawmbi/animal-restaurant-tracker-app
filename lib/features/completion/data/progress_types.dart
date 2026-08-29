@@ -1,0 +1,51 @@
+/// Every `UnlockedStore` type key ("bucket") that holds real tracked progress.
+///
+/// These are the buckets the pages read and write, gathered in one place so
+/// the global completion percentage and the pages agree on spelling.
+///
+/// Note the two historical spellings still in the codebase:
+///  * customers are stored under `customers` (plural) by CustomersPage,
+///    CustomerDetailPage and BoothOwnersPage — NOT the `customer` entry in
+///    UnlockedStore._defaultTypes,
+///  * facilities are stored under `facility` by FacilitiesPage and
+///    FacilityDetailPage — NOT the `facility_purchased` default type.
+/// The `customer`, `facility_purchased`, `recipe_purchased` and `battle_pass`
+/// buckets are legacy/unused and are deliberately not counted here.
+class ProgressTypes {
+  const ProgressTypes._();
+
+  static const String customers = 'customers';
+  static const String dish = 'dish';
+  static const String letter = 'letter';
+  static const String facility = 'facility';
+  static const String courtyardFacility = 'courtyard_facility_purchased';
+  static const String mementoCollected = 'memento_collected';
+  static const String poster = 'poster';
+  static const String movieAct = 'movie_act';
+  static const String petOwned = 'pet_owned';
+  static const String petMature = 'pet_mature';
+  static const String petRoom = 'pet_room_unlocked';
+  static const String petPhotoTask = 'pet_photo_task_done';
+  static const String staffUnlocked = 'staff_unlocked';
+  static const String battlePassClaimed = 'battle_pass_claimed';
+  static const String battlePassPremium = 'battle_pass_premium';
+  static const String acorn = 'acorn';
+
+  /// Buckets that are not in `UnlockedStore._defaultTypes` and therefore have
+  /// to be registered before their contents can be read back from storage.
+  static const List<String> registerOnStartup = <String>[
+    customers,
+    facility,
+    courtyardFacility,
+    poster,
+    movieAct,
+    petOwned,
+    petMature,
+    petRoom,
+    petPhotoTask,
+    staffUnlocked,
+    battlePassClaimed,
+    battlePassPremium,
+    acorn,
+  ];
+}

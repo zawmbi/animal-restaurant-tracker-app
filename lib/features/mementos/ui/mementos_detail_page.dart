@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../completion/data/completion_service.dart';
 import '../../shared/data/unlocked_store.dart';
+import '../../shared/widgets/check_all_button.dart';
 import '../data/mementos_index.dart';
 import '../../customers/data/customers_repository.dart';
 import '../../customers/ui/customer_detail_page.dart';
@@ -25,6 +27,49 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
   final store = UnlockedStore.instance;
 
   MementoEntry get memento => widget.memento;
+
+  /// Every memento key belonging to this memento's customer, so the whole
+  /// group can be checked off in one go.
+  late final Future<List<String>> _customerMementoKeys;
+
+  @override
+  void initState() {
+    super.initState();
+    _customerMementoKeys = _loadCustomerMementoKeys();
+  }
+
+  Future<List<String>> _loadCustomerMementoKeys() async {
+    final customerId = memento.customerId;
+    if (customerId == null) return const <String>[];
+
+    try {
+      final all = await MementosIndex.instance.all();
+      final byId = <String, MementoEntry>{for (final e in all) e.id: e};
+
+      final keys = <String>{};
+      for (final e in all) {
+        if (e.customerId == customerId) keys.add(e.key);
+      }
+
+      final customer = await CustomersRepository.instance.byId(customerId);
+      if (customer != null) {
+        for (final m in customer.mementos) {
+          keys.add(
+            byId[m.id]?.key ??
+                CompletionService.mementoKeyFor(
+                  customerId: customerId,
+                  mementoId: m.id,
+                ),
+          );
+        }
+      }
+
+      return keys.toList();
+    } catch (_) {
+      // The rest of the page still works without the group control.
+      return const <String>[];
+    }
+  }
 
   List<String> get _tags => memento.tags;
 
@@ -183,6 +228,38 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
                     decoration: TextDecoration.underline,
                   ),
                 ),
+              ),
+
+            // Whole-customer memento group, so you do not have to open every
+            // memento one at a time.
+            if (hasCustomer)
+              FutureBuilder<List<String>>(
+                future: _customerMementoKeys,
+                builder: (context, snap) {
+                  final keys = snap.data ?? const <String>[];
+                  if (keys.length < 2) return const SizedBox.shrink();
+
+                  final collected = keys
+                      .where((k) => store.isUnlocked('memento_collected', k))
+                      .length;
+
+                  return Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          'All ${memento.customerName} mementos: '
+                          '$collected/${keys.length}',
+                          style: theme.textTheme.bodyMedium,
+                        ),
+                      ),
+                      CheckAllButton(
+                        bucket: 'memento_collected',
+                        ids: keys,
+                        groupLabel: '${memento.customerName} mementos',
+                      ),
+                    ],
+                  );
+                },
               ),
 
             // Source: clickable stub

@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../../shared/data/unlocked_store.dart';
 import '../../shared/json_loader.dart';
+import '../../shared/widgets/check_all_button.dart';
 import '../../mementos/data/mementos_index.dart';
 import '../../mementos/ui/mementos_detail_page.dart';
 
@@ -325,6 +326,16 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
               // apply sort
               _sortItems(items);
 
+              // Only codes whose reward is a memento can be checked off.
+              final rewardKeys = items
+                  .map((it) => it.memento?.key)
+                  .whereType<String>()
+                  .toSet()
+                  .toList();
+              final ownedRewards = rewardKeys
+                  .where((k) => store.isUnlocked('memento_collected', k))
+                  .length;
+
               return Column(
                 children: [
                   Padding(
@@ -336,9 +347,21 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                           selected: _activeOnly,
                           onSelected: (v) => setState(() => _activeOnly = v),
                         ),
-                        const Spacer(),
-                        Text('${items.length} shown',
-                            style: theme.textTheme.bodySmall),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            '${items.length} shown • '
+                            'gifts $ownedRewards/${rewardKeys.length}',
+                            textAlign: TextAlign.right,
+                            overflow: TextOverflow.ellipsis,
+                            style: theme.textTheme.bodySmall,
+                          ),
+                        ),
+                        CheckAllButton(
+                          bucket: 'memento_collected',
+                          ids: rewardKeys,
+                          groupLabel: 'Redemption code gifts',
+                        ),
                       ],
                     ),
                   ),
