@@ -1,0 +1,19 @@
+[
+  { "id": "clownfish",   "name": "Clownfish",    "rarity": "common",    "boothOwnerAppearanceRatePage": "Clownfish Booth Owner Appearance Rate" },
+  { "id": "crab",        "name": "Crab",         "rarity": "common",    "boothOwnerAppearanceRatePage": "Crab Booth Owner Appearance Rate" },
+  { "id": "flounder",    "name": "Flounder",     "rarity": "common",    "boothOwnerAppearanceRatePage": "Flounder Booth Owner Appearance Rate" },
+  { "id": "jellyfish",   "name": "Jellyfish",    "rarity": "common",    "boothOwnerAppearanceRatePage": "Jellyfish Booth Owner Appearance Rate" },
+  { "id": "pink_shell",  "name": "Pink Shell",   "rarity": "common",    "boothOwnerAppearanceRatePage": "Pink Shell Booth Owner Appearance Rate" },
+  { "id": "red_puffer",  "name": "Red Puffer",   "rarity": "common",    "boothOwnerAppearanceRatePage": "Red Puffer Booth Owner Appearance Rate" },
+  { "id": "shark",       "name": "Shark",        "rarity": "common",    "boothOwnerAppearanceRatePage": "Shark Booth Owner Appearance Rate" },
+  { "id": "squid",       "name": "Squid",        "rarity": "common",    "boothOwnerAppearanceRatePage": "Squid Booth Owner Appearance Rate" },
+  { "id": "starfish",    "name": "Starfish",     "rarity": "common",    "boothOwnerAppearanceRatePage": "Starfish Booth Owner Appearance Rate" },
+  { "id": "tree_branch", "name": "Tree Branch",  "rarity": "common",    "boothOwnerAppearanceRatePage": "Tree Branch Booth Owner Appearance Rate" },
+  { "id": "sea_urchin",  "name": "Sea Urchin",   "rarity": "specialty", "boothOwnerAppearanceRatePage": "Sea Urchin Booth Owner Appearance Rate" },
+  { "id": "cuttlefish",  "name": "Cuttlefish",   "rarity": "specialty", "boothOwnerAppearanceRatePage": "Cuttlefish Booth Owner Appearance Rate" },
+  { "id": "seahorse",    "name": "Seahorse",     "rarity": "specialty", "boothOwnerAppearanceRatePage": "Seahorse Booth Owner Appearance Rate" },
+  { "id": "hermit_crab", "name": "Hermit Crab",  "rarity": "specialty", "boothOwnerAppearanceRatePage": "Hermit Crab Booth Owner Appearance Rate" },
+  { "id": "goldfish",    "name": "Goldfish",     "rarity": "specialty", "boothOwnerAppearanceRatePage": "Goldfish Booth Owner Appearance Rate" },
+  { "id": "butterflyfish", "name": "Butterflyfish", "rarity": "rare",   "boothOwnerAppearanceRatePage": "Butterfly Fish Booth Owner Appearance Rate" },
+  { "id": "ray",         "name": "Ray",          "rarity": "rare",      "boothOwnerAppearanceRatePage": "Ray Booth Owner Appearance Rate" }
+]

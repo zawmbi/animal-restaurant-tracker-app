@@ -37,7 +37,9 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
   final store = UnlockedStore.instance;
 
   static const String _bucketLetter = 'letter';
-  static const String _bucketCustomer = 'customer';
+  // Must match the key the customer pages write to ('customers'); the
+  // singular spelling read a set nothing else ever wrote.
+  static const String _bucketCustomer = 'customers';
   static const String _bucketFacility = 'facility';
   static const String _bucketMementoCollected = 'memento_collected';
   static const String _bucketDish = 'dish';

@@ -72,29 +72,39 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
                 final h = _hits[i];
                 final type = h.type;
 
-                String? bucket;
+                // Bucket names must match the ones the feature pages write to,
+                // otherwise this checkbox reads and writes a set nothing else
+                // ever sees.
+                String? bucketFor;
                 switch (type) {
                   case HitType.customer:
-                    bucket = 'customer';
+                    bucketFor = 'customers';
                     break;
                   case HitType.letter:
-                    bucket = 'letter';
+                    bucketFor = 'letter';
                     break;
                   case HitType.dish:
-                    bucket = 'dish';
+                    bucketFor = 'dish';
                     break;
                   case HitType.facility:
-                    bucket = 'facility_purchased';
+                    bucketFor = 'facility';
                     break;
                   case HitType.memento:
-                    bucket = 'memento_collected';
+                    bucketFor = 'memento_collected';
                     break;
                   case HitType.battlePass:
-                    // TODO: Handle this case.
-                    throw UnimplementedError();
+                    // Battle pass rewards are claimed per phase, so a single
+                    // hit has no one bucket. Show the row without a checkbox
+                    // rather than throwing inside the list builder.
+                    bucketFor = null;
+                    break;
                 }
 
-                final checked = store.isUnlocked(bucket, h.key ?? h.id);
+                // Hoisted into a final local so it promotes to non-null inside
+                // the Checkbox callback below.
+                final bucket = bucketFor;
+                final key = h.key ?? h.id;
+                final checked = bucket != null && store.isUnlocked(bucket, key);
 
                 return InkWell(
                   mouseCursor: SystemMouseCursors.click,
@@ -107,14 +117,16 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
                     title: Text(h.title),
                     subtitle:
                         h.subtitle != null ? Text(h.subtitle!) : null,
-                    trailing: Checkbox(
-                      value: checked,
-                      onChanged: (v) => store.setUnlocked(
-                        bucket!,
-                        h.key ?? h.id,
-                        v ?? false,
-                      ),
-                    ),
+                    trailing: bucket == null
+                        ? null
+                        : Checkbox(
+                            value: checked,
+                            onChanged: (v) => store.setUnlocked(
+                              bucket,
+                              key,
+                              v ?? false,
+                            ),
+                          ),
                   ),
                 );
               },
@@ -138,8 +150,7 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
       case HitType.memento:
         return Icons.card_giftcard;
       case HitType.battlePass:
-        // TODO: Handle this case.
-        throw UnimplementedError();
+        return Icons.workspace_premium;
     }
   }
 
@@ -197,8 +208,7 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
         // No dedicated screens yet; toggling via checkbox is the primary action.
         break;
       case HitType.battlePass:
-        // TODO: Handle this case.
-        throw UnimplementedError();
+        return Icons.workspace_premium;
     }
   }
 }

@@ -23,13 +23,38 @@ class UnlockedStore extends ChangeNotifier {
   UnlockedStore._();
   static final UnlockedStore instance = UnlockedStore._();
 
+  /// Buckets loaded from storage as soon as the app starts.
+  ///
+  /// Anything NOT listed here has to be `registerType`d before its saved ids
+  /// can be read back, and until that happens `isUnlocked` answers false and
+  /// the next `setUnlocked` writes a fresh set over the saved one. Several
+  /// buckets were missing and silently lost progress across restarts, so every
+  /// bucket the app actually writes is listed now. Keep this in sync with
+  /// `ProgressTypes` in lib/features/completion/data/progress_types.dart.
   static const List<String> _defaultTypes = <String>[
+    // Original defaults. 'customer', 'facility_purchased' and
+    // 'recipe_purchased' are legacy spellings kept so old saves still load.
     'customer',
     'dish',
     'letter',
     'facility_purchased',
     'recipe_purchased',
     'memento_collected',
+
+    // Buckets the pages actually read and write.
+    'customers',
+    'facility',
+    'courtyard_facility_purchased',
+    'poster',
+    'movie_act',
+    'acorn',
+    'pet_owned',
+    'pet_mature',
+    'pet_room_unlocked',
+    'pet_photo_task_done',
+    'staff_unlocked',
+    'battle_pass_claimed',
+    'battle_pass_premium',
   ];
 
   final Map<String, Set<String>> _sets = <String, Set<String>>{};

@@ -7003,5 +7003,37 @@
         "amount": 6100000
       }
     ]
+  },
+  {
+    "id": "four_happiness_lucky_bags",
+    "name": "Four Happiness Lucky Bags",
+    "sections": [
+      "Vegetable Garden Recipes"
+    ],
+    "description": "Every bag is stuffed with good luck and fortune!",
+    "refinedRating": 390,
+    "ingredients": [
+      {
+        "item": "Soybean",
+        "amount": 5
+      },
+      {
+        "item": "Carrot",
+        "amount": 3
+      },
+      {
+        "item": "Mushroom",
+        "amount": 2
+      },
+      {
+        "item": "Leafy Greens",
+        "amount": 2
+      }
+    ],
+    "perfectDishes": 20,
+    "prepTimeSeconds": 56,
+    "flavor": "Salty",
+    "requiredStars": 0,
+    "price": []
   }
 ]
