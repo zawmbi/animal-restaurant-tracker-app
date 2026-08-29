@@ -45,6 +45,9 @@ class RewardIcon extends StatelessWidget {
       width: size,
       height: size,
       fit: BoxFit.contain,
+      // mementoPng has no artwork in assets/images/, and an unguarded
+      // Image.asset throws at paint time when the file is absent.
+      errorBuilder: (_, __, ___) => Icon(Icons.card_giftcard, size: size),
     );
   }
 }

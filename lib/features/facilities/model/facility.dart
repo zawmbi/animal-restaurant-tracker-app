@@ -10,10 +10,29 @@ extension MoneyCurrencyKey on MoneyCurrency {
 }
 
 extension MoneyCurrencyIcon on MoneyCurrency {
+  /// Icon for this currency.
+  ///
+  /// The enum names are plural but the shipped assets are singular, so this
+  /// cannot be built by interpolating [key]: that produced
+  /// assets/images/plates.png and diamonds.png, which have never existed, and
+  /// bells.png, which existed only as a byte-identical copy of bell.png.
+  /// Callers guard with an errorBuilder, so a currency with no artwork
+  /// (buttons) still renders its fallback rather than throwing.
   String get assetPath {
-    // Use your PNGs: assets/images/<currencyKey>.png
-    // (If you haven't added all of these yet, add them later — no crashes.)
-    return 'assets/images/${key}.png';
+    switch (this) {
+      case MoneyCurrency.cod:
+        return 'assets/images/cod.png';
+      case MoneyCurrency.plates:
+        return 'assets/images/plate.png';
+      case MoneyCurrency.bells:
+        return 'assets/images/bell.png';
+      case MoneyCurrency.film:
+        return 'assets/images/film.png';
+      case MoneyCurrency.diamonds:
+        return 'assets/images/diamond.png';
+      case MoneyCurrency.buttons:
+        return 'assets/images/buttons.png';
+    }
   }
 }
 

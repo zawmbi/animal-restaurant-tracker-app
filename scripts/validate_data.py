@@ -1,4 +1,4 @@
-import json, glob, os, collections
+import json, glob, os, collections, sys
 R = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets', 'data') + os.sep
 
 def _facility_index():
@@ -78,3 +78,44 @@ print('  embedded ids subset of mementos.json:', all(m_ in reg for _,m_ in emb))
 print('  customerId matches on all embedded:', all(reg[m_].get('customerId')==c_ for c_,m_ in emb))
 print('  no memento id on more than one customer:', all(len(v)==1 for v in own.values()))
 print('  duplicate ids in mementos.json:', [k for k,v in collections.Counter(m['id'] for m in mem).items() if v>1])
+
+# --- CI gate ---------------------------------------------------------
+# Known-dangling references that are accepted for now. Anything outside
+# this allow-list fails the run so a bad scrape cannot land silently.
+# Shrink this dict as the underlying data gets fixed; never grow it to
+# make a run pass.
+KNOWN_DANGLING = {
+    # Facilities the wiki references but has no page for yet.
+    'customer.req.facilities': {'star_rating_board', 'halloween_decorations'},
+    # Legacy staff wearable aliases kept so old saves still resolve.
+    'staff.wearable': {
+        'sunflower_memento', 'witch_hat', 'crab_memento', 'sleepy_little_bear',
+    },
+}
+
+_failures = []
+for _k, _v in samples.items():
+    _unexpected = set(_v) - KNOWN_DANGLING.get(_k, set())
+    if _unexpected:
+        _failures.append((_k, sorted(_unexpected)))
+
+_invariants = [
+    ('embedded ids subset of registry', all(m_ in reg for _, m_ in emb)),
+    ('customerId matches on all embedded',
+     all(reg[m_].get('customerId') == c_ for c_, m_ in emb)),
+    ('no memento id on more than one customer',
+     all(len(v) == 1 for v in own.values())),
+    ('no duplicate ids in mementos.json',
+     not [k for k, v in collections.Counter(m['id'] for m in mem).items()
+          if v > 1]),
+]
+_broken = [name for name, ok in _invariants if not ok]
+
+print('--- ci gate ---')
+if _failures or _broken:
+    for _k, _v in _failures:
+        print(f'  FAIL unexpected dangling {_k}: {_v}')
+    for _name in _broken:
+        print(f'  FAIL invariant broken: {_name}')
+    sys.exit(1)
+print('  ok')
