@@ -46,25 +46,19 @@ class EarningsCalculator {
             }
             break;
 
+          // Everything below contributes no currency to the earnings bag.
+          // These used to throw UnimplementedError, which crashed the whole
+          // calculation as soon as the player owned a gachapon, a stove or a
+          // signature store upgrade. Read tip cap via sumTipCapIncrease.
           case FacilityEffectType.tipCapIncrease:
           case FacilityEffectType.ratingBonus:
-            // Non-monetary for earnings; ignored here.
-            break;
           case FacilityEffectType.gachaDraws:
-            // TODO: Handle this case.
-            throw UnimplementedError();
           case FacilityEffectType.gachaLevel:
-            // TODO: Handle this case.
-            throw UnimplementedError();
           case FacilityEffectType.cookingEfficiencyBonus:
-            // TODO: Handle this case.
-            throw UnimplementedError();
           case FacilityEffectType.friendLimitIncrease:
-            // TODO: Handle this case.
-            throw UnimplementedError();
           case FacilityEffectType.storageIncrease:
-            // TODO: Handle this case.
-            throw UnimplementedError();
+          case FacilityEffectType.ordersIncrease:
+            break;
         }
       }
     }
