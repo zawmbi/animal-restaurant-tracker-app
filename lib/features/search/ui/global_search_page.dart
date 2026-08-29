@@ -205,10 +205,9 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
 
       case HitType.letter:
       case HitType.memento:
+      case HitType.battlePass:
         // No dedicated screens yet; toggling via checkbox is the primary action.
         break;
-      case HitType.battlePass:
-        return Icons.workspace_premium;
     }
   }
 }
