@@ -3,6 +3,7 @@ import '../../shared/data/unlocked_store.dart';
 import '../../shared/json_loader.dart';
 import '../data/facilities_repository.dart';
 import '../model/facility.dart';
+import '../../shared/widgets/search_field.dart';
 
 class FacilitiesPage extends StatefulWidget {
   const FacilitiesPage({super.key});
@@ -26,6 +27,7 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
 
   FacilityArea _selectedScene = FacilityArea.restaurant;
   String? _selectedTheme;
+  String _query = '';
 
   // Takeout sub-tab
   bool _showSignatureStore = false;
@@ -57,6 +59,10 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
       appBar: AppBar(title: const Text('Facilities')),
       body: Column(
         children: [
+          SearchField(
+            hintText: 'Search facilities…',
+            onChanged: (v) => setState(() => _query = v),
+          ),
           _ScenesBar(
             scenes: _scenes,
             selected: _selectedScene,
@@ -135,7 +141,10 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                       (f.series ?? '') != _selectedTheme) {
                     return false;
                   }
-                  return true;
+                  return matchesQuery(
+                    _query,
+                    '${f.name} ${f.id} ${f.group} ${f.series ?? ''}',
+                  );
                 }).toList();
 
                 final groups =

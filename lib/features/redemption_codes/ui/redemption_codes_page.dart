@@ -6,6 +6,7 @@ import '../../shared/json_loader.dart';
 import '../../shared/widgets/check_all_button.dart';
 import '../../mementos/data/mementos_index.dart';
 import '../../mementos/ui/mementos_detail_page.dart';
+import '../../shared/widgets/search_field.dart';
 
 class RedemptionCode {
   final String code;
@@ -114,6 +115,8 @@ class RedemptionCodesPage extends StatefulWidget {
 }
 
 class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
+  String _query = '';
+
   final store = UnlockedStore.instance;
   late Future<List<_CodeWithMemento>> _future;
 
@@ -317,11 +320,16 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
               final activeCount =
                   allItems.where((it) => it.code.isCurrentlyValid).length;
 
-              final items = _activeOnly
-                  ? allItems
-                      .where((it) => it.code.isCurrentlyValid)
-                      .toList()
-                  : allItems;
+              // Copy before sorting: _sortItems mutates in place, and
+              // allItems is the shared source list.
+              final items = allItems
+                  .where((it) =>
+                      (!_activeOnly || it.code.isCurrentlyValid) &&
+                      matchesQuery(
+                        _query,
+                        '${it.code.code} ${it.code.reason} ${it.code.gift}',
+                      ))
+                  .toList();
 
               // apply sort
               _sortItems(items);
@@ -338,6 +346,10 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
 
               return Column(
                 children: [
+                  SearchField(
+                    hintText: 'Search codes, rewards, or reason…',
+                    onChanged: (v) => setState(() => _query = v),
+                  ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
                     child: Row(

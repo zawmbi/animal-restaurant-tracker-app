@@ -4,6 +4,8 @@ import '../../shared/data/unlocked_store.dart';
 import '../data/customers_repository.dart';
 import '../model/customer.dart';
 import 'customer_detail_page.dart';
+import '../../shared/widgets/search_field.dart';
+import '../../shared/utils/display_names.dart';
 
 enum BoothSort {
   /// Source order, i.e. the wiki's order, which is the game's order.
@@ -27,6 +29,7 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
   final store = UnlockedStore.instance;
 
   BoothSort _sort = BoothSort.wikiOrder;
+  String _query = '';
   String? _fishFilterId;
 
   static const _regularFish = [
@@ -59,6 +62,12 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
   void initState() {
     super.initState();
     store.registerType(_bucketCustomers);
+
+    // Warm the fish name map so searching by fish name works on first
+    // keystroke; nameFor falls back to prettifying the id either way.
+    FishNames.instance.load().then((_) {
+      if (mounted) setState(() {});
+    }).catchError((_) => <String, String>{});
   }
 
   bool _isUnlocked(Customer c) => store.isUnlocked(_bucketCustomers, c.id);
@@ -88,6 +97,19 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
   int _stayMax(Customer c) => c.boothOwner?.stayDurationMinutes?.max ?? 0;
 
   List<Customer> _applyFilters(List<Customer> list) {
+    if (_query.trim().isNotEmpty) {
+      // Searchable by fish name too, since that is how a player thinks
+      // about which booth owner they are hunting for.
+      list = list.where((c) {
+        final fishNames = (c.boothOwner?.requiredFishIds ?? const <String>[])
+            .map(FishNames.instance.nameFor)
+            .join(' ');
+        return matchesQuery(
+          _query,
+          '${c.name} ${c.id} ${c.customerDescription} $fishNames',
+        );
+      }).toList();
+    }
     var out = list;
 
     if (_fishFilterId != null) {
@@ -244,6 +266,10 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
 
           return Column(
             children: [
+              SearchField(
+                hintText: 'Search booth owners…',
+                onChanged: (v) => setState(() => _query = v),
+              ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
                 child: Row(

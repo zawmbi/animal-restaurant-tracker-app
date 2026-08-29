@@ -7,6 +7,7 @@ import '../data/dishes_repository.dart';
 import '../model/dish.dart';
 import 'dish_detail_page.dart';
 import 'dish_leaderboard_page.dart';
+import '../../shared/widgets/search_field.dart';
 
 class DishesPage extends StatefulWidget {
   const DishesPage({super.key});
@@ -15,6 +16,8 @@ class DishesPage extends StatefulWidget {
 }
 
 class _DishesPageState extends State<DishesPage> {
+  String _query = '';
+
   final repo = DishesRepository.instance;
   final store = UnlockedStore.instance; // bucket: 'dish'
 
@@ -87,7 +90,12 @@ class _DishesPageState extends State<DishesPage> {
             );
           }
 
-          final dishes = snap.data ?? const <Dish>[];
+          final dishes = (snap.data ?? const <Dish>[])
+              .where((d) => matchesQuery(
+                    _query,
+                    '${d.name} ${d.id} ${d.description} ${d.sections.join(' ')}',
+                  ))
+              .toList();
 
           final freshlyMade = dishes.where(_isFreshlyMade).toList();
           final buffet = dishes.where(_isBuffet).toList();
@@ -107,6 +115,10 @@ class _DishesPageState extends State<DishesPage> {
               return SingleChildScrollView(
                 child: Column(
                   children: [
+                    SearchField(
+                      hintText: 'Search recipes…',
+                      onChanged: (v) => setState(() => _query = v),
+                    ),
                     // Unlocked counts header
                     Container(
                       margin: const EdgeInsets.all(12),

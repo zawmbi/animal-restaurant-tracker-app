@@ -4,6 +4,7 @@ import '../../shared/data/unlocked_store.dart';
 import '../data/movies_repository.dart';
 import '../model/movie.dart';
 import 'movies_detail_page.dart';
+import '../../shared/widgets/search_field.dart';
 
 class MoviesPage extends StatefulWidget {
   const MoviesPage({super.key});
@@ -14,6 +15,7 @@ class MoviesPage extends StatefulWidget {
 
 class _MoviesPageState extends State<MoviesPage> {
   static const String _bucket = 'movie_act';
+  String _query = '';
   final store = UnlockedStore.instance;
 
   @override
@@ -84,12 +86,20 @@ class _MoviesPageState extends State<MoviesPage> {
             return const Center(child: CircularProgressIndicator());
           }
 
-          final movies = snap.data!;
+          final movies = snap.data!
+              .where((m) => matchesQuery(_query, '${m.name} ${m.id}'))
+              .toList();
 
           return AnimatedBuilder(
             animation: store,
             builder: (context, _) {
-              return ListView.separated(
+              return Column(children: [
+                SearchField(
+                  hintText: 'Search movies…',
+                  onChanged: (v) => setState(() => _query = v),
+                ),
+                Expanded(
+                  child: ListView.separated(
                 padding: const EdgeInsets.all(12),
                 itemCount: movies.length,
                 separatorBuilder: (_, __) => const SizedBox(height: 8),
@@ -138,7 +148,9 @@ class _MoviesPageState extends State<MoviesPage> {
                     ),
                   );
                 },
-              );
+                  ),
+                ),
+              ]);
             },
           );
         },

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../shared/data/unlocked_store.dart';
+import '../../shared/widgets/search_field.dart';
 import '../data/customers_repository.dart';
 import '../model/customer.dart';
 import 'customer_detail_page.dart';
@@ -91,6 +92,7 @@ class _CustomersGridState extends State<_CustomersGrid> {
   static const String _bucketCustomers = 'customers';
 
   CustomerSort _sort = CustomerSort.wikiOrder;
+  String _query = '';
 
   @override
   void initState() {
@@ -206,12 +208,25 @@ class _CustomersGridState extends State<_CustomersGrid> {
         return AnimatedBuilder(
           animation: store,
           builder: (context, _) {
-            final sorted = _applySort(customers);
+            final matching = _query.trim().isEmpty
+                ? customers
+                : customers
+                    .where((c) => matchesQuery(
+                          _query,
+                          '${c.name} ${c.id} ${c.customerDescription} '
+                          '${c.tags.join(' ')} ${c.season ?? ''}',
+                        ))
+                    .toList();
+            final sorted = _applySort(matching);
             final unlocked = _unlockedCount(sorted);
             final total = sorted.length;
 
             return Column(
               children: [
+                SearchField(
+                  hintText: 'Search customers…',
+                  onChanged: (v) => setState(() => _query = v),
+                ),
                 // ---- Count header + sort button ----
                 Padding(
                   padding: const EdgeInsets.fromLTRB(16, 12, 4, 8),

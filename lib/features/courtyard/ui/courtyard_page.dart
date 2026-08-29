@@ -4,6 +4,7 @@ import '../data/courtyard_facilities.dart';
 import '../data/courtyard_repository.dart';
 import 'courtyard_facility_detail_page.dart';
 import 'package:animal_restaurant_tracker/features/shared/data/unlocked_store.dart';
+import '../../shared/widgets/search_field.dart';
 
 class CourtyardPage extends StatefulWidget {
   const CourtyardPage({super.key});
@@ -19,6 +20,7 @@ class _CourtyardPageState extends State<CourtyardPage> {
 
   final _store = UnlockedStore.instance;
   static const _bucket = 'courtyard_facility_purchased';
+  String _query = '';
 
   @override
   void initState() {
@@ -58,13 +60,23 @@ class _CourtyardPageState extends State<CourtyardPage> {
 
           final seriesOptions = _buildSeriesOptions(repo);
 
-          final facilities = repo.byGroupAndSeries(
-            _selectedGroup!,
-            series: _selectedSeries == 'All' ? null : _selectedSeries,
-          );
+          final facilities = repo
+              .byGroupAndSeries(
+                _selectedGroup!,
+                series: _selectedSeries == 'All' ? null : _selectedSeries,
+              )
+              .where((f) => matchesQuery(
+                    _query,
+                    '${f.name} ${f.id} ${f.group} ${f.series ?? ''}',
+                  ))
+              .toList();
 
           return Column(
             children: [
+              SearchField(
+                hintText: 'Search courtyard facilities…',
+                onChanged: (v) => setState(() => _query = v),
+              ),
               // Top group tabs (Friends Board, Speaker, etc.)
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,

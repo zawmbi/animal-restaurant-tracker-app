@@ -7,6 +7,7 @@ import '../../search/ui/global_search_page.dart';
 import '../data/letters_repository.dart';
 import '../model/letter.dart';
 import 'letter_detail_page.dart';
+import '../../shared/widgets/search_field.dart';
 
 class LettersPage extends StatefulWidget {
   const LettersPage({super.key});
@@ -19,6 +20,7 @@ class _LettersPageState extends State<LettersPage> {
   final store = UnlockedStore.instance;
 
   static const String _bucketLetter = 'letter';
+  String _query = '';
 
   Color _ownedFill(BuildContext context) => Colors.green.withOpacity(0.18);
 
@@ -50,7 +52,14 @@ class _LettersPageState extends State<LettersPage> {
           if (!snap.hasData) {
             return const Center(child: CircularProgressIndicator());
           }
-          final list = snap.data!;
+          final all = snap.data!;
+          final list = all
+              .where((l) => matchesQuery(
+                    _query,
+                    '${l.name} ${l.id} ${l.series ?? ''} '
+                    '${l.description ?? ''} ${l.unlockRequirement ?? ''}',
+                  ))
+              .toList();
 
           return AnimatedBuilder(
             animation: store,
@@ -61,6 +70,10 @@ class _LettersPageState extends State<LettersPage> {
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  SearchField(
+                    hintText: 'Search letters…',
+                    onChanged: (v) => setState(() => _query = v),
+                  ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
                     child: Row(
