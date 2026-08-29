@@ -91,7 +91,15 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
     final superKey = _claimKey(phaseId: phaseId, track: 'super', exp: exp);
 
     store.setUnlocked('battle_pass_claimed', normalKey, value);
-    store.setUnlocked('battle_pass_claimed', superKey, value);
+
+    // Only mark the Super track when the player actually owns premium.
+    // Writing it unconditionally meant a free player ticking a tier also
+    // claimed a Super reward they cannot reach, inflating completion.
+    // Clearing always writes both, so a player who owned premium and then
+    // switched the toggle off does not strand claimed Super keys.
+    if (_hasPremium || !value) {
+      store.setUnlocked('battle_pass_claimed', superKey, value);
+    }
   }
 
   bool _tierClaimed({

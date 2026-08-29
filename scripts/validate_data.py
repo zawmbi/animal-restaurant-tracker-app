@@ -32,9 +32,16 @@ fac=_facility_index(); fids=set(fac.values())
 flowers={x['id'] for x in json.load(open(R+'flowers.json'))}
 
 prob=collections.Counter(); samples=collections.defaultdict(list)
+# Every distinct failing value, not just the first few. The CI gate below
+# checks against this: gating on `samples` (capped at 6 per key) meant
+# hundreds of dangling refs could pass as long as the first 6 happened to
+# be allow-listed.
+allvals=collections.defaultdict(set)
+
 def chk(cond, key, val):
     if not cond:
         prob[key]+=1
+        allvals[key].add(val)
         if len(samples[key])<6: samples[key].append(val)
 
 for m in mem:
@@ -98,8 +105,8 @@ KNOWN_DANGLING = {
 }
 
 _failures = []
-for _k, _v in samples.items():
-    _unexpected = set(_v) - KNOWN_DANGLING.get(_k, set())
+for _k, _v in allvals.items():
+    _unexpected = _v - KNOWN_DANGLING.get(_k, set())
     if _unexpected:
         _failures.append((_k, sorted(_unexpected)))
 

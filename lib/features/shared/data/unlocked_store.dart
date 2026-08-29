@@ -74,6 +74,33 @@ class UnlockedStore extends ChangeNotifier {
 
   bool get isInitialized => _inited;
 
+  /// The buckets loaded from storage on startup.
+  ///
+  /// Exposed so a test can assert that every bucket the app writes is listed
+  /// here. A bucket missing from this list is not read back after a relaunch,
+  /// which is how real tracked progress was silently lost before.
+  @visibleForTesting
+  static List<String> get startupBuckets =>
+      List<String>.unmodifiable(_defaultTypes);
+
+  /// Drops all in-memory state so the next [init] re-reads SharedPreferences.
+  ///
+  /// Test-only. This is the only way to exercise the "force-quit and relaunch"
+  /// path, because [init] memoises its future and the store is a singleton.
+  /// It deliberately does NOT touch SharedPreferences, so a test can write
+  /// ids, reset, re-init and assert the ids came back from storage.
+  @visibleForTesting
+  void debugResetForTest() {
+    _debounceUpload?.cancel();
+    _debounceUpload = null;
+    _sets.clear();
+    _inited = false;
+    _initFuture = null;
+    _user = null;
+    _ns = 'guest';
+    _cloudSyncInProgress = false;
+  }
+
   String get activeNamespace => _ns;
 
   Future<void> init({List<String> extraTypes = const []}) {

@@ -65,6 +65,16 @@ class CourtyardRepository {
 
   /// All groups we care about on the Courtyard page (top tabs),
   /// in a fixed order to match your screenshot + Pet Houses / Pet Paradise.
+  ///
+  /// Every name here must match a `group` value in
+  /// courtyard_facilities.json exactly. Four of them used to be near
+  /// misses -- 'Short Fence' vs 'Short Fences', 'Wall Decor' vs
+  /// 'Decor (Wall)', 'Floor Decor' vs 'Decor (Floor)' -- and
+  /// [availableGroups] silently drops any name the data does not
+  /// contain, so 808 of the 1,336 courtyard facilities had no tab and
+  /// could never be checked off. The bug hid because each near-miss
+  /// name does exist on exactly 2 rows, so the tabs looked populated.
+  /// Both spellings are listed so neither set is lost.
   static const List<String> orderedGroups = [
     'Friends Board',
     'Speaker',
@@ -73,13 +83,18 @@ class CourtyardRepository {
     'Door',
     'Window',
     'Table',
+    'Gathering Long Table',
     'Stool',
+    'Short Fences',
     'Short Fence',
+    'Long Fences',
     'Long Fence',
+    'Decor (Wall)',
     'Wall Decor',
     'Plants',
     'Table Decor',
     'Carpet',
+    'Decor (Floor)',
     'Floor Decor',
     'Certificate of Honor',
     'Pet Houses',
