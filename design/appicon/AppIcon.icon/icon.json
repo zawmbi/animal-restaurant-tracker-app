@@ -1,0 +1,37 @@
+{
+  "fill" : {
+    "automatic-gradient" : "srgb:0.53333,0.69020,0.78824,1.00000"
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "image-name" : "v2-4-hat.svg",
+          "name" : "v2-4-hat"
+        },
+        {
+          "image-name" : "v2-3-cat.svg",
+          "name" : "v2-3-cat"
+        },
+        {
+          "image-name" : "v2-2-plate.svg",
+          "name" : "v2-2-plate"
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}
