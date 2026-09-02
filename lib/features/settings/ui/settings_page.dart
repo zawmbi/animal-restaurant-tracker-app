@@ -3,7 +3,9 @@
 import 'dart:convert';
 
 import 'package:animal_restaurant_tracker/main.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:animal_restaurant_tracker/features/auth/data/auth_service.dart';
 import 'package:animal_restaurant_tracker/features/shared/data/unlocked_store.dart';
 import 'package:animal_restaurant_tracker/features/timers/data/timer_service.dart';
 
@@ -85,6 +87,55 @@ class _SettingsPageState extends State<SettingsPage> {
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('All data has been wiped.')),
     );
+  }
+
+  Future<void> _confirmAndDeleteAccount(BuildContext context) async {
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (ctx) {
+        return AlertDialog(
+          title: const Text('Delete your account?'),
+          content: const Text(
+            'This permanently deletes your account and the progress saved to '
+            'it on our servers.\n\n'
+            'This cannot be undone. Are you sure you want to continue?',
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(ctx).pop(false),
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () => Navigator.of(ctx).pop(true),
+              style: TextButton.styleFrom(foregroundColor: Colors.red),
+              child: const Text('Yes, delete my account'),
+            ),
+          ],
+        );
+      },
+    );
+
+    if (confirmed != true) return;
+
+    try {
+      await AuthService.instance.deleteAccount();
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Your account has been deleted.')),
+      );
+    } on FirebaseAuthException catch (e) {
+      if (!mounted) return;
+      final message = e.code == 'requires-recent-login'
+          ? 'For your security, please sign out and sign in again, then '
+              'retry deleting your account.'
+          : 'Could not delete your account: ${e.message ?? e.code}';
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Could not delete your account: $e')),
+      );
+    }
   }
 
   void _openSyncedVersions() {
@@ -236,6 +287,25 @@ class _SettingsPageState extends State<SettingsPage> {
                       ),
                       onPressed: () => _confirmAndWipe(context),
                       child: const Text('Wipe all data'),
+                    ),
+                  ),
+                  const Divider(height: 32),
+                  Text(
+                    'Delete your account. This removes your sign-in and the '
+                    'progress saved to it from our servers. This action cannot '
+                    'be undone.',
+                    style: Theme.of(context).textTheme.bodySmall,
+                  ),
+                  const SizedBox(height: 12),
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: OutlinedButton(
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: Colors.red,
+                        side: const BorderSide(color: Colors.red),
+                      ),
+                      onPressed: () => _confirmAndDeleteAccount(context),
+                      child: const Text('Delete account'),
                     ),
                   ),
                 ],

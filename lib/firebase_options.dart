@@ -59,11 +59,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyB_dc_bhphRuYGQqVIpKFppM0hXBdYDiFM',
-    appId: '1:174067290396:ios:9d65a4a394981871c66ad9',
+    appId: '1:174067290396:ios:65223b309b6cd417c66ad9',
     messagingSenderId: '174067290396',
     projectId: 'ar-progress-tracker-1b3d8',
     storageBucket: 'ar-progress-tracker-1b3d8.firebasestorage.app',
-    iosBundleId: 'com.example.animalRestaurantTracker',
+    iosBundleId: 'com.lindamansour.animalRestaurantTracker',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(

@@ -47,6 +47,8 @@ dependencies:
   cloud_firestore: ^5.4.4
   google_sign_in: ^6.2.2
   sign_in_with_apple: ^6.1.2
+  # Hashes the Sign in with Apple nonce (see auth_service.dart).
+  crypto: ^3.0.6
 
 
 

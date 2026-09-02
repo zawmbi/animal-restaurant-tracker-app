@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>174067290396-a4vtk189ef41dqclf35v0922lgeg5nbk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.174067290396-a4vtk189ef41dqclf35v0922lgeg5nbk</string>
 	<key>API_KEY</key>
 	<string>AIzaSyB_dc_bhphRuYGQqVIpKFppM0hXBdYDiFM</string>
 	<key>GCM_SENDER_ID</key>
@@ -9,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.animalRestaurantTracker</string>
+	<string>com.lindamansour.animalRestaurantTracker</string>
 	<key>PROJECT_ID</key>
 	<string>ar-progress-tracker-1b3d8</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:174067290396:ios:9d65a4a394981871c66ad9</string>
+	<string>1:174067290396:ios:65223b309b6cd417c66ad9</string>
 </dict>
 </plist>
