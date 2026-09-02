@@ -1,2 +1,6 @@
 #include "../../Flutter/Flutter-Release.xcconfig"
 #include "Warnings.xcconfig"
+
+  
+DEVELOPMENT_TEAM=ZQUQB39QGN
+CODE_SIGN_STYLE=Automatic
