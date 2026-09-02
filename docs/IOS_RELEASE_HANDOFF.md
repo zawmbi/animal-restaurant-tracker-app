@@ -18,7 +18,8 @@ Claims that keep resurfacing and are wrong:
 | Claim | Reality |
 |---|---|
 | "Enable Anonymous in Firebase or you can't get past the login screen" | Anonymous, Email/Password, Google and Apple are **all already enabled**. Checked in the console directly, twice. |
-| "The app icon is the Flutter placeholder" | Replaced in `c5856a9`. Check the pixels, not your memory. |
+| "The app icon is the Flutter placeholder" | Replaced in `c5856a9`, redrawn in `b3a5bcd`. Check the pixels, not your memory. |
+| "The appiconset PNGs have baked-in shadows, that violates Apple's layered-icon guidance" | Intentional, see **App icon** below. The rule applies to `.icon` layers, not to a classic bitmap set. |
 | "pubspec changed, likely flutter_launcher_icons" | It was `crypto`, for the Apple nonce. `flutter_launcher_icons` is not in this project. |
 | "The nonce is the only way past the login screen" | The nonce affects Apple sign-in only. "Continue without an account" calls `signInAnonymously()` and never touches it. |
 
@@ -66,8 +67,35 @@ created and confirmed in the Runner target's Resources build phase (clears
 ITMS-91053); Apple Sign In nonce implemented properly
 (`sha256(rawNonce)` to Apple, `rawNonce` to Firebase); account deletion in
 Settings deleting `users/{uid}` before the auth user (guideline 5.1.1(v));
-real launch images replacing three 68-byte transparent pixels; custom app icon
-in all 15 sizes, alpha-free.
+real launch images replacing three 68-byte transparent pixels.
+
+### App icon
+
+Current artwork is `b3a5bcd`: a round cream cat in a chef's hat on a blue
+ground. No plate, no outlines, nothing pointed. Source lives in
+`design/appicon/` as three SVG layers (`v8-2-ears`, `v8-3-head`, `v8-4-hat`)
+plus the Icon Composer document `AppIcon.icon`.
+
+**The two icon formats are deliberately built differently:**
+
+| Target | Contains | Why |
+|---|---|---|
+| `design/appicon/AppIcon.icon` | flat layers, no shadows | iOS 26 generates shadow, specular and blur per layer. Baking your own doubles them. |
+| `ios/Runner/Assets.xcassets/AppIcon.appiconset` | 15 PNGs **with depth baked in** | A classic bitmap set gets no system treatment. Flat here would look flat on every iOS before 26. |
+
+Do not "fix" the appiconset by flattening it, and do not add shadows to the
+`.icon` SVGs. To change the artwork, edit the three layer SVGs and re-run the
+generation; the Icon Composer document already references them by path.
+
+App icons must have no alpha channel — App Store Connect rejects them. Verify
+after any regeneration:
+
+```bash
+python3 -c "
+from PIL import Image; import os
+d='ios/Runner/Assets.xcassets/AppIcon.appiconset'
+print([f for f in os.listdir(d) if f.endswith('.png') and Image.open(f'{d}/{f}').mode!='RGB'] or 'all clean')"
+```
 
 **The last IPA on disk is stale.** Built 1 Sep 01:03 as `1.0.0+1`, under the
 *old* bundle ID and the *old* placeholder icon. Do not upload it.
