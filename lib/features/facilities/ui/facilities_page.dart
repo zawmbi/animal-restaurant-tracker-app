@@ -89,10 +89,7 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
               child: Align(
                 alignment: Alignment.centerLeft,
                 child: ToggleButtons(
-                  isSelected: [
-                    !_showSignatureStore,
-                    _showSignatureStore,
-                  ],
+                  isSelected: [!_showSignatureStore, _showSignatureStore],
                   onPressed: (i) {
                     setState(() {
                       _showSignatureStore = i == 1;
@@ -147,8 +144,10 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                   );
                 }).toList();
 
-                final groups =
-                    _groupBy<String, Facility>(filtered, (f) => f.group);
+                final groups = _groupBy<String, Facility>(
+                  filtered,
+                  (f) => f.group,
+                );
 
                 return AnimatedBuilder(
                   animation: store,
@@ -165,8 +164,12 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                           child: (groups.isEmpty)
                               ? const Center(child: Text('No facilities here!'))
                               : ListView.separated(
-                                  padding:
-                                      const EdgeInsets.fromLTRB(8, 0, 8, 16),
+                                  padding: const EdgeInsets.fromLTRB(
+                                    8,
+                                    0,
+                                    8,
+                                    16,
+                                  ),
                                   itemCount: groups.length,
                                   separatorBuilder: (_, __) =>
                                       const SizedBox(height: 8),
@@ -174,10 +177,14 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                                     final entry = groups[i];
                                     final items = entry.value
                                       ..sort((a, b) {
-                                        final ua =
-                                            store.isUnlocked('facility', a.id);
-                                        final ub =
-                                            store.isUnlocked('facility', b.id);
+                                        final ua = store.isUnlocked(
+                                          'facility',
+                                          a.id,
+                                        );
+                                        final ub = store.isUnlocked(
+                                          'facility',
+                                          b.id,
+                                        );
                                         if (ua != ub) {
                                           return ua ? -1 : 1;
                                         }
@@ -219,10 +226,12 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
     final order = <K>[];
     for (final v in list) {
       final k = keyFn(v);
-      map.putIfAbsent(k, () {
-        order.add(k);
-        return <V>[];
-      }).add(v);
+      map
+          .putIfAbsent(k, () {
+            order.add(k);
+            return <V>[];
+          })
+          .add(v);
     }
     return order.map((k) => MapEntry(k, map[k]!)).toList();
   }
@@ -231,8 +240,11 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
 // ------- UI bits (unchanged labels for enum -> title case) -------
 
 class _ScenesBar extends StatelessWidget {
-  const _ScenesBar(
-      {required this.scenes, required this.selected, required this.onSelect});
+  const _ScenesBar({
+    required this.scenes,
+    required this.selected,
+    required this.onSelect,
+  });
   final List<FacilityArea> scenes;
   final FacilityArea selected;
   final ValueChanged<FacilityArea> onSelect;
@@ -266,8 +278,11 @@ class _ScenesBar extends StatelessWidget {
 }
 
 class _ThemeRail extends StatelessWidget {
-  const _ThemeRail(
-      {required this.themes, required this.selected, required this.onSelect});
+  const _ThemeRail({
+    required this.themes,
+    required this.selected,
+    required this.onSelect,
+  });
   final List<String> themes;
   final String? selected;
   final ValueChanged<String?> onSelect;
@@ -280,8 +295,10 @@ class _ThemeRail extends StatelessWidget {
         children: [
           ListTile(
             dense: true,
-            title: const Text('All',
-                style: TextStyle(fontWeight: FontWeight.w600)),
+            title: const Text(
+              'All',
+              style: TextStyle(fontWeight: FontWeight.w600),
+            ),
             selected: selected == null,
             onTap: () => onSelect(null),
           ),
@@ -308,8 +325,11 @@ class _ThemeRail extends StatelessWidget {
 }
 
 class _FacilityGroupSection extends StatelessWidget {
-  const _FacilityGroupSection(
-      {required this.title, required this.items, required this.store});
+  const _FacilityGroupSection({
+    required this.title,
+    required this.items,
+    required this.store,
+  });
   final String title;
   final List<Facility> items;
   final UnlockedStore store;
@@ -325,8 +345,10 @@ class _FacilityGroupSection extends StatelessWidget {
         title: Row(
           children: [
             Expanded(
-              child: Text(title,
-                  style: const TextStyle(fontWeight: FontWeight.w600)),
+              child: Text(
+                title,
+                style: const TextStyle(fontWeight: FontWeight.w600),
+              ),
             ),
             TextButton(
               onPressed: () =>
@@ -340,15 +362,17 @@ class _FacilityGroupSection extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
             child: LayoutBuilder(
               builder: (context, c) {
-                final crossAxisCount = (c.maxWidth / 160).floor().clamp(1, 6);
+                final crossAxisCount = (c.maxWidth / 200).floor().clamp(1, 4);
                 return GridView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: crossAxisCount,
-                    crossAxisSpacing: 12,
-                    mainAxisSpacing: 12,
-                    childAspectRatio: 1.0,
+                    crossAxisSpacing: 8,
+                    mainAxisSpacing: 8,
+                    // A tile holds only a name and a checkbox, so give it a
+                    // fixed row height instead of forcing it square.
+                    mainAxisExtent: 56,
                   ),
                   itemCount: items.length,
                   itemBuilder: (context, i) {
@@ -356,6 +380,7 @@ class _FacilityGroupSection extends StatelessWidget {
                     final checked = store.isUnlocked('facility', f.id);
                     return Card(
                       clipBehavior: Clip.antiAlias,
+                      margin: EdgeInsets.zero,
                       child: InkWell(
                         onTap: () {
                           Navigator.of(context).push(
@@ -365,37 +390,31 @@ class _FacilityGroupSection extends StatelessWidget {
                             ),
                           );
                         },
-                        child: Stack(
-                          children: [
-                            Positioned.fill(
-                              child: Padding(
-                                padding: const EdgeInsets.all(12),
-                                child: Center(
-                                  child: Text(
-                                    f.name,
-                                    textAlign: TextAlign.center,
-                                    maxLines: 3,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .titleMedium,
-                                  ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 12),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  f.name,
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: Theme.of(context).textTheme.titleSmall,
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              top: 4,
-                              right: 4,
-                              child: Transform.scale(
+                              Transform.scale(
                                 scale: 0.9,
                                 child: Checkbox(
                                   value: checked,
                                   onChanged: (v) => store.setUnlocked(
-                                      'facility', f.id, v ?? false),
+                                    'facility',
+                                    f.id,
+                                    v ?? false,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     );
@@ -456,10 +475,7 @@ class FacilityDetailPage extends StatelessWidget {
 }
 
 class _FacilityDetailBody extends StatelessWidget {
-  const _FacilityDetailBody({
-    required this.facility,
-    required this.store,
-  });
+  const _FacilityDetailBody({required this.facility, required this.store});
 
   final Facility facility;
   final UnlockedStore store;
@@ -483,10 +499,7 @@ class _FacilityDetailBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-              child: Text(
-                facility.name,
-                style: theme.textTheme.headlineSmall,
-              ),
+              child: Text(facility.name, style: theme.textTheme.headlineSmall),
             ),
             Checkbox(
               value: checked,
@@ -499,10 +512,7 @@ class _FacilityDetailBody extends StatelessWidget {
 
         if (facility.description != null &&
             facility.description!.trim().isNotEmpty)
-          Text(
-            facility.description!,
-            style: theme.textTheme.bodyMedium,
-          ),
+          Text(facility.description!, style: theme.textTheme.bodyMedium),
         const SizedBox(height: 16),
 
         Card(
@@ -522,7 +532,8 @@ class _FacilityDetailBody extends StatelessWidget {
                   context,
                   'Star Requirement',
                   _starValue(
-                    value: (facility.requiredStars != null &&
+                    value:
+                        (facility.requiredStars != null &&
                             facility.requiredStars! > 0)
                         ? facility.requiredStars!
                         : null,
@@ -552,14 +563,12 @@ class _FacilityDetailBody extends StatelessWidget {
                   const SizedBox(height: 8),
 
                   // ⭐ Rating bonus effects show star png
-                  ...facility.effects
-                      .map(
-                        (e) => Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 2),
-                          child: _effectRow(context, e),
-                        ),
-                      )
-                      ,
+                  ...facility.effects.map(
+                    (e) => Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 2),
+                      child: _effectRow(context, e),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -574,16 +583,17 @@ class _FacilityDetailBody extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Special requirements',
-                      style: theme.textTheme.titleMedium),
+                  Text(
+                    'Special requirements',
+                    style: theme.textTheme.titleMedium,
+                  ),
                   const SizedBox(height: 8),
-                  ...facility.specialRequirements!
-                      .map(
-                        (s) => Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 2),
-                          child: Text('• $s'),
-                        ),
-                      ),
+                  ...facility.specialRequirements!.map(
+                    (s) => Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 2),
+                      child: Text('• $s'),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -618,10 +628,7 @@ class _FacilityDetailBody extends StatelessWidget {
           Expanded(child: Text(label)),
           const SizedBox(width: 12),
           Flexible(
-            child: Align(
-              alignment: Alignment.centerRight,
-              child: trailing,
-            ),
+            child: Align(alignment: Alignment.centerRight, child: trailing),
           ),
         ],
       ),
@@ -694,7 +701,9 @@ class _FacilityDetailBody extends StatelessWidget {
     // Special case: rating bonus shows star icon
     if (e.type == FacilityEffectType.ratingBonus) {
       final a = (e.amount ?? 0);
-      final amountStr = a % 1 == 0 ? a.toInt().toString() : a.toStringAsFixed(2);
+      final amountStr = a % 1 == 0
+          ? a.toInt().toString()
+          : a.toStringAsFixed(2);
 
       return Row(
         crossAxisAlignment: CrossAxisAlignment.start,

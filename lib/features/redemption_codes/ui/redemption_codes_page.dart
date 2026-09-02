@@ -323,12 +323,16 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
               // Copy before sorting: _sortItems mutates in place, and
               // allItems is the shared source list.
               final items = allItems
-                  .where((it) =>
-                      (!_activeOnly || it.code.isCurrentlyValid) &&
-                      matchesQuery(
-                        _query,
-                        '${it.code.code} ${it.code.reason} ${it.code.gift}',
-                      ))
+                  .where((it) {
+                    // Match the gift text the row actually renders.
+                    final giftText =
+                        it.memento?.name ?? it.code.giftLabel ?? '';
+                    return (!_activeOnly || it.code.isCurrentlyValid) &&
+                        matchesQuery(
+                          _query,
+                          '${it.code.code} ${it.code.reason} $giftText',
+                        );
+                  })
                   .toList();
 
               // apply sort

@@ -53,10 +53,7 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
     ('goldfish', 'Goldfish'),
   ];
 
-  static const _rareFish = [
-    ('butterflyfish', 'Butterflyfish'),
-    ('ray', 'Ray'),
-  ];
+  static const _rareFish = [('butterflyfish', 'Butterflyfish'), ('ray', 'Ray')];
 
   @override
   void initState() {
@@ -65,9 +62,12 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
 
     // Warm the fish name map so searching by fish name works on first
     // keystroke; nameFor falls back to prettifying the id either way.
-    FishNames.instance.load().then((_) {
-      if (mounted) setState(() {});
-    }).catchError((_) => <String, String>{});
+    FishNames.instance
+        .load()
+        .then((_) {
+          if (mounted) setState(() {});
+        })
+        .catchError((_) => <String, String>{});
   }
 
   bool _isUnlocked(Customer c) => store.isUnlocked(_bucketCustomers, c.id);
@@ -155,8 +155,9 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
         break;
       case BoothSort.incomeBestExpected:
         out.sort((a, b) {
-          final c = _expectedIncomeEvery5Min(b)
-              .compareTo(_expectedIncomeEvery5Min(a));
+          final c = _expectedIncomeEvery5Min(
+            b,
+          ).compareTo(_expectedIncomeEvery5Min(a));
           return c != 0 ? c : bySource(a, b);
         });
         break;
@@ -226,14 +227,8 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
                 value: BoothSort.wikiOrder,
                 child: Text('Game order'),
               ),
-              PopupMenuItem(
-                value: BoothSort.nameAZ,
-                child: Text('Name (A–Z)'),
-              ),
-              PopupMenuItem(
-                value: BoothSort.nameZA,
-                child: Text('Name (Z–A)'),
-              ),
+              PopupMenuItem(value: BoothSort.nameAZ, child: Text('Name (A–Z)')),
+              PopupMenuItem(value: BoothSort.nameZA, child: Text('Name (Z–A)')),
               PopupMenuItem(
                 value: BoothSort.stayShortest,
                 child: Text('Shortest stay'),
@@ -295,7 +290,8 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
                           if (mounted) setState(() {});
                         },
                         child: Text(
-                            unlocked == total ? 'Uncheck all' : 'Check all'),
+                          unlocked == total ? 'Uncheck all' : 'Check all',
+                        ),
                       ),
                   ],
                 ),
@@ -306,53 +302,65 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
               const Divider(height: 1),
 
               Expanded(
-                child: GridView.builder(
-                  padding: const EdgeInsets.all(12),
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 3,
-                    crossAxisSpacing: 12,
-                    mainAxisSpacing: 12,
-                    childAspectRatio: 1,
-                  ),
-                  itemCount: sorted.length,
-                  itemBuilder: (context, i) {
-                    final c = sorted[i];
-                    final isUnlocked = _isUnlocked(c);
+                child: LayoutBuilder(
+                  builder: (context, cons) {
+                    final crossAxisCount = (cons.maxWidth / 200).floor().clamp(
+                      1,
+                      4,
+                    );
+                    return GridView.builder(
+                      padding: const EdgeInsets.all(12),
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: crossAxisCount,
+                        crossAxisSpacing: 8,
+                        mainAxisSpacing: 8,
+                        // A tile holds only a name, so give it a fixed row
+                        // height instead of forcing it square.
+                        mainAxisExtent: 56,
+                      ),
+                      itemCount: sorted.length,
+                      itemBuilder: (context, i) {
+                        final c = sorted[i];
+                        final isUnlocked = _isUnlocked(c);
 
-                    return InkWell(
-                      borderRadius: BorderRadius.circular(12),
-                      onTap: () async {
-                        await Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (_) => CustomerDetailPage(customer: c),
+                        return InkWell(
+                          borderRadius: BorderRadius.circular(12),
+                          onTap: () async {
+                            await Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => CustomerDetailPage(customer: c),
+                              ),
+                            );
+                            if (mounted) setState(() {});
+                          },
+                          child: AnimatedOpacity(
+                            duration: const Duration(milliseconds: 120),
+                            opacity: isUnlocked ? 1.0 : 0.55,
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(12),
+                                border: Border.all(
+                                  color: Theme.of(context).dividerColor,
+                                ),
+                                color: Theme.of(context).colorScheme.surface,
+                              ),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 12,
+                              ),
+                              child: Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  c.name,
+                                  softWrap: true,
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: Theme.of(context).textTheme.titleSmall,
+                                ),
+                              ),
+                            ),
                           ),
                         );
-                        if (mounted) setState(() {});
                       },
-                      child: AnimatedOpacity(
-                        duration: const Duration(milliseconds: 120),
-                        opacity: isUnlocked ? 1.0 : 0.55,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(
-                              color: Theme.of(context).dividerColor,
-                            ),
-                            color: Theme.of(context).colorScheme.surface,
-                          ),
-                          padding: const EdgeInsets.all(10),
-                          child: Center(
-                            child: Text(
-                              c.name,
-                              textAlign: TextAlign.center,
-                              softWrap: true,
-                              maxLines: 3,
-                              overflow: TextOverflow.ellipsis,
-                              style: Theme.of(context).textTheme.titleSmall,
-                            ),
-                          ),
-                        ),
-                      ),
                     );
                   },
                 ),

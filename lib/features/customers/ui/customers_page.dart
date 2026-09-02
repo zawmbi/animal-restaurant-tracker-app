@@ -165,9 +165,9 @@ class _CustomersGridState extends State<_CustomersGrid> {
   }
 
   Future<void> _openDetail(Customer c) async {
-    await Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => CustomerDetailPage(customer: c)),
-    );
+    await Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (_) => CustomerDetailPage(customer: c)));
     if (mounted) setState(() {}); // refresh counts + checkboxes
   }
 
@@ -211,12 +211,14 @@ class _CustomersGridState extends State<_CustomersGrid> {
             final matching = _query.trim().isEmpty
                 ? customers
                 : customers
-                    .where((c) => matchesQuery(
+                      .where(
+                        (c) => matchesQuery(
                           _query,
                           '${c.name} ${c.id} ${c.customerDescription} '
                           '${c.tags.join(' ')} ${c.season ?? ''}',
-                        ))
-                    .toList();
+                        ),
+                      )
+                      .toList();
             final sorted = _applySort(matching);
             final unlocked = _unlockedCount(sorted);
             final total = sorted.length;
@@ -246,7 +248,8 @@ class _CustomersGridState extends State<_CustomersGrid> {
                             unlocked != total,
                           ),
                           child: Text(
-                              unlocked == total ? 'Uncheck all' : 'Check all'),
+                            unlocked == total ? 'Uncheck all' : 'Check all',
+                          ),
                         ),
                       PopupMenuButton<CustomerSort>(
                         initialValue: _sort,
@@ -289,26 +292,36 @@ class _CustomersGridState extends State<_CustomersGrid> {
 
                 // ---- Grid ----
                 Expanded(
-                  child: GridView.builder(
-                    padding: const EdgeInsets.all(12),
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 3,
-                      mainAxisSpacing: 10,
-                      crossAxisSpacing: 10,
-                      childAspectRatio: 1, // square
-                    ),
-                    itemCount: sorted.length,
-                    itemBuilder: (context, i) {
-                      final c = sorted[i];
-                      final checked =
-                          store.isUnlocked(_bucketCustomers, c.id);
+                  child: LayoutBuilder(
+                    builder: (context, cons) {
+                      final crossAxisCount = (cons.maxWidth / 200)
+                          .floor()
+                          .clamp(1, 4);
+                      return GridView.builder(
+                        padding: const EdgeInsets.all(12),
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: crossAxisCount,
+                          mainAxisSpacing: 8,
+                          crossAxisSpacing: 8,
+                          // A tile holds only a name and a checkbox, so give
+                          // it a fixed row height instead of forcing it square.
+                          mainAxisExtent: 56,
+                        ),
+                        itemCount: sorted.length,
+                        itemBuilder: (context, i) {
+                          final c = sorted[i];
+                          final checked = store.isUnlocked(
+                            _bucketCustomers,
+                            c.id,
+                          );
 
-                      return _CustomerTile(
-                        name: c.name,
-                        checked: checked,
-                        onTap: () => _openDetail(c),
-                        onChanged: (v) => _toggle(c, v),
+                          return _CustomerTile(
+                            name: c.name,
+                            checked: checked,
+                            onTap: () => _openDetail(c),
+                            onChanged: (v) => _toggle(c, v),
+                          );
+                        },
                       );
                     },
                   ),
@@ -349,34 +362,24 @@ class _CustomerTile extends StatelessWidget {
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: borderColor, width: 1.2),
           ),
-          child: Stack(
-            children: [
-              // Name centered, wraps inside box
-              Positioned.fill(
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(10, 12, 10, 12),
-                  child: Center(
-                    child: Text(
-                      name,
-                      textAlign: TextAlign.center,
-                      maxLines: 3,
-                      overflow: TextOverflow.ellipsis,
-                      softWrap: true,
-                      style: const TextStyle(
-                        fontWeight: FontWeight.w700,
-                        fontSize: 14,
-                        height: 1.15,
-                      ),
+          child: Padding(
+            padding: const EdgeInsets.only(left: 12),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    name,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    softWrap: true,
+                    style: const TextStyle(
+                      fontWeight: FontWeight.w700,
+                      fontSize: 14,
+                      height: 1.15,
                     ),
                   ),
                 ),
-              ),
-
-              // Checkbox corner
-              Positioned(
-                top: 4,
-                right: 4,
-                child: SizedBox(
+                SizedBox(
                   width: 36,
                   height: 36,
                   child: Checkbox(
@@ -387,8 +390,8 @@ class _CustomerTile extends StatelessWidget {
                     },
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

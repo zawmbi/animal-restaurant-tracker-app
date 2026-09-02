@@ -77,7 +77,8 @@ class _StaffPageState extends State<StaffPage> {
           }
 
           final list = snap.data ?? const <StaffMember>[];
-          if (snap.connectionState != ConnectionState.done && snap.data == null) {
+          if (snap.connectionState != ConnectionState.done &&
+              snap.data == null) {
             return const Center(child: CircularProgressIndicator());
           }
 
@@ -95,7 +96,8 @@ class _StaffPageState extends State<StaffPage> {
           // load, which silently defeated this option.
           if (_sortMode == _StaffSortMode.alphabetical) {
             filtered.sort(
-                (a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
+              (a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()),
+            );
           }
 
           final ids = filtered.map((s) => s.id).toList();
@@ -104,8 +106,9 @@ class _StaffPageState extends State<StaffPage> {
             animation: _store,
             builder: (context, _) {
               final unlocked = ids
-                  .where((id) =>
-                      _store.isUnlocked(ProgressTypes.staffUnlocked, id))
+                  .where(
+                    (id) => _store.isUnlocked(ProgressTypes.staffUnlocked, id),
+                  )
                   .length;
 
               return Column(
@@ -142,35 +145,44 @@ class _StaffPageState extends State<StaffPage> {
                     ),
                   ),
                   Expanded(
-                    child: GridView.builder(
-                      padding: const EdgeInsets.fromLTRB(12, 8, 12, 16),
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 3, //  3 boxes per row
-                        crossAxisSpacing: 12,
-                        mainAxisSpacing: 12,
-                        childAspectRatio: 1.0,
-                      ),
-                      itemCount: filtered.length,
-                      itemBuilder: (context, i) {
-                        final s = filtered[i];
-                        return _StaffTile(
-                          name: s.name,
-                          series: s.series,
-                          unlocked: _store.isUnlocked(
-                            ProgressTypes.staffUnlocked,
-                            s.id,
+                    child: LayoutBuilder(
+                      builder: (context, cons) {
+                        final crossAxisCount = (cons.maxWidth / 200)
+                            .floor()
+                            .clamp(1, 4);
+                        return GridView.builder(
+                          padding: const EdgeInsets.fromLTRB(12, 8, 12, 16),
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: crossAxisCount,
+                            crossAxisSpacing: 8,
+                            mainAxisSpacing: 8,
+                            // Name plus an optional series subtitle in a compact
+                            // row, instead of a square tile of mostly empty space.
+                            mainAxisExtent: 76,
                           ),
-                          onUnlockedChanged: (v) => _store.setUnlocked(
-                            ProgressTypes.staffUnlocked,
-                            s.id,
-                            v,
-                          ),
-                          onTap: () => Navigator.of(context).push(
-                            MaterialPageRoute(
-                                builder: (_) => StaffDetailPage(staff: s)),
-                          ),
-                          blurb: '',
+                          itemCount: filtered.length,
+                          itemBuilder: (context, i) {
+                            final s = filtered[i];
+                            return _StaffTile(
+                              name: s.name,
+                              series: s.series,
+                              unlocked: _store.isUnlocked(
+                                ProgressTypes.staffUnlocked,
+                                s.id,
+                              ),
+                              onUnlockedChanged: (v) => _store.setUnlocked(
+                                ProgressTypes.staffUnlocked,
+                                s.id,
+                                v,
+                              ),
+                              onTap: () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (_) => StaffDetailPage(staff: s),
+                                ),
+                              ),
+                              blurb: '',
+                            );
+                          },
                         );
                       },
                     ),
@@ -204,64 +216,53 @@ class _StaffTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final subtitle = (series ?? '').trim().isNotEmpty ? series!.trim() : null;
+    // The row fits one subtitle line, so series and blurb share it.
+    final subtitle = [
+      series,
+      blurb,
+    ].map((t) => (t ?? '').trim()).where((t) => t.isNotEmpty).join(' \u2022 ');
 
     return Card(
       clipBehavior: Clip.antiAlias,
+      margin: EdgeInsets.zero,
       child: InkWell(
         onTap: onTap,
-        child: Stack(
-          children: [
-            Positioned.fill(
-              child: Padding(
-                padding: const EdgeInsets.all(10),
+        child: Padding(
+          padding: const EdgeInsets.only(left: 12),
+          child: Row(
+            children: [
+              const Icon(Icons.badge_outlined, size: 22),
+              const SizedBox(width: 10),
+              Expanded(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Icon(Icons.badge_outlined, size: 22),
-                    const SizedBox(height: 8),
                     Text(
                       name,
-                      textAlign: TextAlign.center,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.titleSmall,
                     ),
-                    if (subtitle != null) ...[
-                      const SizedBox(height: 4),
+                    if (subtitle.isNotEmpty)
                       Text(
                         subtitle,
-                        textAlign: TextAlign.center,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: Theme.of(context).textTheme.bodySmall,
                       ),
-                    ],
-                    if ((blurb ?? '').trim().isNotEmpty) ...[
-                      const SizedBox(height: 6),
-                      Text(
-                        blurb!.trim(),
-                        textAlign: TextAlign.center,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.bodySmall,
-                      ),
-                    ],
                   ],
                 ),
               ),
-            ),
-            Positioned(
-              top: 2,
-              right: 2,
-              child: Checkbox(
+              Checkbox(
                 value: unlocked,
                 materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                 visualDensity: VisualDensity.compact,
                 onChanged: (v) => onUnlockedChanged(v ?? false),
               ),
-            ),
-          ],
+              const SizedBox(width: 8),
+            ],
+          ),
         ),
       ),
     );

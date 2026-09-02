@@ -42,10 +42,7 @@ class _DishesPageState extends State<DishesPage> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          label,
-          style: const TextStyle(fontWeight: FontWeight.w500),
-        ),
+        Text(label, style: const TextStyle(fontWeight: FontWeight.w500)),
         Text(
           '$unlocked / $total',
           style: const TextStyle(fontWeight: FontWeight.bold),
@@ -69,9 +66,9 @@ class _DishesPageState extends State<DishesPage> {
           ),
           IconButton(
             icon: const Icon(Icons.search),
-            onPressed: () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (_) => const GlobalSearchPage()),
-            ),
+            onPressed: () => Navigator.of(
+              context,
+            ).push(MaterialPageRoute(builder: (_) => const GlobalSearchPage())),
           ),
         ],
       ),
@@ -91,10 +88,12 @@ class _DishesPageState extends State<DishesPage> {
           }
 
           final dishes = (snap.data ?? const <Dish>[])
-              .where((d) => matchesQuery(
-                    _query,
-                    '${d.name} ${d.id} ${d.description} ${d.sections.join(' ')}',
-                  ))
+              .where(
+                (d) => matchesQuery(
+                  _query,
+                  '${d.name} ${d.id} ${d.description} ${d.sections.join(' ')}',
+                ),
+              )
               .toList();
 
           final freshlyMade = dishes.where(_isFreshlyMade).toList();
@@ -106,11 +105,21 @@ class _DishesPageState extends State<DishesPage> {
             animation: store,
             builder: (context, _) {
               // Calculate unlocked counts for each category
-              final unlockedAll = dishes.where((d) => store.isUnlocked('dish', d.id)).length;
-              final unlockedFreshly = freshlyMade.where((d) => store.isUnlocked('dish', d.id)).length;
-              final unlockedBuffet = buffet.where((d) => store.isUnlocked('dish', d.id)).length;
-              final unlockedTakeout = takeout.where((d) => store.isUnlocked('dish', d.id)).length;
-              final unlockedVegGarden = vegGarden.where((d) => store.isUnlocked('dish', d.id)).length;
+              final unlockedAll = dishes
+                  .where((d) => store.isUnlocked('dish', d.id))
+                  .length;
+              final unlockedFreshly = freshlyMade
+                  .where((d) => store.isUnlocked('dish', d.id))
+                  .length;
+              final unlockedBuffet = buffet
+                  .where((d) => store.isUnlocked('dish', d.id))
+                  .length;
+              final unlockedTakeout = takeout
+                  .where((d) => store.isUnlocked('dish', d.id))
+                  .length;
+              final unlockedVegGarden = vegGarden
+                  .where((d) => store.isUnlocked('dish', d.id))
+                  .length;
 
               return SingleChildScrollView(
                 child: Column(
@@ -132,28 +141,63 @@ class _DishesPageState extends State<DishesPage> {
                         children: [
                           Text(
                             'Unlocked Recipes',
-                            style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
+                            style: Theme.of(context).textTheme.titleMedium
+                                ?.copyWith(fontWeight: FontWeight.bold),
                           ),
                           const SizedBox(height: 12),
                           _unlockedCountRow('All', unlockedAll, dishes.length),
                           const SizedBox(height: 8),
-                          _unlockedCountRow('Freshly Made', unlockedFreshly, freshlyMade.length),
+                          _unlockedCountRow(
+                            'Freshly Made',
+                            unlockedFreshly,
+                            freshlyMade.length,
+                          ),
                           const SizedBox(height: 8),
-                          _unlockedCountRow('Buffet', unlockedBuffet, buffet.length),
+                          _unlockedCountRow(
+                            'Buffet',
+                            unlockedBuffet,
+                            buffet.length,
+                          ),
                           const SizedBox(height: 8),
-                          _unlockedCountRow('Takeout', unlockedTakeout, takeout.length),
+                          _unlockedCountRow(
+                            'Takeout',
+                            unlockedTakeout,
+                            takeout.length,
+                          ),
                           const SizedBox(height: 8),
-                          _unlockedCountRow('Vegetable Garden', unlockedVegGarden, vegGarden.length),
+                          _unlockedCountRow(
+                            'Vegetable Garden',
+                            unlockedVegGarden,
+                            vegGarden.length,
+                          ),
                         ],
                       ),
                     ),
-                    _section(context, 'All Recipes', dishes, showEvenIfEmpty: true),
-                    _section(context, 'Freshly Made', freshlyMade, showEvenIfEmpty: true),
+                    _section(
+                      context,
+                      'All Recipes',
+                      dishes,
+                      showEvenIfEmpty: true,
+                    ),
+                    _section(
+                      context,
+                      'Freshly Made',
+                      freshlyMade,
+                      showEvenIfEmpty: true,
+                    ),
                     _section(context, 'Buffet', buffet, showEvenIfEmpty: true),
-                    _section(context, 'Takeout', takeout, showEvenIfEmpty: true),
-                    _section(context, 'Vegetable Garden Recipes', vegGarden, showEvenIfEmpty: true),
+                    _section(
+                      context,
+                      'Takeout',
+                      takeout,
+                      showEvenIfEmpty: true,
+                    ),
+                    _section(
+                      context,
+                      'Vegetable Garden Recipes',
+                      vegGarden,
+                      showEvenIfEmpty: true,
+                    ),
                   ],
                 ),
               );
@@ -164,8 +208,12 @@ class _DishesPageState extends State<DishesPage> {
     );
   }
 
-  Widget _section(BuildContext context, String title, List<Dish> list,
-      {bool showEvenIfEmpty = false}) {
+  Widget _section(
+    BuildContext context,
+    String title,
+    List<Dish> list, {
+    bool showEvenIfEmpty = false,
+  }) {
     if (list.isEmpty && !showEvenIfEmpty) return const SizedBox.shrink();
 
     final ids = list.map((d) => d.id).toList();
@@ -176,8 +224,10 @@ class _DishesPageState extends State<DishesPage> {
       title: Row(
         children: [
           Expanded(
-            child: Text(title,
-                style: const TextStyle(fontWeight: FontWeight.w600)),
+            child: Text(
+              title,
+              style: const TextStyle(fontWeight: FontWeight.w600),
+            ),
           ),
           if (ids.isNotEmpty)
             TextButton(
@@ -206,26 +256,38 @@ class _DishesPageState extends State<DishesPage> {
         else
           Padding(
             padding: const EdgeInsets.all(12),
-            child: GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-                maxCrossAxisExtent: 160,
-                crossAxisSpacing: 12,
-                mainAxisSpacing: 12,
-                childAspectRatio: 1.0,
-              ),
-              itemCount: list.length,
-              itemBuilder: (context, i) {
-                final d = list[i];
-                final checked = store.isUnlocked('dish', d.id);
-                return _RecipeTile(
-                  label: d.name,
-                  isUnlocked: checked,
-                  onCheckChanged: (v) => store.setUnlocked('dish', d.id, v),
-                  onTap: () => Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => DishDetailPage(dishId: d.id)),
+            child: LayoutBuilder(
+              builder: (context, cons) {
+                final crossAxisCount = (cons.maxWidth / 200).floor().clamp(
+                  1,
+                  4,
+                );
+                return GridView.builder(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: crossAxisCount,
+                    crossAxisSpacing: 8,
+                    mainAxisSpacing: 8,
+                    // A tile holds only a name and a checkbox, so give it a
+                    // fixed row height instead of forcing it square.
+                    mainAxisExtent: 56,
                   ),
+                  itemCount: list.length,
+                  itemBuilder: (context, i) {
+                    final d = list[i];
+                    final checked = store.isUnlocked('dish', d.id);
+                    return _RecipeTile(
+                      label: d.name,
+                      isUnlocked: checked,
+                      onCheckChanged: (v) => store.setUnlocked('dish', d.id, v),
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => DishDetailPage(dishId: d.id),
+                        ),
+                      ),
+                    );
+                  },
                 );
               },
             ),
@@ -252,39 +314,33 @@ class _RecipeTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       clipBehavior: Clip.antiAlias,
+      margin: EdgeInsets.zero,
       child: InkWell(
         onTap: onTap,
-        child: Stack(
-          children: [
-            Positioned.fill(
-              child: Padding(
-                padding: const EdgeInsets.all(12),
-                child: Center(
-                  child: AutoSizeText(
-                    label,
-                    textAlign: TextAlign.center,
-                    maxLines: 4,
-                    wrapWords: true,
-                    minFontSize: 10,
-                    stepGranularity: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: Theme.of(context).textTheme.titleMedium,
-                  ),
+        child: Padding(
+          padding: const EdgeInsets.only(left: 12),
+          child: Row(
+            children: [
+              Expanded(
+                child: AutoSizeText(
+                  label,
+                  maxLines: 2,
+                  wrapWords: true,
+                  minFontSize: 10,
+                  stepGranularity: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.titleSmall,
                 ),
               ),
-            ),
-            Positioned(
-              top: 4,
-              right: 4,
-              child: Transform.scale(
+              Transform.scale(
                 scale: 0.9,
                 child: Checkbox(
                   value: isUnlocked,
                   onChanged: (v) => onCheckChanged(v ?? false),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
