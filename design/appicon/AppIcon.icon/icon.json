@@ -1,21 +1,21 @@
 {
   "fill" : {
-    "automatic-gradient" : "srgb:0.53333,0.69020,0.78824,1.00000"
+    "automatic-gradient" : "srgb:0.50000,0.69020,0.78824,1.00000"
   },
   "groups" : [
     {
       "layers" : [
         {
-          "image-name" : "v2-4-hat.svg",
-          "name" : "v2-4-hat"
+          "image-name" : "v8-4-hat.svg",
+          "name" : "v8-4-hat"
         },
         {
-          "image-name" : "v2-3-cat.svg",
-          "name" : "v2-3-cat"
+          "image-name" : "v8-3-head.svg",
+          "name" : "v8-3-head"
         },
         {
-          "image-name" : "v2-2-plate.svg",
-          "name" : "v2-2-plate"
+          "image-name" : "v8-2-ears.svg",
+          "name" : "v8-2-ears"
         }
       ],
       "shadow" : {
