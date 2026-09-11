@@ -1,5 +1,14 @@
 # QA report
 
+> **Status, 11 Sep 2026.** Most of what this report found has since been fixed —
+> the six colliding facility ids (#4), the orphaned concert/pet shards (#2), the
+> battle pass pre-claim (#5), the redemption gift kinds (#7) and the name
+> resolution on the customer and staff pages (#12/#13/#14). `flutter test` now
+> passes 194/194. See **Game data bugs fixed** in `IOS_RELEASE_HANDOFF.md` for
+> what changed and what was deliberately left alone. This file is kept as the
+> record of what was found, not as a to-do list; check the code before acting on
+> any item here.
+
 Round 6. Written from two seats at once: a player who knows what the numbers
 are supposed to mean, and a tester whose job is to find what is broken.
 

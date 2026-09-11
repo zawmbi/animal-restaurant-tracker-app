@@ -87,7 +87,10 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
                     bucketFor = 'dish';
                     break;
                   case HitType.facility:
-                    bucketFor = 'facility';
+                    // Courtyard, concert and pet-yard facilities are tracked
+                    // in a different bucket from the six scenes, so the hit
+                    // carries the answer rather than the type deciding it.
+                    bucketFor = h.bucket ?? 'facility';
                     break;
                   case HitType.memento:
                     bucketFor = 'memento_collected';

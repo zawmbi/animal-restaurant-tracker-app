@@ -13,7 +13,6 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:animal_restaurant_tracker/features/economy/data/income_repository.dart';
 import 'package:animal_restaurant_tracker/features/economy/logic/earnings_calculator.dart';
-import 'package:animal_restaurant_tracker/features/economy/model/income.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -34,8 +33,11 @@ void main() {
       expect(repo.forFacility('a_facility_that_does_not_exist'), isEmpty);
     });
 
-    test('2,788 facilities carry at least one income effect', () {
-      expect(repo.facilityIdsWithIncome.length, 2788);
+    test('2,794 facilities carry at least one income effect', () {
+      // 2,788 until six ids that two different facilities shared were split
+      // apart. Each of those entries held both facilities' channels, so both
+      // rows were credited with the other's income.
+      expect(repo.facilityIdsWithIncome.length, 2794);
     });
 
     test('all 61 concert performers are loaded', () {

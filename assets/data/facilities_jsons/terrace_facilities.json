@@ -75,7 +75,7 @@
     "series": "Supreme Seat of Honor"
   },
   {
-    "id": "christmas_long_table",
+    "id": "christmas_long_table_terrace",
     "name": "Christmas Long Table",
     "area": "terrace",
     "group": "Gathering Table",
@@ -3867,7 +3867,7 @@
     "series": "Of Coconut Trees and the Sea Breeze"
   },
   {
-    "id": "planetary_orbit",
+    "id": "planetary_orbit_terrace",
     "name": "Planetary Orbit",
     "area": "terrace",
     "group": "Table 1",
@@ -6287,7 +6287,7 @@
     "series": "Of Coconut Trees and the Sea Breeze"
   },
   {
-    "id": "star_gazing",
+    "id": "star_gazing_terrace",
     "name": "Star Gazing",
     "area": "terrace",
     "group": "Telescope",
@@ -7245,7 +7245,7 @@
     "series": "Marvelous Midnight"
   },
   {
-    "id": "gift_teddy_bear",
+    "id": "gift_teddy_bear_terrace",
     "name": "Gift Teddy Bear",
     "area": "terrace",
     "group": "Floor Decorations",

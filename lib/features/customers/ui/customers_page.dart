@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../shared/widgets/check_all_button.dart';
 
 import '../../shared/data/unlocked_store.dart';
 import '../../shared/widgets/search_field.dart';
@@ -240,17 +241,11 @@ class _CustomersGridState extends State<_CustomersGrid> {
                           style: Theme.of(context).textTheme.titleMedium,
                         ),
                       ),
-                      if (total > 0)
-                        TextButton(
-                          onPressed: () => store.setManyUnlocked(
-                            _bucketCustomers,
-                            sorted.map((c) => c.id),
-                            unlocked != total,
-                          ),
-                          child: Text(
-                            unlocked == total ? 'Uncheck all' : 'Check all',
-                          ),
-                        ),
+                      CheckAllButton(
+                        bucket: _bucketCustomers,
+                        ids: sorted.map((c) => c.id).toList(),
+                        groupLabel: 'Customers',
+                      ),
                       PopupMenuButton<CustomerSort>(
                         initialValue: _sort,
                         onSelected: (v) => setState(() => _sort = v),

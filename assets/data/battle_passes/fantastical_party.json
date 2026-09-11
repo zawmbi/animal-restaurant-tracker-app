@@ -13,7 +13,7 @@
       "completionNote": "To complete the event without exchanging diamonds for EXP, players will need to complete all tasks for at least 40 out of 62 days or purchase the Super Rewards to reduce the requirement to 20 days.",
       "tiers": [
         { "exp": 0,
-          "normalRewards": [ { "type": "facility", "id": "big_eyes" } ],
+          "normalRewards": [ { "type": "memento", "id": "big_eyes" } ],
           "superRewards": [ { "type": "facility", "id": "floral_telescope" } ]
         },
         { "exp": 20,
@@ -36,12 +36,12 @@
           "normalRewards": [ { "type": "facility", "id": "teddy_bear_stove" } ],
           "superRewards": [
             { "type": "facility", "id": "magical_counter" },
-            { "type": "memento", "id": "party_invite" }
+            { "type": "facility", "id": "party_invite" }
           ]
         },
         { "exp": 120,
           "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 10000 } ],
-          "superRewards": [ { "type": "facility", "id": "little_sheep_phone_assistant" } ]
+          "superRewards": [ { "type": "memento", "id": "little_sheep_phone_assistant" } ]
         },
         { "exp": 140,
           "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
@@ -165,7 +165,7 @@
         },
         { "exp": 860,
           "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
-          "superRewards": [ { "type": "facility", "id": "plushie_pair" } ]
+          "superRewards": [ { "type": "memento", "id": "plushie_pair" } ]
         },
         { "exp": 890,
           "normalRewards": [ { "type": "currency", "currency": "plates", "amount": 200 } ],
@@ -176,7 +176,7 @@
           "superRewards": [ { "type": "item", "id": "pink_shell", "itemType": "fish", "qty": 2 } ]
         },
         { "exp": 950,
-          "normalRewards": [ { "type": "facility", "id": "flower_embroidery" } ],
+          "normalRewards": [ { "type": "memento", "id": "flower_embroidery" } ],
           "superRewards": [ { "type": "facility", "id": "shaggy_long_table" } ]
         },
         { "exp": 980,
@@ -256,7 +256,7 @@
           "superRewards": [ { "type": "facility", "id": "baby_elephant_sink" } ]
         },
         { "exp": 1600,
-          "normalRewards": [ { "type": "facility", "id": "four_color_garland" } ],
+          "normalRewards": [ { "type": "memento", "id": "four_color_garland" } ],
           "superRewards": [ { "type": "facility", "id": "duckling_gathering" } ]
         },
         {
@@ -306,7 +306,7 @@
         },
         { "exp": 100,
           "normalRewards": [ { "type": "facility", "id": "flowering_vine_chair" } ],
-          "superRewards": [ { "type": "memento", "id": "party_invite" } ]
+          "superRewards": [ { "type": "facility", "id": "party_invite" } ]
         },
         { "exp": 120,
           "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 10000 } ],
@@ -445,7 +445,7 @@
           "superRewards": [ { "type": "item", "id": "pink_shell", "itemType": "fish", "qty": 2 } ]
         },
         { "exp": 950,
-          "normalRewards": [ { "type": "facility", "id": "artsy_watch" } ],
+          "normalRewards": [ { "type": "memento", "id": "artsy_watch" } ],
           "superRewards": [ { "type": "facility", "id": "tulip_flower_basket" } ]
         },
         { "exp": 980,
@@ -510,7 +510,7 @@
         },
         { "exp": 1450,
           "normalRewards": [ { "type": "facility", "id": "vibrant_flower_short_2" } ],
-          "superRewards": [ { "type": "memento", "id": "waggly_ears" } ]
+          "superRewards": [ { "type": "facility", "id": "waggly_ears" } ]
         },
         { "exp": 1490,
           "normalRewards": [ { "type": "item", "id": "crab", "itemType": "fish", "qty": 1 } ],
@@ -521,7 +521,7 @@
           "superRewards": [ { "type": "facility", "id": "retro_fabric_lamp" } ]
         },
         { "exp": 1570,
-          "normalRewards": [ { "type": "facility", "id": "ducky_swim_ring" } ],
+          "normalRewards": [ { "type": "memento", "id": "ducky_swim_ring" } ],
           "superRewards": [ { "type": "facility", "id": "furry_conveyor_belt" } ]
         },
         { "exp": 1600,
@@ -559,7 +559,7 @@
         },
         { "exp": 20,
           "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
-          "superRewards": [ { "type": "memento", "id": "little_apron" } ]
+          "superRewards": [ { "type": "facility", "id": "little_apron" } ]
         },
         { "exp": 40,
           "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 6000 } ],
@@ -603,7 +603,7 @@
         },
         { "exp": 240,
           "normalRewards": [ { "type": "memento", "id": "beaded_hat" } ],
-          "superRewards": [ { "type": "memento", "id": "polka_dot_scissors" } ]
+          "superRewards": [ { "type": "facility", "id": "polka_dot_scissors" } ]
         },
         { "exp": 260,
           "normalRewards": [ { "type": "currency", "currency": "film", "amount": 200 } ],
@@ -675,7 +675,7 @@
         },
         { "exp": 650,
           "normalRewards": [ { "type": "facility", "id": "tulip_table" } ],
-          "superRewards": [ { "type": "memento", "id": "precious_wool_ball" } ]
+          "superRewards": [ { "type": "facility", "id": "precious_wool_ball" } ]
         },
         { "exp": 680,
           "normalRewards": [ { "type": "currency", "currency": "cod", "amount": 25000 } ],
@@ -722,7 +722,7 @@
           "superRewards": [ { "type": "currency", "currency": "cod", "amount": 100000 } ]
         },
         { "exp": 1010,
-          "normalRewards": [ { "type": "facility", "id": "tulip_mirror" } ],
+          "normalRewards": [ { "type": "memento", "id": "tulip_mirror" } ],
           "superRewards": [ { "type": "facility", "id": "snow_top_orange_juice" } ]
         },
         { "exp": 1040,
@@ -743,7 +743,7 @@
         },
         { "exp": 1160,
           "normalRewards": [ { "type": "rating", "earnedStars": 5 } ],
-          "superRewards": [ { "type": "facility", "id": "cow_cap" } ]
+          "superRewards": [ { "type": "memento", "id": "cow_cap" } ]
         },
         { "exp": 1190,
           "normalRewards": [ { "type": "currency", "currency": "bells", "amount": 300 } ],

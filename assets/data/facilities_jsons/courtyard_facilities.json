@@ -2624,7 +2624,7 @@
     ]
   },
   {
-    "id": "jingle_bell_door",
+    "id": "jingle_bell_door_courtyard",
     "name": "Jingle Bell Door",
     "area": "courtyard",
     "group": "Door",
@@ -22935,7 +22935,7 @@
     ]
   },
   {
-    "id": "gift_teddy_bear",
+    "id": "gift_teddy_bear_courtyard",
     "name": "Gift Teddy Bear",
     "area": "courtyard",
     "group": "Decor (Floor)",
@@ -24569,7 +24569,7 @@
     ]
   },
   {
-    "id": "planetary_orbit",
+    "id": "planetary_orbit_courtyard",
     "name": "Planetary Orbit",
     "area": "courtyard",
     "group": "Decor (Floor)",
@@ -24778,7 +24778,7 @@
     ]
   },
   {
-    "id": "christmas_tree",
+    "id": "christmas_tree_courtyard",
     "name": "Christmas Tree",
     "area": "courtyard",
     "group": "Plants",

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../shared/widgets/check_all_button.dart';
 
 import '../../shared/widgets/entity_chip.dart';
 import '../../shared/data/unlocked_store.dart';
@@ -66,7 +67,6 @@ class _LettersPageState extends State<LettersPage> {
             builder: (context, _) {
               final ownedCount =
                   list.where((l) => store.isUnlocked(_bucketLetter, l.id)).length;
-              final allChecked = list.isNotEmpty && ownedCount == list.length;
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
@@ -82,14 +82,10 @@ class _LettersPageState extends State<LettersPage> {
                           child: Text('Owned: $ownedCount/${list.length}',
                               style: Theme.of(context).textTheme.titleMedium),
                         ),
-                        TextButton(
-                          onPressed: () => store.setManyUnlocked(
-                            _bucketLetter,
-                            list.map((l) => l.id),
-                            !allChecked,
-                          ),
-                          child:
-                              Text(allChecked ? 'Uncheck all' : 'Check all'),
+                        CheckAllButton(
+                          bucket: _bucketLetter,
+                          ids: list.map((l) => l.id).toList(),
+                          groupLabel: 'Letters',
                         ),
                       ],
                     ),

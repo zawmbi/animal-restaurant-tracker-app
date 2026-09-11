@@ -31,6 +31,24 @@ class ProgressTypes {
   static const String battlePassPremium = 'battle_pass_premium';
   static const String acorn = 'acorn';
 
+  /// Which bucket a facility is tracked in, from the area it lives in.
+  ///
+  /// The courtyard, the concert stage and the pet yard are checked off on the
+  /// Courtyard page and counted under [courtyardFacility]; the six scenes the
+  /// Facilities page shows use [facility]. Global search shows both kinds in
+  /// one list, and writing them all to [facility] meant ticking a courtyard
+  /// item from search wrote to a set no other screen reads.
+  static String facilityBucketFor(String areaName) {
+    switch (areaName) {
+      case 'courtyard':
+      case 'courtyard_concert':
+      case 'courtyard_pets':
+        return courtyardFacility;
+      default:
+        return facility;
+    }
+  }
+
   /// Buckets that are not in `UnlockedStore._defaultTypes` and therefore have
   /// to be registered before their contents can be read back from storage.
   static const List<String> registerOnStartup = <String>[

@@ -6,7 +6,10 @@ import '../model/customer.dart';
 import '../model/poster.dart';
 import 'poster_detail_page.dart';
 
+import '../../dishes/data/dishes_repository.dart';
+import '../../dishes/model/dish.dart';
 import '../../dishes/ui/dish_detail_page.dart';
+import '../../facilities/data/facilities_repository.dart';
 import '../../facilities/ui/facility_detail_page.dart';
 import '../../shared/utils/display_names.dart';
 import 'band_page.dart';
@@ -16,8 +19,28 @@ import '../../mementos/data/mementos_index.dart';
 import '../../letters/data/letters_repository.dart';
 import '../../letters/model/letter.dart';
 import '../../shared/data/unlocked_store.dart';
+import '../../shared/json_loader.dart';
 import '../../shared/widgets/check_all_button.dart';
 import '../../mementos/ui/mementos_detail_page.dart';
+
+/// What the Requirements chips need in order to be more than raw slugs.
+class _RequirementLinks {
+  final Map<String, String> facilityNames;
+  final Map<String, String> letterNames;
+  final Map<String, String> customerNames;
+  final Map<String, String> flowerNames;
+
+  /// Keyed by the raw `requirements.recipes` value, which is a display name.
+  final Map<String, Dish> dishesByRequirement;
+
+  const _RequirementLinks({
+    required this.facilityNames,
+    required this.letterNames,
+    required this.customerNames,
+    required this.flowerNames,
+    required this.dishesByRequirement,
+  });
+}
 
 class CustomerDetailPage extends StatefulWidget {
   final Customer customer;
@@ -41,11 +64,17 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
   /// memento id -> the indexed entry, when the memento is in MementosIndex.
   late final Future<Map<String, MementoEntry>> _mementoEntries;
 
+  /// Display names and canonical ids for everything the Requirements block
+  /// links to. Null until the lookups land; the chips render from the raw
+  /// values until then, so the section never waits on a spinner.
+  _RequirementLinks? _links;
+
   @override
   void initState() {
     super.initState();
     store.registerType(_bucketCustomers);
     _mementoEntries = _resolveMementoEntries();
+    _resolveRequirementLinks();
 
     // FishNames.nameFor is a synchronous lookup, so the map has to be warm
     // before the booth section builds. It falls back to prettifying the id,
@@ -54,8 +83,93 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     if (customer.boothOwner != null) {
       FishNames.instance.load().then((_) {
         if (mounted) setState(() {});
-      }).catchError((_) => <String, String>{});
+      }).catchError((_) {});
     }
+  }
+
+  /// Resolves the requirement ids this customer actually has.
+  ///
+  /// Two things come out of it. A chip gets the entity's real name instead of
+  /// the raw slug ('Halloween Streamers', not 'halloween_streamers'), and a
+  /// chip whose id resolves to nothing is left untappable rather than opening
+  /// a page that reads "Facility not found" or silently doing nothing.
+  ///
+  /// Recipes are the odd one out: `requirements.recipes` holds display names
+  /// ('Adzuki Bean Dumpling'), while the dish bucket is keyed by dish id, so
+  /// the chip has to carry the resolved Dish to know whether it is owned.
+  Future<void> _resolveRequirementLinks() async {
+    final r = customer.requirements;
+    if (r == null) return;
+
+    final facilityNames = <String, String>{};
+    final letterNames = <String, String>{};
+    final customerNames = <String, String>{};
+    final flowerNames = <String, String>{};
+    final dishes = <String, Dish>{};
+
+    Future<void> guard(Future<void> Function() body) async {
+      try {
+        await body();
+      } catch (_) {
+        // A repository that fails to load leaves its chips as plain text
+        // rather than taking the whole page down.
+      }
+    }
+
+    if (r.facilities.isNotEmpty) {
+      await guard(() async {
+        for (final f in await FacilitiesRepository.instance.all()) {
+          if (r.facilities.contains(f.id)) facilityNames[f.id] = f.name;
+        }
+      });
+    }
+    if (r.letters.isNotEmpty) {
+      await guard(() async {
+        for (final l in await LettersRepository.instance.all()) {
+          if (r.letters.contains(l.id)) letterNames[l.id] = l.name;
+        }
+      });
+    }
+    if (r.customers.isNotEmpty) {
+      await guard(() async {
+        for (final c in await CustomersRepository.instance.all()) {
+          if (r.customers.contains(c.id)) customerNames[c.id] = c.name;
+        }
+      });
+    }
+    if (r.flowers.isNotEmpty) {
+      // Eight of the nine flower ids prettify to their real name; 'clover' is
+      // "Four Leaf Clover", and nine customers ask for it.
+      await guard(() async {
+        final raw = await JsonLoader.load('assets/data/flowers.json');
+        for (final e in (raw as List<dynamic>).cast<Map<String, dynamic>>()) {
+          final id = e['id'] as String?;
+          final name = e['name'] as String?;
+          if (id != null && name != null && r.flowers.contains(id)) {
+            flowerNames[id] = name;
+          }
+        }
+      });
+    }
+    if (r.recipes.isNotEmpty) {
+      await guard(() async {
+        for (final raw in r.recipes) {
+          final dish = await DishesRepository.instance.resolve(raw.toString());
+          if (dish != null) dishes[raw.toString()] = dish;
+        }
+      });
+    }
+
+    if (!mounted) return;
+    setState(() {
+      _links = _RequirementLinks(
+        facilityNames: facilityNames,
+        letterNames: letterNames,
+        customerNames: customerNames,
+        flowerNames: flowerNames,
+        dishesByRequirement: dishes,
+      );
+    });
   }
 
   Future<Map<String, MementoEntry>> _resolveMementoEntries() async {
@@ -195,17 +309,23 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
                 spacing: 8,
                 runSpacing: 8,
                 children: r.recipes.map((id) {
-                  final owned = store.isUnlocked(_bucketDish, id.toString());
-                  final s = id.toString();
-                  final label = s.isEmpty ? s : '${s[0].toUpperCase()}${s.substring(1)}';
+                  // requirements.recipes holds display names, the dish bucket
+                  // holds dish ids, so the fill only lights up once the name
+                  // has been resolved to its Dish.
+                  final raw = id.toString();
+                  final dish = _links?.dishesByRequirement[raw];
+                  final owned = dish != null &&
+                      store.isUnlocked(_bucketDish, dish.id);
                   return EntityChip(
-                  label: label,
+                  label: dish?.name ?? (raw.isEmpty
+                      ? raw
+                      : '${raw[0].toUpperCase()}${raw.substring(1)}'),
                   fillColor: owned ? ownedFill : null,
                   onTap: () async {
                     await Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => DishDetailPage(dishId: id.toString()),
+                      builder: (_) => DishDetailPage(dishId: dish?.id ?? raw),
                     ),
                     );
                     if (!mounted) return;
@@ -224,6 +344,7 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               isOwned: (id) =>
                   store.isUnlocked(_bucketFacility, id.toString()),
               fillIfOwned: ownedFill,
+              names: _links?.facilityNames,
               onTap: (id) async {
                 await Navigator.push(
                   context,
@@ -248,6 +369,7 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               ids: r.flowers,
               isOwned: (_) => false,
               fillIfOwned: ownedFill,
+              names: _links?.flowerNames,
             ),
 
             _simpleLinks(
@@ -256,6 +378,7 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               ids: r.letters,
               isOwned: (id) => store.isUnlocked(_bucketLetter, id.toString()),
               fillIfOwned: ownedFill,
+              names: _links?.letterNames,
               onTap: (id) async {
                 final Letter? letter =
                     await LettersRepository.instance.byId(id.toString());
@@ -279,6 +402,7 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               isOwned: (id) =>
                   store.isUnlocked(_bucketCustomers, id.toString()),
               fillIfOwned: ownedFill,
+              names: _links?.customerNames,
               onTap: (id) => _openCustomerById(context, id.toString()),
             ),
           ],
@@ -592,15 +716,24 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     );
   }
 
+  /// A row of requirement chips.
+  ///
+  /// [names] maps id -> display name. An id missing from it once the lookups
+  /// have finished is one nothing can resolve: the chip keeps its prettified
+  /// text but loses its tap, because the page behind it does not exist. Pass
+  /// null for a section that never links anywhere (flowers).
   Widget _simpleLinks({
     required BuildContext context,
     required String title,
     required List ids,
     required bool Function(dynamic id) isOwned,
     required Color fillIfOwned,
+    Map<String, String>? names,
     Future<void> Function(dynamic id)? onTap,
   }) {
     if (ids.isEmpty) return const SizedBox.shrink();
+
+    final resolved = _links != null;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -611,11 +744,13 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
           spacing: 8,
           runSpacing: 8,
           children: ids.map((id) {
-            final owned = isOwned(id);
+            final key = id.toString();
+            final name = names?[key];
+            final links = onTap != null && (!resolved || name != null);
             return EntityChip(
-              label: id.toString(),
-              fillColor: owned ? fillIfOwned : null,
-              onTap: onTap == null ? null : () => onTap(id),
+              label: name ?? prettyId(key),
+              fillColor: isOwned(id) ? fillIfOwned : null,
+              onTap: links ? () => onTap(id) : null,
             );
           }).toList(),
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../shared/widgets/check_all_button.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 import '../../shared/data/unlocked_store.dart';
@@ -217,8 +218,6 @@ class _DishesPageState extends State<DishesPage> {
     if (list.isEmpty && !showEvenIfEmpty) return const SizedBox.shrink();
 
     final ids = list.map((d) => d.id).toList();
-    final allChecked =
-        ids.isNotEmpty && ids.every((id) => store.isUnlocked('dish', id));
 
     return ExpansionTile(
       title: Row(
@@ -229,11 +228,11 @@ class _DishesPageState extends State<DishesPage> {
               style: const TextStyle(fontWeight: FontWeight.w600),
             ),
           ),
-          if (ids.isNotEmpty)
-            TextButton(
-              onPressed: () => store.setManyUnlocked('dish', ids, !allChecked),
-              child: Text(allChecked ? 'Uncheck all' : 'Check all'),
-            ),
+          CheckAllButton(
+            bucket: 'dish',
+            ids: ids,
+            groupLabel: title,
+          ),
         ],
       ),
       children: [

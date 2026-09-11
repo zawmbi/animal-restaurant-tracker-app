@@ -5163,7 +5163,7 @@
     "series": "Marvelous Midnight"
   },
   {
-    "id": "christmas_tree",
+    "id": "christmas_tree_restaurant",
     "name": "Christmas Tree",
     "area": "restaurant",
     "group": "Plant",
@@ -7952,7 +7952,7 @@
     "series": "Energy Fruit"
   },
   {
-    "id": "star_gazing",
+    "id": "star_gazing_restaurant",
     "name": "Star Gazing",
     "area": "restaurant",
     "group": "Wall Decor",

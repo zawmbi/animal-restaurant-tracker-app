@@ -8,6 +8,8 @@ import '../../shared/widgets/entity_chip.dart';
 import '../data/mementos_index.dart';
 import '../../customers/data/customers_repository.dart';
 import '../../customers/ui/customer_detail_page.dart';
+import '../../staff/data/staff_repository.dart';
+import '../../staff/model/staff_member.dart';
 
 /// Structured `requirements` objects from `assets/data/mementos.json`, keyed by
 /// memento id.
@@ -57,6 +59,14 @@ class _RequirementData {
   /// "Card-Playing Mouse".
   final Map<String, String> customerNames;
 }
+
+/// A staff id with no row in staff.json, shown as something readable rather
+/// than as a raw slug.
+String _titleizeId(String id) => id
+    .split('_')
+    .where((p) => p.trim().isNotEmpty)
+    .map((p) => p[0].toUpperCase() + p.substring(1))
+    .join(' ');
 
 /// Detail page for a single memento.
 /// Navigate here from MementosPage with:
@@ -146,8 +156,10 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
 
   // Kinds
   bool get isPoster => _tags.contains('poster');
-  bool get isDressUp =>
-      _tags.contains('dress_up') || _tags.contains('wearable');
+
+  /// Dress-up is decided by `equips`, not by a tag — see
+  /// [MementoEntry.isWearable].
+  bool get isDressUp => memento.isWearable;
 
   // Dress-up sub-types
   bool get isClothing => _tags.contains('clothing');
@@ -382,6 +394,25 @@ class _MementoDetailPageState extends State<MementoDetailPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _sectionTitle(theme, 'Dress-Up'),
+
+            // Who can wear it. This is the whole reason the item is on the
+            // Dress-Up tab, so it goes above the tag-derived type line.
+            if (memento.equips.isNotEmpty) ...[
+              FutureBuilder<List<StaffMember>>(
+                future: StaffRepository.instance.all(),
+                builder: (context, snap) {
+                  final nameById = <String, String>{
+                    for (final st in snap.data ?? const <StaffMember>[])
+                      st.id: st.name,
+                  };
+                  final worn = memento.equips
+                      .map((id) => nameById[id] ?? _titleizeId(id))
+                      .toList();
+                  return Text('Worn by: ${worn.join(', ')}');
+                },
+              ),
+              const SizedBox(height: 8),
+            ],
 
             // Basic type info based on tags
             if (isClothing) ...[

@@ -6,6 +6,10 @@ import '../../facilities/ui/facility_detail_page.dart' as facdetail;
 import '../../mementos/data/mementos_index.dart';
 import '../../mementos/ui/mementos_detail_page.dart';
 
+import '../../movies/data/movies_repository.dart';
+import '../../movies/model/movie.dart';
+import '../../movies/ui/movies_detail_page.dart';
+
 import '../../shared/data/unlocked_store.dart';
 import '../model/battle_pass.dart';
 
@@ -411,8 +415,10 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
     BattlePassReward r,
     _ResolvedNames resolved,
   ) {
-    final isClickable = r.type == BattlePassRewardType.facility ||
-        r.type == BattlePassRewardType.memento;
+    final isClickable = (r.type == BattlePassRewardType.facility ||
+            r.type == BattlePassRewardType.memento ||
+            r.type == BattlePassRewardType.movie) &&
+        resolved.resolves(r);
 
     final avatar = _rewardAvatar(r);
     final label = _rewardLabel(r, resolved);
@@ -481,6 +487,9 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
       case BattlePassRewardType.memento:
         return const Icon(Icons.card_giftcard, size: 18);
 
+      case BattlePassRewardType.movie:
+        return const Icon(Icons.movie, size: 18);
+
       case BattlePassRewardType.item:
         return const Icon(Icons.inventory_2, size: 18);
 
@@ -508,6 +517,14 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
         return (name != null && name.trim().isNotEmpty)
             ? name
             : (id.isEmpty ? 'Memento' : id);
+      }
+
+      case BattlePassRewardType.movie: {
+        final id = r.id ?? '';
+        final name = resolved.movieLabelById[id];
+        return (name != null && name.trim().isNotEmpty)
+            ? name
+            : (id.isEmpty ? 'Film' : id);
       }
 
       // Show amount only (image conveys currency)
@@ -570,6 +587,24 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
       return;
     }
 
+    if (r.type == BattlePassRewardType.movie && r.id != null) {
+      final ref = MovieActRef.tryParse(r.id!);
+      final movie = ref == null
+          ? null
+          : await MoviesRepository.instance.byId(ref.movieId);
+      if (!mounted) return;
+      if (movie == null) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Film not found: ${r.id}')),
+        );
+        return;
+      }
+      Navigator.of(context).push(
+        MaterialPageRoute(builder: (_) => MovieDetailPage(movieId: movie.id)),
+      );
+      return;
+    }
+
     if (r.type == BattlePassRewardType.memento && r.id != null) {
       final entry = await MementosIndex.instance.byId(r.id!);
       if (!mounted) return;
@@ -589,28 +624,31 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
   Future<_ResolvedNames> _loadNamesForPhase(BattlePassPhase phase) async {
     final facIds = <String>{};
     final memIds = <String>{};
+    final movieIds = <String>{};
 
     for (final tier in phase.tiers) {
-      for (final r in tier.normalRewards) {
-        if (r.type == BattlePassRewardType.facility && r.id != null) {
-          facIds.add(r.id!);
-        }
-        if (r.type == BattlePassRewardType.memento && r.id != null) {
-          memIds.add(r.id!);
-        }
-      }
-      for (final r in tier.superRewards) {
-        if (r.type == BattlePassRewardType.facility && r.id != null) {
-          facIds.add(r.id!);
-        }
-        if (r.type == BattlePassRewardType.memento && r.id != null) {
-          memIds.add(r.id!);
+      for (final r in <BattlePassReward>[
+        ...tier.normalRewards,
+        ...tier.superRewards,
+      ]) {
+        final id = r.id;
+        if (id == null) continue;
+        switch (r.type) {
+          case BattlePassRewardType.facility:
+            facIds.add(id);
+          case BattlePassRewardType.memento:
+            memIds.add(id);
+          case BattlePassRewardType.movie:
+            movieIds.add(id);
+          default:
+            break;
         }
       }
     }
 
     final facilityNameById = <String, String>{};
     final mementoNameById = <String, String>{};
+    final movieLabelById = <String, String>{};
 
     // Facilities
     for (final id in facIds) {
@@ -624,9 +662,22 @@ class _BattlePassDetailPageState extends State<BattlePassDetailPage> {
       if (m != null) mementoNameById[id] = m.name;
     }
 
+    // Films. The reward names one act of a film, so the chip reads
+    // '<film> — Act <n>'; an id that does not parse keeps its raw slug rather
+    // than silently reading 'Info' the way it used to.
+    for (final id in movieIds) {
+      final ref = MovieActRef.tryParse(id);
+      if (ref == null) continue;
+      final movie = await MoviesRepository.instance.byId(ref.movieId);
+      if (movie != null) {
+        movieLabelById[id] = '${movie.name} — Act ${ref.actLabel}';
+      }
+    }
+
     return _ResolvedNames(
       facilityNameById: facilityNameById,
       mementoNameById: mementoNameById,
+      movieLabelById: movieLabelById,
     );
   }
 }
@@ -636,12 +687,40 @@ class _ResolvedNames {
   final Map<String, String> facilityNameById;
   final Map<String, String> mementoNameById;
 
+  /// Film act rewards, keyed by the reward id, valued with the label the chip
+  /// shows — 'Seaside Songstress — Act I' rather than the raw slug.
+  final Map<String, String> movieLabelById;
+
+  /// False while the lookups are still in flight. Until they land, nothing is
+  /// known to be unresolvable, so chips keep their tap.
+  final bool loaded;
+
   const _ResolvedNames({
     required this.facilityNameById,
     required this.mementoNameById,
-  });
+    required this.movieLabelById,
+  }) : loaded = true;
 
   const _ResolvedNames.empty()
       : facilityNameById = const {},
-        mementoNameById = const {};
+        mementoNameById = const {},
+        movieLabelById = const {},
+        loaded = false;
+
+  /// Whether tapping this reward leads anywhere.
+  ///
+  /// 35 battle pass rewards name a facility that is in no shard — event items
+  /// the wiki lists but the facility data does not have. They used to look
+  /// tappable and answer with a "Facility not found" snackbar.
+  bool resolves(BattlePassReward r) {
+    if (!loaded) return true;
+    final id = r.id;
+    if (id == null) return false;
+    return switch (r.type) {
+      BattlePassRewardType.facility => facilityNameById.containsKey(id),
+      BattlePassRewardType.memento => mementoNameById.containsKey(id),
+      BattlePassRewardType.movie => movieLabelById.containsKey(id),
+      _ => false,
+    };
+  }
 }

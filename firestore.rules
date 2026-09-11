@@ -1,0 +1,36 @@
+rules_version = '2';
+
+// Security rules for ar-progress-tracker-1b3d8.
+//
+// The app stores exactly one document per user: users/{uid}, holding the
+// `unlocked` progress map and an `unlockedUpdatedAt` server timestamp. See
+// lib/features/shared/data/unlocked_store.dart.
+//
+// docs/PRIVACY_POLICY.md section 11 tells users that a stored progress record
+// "can only be accessed by the account that owns it". These rules are what make
+// that statement true, so keep them in sync with the policy.
+//
+// Deploy with:  firebase deploy --only firestore:rules
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // A signed-in user may read, write and delete their own progress document
+    // and nothing else. `request.auth.uid == uid` is the whole isolation
+    // guarantee: the uid is issued by Firebase Authentication and cannot be
+    // forged by the client.
+    //
+    // This covers anonymous (guest) sign-in too, which gets a real uid — a
+    // guest who later links an account keeps the same document.
+    match /users/{uid} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // Everything else is denied. Firestore denies by default, so this block is
+    // documentation rather than enforcement — but it means an added collection
+    // has to be granted access deliberately rather than by forgetting to.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

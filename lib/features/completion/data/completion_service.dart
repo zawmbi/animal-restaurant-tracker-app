@@ -345,10 +345,10 @@ class CompletionService {
     ];
   }
 
-  /// The scenes FacilitiesPage actually shows. Courtyard / concert / pet
-  /// facility shards are excluded here: the courtyard shard is tracked in its
-  /// own bucket by CourtyardPage (see [_courtyard]) and would otherwise be
-  /// double counted.
+  /// The scenes FacilitiesPage actually shows. The courtyard, concert and
+  /// pet-yard shards are excluded here: all three are tracked in their own
+  /// bucket by CourtyardPage (see [_courtyard]) and would otherwise be double
+  /// counted.
   static const List<FacilityArea> _facilityScenes = <FacilityArea>[
     FacilityArea.restaurant,
     FacilityArea.kitchen,
@@ -371,6 +371,12 @@ class CompletionService {
     ];
   }
 
+  /// The courtyard, the concert stage and the pet yard.
+  ///
+  /// All three are scenes of the Courtyard page and share the one bucket, so
+  /// this counts [CourtyardRepository.allFacilities] rather than the courtyard
+  /// shard alone. The concert and pet shards used to be in neither this
+  /// category nor [_facilities], which left 535 facilities uncountable.
   Future<List<CompletionPart>> _courtyard() async {
     final repo = CourtyardRepository.instance;
     await repo.ensureLoaded();

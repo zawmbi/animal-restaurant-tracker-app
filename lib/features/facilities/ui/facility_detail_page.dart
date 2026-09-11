@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../../completion/data/progress_types.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../data/facilities_repository.dart';
 import '../model/facility.dart';
@@ -389,7 +391,14 @@ class _FacilityDetailBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final checked = store.isUnlocked('facility', facility.id);
+    // This page is reached from search, customer requirements, battle pass
+    // rewards and redemption codes, so it can be showing any area — including
+    // the courtyard, whose facilities are tracked in a different bucket. It
+    // used to write 'facility' for all of them, which meant ticking a
+    // courtyard item here was invisible to the Courtyard page and to the
+    // completion percentage.
+    final bucket = ProgressTypes.facilityBucketFor(facility.area.name);
+    final checked = store.isUnlocked(bucket, facility.id);
     final theme = Theme.of(context);
 
     return ListView(
@@ -408,7 +417,7 @@ class _FacilityDetailBody extends StatelessWidget {
             Checkbox(
               value: checked,
               onChanged: (v) =>
-                  store.setUnlocked('facility', facility.id, v ?? false),
+                  store.setUnlocked(bucket, facility.id, v ?? false),
             ),
           ],
         ),

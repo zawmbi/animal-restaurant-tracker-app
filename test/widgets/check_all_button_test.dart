@@ -185,7 +185,16 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(store.isUnlocked('pet_photo_task_done', 'task_1'), isTrue);
-    expect(find.text('Uncheck all'), findsOneWidget);
+    // The two rooms were checked before the tap, so the group can be put back
+    // the way it was — across both buckets.
+    expect(find.text('Undo check all'), findsOneWidget);
+
+    await tester.tap(find.text('Undo check all'));
+    await tester.pumpAndSettle();
+
+    expect(store.isUnlocked('pet_room_unlocked', 'room_1'), isTrue);
+    expect(store.isUnlocked('pet_room_unlocked', 'room_2'), isTrue);
+    expect(store.isUnlocked('pet_photo_task_done', 'task_1'), isFalse);
   });
 
   testWidgets('onApplied is told which way the group was flipped',
@@ -228,5 +237,146 @@ void main() {
     expect(notifications, 1,
         reason: 'one notification for the batch; a per-id loop here rebuilt '
             'the mementos list 1,184 times');
+  });
+
+  group('undoing a "Check all"', () {
+    testWidgets('puts back exactly what was checked before the tap',
+        (tester) async {
+      await store.setManyUnlocked('dish', const <String>['a', 'c'], true);
+
+      await pumpButton(
+        tester,
+        CheckAllButton(
+          bucket: 'dish',
+          ids: const <String>['a', 'b', 'c', 'd'],
+        ),
+      );
+
+      await tester.tap(find.text('Check all'));
+      await tester.pumpAndSettle();
+      for (final id in const <String>['a', 'b', 'c', 'd']) {
+        expect(store.isUnlocked('dish', id), isTrue);
+      }
+
+      expect(find.text('Undo check all'), findsOneWidget,
+          reason: 'a plain "Uncheck all" here would wipe the two the player '
+              'had ticked by hand');
+
+      await tester.tap(find.text('Undo check all'));
+      await tester.pumpAndSettle();
+
+      expect(store.isUnlocked('dish', 'a'), isTrue);
+      expect(store.isUnlocked('dish', 'c'), isTrue);
+      expect(store.isUnlocked('dish', 'b'), isFalse);
+      expect(store.isUnlocked('dish', 'd'), isFalse);
+      expect(find.text('Check all'), findsOneWidget);
+    });
+
+    testWidgets('reads "Uncheck all" when nothing was checked first',
+        (tester) async {
+      // Nothing to preserve, so undo and uncheck-all are the same action and
+      // the plainer label is the honest one.
+      await pumpButton(
+        tester,
+        CheckAllButton(bucket: 'dish', ids: const <String>['a', 'b']),
+      );
+
+      await tester.tap(find.text('Check all'));
+      await tester.pumpAndSettle();
+
+      expect(find.text('Uncheck all'), findsOneWidget);
+
+      await tester.tap(find.text('Uncheck all'));
+      await tester.pumpAndSettle();
+
+      expect(store.isUnlocked('dish', 'a'), isFalse);
+      expect(store.isUnlocked('dish', 'b'), isFalse);
+    });
+
+    testWidgets('undoing never asks for confirmation', (tester) async {
+      await store.setUnlocked('dish', 'id_0', true);
+      final ids = <String>[for (var i = 0; i < 40; i++) 'id_$i'];
+
+      await pumpButton(tester, CheckAllButton(bucket: 'dish', ids: ids));
+
+      await tester.tap(find.text('Check all'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Undo check all'));
+      await tester.pumpAndSettle();
+
+      expect(find.byType(AlertDialog), findsNothing,
+          reason: 'undo only takes back what the previous tap added');
+      expect(store.isUnlocked('dish', 'id_0'), isTrue);
+      expect(store.isUnlocked('dish', 'id_1'), isFalse);
+    });
+
+    testWidgets('a manual uncheck cancels the offer to undo', (tester) async {
+      await store.setUnlocked('dish', 'a', true);
+
+      await pumpButton(
+        tester,
+        CheckAllButton(bucket: 'dish', ids: const <String>['a', 'b', 'c']),
+      );
+
+      await tester.tap(find.text('Check all'));
+      await tester.pumpAndSettle();
+      expect(find.text('Undo check all'), findsOneWidget);
+
+      // The player edits the group themselves, then puts it back.
+      await store.setUnlocked('dish', 'b', false);
+      await tester.pumpAndSettle();
+      await store.setUnlocked('dish', 'b', true);
+      await tester.pumpAndSettle();
+
+      expect(find.text('Uncheck all'), findsOneWidget,
+          reason: 'once the player has edited the group by hand, "how it was" '
+              'no longer means anything they would recognise');
+    });
+
+    testWidgets('changing the group clears the offer to undo', (tester) async {
+      // The Courtyard page keeps one button and swaps the ids under it.
+      await store.setUnlocked('dish', 'a', true);
+
+      Widget buttonFor(List<String> ids) => MaterialApp(
+            home: Scaffold(
+              body: Center(child: CheckAllButton(bucket: 'dish', ids: ids)),
+            ),
+          );
+
+      await tester.pumpWidget(buttonFor(const <String>['a', 'b']));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Check all'));
+      await tester.pumpAndSettle();
+      expect(find.text('Undo check all'), findsOneWidget);
+
+      await store.setManyUnlocked('dish', const <String>['x', 'y'], true);
+      await tester.pumpWidget(buttonFor(const <String>['x', 'y']));
+      await tester.pumpAndSettle();
+
+      expect(find.text('Uncheck all'), findsOneWidget,
+          reason: 'the remembered set belongs to the other group');
+    });
+
+    testWidgets('onApplied hears false when the group is put back',
+        (tester) async {
+      final applied = <bool>[];
+      await store.setUnlocked('dish', 'a', true);
+
+      await pumpButton(
+        tester,
+        CheckAllButton(
+          bucket: 'dish',
+          ids: const <String>['a', 'b'],
+          onApplied: applied.add,
+        ),
+      );
+
+      await tester.tap(find.text('Check all'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Undo check all'));
+      await tester.pumpAndSettle();
+
+      expect(applied, <bool>[true, false]);
+    });
   });
 }

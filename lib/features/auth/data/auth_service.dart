@@ -68,10 +68,10 @@ class AuthService {
     final rawNonce = _generateNonce();
 
     final result = await SignInWithApple.getAppleIDCredential(
-      scopes: [
-        AppleIDAuthorizationScopes.email,
-        AppleIDAuthorizationScopes.fullName,
-      ],
+      // Email only. The `fullName` scope used to be requested here, but the
+      // returned name was never read or stored — it only cost users an extra
+      // data-sharing prompt and put a Name row on the App Store privacy label.
+      scopes: [AppleIDAuthorizationScopes.email],
       nonce: _sha256OfString(rawNonce),
     );
 

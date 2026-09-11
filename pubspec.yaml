@@ -77,6 +77,7 @@ flutter:
 
     - assets/data/facilities_jsons/
     - assets/images/
+    - assets/intro/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -103,3 +104,12 @@ flutter:
     - family: Quano
       fonts:
         - asset: assets/fonts/Quano.otf
+
+    # Gamja Flower subset to only the glyphs in "Zawmbi Productions"
+    # (P Z a b c d i m n o r s t u w). 3.5 KB vs ~12.6 MB for the full face,
+    # which ships all of Hangul. Changing the studio string will not render:
+    # re-subset the original face first. Named so it cannot collide with a
+    # full Gamja Flower.
+    - family: ZawmbiCreditGamja
+      fonts:
+        - asset: assets/fonts/GamjaFlower-Subset.ttf

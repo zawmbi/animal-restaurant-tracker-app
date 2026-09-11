@@ -8,6 +8,7 @@ import 'package:animal_restaurant_tracker/features/shared/data/unlocked_store.da
 
 import 'firebase_options.dart';
 import 'package:animal_restaurant_tracker/features/auth/ui/auth_binder.dart';
+import 'package:animal_restaurant_tracker/features/intro/ui/zawmbi_intro.dart';
 
 //  ADD: settings controller
 import 'package:animal_restaurant_tracker/features/settings/data/app_settings_controller.dart';
@@ -36,9 +37,7 @@ Future<void> main() async {
     appSettings.load(),
   ]);
 
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   await localInit;
 
@@ -63,15 +62,46 @@ class AnimalRestaurantApp extends StatelessWidget {
           darkTheme: buildDarkTheme(),
           themeMode: appSettings.themeMode,
 
-          home: const AuthBinder(
-            child: HomePage(),
-          ),
+          home: const AuthBinder(child: HomePage()),
           builder: (context, child) {
             if (child == null) return const SizedBox.shrink();
-            return _GlobalHomeOverlay(child: child);
+            // The bumper is mounted last so it sits over the whole app,
+            // including any route pushed under it, and fades out to reveal
+            // whatever is already rendered beneath.
+            return _IntroGate(child: _GlobalHomeOverlay(child: child));
           },
         );
       },
+    );
+  }
+}
+
+/// Holds the studio bumper over the app for one run per launch, then drops it.
+///
+/// Stateful and mounted inside `MaterialApp.builder` so a theme change (which
+/// rebuilds the builder) cannot restart the intro.
+class _IntroGate extends StatefulWidget {
+  const _IntroGate({required this.child});
+
+  final Widget child;
+
+  @override
+  State<_IntroGate> createState() => _IntroGateState();
+}
+
+class _IntroGateState extends State<_IntroGate> {
+  bool _done = false;
+
+  @override
+  Widget build(BuildContext context) {
+    if (_done) return widget.child;
+    return Stack(
+      children: [
+        widget.child,
+        Positioned.fill(
+          child: ZawmbiIntro(onDone: () => setState(() => _done = true)),
+        ),
+      ],
     );
   }
 }
@@ -93,10 +123,12 @@ class _OverlayNavObserver extends NavigatorObserver {
   void didPop(Route<dynamic> route, Route<dynamic>? previousRoute) => _bump();
 
   @override
-  void didRemove(Route<dynamic> route, Route<dynamic>? previousRoute) => _bump();
+  void didRemove(Route<dynamic> route, Route<dynamic>? previousRoute) =>
+      _bump();
 
   @override
-  void didReplace({Route<dynamic>? newRoute, Route<dynamic>? oldRoute}) => _bump();
+  void didReplace({Route<dynamic>? newRoute, Route<dynamic>? oldRoute}) =>
+      _bump();
 }
 
 class _GlobalHomeOverlay extends StatelessWidget {
@@ -141,11 +173,7 @@ class _HomeOverlayButton extends StatelessWidget {
       clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: onPressed,
-        child: const SizedBox(
-          width: 56,
-          height: 56,
-          child: Icon(Icons.home),
-        ),
+        child: const SizedBox(width: 56, height: 56, child: Icon(Icons.home)),
       ),
     );
   }

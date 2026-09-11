@@ -45,6 +45,14 @@ class _StaffDetailPageState extends State<StaffDetailPage> {
   final Map<String, String> _customerNameToId = {};
   final Map<String, String> _facilityNameToId = {};
   final Map<String, String> _dishNameToId = {};
+
+  /// Real memento names, keyed by id, for the Wearable Mementos rows.
+  ///
+  /// These used to be titleized from the id, which is wrong wherever the name
+  /// is not a straight word-by-word capitalisation: 'Blueberries and Cream
+  /// Hat' rendered as 'Blueberries And Cream Hat' and "Artist's Wig" as
+  /// 'Artists Wig'.
+  final Map<String, String> _mementoNameById = {};
   bool _linksLoaded = false;
 
   @override
@@ -84,6 +92,11 @@ class _StaffDetailPageState extends State<StaffDetailPage> {
       for (final d in dishes) {
         final name = d.name.toString().trim();
         if (name.isNotEmpty) _dishNameToId[name] = d.id;
+      }
+
+      for (final m in await MementosIndex.instance.all()) {
+        final name = m.name.trim();
+        if (name.isNotEmpty) _mementoNameById[m.id] = name;
       }
 
       if (!mounted) return;
@@ -322,6 +335,14 @@ class _StaffDetailPageState extends State<StaffDetailPage> {
                     children: s.wearableMementos.map((wm) {
                       final req = (wm.requirements ?? '').trim();
 
+                      // A memento the registry does not have cannot be opened.
+                      // Tapping used to look live and then do nothing at all;
+                      // the row still lists the wearable, it just does not
+                      // pretend to lead anywhere. Only decided once the names
+                      // have loaded, so nothing flickers to dead on startup.
+                      final resolves = !_linksLoaded ||
+                          _mementoNameById.containsKey(wm.mementoId);
+
                       return Padding(
                         padding: const EdgeInsets.only(bottom: 10),
                         child: Container(
@@ -337,7 +358,9 @@ class _StaffDetailPageState extends State<StaffDetailPage> {
                               // Only THIS header row opens the memento
                               InkWell(
                                 borderRadius: BorderRadius.circular(12),
-                                onTap: () => _openMementoById(wm.mementoId),
+                                onTap: resolves
+                                    ? () => _openMementoById(wm.mementoId)
+                                    : null,
                                 child: Padding(
                                   padding: const EdgeInsets.symmetric(vertical: 4),
                                   child: Row(
@@ -347,11 +370,12 @@ class _StaffDetailPageState extends State<StaffDetailPage> {
                                       const SizedBox(width: 10),
                                       Expanded(
                                         child: Text(
-                                          _titleizeId(wm.mementoId),
+                                          _mementoNameById[wm.mementoId] ??
+                                              _titleizeId(wm.mementoId),
                                           style: Theme.of(context).textTheme.titleSmall,
                                         ),
                                       ),
-                                      const Icon(Icons.chevron_right),
+                                      if (resolves) const Icon(Icons.chevron_right),
                                     ],
                                   ),
                                 ),

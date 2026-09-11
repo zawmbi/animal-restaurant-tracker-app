@@ -2,15 +2,40 @@ import '../../shared/json_loader.dart';
 
 import 'courtyard_facilities.dart';
 
+/// The three scenes the Courtyard page shows.
+///
+/// The concert and pet-yard shards use exactly the courtyard's shape — same
+/// keys, same groups-and-series layout — and are reached from the courtyard in
+/// the game. They were loaded by FacilitiesRepository (so global search found
+/// them) but no page rendered them and no category counted them, leaving 535
+/// facilities that could be searched for and then never ticked off.
+enum CourtyardScene { courtyard, concert, pets }
+
+extension CourtyardSceneLabel on CourtyardScene {
+  String get label => switch (this) {
+        CourtyardScene.courtyard => 'Courtyard',
+        CourtyardScene.concert => 'Concert',
+        CourtyardScene.pets => 'Pet Yard',
+      };
+}
+
 class CourtyardRepository {
   CourtyardRepository._();
 
   static final CourtyardRepository instance = CourtyardRepository._();
 
-  static const String _asset =
-      'assets/data/facilities_jsons/courtyard_facilities.json';
+  static const Map<CourtyardScene, String> _assets = <CourtyardScene, String>{
+    CourtyardScene.courtyard:
+        'assets/data/facilities_jsons/courtyard_facilities.json',
+    CourtyardScene.concert:
+        'assets/data/facilities_jsons/concert_facilities.json',
+    CourtyardScene.pets: 'assets/data/facilities_jsons/pets_facilities.json',
+  };
 
   bool _loaded = false;
+  final Map<CourtyardScene, List<CourtyardFacility>> _byScene =
+      <CourtyardScene, List<CourtyardFacility>>{};
+
   List<CourtyardFacility> _facilities = [];
 
   /// Cached *future*, so a second `ensureLoaded()` that arrives while the
@@ -25,8 +50,8 @@ class CourtyardRepository {
   // from `build()`, which runs again on every checkbox tap; without memoising,
   // one tap costs three full passes over 1336 facilities plus two sorts.
   List<CourtyardFacility>? _allFacilitiesView;
-  List<String>? _availableGroups;
-  List<String>? _allSeriesSorted;
+  final Map<CourtyardScene, List<String>> _availableGroups = {};
+  final Map<CourtyardScene, List<String>> _allSeriesSorted = {};
   final Map<String, List<CourtyardFacility>> _byGroupAndSeries = {};
 
   /// Call this once (the page will use a FutureBuilder) to make sure
@@ -38,14 +63,19 @@ class CourtyardRepository {
 
   Future<void> _load() async {
     try {
-      // Routed through JsonLoader so this decode is shared with
-      // FacilitiesRepository, which reads the same shard for
-      // FacilityArea.courtyard, and so it happens off the main isolate.
-      final data = await JsonLoader.load(_asset) as List<dynamic>;
-
-      _facilities = data
-          .map((e) => CourtyardFacility.fromJson(e as Map<String, dynamic>))
-          .toList();
+      // Routed through JsonLoader so these decodes are shared with
+      // FacilitiesRepository, which reads the same shards, and so they happen
+      // off the main isolate.
+      final all = <CourtyardFacility>[];
+      for (final entry in _assets.entries) {
+        final data = await JsonLoader.load(entry.value) as List<dynamic>;
+        final rows = data
+            .map((e) => CourtyardFacility.fromJson(e as Map<String, dynamic>))
+            .toList();
+        _byScene[entry.key] = rows;
+        all.addAll(rows);
+      }
+      _facilities = all;
 
       _loaded = true;
     } catch (_) {
@@ -101,27 +131,51 @@ class CourtyardRepository {
     'Pet Paradise',
   ];
 
-  /// Groups actually present in the JSON, in the same order as [orderedGroups].
-  List<String> availableGroups() {
-    final cached = _availableGroups;
+  /// Every facility in one scene.
+  List<CourtyardFacility> facilitiesFor(CourtyardScene scene) =>
+      _byScene[scene] ?? const <CourtyardFacility>[];
+
+  /// The group tabs for one scene.
+  ///
+  /// [orderedGroups] gives the courtyard its curated order; any group the
+  /// curated list does not name is appended in data order rather than dropped.
+  /// That is the safety net the old version lacked — it filtered the data
+  /// through the list and silently lost whatever the list misspelled. Concert
+  /// and the pet yard have no curated order, so they come out in data order,
+  /// which is wiki order, which is the order the game lists them in.
+  List<String> availableGroups([
+    CourtyardScene scene = CourtyardScene.courtyard,
+  ]) {
+    final cached = _availableGroups[scene];
     if (cached != null) return cached;
 
-    final existing = <String>{
-      for (final f in _facilities) f.group,
-    };
-    final out = orderedGroups.where(existing.contains).toList();
-    if (_loaded) _availableGroups = out;
+    final inData = <String>[];
+    for (final f in facilitiesFor(scene)) {
+      if (!inData.contains(f.group)) inData.add(f.group);
+    }
+
+    final curated = scene == CourtyardScene.courtyard
+        ? orderedGroups.where(inData.contains).toList()
+        : <String>[];
+    final out = <String>[
+      ...curated,
+      ...inData.where((g) => !curated.contains(g)),
+    ];
+
+    if (_loaded) _availableGroups[scene] = out;
     return out;
   }
 
-  /// Unique list of series (themes) sorted alphabetically.
-  List<String> allSeriesSorted() {
-    final cached = _allSeriesSorted;
+  /// Unique list of series (themes) in one scene, sorted alphabetically.
+  List<String> allSeriesSorted([
+    CourtyardScene scene = CourtyardScene.courtyard,
+  ]) {
+    final cached = _allSeriesSorted[scene];
     if (cached != null) return cached;
 
     final set = <String>{};
 
-    for (final f in _facilities) {
+    for (final f in facilitiesFor(scene)) {
       final s = f.series;
       if (s != null && s.isNotEmpty) {
         set.add(s);
@@ -129,7 +183,7 @@ class CourtyardRepository {
     }
 
     final out = set.toList()..sort();
-    if (_loaded) _allSeriesSorted = out;
+    if (_loaded) _allSeriesSorted[scene] = out;
     return out;
   }
 
@@ -141,12 +195,13 @@ class CourtyardRepository {
   List<CourtyardFacility> byGroupAndSeries(
     String group, {
     String? series,
+    CourtyardScene scene = CourtyardScene.courtyard,
   }) {
-    final key = '$group\u0000${series ?? ''}';
+    final key = '${scene.name}\u0000$group\u0000${series ?? ''}';
     final cached = _byGroupAndSeries[key];
     if (cached != null) return cached;
 
-    final out = _facilities.where((f) {
+    final out = facilitiesFor(scene).where((f) {
       if (f.group != group) return false;
       if (series != null && series.isNotEmpty && series != 'All') {
         return f.series == series;

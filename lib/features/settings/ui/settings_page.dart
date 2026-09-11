@@ -7,6 +7,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:animal_restaurant_tracker/features/auth/data/auth_service.dart';
 import 'package:animal_restaurant_tracker/features/shared/data/unlocked_store.dart';
+import 'package:animal_restaurant_tracker/features/shared/utils/legal_links.dart';
 import 'package:animal_restaurant_tracker/features/timers/data/timer_service.dart';
 
 import '../../support/ui/support_page.dart';
@@ -50,7 +51,8 @@ class _SettingsPageState extends State<SettingsPage> {
     );
   }
 
-  Future<void> _confirmAndWipe(BuildContext context) async {
+  // Uses the State's own context, so the `mounted` guards below apply to it.
+  Future<void> _confirmAndWipe() async {
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (ctx) {
@@ -68,9 +70,7 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
             TextButton(
               onPressed: () => Navigator.of(ctx).pop(true),
-              style: TextButton.styleFrom(
-                foregroundColor: Colors.red,
-              ),
+              style: TextButton.styleFrom(foregroundColor: Colors.red),
               child: const Text('Yes, wipe everything'),
             ),
           ],
@@ -84,12 +84,13 @@ class _SettingsPageState extends State<SettingsPage> {
     await TimerService.instance.cancelAll();
 
     if (!mounted) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('All data has been wiped.')),
-    );
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(const SnackBar(content: Text('All data has been wiped.')));
   }
 
-  Future<void> _confirmAndDeleteAccount(BuildContext context) async {
+  // Uses the State's own context, so the `mounted` guards below apply to it.
+  Future<void> _confirmAndDeleteAccount() async {
     final confirmed = await showDialog<bool>(
       context: context,
       builder: (ctx) {
@@ -127,9 +128,11 @@ class _SettingsPageState extends State<SettingsPage> {
       if (!mounted) return;
       final message = e.code == 'requires-recent-login'
           ? 'For your security, please sign out and sign in again, then '
-              'retry deleting your account.'
+                'retry deleting your account.'
           : 'Could not delete your account: ${e.message ?? e.code}';
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(message)));
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(SnackBar(content: Text(message)));
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
@@ -147,25 +150,22 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 
   void _openSupport() {
-    Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => const SupportPage()),
-    );
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (_) => const SupportPage()));
   }
 
   void _openUpdates() {
-    Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => const UpdatesPage()),
-    );
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (_) => const UpdatesPage()));
   }
 
-      void _openAppSettings() {
+  void _openAppSettings() {
     Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_) => AppSettingsPage(settings: appSettings),
-      ),
+      MaterialPageRoute(builder: (_) => AppSettingsPage(settings: appSettings)),
     );
-
-      }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -209,6 +209,21 @@ class _SettingsPageState extends State<SettingsPage> {
                   ),
                   trailing: const Icon(Icons.chevron_right),
                   onTap: _openSupport,
+                ),
+                const Divider(height: 1),
+                ListTile(
+                  title: Text(
+                    'Privacy Policy',
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                  subtitle: const Padding(
+                    padding: EdgeInsets.only(top: 6),
+                    child: Text(
+                      'What this app collects, and how to delete it.',
+                    ),
+                  ),
+                  trailing: const Icon(Icons.open_in_new),
+                  onTap: () => openPrivacyPolicy(context),
                 ),
               ],
             ),
@@ -266,10 +281,9 @@ class _SettingsPageState extends State<SettingsPage> {
                 children: [
                   Text(
                     'Danger zone',
-                    style: Theme.of(context)
-                        .textTheme
-                        .titleMedium
-                        ?.copyWith(color: Colors.red),
+                    style: Theme.of(
+                      context,
+                    ).textTheme.titleMedium?.copyWith(color: Colors.red),
                   ),
                   const SizedBox(height: 8),
                   Text(
@@ -285,7 +299,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         foregroundColor: Colors.red,
                         side: const BorderSide(color: Colors.red),
                       ),
-                      onPressed: () => _confirmAndWipe(context),
+                      onPressed: () => _confirmAndWipe(),
                       child: const Text('Wipe all data'),
                     ),
                   ),
@@ -304,7 +318,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         foregroundColor: Colors.red,
                         side: const BorderSide(color: Colors.red),
                       ),
-                      onPressed: () => _confirmAndDeleteAccount(context),
+                      onPressed: () => _confirmAndDeleteAccount(),
                       child: const Text('Delete account'),
                     ),
                   ),
@@ -328,8 +342,8 @@ class SyncedVersionsPage extends StatelessWidget {
     final latestLine = data.latestSynced ? 'Synced' : 'Not Fully Synced';
     final upcomingLine = data.upcomingProvided
         ? (data.upcomingVersion == null || data.upcomingVersion!.trim().isEmpty
-            ? 'Yes'
-            : data.upcomingVersion!)
+              ? 'Yes'
+              : data.upcomingVersion!)
         : 'No';
 
     return Scaffold(

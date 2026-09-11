@@ -99,29 +99,38 @@ void main() {
     });
 
     test('staff wearable memento names must come from mementos.json', () {
+      // StaffDetailPage reads `_mementoNameById` and only falls back to
+      // titleizing. This pins why that lookup has to exist: for a large share
+      // of wearables the id does not prettify to the real name — 'artists_wig'
+      // is "Artist's Wig", 'blueberries_and_cream_hat' keeps its lowercase
+      // 'and'. If the page ever goes back to prettifying, it prints names the
+      // game does not use.
       final mementoNames = <String, String>{
         for (final m in readJsonList('assets/data/mementos.json'))
           m['id'] as String: m['name'] as String,
       };
 
-      final wrong = <String>[];
-      for (final s in readJsonList('assets/data/staff.json')) {
-        for (final w
-            in (s['wearableMementos'] as List? ?? const <dynamic>[]).cast<Map>()) {
-          final id = w['mementoId'] as String;
-          final real = mementoNames[id];
-          if (real != null && prettyId(id) != real) wrong.add(id);
-        }
-      }
+      final wearableIds = <String>{
+        for (final s in readJsonList('assets/data/staff.json'))
+          for (final w in (s['wearableMementos'] as List? ?? const <dynamic>[])
+              .cast<Map>())
+            w['mementoId'] as String,
+      };
+
+      final needLookup = wearableIds
+          .where((id) =>
+              mementoNames[id] != null && prettyId(id) != mementoNames[id])
+          .toList();
+
+      expect(needLookup, isNotEmpty,
+          reason: 'if this ever empties, prettifying would be safe and the '
+              'name map could go');
 
       final examples = <String>[
-        for (final id in wrong.toSet().take(3))
-          '$id renders as ${prettyId(id)} but is called ${mementoNames[id]}',
+        for (final id in needLookup.take(3))
+          '$id prettifies to ${prettyId(id)} but is called ${mementoNames[id]}',
       ];
-      expect(wrong, isEmpty,
-          reason: 'StaffDetailPage titleizes the memento id instead of reading '
-              'the memento name, so these chips print the wrong text: '
-              '$examples');
+      expect(examples, isNotEmpty, reason: examples.toString());
     });
   });
 }

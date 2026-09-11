@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../data/auth_service.dart';
+import '../../shared/utils/legal_links.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -168,6 +169,16 @@ class _LoginPageState extends State<LoginPage> {
                 const Text(
                   'Without an account, progress is saved on this device only. '
                   'With an account, progress can sync across devices.',
+                ),
+
+                const SizedBox(height: 12),
+                // Guideline 5.1.1(i): the policy has to be reachable before an
+                // account is created, not only afterwards from Settings.
+                Center(
+                  child: TextButton(
+                    onPressed: () => openPrivacyPolicy(context),
+                    child: const Text('Privacy Policy'),
+                  ),
                 ),
               ],
             ),

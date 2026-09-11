@@ -287,8 +287,10 @@ def main():
 
     # -------------------------------------------------------- battle passes
     rep.section('battle_passes/*.json')
+    # Mirrors BattlePassReward._parseType. 'movie' was added there on
+    # 11 Sep 2026 — the film-fragment rewards used to fall through to text.
     known_reward_types = {
-        'facility', 'memento', 'currency', 'rating', 'item',
+        'facility', 'memento', 'currency', 'rating', 'item', 'movie',
         'gacha_draw', 'promote_free', 'chest', 'text',
     }
     bad_fac, bad_mem, bad_type, bad_flower, bad_fish = set(), set(), set(), set(), set()

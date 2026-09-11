@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../shared/widgets/check_all_button.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../data/mementos_index.dart';
 import 'mementos_detail_page.dart';
@@ -6,6 +7,22 @@ import 'mementos_detail_page.dart';
 
 class MementosPage extends StatefulWidget {
   const MementosPage({super.key});
+
+  /// Tag chips, each of which must be a tag mementos.json actually carries.
+  ///
+  /// 'hidden' used to be listed here and matched nothing: hidden is a
+  /// top-level field, not a tag, so the chip filtered 1,184 mementos down to
+  /// none. The "Hidden" dropdown next to these chips reads the real field.
+  ///
+  /// Public so a test can check every chip still matches something —
+  /// see test/models/model_parsing_test.dart.
+  static const List<String> commonTags = <String>[
+    'customer_gift',
+    'redemption_code',
+    'wishing_well',
+    'gachapon',
+    'poster',
+  ];
 
   @override
   State<MementosPage> createState() => _MementosPageState();
@@ -16,15 +33,6 @@ class _MementosPageState extends State<MementosPage> {
   final _searchCtrl = TextEditingController();
   final Set<String> _tags = {};
   bool? _hidden; // null=all, true=hidden only, false=not hidden
-
-  final List<String> commonTags = const [
-    'customer_gift',
-    'redemption_code',
-    'wishing_well',
-    'gachapon',
-    'poster',
-    'hidden',
-  ];
 
   @override
   void dispose() {
@@ -92,13 +100,12 @@ class _MementosPageState extends State<MementosPage> {
 
   Widget _buildMementoList(
     BuildContext context,
-    List<dynamic> all, // replace dynamic with your concrete memento type
+    List<MementoEntry> all,
     _MementoCategory category,
   ) {
     final filtered = all.where((e) {
-      final tags = (e.tags ?? const <String>[]).cast<String>();
-      final isPoster = tags.contains('poster');
-      final isDressUp = tags.contains('dress_up') || tags.contains('wearable');
+      final isPoster = e.tags.contains('poster');
+      final isDressUp = e.isWearable;
 
       switch (category) {
         case _MementoCategory.all:
@@ -117,9 +124,7 @@ class _MementosPageState extends State<MementosPage> {
       return const Center(child: Text('No mementos match your filters.'));
     }
 
-    final ids = filtered.map((e) => e.key as String).toList();
-    final allChecked =
-        ids.every((k) => store.isUnlocked('memento_collected', k));
+    final ids = filtered.map((e) => e.key).toList();
 
     return ListView.builder(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -128,24 +133,23 @@ class _MementosPageState extends State<MementosPage> {
         if (rawIndex == 0) {
           return Align(
             alignment: Alignment.centerRight,
-            child: TextButton(
-              onPressed: () => store.setManyUnlocked(
-                  'memento_collected', ids, !allChecked),
-              child: Text(allChecked ? 'Uncheck all' : 'Check all'),
+            child: CheckAllButton(
+              bucket: 'memento_collected',
+              ids: ids,
+              groupLabel: 'Mementos',
             ),
           );
         }
         final index = rawIndex - 1;
         final e = filtered[index];
         final collected = store.isUnlocked('memento_collected', e.key);
-        final tags = (e.tags ?? const <String>[]).cast<String>();
-
         String subtitle = [
-          if (e.customerName != null && e.customerName!.isNotEmpty) e.customerName!,
+          if (e.customerName != null && e.customerName!.isNotEmpty)
+            e.customerName!,
           if (e.source != null && e.source!.isNotEmpty) e.source!,
           if (e.event != null && e.event!.isNotEmpty) e.event!,
-          if (tags.contains('poster')) 'Poster',
-          if (tags.contains('dress_up') || tags.contains('wearable')) 'Dress-Up',
+          if (e.tags.contains('poster')) 'Poster',
+          if (e.isWearable) 'Dress-Up',
         ].join(' • ');
 
         return Card(
@@ -196,7 +200,7 @@ class _MementosPageState extends State<MementosPage> {
           spacing: 8,
           runSpacing: 8,
           children: [
-            for (final t in commonTags)
+            for (final t in MementosPage.commonTags)
               FilterChip(
                 label: Text(t.replaceAll('_', ' ')),
                 selected: _tags.contains(t),

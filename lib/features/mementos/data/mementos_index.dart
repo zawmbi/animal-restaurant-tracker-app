@@ -18,6 +18,10 @@ class MementoEntry {
   final String? source;
   final String? event;
 
+  /// Staff ids that can wear this memento, straight from `equips` in
+  /// mementos.json. Empty for everything that is not a dress-up item.
+  final List<String> equips;
+
   const MementoEntry({
     required this.key,
     required this.id,
@@ -31,7 +35,19 @@ class MementoEntry {
     required this.hidden,
     required this.source,
     required this.event,
+    this.equips = const <String>[],
   });
+
+  /// Whether this belongs on the Dress-Up tab.
+  ///
+  /// The data has never carried a 'dress_up' or 'wearable' tag — the tabs and
+  /// the detail page filtered on tags no memento has, so Dress-Up was
+  /// permanently empty while 553 mementos said in `equips` exactly which staff
+  /// could wear them. The tags are still honoured in case they ever appear.
+  bool get isWearable =>
+      equips.isNotEmpty ||
+      tags.contains('dress_up') ||
+      tags.contains('wearable');
 }
 
 String _ckey(String customerId, String mementoId) => 'm:$customerId/$mementoId';
@@ -85,6 +101,8 @@ class MementosIndex {
           hidden: isHidden,
           source: map['source'] as String?,
           event: map['event'] as String?,
+          equips: (map['equips'] as List<dynamic>? ?? const <dynamic>[])
+              .cast<String>(),
         ),
       );
     }
@@ -110,6 +128,7 @@ class MementosIndex {
           hidden: isHidden,
           source: m.source,
           event: m.event,
+          equips: m.equips,
         ),
       );
     }

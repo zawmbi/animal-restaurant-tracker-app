@@ -1953,7 +1953,7 @@
         "requirements": "Obtained via Gachapon."
       },
       {
-        "mementoId": "sunflower_memento",
+        "mementoId": "sunflower",
         "earnedStars": 50,
         "requirements": "Purchasable via the Signature Store."
       },
@@ -3992,7 +3992,7 @@
         "requirements": "Purchasable via the Signature Store."
       },
       {
-        "mementoId": "witch_hat",
+        "mementoId": "witchs_hat",
         "earnedStars": 29,
         "requirements": "Purchasable via the Signature Store."
       },
@@ -4906,7 +4906,7 @@
         "requirements": "Obtained via Gachapon."
       },
       {
-        "mementoId": "crab_memento",
+        "mementoId": "crab",
         "earnedStars": 30,
         "requirements": "Purchasable via the Signature Store."
       },

@@ -20,6 +20,7 @@ import 'package:animal_restaurant_tracker/features/dishes/model/dish.dart';
 import 'package:animal_restaurant_tracker/features/economy/model/income.dart';
 import 'package:animal_restaurant_tracker/features/facilities/model/facility.dart';
 import 'package:animal_restaurant_tracker/features/letters/model/letter.dart';
+import 'package:animal_restaurant_tracker/features/mementos/ui/mementos_page.dart';
 import 'package:animal_restaurant_tracker/features/movies/model/movie.dart';
 import 'package:animal_restaurant_tracker/features/pets/model/pet.dart';
 import 'package:animal_restaurant_tracker/features/staff/model/staff_member.dart';
@@ -182,34 +183,48 @@ void main() {
     });
 
     test('the Dress-Up tab has something in it', () {
-      // MementosPage filters that tab on the 'dress_up' / 'wearable' tags.
-      final dressUp = rows.where((r) {
+      // The tab is keyed off MementoEntry.isWearable, which reads `equips`.
+      // It used to filter on 'dress_up' / 'wearable' tags, which no memento
+      // has ever carried, so the tab was permanently empty while 553 rows
+      // said in `equips` exactly which staff could wear them.
+      final tagged = rows.where((r) {
         final tags = (r['tags'] as List? ?? const <dynamic>[]).cast<String>();
         return tags.contains('dress_up') || tags.contains('wearable');
       }).length;
-      final withEquips =
-          rows.where((r) => (r['equips'] as List? ?? const []).isNotEmpty)
-              .length;
+      final withEquips = rows
+          .where((r) => (r['equips'] as List? ?? const []).isNotEmpty)
+          .length;
 
-      expect(dressUp, greaterThan(0),
-          reason: 'the Dress-Up tab filters on tags no memento carries, so it '
-              'is permanently empty, while $withEquips mementos carry an '
-              '"equips" array that says exactly which staff can wear them');
+      expect(withEquips, greaterThan(0),
+          reason: 'nothing would land on the Dress-Up tab');
+      expect(tagged, 0,
+          reason: 'if a dress-up tag ever does appear, isWearable already '
+              'honours it — this is only here to record that today the tags '
+              'are not the source of truth');
     });
 
-    test("the 'hidden' filter chip matches how hidden is actually stored", () {
-      // MementosPage lists 'hidden' among commonTags, which feeds includeTags,
-      // a TAG filter. The data marks hidden with a top-level field.
-      final taggedHidden = rows.where((r) {
-        final tags = (r['tags'] as List? ?? const <dynamic>[]).cast<String>();
-        return tags.contains('hidden');
-      }).length;
-      final fieldHidden = rows.where((r) => r['hidden'] == true).length;
+    test('every tag chip the page offers matches something', () {
+      // The chips feed `includeTags`, a tag filter, so a chip naming something
+      // that is not a tag empties the list. 'hidden' was exactly that: hidden
+      // is a top-level field, and the chip found 0 of the 286 rows that carry
+      // it. It was dropped, and the Hidden dropdown reads the field.
+      final tagCounts = <String, int>{};
+      for (final r in rows) {
+        for (final t in (r['tags'] as List? ?? const <dynamic>[])) {
+          tagCounts[t as String] = (tagCounts[t] ?? 0) + 1;
+        }
+      }
 
-      expect(taggedHidden, fieldHidden,
-          reason: 'selecting the "hidden" chip filters by tag and finds '
-              '$taggedHidden mementos, but $fieldHidden are actually marked '
-              'hidden by the top-level field');
+      final dead = MementosPage.commonTags
+          .where((t) => (tagCounts[t] ?? 0) == 0)
+          .toList();
+      expect(dead, isEmpty,
+          reason: 'these chips filter the list down to nothing: $dead');
+
+      expect(tagCounts['hidden'] ?? 0, 0,
+          reason: 'if hidden ever becomes a real tag, the chip can come back');
+      expect(rows.where((r) => r['hidden'] == true).length, greaterThan(0),
+          reason: 'the Hidden dropdown reads this field');
     });
   });
 
@@ -226,14 +241,23 @@ void main() {
       }
     });
 
-    test('2,191 facilities across the scenes the Facilities page shows', () {
+    test('2,193 facilities across the scenes the Facilities page shows', () {
+      // 2,193 rows and 2,193 unique ids. It used to be 2,191 unique out of
+      // 2,193, because 'star_gazing' and 'christmas_long_table' each named two
+      // different facilities in two different scenes — one key in the
+      // 'facility' bucket, so ticking one ticked the other and the denominator
+      // was two short. Both are area-qualified now.
       final ids = <String>{};
+      var rows = 0;
       for (final area in facilitySceneAreas) {
         for (final row in facilityRowsForArea(area)) {
+          rows++;
           ids.add(row['id'] as String);
         }
       }
-      expect(ids.length, 2191);
+      expect(ids.length, 2193);
+      expect(ids.length, rows,
+          reason: 'two rows sharing an id share one checkbox');
     });
 
     test('1,336 courtyard facilities', () {
@@ -340,10 +364,22 @@ void main() {
         for (final m in readJsonList('assets/data/mementos.json'))
           m['id'] as String,
       };
+
+      // 'sleepy_little_bear' is listed as one of Meow's wearables and is also
+      // a Fantastical Party super reward, but it is typed there as a facility
+      // and exists in neither registry. Rather than invent a memento row, the
+      // staff page renders that one row untappable (see StaffDetailPage's
+      // `resolves`). Everything else must resolve: an id that does not is a
+      // chip that looks live and goes nowhere.
+      const knownMissing = <String>{'sleepy_little_bear'};
+
       final unresolved = <String>{};
       for (final row in rows) {
         for (final w in StaffMember.fromJson(row).wearableMementos) {
-          if (!mementoIds.contains(w.mementoId)) unresolved.add(w.mementoId);
+          if (!mementoIds.contains(w.mementoId) &&
+              !knownMissing.contains(w.mementoId)) {
+            unresolved.add(w.mementoId);
+          }
         }
       }
       expect(unresolved, isEmpty,
@@ -393,18 +429,15 @@ void main() {
 
     test('no reward falls through to the text type by accident', () {
       // BattlePassReward._parseType has a `default:` that returns `text`, so an
-      // unknown type is silently rendered as `r.text ?? 'Info'`.
-      const known = <String>{
-        'facility',
-        'memento',
-        'currency',
-        'rating',
-        'item',
-        'gacha_draw',
-        'promote_free',
-        'chest',
-        'text',
-      };
+      // unknown type is silently rendered as `r.text ?? 'Info'`. Asking the
+      // parser rather than restating its cases means a type added to the JSON
+      // fails here until the parser learns it — which is how the 'movie'
+      // fragments were found rendering as "Info".
+      bool parses(String type) =>
+          type == 'text' ||
+          BattlePassReward.fromJson(<String, dynamic>{'type': type}).type !=
+              BattlePassRewardType.text;
+
       final unknown = <String>{};
       for (final id in passIds) {
         final raw = readJsonMap('assets/data/battle_passes/$id.json');
@@ -414,7 +447,7 @@ void main() {
               for (final reward
                   in (tier[key] as List? ?? const <dynamic>[]).cast<Map>()) {
                 final type = reward['type'] as String;
-                if (!known.contains(type)) unknown.add(type);
+                if (!parses(type)) unknown.add(type);
               }
             }
           }
@@ -699,6 +732,55 @@ void main() {
             id, Map<String, dynamic>.from(value as Map));
         expect(income, isNotNull, reason: 'performer $id failed to parse');
       });
+    });
+
+    test('customers.json agrees with it, performer for performer', () {
+      // The same numbers live in both files: the customer page reads the
+      // `performer` block, the earnings pages read this one. 60 of the 61
+      // blocks used to be stubs — a null duration, a null amount and 'film'
+      // hardcoded as the currency even for the cod performers — so the
+      // customer page showed a blank show and the wrong currency. They are
+      // filled in now, and this keeps the two from drifting apart again.
+      final performers = Map<String, dynamic>.from(root['performers'] as Map);
+      final customers = readJsonList('assets/data/customers.json')
+          .map(Customer.fromJson)
+          .where((c) => c.performer != null)
+          .toList();
+
+      expect(customers.length, performers.length);
+
+      final disagree = <String>[];
+      for (final c in customers) {
+        final raw = performers[c.id];
+        if (raw == null) {
+          disagree.add('${c.id}: no row in performer_income.json');
+          continue;
+        }
+        final income =
+            PerformerIncome.tryFromJson(c.id, Map<String, dynamic>.from(raw));
+        final p = c.performer!;
+        if (income == null) continue; // covered by the test above
+
+        if (p.showDurationMinutes != income.showDurationMinutes) {
+          disagree.add('${c.id}: show ${p.showDurationMinutes} vs '
+              '${income.showDurationMinutes}');
+        }
+        if (p.baseEarnings?.amountPerMinute != income.amountPerMinute) {
+          disagree.add('${c.id}: per minute '
+              '${p.baseEarnings?.amountPerMinute} vs ${income.amountPerMinute}');
+        }
+        if (p.baseEarnings?.currency != income.currency.name) {
+          disagree.add('${c.id}: currency ${p.baseEarnings?.currency} vs '
+              '${income.currency.name}');
+        }
+        if ((p.band ?? '') != (income.band ?? '')) {
+          disagree.add('${c.id}: band ${p.band} vs ${income.band}');
+        }
+      }
+
+      expect(disagree, isEmpty,
+          reason: 'the customer page and the earnings pages would print '
+              'different numbers for the same performer: $disagree');
     });
 
     test('a row missing its currency or duration returns null, not a zero', () {

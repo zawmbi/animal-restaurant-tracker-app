@@ -2806,14 +2806,16 @@
     "max": 9120
    }
   ],
-  "christmas_long_table": [
-   {
-    "channel": "terracePayPercent",
-    "percent": 12
-   },
+  "christmas_long_table_garden": [
    {
     "channel": "flowerViews",
     "amount": 1
+   }
+  ],
+  "christmas_long_table_terrace": [
+   {
+    "channel": "terracePayPercent",
+    "percent": 12
    }
   ],
   "christmas_lounge_chair_tier_1": [
@@ -2893,17 +2895,19 @@
     "amount": 6
    }
   ],
-  "christmas_tree": [
-   {
-    "channel": "tipPerMinute",
-    "currency": "cod",
-    "amount": 15
-   },
+  "christmas_tree_courtyard": [
    {
     "channel": "filmPerGather",
     "currency": "film",
     "min": 8,
     "max": 154
+   }
+  ],
+  "christmas_tree_restaurant": [
+   {
+    "channel": "tipPerMinute",
+    "currency": "cod",
+    "amount": 15
    }
   ],
   "christmas_wind_chimes": [
@@ -7255,18 +7259,20 @@
     "max": 192
    }
   ],
-  "gift_teddy_bear": [
-   {
-    "channel": "codPerSeconds",
-    "currency": "cod",
-    "amount": 360,
-    "seconds": 30
-   },
+  "gift_teddy_bear_courtyard": [
    {
     "channel": "filmPerGather",
     "currency": "film",
     "min": 1,
     "max": 19
+   }
+  ],
+  "gift_teddy_bear_terrace": [
+   {
+    "channel": "codPerSeconds",
+    "currency": "cod",
+    "amount": 360,
+    "seconds": 30
    }
   ],
   "gilded_antique_cabinet": [
@@ -8633,12 +8639,14 @@
     "seconds": 30
    }
   ],
-  "jingle_bell_door": [
+  "jingle_bell_door_buffet": [
    {
     "channel": "buffetCodPerHour",
     "currency": "cod",
     "amount": 4500
-   },
+   }
+  ],
+  "jingle_bell_door_courtyard": [
    {
     "channel": "codPerGather",
     "currency": "cod",
@@ -12183,12 +12191,14 @@
     "seconds": 30
    }
   ],
-  "planetary_orbit": [
+  "planetary_orbit_2": [
    {
     "channel": "terracePayFlat",
     "currency": "cod",
     "amount": 550000
-   },
+   }
+  ],
+  "planetary_orbit_courtyard": [
    {
     "channel": "codPerGather",
     "currency": "cod",
@@ -12196,7 +12206,7 @@
     "max": 13440
    }
   ],
-  "planetary_orbit_2": [
+  "planetary_orbit_terrace": [
    {
     "channel": "terracePayFlat",
     "currency": "cod",
@@ -16271,12 +16281,14 @@
     "max": 77
    }
   ],
-  "star_gazing": [
+  "star_gazing_restaurant": [
    {
     "channel": "tipPerMinute",
     "currency": "cod",
     "amount": 24
-   },
+   }
+  ],
+  "star_gazing_terrace": [
    {
     "channel": "codPerFlowerView",
     "currency": "cod",

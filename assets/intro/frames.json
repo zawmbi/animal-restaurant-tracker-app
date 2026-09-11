@@ -1,0 +1,24 @@
+{
+  "name": "zawmbi-walk-ghoul",
+  "palette": "Ghoul",
+  "frameWidth": 240,
+  "frameHeight": 288,
+  "frames": 4,
+  "sequence": [
+    "contact-left",
+    "passing",
+    "contact-right",
+    "passing"
+  ],
+  "frameDurationMs": 200,
+  "loop": true,
+  "transparent": true,
+  "spritesheet": {
+    "file": "zawmbi-walk-spritesheet.png",
+    "cols": 4,
+    "rows": 1,
+    "frameWidth": 240,
+    "frameHeight": 288,
+    "cssSteps": 4
+  }
+}

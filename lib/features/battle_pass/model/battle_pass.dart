@@ -6,6 +6,7 @@ enum BattlePassRewardType {
   currency,
   rating,
   item, // flowers, fish, etc.
+  movie, // an Open Air Cinema act fragment
   gachaDraw,
   promoteFree,
   chest,
@@ -75,6 +76,8 @@ class BattlePassReward {
         return BattlePassRewardType.rating;
       case 'item':
         return BattlePassRewardType.item;
+      case 'movie':
+        return BattlePassRewardType.movie;
       case 'gacha_draw':
         return BattlePassRewardType.gachaDraw;
       case 'promote_free':
@@ -83,6 +86,10 @@ class BattlePassReward {
         return BattlePassRewardType.chest;
       case 'text':
       default:
+        // Anything unrecognised renders as `r.text ?? 'Info'`, so a new reward
+        // type added to the JSON shows up as a box reading "Info" rather than
+        // as an error. test/models/model_parsing_test.dart pins the known set
+        // so that stays a deliberate choice and not a silent loss.
         return BattlePassRewardType.text;
     }
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../shared/widgets/check_all_button.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../../shared/json_loader.dart';
 import '../data/facilities_repository.dart';
@@ -337,8 +338,6 @@ class _FacilityGroupSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ids = items.map((f) => f.id).toList();
-    final allChecked =
-        ids.isNotEmpty && ids.every((id) => store.isUnlocked('facility', id));
     return Card(
       margin: const EdgeInsets.symmetric(vertical: 4),
       child: ExpansionTile(
@@ -350,10 +349,10 @@ class _FacilityGroupSection extends StatelessWidget {
                 style: const TextStyle(fontWeight: FontWeight.w600),
               ),
             ),
-            TextButton(
-              onPressed: () =>
-                  store.setManyUnlocked('facility', ids, !allChecked),
-              child: Text(allChecked ? 'Uncheck all' : 'Check all'),
+            CheckAllButton(
+              bucket: 'facility',
+              ids: ids,
+              groupLabel: title,
             ),
           ],
         ),

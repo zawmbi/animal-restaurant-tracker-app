@@ -17,6 +17,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:animal_restaurant_tracker/features/completion/data/completion_service.dart';
+import 'package:animal_restaurant_tracker/features/courtyard/data/courtyard_repository.dart';
 import 'package:animal_restaurant_tracker/features/completion/data/progress_types.dart';
 import 'package:animal_restaurant_tracker/features/shared/data/unlocked_store.dart';
 
@@ -178,9 +179,11 @@ void main() {
         ],
       );
 
-      // BattlePassDetailPage._setTierClaimedForPhase writes BOTH the normal and
-      // the super key even for a player with no premium, so this is the real
-      // stored state after a free player ticks a tier.
+      // The stored state this guards against: both keys set while premium is
+      // off. BattlePassDetailPage._setTierClaimedForPhase no longer writes the
+      // super key for a free player, so a tree written by the current app
+      // cannot reach this — but a save made before that guard existed can, and
+      // the arithmetic still has to hold rather than reading over 100%.
       await store.setManyUnlocked(
           ProgressTypes.battlePassClaimed, <String>['n1', 's1'], true);
       expect(category.fraction(store), 1.0);
@@ -188,9 +191,9 @@ void main() {
       await store.setUnlocked(ProgressTypes.battlePassPremium, 'pass', true);
       expect(category.fraction(store), lessThanOrEqualTo(1.0));
       expect(category.fraction(store), 1.0,
-          reason: 'the Super track reads as already claimed the moment premium '
-              'is switched on, because the free-player tick wrote its key too. '
-              'That is a real defect, pinned here so a fix has a test.');
+          reason: 'an old save that already holds the Super key reads as '
+              'claimed the moment premium is switched on; the percentage must '
+              'stay within bounds either way');
     });
   });
 
@@ -284,34 +287,14 @@ void main() {
 
   group('every counted collectible is reachable from some screen', () {
     test('every courtyard group has a tab on the Courtyard page', () {
-      // CourtyardRepository.orderedGroups is the tab list; a group missing
-      // from it has no checkbox anywhere, yet all 1,336 courtyard facilities
-      // are in the completion denominator.
-      const orderedGroups = <String>[
-        'Friends Board',
-        'Speaker',
-        'Game Machine',
-        'House Type',
-        'Door',
-        'Window',
-        'Table',
-        'Stool',
-        'Short Fence',
-        'Long Fence',
-        'Wall Decor',
-        'Plants',
-        'Table Decor',
-        'Carpet',
-        'Floor Decor',
-        'Certificate of Honor',
-        'Pet Houses',
-        'Pet Paradise',
-      ];
-
+      // CourtyardRepository.orderedGroups is the tab list, read here rather
+      // than copied: a copy is how this drifted in the first place. A group
+      // missing from it has no checkbox anywhere, yet all 1,336 courtyard
+      // facilities are in the completion denominator.
       final unreachable = <String, int>{};
       for (final row in facilityRowsForArea('courtyard')) {
         final group = row['group'] as String;
-        if (!orderedGroups.contains(group)) {
+        if (!CourtyardRepository.orderedGroups.contains(group)) {
           unreachable[group] = (unreachable[group] ?? 0) + 1;
         }
       }
@@ -321,18 +304,67 @@ void main() {
               'tab, so they can never be checked off: $unreachable');
     });
 
-    test('no facility shard is loaded but shown nowhere', () {
-      // FacilitiesRepository loads the concert and pet-yard shards (global
-      // search finds them), but FacilitiesPage excludes those areas and
-      // CourtyardRepository only reads courtyard_facilities.json.
-      final orphaned = <String, int>{
-        for (final area in <String>['courtyard_concert', 'courtyard_pets'])
-          area: facilityRowsForArea(area).length,
+    test('every tab on the Courtyard page has facilities behind it', () {
+      // The other direction: availableGroups() silently drops a name the data
+      // does not have, so a typo in the tab list hides its facilities instead
+      // of failing. Four near-miss spellings hid 808 of the 1,336 courtyard
+      // facilities that way, and the tabs still looked populated because each
+      // misspelling happened to match exactly 2 rows.
+      final counts = <String, int>{};
+      for (final row in facilityRowsForArea('courtyard')) {
+        final group = row['group'] as String;
+        counts[group] = (counts[group] ?? 0) + 1;
+      }
+
+      final empty = CourtyardRepository.orderedGroups
+          .where((g) => !counts.containsKey(g))
+          .toList();
+      expect(empty, isEmpty,
+          reason: 'these tabs name a group the data does not have: $empty');
+    });
+
+    test('no facility shard is loaded but shown nowhere', () async {
+      // FacilitiesRepository loads every shard, so global search finds them
+      // all. A shard nothing renders is 535 collectibles a player can search
+      // for and then never tick off — which is exactly what the concert and
+      // pet-yard shards were until the Courtyard page grew scene tabs.
+      final repo = CourtyardRepository.instance;
+      await repo.ensureLoaded();
+
+      final rendered = <String>{
+        for (final scene in CourtyardScene.values)
+          for (final f in repo.facilitiesFor(scene)) f.id,
       };
-      final total = orphaned.values.fold<int>(0, (a, b) => a + b);
-      expect(total, 0,
-          reason: 'facilities in areas no page renders and no category '
-              'counts: $orphaned');
+      for (final area in facilitySceneAreas) {
+        rendered.addAll(
+            facilityRowsForArea(area).map((row) => row['id'] as String));
+      }
+
+      final orphaned = <String, int>{};
+      for (final area in facilityShardsByArea.keys) {
+        final missing = facilityRowsForArea(area)
+            .where((row) => !rendered.contains(row['id'] as String))
+            .length;
+        if (missing > 0) orphaned[area] = missing;
+      }
+
+      expect(orphaned, isEmpty,
+          reason: 'facilities in areas no page renders: $orphaned');
+    });
+
+    test('every courtyard-family facility is in the completion denominator',
+        () async {
+      // CompletionService._courtyard() counts CourtyardRepository.allFacilities
+      // into one bucket, so the three scenes have to have globally unique ids
+      // or two of them would share a checkbox.
+      final repo = CourtyardRepository.instance;
+      await repo.ensureLoaded();
+
+      final ids = repo.allFacilities.map((f) => f.id).toList();
+      expect(ids.toSet().length, ids.length,
+          reason: 'two courtyard-family facilities share an id, so one '
+              'checkbox ticks both');
+      expect(ids.length, 1336 + 232 + 303);
     });
   });
 }

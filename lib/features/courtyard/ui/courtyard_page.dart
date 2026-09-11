@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../shared/widgets/check_all_button.dart';
 
 import '../data/courtyard_facilities.dart';
 import '../data/courtyard_repository.dart';
@@ -15,6 +16,7 @@ class CourtyardPage extends StatefulWidget {
 
 class _CourtyardPageState extends State<CourtyardPage> {
   late Future<void> _loadFuture;
+  CourtyardScene _scene = CourtyardScene.courtyard;
   String? _selectedGroup;
   String? _selectedSeries;
 
@@ -29,8 +31,18 @@ class _CourtyardPageState extends State<CourtyardPage> {
   }
 
   List<String> _buildSeriesOptions(CourtyardRepository repo) {
-    final base = repo.allSeriesSorted();
+    final base = repo.allSeriesSorted(_scene);
     return ['All', ...base];
+  }
+
+  void _selectScene(CourtyardScene scene) {
+    setState(() {
+      _scene = scene;
+      // Group and series names do not carry across scenes, so both reset to
+      // the new scene's first tab rather than landing on an empty list.
+      _selectedGroup = null;
+      _selectedSeries = null;
+    });
   }
 
   @override
@@ -47,11 +59,11 @@ class _CourtyardPageState extends State<CourtyardPage> {
           }
 
           final repo = CourtyardRepository.instance;
-          final groups = repo.availableGroups();
+          final groups = repo.availableGroups(_scene);
 
           if (groups.isEmpty) {
-            return const Center(
-              child: Text('No Courtyard facilities found in JSON.'),
+            return Center(
+              child: Text('No ${_scene.label} facilities found in JSON.'),
             );
           }
 
@@ -64,6 +76,7 @@ class _CourtyardPageState extends State<CourtyardPage> {
               .byGroupAndSeries(
                 _selectedGroup!,
                 series: _selectedSeries == 'All' ? null : _selectedSeries,
+                scene: _scene,
               )
               .where((f) => matchesQuery(
                     _query,
@@ -74,9 +87,29 @@ class _CourtyardPageState extends State<CourtyardPage> {
           return Column(
             children: [
               SearchField(
-                hintText: 'Search courtyard facilities…',
+                hintText: 'Search ${_scene.label.toLowerCase()} facilities…',
                 onChanged: (v) => setState(() => _query = v),
               ),
+
+              // Scene picker. The concert stage and the pet yard are reached
+              // from the courtyard in the game and their data has the same
+              // shape, so they are tabs here rather than pages of their own.
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8),
+                child: Row(
+                  children: CourtyardScene.values.map((scene) {
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 4),
+                      child: ChoiceChip(
+                        label: Text(scene.label),
+                        selected: scene == _scene,
+                        onSelected: (_) => _selectScene(scene),
+                      ),
+                    );
+                  }).toList(),
+                ),
+              ),
+
               // Top group tabs (Friends Board, Speaker, etc.)
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -151,22 +184,18 @@ class _CourtyardPageState extends State<CourtyardPage> {
                               itemCount: facilities.length + 1,
                               itemBuilder: (context, rawIndex) {
                                 if (rawIndex == 0) {
-                                  final ids =
-                                      facilities.map((f) => f.id).toList();
-                                  final allChecked = ids.isNotEmpty &&
-                                      ids.every((id) =>
-                                          _store.isUnlocked(_bucket, id));
                                   return Align(
                                     alignment: Alignment.centerRight,
-                                    child: TextButton(
-                                      onPressed: () async {
-                                        await _store.setManyUnlocked(
-                                            _bucket, ids, !allChecked);
+                                    child: CheckAllButton(
+                                      bucket: _bucket,
+                                      ids: facilities
+                                          .map((f) => f.id)
+                                          .toList(),
+                                      groupLabel:
+                                          '${_scene.label} — $_selectedGroup',
+                                      onApplied: (_) {
                                         if (mounted) setState(() {});
                                       },
-                                      child: Text(allChecked
-                                          ? 'Uncheck all'
-                                          : 'Check all'),
                                     ),
                                   );
                                 }

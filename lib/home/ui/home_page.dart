@@ -43,8 +43,6 @@ import '../../features/settings/ui/settings_page.dart';
 import '../../features/customers/data/customers_repository.dart';
 import 'package:animal_restaurant_tracker/features/mementos/data/mementos_index.dart';
 
-
-
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
   @override
@@ -91,9 +89,9 @@ class _HomePageState extends State<HomePage> {
       case HitType.customer:
         final c = await CustomersRepository.instance.byId(h.id);
         if (c == null || !mounted) return;
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (_) => const CustomersPage()),
-        );
+        Navigator.of(
+          context,
+        ).push(MaterialPageRoute(builder: (_) => const CustomersPage()));
         break;
 
       case HitType.dish:
@@ -110,18 +108,16 @@ class _HomePageState extends State<HomePage> {
         if (f == null || !mounted) return;
         Navigator.of(context).push(
           MaterialPageRoute(
-            builder: (_) => facdetail.FacilityDetailPage(
-              facilityId: f.id,
-            ),
+            builder: (_) => facdetail.FacilityDetailPage(facilityId: f.id),
           ),
         );
         break;
 
       case HitType.letter:
         if (!mounted) return;
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (_) => const LettersPage()),
-        );
+        Navigator.of(
+          context,
+        ).push(MaterialPageRoute(builder: (_) => const LettersPage()));
         break;
 
       case HitType.memento:
@@ -129,18 +125,16 @@ class _HomePageState extends State<HomePage> {
         if (entry == null || !mounted) return;
 
         Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (_) => MementoDetailPage(memento: entry),
-          ),
+          MaterialPageRoute(builder: (_) => MementoDetailPage(memento: entry)),
         );
         break;
 
       //  Battle Pass (if your SearchIndex supports it)
       case HitType.battlePass:
         if (!mounted) return;
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (_) => const BattlePassPage()),
-        );
+        Navigator.of(
+          context,
+        ).push(MaterialPageRoute(builder: (_) => const BattlePassPage()));
         break;
     }
   }
@@ -186,8 +180,10 @@ class _HomePageState extends State<HomePage> {
                         'Search customers, letters, recipes, facilities, mementos, battle pass…',
                     prefixIcon: Icon(Icons.search),
                     border: InputBorder.none,
-                    contentPadding:
-                        EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+                    contentPadding: EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 14,
+                    ),
                   ),
                   onChanged: _onChanged,
                 ),
@@ -196,9 +192,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     constraints: const BoxConstraints(maxHeight: 280),
                     decoration: const BoxDecoration(
-                      border: Border(
-                        top: BorderSide(color: Colors.black12),
-                      ),
+                      border: Border(top: BorderSide(color: Colors.black12)),
                     ),
                     child: ListView.builder(
                       shrinkWrap: true,
@@ -226,12 +220,20 @@ class _HomePageState extends State<HomePage> {
                             bucket = 'memento_collected';
                             break;
                           case HitType.battlePass:
-                            bucket = 'battle_pass';
+                            // Battle pass rewards are claimed per phase, so a
+                            // single hit has no one bucket. Show the row
+                            // without a checkbox, as global search does.
+                            bucket = null;
                             break;
                         }
 
-                        final checked =
-                            store.isUnlocked(bucket, h.key ?? h.id);
+                        // Capture in a final so it promotes inside the
+                        // checkbox callback below.
+                        final hitBucket = bucket;
+                        final entryId = h.key ?? h.id;
+                        final checked = hitBucket == null
+                            ? false
+                            : store.isUnlocked(hitBucket, entryId);
 
                         return InkWell(
                           mouseCursor: SystemMouseCursors.click,
@@ -239,16 +241,19 @@ class _HomePageState extends State<HomePage> {
                           child: ListTile(
                             leading: Icon(_iconFor(h.type)),
                             title: Text(h.title),
-                            subtitle:
-                                h.subtitle != null ? Text(h.subtitle!) : null,
-                            trailing: Checkbox(
-                              value: checked,
-                              onChanged: (v) => store.setUnlocked(
-                                bucket!,
-                                h.key ?? h.id,
-                                v ?? false,
-                              ),
-                            ),
+                            subtitle: h.subtitle != null
+                                ? Text(h.subtitle!)
+                                : null,
+                            trailing: hitBucket == null
+                                ? null
+                                : Checkbox(
+                                    value: checked,
+                                    onChanged: (v) => store.setUnlocked(
+                                      hitBucket,
+                                      entryId,
+                                      v ?? false,
+                                    ),
+                                  ),
                           ),
                         );
                       },
@@ -286,30 +291,15 @@ class _HomePageState extends State<HomePage> {
                 'Facilities',
                 fac.FacilitiesPage(),
               ),
-              _navTile(
-                context,
-                Icons.mail,
-                'Letters',
-                const LettersPage(),
-              ),
+              _navTile(context, Icons.mail, 'Letters', const LettersPage()),
               _navTile(
                 context,
                 Symbols.menu_book_2,
                 'Recipes',
                 const recipes.DishesPage(),
               ),
-              _navTile(
-                context,
-                Icons.movie,
-                'Movies',
-                const MoviesPage(),
-              ),
-              _navTile(
-                context,
-                Icons.attach_money,
-                'Bank',
-                const BankPage(),
-              ),
+              _navTile(context, Icons.movie, 'Movies', const MoviesPage()),
+              _navTile(context, Icons.attach_money, 'Bank', const BankPage()),
               _navTile(
                 context,
                 Icons.checklist,
@@ -322,12 +312,7 @@ class _HomePageState extends State<HomePage> {
                 '% Complete',
                 const ProgressPage(),
               ),
-              _navTile(
-                context,
-                Icons.pets,
-                'Pets',
-                const PetsPage(),
-              ),
+              _navTile(context, Icons.pets, 'Pets', const PetsPage()),
               _navTile(
                 context,
                 Icons.card_giftcard,
@@ -343,12 +328,7 @@ class _HomePageState extends State<HomePage> {
                 const BattlePassPage(),
               ),
 
-              _navTile(
-                context,
-                Symbols.owl,
-                'Staff',
-                const StaffPage(),
-              ),
+              _navTile(context, Symbols.owl, 'Staff', const StaffPage()),
               _navTile(
                 context,
                 Symbols.menu_book,
@@ -361,31 +341,20 @@ class _HomePageState extends State<HomePage> {
                 'Aromatic Acorn Judging',
                 const AromaticAcornPage(),
               ),
-              _navTile(
-                context,
-                Icons.timer,
-                'Timers',
-                const TimersPage(),
-              ),
+              _navTile(context, Icons.timer, 'Timers', const TimersPage()),
               _navTile(
                 context,
                 Icons.settings,
                 'Settings',
                 const SettingsPage(),
               ),
+              _navTile(context, Icons.person, 'Login', const _AccountPage()),
               _navTile(
                 context,
-                Icons.person,
-                'Login',
-                const _AccountPage(),
+                Icons.support_agent,
+                'Support',
+                const SupportPage(),
               ),
-              _navTile(
-              context,
-              Icons.support_agent,
-              'Support',
-              const SupportPage(),
-            ),
-
             ],
           ),
         ],
@@ -402,9 +371,8 @@ class _HomePageState extends State<HomePage> {
     return _NavTile(
       icon: icon,
       label: label,
-      onTap: () => Navigator.of(context).push(
-        MaterialPageRoute(builder: (_) => page),
-      ),
+      onTap: () =>
+          Navigator.of(context).push(MaterialPageRoute(builder: (_) => page)),
     );
   }
 
@@ -495,6 +463,7 @@ class _AromaticAcornPlaceholderPage extends StatelessWidget {
     );
   }
 }
+
 class _AccountPage extends StatelessWidget {
   const _AccountPage();
 

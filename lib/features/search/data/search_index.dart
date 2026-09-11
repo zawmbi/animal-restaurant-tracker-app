@@ -9,6 +9,7 @@ import '../../letters/data/letters_repository.dart';
 import '../../letters/model/letter.dart';
 import '../../dishes/data/dishes_repository.dart';
 import '../../dishes/model/dish.dart';
+import '../../completion/data/progress_types.dart';
 import '../../facilities/model/facility.dart';
 import '../../mementos/data/mementos_index.dart';
 
@@ -20,7 +21,14 @@ class SearchHit {
   final String title;
   final String? subtitle;  // optional (e.g., customer name for a memento)
   final String? key;       // for mementos we store the composite key
-  const SearchHit(this.type, this.id, this.title, {this.subtitle, this.key});
+
+  /// The progress bucket this hit's checkbox reads and writes, when the type
+  /// alone does not settle it. Facilities are split across two buckets by
+  /// area, so the row cannot infer it from [type].
+  final String? bucket;
+
+  const SearchHit(this.type, this.id, this.title,
+      {this.subtitle, this.key, this.bucket});
 }
 
 // ---------------------------------------------------------------------------
@@ -33,6 +41,21 @@ class SearchHit {
 // character typed — tens of thousands of short-lived Strings per keystroke.
 // Matching now walks pre-computed haystacks and allocates nothing.
 // ---------------------------------------------------------------------------
+
+/// Which screen a facility hit belongs to, so two facilities that share a
+/// display name ('Christmas Tree' is both a restaurant plant and a courtyard
+/// one) can be told apart in the results.
+String _areaLabel(FacilityArea area) => switch (area) {
+      FacilityArea.restaurant => 'Restaurant',
+      FacilityArea.kitchen => 'Kitchen',
+      FacilityArea.garden => 'Garden',
+      FacilityArea.buffet => 'Buffet',
+      FacilityArea.takeout => 'Takeout',
+      FacilityArea.terrace => 'Terrace',
+      FacilityArea.courtyard => 'Courtyard',
+      FacilityArea.courtyard_concert => 'Concert',
+      FacilityArea.courtyard_pets => 'Pet Yard',
+    };
 
 bool _anyContains(List<String> haystacks, String q) {
   for (var i = 0; i < haystacks.length; i++) {
@@ -199,8 +222,13 @@ class SearchIndex {
     // Facilities
     for (final r in _facilities ?? const <_FacilityRow>[]) {
       if (r.nameLower.contains(q)) {
-        hits.add(
-            SearchHit(HitType.facility, r.facility.id, r.facility.name));
+        hits.add(SearchHit(
+          HitType.facility,
+          r.facility.id,
+          r.facility.name,
+          subtitle: _areaLabel(r.facility.area),
+          bucket: ProgressTypes.facilityBucketFor(r.facility.area.name),
+        ));
       }
     }
 

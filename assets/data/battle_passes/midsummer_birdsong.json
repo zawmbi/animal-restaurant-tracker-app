@@ -34,7 +34,7 @@
         { "exp": 380, "normalRewards": [{ "type": "item", "id": "sunflower", "itemType": "flower", "level": 2, "qty": 1 }], "superRewards": [{ "type": "item", "id": "sunflower", "itemType": "flower", "level": 4, "qty": 2 }] },
         { "exp": 400, "normalRewards": [{ "type": "facility", "id": "butterfly_bow_stove" }], "superRewards": [{ "type": "facility", "id": "floral_evening_party" }] },
         { "exp": 420, "normalRewards": [{ "type": "currency", "currency": "cod", "amount": 18000 }], "superRewards": [{ "type": "facility", "id": "feathered_gentlemen" }] },
-        { "exp": 440, "normalRewards": [{ "type": "rating", "earnedStars": 5 }], "superRewards": [{ "type": "facility", "id": "purple_butterfly_heart" }] },
+        { "exp": 440, "normalRewards": [{ "type": "rating", "earnedStars": 5 }], "superRewards": [{ "type": "memento", "id": "purple_butterfly_heart" }] },
 
         {
           "exp": 1700,

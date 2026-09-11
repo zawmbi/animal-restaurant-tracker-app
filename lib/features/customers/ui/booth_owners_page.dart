@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../shared/widgets/check_all_button.dart';
 
 import '../../shared/data/unlocked_store.dart';
 import '../data/customers_repository.dart';
@@ -67,7 +68,7 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
         .then((_) {
           if (mounted) setState(() {});
         })
-        .catchError((_) => <String, String>{});
+        .catchError((_) {});
   }
 
   bool _isUnlocked(Customer c) => store.isUnlocked(_bucketCustomers, c.id);
@@ -279,20 +280,14 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
                       '$unlocked/$total unlocked',
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
-                    if (total > 0)
-                      TextButton(
-                        onPressed: () async {
-                          await store.setManyUnlocked(
-                            _bucketCustomers,
-                            sorted.map((c) => c.id),
-                            unlocked != total,
-                          );
-                          if (mounted) setState(() {});
-                        },
-                        child: Text(
-                          unlocked == total ? 'Uncheck all' : 'Check all',
-                        ),
-                      ),
+                    CheckAllButton(
+                      bucket: _bucketCustomers,
+                      ids: sorted.map((c) => c.id).toList(),
+                      groupLabel: 'Booth owners',
+                      onApplied: (_) {
+                        if (mounted) setState(() {});
+                      },
+                    ),
                   ],
                 ),
               ),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../../movies/model/movie.dart';
 import '../model/battle_pass.dart';
 
 class BattlePassRewardBox extends StatelessWidget {
@@ -61,6 +63,18 @@ class BattlePassRewardBox extends StatelessWidget {
         return (Icons.store, _titleizeId(r.id ?? 'facility'));
       case BattlePassRewardType.memento:
         return (Icons.card_giftcard, _titleizeId(r.id ?? 'memento'));
+      case BattlePassRewardType.movie:
+        // The id is '<film>_act_<roman>_fragment'. This list has no repository
+        // to resolve the film name from, so it prints the act plainly; the
+        // tier detail on BattlePassDetailPage shows the real film name.
+        final ref = MovieActRef.tryParse(r.id ?? '');
+        if (ref != null) {
+          return (
+            Icons.movie,
+            '${_titleizeId(ref.movieId)} — Act ${ref.actLabel}'
+          );
+        }
+        return (Icons.movie, _titleizeId(r.id ?? 'film'));
       case BattlePassRewardType.currency:
         return (Icons.attach_money, '${_cur(r.currency)}+${r.amount ?? 0}');
       case BattlePassRewardType.rating:

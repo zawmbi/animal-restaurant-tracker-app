@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../facilities/data/facilities_repository.dart';
+import '../../facilities/model/facility.dart';
+import '../../facilities/ui/facility_detail_page.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../../shared/json_loader.dart';
 import '../../shared/widgets/check_all_button.dart';
@@ -13,10 +16,22 @@ class RedemptionCode {
   final DateTime validFrom;
   final DateTime validUntil;
   final String reason;
-  // If this is a memento reward, this is the memento id from mementos.json
+  // The gift's id. Despite the name it is not always a memento — read
+  // [giftKind] to know which registry it belongs to.
   final String? giftMementoId;
   // Optional free-text label for non-memento rewards (Cod, plates, diamonds…)
   final String? giftLabel;
+
+  /// 'memento', 'facility', 'unresolved', or null for a currency gift.
+  ///
+  /// This and [giftRefId] used to be dropped on the floor, so every gift was
+  /// looked up in the memento index and the 38 facility gifts came out as
+  /// plain text with a dead checkbox — 40 of the 91 codes could not be ticked
+  /// off at all.
+  final String? giftKind;
+
+  /// The id inside the registry [giftKind] names.
+  final String? giftRefId;
 
   RedemptionCode({
     required this.code,
@@ -25,6 +40,8 @@ class RedemptionCode {
     required this.reason,
     this.giftMementoId,
     this.giftLabel,
+    this.giftKind,
+    this.giftRefId,
   });
 
   /// Parses dates safely:
@@ -83,6 +100,8 @@ class RedemptionCode {
       reason: (json['reason'] as String?) ?? '',
       giftMementoId: json['giftMementoId'] as String?,
       giftLabel: json['giftLabel'] as String?,
+      giftKind: json['giftKind'] as String?,
+      giftRefId: json['giftRefId'] as String?,
     );
   }
 
@@ -93,11 +112,46 @@ class RedemptionCode {
   }
 }
 
-class _CodeWithMemento {
-  final RedemptionCode code;
+/// A gift resolved to something the page can name, open and tick off.
+///
+/// Mementos and facilities live in different registries and different progress
+/// buckets, so the row carries both the bucket and the key rather than
+/// assuming 'memento_collected'.
+class _Gift {
+  final String bucket;
+  final String key;
+  final String name;
   final MementoEntry? memento;
+  final Facility? facility;
 
-  _CodeWithMemento({required this.code, required this.memento});
+  const _Gift._({
+    required this.bucket,
+    required this.key,
+    required this.name,
+    this.memento,
+    this.facility,
+  });
+
+  factory _Gift.memento(MementoEntry m) => _Gift._(
+        bucket: 'memento_collected',
+        key: m.key,
+        name: m.name,
+        memento: m,
+      );
+
+  factory _Gift.facility(Facility f) => _Gift._(
+        bucket: 'facility',
+        key: f.id,
+        name: f.name,
+        facility: f,
+      );
+}
+
+class _CodeWithGift {
+  final RedemptionCode code;
+  final _Gift? gift;
+
+  _CodeWithGift({required this.code, required this.gift});
 }
 
 enum RedemptionSortColumn {
@@ -118,7 +172,7 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
   String _query = '';
 
   final store = UnlockedStore.instance;
-  late Future<List<_CodeWithMemento>> _future;
+  late Future<List<_CodeWithGift>> _future;
 
   // NEW: clickable column sort state
   RedemptionSortColumn _sortColumn = RedemptionSortColumn.date;
@@ -133,12 +187,15 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
     _future = _load();
   }
 
-  Future<List<_CodeWithMemento>> _load() async {
-    // 1) Load all mementos so we can link gifts by id
+  Future<List<_CodeWithGift>> _load() async {
+    // Both registries: a code's gift is a memento or a facility, and which one
+    // it is comes from giftKind in the data.
     final mementos = await MementosIndex.instance.all();
     final mementosById = {for (final m in mementos) m.id: m};
 
-    // 2) Load redemption codes from JSON
+    final facilities = await FacilitiesRepository.instance.all();
+    final facilitiesById = {for (final f in facilities) f.id: f};
+
     final raw =
         await JsonLoader.load('assets/data/redemption_codes.json') as List<dynamic>;
 
@@ -149,14 +206,41 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
     // default order in data (doesn't matter much because we sort in UI)
     codes.sort((a, b) => b.validFrom.compareTo(a.validFrom));
 
-    return codes
-        .map(
-          (c) => _CodeWithMemento(
-            code: c,
-            memento: c.giftMementoId != null ? mementosById[c.giftMementoId!] : null,
-          ),
-        )
-        .toList();
+    return codes.map((c) => _CodeWithGift(code: c, gift: _resolveGift(
+          c,
+          mementosById: mementosById,
+          facilitiesById: facilitiesById,
+        ))).toList();
+  }
+
+  /// Resolves one code's gift, or null for a currency gift and for the two
+  /// codes the data itself marks 'unresolved'.
+  ///
+  /// The kind is trusted first and the other registry is tried as a fallback,
+  /// so a gift mislabelled in the data still links rather than dead-ending.
+  static _Gift? _resolveGift(
+    RedemptionCode c, {
+    required Map<String, MementoEntry> mementosById,
+    required Map<String, Facility> facilitiesById,
+  }) {
+    final id = c.giftRefId ?? c.giftMementoId;
+    if (id == null) return null;
+
+    final memento = mementosById[id];
+    final facility = facilitiesById[id];
+
+    switch (c.giftKind) {
+      case 'facility':
+        if (facility != null) return _Gift.facility(facility);
+        break;
+      case 'memento':
+        if (memento != null) return _Gift.memento(memento);
+        break;
+    }
+
+    if (memento != null) return _Gift.memento(memento);
+    if (facility != null) return _Gift.facility(facility);
+    return null;
   }
 
   String _formatDate(DateTime d) {
@@ -166,13 +250,13 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
     return '$y-$m-$day';
   }
 
-  bool _isOwned(_CodeWithMemento item) {
-    final m = item.memento;
-    if (m == null) return false;
-    return store.isUnlocked('memento_collected', m.key);
+  bool _isOwned(_CodeWithGift item) {
+    final g = item.gift;
+    if (g == null) return false;
+    return store.isUnlocked(g.bucket, g.key);
   }
 
-  void _sortItems(List<_CodeWithMemento> items) {
+  void _sortItems(List<_CodeWithGift> items) {
     int cmpBool(bool a, bool b) {
       if (a == b) return 0;
       return a ? 1 : -1; // false < true in ascending
@@ -286,10 +370,15 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
     );
   }
 
-  void _openMemento(MementoEntry m) {
+  void _openGift(_Gift g) {
+    final memento = g.memento;
+    final facility = g.facility;
+
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => MementoDetailPage(memento: m),
+        builder: (_) => memento != null
+            ? MementoDetailPage(memento: memento)
+            : FacilityDetailPage(facilityId: facility!.id),
       ),
     );
   }
@@ -305,7 +394,7 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
       body: AnimatedBuilder(
         animation: store,
         builder: (context, _) {
-          return FutureBuilder<List<_CodeWithMemento>>(
+          return FutureBuilder<List<_CodeWithGift>>(
             future: _future,
             builder: (context, snapshot) {
               if (!snapshot.hasData) {
@@ -326,7 +415,7 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                   .where((it) {
                     // Match the gift text the row actually renders.
                     final giftText =
-                        it.memento?.name ?? it.code.giftLabel ?? '';
+                        it.gift?.name ?? it.code.giftLabel ?? '';
                     return (!_activeOnly || it.code.isCurrentlyValid) &&
                         matchesQuery(
                           _query,
@@ -338,15 +427,25 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
               // apply sort
               _sortItems(items);
 
-              // Only codes whose reward is a memento can be checked off.
-              final rewardKeys = items
-                  .map((it) => it.memento?.key)
-                  .whereType<String>()
-                  .toSet()
-                  .toList();
-              final ownedRewards = rewardKeys
-                  .where((k) => store.isUnlocked('memento_collected', k))
-                  .length;
+              // Gifts span two buckets, so the counter and the check-all both
+              // work per bucket. A code with a currency gift has nothing to
+              // tick and stays out of both.
+              final gifts = items.map((it) => it.gift).whereType<_Gift>();
+              final keysByBucket = <String, Set<String>>{};
+              for (final g in gifts) {
+                (keysByBucket[g.bucket] ??= <String>{}).add(g.key);
+              }
+              final rewardTargets = <CheckAllTarget>[
+                for (final e in keysByBucket.entries)
+                  CheckAllTarget(e.key, e.value.toList()),
+              ];
+              final rewardCount = keysByBucket.values
+                  .fold<int>(0, (n, keys) => n + keys.length);
+              final ownedRewards = keysByBucket.entries.fold<int>(
+                0,
+                (n, e) =>
+                    n + e.value.where((k) => store.isUnlocked(e.key, k)).length,
+              );
 
               return Column(
                 children: [
@@ -367,15 +466,14 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                         Expanded(
                           child: Text(
                             '${items.length} shown • '
-                            'gifts $ownedRewards/${rewardKeys.length}',
+                            'gifts $ownedRewards/$rewardCount',
                             textAlign: TextAlign.right,
                             overflow: TextOverflow.ellipsis,
                             style: theme.textTheme.bodySmall,
                           ),
                         ),
-                        CheckAllButton(
-                          bucket: 'memento_collected',
-                          ids: rewardKeys,
+                        CheckAllButton.multi(
+                          targets: rewardTargets,
                           groupLabel: 'Redemption code gifts',
                         ),
                       ],
@@ -428,7 +526,7 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                       itemBuilder: (context, index) {
                         final item = items[index];
                         final c = item.code;
-                        final m = item.memento;
+                        final g = item.gift;
 
                         final currentlyValid = c.isCurrentlyValid;
                         final icon =
@@ -436,12 +534,12 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                         final iconColor =
                             currentlyValid ? Colors.green : Colors.redAccent;
 
-                        final owned = m != null ? _isOwned(item) : false;
+                        final owned = g != null && _isOwned(item);
 
-                        final giftText = m?.name ?? item.code.giftLabel ?? '—';
+                        final giftText = g?.name ?? item.code.giftLabel ?? '—';
 
                         return InkWell(
-                          onTap: m != null ? () => _openMemento(m) : null,
+                          onTap: g != null ? () => _openGift(g) : null,
                           child: Container(
                             padding: const EdgeInsets.symmetric(
                               horizontal: 12,
@@ -496,13 +594,13 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      if (m != null)
+                                      if (g != null)
                                         TextButton(
                                           style: TextButton.styleFrom(
                                             padding: EdgeInsets.zero,
                                             alignment: Alignment.centerLeft,
                                           ),
-                                          onPressed: () => _openMemento(m),
+                                          onPressed: () => _openGift(g),
                                           child: Text(
                                             giftText,
                                             style: const TextStyle(
@@ -521,11 +619,11 @@ class _RedemptionCodesPageState extends State<RedemptionCodesPage> {
                                         children: [
                                           Checkbox(
                                             value: owned,
-                                            onChanged: m == null
+                                            onChanged: g == null
                                                 ? null
                                                 : (v) => store.setUnlocked(
-                                                      'memento_collected',
-                                                      m.key,
+                                                      g.bucket,
+                                                      g.key,
                                                       v ?? false,
                                                     ),
                                           ),
