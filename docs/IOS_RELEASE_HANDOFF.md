@@ -143,11 +143,13 @@ there is no longer a stale IPA to confuse anyone.
    value and needs no edit. Raise all three, `pod install`, rebuild.
 
 5. **Builds since build 3.** Build 3 is the one that was uploaded, on 14 Sep.
-   Builds 4 and 5 were archived locally and superseded before upload; build 6
-   was cancelled mid-archive when two more commits landed. **Build 7 is the
-   one to upload** — it is the first to carry the UI pass below, and the IPA
-   on disk is whatever was built last, so check `Version 1.0.0 (7)` in the
-   Organizer before distributing rather than trusting the file's date.
+   Builds 4, 5 and 7 were archived locally and superseded before upload; build
+   6 was cancelled mid-archive when two more commits landed. **Build 8 is the
+   one to upload** — it carries the UI pass, the contrast fix, the landscape
+   inset, the refreshed changelog and redemption codes, and everything from
+   the player review below. The IPA on disk is always whatever was built
+   last, so check the version in the Organizer before distributing rather
+   than trusting the file's date.
 
 6. **Still to do: the App Store Connect listing.** Screenshots, description,
    keywords, category, age rating, pricing, and a **Support URL** (a required
@@ -230,6 +232,66 @@ a decision rather than a constant:
 - The Open Air Cinema "Check all acts" / "Clear all acts" buttons duplicate
   the row's own checkbox. **Left alone on purpose**: this file already records
   keeping them as a deliberate decision.
+
+---
+
+### Player review, 15 Sep 2026
+
+Five agents played the app as five kinds of player — completionist, economy
+optimiser, collector, event chaser, and a two-week-old beginner — each reading
+the wiki and the source. The agent is committed as
+`.claude/agents/player-persona.md`. Every finding below was verified against
+the code before being acted on; the reports were right about all of them, and
+wrong about a couple of details noted in passing.
+
+**Fixed, worst first.**
+
+- **Signing in erased guest progress.** The app launches into guest mode, so
+  that is how it is normally used. Progress is namespaced per profile, and
+  `attachUser` switched the namespace to the Firebase uid and read keys that
+  did not exist. You saw zero — and since a new account has no cloud document,
+  the sync that followed would have uploaded that empty state as the account's
+  starting point. The guest keys were never deleted so it was recoverable by
+  signing out, but nothing said so.
+- **Search checkboxes did not redraw.** Both search lists wrote to the store
+  with nothing listening. The tick appeared not to work, on the one path that
+  lets someone check something off without knowing its category.
+- **The home search filed courtyard facilities in a dead bucket** — 1,871 of
+  4,064 — and it looked fine because the checkbox read back the same wrong
+  bucket.
+- **Redemption codes were 185 days stale**, leaving exactly one active code,
+  the permanent one, whose checkbox is disabled. `scrape_redemption_codes.py`
+  now regenerates them: 101 codes, three live today.
+- **Cost to Complete** read one bucket for all nine facility areas, so 1,871
+  could never read as owned and their price — all of the film cost — stayed in
+  Remaining forever.
+- **The mementos list reset to the top on every tick**, because its future was
+  rebuilt inside `build()`. `MementosIndex` also never cached, so each call
+  re-read both assets and re-allocated all 1,184 entries.
+- **Eleven performers lost their band**: their rows spell the performer block
+  flat. Puff Planet showed 1 of 4 members; two other bands showed none.
+- **149 of 155 posters could not be ticked.** There is a Posters page now.
+- **Battle passes you never played** put 573 unreachable tiers into the
+  denominator. A pass counts once you tick "I took part in this pass".
+- **A Missing / Owned / All filter** on the big lists, and memento
+  requirements shown inline on the customer page.
+- **"What should I buy next"** is answerable: `BankService.bestValue()` joins
+  income to price and ranks unowned facilities by return per cod.
+
+**Open, and each needs a decision rather than a patch.**
+
+- **No event calendar.** `updates.json` is the only dated data in the app and
+  it is treated as prose, though 29 change lines carry machine-parseable date
+  ranges. The event chaser wanted this most; it is a feature, not a fix.
+- **Timers cap at 99 hours and do not survive a restart**, while the
+  deadlines that matter run 15-65 days.
+- **Settings' "Synced Versions" hardcodes v11.15.0g** and presents v11.16.0 as
+  upcoming; it shipped in March. The right value is `updates.json[0]`.
+- **The Aromatic Acorn data is an annual cycle behind** — the 2nd Annual
+  Judgings added in v11.22.0g are missing, 4 stages.
+- **Stale content generally** — see `docs/data-freshness-report.md`. The
+  scrapers write into a gitignored directory, so refreshing needs the pipeline
+  fixed first.
 
 ---
 
