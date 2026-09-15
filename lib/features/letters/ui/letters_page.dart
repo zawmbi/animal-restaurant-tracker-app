@@ -23,7 +23,6 @@ class _LettersPageState extends State<LettersPage> {
   static const String _bucketLetter = 'letter';
   String _query = '';
 
-  Color _ownedFill(BuildContext context) => Colors.green.withOpacity(0.18);
 
   @override
   void initState() {
@@ -33,7 +32,6 @@ class _LettersPageState extends State<LettersPage> {
 
   @override
   Widget build(BuildContext context) {
-    final ownedFill = _ownedFill(context);
 
     return Scaffold(
       appBar: AppBar(
@@ -123,7 +121,6 @@ class _LettersPageState extends State<LettersPage> {
                               // Names run to 50 characters; shrink to fit the
                               // cell rather than spilling out of it.
                               maxLines: 2,
-                              fillColor: owned ? ownedFill : null,
                               onCheckChanged: (v) =>
                                   store.setUnlocked(_bucketLetter, l.id, v),
                               onTap: () => Navigator.of(context).push(

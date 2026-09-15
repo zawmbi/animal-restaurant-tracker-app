@@ -211,7 +211,6 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     if (mounted) setState(() {});
   }
 
-  Color _ownedFill(BuildContext context) => Colors.green.withOpacity(0.18);
 
   Future<void> _openCustomerById(BuildContext context, String id) async {
     final found = await CustomersRepository.instance.byId(id);
@@ -242,7 +241,6 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
   @override
   Widget build(BuildContext context) {
     final r = customer.requirements;
-    final ownedFill = _ownedFill(context);
 
     return Scaffold(
       appBar: AppBar(title: Text(customer.name)),
@@ -320,7 +318,7 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
                   label: dish?.name ?? (raw.isEmpty
                       ? raw
                       : '${raw[0].toUpperCase()}${raw.substring(1)}'),
-                  fillColor: owned ? ownedFill : null,
+                  checked: owned,
                   onTap: () async {
                     await Navigator.push(
                     context,
@@ -343,7 +341,6 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               ids: r.facilities,
               isOwned: (id) =>
                   store.isUnlocked(_bucketFacility, id.toString()),
-              fillIfOwned: ownedFill,
               names: _links?.facilityNames,
               onTap: (id) async {
                 await Navigator.push(
@@ -368,7 +365,6 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               title: 'Required Flowers',
               ids: r.flowers,
               isOwned: (_) => false,
-              fillIfOwned: ownedFill,
               names: _links?.flowerNames,
             ),
 
@@ -377,7 +373,6 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               title: 'Required Letters',
               ids: r.letters,
               isOwned: (id) => store.isUnlocked(_bucketLetter, id.toString()),
-              fillIfOwned: ownedFill,
               names: _links?.letterNames,
               onTap: (id) async {
                 final Letter? letter =
@@ -401,7 +396,6 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
               ids: r.customers,
               isOwned: (id) =>
                   store.isUnlocked(_bucketCustomers, id.toString()),
-              fillIfOwned: ownedFill,
               names: _links?.customerNames,
               onTap: (id) => _openCustomerById(context, id.toString()),
             ),
@@ -485,7 +479,6 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
                           label: m.name,
                           checked: collected,
                           showCheckbox: onCheckChanged != null,
-                          fillColor: collected ? ownedFill : null,
                           onCheckChanged: onCheckChanged,
                           onTap: openDetail,
                         );
@@ -727,7 +720,6 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     required String title,
     required List ids,
     required bool Function(dynamic id) isOwned,
-    required Color fillIfOwned,
     Map<String, String>? names,
     Future<void> Function(dynamic id)? onTap,
   }) {
@@ -749,7 +741,9 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
             final links = onTap != null && (!resolved || name != null);
             return EntityChip(
               label: name ?? prettyId(key),
-              fillColor: isOwned(id) ? fillIfOwned : null,
+              // The same thing is ticked off on its own page; saying so here
+              // saves going to look.
+              checked: isOwned(id),
               onTap: links ? () => onTap(id) : null,
             );
           }).toList(),

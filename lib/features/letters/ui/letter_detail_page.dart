@@ -2,6 +2,8 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+
+import '../../shared/widgets/entity_chip.dart';
 import 'package:collection/collection.dart';
 
 import '../model/letter.dart';
@@ -47,7 +49,6 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
 
   Letter get letter => widget.letter;
 
-  Color _ownedFill(BuildContext context) => Colors.green.withOpacity(0.18);
 
   @override
   void initState() {
@@ -58,7 +59,6 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final ownedFill = _ownedFill(context);
     final combos = letter.combinations;
 
     return AnimatedBuilder(
@@ -123,14 +123,13 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
                 value: _BonusValue(raw: letter.earnedStars ?? '—', starAsset: _starAsset),
               ),
 
-              _ownedLinkRow(label: 'Unlocks', raw: letter.unlocks, fillIfOwned: ownedFill),
-              _ownedLinkRow(label: 'Prerequisite', raw: letter.prerequisite, fillIfOwned: ownedFill),
+              _ownedLinkRow(label: 'Unlocks', raw: letter.unlocks),
+              _ownedLinkRow(label: 'Prerequisite', raw: letter.prerequisite),
 
               if (letter.unlockRequirement != null && letter.unlockRequirement!.trim().isNotEmpty)
                 _ownedLinkRow(
                   label: 'Unlock Requirement',
                   raw: letter.unlockRequirement,
-                  fillIfOwned: ownedFill,
                 ),
             ],
           ),
@@ -161,10 +160,14 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
     );
   }
 
+  /// A letter's prerequisites and unlocks, each shown as an EntityChip so it
+  /// carries the same "you already have this" styling as every other
+  /// cross-reference in the app. This used to roll its own owned state: a
+  /// Colors.green 18% container behind primary-coloured text, which was both
+  /// off-palette and a second thing to keep in step.
   Widget _ownedLinkRow({
     required String label,
     required String? raw,
-    required Color fillIfOwned,
   }) {
     final text = (raw ?? '—').trim();
     if (text.isEmpty || text == '—' || text == '-') {
@@ -188,39 +191,16 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
             final target = snap.data;
             if (target == null) return Text(items[0]);
 
-            final owned = target.owned;
-            final childText = Text(
-              items[0],
-              style: TextStyle(
-                color: Theme.of(context).colorScheme.primary,
-                decoration: TextDecoration.none,
-              ),
-            );
-
-            final clickable = InkWell(
-              borderRadius: BorderRadius.circular(6),
-              onTap: () async {
-                await _openTarget(target);
-                if (mounted) setState(() {});
-              },
-              child: owned
-                  ? Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                      decoration: BoxDecoration(
-                        color: fillIfOwned,
-                        borderRadius: BorderRadius.circular(8),
-                      ),
-                      child: childText,
-                    )
-                  : Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 2),
-                      child: childText,
-                    ),
-            );
-
             return UnconstrainedBox(
               alignment: Alignment.centerLeft,
-              child: clickable,
+              child: EntityChip(
+                label: items[0],
+                checked: target.owned,
+                onTap: () async {
+                  await _openTarget(target);
+                  if (mounted) setState(() {});
+                },
+              ),
             );
           },
         ),
@@ -251,39 +231,16 @@ class _LetterDetailPageState extends State<LetterDetailPage> {
             if (target == null) {
               widgets.add(Text(item));
             } else {
-              final owned = target.owned;
-              final childText = Text(
-                item,
-                style: TextStyle(
-                  color: Theme.of(context).colorScheme.primary,
-                  decoration: TextDecoration.none,
-                ),
-              );
-
-              final clickable = InkWell(
-                borderRadius: BorderRadius.circular(6),
-                onTap: () async {
-                  await _openTarget(target);
-                  if (mounted) setState(() {});
-                },
-                child: owned
-                    ? Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                        decoration: BoxDecoration(
-                          color: fillIfOwned,
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                        child: childText,
-                      )
-                    : Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 2),
-                        child: childText,
-                      ),
-              );
-
               widgets.add(UnconstrainedBox(
                 alignment: Alignment.centerLeft,
-                child: clickable,
+                child: EntityChip(
+                  label: item,
+                  checked: target.owned,
+                  onTap: () async {
+                    await _openTarget(target);
+                    if (mounted) setState(() {});
+                  },
+                ),
               ));
             }
 
