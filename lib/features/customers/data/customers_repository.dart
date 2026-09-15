@@ -61,7 +61,47 @@ class CustomersRepository {
     }
   }
 
+  /// The tags that have a tab of their own on the Customers page.
+  ///
+  /// Anything carrying none of these, and no season, would otherwise be
+  /// reachable only from the All tab — see [regulars].
+  static const List<String> tabTags = <String>[
+    'regular',
+    'special',
+    'event',
+    'booth_owner',
+    'performer',
+    'gachapon',
+  ];
+
   Future<List<Customer>> withTag(String tag) => _byTag[tag] ??= _withTag(tag);
+
+  /// The Regular tab: everything tagged `regular`, plus anything the wiki
+  /// categorised in a way none of the tabs covers.
+  ///
+  /// Eight customers — Deer, Gloomy, White Shiba, and five terrace regulars —
+  /// carry only tags like `restaurant` or `terrace`, which no tab reads, and
+  /// have no season. Before this they appeared on the All tab and nowhere
+  /// else, so browsing by tab could never find them. Falling back here rather
+  /// than re-tagging the data means a customer whose categories change on the
+  /// wiki still lands somewhere instead of disappearing.
+  Future<List<Customer>> regulars() => _regulars ??= _regularsImpl();
+
+  Future<List<Customer>>? _regulars;
+
+  Future<List<Customer>> _regularsImpl() async {
+    try {
+      final list = await all();
+      return list.where((c) {
+        if (c.tags.contains('regular')) return true;
+        if (c.season != null) return false; // the Seasonal tab has it
+        return !c.tags.any(tabTags.contains);
+      }).toList();
+    } catch (_) {
+      _regulars = null; // allow a retry
+      rethrow;
+    }
+  }
 
   Future<List<Customer>> _withTag(String tag) async {
     try {

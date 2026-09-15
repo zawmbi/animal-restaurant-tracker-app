@@ -104,6 +104,9 @@ class _CustomersGridState extends State<_CustomersGrid> {
   Future<List<Customer>> _load() {
     if (widget.seasonal) return CustomersRepository.instance.seasonal();
     if (widget.tag == null) return CustomersRepository.instance.all();
+    // The Regular tab also collects anything no other tab claims, so every
+    // customer is reachable without resorting to All or search.
+    if (widget.tag == 'regular') return CustomersRepository.instance.regulars();
     return CustomersRepository.instance.withTag(widget.tag!);
   }
 

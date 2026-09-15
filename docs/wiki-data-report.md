@@ -308,3 +308,47 @@ the same item twice.
    cross-referenced; they need a repository + UI.
 7. **`mementos_extra.json` is now `[]`.** `MementosIndex` handles an empty list fine. If nothing
    else will ever be added there, the second load could be dropped.
+
+
+---
+
+## Why the customer count is 613 and the wiki says 500 (checked 15 Sep 2026)
+
+Three numbers get quoted for the same thing, and none of them is a miscount.
+They answer different questions.
+
+| Number | What it counts |
+|---|---|
+| **500** | Members of the wiki's `Category:Customers`, exactly. Includes about six index pages — "Seasonal Customers", "Regular Customers", "Event Customers", "Terrace Customers", "Puff Customer", "Rose Customer" — which are hub pages, not customers. |
+| **613** | `customers.json`, which is the union of **eleven** categories: Customers, Performer, Booth Owner, Doll Figure Customers, Terrace Customers, Event Customers, Special Customers, Regulars, Flower Customer, Halloween Customers, Seasonal. |
+| **572** | 613 minus the 41 `event` customers. The arithmetic is exact, but nothing on the wiki was found stating it, so treat the match as unconfirmed. |
+
+The 113-row gap between 500 and 613 is mostly **76 performers**: they live in
+`Category:Performer`, which `Category:Customers` does not contain. The rest is
+20 regulars, 17 gachapon dolls and 9 booth owners the wiki files only under
+their own categories.
+
+**613 is not inflated by junk.** 613 rows, 613 unique ids, 613 unique names, no
+duplicates, and no index pages leaked in — `scrape_customers.py` already skips
+those. One name collides with a recipe (`candied_hawthorn`), and that is
+correct: the booth and the dish really do share a name.
+
+**Booth owners are named after their booths.** `Category:Booth Owner` names
+each page after the stall rather than its animal owner, so the customer list
+carries entries like "American Hot Dog", "Bowl Pudding" and "Wholegrain
+Pancake" among names like "Old Joe". They look like recipes in a list and are
+not; nothing is duplicated. Worth knowing before someone "fixes" it.
+
+**Decision taken:** the All tab stays as all 613. This is a completion
+tracker, and narrowing All to the wiki's definition would leave 76 performers
+untickable from the one screen that claims to list everything. The narrower
+sets already have their own tabs.
+
+**Fixed at the same time:** eight customers — `deer`, `gloomy`, `white_shiba`,
+`bouncy_the_pika`, `dobermann`, `hoppy_the_pika`, `mad_hatter`, `sunny` —
+carried only tags like `restaurant` or `terrace`, which no tab reads, and no
+season, so they appeared on All and nowhere else. The Regular tab now also
+collects anything no other tab claims, which is resilient in a way re-tagging
+the data would not be: a customer whose wiki categories change still lands
+somewhere rather than vanishing. `test/customers/customer_tabs_test.dart`
+asserts no customer is ever All-only again.
