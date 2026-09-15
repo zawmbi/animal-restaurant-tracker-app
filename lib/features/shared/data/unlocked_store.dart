@@ -66,7 +66,8 @@ class UnlockedStore extends ChangeNotifier {
   // Namespace for SharedPreferences keys.
   // - "guest" when signed out
   // - uid when signed in
-  String _ns = 'guest';
+  static const String _guestNs = 'guest';
+  String _ns = _guestNs;
 
   bool _cloudSyncInProgress = false;
   Timer? _debounceUpload;
@@ -151,6 +152,7 @@ class UnlockedStore extends ChangeNotifier {
   Future<void> _switchProfileAndNotify() async {
     final types = <String>{..._defaultTypes, ..._sets.keys};
     await _loadNamespaceFromPrefs(types);
+    await adoptGuestProgressIfEmpty();
 
     notifyListeners();
 
@@ -442,6 +444,65 @@ class UnlockedStore extends ChangeNotifier {
     } finally {
       _cloudSyncInProgress = false;
     }
+  }
+
+  /// Switches profile the way signing in does, without a Firebase user.
+  ///
+  /// `attachUser` takes a `User`, which cannot be constructed in a unit test,
+  /// and the namespace switch is where progress was being lost — so it needs
+  /// a seam of its own.
+  @visibleForTesting
+  Future<void> debugSwitchNamespace(String ns) async {
+    _ns = ns;
+    await _switchProfileAndNotify();
+  }
+
+  /// Carries guest progress into an account the first time it signs in.
+  ///
+  /// Progress is namespaced per profile (`unlocked:<ns>:<type>`) and signing
+  /// in switches the namespace to the Firebase uid. Nothing copied the old
+  /// namespace across, so someone who had tracked months of progress as a
+  /// guest — which is the normal way to use this app, since `main.dart`
+  /// launches straight into it — tapped Login and saw zero. Worse, the cloud
+  /// document does not exist yet for a new account, so `_syncOnSignIn` would
+  /// then upload that empty state as the account's starting point.
+  ///
+  /// Runs only when the account's own namespace is empty, so it can never
+  /// overwrite progress an account already has. The guest keys are left in
+  /// place rather than moved, so signing out still finds them.
+  ///
+  /// Returns how many ids were adopted.
+  @visibleForTesting
+  Future<int> adoptGuestProgressIfEmpty() async {
+    if (_ns == _guestNs) return 0;
+    if (_sets.values.any((ids) => ids.isNotEmpty)) return 0;
+
+    final prefs = await SharedPreferences.getInstance();
+    const prefix = 'unlocked:$_guestNs:';
+
+    var adopted = 0;
+    for (final key in prefs.getKeys().toList()) {
+      if (!key.startsWith(prefix)) continue;
+
+      final type = key.substring(prefix.length);
+      // The namespace also holds bookkeeping under the same prefix —
+      // `_localUpdatedAtMs` and `_lastCloudPullAtMs` are ints, and asking
+      // for them as a string list throws. Buckets never start with '_'.
+      if (type.startsWith('_')) continue;
+
+      final ids = prefs.getStringList(key) ?? const <String>[];
+      if (ids.isEmpty) continue;
+      await prefs.setStringList(_prefsKey(type), ids);
+      _sets[type] = ids.toSet();
+      adopted += ids.length;
+    }
+
+    if (adopted > 0) {
+      // So the first cloud sync treats the adopted progress as the newer
+      // side rather than overwriting it with an empty document.
+      await _bumpLocalUpdatedAt(prefs);
+    }
+    return adopted;
   }
 
   String _prefsKey(String type) => 'unlocked:${_ns}:$type';

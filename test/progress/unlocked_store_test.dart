@@ -232,4 +232,62 @@ void main() {
       }
     });
   });
+
+  group('signing in for the first time', () {
+    // main.dart launches straight into guest mode, so guest is how this app is
+    // normally used. Progress is namespaced per profile, and switching to the
+    // account's namespace read back keys that do not exist yet — so the tick
+    // count went to zero, and because a new account has no cloud document,
+    // the sync that follows would have uploaded that empty state as the
+    // account's starting point.
+    test('carries guest progress into the account', () async {
+      await store.setUnlocked(ProgressTypes.customers, 'white_bunny', true);
+      await store.setUnlocked(ProgressTypes.customers, 'deer', true);
+      await store.setUnlocked(ProgressTypes.letter, 'eggys_diary_1', true);
+
+      await store.debugSwitchNamespace('uid-abc');
+
+      expect(store.ids(ProgressTypes.customers),
+          containsAll(<String>['white_bunny', 'deer']));
+      expect(store.ids(ProgressTypes.letter), contains('eggys_diary_1'));
+    });
+
+    test('writes it under the account, and leaves the guest copy alone',
+        () async {
+      await store.setUnlocked(ProgressTypes.customers, 'white_bunny', true);
+      await store.debugSwitchNamespace('uid-abc');
+
+      final prefs = await SharedPreferences.getInstance();
+      expect(prefs.getStringList('unlocked:uid-abc:customers'),
+          contains('white_bunny'));
+      // Signing out has to find the guest progress still there.
+      expect(prefs.getStringList('unlocked:guest:customers'),
+          contains('white_bunny'));
+    });
+
+    test('does not touch an account that already has progress', () async {
+      SharedPreferences.setMockInitialValues(<String, Object>{
+        'unlocked:guest:customers': <String>['white_bunny'],
+        'unlocked:uid-abc:customers': <String>['deer'],
+      });
+      store.debugResetForTest();
+      await store.init();
+
+      await store.debugSwitchNamespace('uid-abc');
+
+      expect(store.ids(ProgressTypes.customers), <String>{'deer'},
+          reason: 'the account had its own progress; guest must not win');
+    });
+
+    test('adopting survives a relaunch', () async {
+      await store.setUnlocked(ProgressTypes.customers, 'white_bunny', true);
+      await store.debugSwitchNamespace('uid-abc');
+
+      store.debugResetForTest();
+      await store.init();
+      await store.debugSwitchNamespace('uid-abc');
+
+      expect(store.ids(ProgressTypes.customers), contains('white_bunny'));
+    });
+  });
 }

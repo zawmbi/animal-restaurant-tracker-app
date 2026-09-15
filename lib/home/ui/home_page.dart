@@ -222,8 +222,16 @@ class _HomePageState extends State<HomePage> {
                             bucket = 'dish';
                             break;
                           case HitType.facility:
-                            // Pages store facilities under 'facility'.
-                            bucket = 'facility';
+                            // Courtyard, concert and pet-yard facilities are
+                            // tracked in a different bucket from the six
+                            // scenes, and the hit already carries the answer.
+                            // Hardcoding 'facility' here wrote 1,871 of them
+                            // to a set no screen reads: the box looked ticked
+                            // because it read back the same wrong bucket,
+                            // while the Courtyard page and the percentage
+                            // never saw it. The full search screen already
+                            // did this correctly.
+                            bucket = h.bucket ?? 'facility';
                             break;
                           case HitType.memento:
                             bucket = 'memento_collected';
