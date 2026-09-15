@@ -87,11 +87,7 @@ class Customer {
             )
           : null,
 
-      performer: (json['performer'] is Map)
-          ? PerformerInfo.fromJson(
-              Map<String, dynamic>.from(json['performer'] as Map),
-            )
-          : null,
+      performer: _performerOf(json),
 
       season: json['season']?.toString(),
     );
@@ -353,6 +349,34 @@ class AppearanceRateRow {
 }
 
 /// ---------------- PERFORMER MODELS ----------------
+
+/// A customer's performer block, wherever the data happens to keep it.
+///
+/// Eleven performers — the three Puff Planet stars, the four Lightseeker
+/// Ballet Troupe dancers and the four Aurora Puppet Club puppets — carry
+/// `group`, `fans`, `canInvite` and `posters` at the top level of their row
+/// instead of nested under `performer`. Reading only the nested block left
+/// their `performer` null, so the Performer section never rendered and
+/// BandPage, which filters on `performer.band`, could not see them: Puff
+/// Planet listed 1 of its 4 members.
+PerformerInfo? _performerOf(Map<String, dynamic> json) {
+  if (json['performer'] is Map) {
+    return PerformerInfo.fromJson(
+      Map<String, dynamic>.from(json['performer'] as Map),
+    );
+  }
+
+  // The flat spelling. Only `group` is ever populated on these rows today,
+  // but the other three are mapped so a later scrape that fills them in does
+  // not need this touched again.
+  if (json['group'] == null) return null;
+  return PerformerInfo.fromJson(<String, dynamic>{
+    'band': json['group'],
+    'fansCustomerIds': json['fans'],
+    'canInviteThis': json['canInvite'],
+    'posterIds': json['posters'],
+  });
+}
 
 class PerformerInfo {
   final String? band;

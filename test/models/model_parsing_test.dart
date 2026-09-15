@@ -126,9 +126,23 @@ void main() {
           .map(Customer.fromJson)
           .where((c) => c.performer != null)
           .toList();
-      expect(performers.length, 61);
 
-      final blank = performers
+      // Eleven of these carry nothing but a band name, because their row
+      // spells the performer block flat — `group` at the top level rather
+      // than nested. They are band members, not show performers, so they have
+      // no earnings and are held separately rather than counted as stubs.
+      final bandOnly = performers
+          .where((c) => c.performer!.baseEarnings == null)
+          .map((c) => c.id)
+          .toList()
+        ..sort();
+      expect(bandOnly, hasLength(11), reason: 'band-only performers: $bandOnly');
+
+      final showPerformers =
+          performers.where((c) => c.performer!.baseEarnings != null).toList();
+      expect(showPerformers.length, 61);
+
+      final blank = showPerformers
           .where((c) =>
               c.performer!.baseEarnings == null ||
               c.performer!.baseEarnings!.amountPerMinute == 0 ||
@@ -742,9 +756,12 @@ void main() {
       // customer page showed a blank show and the wrong currency. They are
       // filled in now, and this keeps the two from drifting apart again.
       final performers = Map<String, dynamic>.from(root['performers'] as Map);
+      // Only the show performers appear in performer_income.json; the eleven
+      // band-only rows (a band name and nothing else) are not show acts and
+      // have no income to agree with.
       final customers = readJsonList('assets/data/customers.json')
           .map(Customer.fromJson)
-          .where((c) => c.performer != null)
+          .where((c) => c.performer?.baseEarnings != null)
           .toList();
 
       expect(customers.length, performers.length);

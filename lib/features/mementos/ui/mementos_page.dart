@@ -34,6 +34,10 @@ class _MementosPageState extends State<MementosPage> {
   final Set<String> _tags = {};
   bool? _hidden; // null=all, true=hidden only, false=not hidden
 
+  /// Built once, not per rebuild. See the comment in build().
+  late final Future<List<MementoEntry>> _allFuture =
+      MementosIndex.instance.all();
+
   @override
   void dispose() {
     _searchCtrl.dispose();
@@ -60,17 +64,24 @@ class _MementosPageState extends State<MementosPage> {
         body: AnimatedBuilder(
           animation: store,
           builder: (context, _) {
-            return FutureBuilder(
-              future: MementosIndex.instance.all(
-                includeTags: _tags.isEmpty ? null : _tags.toList(),
-                search: _searchCtrl.text,
-                hidden: _hidden,
-              ),
+            // The future is built once as a field, not here. Building it in
+            // build() made a new one on every checkbox tap and every
+            // keystroke, and a fresh Future has no data — so the builder
+            // dropped to a spinner and tore the list down, putting you back
+            // at row 1 of 1,184 after ticking row 400. Filtering now runs
+            // against the resolved list, synchronously.
+            return FutureBuilder<List<MementoEntry>>(
+              future: _allFuture,
               builder: (context, snap) {
                 if (!snap.hasData) {
                   return const Center(child: CircularProgressIndicator());
                 }
-                final list = snap.data!; // List<MementoInfo> (or whatever your type is)
+                final list = MementosIndex.filter(
+                  snap.data!,
+                  includeTags: _tags.isEmpty ? null : _tags.toList(),
+                  search: _searchCtrl.text,
+                  hidden: _hidden,
+                ); // List<MementoInfo> (or whatever your type is)
 
                 return Column(
                   children: [

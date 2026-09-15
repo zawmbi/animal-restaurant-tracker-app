@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import '../data/progress_types.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../../facilities/data/facilities_repository.dart';
 import '../../facilities/model/facility.dart';
@@ -87,7 +89,13 @@ class _CompletionPageState extends State<CompletionPage> {
       return true;
     }).toList();
 
-    bool owned(Facility f) => _store.isUnlocked('facility', f.id);
+    // This page lists all nine areas, but courtyard, concert and pet-yard
+    // facilities are tracked in their own bucket. Reading 'facility' for
+    // every one of them meant 1,871 of the 4,064 could never read as owned,
+    // so their price stayed in Remaining forever — including all of the film
+    // cost, which is entirely courtyard-side.
+    bool owned(Facility f) =>
+        _store.isUnlocked(ProgressTypes.facilityBucketFor(f.area.name), f.id);
 
     final totalAll = <MoneyCurrency, int>{};
     final totalRemaining = <MoneyCurrency, int>{};

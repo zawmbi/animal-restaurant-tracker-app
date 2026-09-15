@@ -60,11 +60,52 @@ class MementosIndex {
   static const _mainAsset = 'assets/data/mementos.json';        // NEW
   static const _extrasAsset = 'assets/data/mementos_extra.json';
 
+  /// The built list, cached.
+  ///
+  /// This used to rebuild on every call: re-reading both assets, re-building a
+  /// 613-entry customer map and re-allocating all 1,184 entries. The mementos
+  /// page calls it from inside `build()`, so that was once per keystroke and
+  /// once per checkbox tap.
+  Future<List<MementoEntry>>? _future;
+
   Future<List<MementoEntry>> all({
     List<String>? includeTags,
     String? search,
     bool? hidden,
   }) async {
+    final built = await (_future ??= _build());
+    return filter(built, includeTags: includeTags, search: search, hidden: hidden);
+  }
+
+  /// Applies the page's filters to an already-built list.
+  ///
+  /// Separate from [all] so a screen holding the built list can re-filter
+  /// without going back through a Future — which is what let the mementos
+  /// page drop to a spinner and lose its scroll position on every tap.
+  static List<MementoEntry> filter(
+    List<MementoEntry> entries, {
+    List<String>? includeTags,
+    String? search,
+    bool? hidden,
+  }) {
+    Iterable<MementoEntry> out = entries;
+    if (includeTags != null && includeTags.isNotEmpty) {
+      out = out.where((e) => e.tags.any(includeTags.contains));
+    }
+    if (hidden != null) {
+      out = out.where((e) => e.hidden == hidden);
+    }
+    if (search != null && search.trim().isNotEmpty) {
+      final q = search.toLowerCase();
+      out = out.where((e) =>
+          e.name.toLowerCase().contains(q) ||
+          e.description.toLowerCase().contains(q) ||
+          (e.customerName?.toLowerCase().contains(q) ?? false));
+    }
+    return out.toList();
+  }
+
+  Future<List<MementoEntry>> _build() async {
     final results = <MementoEntry>[];
 
     // For customerName lookup
@@ -133,22 +174,7 @@ class MementosIndex {
       );
     }
 
-    // filtering (unchanged)
-    Iterable<MementoEntry> out = results;
-    if (includeTags != null && includeTags.isNotEmpty) {
-      out = out.where((e) => e.tags.any(includeTags.contains));
-    }
-    if (hidden != null) {
-      out = out.where((e) => e.hidden == hidden);
-    }
-    if (search != null && search.trim().isNotEmpty) {
-      final q = search.toLowerCase();
-      out = out.where((e) =>
-          e.name.toLowerCase().contains(q) ||
-          e.description.toLowerCase().contains(q) ||
-          (e.customerName?.toLowerCase().contains(q) ?? false));
-    }
-    return out.toList();
+    return results;
   }
     Future<MementoEntry?> byId(String id) async {
     final list = await all(hidden: null); // include hidden too
