@@ -1,6 +1,6 @@
 # iOS release handoff
 
-**Last verified:** 14 Sep 2026, on
+**Last verified:** 15 Sep 2026, on
 `claude/animal-restaurant-agents-features-9n8hrx` (the privacy work and the
 game-data fixes are committed as of `160959e`).
 
@@ -142,7 +142,14 @@ there is no longer a stale IPA to confuse anyone.
    `platform :ios` line is commented out, so CocoaPods inherits the project's
    value and needs no edit. Raise all three, `pod install`, rebuild.
 
-5. **Still to do: the App Store Connect listing.** Screenshots, description,
+5. **Builds since build 3.** Build 3 is the one that was uploaded, on 14 Sep.
+   Builds 4 and 5 were archived locally and superseded before upload; build 6
+   was cancelled mid-archive when two more commits landed. **Build 7 is the
+   one to upload** — it is the first to carry the UI pass below, and the IPA
+   on disk is whatever was built last, so check `Version 1.0.0 (7)` in the
+   Organizer before distributing rather than trusting the file's date.
+
+6. **Still to do: the App Store Connect listing.** Screenshots, description,
    keywords, category, age rating, pricing, and a **Support URL** (a required
    field — zawmbi.com has a privacy page but no support page yet). Plus the App
    Privacy questionnaire, whose answers are pre-written in
@@ -154,6 +161,75 @@ there is no longer a stale IPA to confuse anyone.
    app on an iPad. Nothing in this repo suggests the layout has ever been looked
    at at that width. Dropping iPad is `TARGETED_DEVICE_FAMILY = "1"` in the same
    three configs plus a rebuild.
+
+---
+
+### UI pass, 15 Sep 2026
+
+A read-only layout audit ran over every collection and detail page, measuring
+against a 390x844 iPhone. The agent that did it is committed as
+`.claude/agents/ui-density.md` and is available as a subagent type in a fresh
+session; it has to back every finding with arithmetic or a named widget, and
+is barred from reporting colour, font or wording preferences.
+
+**Fixed.**
+
+- **The grid divisor, in five files.** `(maxWidth / 200).floor().clamp(1, 4)`
+  needs a 200pt tile before it allows two columns, and a phone offers 366-390,
+  so recipes, customers, booth owners and staff each rendered one column of
+  two-thirds-empty rows. 180 now: two columns at 390pt, four on an iPad, one
+  on a 320pt SE. Recipes drop from 17,144pt of scroll to 8,568. Facilities
+  needed 160 rather than 180, because its grid sits inside two levels of
+  padding and sees 350pt.
+- **Letters** was a `Wrap` of 257 chips each sized to its own label; names
+  average 21 characters, so it packed about 1.2 chips per row. Now a real
+  two-column grid, built lazily rather than laying out all 257 on every
+  keystroke.
+- **Per-row waste**: mementos 80pt -> 68pt over 1,184 rows, courtyard
+  descriptions 3 lines -> 1 over a 477-row group, pet subtitles that all
+  wrapped into the 88pt three-line tile.
+- **The facilities theme rail** went the way of the courtyard one. At 120pt it
+  held 31% of the screen, and the grid behind it had 229pt — less than two
+  tiles wide however the column count is computed, which is why that grid
+  could never widen.
+- **321 lines of unreachable `FacilitiesPage`** deleted from
+  `facility_detail_page.dart`. Both real callers resolve from
+  `facilities_page.dart`; every importer was checked. The dead copy carried
+  drifted versions of the same layout bugs, so it was a trap.
+- **Contrast.** `kGreen #9EBD7A` was `colorScheme.primary`, which is what
+  Flutter paints text button labels, tab labels, links and selected chips in:
+  1.91:1 on the cream background, 1.45:1 on a card, against 4.5:1. It was also
+  the checkbox fill, so a white tick on a checked box was 2.1:1 — invisible,
+  in an app for ticking things off. `kGreenDeep #495F2F` is the same hue and
+  saturation darkened, at 6.47:1. `test/theme/contrast_test.dart` computes the
+  real WCAG ratios from the themes, so re-lightening the palette fails there.
+  The dark theme was already fine and is untouched.
+- **Cross-page checked state.** A chip now shows a border, a tick and a 10%
+  tint when the thing it points at is already ticked off elsewhere. Three
+  copies of an off-palette `Colors.green.withOpacity(0.18)` went with it.
+
+**Found and deliberately not done** — these are real, measured, and each needs
+a decision rather than a constant:
+
+- `mementos_page.dart` is a flat 1,184-row list, 94,720pt with no sections, no
+  sticky headers and no scrollbar; the only jump affordance is item 0, which
+  scrolls away. Entries carry `source`, `customerName` and `event`, so
+  grouping is available whenever someone picks one.
+- `dishes_page.dart` renders 532 tiles for 268 recipes: 264 of them appear
+  both in "All Recipes" and in a category section.
+- `dishes_page.dart` and `facilities_page.dart` both nest a `shrinkWrap` grid
+  with `NeverScrollableScrollPhysics` inside an outer scrollable, which
+  defeats culling — an expanded section lays out every tile at once, and the
+  whole body sits under an `AnimatedBuilder`, so one checkbox tap rebuilds all
+  of them.
+- `staff_detail_page.dart` builds ~8,770pt eagerly for `dori` (71 bordered
+  boxes) and auto-expands the player's current raise level without scrolling
+  to it, so the row it went out of its way to open is two screens down.
+- Detail pages stack one-word facts down a 314-358pt line: a performer's
+  customer page spends 336pt — 45% of the fold — on six of them.
+- The Open Air Cinema "Check all acts" / "Clear all acts" buttons duplicate
+  the row's own checkbox. **Left alone on purpose**: this file already records
+  keeping them as a deliberate decision.
 
 ---
 
