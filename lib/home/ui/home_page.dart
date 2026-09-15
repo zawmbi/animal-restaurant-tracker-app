@@ -20,6 +20,7 @@ import '../../features/search/data/search_index.dart';
 import '../../features/shared/data/unlocked_store.dart';
 
 import '../../features/customers/ui/customers_page.dart';
+import '../../features/customers/ui/posters_page.dart';
 
 import '../../features/facilities/ui/facilities_page.dart' as fac;
 import '../../features/facilities/ui/facility_detail_page.dart' as facdetail;
@@ -296,6 +297,12 @@ class _HomePageState extends State<HomePage> {
                 Icons.cruelty_free,
                 'Customers',
                 const CustomersPage(),
+              ),
+              _navTile(
+                context,
+                Icons.theaters_outlined,
+                'Posters',
+                const PostersPage(),
               ),
               _navTile(
                 context,

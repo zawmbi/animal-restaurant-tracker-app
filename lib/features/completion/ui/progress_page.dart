@@ -4,6 +4,7 @@ import '../../aromatic_acorn/ui/aromatic_acorn_page.dart';
 import '../../battle_pass/ui/battle_pass_page.dart';
 import '../../courtyard/ui/courtyard_page.dart';
 import '../../customers/ui/booth_owners_page.dart';
+import '../../customers/ui/posters_page.dart';
 import '../../customers/ui/customers_page.dart';
 import '../../dishes/ui/dishes_page.dart';
 import '../../facilities/ui/facilities_page.dart';
@@ -80,8 +81,9 @@ class _ProgressPageState extends State<ProgressPage> {
         return const AromaticAcornPage();
       case 'booth_owners':
         return const BoothOwnersPage();
+      case 'posters':
+        return const PostersPage();
       default:
-        // Posters have no standalone list page.
         return null;
     }
   }
