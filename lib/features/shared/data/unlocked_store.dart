@@ -55,6 +55,7 @@ class UnlockedStore extends ChangeNotifier {
     'staff_unlocked',
     'battle_pass_claimed',
     'battle_pass_premium',
+    'battle_pass_played',
   ];
 
   final Map<String, Set<String>> _sets = <String, Set<String>>{};

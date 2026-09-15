@@ -29,6 +29,15 @@ class ProgressTypes {
   static const String staffUnlocked = 'staff_unlocked';
   static const String battlePassClaimed = 'battle_pass_claimed';
   static const String battlePassPremium = 'battle_pass_premium';
+
+  /// Passes the player actually took part in.
+  ///
+  /// Three of the four shipped passes are expired events. Their tiers cannot
+  /// be claimed by anyone who was not there, so counting them made 573 of the
+  /// ~7,500 collectibles permanently unreachable — 7.7% of a percentage that
+  /// is supposed to be achievable. A pass joins the denominator when the
+  /// player says they played it.
+  static const String battlePassPlayed = 'battle_pass_played';
   static const String acorn = 'acorn';
 
   /// Which bucket a facility is tracked in, from the area it lives in.
@@ -64,6 +73,7 @@ class ProgressTypes {
     staffUnlocked,
     battlePassClaimed,
     battlePassPremium,
+    battlePassPlayed,
     acorn,
   ];
 }

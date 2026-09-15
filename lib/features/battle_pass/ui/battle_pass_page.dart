@@ -52,6 +52,7 @@ class _BattlePassPageState extends State<BattlePassPage> {
     // before the first read.
     store.registerType(ProgressTypes.battlePassClaimed);
     store.registerType(ProgressTypes.battlePassPremium);
+    store.registerType(ProgressTypes.battlePassPlayed);
     _future = _loadAll();
   }
 
@@ -140,6 +141,8 @@ class _BattlePassPageState extends State<BattlePassPage> {
                         final pass = passes[i];
                         final keys = battlePassClaimKeys(pass, store);
                         final claimed = _claimedCount(keys);
+                        final played = store.isUnlocked(
+                            ProgressTypes.battlePassPlayed, pass.id);
 
                         final bits = <String>[
                           if (pass.introducedInVersion.isNotEmpty)
@@ -149,6 +152,7 @@ class _BattlePassPageState extends State<BattlePassPage> {
                           if (pass.phases.isNotEmpty)
                             'Phases: ${pass.phases.length}',
                           'Claimed: $claimed/${keys.length}',
+                          if (!played) 'not counted — tick if you played it',
                         ];
 
                         return Padding(
@@ -162,6 +166,22 @@ class _BattlePassPageState extends State<BattlePassPage> {
                               ),
                               subtitle:
                                   bits.isEmpty ? null : Text(bits.join(' • ')),
+                              // Three of the four passes are expired events.
+                              // Ticking this is what puts a pass into the
+                              // completion total, so someone who was not
+                              // there is not held to tiers they can never
+                              // claim.
+                              leading: Tooltip(
+                                message: 'I took part in this pass',
+                                child: Checkbox(
+                                  value: played,
+                                  onChanged: (v) => store.setUnlocked(
+                                    ProgressTypes.battlePassPlayed,
+                                    pass.id,
+                                    v ?? false,
+                                  ),
+                                ),
+                              ),
                               trailing: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [

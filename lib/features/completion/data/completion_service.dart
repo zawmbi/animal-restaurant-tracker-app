@@ -472,7 +472,16 @@ class CompletionService {
           }
         }
 
-        parts.add(CompletionPart(ProgressTypes.battlePassClaimed, normalKeys));
+        // A pass you were not there for cannot be claimed, so it only joins
+        // the denominator once you say you played it.
+        parts.add(
+          CompletionPart(
+            ProgressTypes.battlePassClaimed,
+            normalKeys,
+            enabled: (store) =>
+                store.isUnlocked(ProgressTypes.battlePassPlayed, pass.id),
+          ),
+        );
         // The Super track only exists once you own that pass's premium tier,
         // so it only joins the denominator when you do.
         parts.add(
@@ -480,6 +489,7 @@ class CompletionService {
             ProgressTypes.battlePassClaimed,
             superKeys,
             enabled: (store) =>
+                store.isUnlocked(ProgressTypes.battlePassPlayed, pass.id) &&
                 store.isUnlocked(ProgressTypes.battlePassPremium, pass.id),
           ),
         );
