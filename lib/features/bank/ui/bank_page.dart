@@ -91,52 +91,92 @@ class _BankPageState extends State<BankPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Bank')),
-      body: FutureBuilder<_BankData>(
-        future: _future,
-        builder: (context, snap) {
-          if (snap.connectionState != ConnectionState.done) {
-            return const Center(child: CircularProgressIndicator());
-          }
-          if (snap.hasError) {
-            return _errorCard('${snap.error}');
-          }
-
-          final data = snap.data!;
-          final s = data.stats;
-
-          return ListView(
-            padding: const EdgeInsets.all(16),
-            children: [
-              _coverageCard(context, s),
-              const SizedBox(height: 12),
-              _tipJarCard(context, s),
-              const SizedBox(height: 12),
-              _buffetCard(context, s),
-              const SizedBox(height: 12),
-              _platesCard(context, s),
-              const SizedBox(height: 12),
-              _activeCodCard(context, s),
-              const SizedBox(height: 12),
-              _purchaseCard(context, s),
-              const SizedBox(height: 12),
-              _courtyardGatherCard(context, s),
-              const SizedBox(height: 12),
-              _concertCard(context, s),
-              const SizedBox(height: 12),
-              _terraceCard(context, s, data.terrace),
-              const SizedBox(height: 12),
-              _takeoutCard(context, s),
-              const SizedBox(height: 12),
-              _fishingCard(context, s),
-              const SizedBox(height: 12),
-              _drawsCard(context, s),
-              const SizedBox(height: 12),
-              _sourcesCard(context, s),
+    // Thirteen cards in one scroll was more than anyone could read. They are
+    // split by the question the player is actually asking: what earns while
+    // I am away, what earns while I am playing, what is a gamble, and where
+    // do these numbers come from.
+    return DefaultTabController(
+      length: 4,
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Bank'),
+          bottom: const TabBar(
+            tabs: [
+              Tab(text: 'Passive'),
+              Tab(text: 'Playing'),
+              Tab(text: 'Luck'),
+              Tab(text: 'About'),
             ],
-          );
-        },
+          ),
+        ),
+        body: FutureBuilder<_BankData>(
+          future: _future,
+          builder: (context, snap) {
+            if (snap.connectionState != ConnectionState.done) {
+              return const Center(child: CircularProgressIndicator());
+            }
+            if (snap.hasError) {
+              return _errorCard('${snap.error}');
+            }
+
+            final data = snap.data!;
+            final s = data.stats;
+
+            return TabBarView(
+              children: [
+                // Earns while the game is closed, or without you tapping.
+                _tab('passive', (context) => [
+                      _tipJarCard(context, s),
+                      _buffetCard(context, s),
+                      _platesCard(context, s),
+                      _takeoutCard(context, s),
+                      _fishingCard(context, s),
+                    ]),
+
+                // Needs you in the game: serving, gathering, watching a show.
+                _tab('playing', (context) => [
+                      _activeCodCard(context, s),
+                      _purchaseCard(context, s),
+                      _courtyardGatherCard(context, s),
+                      _concertCard(context, s),
+                      _terraceCard(context, s, data.terrace),
+                    ]),
+
+                // Randomised payouts, shown as ranges rather than averages.
+                _tab('luck', (context) => [
+                      _drawsCard(context, s),
+                    ]),
+
+                _tab('about', (context) => [
+                      _coverageCard(context, s),
+                      _sourcesCard(context, s),
+                    ]),
+              ],
+            );
+          },
+        ),
+      ),
+    );
+  }
+
+  /// One tab: its cards, scrollable, with its scroll position remembered.
+  ///
+  /// The cards are built inside a [Builder] rather than passed in as a ready
+  /// list, so a tab that is not on screen does no work. That matters here
+  /// because every text field calls `setState`, and each card re-runs its own
+  /// arithmetic on rebuild — typing an Apricat level used to recompute the
+  /// Concert and Terrace cards too.
+  Widget _tab(String id, List<Widget> Function(BuildContext) cards) {
+    return Builder(
+      builder: (context) => ListView(
+        key: PageStorageKey<String>('bank-tab-$id'),
+        padding: const EdgeInsets.all(16),
+        children: [
+          for (final card in cards(context)) ...[
+            card,
+            const SizedBox(height: 12),
+          ],
+        ],
       ),
     );
   }
