@@ -7,6 +7,22 @@ const kCreamDark  = Color(0xFFE8D4B3);
 const kGreen      = Color(0xFF9EBD7A);
 const kBrownDark  = Color(0xFF624F43);
 
+/// The same green as [kGreen] — hue 88, saturation 0.34 — darkened from 0.61
+/// lightness to 0.28 so it can be read.
+///
+/// [kGreen] was `colorScheme.primary` and `secondary`, which is what Flutter
+/// draws text button labels, tab labels, links, selected chips and focused
+/// field labels in. On the cream background that is a contrast ratio of
+/// **1.91:1**, and on a card **1.45:1**, against the 4.5:1 that body text
+/// needs. It was also the checkbox fill, so a white tick on a checked box
+/// came out at 2.1:1 — invisible, in an app whose entire purpose is seeing
+/// what you have ticked.
+///
+/// This reads 6.47:1 on cream, 4.90:1 on a card, and carries a cream label at
+/// 6.47:1. [kGreen] itself is kept for decoration that is not text and not
+/// state — the card borders — so the app still looks like itself.
+const kGreenDeep = Color(0xFF495F2F);
+
 // ===== Global Colors (Dark) =====
 const kBgDark      = Color(0xFF15120F);
 const kSurfaceDark = Color(0xFF221C17);
@@ -22,12 +38,13 @@ ThemeData buildLightTheme() {
     primaryIconTheme: const IconThemeData(color: kBrownDark),
     colorScheme: base.colorScheme.copyWith(
       brightness: Brightness.light,
-      primary: kGreen,
-      secondary: kGreen,
+      primary: kGreenDeep,
+      secondary: kGreenDeep,
       surface: kCreamDark,
       onSurface: kBrownDark,
-      onPrimary: kBrownDark,
-      onSecondary: kBrownDark,
+      // Cream on the deep green reads 6.47:1. Brown on it does not.
+      onPrimary: kCreamLight,
+      onSecondary: kCreamLight,
     ),
     appBarTheme: const AppBarTheme(
       backgroundColor: kCreamLight,
@@ -51,12 +68,16 @@ ThemeData buildLightTheme() {
         if (states.contains(WidgetState.disabled)) {
           return !states.contains(WidgetState.selected)
               ? Colors.white.withOpacity(0.5)
-              : kGreen.withOpacity(0.5);
+              : kGreenDeep.withOpacity(0.5);
         }
-        return states.contains(MaterialState.selected) ? kGreen : Colors.white;
+        return states.contains(MaterialState.selected)
+            ? kGreenDeep
+            : Colors.white;
       }),
       checkColor: MaterialStateProperty.all(Colors.white),
-      side: const BorderSide(color: kGreen, width: 3),
+      // An empty box is shown entirely by its outline, so the outline has to
+      // be visible: kGreen on cream was 1.91:1.
+      side: const BorderSide(color: kGreenDeep, width: 3),
       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
       visualDensity: VisualDensity.compact,
     ),
