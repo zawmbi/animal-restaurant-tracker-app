@@ -440,9 +440,14 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
                         ),
                       ],
                     ),
-                    Wrap(
-                      spacing: 8,
-                      runSpacing: 8,
+                    // A chip per memento used to show the name and nothing
+                    // else, so reading what you actually have to do meant
+                    // opening each memento and coming back — six taps for a
+                    // customer with three. The requirement and the star value
+                    // are already loaded in `entries[m.id]`, so they are shown
+                    // inline instead.
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: customer.mementos.map((m) {
                         final entry = entries[m.id];
                         final key = _mementoKey(m.id, entries);
@@ -475,12 +480,61 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
                           };
                         }
 
-                        return EntityChip(
-                          label: m.name,
-                          checked: collected,
-                          showCheckbox: onCheckChanged != null,
-                          onCheckChanged: onCheckChanged,
+                        final requirement = entry?.requirement.trim() ?? '';
+                        final stars = entry?.earnedStars ?? 0;
+
+                        return InkWell(
                           onTap: openDetail,
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 2),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                if (onCheckChanged != null)
+                                  Checkbox(
+                                    value: collected,
+                                    visualDensity: VisualDensity.compact,
+                                    materialTapTargetSize:
+                                        MaterialTapTargetSize.shrinkWrap,
+                                    onChanged: (v) =>
+                                        onCheckChanged!(v ?? false),
+                                  )
+                                else
+                                  const SizedBox(width: 24),
+                                const SizedBox(width: 8),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        m.name,
+                                        style: const TextStyle(
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                      if (requirement.isNotEmpty)
+                                        Text(
+                                          requirement,
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .bodySmall,
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                                if (stars > 0)
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 8),
+                                    child: Text(
+                                      '+$stars★',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodyMedium,
+                                    ),
+                                  ),
+                              ],
+                            ),
+                          ),
                         );
                       }).toList(),
                     ),

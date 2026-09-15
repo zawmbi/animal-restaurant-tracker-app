@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../shared/widgets/check_all_button.dart';
+import '../../shared/widgets/owned_filter.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../data/mementos_index.dart';
 import 'mementos_detail_page.dart';
@@ -33,6 +34,7 @@ class _MementosPageState extends State<MementosPage> {
   final _searchCtrl = TextEditingController();
   final Set<String> _tags = {};
   bool? _hidden; // null=all, true=hidden only, false=not hidden
+  OwnedFilter _owned = OwnedFilter.all;
 
   /// Built once, not per rebuild. See the comment in build().
   late final Future<List<MementoEntry>> _allFuture =
@@ -114,7 +116,7 @@ class _MementosPageState extends State<MementosPage> {
     List<MementoEntry> all,
     _MementoCategory category,
   ) {
-    final filtered = all.where((e) {
+    var filtered = all.where((e) {
       final isPoster = e.tags.contains('poster');
       final isDressUp = e.isWearable;
 
@@ -131,11 +133,22 @@ class _MementosPageState extends State<MementosPage> {
       }
     }).toList();
 
-    if (filtered.isEmpty) {
-      return const Center(child: Text('No mementos match your filters.'));
-    }
-
+    // Check-all still acts on the whole filtered set, not just what the
+    // owned filter is showing — otherwise "Check all" while viewing Missing
+    // would mean something different from what it says.
     final ids = filtered.map((e) => e.key).toList();
+
+    filtered = filtered
+        .where((e) => _owned.allows(store.isUnlocked('memento_collected', e.key)))
+        .toList();
+
+    if (filtered.isEmpty) {
+      return Center(
+        child: Text(_owned == OwnedFilter.missing
+            ? 'Nothing missing here.'
+            : 'No mementos match your filters.'),
+      );
+    }
 
     return ListView.builder(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -226,6 +239,11 @@ class _MementosPageState extends State<MementosPage> {
                   });
                 },
               ),
+            const SizedBox(width: 12),
+            OwnedFilterDropdown(
+              value: _owned,
+              onChanged: (v) => setState(() => _owned = v),
+            ),
             const SizedBox(width: 12),
             DropdownButton<bool?>(
               value: _hidden,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../shared/widgets/check_all_button.dart';
+import '../../shared/widgets/owned_filter.dart';
 
 import '../../shared/data/unlocked_store.dart';
 import '../../shared/widgets/search_field.dart';
@@ -93,6 +94,7 @@ class _CustomersGridState extends State<_CustomersGrid> {
   static const String _bucketCustomers = 'customers';
 
   CustomerSort _sort = CustomerSort.wikiOrder;
+  OwnedFilter _owned = OwnedFilter.all;
   String _query = '';
 
   @override
@@ -226,6 +228,13 @@ class _CustomersGridState extends State<_CustomersGrid> {
             final sorted = _applySort(matching);
             final unlocked = _unlockedCount(sorted);
             final total = sorted.length;
+            // The count stays over the whole tab; only the grid narrows, so
+            // "Unlocked: 12/613" still means what it says while you work
+            // through the 601 you are missing.
+            final shown = sorted
+                .where((c) =>
+                    _owned.allows(store.isUnlocked(_bucketCustomers, c.id)))
+                .toList();
 
             return Column(
               children: [
@@ -243,6 +252,10 @@ class _CustomersGridState extends State<_CustomersGrid> {
                           'Unlocked: $unlocked/$total',
                           style: Theme.of(context).textTheme.titleMedium,
                         ),
+                      ),
+                      OwnedFilterDropdown(
+                        value: _owned,
+                        onChanged: (v) => setState(() => _owned = v),
                       ),
                       CheckAllButton(
                         bucket: _bucketCustomers,
@@ -307,9 +320,9 @@ class _CustomersGridState extends State<_CustomersGrid> {
                           // it a fixed row height instead of forcing it square.
                           mainAxisExtent: 56,
                         ),
-                        itemCount: sorted.length,
+                        itemCount: shown.length,
                         itemBuilder: (context, i) {
-                          final c = sorted[i];
+                          final c = shown[i];
                           final checked = store.isUnlocked(
                             _bucketCustomers,
                             c.id,

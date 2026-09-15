@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../../shared/widgets/check_all_button.dart';
 import '../../shared/widgets/entity_chip.dart';
+import '../../shared/widgets/owned_filter.dart';
 import '../../shared/widgets/search_field.dart';
 import '../data/posters_repository.dart';
 import '../model/poster.dart';
@@ -30,6 +31,7 @@ class _PostersPageState extends State<PostersPage> {
   final store = UnlockedStore.instance;
   final _future = PostersRepository.instance.all();
   String _query = '';
+  OwnedFilter _owned = OwnedFilter.all;
 
   @override
   void initState() {
@@ -62,6 +64,9 @@ class _PostersPageState extends State<PostersPage> {
             builder: (context, _) {
               final owned =
                   list.where((p) => store.isUnlocked(_bucket, p.id)).length;
+              final shown = list
+                  .where((p) => _owned.allows(store.isUnlocked(_bucket, p.id)))
+                  .toList();
 
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -80,6 +85,10 @@ class _PostersPageState extends State<PostersPage> {
                             style: Theme.of(context).textTheme.titleMedium,
                           ),
                         ),
+                        OwnedFilterDropdown(
+                          value: _owned,
+                          onChanged: (v) => setState(() => _owned = v),
+                        ),
                         CheckAllButton(
                           bucket: _bucket,
                           ids: list.map((p) => p.id).toList(),
@@ -89,8 +98,12 @@ class _PostersPageState extends State<PostersPage> {
                     ),
                   ),
                   Expanded(
-                    child: list.isEmpty
-                        ? const Center(child: Text('No posters match that.'))
+                    child: shown.isEmpty
+                        ? Center(
+                            child: Text(_owned == OwnedFilter.missing
+                                ? 'Nothing missing here.'
+                                : 'No posters match that.'),
+                          )
                         : LayoutBuilder(
                             builder: (context, cons) {
                               final crossAxisCount =
@@ -104,9 +117,9 @@ class _PostersPageState extends State<PostersPage> {
                                   mainAxisSpacing: 8,
                                   mainAxisExtent: 56,
                                 ),
-                                itemCount: list.length,
+                                itemCount: shown.length,
                                 itemBuilder: (context, i) {
-                                  final p = list[i];
+                                  final p = shown[i];
                                   final checked =
                                       store.isUnlocked(_bucket, p.id);
                                   return EntityChip(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../shared/widgets/check_all_button.dart';
+import '../../shared/widgets/owned_filter.dart';
 
 import '../../shared/widgets/entity_chip.dart';
 import '../../shared/data/unlocked_store.dart';
@@ -22,6 +23,7 @@ class _LettersPageState extends State<LettersPage> {
 
   static const String _bucketLetter = 'letter';
   String _query = '';
+  OwnedFilter _owned = OwnedFilter.all;
 
 
   @override
@@ -65,6 +67,10 @@ class _LettersPageState extends State<LettersPage> {
             builder: (context, _) {
               final ownedCount =
                   list.where((l) => store.isUnlocked(_bucketLetter, l.id)).length;
+              final shown = list
+                  .where((l) =>
+                      _owned.allows(store.isUnlocked(_bucketLetter, l.id)))
+                  .toList();
               return Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
@@ -79,6 +85,10 @@ class _LettersPageState extends State<LettersPage> {
                         Expanded(
                           child: Text('Owned: $ownedCount/${list.length}',
                               style: Theme.of(context).textTheme.titleMedium),
+                        ),
+                        OwnedFilterDropdown(
+                          value: _owned,
+                          onChanged: (v) => setState(() => _owned = v),
                         ),
                         CheckAllButton(
                           bucket: _bucketLetter,
@@ -108,9 +118,9 @@ class _LettersPageState extends State<LettersPage> {
                             mainAxisSpacing: 8,
                             mainAxisExtent: 56,
                           ),
-                          itemCount: list.length,
+                          itemCount: shown.length,
                           itemBuilder: (context, i) {
-                            final l = list[i];
+                            final l = shown[i];
                             final owned =
                                 store.isUnlocked(_bucketLetter, l.id);
 
