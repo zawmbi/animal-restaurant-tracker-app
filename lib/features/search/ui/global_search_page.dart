@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../../shared/data/unlocked_store.dart';
@@ -5,7 +7,11 @@ import '../../customers/ui/customer_detail_page.dart';
 import '../../dishes/ui/dish_detail_page.dart';
 import '../../facilities/ui/facility_detail_page.dart';
 import '../../customers/data/customers_repository.dart';
-import '../../facilities/data/facilities_repository.dart'; 
+import '../../facilities/data/facilities_repository.dart';
+import '../../letters/data/letters_repository.dart';
+import '../../letters/ui/letter_detail_page.dart';
+import '../../mementos/data/mementos_index.dart';
+import '../../mementos/ui/mementos_detail_page.dart';
 import '../data/search_index.dart';
 
 class GlobalSearchPage extends StatefulWidget {
@@ -19,17 +25,29 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
   final store = UnlockedStore.instance;
   List<SearchHit> _hits = const [];
   bool _loading = false;
+  Timer? _debounce;
+
+  /// The query whose results are allowed to land. A slow search started three
+  /// keystrokes ago must not overwrite the results of the current one.
+  String _latest = '';
 
   @override
   void dispose() {
     _ctrl.dispose();
+    _debounce?.cancel();
     super.dispose();
+  }
+
+  void _onChanged(String q) {
+    _latest = q;
+    _debounce?.cancel();
+    _debounce = Timer(const Duration(milliseconds: 200), () => _runSearch(q));
   }
 
   Future<void> _runSearch(String q) async {
     setState(() => _loading = true);
     final res = await SearchIndex.instance.search(q);
-    if (!mounted) return;
+    if (!mounted || q != _latest) return;
     setState(() {
       _hits = res;
       _loading = false;
@@ -55,12 +73,14 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
                   icon: const Icon(Icons.clear),
                   onPressed: () {
                     _ctrl.clear();
+                    _debounce?.cancel();
+                    _latest = '';
                     setState(() => _hits = const []);
                   },
                 ),
                 border: const OutlineInputBorder(),
               ),
-              onChanged: _runSearch,
+              onChanged: _onChanged,
             ),
           ),
           if (_loading) const LinearProgressIndicator(),
@@ -207,9 +227,43 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
         break;
 
       case HitType.letter:
+        final l = await LettersRepository.instance.byId(h.id);
+        if (l == null) {
+          if (!mounted) return;
+          // ignore: use_build_context_synchronously
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Letter not found')),
+          );
+          return;
+        }
+        if (!mounted) return;
+        // ignore: use_build_context_synchronously
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (_) => LetterDetailPage(letter: l)),
+        );
+        break;
+
       case HitType.memento:
+        final m = await MementosIndex.instance.byId(h.id);
+        if (m == null) {
+          if (!mounted) return;
+          // ignore: use_build_context_synchronously
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(content: Text('Memento not found')),
+          );
+          return;
+        }
+        if (!mounted) return;
+        // ignore: use_build_context_synchronously
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (_) => MementoDetailPage(memento: m)),
+        );
+        break;
+
       case HitType.battlePass:
-        // No dedicated screens yet; toggling via checkbox is the primary action.
+        // Battle pass rewards are claimed per phase rather than being one
+        // entity, so there is nothing single to open. The checkbox is the
+        // action here.
         break;
     }
   }

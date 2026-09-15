@@ -41,6 +41,9 @@ import '../../features/dishes/ui/dish_detail_page.dart' as detail;
 import '../../features/settings/ui/settings_page.dart';
 
 import '../../features/customers/data/customers_repository.dart';
+import '../../features/customers/ui/customer_detail_page.dart';
+import '../../features/letters/data/letters_repository.dart';
+import '../../features/letters/ui/letter_detail_page.dart';
 import 'package:animal_restaurant_tracker/features/mementos/data/mementos_index.dart';
 
 class HomePage extends StatefulWidget {
@@ -89,9 +92,9 @@ class _HomePageState extends State<HomePage> {
       case HitType.customer:
         final c = await CustomersRepository.instance.byId(h.id);
         if (c == null || !mounted) return;
-        Navigator.of(
-          context,
-        ).push(MaterialPageRoute(builder: (_) => const CustomersPage()));
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (_) => CustomerDetailPage(customer: c)),
+        );
         break;
 
       case HitType.dish:
@@ -114,10 +117,11 @@ class _HomePageState extends State<HomePage> {
         break;
 
       case HitType.letter:
-        if (!mounted) return;
-        Navigator.of(
-          context,
-        ).push(MaterialPageRoute(builder: (_) => const LettersPage()));
+        final l = await LettersRepository.instance.byId(h.id);
+        if (l == null || !mounted) return;
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (_) => LetterDetailPage(letter: l)),
+        );
         break;
 
       case HitType.memento:
