@@ -30,9 +30,21 @@ class _CourtyardPageState extends State<CourtyardPage> {
     _loadFuture = CourtyardRepository.instance.ensureLoaded();
   }
 
-  List<String> _buildSeriesOptions(CourtyardRepository repo) {
-    final base = repo.allSeriesSorted(_scene);
-    return ['All', ...base];
+  /// The series available inside the selected group.
+  ///
+  /// This used to list every series in the whole scene — 30 of them on the
+  /// concert stage — most of which led nowhere: picking "Deep-sea Ballad"
+  /// while the Speaker group was showing just emptied the page. Scoping it to
+  /// the group means every option has something behind it, and the list is
+  /// short enough to sit in a dropdown.
+  List<String> _seriesOptionsFor(CourtyardRepository repo, String group) {
+    final names = <String>{};
+    for (final f in repo.byGroupAndSeries(group, series: null, scene: _scene)) {
+      final series = f.series?.trim();
+      if (series != null && series.isNotEmpty) names.add(series);
+    }
+    final sorted = names.toList()..sort();
+    return ['All', ...sorted];
   }
 
   void _selectScene(CourtyardScene scene) {
@@ -68,9 +80,14 @@ class _CourtyardPageState extends State<CourtyardPage> {
           }
 
           _selectedGroup ??= groups.first;
-          _selectedSeries ??= 'All';
 
-          final seriesOptions = _buildSeriesOptions(repo);
+          final seriesOptions = _seriesOptionsFor(repo, _selectedGroup!);
+          // The options change with the group, so a selection left over from
+          // the previous one falls back to All rather than leaving the
+          // dropdown holding a value it has no item for.
+          if (!seriesOptions.contains(_selectedSeries)) {
+            _selectedSeries = 'All';
+          }
 
           final facilities = repo
               .byGroupAndSeries(
@@ -126,6 +143,8 @@ class _CourtyardPageState extends State<CourtyardPage> {
                         onSelected: (_) {
                           setState(() {
                             _selectedGroup = group;
+                            // Series names do not carry across groups.
+                            _selectedSeries = null;
                           });
                         },
                       ),
@@ -134,154 +153,152 @@ class _CourtyardPageState extends State<CourtyardPage> {
                 ),
               ),
 
+              // Series filter. This was a fixed 180px list pinned to the
+              // left of the facility cards: 46% of a phone's width, spent on
+              // names long enough to be ellipsised anyway ("Of Coconut Trees
+              // and the Sea Breeze"). As a dropdown it costs one line, shows
+              // each name in full when open, and gives the cards the screen.
+              if (seriesOptions.length > 1)
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(12, 0, 12, 4),
+                  child: Row(
+                    children: [
+                      Text(
+                        'Series',
+                        style: Theme.of(context).textTheme.labelLarge,
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: DropdownButton<String>(
+                          value: _selectedSeries,
+                          isExpanded: true,
+                          underline: const SizedBox.shrink(),
+                          items: [
+                            for (final series in seriesOptions)
+                              DropdownMenuItem<String>(
+                                value: series,
+                                child: Text(
+                                  series,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                              ),
+                          ],
+                          onChanged: (value) =>
+                              setState(() => _selectedSeries = value),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
               const Divider(height: 1),
 
               // Main content
               Expanded(
-                child: Row(
-                  children: [
-                    // Series / theme list (left side)
-                    Container(
-                      width: 180,
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.surfaceVariant,
-                        border: Border(
-                          right: BorderSide(
-                            color: Theme.of(context).dividerColor,
-                          ),
-                        ),
-                      ),
-                      child: ListView.builder(
-                        itemCount: seriesOptions.length,
-                        itemBuilder: (context, index) {
-                          final series = seriesOptions[index];
-                          final selected = _selectedSeries == series;
-                          return ListTile(
-                            dense: true,
-                            selected: selected,
-                            title: Text(
-                              series,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                            onTap: () {
-                              setState(() {
-                                _selectedSeries = series;
-                              });
-                            },
+                child: facilities.isEmpty
+                    ? const Center(
+                        child: Text('No facilities for this filter yet.'),
+                      )
+                    : ListView.builder(
+                        padding: const EdgeInsets.all(8),
+                        itemCount: facilities.length + 1,
+                        itemBuilder: (context, rawIndex) {
+                          if (rawIndex == 0) {
+                            return Align(
+                              alignment: Alignment.centerRight,
+                              child: CheckAllButton(
+                                bucket: _bucket,
+                                ids: facilities
+                                    .map((f) => f.id)
+                                    .toList(),
+                                groupLabel:
+                                    '${_scene.label} — $_selectedGroup',
+                                onApplied: (_) {
+                                  if (mounted) setState(() {});
+                                },
+                              ),
+                            );
+                          }
+                          final index = rawIndex - 1;
+                          final f = facilities[index];
+                          final checked = _store.isUnlocked(
+                            _bucket,
+                            f.id,
                           );
-                        },
-                      ),
-                    ),
 
-                    // Facility cards (right side)
-                    Expanded(
-                      child: facilities.isEmpty
-                          ? const Center(
-                              child: Text('No facilities for this filter yet.'),
-                            )
-                          : ListView.builder(
-                              padding: const EdgeInsets.all(8),
-                              itemCount: facilities.length + 1,
-                              itemBuilder: (context, rawIndex) {
-                                if (rawIndex == 0) {
-                                  return Align(
-                                    alignment: Alignment.centerRight,
-                                    child: CheckAllButton(
+                          return Card(
+                            margin: const EdgeInsets.symmetric(
+                              vertical: 4,
+                              horizontal: 4,
+                            ),
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (_) =>
+                                        CourtyardFacilityDetailPage(
+                                      facility: f,
                                       bucket: _bucket,
-                                      ids: facilities
-                                          .map((f) => f.id)
-                                          .toList(),
-                                      groupLabel:
-                                          '${_scene.label} — $_selectedGroup',
-                                      onApplied: (_) {
-                                        if (mounted) setState(() {});
-                                      },
-                                    ),
-                                  );
-                                }
-                                final index = rawIndex - 1;
-                                final f = facilities[index];
-                                final checked = _store.isUnlocked(
-                                  _bucket,
-                                  f.id,
-                                );
-
-                                return Card(
-                                  margin: const EdgeInsets.symmetric(
-                                    vertical: 4,
-                                    horizontal: 4,
-                                  ),
-                                  child: InkWell(
-                                    onTap: () {
-                                      Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                          builder: (_) =>
-                                              CourtyardFacilityDetailPage(
-                                            facility: f,
-                                            bucket: _bucket,
-                                          ),
-                                        ),
-                                      );
-                                    },
-                                    child: ListTile(
-                                      title: Text(f.name),
-                                      subtitle: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          const SizedBox(height: 4),
-                                          Text(
-                                            f.description,
-                                            maxLines: 3,
-                                            overflow: TextOverflow.ellipsis,
-                                          ),
-                                          if (f.requirementNote != null &&
-                                              f.requirementNote!.isNotEmpty)
-                                            Padding(
-                                              padding:
-                                                  const EdgeInsets.only(
-                                                      top: 4.0),
-                                              child: Text(
-                                                'Requirements: ${f.requirementNote}',
-                                                style: Theme.of(context)
-                                                    .textTheme
-                                                    .bodySmall,
-                                              ),
-                                            ),
-                                          if (f.price.isNotEmpty)
-                                            Padding(
-                                              padding:
-                                                  const EdgeInsets.only(
-                                                      top: 4.0),
-                                              child: Text(
-                                                _formatPriceList(f.price),
-                                                style: Theme.of(context)
-                                                    .textTheme
-                                                    .bodySmall,
-                                              ),
-                                            ),
-                                        ],
-                                      ),
-                                      trailing: Checkbox(
-                                        value: checked,
-                                        onChanged: (v) {
-                                          setState(() {
-                                            _store.setUnlocked(
-                                              _bucket,
-                                              f.id,
-                                              v ?? false,
-                                            );
-                                          });
-                                        },
-                                      ),
                                     ),
                                   ),
                                 );
                               },
+                              child: ListTile(
+                                title: Text(f.name),
+                                subtitle: Column(
+                                  crossAxisAlignment:
+                                      CrossAxisAlignment.start,
+                                  children: [
+                                    const SizedBox(height: 4),
+                                    Text(
+                                      f.description,
+                                      maxLines: 3,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                    if (f.requirementNote != null &&
+                                        f.requirementNote!.isNotEmpty)
+                                      Padding(
+                                        padding:
+                                            const EdgeInsets.only(
+                                                top: 4.0),
+                                        child: Text(
+                                          'Requirements: ${f.requirementNote}',
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .bodySmall,
+                                        ),
+                                      ),
+                                    if (f.price.isNotEmpty)
+                                      Padding(
+                                        padding:
+                                            const EdgeInsets.only(
+                                                top: 4.0),
+                                        child: Text(
+                                          _formatPriceList(f.price),
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .bodySmall,
+                                        ),
+                                      ),
+                                  ],
+                                ),
+                                trailing: Checkbox(
+                                  value: checked,
+                                  onChanged: (v) {
+                                    setState(() {
+                                      _store.setUnlocked(
+                                        _bucket,
+                                        f.id,
+                                        v ?? false,
+                                      );
+                                    });
+                                  },
+                                ),
+                              ),
                             ),
-                    ),
-                  ],
-                ),
+                          );
+                        },
+                      ),
               ),
             ],
           );
