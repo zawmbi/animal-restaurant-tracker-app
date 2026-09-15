@@ -1,14 +1,162 @@
 [
   {
+    "version": "v11.26.0g",
+    "date": "2026-09-07",
+    "changes": [
+      "Added Forest Tea Party series facilities to all locations",
+      "Added new items to Signature Store",
+      "– Head Accessories discount period: 9/8/2026 6:00 am to 10/9/2026 6:00 am",
+      "Added new pet accessories",
+      "Added 6 Gathering Long Table facilities",
+      "– Note: Sales for all Forest Tea Party facilities and items start on 9/8/2026 6:00 am"
+    ]
+  },
+  {
+    "version": "v11.25.0g",
+    "date": "2026-08-17",
+    "changes": [
+      "The Qixi Event 2026 starts from 8/18/2026 until 8/31/2026.",
+      "Added a new letter: Weaver Girl's Letter 2",
+      "Added a new movie: Puffy Power Girls: BBFs",
+      "Added 4 new Staff Outfits to Wondrous Coatroom",
+      "Added a fall seasonal customer: Opossum Mom (Attractable on September 1, 2026)"
+    ]
+  },
+  {
+    "version": "v11.24.0g",
+    "date": "2026-08-07",
+    "changes": [
+      "Added the second phase of Creamy Kingdom starting 8/07/2026 lasting until 10/05/2026. During the event players can get",
+      "– Creamy Kingdom series Buffet Facilities",
+      "– Creamy Kingdom series Pet Facilities",
+      "– Some Creamy Kingdom series Courtyard Facilities",
+      "– An IAP exclusive movie: Sweet Magic",
+      "– Note: The Time Clock and Courtyard Long Table from this series is sold by diamonds, not obtained in the pass.",
+      "Added a new takeout cart and Buffet Wallpaper to Signature Store",
+      "Added 3 new letters: Yolky's Ramblings 6, Damascus Goat Growth Diary 3, and Corgi's Diary 1",
+      "Added 2 new customers: Anteater and Serval"
+    ]
+  },
+  {
+    "version": "v11.23.0g",
+    "date": "2026-07-21",
+    "changes": [
+      "The Fishing Tournament starts from 7/22/2026 until 8/06/2026.",
+      "Added 3 new fish that are only catchable during event: Golden Pomfret, Indo-Pacific Sergeant, and Japanese Flapjack Octopus.",
+      "– Stones are still obtainable in this Fishing Tourney",
+      "Added Starsand Dreamy Pavilion series facilities for Restaurant.",
+      "Added staff head accessories and new Restaurant Wallpaper to the Signature Store",
+      "Added a new letter: Rabbit Ding's Fishing Record 2",
+      "Added a new movie: Puffy Power Girls: Breakdown (Part II)",
+      "Added a new Courtyard Plant: Scarlet Persimmon Tree",
+      "Added 2 new packs containing buttons to the IAP Shop."
+    ]
+  },
+  {
+    "version": "v11.22.0g",
+    "date": "2026-07-02",
+    "changes": [
+      "Doll Fragments Event is opening soon! From 7/03/2026 to 7/19/2026",
+      "– Added 6 new doll customers: Director Moose, Football Captain, Top-Notch Makeup Artist, Post-Apocalyptic Enthusiast, Novice Camper, and Master Ventriloquist",
+      "Added 3 new customers: Sea Lion, Fur Seal, and Walrus",
+      "Added the Claim All feature for the Vegetable Garden",
+      "Added 3 new sets of outfits to the Field Scarecrows",
+      "Added Starry Rose facilities for the Vegetable Garden",
+      "Added the 2nd Annual Judgings for the Aromatic Acorn Judging event."
+    ]
+  },
+  {
+    "version": "v11.21.0g",
+    "date": "2026-06-16",
+    "changes": [
+      "Added 2 new doll customers: The Thinker and Dean of Students",
+      "Added 2 new letters: Snow Leopard Pup's Letter and Eggy's Diary 26",
+      "Added a new pet: Spooky",
+      "Added 2 new booth owners: Artificial Butterfly Specimens and Traditional Rattan Weaving",
+      "Added a reverse and default sorting function for the Pet House."
+    ]
+  },
+  {
+    "version": "v11.20.0g",
+    "date": "2026-05-27",
+    "changes": [
+      "2026 Children's Day Event begins from 05/28/2026 until 06/15/2026",
+      "– The Ad-Watching event to earn rewards will last from 05/28/2026 until 06/22/2026",
+      "Added 4 new letters: Old Journal Page 3, Yorkie Pup's Letter 5, Handsome Mouse's Playing Card 3 and A Photo of Baby Staff.",
+      "Added 2 new recipes: Two-colored Macaron and Cloud Cake.",
+      "Added 3 new cusomers: Stegosaurus, Parasaurolophus and Triceratops.",
+      "Added 2 new booth owners: CreCrepe and Lucky String Pull Game.",
+      "Added 2 new doll customers: Artisan Gardener and Cheerleading Team Member.",
+      "Added 1 new seasonal customer: Sheltie",
+      "Added 1 new band: Energy Dash",
+      "– Added 4 new performers: Coach Roo, Trainee Mingo, Trainee Stripey and Trainee Foxy.",
+      "– Added 10 new posters.",
+      "Added 2 new staff oufits.",
+      "Added new movie: Laser Beam From Above"
+    ]
+  },
+  {
+    "version": "v11.19.0g",
+    "date": "2026-05-14",
+    "changes": [
+      "Added a new battle pass starting 5/15/2026 lasting until 7/14/2026: Creamy Kingdom. During the event players can get",
+      "– Creamy Kingdom series Restaurant Facilities",
+      "– Creamy Kingdom series Takeout Facilities",
+      "– Some Creamy Kingdom series Courtyard Facilities",
+      "– Creamy Kingdom series mementos in Phase 1.",
+      "– A new customer by collecting 30 dolls by IAP: Puff",
+      "Added Starry Whisper series facilities for the Kitchen, Buffet, Terrace, Vegetable Garden, and Courtyard",
+      "Added Buzzing Sweet Whispers and Childhood Paradise series facilities for the Vegetable Garden.",
+      "Added Childhood Paradise series furniture for the Pet House and Time Clock for Buffet.",
+      "Added 5 new Head Accessories to Signature Store",
+      "Added 1 new Takeout Cart to Signature Store",
+      "Added Stuffed Madeleine wallpapers to Restaurant and Takeout.",
+      "Added Cosmic Concerto wallpapers to Kitchen, Buffet and Terrace.",
+      "– Note: Creamy Kingdom has 3 phases. After all 3 phases end, the facilities, decorations, and mementos from all Super Rewards will return irregularly and be purchasable with diamonds."
+    ]
+  },
+  {
+    "version": "v11.18.0g",
+    "date": "2026-04-28",
+    "changes": [
+      "2026 Early Summer Bouquet Event begins from Apr. 29th, 2026, 6:00 am - May 13th, 2026, 6:00 am",
+      "Added \"Energy Fruit\" themed facilities to the Vegetable Garden",
+      "Added 3 new letters: Amber's Diary, Damascus Goat Growth Diary 2, and Little Koala's Diary"
+    ]
+  },
+  {
+    "version": "v11.17.0g",
+    "date": "2026-04-13",
+    "changes": [
+      "Added 2 new doll customers: Red Panda Tour Guide and Super Gamer",
+      "Added 2 new Buffet Dishes: Crabmeat Sushi and Durian Sushi",
+      "Added 5 new Takeout Recipes: Popping Candy, Corn Ice Cream, Grape Ramune, Matcha, and Pomelo",
+      "Added 4 new head attire to Signature Store"
+    ]
+  },
+  {
+    "version": "v11.16.0g",
+    "date": "2026-03-30",
+    "changes": [
+      "2026 Blind Box Event begins from 3/31/2026 until 4/10/2026",
+      "Added 1 new letter after obtaining all 8 Blind Boxes: Dani's Letter 5",
+      "Added 2 new booth owners: Finger-Licking Fried Food and Speedy Street Stir-Fries",
+      "Added new movie: Make Friends",
+      "Added 1 new booth owner mini-game for Beaver's Flying Daggers",
+      "Added Gathering Long Table Facilities for Courtyard",
+      "Midsummer Birdsong Facilities and Mementos return - sale start on 3/31/2026"
+    ]
+  },
+  {
     "version": "v11.15.0g",
     "date": "2026-03-05",
     "changes": [
       "2026 Springtime Culinary Cats' Contest begins from Mar. 11th, 2026, 6:00 am to Mar. 18th, 2026, 6:00 am",
-      "Collect answer tickets dropped by customers, and participate in the quiz event to obtain event mementos. After getting the mementos, you can purchase limited recipes",
-      "New freshly made food: Peach Blossom Sliced Fish",
+      "– Collect answer tickets dropped by customers, and participate in the quiz event to obtain event mementos. After getting the mementos, you can purchase limited recipes",
+      "– New freshly made food: Peach Blossom Sliced Fish",
       "Women's Day Courtyard Party returns for a limited time from Mar. 8th, 2026, 6:00 am to Mar. 11th, 2026, 6:00 am",
-      "Enter the courtyard during the event time and find White Bunny to launch the party.",
-      "Chance to get A Letter For Chef Meow",
+      "– Enter the courtyard during the event time and find White Bunny to launch the party.",
+      "– Chance to A Letter For Chef Meow",
       "Added new customer: Peacock Sage",
       "Added two new letters: Phantom's Letter 6 and Timmy's Essay 4",
       "Added \"Of Coconut Trees and the Sea Breeze\" themed Vegetable Garden facilities",
@@ -25,12 +173,2023 @@
       "Added 2 new dishes: Steamed Garlic Shrimp with Vermicelli and Sweet Sticky Rice in Lotus Root with Osmanthus Syrup",
       "Added 2 new doll customers: Shentu and Yulei",
       "Added 3 new booth owners: Exquisite Embroidery, Pineneedle Lacquer Fans, and Dazzing Iron Fireworks",
-      "Added 4 new letters: Eggy's Diary 25, Orca's Letter 7, and Mountain Nightscape via Hedwig and 2026 Calendar from the new CNY NPC",
+      "Added 4 new letters: Eggy's Diary 25, Orca's Letter 7, and Mountain Nightscape via Hedwig and 2026 Calendar from the new CNY NPC.",
       "Added new movie: Bamboo Grove Wonderland",
       "Added 1 new Food Truck Dish: Four Happiness Lucky Bags",
       "Added 2 new sets of staff outfits to Field Scarecrows",
       "Added a new pet via Limited-Time Egg Tasks: Peachy (Fruity Egg)",
       "Added Room 6 for Pet Rooms"
+    ]
+  },
+  {
+    "version": "v11.13.0g",
+    "date": "2026-01-29",
+    "changes": [
+      "Chinese New Year facilities are available to purchase from 1/29/2026 to 3/16/2026.",
+      "Added Spring Pavilion Banquet series facilities for the Kitchen, Terrace, Courtyard, Buffet, Vegetable Garden, and Pet Rooms.",
+      "Added Staff Head Accessories and wallpaper for the Kitchen, Terrace, Courtyard and Buffet to the Signature Store.",
+      "Added new pet accessories.",
+      "Added Time Clock facilities for Buffet.",
+      "– Note: Sales start on 1/30/2026 for Spring Pavilion Banquet facilities (Time Clock facilities added today)"
+    ]
+  },
+  {
+    "version": "v11.12.0g",
+    "date": "2026-01-14",
+    "changes": [
+      "Added a new regular customer: Emperor Tamarin",
+      "Added 2 new letters: Prince Secretarybird's Thank-You Gift and Letter from the Magazine",
+      "Added new Alice's Dream facilities for Vegetable Garden",
+      "Added indoor facilities layout function (Including the Fish Pond)"
+    ]
+  },
+  {
+    "version": "v11.11.0g",
+    "date": "2025-12-18",
+    "changes": [
+      "2025 Christmas Event begins from 12/19/2025 until 1/4/2026",
+      "Added 2 new customers: Hansel and Gretel",
+      "Added 2 new dishes: Buttery Apple and Snowman Lava Toast",
+      "Added 2 new doll customers: Candy Salesman and Christmas Tree Donny",
+      "Added 2 new booth owners: Magical Matches Booth and Cozy Winter Hat Booth",
+      "Added a new letter: 3D Christmas Card 7",
+      "Added new movie: Marvelous Christmas Eve",
+      "Added 1 new Food Truck Dish: Frosted Gingerbread House",
+      "Added 2 new sets of staff outfits to Field Scarecrows",
+      "Added a new pet via Limited-Time Egg Tasks: Moonie (Rotund Egg)",
+      "Added a new band: Aurora Puppet Club",
+      "– Add 4 new performers: Aurora Polar Bear, Aurora Arctic Hare, Aurora Fuzzy, and Aurora Sheep",
+      "– Added 10 new posters"
+    ]
+  },
+  {
+    "version": "v11.10.0g",
+    "date": "2025-12-09",
+    "changes": [
+      "Added new Christmas-themed series: Snowflake Journey",
+      "– Available for Kitchen, Takeout, Terrace, Vegetable Garden, Courtyard and Pet House facilities",
+      "All new and previous Christmas facilities are available to purchase for a limited time.",
+      "– Dec. 10th, 2025, 6:00 am - Jan. 24th, 2026, 6:00 am",
+      "Added new Head Accessories for staff and Wallpaper called Warm Nostalgia to the Signature Store.",
+      "– Available since 6:00 am on Dec.10th, 2025",
+      "– Head Accessories Discount: Dec. 10th, 2025, 6:00 am - Jan. 10th, 2026, 6:00 am",
+      "Christmas is coming soon! Facilities will be obtainable as event rewards."
+    ]
+  },
+  {
+    "version": "v11.9.0g",
+    "date": "2025-11-24",
+    "changes": [
+      "Added the 3rd Phase of Midsummer Birdsong lasting from 11/25 until 1/24/2026. Players can get",
+      "– Midsummer Birdsong series Kitchen Facilities",
+      "– Midsummer Birdsong series Garden Facilities",
+      "– Midsummer Birdsong series Terrace Facilities",
+      "– Midsummer Birdsong series mementos in Phase 3.",
+      "Doll Fragment Event is opening! From 11/27/2025 to 12/11/2025",
+      "– Added 6 new dolls: Bathrobe Platypus, Basketball Forward, Autumn Quokka, Miss Florist, Barista, Balloon Artist",
+      "Added a new customer: Damascus Goat",
+      "Added a new letter: Damascus Goat Growth Diary 1",
+      "Added a new Winter Seasonal customer: Forest Ranger Tibetan Mastiff",
+      "– Note: Players that did not finish the 2nd Phase of Midsummer Birdsong will need to finish it first before starting this one. However, if they reach the chest phase then they can choose to end that phase and begin this one."
+    ]
+  },
+  {
+    "version": "v11.8.0g",
+    "date": "2025-10-29",
+    "changes": [
+      "2025 Halloween Event begins from 10/30 until 11/13",
+      "Added a new customer: Gloomy",
+      "Added 4 new Halloween customers: Fox Bride, Anubis, Wolf Magistrate, and Granny Meng",
+      "Added 2 new doll customers: Pirate Stoat and Yuki-onna",
+      "Added 2 new booth owners: Jin's Magic Wands and Invisibility Cloaks",
+      "Added 3 new letters: Halloween Drinks Menu, Ragdoll's Picture 4, and Eggy's Diary 24",
+      "Added new movie: Midnight Horror",
+      "Added 1 new Food Truck Dish: Strange-tasting Cotton Candy"
+    ]
+  },
+  {
+    "version": "v11.7.0g",
+    "date": "2025-10-16",
+    "changes": [
+      "Added Forgotten Fantasies Paradise series facilities to all Kitchen, Takeout, Terrace, Vegetable Garden, Courtyard, and Pet House Furniture.",
+      "Added new items to Signature Store",
+      "Added new pet accessories",
+      "– Note: Sales start on 10/17/2025"
+    ]
+  },
+  {
+    "version": "v11.6.0g",
+    "date": "2025-09-28",
+    "changes": [
+      "2025 Anniversary Event begins from 9/29 until 10/13",
+      "Added a new customer: Alicia",
+      "Added 2 new freshly made dishes: Chicken Cordon Bleu and Eggs Benedict.",
+      "Added 1 new Food Truck dish: Shepherd's Pie",
+      "Added 2 new doll customers: Ace Mixologist and Skilled Handyman",
+      "Added new pet: Sparkle (Sparkling Egg) [Obtained in Limited-Time Egg Tasks]",
+      "Added 2 new booth owners: Aromatic Cheese Shop and Border Collie's Fresh Seafood",
+      "Added new band: Lightseeker Ballet Troupe",
+      "– Added 4 new performers: Dancing Flamingo, Dancing Ostrich, Dancing Swan, and Dancing Wild Duck",
+      "– Added 10 new posters for new band",
+      "Added 3 new letters: 2025 Staff Retreat and Alicia's Letter",
+      "Added new movie: Coffee, Canvas, and Molecular Formulas",
+      "Mid-Autumn Festival begins from 10/4 until 10/9"
+    ]
+  },
+  {
+    "version": "v11.5.0g",
+    "date": "2025-09-11",
+    "changes": [
+      "Added Fleeting Feathers series facilities to all locations.",
+      "Added new items to Signature Store",
+      "Added new pet accessories",
+      "– Note: Sales start on 9/12/2025"
+    ]
+  },
+  {
+    "version": "v11.4.0g",
+    "date": "2025-08-27",
+    "changes": [
+      "2025 Qixi Festival begins from 8/28 until 9/8.",
+      "Increased chances for Magpie Bridge Meeting and Weaver Girl’s Letter during event.",
+      "Added the 2nd Phase of Midsummer Birdsong lasting from 8/28 until 10/27. Players can get",
+      "– Midsummer Birdsong series Buffet Facilities",
+      "– Midsummer Birdsong series Courtyard Facilities",
+      "– Midsummer Birdsong series mementos in Phase 2.",
+      "Added Moonlight Flora wallpaper to Buffet scene.",
+      "Added 1 new Takeout Car to Signature Store.",
+      "Added Autumn Seasonal Customer: Prince Secretarybird",
+      "– Note: Players that did not finish the 1st Phase of Midsummer Birdsong will need to finish it first before starting this one. However, if they reach the chest phase then they can choose to end that phase and begin this one."
+    ]
+  },
+  {
+    "version": "v11.3.0g",
+    "date": "2025-08-14",
+    "changes": [
+      "Added 2 new customers: Lemur and Elephant Shrew",
+      "Added 8 new pet accessories",
+      "Added 3 new sets of staff outfits to Field Scarecrows"
+    ]
+  },
+  {
+    "version": "v11.2.0g",
+    "date": "2025-07-30",
+    "changes": [
+      "The Fishing Tournament starts from 07/31/2025 until 08/14/2025.",
+      "Added 4 new fish that are only catchable during event: Stone, Grouper, Red Snapper, and Sea Hare.",
+      "Added a new pet: Plumpy",
+      "Added Room 5 in the Pet House, becomes available after 13 pets are unlocked. (Costs 120,000)",
+      "Added new pet photo tasks.",
+      "Added a new letter: Rabbit Ding's Fishing Record"
+    ]
+  },
+  {
+    "version": "v11.1.0g",
+    "date": "2025-07-25",
+    "changes": [
+      "Added a new movie: The Marvelous Magic Bean",
+      "Added a new plant to the courtyard: Rock'n'Fluff Tree",
+      "Added a 2 new letters: Insta-Pup's Letter 5 and Yolky's Ramblings 5",
+      "Added 3 new doll customers: Countess, Soprano Performer, and Velvet Bean"
+    ]
+  },
+  {
+    "version": "v11.0.0g",
+    "date": "2025-06-25",
+    "changes": [
+      "Added a new scene: Vegetable Garden",
+      "– Unlock the Vegetable Garden scene with Cod 550,000 when you reach 6,000! Experience the new gameplay of growing vegetables",
+      "– Also Creative Recipes, the Wondrous Coatroom, and more – come explore the garden!",
+      "Added a new staff: Paddy",
+      "Added a new NPC: ChaCha",
+      "– Note: Due to abnormal conditions on the Facebook platform, Facebook players are currently unable to update the game at this time."
+    ]
+  },
+  {
+    "version": "v10.18.0g",
+    "date": "2025-06-11",
+    "changes": [
+      "Added a new battle pass starting 06/12/2025: Midsummer Birdsong. During the event players can get",
+      "– Midsummer Birdsong series Restaurant Facilities",
+      "– Midsummer Birdsong series Takeout Facilities",
+      "– Midsummer Birdsong series mementos in Phase 1.",
+      "– A new customer by collecting 30 dolls by IAP: Miss Linsang",
+      "Added 6 new head accessories to Signature Store",
+      "Added 2 new booth owners: Aero's Sliced Noodles and Leisure Golf.",
+      "Added Moonlight Flora wallpapers to Restaurant and Takeout.",
+      "– Note: When the next phase is unlocked and the player is on the chest stage then players may choose to end the current phase and begin the next one. After all 3 phases conclude, all mementos and facilities will return in the future and then can be purchased with Diamonds."
+    ]
+  },
+  {
+    "version": "v10.17.0g",
+    "date": "2025-05-28",
+    "changes": [
+      "2025 Children's Day Memento Event starts from 05/29/2025 until 06/12/2025",
+      "– The Ad-Watching event to earn rewards will last from 05/29/2025 until 06/23/2025",
+      "Added new NPC: Otter Dodo",
+      "Added 2 new food items: Jellybean Snow Cone and Planet Cake",
+      "Added 2 new customers: Meery and Squiddy",
+      "Added 2 new booth owners: Goldfish Scooping and Street Coffee",
+      "Added 2 new dolls: Greedy Hedgehog and Ranger Squirrel",
+      "Added 3 new letters: Meery's Diary and Squiddy's Message will be obtainable via Hedwig. Little Turtle's Letter 3 will be obtained after collecting all the stamps from Otter Dodo.",
+      "Added a new band: Puff Planet",
+      "– Added 4 new performers: Minty Star, Frosty Star, Pudding Star, and Honey Star",
+      "– Added 10 new posters.",
+      "Added Summer Seasonal Customer: Uncle Marty."
+    ]
+  },
+  {
+    "version": "v10.16.0g",
+    "date": "2025-05-15",
+    "changes": [
+      "Children's Day facilities available for purchase from 05/16/2025 to 06/30/2025.",
+      "Added Children's Day series Starry Whisper-themed facilities for the Restaurant, Takeout, Garden, Courtyard, and Pet Houses.",
+      "– Partial facilities are from the event reward and will be available through the upcoming Children's Day Event",
+      "Added Starry Whisper-themed Head Accessories, Fish Pond For Lease Sign, Fish Pond Storage, and more to the Signature Store.",
+      "– Limited-time discount for new head accessories from 05/16/2025 to 06/16/2025.",
+      "Added Starry Whisper-themed furniture in Pet Houses, Wallpaper and Pet Decor."
+    ]
+  },
+  {
+    "version": "v10.15.0g",
+    "date": "2025-04-27",
+    "changes": [
+      "2025 Blind Box Memento Event starts from 04/28/2025 until 05/08/2025",
+      "Added 3 new letters: Chef Meow's Diary 1 and Chef Meow's Diary 2 can be obtained via Hedwig and Dani's Letter 4 can be obtained after collecting all the Blind Box mementos from this series.",
+      "Added 1 new movie: Resplendent Twilight",
+      "Added Steam-powered Terrace Facilities",
+      "Added Mechanical Fantasy wallpaper for Terrace"
+    ]
+  },
+  {
+    "version": "v10.14.0g",
+    "date": "2025-04-17",
+    "changes": [
+      "Added new letters: Stoat's Adventure Notes 2 and Stoat's Adventure Notes 3",
+      "Added 2 new booth owners: Customized Gown and Sword in the Stone Challenge",
+      "Added new pet Lully"
+    ]
+  },
+  {
+    "version": "v10.13.0g",
+    "date": "2025-03-31",
+    "changes": [
+      "Doll Fragments Event is opening soon! From 04/02/2025 to 04/16/2025",
+      "– Added 6 new dolls: Super Pitcher, Mysterious Detective, Nameless Swordsman, Qipao Granny Wolf, Gentle Poet, Mural Artist",
+      "Added Log Scenery themed facilities in Pet Paradise.",
+      "Added Rock 'n' Roll Sweetheart themed Head Accessories, Takeout Truck and Fish Pond Boat to the Signature Store.",
+      "Added Rock 'n' Roll Sweetheart series mementos to Wishing Well and Gachapon.",
+      "Added new letters: Letter in a Book 6 and Capybara's Reply Letter"
+    ]
+  },
+  {
+    "version": "v10.12.0g",
+    "date": "2025-03-20",
+    "changes": [
+      "Added Rock 'n' Roll Sweetheart series facilities and Neon Gummy themed wallpaper for the Terrace.",
+      "Added new booth owner and mini-game: Sizzling Squid",
+      "Deep-sea Ballad Event facilities and mementos return.",
+      "Added new items to Mysterious Bird Nest: Blooming Arch, Fortuitous Lantern, and Embroidered Opera Flags.",
+      "– Update 10.12.2: Ocean Key, Antique Scissors, Rippling Record Player, Eve of True Love, Floating Starfish, Silk Fish Tail Hat, Poseidon's Hat, Pink Seashell Bow Tie, Treasured Heart, Love Potion, Nautical Wind Chime, Sunken Crown, Gluttonous Shark, Puffy Jellyfish, Pearl Headband, Wave Top Hat, Seafoam Sincerity, Seaweed Comb, Blue Fishbone, Wave Echo, Coral Ear Clip and Spiny Sea Urchin"
+    ]
+  },
+  {
+    "version": "v10.11.0g",
+    "date": "2025-03-06",
+    "changes": [
+      "The Springtime Culinary Cats' Contest Event starts soon! From 03/07/2025 until 03/14/2025",
+      "– During the event, serve customers to get quizzes (up to 10 quizzes daily). Answer all the questions correctly to receive exclusive mementos and recipes.",
+      "– New freshly made food: Toona Tofu",
+      "The Women's Day Party opens for a limited time from 03/08/2025 until 03/11/2025.",
+      "– Enter the courtyard during the event time and find White Bunny to launch the party.",
+      "– Chance to unlock White Bunny's Letter 2",
+      "Added Spring Seasonal Customer: Bigmouth Bird"
+    ]
+  },
+  {
+    "version": "v10.10.0g",
+    "date": "2025-02-27",
+    "changes": [
+      "Added Energy Fruit themed facilities for the Terrace scenes.",
+      "Added new plant to the Courtyard: White Camellias",
+      "Added new pet: Fluffie",
+      "Optimized Fish Pond, added Fish Catalog.",
+      "– Enter Fish Pond, and then click Catalog button at the top of the page to view all fish details."
+    ]
+  },
+  {
+    "version": "v10.9.0g",
+    "date": "2025-02-15",
+    "changes": [
+      "Added 2 new customers: Cyborg Danny and Fuzzy",
+      "Added 3 new doll customers: Scientist Terrier, Speckled Pig Caveman, and Lion Farmer",
+      "Added 2 new letters: Letter in a Book 5 and Goofy's Letter",
+      "Added new items to Mysterious Bird Nest: 4th Anniversary Cake, 5th Anniversary Cake, Auspicious Gourd, Lotus Incense Burner, and other mementos."
+    ]
+  },
+  {
+    "version": "v10.8.0g",
+    "date": "2025-01-22",
+    "changes": [
+      "2025 Chinese New Year Event starts from 01/23/2025 until 02/06/2025",
+      "Added a new NPC: Felicity Nüwa",
+      "Added 2 new customers: Cong Cong and Er Shu",
+      "Added 3 new booth owners: Exquisite Lanterns, Kungfu Teahouse and Mr. Bear's Woodblocks",
+      "Added 2 new doll customers: Madam White Snake and Xu Xian",
+      "Added 3 new freshly made food: Fried Shrimp in Red Rice Noodle Rolls, Crab-Stuffed Orange, and Lotus Root Glutinous Rice Balls",
+      "Added 3 new letters: Orca's Letter 6 and Eggy's Diary 23 will be obtainable via Hedwig. 2025 Calendar will be obtained from Felicity Nüwa.",
+      "Added new movie: Mystery of the Missing Coin",
+      "Added a new band: Cloudrise Tai Chi",
+      "– Added 4 new performers: Windrider, Moondancer, Cloudmaster, and Snowwalker",
+      "– Added 10 new posters.",
+      "Added 2 new items to Mysterious Bird Nest: Shapely Peach and Feather Duster."
+    ]
+  },
+  {
+    "version": "v10.7.0g",
+    "date": "2025-01-08",
+    "changes": [
+      "Chinese New Year facilities are available to purchase from 01/10/2025 to 02/23/2025.",
+      "Added Spring Pavilion Banquet series facilities for the Restaurant, Garden, Courtyard, and Takeout scenes.",
+      "Added Staff Head Accessories, Fish Pond For Lease Sign, Fish Pond Storage, and more to the Signature Store.",
+      "Added new pet accessories.",
+      "– Note: Sales start on 01/10/2025",
+      "Renamed Osmanthus Hanging Ornament Courtyard facility to Osmanthus Brew."
+    ]
+  },
+  {
+    "version": "v10.6.0g",
+    "date": "2024-12-18",
+    "changes": [
+      "2024 Christmas Event begins from 12/19/2024 until 1/06/2025",
+      "Added a new customer: Black Panther",
+      "Added 2 new freshly made food: Log Cake and Paella.",
+      "Added 2 new doll customers: Starlight Researcher and Candy Emissary",
+      "Added 3 new booth owners: Antique Clock Repairs, Sixth Bookstore and Cozy Churros",
+      "Added 1 new letter: 3D Christmas Card 6. Will be obtainable via Hedwig from 12/21/2024 until 1/06/2025",
+      "Added new movie: The Passage of Time",
+      "Added new items to Mysterious Bird Nest: Christmas Bouquet, Soft Round Rug, Love Letter Rug, Blooming Candle, Crystal Resting Place, Skeletal Lamp, Apple Sweetheart, Little Bee, Bunny Ears Top Hat, Handmade Scarf, Seaweed Brows, Golden Ponytail, False Eyelashes, Apple Hat, and Golden Cod."
+    ]
+  },
+  {
+    "version": "v10.5.0g",
+    "date": "2024-12-05",
+    "changes": [
+      "Added Winter Seasonal Customer: Mole",
+      "Added Snowflake Journey themed facilities for Restaurant, Garden, Buffet, Courtyard, and Pet Paradise.",
+      "Added Aurora Fairy Tale themed facilities for Takeout and Terrace.",
+      "Added Warm Winter Chimes facilities for Pet Rooms.",
+      "Added new pet accessories.",
+      "Added new Head Accessories, Storages, and Fish Pond Boat to Signature Store.",
+      "– Note: Sales start on 12/6/2024"
+    ]
+  },
+  {
+    "version": "v10.4.0g",
+    "date": "2024-11-20",
+    "changes": [
+      "Added the third phase of Deep-sea Ballad. During the event players can get",
+      "– Deep-sea series Kitchen Facilities",
+      "– Deep-sea series Garden Facilities",
+      "– Deep-sea series Terrace Facilities",
+      "– Deep-sea series mementos in Phase 3.",
+      "2024 Doll Fragments Event begins on 11/22/2024 until 12/06/2024.",
+      "Added 6 new dolls: Lady Yellow Rose, Sideline Piggy, King Chihuahua, Little Bunny Bear, Water-loving Dalmatian, and Exotic Dancer",
+      "– Note: You cannot participate in 2 phases at the same time. Players in the middle of the second phase needs to be finish up before starting phase 3."
+    ]
+  },
+  {
+    "version": "v10.3.0g",
+    "date": "2024-11-14",
+    "changes": [
+      "Added 2 new booth owners: Handicrafts For Charity and Rainbow Snowboards",
+      "Added new Rock'n'Roll Sweetheart facilities for Takeout Store.",
+      "Added new Neon Gummy wallpaper for Takeout Store."
+    ]
+  },
+  {
+    "version": "v10.2.0g",
+    "date": "2024-10-28",
+    "changes": [
+      "2024 Halloween Event begins from 10/29 until 11/12",
+      "Added a new customer: Harpy Eagle Wizard",
+      "Added 4 new Halloween customers: Trumpeting Angel, God of Wine, Imp, and Spartan Warrior",
+      "Added 2 new doll customers: Strange Doll and Formal Granny Wolf",
+      "Added 2 new booth owners: Strongman Game and Skeleton Puppet Show",
+      "Added 3 new letters: Circus Poster, Circus Invitation, and Eggy's Diary 22",
+      "Added new movie: Mysterious Colleague"
+    ]
+  },
+  {
+    "version": "v10.1.0g",
+    "date": "2024-10-15",
+    "changes": [
+      "Added Forgotten Fantasies Paradise series facilities for Restaurant, Garden, Buffet, and Courtyard.",
+      "Added Murmuring Dusk Rose facilities for Terrace and Pet Rooms.",
+      "Added new pet accessories, Hypnotic Egg to Limited-time Egg Tasks, and Pet (Baby Horns).",
+      "Added new head accessories to Signature Store.",
+      "– Note: Sales start October 16, 2024 at 6:00 AM."
+    ]
+  },
+  {
+    "version": "v10.0.0g",
+    "date": "2024-09-26",
+    "changes": [
+      "2024 Anniversary Event begins from 9/27 until 10/11",
+      "Added a new customer: Annie",
+      "Added 2 new freshly made dishes: Green Grasshopper and Seared Scallops.",
+      "Added 2 new doll customers: Novice Baker and Black Shiba Pilot",
+      "Added new pet: Awoof (Minty Egg)",
+      "Added 2 new booth owners: Mint Chocolate Cones and Knitting Lamb",
+      "Added new band: Minty Popping Candy",
+      "– Added 4 new performers: Aaron, Belle, Ella, and Chris",
+      "– Added 10 new posters for new band",
+      "Added 3 new letters: 5th Anniversary Photo, 2024 Staff Retreat and Newspaper 10",
+      "Added new movie: Prom Drama"
+    ]
+  },
+  {
+    "version": "v9.51.0g",
+    "date": "2024-09-12",
+    "changes": [
+      "Added Milky Mint Chocolate series facilities for Restaurant, Kitchen, Garden, Buffet, Takeout, Terrace, Courtyard, Concert, Pets, and Pet Rooms.",
+      "New head accessories, Garden and Fish Pond Storage, Wallpaper, and Fish Pond Boat to Signature Store.",
+      "Added new pet accessories.",
+      "Added the second phase of Deep-sea Ballad. During the event players can get",
+      "– Deep-sea series Buffet Facilities",
+      "– Deep-sea series mementos in Phase 2.",
+      "– Deep-sea series Courtyard Facilities along with facilities for Facilities/Concert and Facilities/Pets",
+      "– A movie exclusive to the event: Seaside Songstress",
+      "Mid-Autumn festival event begins from 9/15 until 9/25. During the event, Solve the riddle Dori to get Osmanthus Melody memento. After the event or if the player gets the question wrong 3 times, the memento will be in the Gachapon.",
+      "– Note 1: You cannot participate in 2 phases at the same time. Players in the middle of the first phase needs to be finish up before starting phase 2.",
+      "– Note 2: Milky Mint Chocolate facility and Signature Store memento sales start on 9/13/2024."
+    ]
+  },
+  {
+    "version": "v9.50.0g",
+    "date": "2024-08-21",
+    "changes": [
+      "Added 2 new letters: Fashionable Zebra's Diary 2 and Letter in a Book 4.",
+      "5 new head accessories added to Signature Store",
+      "Added 2 new dolls and customers: Street Artist and Summer Waitress."
+    ]
+  },
+  {
+    "version": "v9.49.0g",
+    "date": "2024-08-08",
+    "changes": [
+      "2024 Qixi Festival begins from 8/9 until 8/19.",
+      "Added 2 new games for Cowherd and Weaver Girl.",
+      "– For Cowherd: Find Out the Jade Bangle",
+      "– For Weaver Girl: Guess the Peach Blossoms",
+      "Increased chances for Magpie Bridge Meeting and Weaver Girl’s Letter during event.",
+      "Added Rock'n'Roll Sweetheart facilties for Courtyard"
+    ]
+  },
+  {
+    "version": "v9.48.0g",
+    "date": "2024-07-25",
+    "changes": [
+      "Added new Energy Fruit series facilities for Courtyard Concert and Pet House.",
+      "New plant: Sweet Strawberry Vine",
+      "New movie: Puffy Power Girls - Breakdown (Part 1)",
+      "New delivery cars added to Signature Store: Playful Excavator and Ducky Bubble Bathtub",
+      "Added 2 new letters: Fashionable Zebra's Diary 1 and Stoat's Adventure Notes 1",
+      "– Note: Puffy Power Girls - Breakdown (Part 2) is coming in a future update"
+    ]
+  },
+  {
+    "version": "v9.47.0g",
+    "date": "2024-07-11",
+    "changes": [
+      "Added 2 new customers: Quokka and German Shepherd",
+      "Added a new feature for Pet Houses: Pet Rooms.",
+      "– Added a new button to Pet House: Layout",
+      "– Added Pet Room facilities inside Pet Rooms"
+    ]
+  },
+  {
+    "version": "v9.46.0g",
+    "date": "2024-06-26",
+    "changes": [
+      "Added a new battle pass starting 6/27: Deep-sea Ballad. During the event players can get",
+      "– Deep-sea series Restaurant Facilities",
+      "– Deep-sea series Takeout Facilities",
+      "– Deep-sea series mementos in Phase 1.",
+      "– A new customer by collecting 30 dolls by IAP: Shelly",
+      "Added 2 new letters: Yolky's Ramblings 4 and Hamster's Diary 5.",
+      "Added Glittering Coral Sea wallpapers to Restaurant and Takeout.",
+      "– Note: When the next phase is unlocked and the player is on the chest stage then players may choose to end the current phase and begin the next one. After all 3 phases conclude, all mementos and facilities will return in the future and then can be purchased with Diamonds."
+    ]
+  },
+  {
+    "version": "v9.45.0g",
+    "date": "2024-06-15",
+    "changes": [
+      "Added a new letter: Shiba Puppy's Letter 4. Obtainable starting 6/16.",
+      "All other Father's Day letters have increased chance for a limited time after 6/16."
+    ]
+  },
+  {
+    "version": "v9.44.0g",
+    "date": "2024-06-07",
+    "changes": [
+      "Added 2 new booth owners: Sky-High Kite and Penguin Coffee Cart",
+      "Added new buffet dishes: Mackerel Sashimi, Salmon Sashimi, Rabbit Apple, and Fish Roe Hand Roll",
+      "Added a new letter: Eggy's Diary 21. Higher chance to obtain it from 6/9 until 6/12.",
+      "Added 7 new head accessories for staff to Signature Store.",
+      "Added Privacy Policy and Terms of Use to login loading screen."
+    ]
+  },
+  {
+    "version": "v9.43.0g",
+    "date": "2024-05-30",
+    "changes": [
+      "The Children's Day Event 2024 starts from March 31st 2021 06:00 to June 14th 2022 06:00",
+      "Added 2 new customers: Honey Badger and Lil' Giraffe",
+      "Added 2 new freshly made food: Teddy Bento and Playful Cake",
+      "Added a new seasonal customer: Goober",
+      "Added 2 new dolls: Strawberry Sweetie and Bee Puppy",
+      "Added 2 new booth owners: Airplane Kiddie Ride and Tiny Trampoline",
+      "Added 3 new letters: Yorkie Pup's Letter 4, Handsome Mouse's Playing Card 2 and Lil' Giraffe's Letter",
+      "Added 1 new pet (Alga) and Buzzing Sweet Whispers Pet Accessories",
+      "Children's Day mementos from previous year in now obtainable from Wishing Well and Gachapon.",
+      "Renamed Pork on Rice recipe to Eggscellent Bowl."
+    ]
+  },
+  {
+    "version": "v9.42.0g",
+    "date": "2024-05-16",
+    "changes": [
+      "Added Buzzing Sweet Whispers facilities for garden, buffet, takeout, and terrace.",
+      "Added a new band: Aloha Band.",
+      "Added new Headwear, Fish Pond Boat, Takeout Car, and Garden Storage to Signature Store.",
+      "Optimized letter catalog: Divided Letters into Individual and Series Letters.",
+      "Optimzed Dress-Up section in the catalog by Clothing, Fish Pond Boat, Restaurant Decorations, and Takeout Carts.",
+      "– Note: Sales start on 5/17 and can be bought until 6/17."
+    ]
+  },
+  {
+    "version": "v9.41.0g",
+    "date": "2024-05-11",
+    "changes": [
+      "Added a new letter: Pangolin Baby's Letter 2.",
+      "All other Mother's Day letters have an increase chance for a limited time."
+    ]
+  },
+  {
+    "version": "v9.40.0g",
+    "date": "2024-04-29",
+    "changes": [
+      "Springtime Culinary Cats' Contest Event starts from 4/30 until 5/7.",
+      "Added a new limited dish: Fragrant Flower Pastry",
+      "Added Rock'n'Roll Sweetheart facilities for Garden and Buffet."
+    ]
+  },
+  {
+    "version": "v9.39.0g",
+    "date": "2024-04-15",
+    "changes": [
+      "Added a new regular customer: Goofy",
+      "Added 2 new doll customers: Fisherman Old Gin and Green Snorkeler",
+      "Optimized facilities menu in Courtyard",
+      "Optimized Seeds and Watering process at the garden"
+    ]
+  },
+  {
+    "version": "v9.38.0g",
+    "date": "2024-03-27",
+    "changes": [
+      "The Blind Box Memento Event 2024 starts from March 28th 2021 06:00 to April 6th 2022 06:00",
+      "Added 2 new booth owner games for Aaron Herbs and Outdoor Livestream",
+      "New dolls added to Flora's Ring Toss minigame",
+      "Slumberous Nights facilities and mementos return.",
+      "Optimized menu: Facilities available for an area is now categorized under different themes."
+    ]
+  },
+  {
+    "version": "v9.37.0g",
+    "date": "2024-03-06",
+    "changes": [
+      "Women's day get together party starts from 3/8/2024 until 3/11/2024 UTC in the Courtyard.",
+      "Added a new spring seasonal customer: Platypus",
+      "And new booth owner and mini-game: Cutie Manicure",
+      "Added new mementos to Wishing Well and Gachapon."
+    ]
+  },
+  {
+    "version": "v9.36.0g",
+    "date": "2024-02-22",
+    "changes": [
+      "Added 2 new customers: Weeping Croc and Axolotl",
+      "Added 3 new letters: Letter in a Book 1, Letter in a Book 2, and Letter in a Book 3",
+      "Added a new movie: Detective Dobermann"
+    ]
+  },
+  {
+    "version": "v9.35.0g",
+    "date": "2024-02-05",
+    "changes": [
+      "Lunar New Year event runs from 2/6/2024 at 6:00 AM until 2/20/2024 at 6:00 AM.",
+      "Added a new NPC: Blessed Dragon",
+      "Added 3 new customers: Longevity Fox, Deer of Nine Colors, and Dragony",
+      "2 new freshly made food items: Chinese Cabbage Broth and Longjing Prawns",
+      "3 new dolls and customers: Peach Garden Youngest Brother, Peach Garden Middle Brother, and Peach Garden Eldest Brother",
+      "3 new booth owners: Fragrant Sticky Rice, Crackling Grilled Sausages, and Shadow Play Theater",
+      "Added a new band: Pomegranate Dance Troupe. Can only be invited by the Cheesy Notes performers.",
+      "– Added 4 new performers: Busy Bee-trice, Steady Sally, Gentle Grace, and Elegant Emily",
+      "– Added 10 posters",
+      "3 new letters: Orca's Letter 5, 2024 Calendar and Eggy's Diary 20",
+      "1 new movie: Dragon Palace Adventure"
+    ]
+  },
+  {
+    "version": "v9.34.0g",
+    "date": "2024-01-24",
+    "changes": [
+      "Added Chinese new year facilities to Restaurant, Courtyard, Takeout, and Terrace.",
+      "Added new head accessories, fish pond boat, and delivery car to takeout's signature store.",
+      "Added new pet accessories",
+      "– Note: Sales above begin on January 25, 2024 at 6:00 AM."
+    ]
+  },
+  {
+    "version": "v9.33.0g",
+    "date": "2024-01-10",
+    "changes": [
+      "Added 3 new booth owners: Sweet Ding Ding Candy, Grilled Tofu, and Warm Lotus Seed Dessert",
+      "Added 2 new letters: Hamster's Diary 4 and Black Shiba's Postcard",
+      "Added 6 new head accessories mementos to signature store."
+    ]
+  },
+  {
+    "version": "v9.32.0g",
+    "date": "2023-12-20",
+    "changes": [
+      "Christmas Event 2023 starts December 21st 2023 06:00 and ends January 4h 2023 06:00",
+      "Christmas NPCs will return for the event",
+      "Limited-time Christmas Card event starts December 24th 2023 06:00 and ends December 28th 2023 06:00",
+      "Added 2 new customers: Ahau and Lil' Duckling",
+      "Added 3 new booth owners: Mad Hatter's Afternoon Tea, Wondrous Christmas Tree, and Magic Tiny Train",
+      "Added 3 new dolls: Reindeer Curly, Apple Girl, and Rotund Little Snowman",
+      "Added 2 new recipes: Exquisite Eggnog and Christmas Pudding.",
+      "Added a new letter: 3D Christmas Card 5",
+      "Added 1 new movie: Wintry Night's Wish",
+      "Added 12 new mementos",
+      "– 8 from the Christmas Event 2023",
+      "– 2 mementos from Gachapon",
+      "– 1 memento from the Wishing Well",
+      "– 1 dropped by the new customer"
+    ]
+  },
+  {
+    "version": "v9.31.0g",
+    "date": "2023-12-05",
+    "changes": [
+      "Added Aurora Fairy Tales series facilities for Kitchen, Buffet, and Courtyard. Some which can be obtained from the 2023 Christmas event.",
+      "Added a new Winter Seasonal customer: Arctic Wolf",
+      "Added Aurora Fairy Tales series storages, for lease billboard, head accessories, fish pond boat, and wallpaper.",
+      "Added Christmas themed pet accessories.",
+      "Added the third phase of Slumberous Nights starting from December 6th 2023 06:00. During the event players can get",
+      "– Dreamy series Garden Facilities",
+      "– Dreamy series Kitchen Facilities",
+      "– Dreamy series Terrace Facilities",
+      "Added a new plant and reward: Celestial Vines",
+      "– Note 1: You cannot participate in 2 phases at the same time. Players in the middle of the second phase needs to be finish up before starting phase 3.",
+      "– Note 2: Aurora Fairy Tales facilities sales will begin on December 6th 2023 06:00"
+    ]
+  },
+  {
+    "version": "v9.30.0g",
+    "date": "2023-11-23",
+    "changes": [
+      "The doll fragments event begins from 11/24 at 6:00 until 12/7 6:00",
+      "Added 6 new doll customers: Tuxedo Thief, Trainee Postman, Miss Hydrangea, Mime Actor, Phantom of the Raccoon, and Forest Elf"
+    ]
+  },
+  {
+    "version": "v9.29.0g",
+    "date": "2023-11-09",
+    "changes": [
+      "Added new pet tasks 2 pet eggs that can be obtained for a limited time.",
+      "Added 2 new dolls and customers: Ditzy Crocheter and Moon Goddess.",
+      "Added a new plant and reward: Cutie Cactus",
+      "Renamed Beaver customer to Otter",
+      "Renamed Beaver's Letters 1 and 2 to Otter's Letter 1 and Otter's Letter 2",
+      "Renamed Raccoon's Takoyaki booth owner to Bear's Takoyaki"
+    ]
+  },
+  {
+    "version": "v9.28.0g",
+    "date": "2023-10-26",
+    "changes": [
+      "Halloween 2023 begins on October 27th 2023 06:00 and ends on November 10th 2023 06:00.",
+      "Added 1 new regular customer: Dracula",
+      "6 new Halloween customer added: Chainsaw Puppy, Nine-tailed Fox, Old Fan, Old Xie, Supernatural Enthusiast, and Exorcism Descendant",
+      "2 new doll customers: Fragrant Fairy and Rising Star Curly.",
+      "3 new booth owners: Strange Chocolate Booth, Magic Brooms, and All-knowing Magic Mirror.",
+      "Added new pet accessories.",
+      "Added 1 new movie: Haunted Doll"
+    ]
+  },
+  {
+    "version": "v9.27.0g",
+    "date": "2023-10-12",
+    "changes": [
+      "Added a new customer Amber.",
+      "Added 2 new recipes Cream of Mushroom Soup and Escargot.",
+      "Added Halloween series facilities.",
+      "Added Rock'n'Roll Sweetheart facilities for the Restaurant and Kitchen.",
+      "Added Neon Gummy Wallpapers for the Restaurant and Kitchen.",
+      "New Fish Pond Storage, Garden Storage, head accessories, and delivery car to the Signature Store.",
+      "– Note: Sale starts on October 13th 2023 06:00."
+    ]
+  },
+  {
+    "version": "v9.26.2g",
+    "date": "2023-09-25",
+    "changes": [
+      "Added the second phase of Slumberous Nights starting from September 26th 2023 06:00. During the event players can get",
+      "– Dreamy series Buffet Facilities",
+      "– Dreamy series Mementos",
+      "– Dreamy series Courtyard Facilities along with facilities for Facilities/Concert and Facilities/Pets",
+      "– Added 1 new movie exclusive to the event: The Stolen Sun",
+      "Added new Dreamy Murmurs wallpaper for Buffet.",
+      "Mid-Autumn facilities added to courtyard.",
+      "– Note 1: You cannot participate in 2 phases at the same time. Players in the middle of the first phase needs to be finish up before starting phase 2.",
+      "– Note 2: Mid-Autumn courtyard facilities sales will begin on September 27th 2023 06:00 and can be bought until October 27th 2023 06:00."
+    ]
+  },
+  {
+    "version": "v9.26.0g",
+    "date": "2023-09-21",
+    "changes": [
+      "Anniversary event 2023 stars on September 22nd 2023 06:00 and ends on October 9th 2023 06:00.",
+      "Added a new customer: Grandpa Spirit Bear",
+      "Added 2 new restaurant recipes: Strawberry and Cream Toast and Beef Wellington",
+      "Added 2 new booth owners: Grilled Toast and Yaya's Succulents",
+      "Added new mementos only obtainable in the event and 1 obtainable via Redemption Code.",
+      "Added a new band: Cheesy Notes. Can only be invited by the Eight Tones Band",
+      "– Added 4 new performers: Rat-a-tat, Dingle-dangle, Ta-da-da, and Thump-thump",
+      "– Added 9 new posters",
+      "Added 2 new dolls and customers: Cowboy Fennec Fox and Cha-cha Scotch Collie",
+      "Added 1 new movie: Sweet Memories"
+    ]
+  },
+  {
+    "version": "v9.25.0g",
+    "date": "2023-09-07",
+    "changes": [
+      "Added new Warm Bakery series Facilities.",
+      "Added a new Warm Bakery series Signature_Store#Wallpaper.",
+      "Added new Warm Bakery series themed Mementos to the Signature Store.",
+      "Added a new Fall Seasonal customer: Binturong",
+      "– Note: Warm Bakery series sales will begin on September 8th 2023 06:00."
+    ]
+  },
+  {
+    "version": "v9.24.0g",
+    "date": "2023-08-18",
+    "changes": [
+      "Qixi Event 2023 begins on August 19th 2023 06:00 and ends on August 23rd 2023 06:00.",
+      "All Courtyard Lights, Tables, and Stools have been placed into the Lights, Tables, and Stools category.",
+      "Added Starry Rose themed facilities for Terrace.",
+      "Added new Magic Stars wallpaper for Terrace.",
+      "Added a new letter: Weaver Girl’s Letter",
+      "Qixi event letters get an increased chance to obtain during event."
+    ]
+  },
+  {
+    "version": "v9.23.0g",
+    "date": "2023-08-03",
+    "changes": [
+      "Added new Starry Rose themed Garden and Fish Pond storages.",
+      "Added 3 new mementos: 2 from Wishing Well and 1 from Gachapon.",
+      "Added 2 new letters: White Shiba's Diary 1 and White Shiba's Diary 2."
+    ]
+  },
+  {
+    "version": "v9.22.0g",
+    "date": "2023-07-17",
+    "changes": [
+      "Added a new battle pass system: Slumberous Nights",
+      "– During the event, players have 60 days to complete all the tasks in the first phase and when they are on the chest rewards then they can choose to end the current phase and move on to the next one.",
+      "Changed requirements for the pet feature: Players need to reach 2,500 stars to unlock pet mode instead of unlocked Courtyard 3.",
+      "Added a new category: Pet Paradise to Floor Décor along with a new facility after unlocking Courtyard 3: Peachy Trampoline.",
+      "Optimized monthly sign-ins: Players will now see an interface pop-up at 06:00 everyday when they first enter the game.",
+      "Added a new event-exclusive customer: Ryan",
+      "Added new Dreamy Murmurs wallpaper for Restaurant and Takeout."
+    ]
+  },
+  {
+    "version": "v9.21.4g",
+    "date": "2023-07-06",
+    "changes": [
+      "Added 2 new customers: White Mouse and Fancy Rat",
+      "Added 3 new booth owners: Professional Welding Machine, Outdoor Livestream, and Handmade Lemon Water",
+      "Added a new letter: Mother's Letter to Son 2"
+    ]
+  },
+  {
+    "version": "v9.21.0g",
+    "date": "2023-06-29",
+    "changes": [
+      "Added a new monthly sign-in bonus starting July 1st 2023 06:00."
+    ]
+  },
+  {
+    "version": "v9.20.4g",
+    "date": "2023-06-21",
+    "changes": [
+      "Added a new memento to Wishing Well: River-Skimming Dragon Boat",
+      "Added 2 new letters: Newspaper 8 and Mother's Letter to Son 1",
+      "Added a new movie: Love Boomerang",
+      "Added a new plant and reward: Tropical Pineapple Tree"
+    ]
+  },
+  {
+    "version": "v9.20.0g",
+    "date": "2023-06-14",
+    "changes": [
+      "Added a new pet feature to the Courtyard which unlocks when courtyard expansion 3 is unlocked.",
+      "Added a new Father’s Day letter: Little Turtle's Letter 2",
+      "Increased chances of getting Shiba Puppy's Letter from June 17th through June 21st."
+    ]
+  },
+  {
+    "version": "v9.19.0g",
+    "date": "2023-05-30",
+    "changes": [
+      "Children's Day event stars on May 31st 2023 06:00 and ends on June 14th 2023 06:00.",
+      "Added 2 new regular customers: Golden Retriever and Little Colt.",
+      "2 new mementos dropped by the new customers, 2 from Wishing Well, 2 from Gachapon, and 1 from Bottle Spinning Game.",
+      "Added 1 new seasonal customer: Greedy Hedgehog",
+      "Added 2 new booth owner: Crispy Wafer Rolls Booth and Artisan Chihuahua.",
+      "Added 1 new children's day letter: Yorkie Pup's Letter 3",
+      "Added 2 new recipes: Bouquet Cake and Boneless Chicken Tenders",
+      "Added 1 new movie: The Unexpected Adventure",
+      "Added 2 new doll customers: Unicorn and Hot Dog Promoter"
+    ]
+  },
+  {
+    "version": "v9.18.3.g",
+    "date": "2023-05-19",
+    "changes": [
+      "Level and holiday attributes added to Wishing Wells and Gachapon Machines.",
+      "Added a level function to Wishing Well and Gachapon facilities.",
+      "All holiday letters in Gachapon Machines were divided into corresponding holiday Gachapon machines with the exception for letters that are sold by the Mysterious Merchant.",
+      "Dolls can only be obtained from Gachapon if the original customer of that doll is unlocked."
+    ]
+  },
+  {
+    "version": "v9.18.0.g",
+    "date": "2023-05-16",
+    "changes": [
+      "Added Buzzing Sweet Facilties to all areas in Animal Restaurant.",
+      "Added Buzzing Sweet themed wallpaper and mementos to the signature store.",
+      "Added Buzzing Overture and Buzzing with Life Packs to the store.",
+      "Seeds added to Gachapon."
+    ]
+  },
+  {
+    "version": "v9.17.12.g",
+    "date": "2023-05-12",
+    "changes": [
+      "Added 1 new letter: Shiba Puppy's Letter 3",
+      "Increased chance of getting Yorkie Pup's Letter 2 and Postcard for Mom from May 13th to May 16th."
+    ]
+  },
+  {
+    "version": "v9.17.4.g",
+    "date": "2023-04-25",
+    "changes": [
+      "Added 2 new customers: Miss Rhino and Manager Bear",
+      "2 new mementos dropped by the new customers",
+      "Added 4 new letters: The Misplaced Schedule Sheet, The Wandering Bard's Pop-up Book 1, The Wandering Bard's Pop-up Book 2, and The Wandering Bard's Pop-up Book 3",
+      "Feature added to Game Machine: Added all booth-owner mini-games and terrace mini-games and gives points for playing",
+      "Added 3 new booth-owner mini-games for Sticky Rice Balls, Portrait Drawing Booth, and Raccoon's Takoyaki to Game Machine",
+      "Added a feature for Mysterious Bird Nest: Out-of-game items like Normal and Event Mementos as well as Redemption Code items are sold for diamonds.",
+      "Optimized facility details display: Animation preview has been added to the dynamic facilities details page.",
+      "Removed the Camera feature.",
+      "All Fantastical Party facilities are now sold for diamonds."
+    ]
+  },
+  {
+    "version": "v9.17.0.g",
+    "date": "2023-04-07",
+    "changes": [
+      "Blind Box Memento Event starts on April 8th 2023 06:00 and ends on April 17th 2023 06:00",
+      "Added an event exclusive letter: Dani's Letter 2",
+      "Added sailor series facilities to the Terrace"
+    ]
+  },
+  {
+    "version": "v9.16.0.g",
+    "date": "2023-03-23",
+    "changes": [
+      "Added a new regular customer Bernese Mountain Pup",
+      "Added 8 new mementos",
+      "Added a new plant and its reward: Welcoming Pine",
+      "Added ad watching when you run out of watering times for watering your plants, limit 3 for each plant per day.",
+      "Added a feature to some water fountains to increase times of watering your friends' plants.",
+      "Renamed the Atmosphere Night Light facility to Vibe Night Light."
+    ]
+  },
+  {
+    "version": "v9.15.0.g",
+    "date": "2023-03-07",
+    "changes": [
+      "Springtime Culinary Cats' Contest Event starts on March 8th 2023 06:00 and ends on March 15th 2023 06:00",
+      "Women's Day Courtyard Get-together Event 2023 starts on March 8th 2023 06:00 and ends on March 11th 2023 06:00",
+      "Added 1 new freshly made limited recipe: Springtime Bamboo Stuffed Rice",
+      "Added 1 new Springtime Culinary Cats' Contest event memento",
+      "Added 1 new Women's Day themed Her Moment Movie"
+    ]
+  },
+  {
+    "version": "v9.14.0.g",
+    "date": "2023-02-23",
+    "changes": [
+      "Added 1 new seasonal customer: Little Beagle",
+      "Added 1 new memento dropped by the new customer",
+      "Added 4 new Buffet Recipes: Neapolitan Ice Cream, Vanilla Ice Cream, Sakura Sushi and Corn Sushi",
+      "Added 4 new Takeout Recipes: Milky Steamed Bun, Coconut Juice, Glutinous Rice Ball and Peach",
+      "Added 4 new letters: Snow Leopard's Parenting Diary 1, Snow Leopard's Parenting Diary 2, Snow Leopard's Parenting Diary 3 and Snow Leopard's Parenting Diary 4",
+      "Changed and added more takeout picture reviews",
+      "Reduced exchange rates for Takeout Recipes"
+    ]
+  },
+  {
+    "version": "v9.13.0.g",
+    "date": "2023-02-09",
+    "changes": [
+      "Added 2 new regular Customers: Black Papillon and Eugene the Tree-kangaroo",
+      "Added 2 new Freshly Made Recipes: Pumpkin Soup and Meat, Egg, and Mushroom Beancurd Roll",
+      "Added 1 new memento dropped by the new customer",
+      "Added Alice series facilities to Terrace",
+      "Added Reverie Blue wallpaper to Terrace location",
+      "Added new Chef's Secrets tasks"
+    ]
+  },
+  {
+    "version": "v9.12.0.g",
+    "date": "2023-01-17",
+    "changes": [
+      "Lunar New Year Event 2023 starts on January 18th 2023 06:00 and ends on February 1st 2023 06:00",
+      "Reunion Dinner Event 2023 starts on January 20th 2023 00:00 and ends on January 23rd 2023 23:59",
+      "Added 1 new Lunar New Year Event NPC Auspicious Bunny",
+      "Added 2 new Freshly Made Recipes: Chicken Feet in Black Bean Sauce and Shumai",
+      "Added 2 new Lunar New Year themed regular customers: Mystifying Crane and Nozy",
+      "Added 2 new Lunar New Year themed dolls and corresponding customers: Lucky Curly and Mister Fox",
+      "Added 2 new Lunar New Year themed booth owners: A Melody on the Bridge and Super Value Pawnshop",
+      "Added 1 new Lunar New Year themed band Eight Tones Band",
+      "– 4 new perfomers of the new band: Pretty Face, Drunken Rouge, Exquisite Jade and Princess Feather",
+      "– 10 new posters",
+      "Added 3 new letters: 2023 Calendar, Eggy's Diary 19 and Orca's Letter 3",
+      "Added 1 new Lunar New Year themed Swordsman",
+      "Added new Lunar New Year Buffet Parties",
+      "Added 10 new mementos",
+      "– 4 from the Lunar New Year Event 2023",
+      "– 2 from the Wishing Well",
+      "– 2 from the Gachapon",
+      "– 1 from the Bottle Spinning Game",
+      "– 1 from the Redemption Code",
+      "Lunar New Year themed Avatar Creater event starts on January 18th 2023 06:00 and ends on February 1st 2023 06:00",
+      "Increased probability of getting Lunar New Year themed mementos and letters"
+    ]
+  },
+  {
+    "version": "v9.11.2.g",
+    "date": "2023-01-10",
+    "changes": [
+      "Added the third phase of the Fantastical Party starts from January 11th 06:00 to March 14th 06:00. During the event players can obtain",
+      "– Facilities for the Kitchen, Garden and Terrace locations, as well as facilities and decor for the Courtyard location",
+      "– Added 10 new Mementos exclusive to the event",
+      "– Added Garden Storage exclusive to the event",
+      "Added 1 new plant and its reward: Leisurely Moments",
+      "Added new Forest Song wallpapers for the Kitchen and Terrace to the Signature Store",
+      "Added 1 new Takeout Car to the Signature Store"
+    ]
+  },
+  {
+    "version": "v9.11.0.g",
+    "date": "2023-01-03",
+    "changes": [
+      "All Lunar New Year limited facilities are now available for purchase from January 4th 2023 until February 17th 2023",
+      "New Lunar New Year facilities were added to Restaurant, Kitchen, Garden, Buffet and Courtyard locations",
+      "Added new wallpapers \"A Dream of Fineries\" to all possible locations to the Signature Store",
+      "Added 1 new Fish Pond Storage and 1 new Garden Storage",
+      "Added 5 new Mementos to the Signature Store",
+      "– 3 Head Accessories",
+      "– 1 Takeout Car",
+      "– 1 Fish Pond Boat"
+    ]
+  },
+  {
+    "version": "v9.10.0.g",
+    "date": "2022-12-20",
+    "changes": [
+      "Added Christmas Event 2022 starts December 21st 2022 06:00 and ends January 4h 2023 06:00",
+      "Christmas NPCs will return for the event",
+      "Limited-time Christmas Card event starts December 24th 2022 06:00 and ends December 28th 2022 06:00",
+      "Added 1 new customer: Arctic Hare",
+      "Added 2 new booth owners: Gingerbread Man's Bar Cart and Magic Bakery",
+      "Added 2 new recipes: Mulled Wine and Smoked Ham",
+      "Added 1 new letter: 3D Christmas Card 4",
+      "Added 1 new movie: Snow Queen",
+      "Added 3 new dolls and corresponding customers: Frosting Elf, Clockwork Penguin, and Snow Queen",
+      "Added 11 new mementos",
+      "– 7 mementos from the Christmas Event 2022",
+      "– 2 mementos from the Wishing Well",
+      "– 1 Redemption Code memento",
+      "– 1 dropped by the new customer"
+    ]
+  },
+  {
+    "version": "v9.9.13.g",
+    "date": "2022-12-07",
+    "changes": [
+      "Added new limited-time facilities and Courtyard Decors for Restaurant, Garden, Terrace and Courtyard locations",
+      "Added new limited-time decors for music bands",
+      "Buy time: December 8th 2022 00:00AM to January 21st 00:00AM",
+      "Added a new Seasonal Customer: Upturned-Brows Penguin",
+      "Added a new memento dropped by the new seasonal customer",
+      "Added 5 new Mementos to the Signature Store (discounted by price and require 0 likes until January 3rd 2023)",
+      "Added a new Garden Storage to the Signature Store",
+      "All old Christmas-themed facilities are now obtainable from December 8th 2022 00:00AM to January 21st 00:00AM"
+    ]
+  },
+  {
+    "version": "v9.9.8.g",
+    "date": "2022-11-24",
+    "changes": [
+      "Added limited-time Doll Fragment Event for buying dolls with Diamonds from November 25th 2022 6:00AM to December 9th 6:00AM",
+      "Added 2 new Gift Packs for the IAP shop. The gift packs are limited to the Doll Fragment Event.",
+      "Added 2 new regular Customers: Snowy and Sleepwalking Little Lion",
+      "Added 6 new dolls and their corresponding customers: Sweet Nurse, Sleeping Baby Elephant, Demure Maiden, Little Fox in Raincoat, Frog Prince and Volleyball Second Spiker",
+      "Added 2 new Letters: Phantom's Letter 5 and Timmy's Essay 3",
+      "Previous exclusive mementos and letters from the Halloween Event 2021 and 2022 can now be obtained from the Gachapon, Wishing Well. The Halloween Letters can also be bought from the Mysterious Merchant.",
+      "Added 2 new mementos, 1 dropped by the new customer Sleepwalking Little Lion, 1 from the Wishing Well",
+      "The Mysterious Merchant has resumed selling candies"
+    ]
+  },
+  {
+    "version": "v9.9.2.g",
+    "date": "2022-11-03",
+    "changes": [
+      "Added the second phase of the Fantastical Party starts from November 4th 06:00 to January 5th 06:00. During the event players can obtain",
+      "– Facilities for the Buffet, decorations and facilities for the Courtyard and Concert",
+      "– Added 1 new movie exclusive to the event: Healing Night",
+      "– Added 6 new Mementos exclusive to the event.",
+      "– Added Fish Pond Storage and For Lease Billboard exclusive to the event.",
+      "Added new Forest Song wallpapers for the Buffet to the Signature Store"
+    ]
+  },
+  {
+    "version": "v9.9.0.g",
+    "date": "2022-10-27",
+    "changes": [
+      "Added Halloween Event 2022 starts October 28th 06:00 and ends November 10th 06:00",
+      "Added 3 new letters obtained from the Halloween Event 2022: Rose's Love Story 1, Rose's Love Story 2 and Rose's Love Story 3",
+      "Halloween Exclusive customers of last year will return",
+      "Added 1 new regular customer: Rose",
+      "Added 6 new Halloween Customers: Frankenpooch, Party Skeleton, Invisible Bunny, Little Red Riding Hood, Little Yeti and Ghost Soldier",
+      "Added Halloween themed facilities for the Restaurant, Kitchen, Courtyard and Terrace",
+      "Added 5 new Booth Owners: Phantom Car, Soul-Carving Booth, Magic Candy Store, Graveyard Dressing Room and Beaver's Flying Daggers",
+      "Added the Halloween themed wallpaper for the Terrace",
+      "Added 1 new movie: The Midnight Baron",
+      "Added new mementos",
+      "– 1 Redemption Code memento",
+      "– 2 mementos from the Halloween Event 2022",
+      "– 3 mementos from the Bottle Spinning Game",
+      "– 3 mementos from the Gachapon",
+      "– 3 mementos from the Wishing Well",
+      "– 5 mementos from the Signature Store"
+    ]
+  },
+  {
+    "version": "v9.8.10.g",
+    "date": "2022-10-14",
+    "changes": [
+      "Added 2 new dolls and their corresponding customers: Magic Chihuahua and Gentleman Dobermann",
+      "Added 1 new plant and its reward: Hypnotizing Deadwood",
+      "Added 2 new letters: Shiba Puppy's Gift and My Dearest Friend 3",
+      "Added 1 new movie: Legend of the Big Bad Wolf",
+      "Added new courtyard layout feature which allows players to save up to 6 decor layouts, so they can be changed quickly."
+    ]
+  },
+  {
+    "version": "v9.8.3.g",
+    "date": "2022-09-22",
+    "changes": [
+      "Added Anniversary Event 2022 starts September 23rd 06:00 and ends October 8th 06:00",
+      "Added a new band: Sunshine Symphony. This band can only be invited by members from the band Laughing Out Loud and Sweet Yogurt",
+      "Added a new Anniversary Event customer: Lilith",
+      "Added a new Booth Owner: Freewheeling Doodles",
+      "Added 2 new Letters: 2022 Staff Retreat and Lilith's Ramblings",
+      "Added 1 new movie: Eggy's Egg Drawing",
+      "Added new mementos",
+      "– 10 Posters corresponding to the new band Sunshine Symphony",
+      "– 1 Redemption Code memento",
+      "– 6 mementos from the Anniversary Event 2022",
+      "– 3 mementos from the daily login during Anniversary Event 2022",
+      "– 2 mementos from the Bottle Spinning Game",
+      "– 2 mementos from the Gachapon",
+      "– 2 mementos from the Wishing Well"
+    ]
+  },
+  {
+    "version": "v9.8.0.g",
+    "date": "2022-09-14",
+    "changes": [
+      "Added new Fanciful Melody theme facilities and Courtyard decor",
+      "Added new wallpapers, Garden & Fish Pond Storage and Lease Sign to the Signature Store",
+      "Added 2 new wearable mementos to the Signature Store",
+      "Added 1 new Takeout Car to the Signature Store",
+      "Added 1 new Pond memento to the Signature Store",
+      "Added 1 new plant and its reward: Immersive Elegance"
+    ]
+  },
+  {
+    "version": "v9.7.8.g",
+    "date": "2022-09-08",
+    "changes": [
+      "Added new Mid-Autumn Festival starts September 9th 06:00 and ends September 14th 06:00",
+      "Added 1 new memento obtainable from Mid-Autumn Festival",
+      "Added 3 new Courtyard Floor Decors",
+      "Added 1 new plant and its reward: Golden Ginkgo"
+    ]
+  },
+  {
+    "version": "v9.7.6.g",
+    "date": "2022-09-01",
+    "changes": [
+      "Added new seasonal customer: Leopard",
+      "Added 2 new recipes: Dongpo Pork and Coconut Milk Pudding",
+      "Added 3 new buffet recipes: Red Bean Soup with Rice Cake, Crepe and Eel Rice",
+      "Added 1 new memento dropped by the new customer."
+    ]
+  },
+  {
+    "version": "v9.7.0.g",
+    "date": "2022-08-18",
+    "changes": [
+      "Added Battle Pass system with its first event Fantastical Party. During the event players can obtain",
+      "– Facilities for the Restaurant, Takeout as well as decorations and facilities for the Courtyard",
+      "– Added 1 new doll customer exclusive to the event: Miss Fawn",
+      "– Added 6 new Mementos exclusive to the event",
+      "Added 2 new movies: Remember to Say Goodbye and Swaying Leaves",
+      "Added new Forest Song wallpapers for the Restaurant and Takeout to the Signature Store"
+    ]
+  },
+  {
+    "version": "v9.6.2.g",
+    "date": "2022-08-02",
+    "changes": [
+      "Qixi Festival is back from August 3rd 06:00 to August 7th 23:59",
+      "Added Fish Pond Vending Machine where players can exchange baits for fish.",
+      "The Magnet Hook is optimized to always catch the first 2 fish and up to 5 fish can be caught."
+    ]
+  },
+  {
+    "version": "v9.5.16.g",
+    "date": "2022-07-22",
+    "changes": [
+      "Added 3 new Customers: Chihuahua, Brown Chihuahua and Black & White Chihuahua",
+      "Added a new letter: Phantom's Letter 4",
+      "Added a new memento: Whislte dropped by Brown Chihuahua"
+    ]
+  },
+  {
+    "version": "v9.5.13.g",
+    "date": "2022-07-08",
+    "changes": [
+      "Added 3 new letters: Timmy's Essay 2, My Dearest Friend 1 and My Dearest Friend 2",
+      "Added a new plant: Tropical Banana Tree",
+      "Added a new Lease Billboard: Reverie Kingdom",
+      "New Mini-Game added for Love Tribe"
+    ]
+  },
+  {
+    "version": "v9.5.6.g",
+    "date": "2022-06-16",
+    "changes": [
+      "New expansion in the Courtyard",
+      "Optimization of UI",
+      "Portrait Drawing Booth and Rabbit's Breakfast can no longer be recruited through Ray",
+      "The probability of Little Lady doll in the Gachapon is increased",
+      "Added a Pity System to unlock Terrace Customers"
+    ]
+  },
+  {
+    "version": "v9.5.4.g",
+    "date": "2022-06-09",
+    "changes": [
+      "Mew-chelin Judging and its related rewards have been officially renamed to Aromatic Acorn."
+    ]
+  },
+  {
+    "version": "v9.5.0.g",
+    "date": "2022-05-30",
+    "changes": [
+      "The Children's Day Event 2022 starts from May 31st 2021 06:00 to June 14th 2022 06:00",
+      "Added new character",
+      "– 2 regular Customers: Mooey, Mr. Bharal",
+      "– 1 Doll Customer: Little Lady",
+      "– 1 Seasonal Customer: Old Gene",
+      "– 2 Booth Owners: Laughter Club and Colorful Balloons",
+      "Added a new band: Sweet Yogurt. This band can only be invited by members from the band Cutie Girlies and Little Angels Chorus",
+      "Added new Sweet themed Facilities for the Restaurant, Garden, Buffet, Kitchen, Takeout, Courtyard, and Terrace",
+      "Added Sweet themed wallpaper for the Terrace",
+      "Added 2 new Recipes: Cola Wings and Banana Boat",
+      "Added 1 new movie: Mysterious Treasure",
+      "Added 2 new Letters which can be obtained via Children's Day Event 2022: Childhood Letter and Reply to Childhood Letter",
+      "Added new mementos",
+      "– 9 Posters corresponding to the new band Sweet Yogurt",
+      "– 7 mementos from the Signature Store",
+      "– 2 mementos from the new Customers",
+      "– 1 Redemption Code memento",
+      "– 1 memento from the Children's Day Event 2022",
+      "– 3 mementos from the Bottle Spinning Game",
+      "– 3 mementos from the Card-Playing Mouse",
+      "– 3 mementos from the Gachapon",
+      "– 2 mementos from the Wishing Well",
+      "Previous year Children's Day Event exclusive mementos can now be obtained",
+      "– 2 from the Wishing Well: Airplane Model and Ice Skates",
+      "– 2 from Gachapon: Bigmouth Crocodile and Rubik's Cube (Plate draw only)"
+    ]
+  },
+  {
+    "version": "v9.4.3.g",
+    "date": "2022-05-19",
+    "changes": [
+      "Added 5 new customers who can only be attracted on the Terrace: Hoppy the Pika, Bouncy the Pika, Dobermann, Sunny and Mad Hatter",
+      "Added 2 new Recipes: Mango Sticky Rice and Matcha Cake Roll",
+      "Added 3 new type of Terrace Facilities: Floor Lamp, Snack Counter, and Floor Decorations",
+      "Revamped the Forest Newsletter, user-made archive can be found [https://imgur.com/a/HIJ6bTK here].",
+      "Minor translation fixes."
+    ]
+  },
+  {
+    "version": "v9.4.1.g",
+    "date": "2022-05-07",
+    "changes": [
+      "Added 1 new letter: Postcard for Mom",
+      "Increased the probability of getting Yorkie Pup's Letter 2 from May 8th to May 10th 2022"
+    ]
+  },
+  {
+    "version": "v9.4.0.g",
+    "date": "2022-04-28",
+    "changes": [
+      "The Blind Box Memento Event 2022 starts from April 29th 2021 06:00 to May 6th 2022 06:00",
+      "Added a new band: Laughing Out Loud",
+      "Added 7 new Posters",
+      "Added 8 new mementos for the Blind Box Memento Event 2022",
+      "Added 2 new Letters: Dani's Letter, Eggy's Certificate",
+      "Added 1 new lease sign in the Signature Store",
+      "The letter New Friend Aten can be obtained for a limited time from May 3rd 2022 to June 30th 2022 from the Mysterious Merchant and Hedwig. This letter will not be obtainable after this time period.",
+      "The letter Eggy's Certificate can be obtained for a limited time from May 5th 2022 to May 7th 2022. This letter will not be obtainable again after this time period.",
+      "After Blind Box Memento Event 2022, both the letter and mementos will be added to Gachapon"
+    ]
+  },
+  {
+    "version": "v9.3.0.g",
+    "date": "2022-04-14",
+    "changes": [
+      "Added a new NPC: Aten",
+      "Added a new Stamp & Puzzle Event: April 15th 06:00 - April 21st 6:00",
+      "Added a new letter as reward for Stamp & Puzzle Event.",
+      "Added Star and Rose themed facilities to the Courtyard",
+      "Sketchbook memento renamed to Doodle Book",
+      "Christmas Tree Sign facility renamed to Surprise Christmas Tree",
+      "Fixed the text of the incorrect takeout photo reviews."
+    ]
+  },
+  {
+    "version": "v9.2.15.g",
+    "date": "2022-03-31",
+    "changes": [
+      "Added 3 new customers: Dorkie, Little Koala and Yannis.",
+      "Added 2 new mementos dropped by the new customers: Pen Cap and Boxing Gloves",
+      "Added 2 new letters: Lynx's Diary 2, Timmy's Essay 1.",
+      "Added 3 new recipes: Boston Lobster, Glutinous Rice Cake and Roujiamo.",
+      "Renamed White Sheep to Aries.",
+      "Fixed the text of one of the incorrect takeout photo reviews.",
+      "Added the Terrace section to the in-game Frequently Asked Questions.",
+      "Changed message that pops up when you are going to sow your flower from \"[Flower] needs [time to grow]. Bloom needs sow?\" to \"[Flower] takes [time to grow] to bloom. Do you want to sow?\"",
+      "Changed moving popup messages' font to Serif."
+    ]
+  },
+  {
+    "version": "v9.2.10.g",
+    "date": "2022-03-19",
+    "changes": [
+      "Added 3 new special fish: Ray, Hermit Crab and Goldfish",
+      "Added 7 new Booth Owners",
+      "– Wholesale Wild Mushrooms",
+      "– Mr. Horse's Vegetables",
+      "– Aaron Herbs",
+      "– Outdoor Yoga",
+      "– Fox's Oden",
+      "– Mysterious Magic",
+      "– Sweet Coconut Water",
+      "Added new Flower Beds that enable double harvest.",
+      "Added Dream Seeds that double yield of flowers when used on flowerbed."
+    ]
+  },
+  {
+    "version": "v9.2.8.g",
+    "date": "2022-03-07",
+    "changes": [
+      "Mini event for International Women's Day: March 8th 06:00 - March 11th 6:00",
+      "Added 1 new event letter: White Bunny's Letter 2",
+      "QoL update",
+      "– Added friend shortcut key function. When visiting friends from Friends Board, you can visit other friends' without going back to your own Friend Board.",
+      "– Added scroll wheel effect to the customer and memento catalog. Allows for faster scrolling of the catalog."
+    ]
+  },
+  {
+    "version": "v9.2.6.g",
+    "date": "2022-02-26",
+    "changes": [
+      "Added Starry Rose themed facilities for the Buffet",
+      "Added 15 new Photo Takeout Reviews.",
+      "Added one new spring customer (appears after 00:00 on March 1): Sheepie",
+      "Added one new memento (dropped by the new spring customer)",
+      "Optimization of terrace-related problems and the friends' Terrace can now be visited.",
+      "Optimization with terrace bottle spin timers.",
+      "New clothes added for the Tailor Liu Mini-Game, new cakes added for Cut Cake Mini-Game"
+    ]
+  },
+  {
+    "version": "v9.2.4.g",
+    "date": "2022-02-13",
+    "changes": [
+      "Added new letter: Romantic Dinner",
+      "Certain customers have a high probability to visit on Valentine's Day",
+      "Renamed Tassel Dumpling memento to Tassel Fluffy",
+      "Renamed Takeout Recipe Sugar Candy to Konpeitō"
+    ]
+  },
+  {
+    "version": "v9.2.0.g",
+    "date": "2022-01-26",
+    "changes": [
+      "Lunar New Year Event 2022 January 27th 2022 06:00 AM and ends February 9th 2022 6:00AM.",
+      "New facilities for the Restaurant, Buffet, Takeout, Terrace, Courtyard and Concert",
+      "Added new event NPC: Tiger of Blessings and a new customer Curly",
+      "Added 3 new letters: 2022 Calendar, Eggy's Diary 18 and Orca's Letter 3",
+      "Added 14 new mementos",
+      "– 3 from the Wishing Well",
+      "– 5 from Gachapon",
+      "– 4 from the Signature Store",
+      "– 1 from the Lunar New Year Event 2022",
+      "– 1 from the Super-value Chinese New Year Pack [Shop]",
+      "Added the Lunar New Year-themed wallpaper for the Terrace and all Fortune and Blessing wallpapers are discounted.",
+      "Added new Lunar New Year-themed storages for the Fishing Pond and Garden",
+      "Added 2 new Booth Owners: Ink Calligraphy and Sticky Rice Balls",
+      "The limited-time Super-value Chinese New Year Pack",
+      "The limited-time Lunar New Year Event 2022 card event"
+    ]
+  },
+  {
+    "version": "v9.1.10.g",
+    "date": "2022-01-19",
+    "changes": [
+      "Added 2 new dolls and corresponding guests: Part-timer Cici and Kungfu Kid",
+      "Added 1 new Movie: A Dinner on the Chinese New Year's Eve",
+      "Added 1 new Plant: Tiger Fortune",
+      "Probability optimization of terrace bottle game",
+      "– Movie fragments 2x more likely to appear",
+      "– Cod reduced by 60% to appear",
+      "– Bell 13% more likely to appear",
+      "– Diamonds reduced by 80% to appear",
+      "– Bottles added, around same appearance as Movie fragments",
+      "– Dishes 3% more likely to appear",
+      "– Chopsticks 3% more likely to appear",
+      "– Bowl 20% more likely to appear",
+      "– Spoon 20% more likely to appear",
+      "– Knife & Fork 2x more likely to appear",
+      "– Towel 2x more likely to appear"
+    ]
+  },
+  {
+    "version": "v9.1.9.g",
+    "date": "2022-01-07",
+    "changes": [
+      "2 Letters: White Bunny's Letter and New Album Release",
+      "1 new customer: White Sheep",
+      "4 new takeout items: Milk Tea Ice Cream, Watermelon Juice, Mangosteen and Sugar Candy"
+    ]
+  },
+  {
+    "version": "v9.1.0.g",
+    "date": "2021-12-20",
+    "changes": [
+      "The Christmas Event 2021 starts from December 21st 2021 06:00 to January 4th 2022 06:00",
+      "New NPC: Snowball 2",
+      "New Mystery Customer: Beancurd, Rice Cake, Moose",
+      "New Christmas themed Facilities in the Kitchen, Buffet, Takeout, Terrace, Concert and Courtyard",
+      "Added new Garden and Fishing Pond storage in the Signature Store",
+      "Added new Christmas wallpaper theme in the Signature Store - unlock on the 24th Dec.",
+      "New Letters: 3D Christmas Card 3 Obtainable on Christmas Day(Dec 24-25th)",
+      "New Mementos",
+      "– 4 from the Signature Store.",
+      "– 4 from Christmas Event 2021.",
+      "– 4 from Gachapon.",
+      "– 4 from the Wishing Well.",
+      "– 1 purchased from Christmas 2021 Bag in the Store.",
+      "– 2 dropped by the newly added Customers.",
+      "Limited-time Christmas Card event: Dec. 24-Dec. 28",
+      "Added new event Packages in the Diamond Store.",
+      "DVDs are renamed into Movies"
+    ]
+  },
+  {
+    "version": "v9.0.4.g",
+    "date": "2021-12-15",
+    "changes": [
+      "Cod from NPCs can now again be picked up by players.",
+      "Fixed the garden error prompts \"the capacity is full\".",
+      "Fixed the problem that the bottle gifted after purchasing a new sideboard on the Terrace cannot be picked up on the day.",
+      "Fixed the problem of Terrace guests getting stuck beside the sideboard",
+      "Fixed the problem of Terrace guests not being able to dine",
+      "Fived the problem that the benefits of Terrace facilities will not stack up",
+      "Fixed other issues"
+    ]
+  },
+  {
+    "version": "v9.0.0.g",
+    "date": "2021-12-10",
+    "changes": [
+      "Added the 8th new scene: Terrace",
+      "Added new group dining gameplay in the Terrace.",
+      "Added new currency at the Terrace: Bottle",
+      "Added 3 new Terrace Mini-Games.",
+      "Added new Terrace Staff: Seedy the Waiter",
+      "Added a new collectible: DVDs",
+      "Added new seasonal customer: Seal Pup",
+      "The order of items in the Garden and Fishing Pond storages can now be arranged by the players."
+    ]
+  },
+  {
+    "version": "v8.19.0.g",
+    "date": "2021-11-11",
+    "changes": [
+      "Added a new band: Ball Lightning",
+      "Added 7 posters for the new band.",
+      "Added a new takeout car in the Signature Store: Pumpkin Carriage",
+      "Added 2 new letters: Eggy's Diary 16 and Yolky's Ramblings 3.",
+      "Added new vertical fences for the Courtyard."
+    ]
+  },
+  {
+    "version": "v8.18.0.g",
+    "date": "2021-10-28",
+    "changes": [
+      "Unlocked Halloween Event from October 29th 06:00 to November 12th 06:00",
+      "Added some new Halloween Facilities for all scenes.",
+      "Added Halloween storages in the Signature Store",
+      "Halloween exclusive customers of last year returned.",
+      "Added new Halloween NPC: Halloween Ragdoll, new Halloween customer: Gnome Bean",
+      "Added Halloween booth owner: Budget Witch’s Soup",
+      "Added 3 Halloween letters obtained via the Halloween Event 2021: Ragdoll's Picture 1, Ragdoll's Picture 2 and Ragdoll's Picture 3",
+      "Added Halloween mementos",
+      "– 4 from Gachapon",
+      "– 3 from Wishing Well",
+      "– 4 from Signature Store",
+      "– 1 from Halloween Event 2021"
+    ]
+  },
+  {
+    "version": "v8.17.0.g",
+    "date": "2021-09-28",
+    "changes": [
+      "The Anniversary Celebration Event from September 29th 06:00 to October 13th 06:00",
+      "Added new Steam-powered facilities for all scenes",
+      "Added new Steam-powered wallpaper in the Signature Store",
+      "Added new mementos",
+      "– 4 obtainable from the Anniversary Celebration Event 2021, afterward only one of them is obtainable from Gachapon",
+      "– 5 from the Signature Store",
+      "– 2 from Wishing Well",
+      "– 3 from Gachapon",
+      "– 1 new Redemption Code Memento",
+      "Added new Event Customers: Adventurer Stoat",
+      "Added a new booth owner: Romantic Hot Air Balloon",
+      "Added new band Nebulae with the following members: Lead Dancer Slim White Dog, Lead Singer Dalmatian, Rapper Bean and Leader Scotch Collie",
+      "Added 6 new Posters for the new band",
+      "Added 2 new letters: Yolky's Ramblings 2 and 2021 Staff Retreat",
+      "Added a new tree: Twisted Pipe Tree",
+      "Added Doll Fragment Event‎ as a limited-time offer. Players can buy doll pieces for 20/doll piece. This offer lasts until the end of the event.",
+      "All mementos from the Qixi Festival Event 2021 event and the Blind Box Memento Event 2021 can now be obtained from the Gachapon",
+      "Game notification is added for finished work in the Buffet."
+    ]
+  },
+  {
+    "version": "v8.16.0.g",
+    "date": "2021-09-17",
+    "changes": [
+      "Added new Starry Sky Rose facilities for the Takeout",
+      "Added 3 sets of dolls and corresponding guests: White Shiba Bride, Shiba Groom and Little Turtle Sailor",
+      "Added 2 new booth owners: Uncle's Roasted Sweet Potato and Inconspicuous Roasted Chestnuts",
+      "Added new letter: Eggy's Diary 17",
+      "Halloween candies from the Mysterious Merchant have had their appearance rate reduce by ~90%"
+    ]
+  },
+  {
+    "version": "v8.15.0.g",
+    "date": "2021-09-02",
+    "changes": [
+      "Added new Autumn customer: Prawny",
+      "Added new recipe: Pineapple Bun",
+      "Added new letter: Fox's Graduation 2",
+      "Added new 4 Courtyard performers: Sakura Soda Band",
+      "Added 7 new Posters"
+    ]
+  },
+  {
+    "version": "v8.14.0.g",
+    "date": "2021-08-25",
+    "changes": [
+      "Blind Box Memento Event 2021 starts.",
+      "Added 1 special customer: Dani.",
+      "Added new blind box mementos.",
+      "Added an event letter: Kate's Present.",
+      "Added Alice series Courtyard concert and courtyard facilities.",
+      "Added a new plant: Queen of Heart's Tree"
+    ]
+  },
+  {
+    "version": "v8.13.0.g",
+    "date": "2021-08-12",
+    "changes": [
+      "From 13th August 06:00(Local Time) to 16th August , Qixi special event will be open!",
+      "Added special guests: Cowherd and Weaver Girl.",
+      "Added a Qixi letter: Magpie Bridge Meeting.",
+      "Added Qixi mementos that can be won during the event and received via Redemption Code: Pink Mandarin Duck Pouch, Blue Mandarin Duck Pouch, River Lantern and Redemption Code memento: Fairy Chignon."
+    ]
+  },
+  {
+    "version": "v8.12.5.g",
+    "date": "2021-08-06",
+    "changes": [
+      "Added Alice in Wonderland themed facilities and decor for Courtyard",
+      "Added a new tree: Marriage Tree"
+    ]
+  },
+  {
+    "version": "v8.12.4.g",
+    "date": "2021-08-04",
+    "changes": [
+      "Added new letter: Insta-Pup's Letter 4",
+      "Added new wallpapers in the Signature Store: Magic Stars",
+      "Added 2 new guest: Snow Leopard and Snow Leopard Pup",
+      "Added new recipe: Spicy Chicken Skewers",
+      "Added 2 new takeout photo reviews",
+      "Added several new Daily Tasks"
+    ]
+  },
+  {
+    "version": "v8.11.0.g",
+    "date": "2021-07-14",
+    "changes": [
+      "Added new letter: Yolky's Ramblings 1",
+      "Added 4 new mementos",
+      "– Butterfly Net, Sunscreen from the Wishing Well",
+      "– Conch and Seashell Barrette from the Gachapon",
+      "Added new summer beach themed Courtyard's decors: A String of Shells, Surfboard, Beach Lounge Chair and Beach Umbrella",
+      "Added new doll to the Gachapon: Tropical Island",
+      "Added summer limited pack in the Diamond Shop",
+      "Handsome Mouse's Playing Card is no longer obtainable from the Gachapon"
+    ]
+  },
+  {
+    "version": "v8.10.2.g",
+    "date": "2021-07-10",
+    "changes": [
+      "Added new Starry Rose series Kitchen Scene facilities.",
+      "Added new plant to the Courtyard: Fresh Bamboo",
+      "Added new booth owners: Swift Roti Prata, Trendy Braid",
+      "Added 2 new letters: Fox's Graduation 1, Lynx's Diary 1",
+      "Added head accessories in the Signature Store: Pencil Hat, Bird Nest, Barricade Hat and Strawberry Headband",
+      "Photo review now will be saved to the Add Image tab under Rating in Takeout section.",
+      "Added feedbacks after fixing negative takeout orders."
+    ]
+  },
+  {
+    "version": "v8.9.12.g",
+    "date": "2021-06-25",
+    "changes": [
+      "Added a new Garden Storage and a new Fish Pond Storage in the Signature Store",
+      "Added a new letter: Newspaper 7",
+      "Added a new gameplay to Mew-chelin Judging. (Needs 2000 to activate this gameplay.)",
+      "Added a various courtyard decors and Mementos as reward for Mew-chelin Judging event.",
+      "Optimized the rule description of minigames."
+    ]
+  },
+  {
+    "version": "v8.9.8.g",
+    "date": "2021-06-11",
+    "changes": [
+      "Newly added Starry Sky Rose themed garden facilities",
+      "Added 6 Mementos: Mini Dragon Boat, Diamond Ring, Matches, Soft Headband, Wireless Earbuds, Pufferfish Hat",
+      "Added 2 new orders: Bully's Order for a Girl and Student President's Order",
+      "Added 1 letter: Lucky's Letter",
+      "Added new tutorials for all the Minigames",
+      "Added Quick Map Function to navigate faster in the game."
+    ]
+  },
+  {
+    "version": "v8.9.0.g",
+    "date": "2021-05-31",
+    "changes": [
+      "Children's Day Event",
+      "Added Children's Day facilities (June Exclusive)",
+      "Added Children's Day letters: Shiba Puppy's Letter 2",
+      "Added 14 Children's Day mementos",
+      "– 3 from Signature Store",
+      "– 3 from Card-Playing Mouse",
+      "– 3 from Wishing Well",
+      "– 3 from Gachapon",
+      "– and 2 as rewards for collecting toys during the event.",
+      "Added doll customer: Little Racer",
+      "Added new Summer customer: Tapir",
+      "Red Flower's Prize and Eggy's Diary 15 are now obtainable from the Gachapon and Mysterious Merchant"
+    ]
+  },
+  {
+    "version": "v8.8.9.g",
+    "date": "2021-05-15",
+    "changes": [
+      "Added a new guest: Hippopotamus",
+      "Added a new dish: Curried Crab",
+      "Added a new letter: Chocolate Border Collie's Letter 2",
+      "Added 3 new mementos: Grooming Gloves, Dumbbell, Strawberry Knitted Cap",
+      "Added 2 new orders: Lynx's Gratitude and Sporty Dog's Joyful Meal",
+      "Added Returner's Gift: Returner's Gift rewards players who comes back after more than a week of inactivity."
+    ]
+  },
+  {
+    "version": "v8.8.3.g",
+    "date": "2021-04-30",
+    "changes": [
+      "Courtyard expansion: Concert.",
+      "Added yard performance gameplay.",
+      "Added new customers: Performers.",
+      "Added new mementos: Posters.",
+      "Added Courtyard facilities and decors: Concert Facilities."
+    ]
+  },
+  {
+    "version": "v8.7.19.g",
+    "date": "2021-04-16",
+    "changes": [
+      "Added 1 new Letter: Chocolate Border Collie's Letter 1.",
+      "Added 2 buffet recipes: Egg Tart, Oden Mushroom",
+      "Added 1 order: Hot Porridge for the Sick",
+      "Added 2 head accessories to the Signature Store: Baby Hat, Fine Outfit",
+      "Added 1 takeout cart to the Signature Store: Happy Bus",
+      "The barrage display has been optimized."
+    ]
+  },
+  {
+    "version": "v8.7.16.g",
+    "date": "2021-03-31",
+    "changes": [
+      "Added new \"Starry Sky Rose\" themed facilities for Restaurant.",
+      "Added 1 new Letter: Bald Sheep's Diary.",
+      "Added 1 new Memento Pine Cone Specimen obtainable from the Gachapon."
+    ]
+  },
+  {
+    "version": "v8.7.15.g",
+    "date": "2021-03-23",
+    "changes": [
+      "3 new letters: Wounded Bear's Memory 3, Yellowed Flyer, Fishing Tournament Invitation",
+      "Add decorative trees in the Courtyard: Sakura Prayer",
+      "The Head Accessories button is added to the employee details page (see below for details)",
+      "Add a button for the facilities or food required for customers.",
+      "Add a tutorial for Hedwig."
+    ]
+  },
+  {
+    "version": "v8.7.11.g",
+    "date": "2021-03-05",
+    "changes": [
+      "New spring customer: Mister Gecko",
+      "New recipe: Pineapple Rice",
+      "Added the March 8th Courtyard Get-together event. (from 6:00 on March 8th to 6:00 on March 9th)",
+      "1 new letter: Eggy's Diary 15 (available for a limited time during the event from 6:00 on March 8th to 6:00 on March 9th)",
+      "New achievements."
+    ]
+  },
+  {
+    "version": "v8.7.10.g",
+    "date": "2021-03-01",
+    "changes": [
+      "Add 2 new headgear in the Signature Store: Straw Bucket Hat and Cup Noodles Hat",
+      "Add 1 new vehicle in the Signature Store: Deep-sea Submarine",
+      "Add 1 doll and doll corresponding to guests: Wild Duck Navigator",
+      "The progress of obtaining mementos is now displayed.",
+      "Small adjustment to the Magnifying Glass: the chance of getting Magnifying Glass is reduced if players have accumulated a lot of them.",
+      "New takeout reviews with photo."
+    ]
+  },
+  {
+    "version": "v8.7.0.g",
+    "date": "2021-02-07",
+    "changes": [
+      "New Year exclusive event! Find and collect the New Year Fragments to earn rewards.",
+      "Added the New Year Calf NPC.",
+      "Rascal and New Year Mouse return, and new gameplay has been added.",
+      "Added the Fireworks item.",
+      "Added Lunar New Year Kitchen and Garden facilities, Courtyard facilities and decors can only be purchased from Feb. 8th to Mar. 24th.",
+      "Added Chinese-style wallpaper to the Signature Store.",
+      "Added 3 new letters: Orca's Letter 2, Eggy's Diary 14 and 2021 Calendar.",
+      "Added 5 new mementos: Paper-cut Decorations, Tiger Cap, Tiger Shoes, Hand-warmer and Rabbit Light.",
+      "Added 2 new Head Accessories to the Signature Store: Peking Opera Makeup and Tassel Dumpling.",
+      "Added 3 new dolls and their corresponding customers: Lucky Customer, Hale and Prospero.",
+      "Added a new Buffet New Year Theme, Get-together.",
+      "Lunar New Years letters from 2020 are added to Mysterious Merchant and Gachapon"
+    ]
+  },
+  {
+    "version": "v8.6.16.g",
+    "date": "2021-02-01",
+    "changes": [
+      "New island style wallpaper in the Signature Store",
+      "Added island style takeaway scene facilities in Takeout"
+    ]
+  },
+  {
+    "version": "v8.6.11.g",
+    "date": "2021-01-22",
+    "changes": [
+      "Add 2 guests: Alaska and Asian Elephant.",
+      "Add 2 recipes: Colonel Nuggets and Sweet and Sour Pork.",
+      "New facilities: Alice in Wonderland themed facilities for Takeout",
+      "fruit themed storages for Fishing Pond and Garden (Purchased in the Signature Store).",
+      "Added Fishing Pond item: Magnetic Hook.",
+      "Added 3 new packs: Daily Pack, Summer Pack, and Beginner Pack in the Diamond Store."
+    ]
+  },
+  {
+    "version": "v8.6.5.g",
+    "date": "2020-12-31",
+    "changes": [
+      "Add 3 new letters: Hamster's Diary 3, Phantom's Letter 3, Fashion Magazine. It is said that an employee was invited to participate in the filming. The photo taken will appear on the cover of the new letter",
+      "2 new mementos boomerang and sketchbook have been added: How to get it, just wait for the bosses to explore by themselves~.",
+      "The classification of the newly added pictorial system",
+      "– Customers are divided into: customers, special, and stall owners.",
+      "– Memorials are divided into: memorial and costume.",
+      "Update the questions in Help and Support.",
+      "4 new Orders in the Main Restaurant.",
+      "Game description close button change"
+    ]
+  },
+  {
+    "version": "v8.6.0.g",
+    "date": "2020-12-17",
+    "changes": [
+      "Christmas exclusive event (December 19 12:00 AM to December 31 11:59 PM). Piece together the Christmas story to get gifts.",
+      "Added the new Christmas Elf NPC. (Talk to the Christmas Elf to start the Christmas event.)",
+      "Added 4 new normal mementos: Reindeer Bell, Reindeer Candy, Little Snowman and Christmas Knit.",
+      "Added 2 Head Accessories to the Signature Store: Santa Beard and Mistletoe Hair Clip.",
+      "Added 1 new letter: Christmas Card 2020. (Can only be obtained between December 25-31)",
+      "The Christmas Card 2019 returns. (Can be obtained from the Gachapon.)",
+      "Added new Christmas-themed Restaurant Tables, Garden and Courtyard facilities that will be available to purchase for a limited time.(Some of these facilities can only be obtained via the event during the event, but can be purchased with cod after the event.)",
+      "Increased the chance of obtaining 2019 Christmas mementos(19.12 ~ 31.12)"
+    ]
+  },
+  {
+    "version": "v8.5.8.g",
+    "date": "2020-12-11",
+    "changes": [
+      "Added 3 kinds of specialty fish and 1 kind of rare fish: Fishing Pond",
+      "Added specialty fish gameplay to the Fishing Pond",
+      "Added a feature that allows you to catch fish at your friend's restaurant.",
+      "Added notifications to the Friends Board in the Courtyard : Friend Bar.",
+      "Added 9 new booth owners: Skillful Massage, Rainbow Shop Stationery, Bicycle Repairs, Encounters Photo Studio, Love Tribe, Fortunetelling, Professional Protectors, Gold Tooth Antiques, Another Roujiamo.",
+      "Add 2 new letters Eggy's Diary 13, Wounded Bear's Memory 2.",
+      "Added 1 winter limited guest: Mister Tibetan Fox",
+      "Add 1 new dish: Roast Turkey",
+      "Add 4 new takeaway Signature Store headwear: Fox Mask, Herring Hat, Mori Flower Accessory, Flower Hat.",
+      "New mail custom sorting function: To sort them long press on a letter.",
+      "The Halloween series of wishing pool \"Pirate's Wine Barrel\" has an added function, and it will drop +1 when watching an ad wishing (please refer to the facility introduction for details);",
+      "Halloween letters can be obtained from Gachapon or Mysterious Merchant.",
+      "The Mysterious Merchant started selling Halloween candy."
+    ]
+  },
+  {
+    "version": "v8.5.0.g",
+    "date": "2020-11-19",
+    "changes": [
+      "The Culinary Cats' Contest Event is available in-game from 2020-11-20 00:00 to 2020-11-26 23:59 local device time",
+      "Added Sailor-series facilities for the Garden.",
+      "Added new mementos and limited dishes for quiz event.",
+      "Added new Fish Pond and Garden Storage in the Signature Store."
+    ]
+  },
+  {
+    "version": "v8.4.15.g",
+    "date": "2020-11-13",
+    "changes": [
+      "Added plant nurturing gameplay in Courtyard.",
+      "Added 2 new letters: Hamster's Diary 2 and Pangolin Baby's Letter.",
+      "Added 1 Takeout Cart to the Signature Store: Hovercraft.",
+      "Added 8 delivery items.",
+      "Added 1 new memento: Environmental Badge.",
+      "Added new feature: Get cod when you clear trash.",
+      "Added Twitter account login method."
+    ]
+  },
+  {
+    "version": "v8.4.0.g",
+    "date": "2020-10-27",
+    "changes": [
+      "Added Halloween facilities to Courtyard and Takeout",
+      "Unlocked Halloween event.",
+      "Halloween exclusive customers of last year returned.",
+      "Added 4 Halloween exclusive customers: Infernal Emissary, Old Captain, Hopping Zombie, Little Dino.",
+      "Added 3 Halloween mementos: Straw Doll, Magic Staff and Pumpkin Candy Bucket.",
+      "Added 3 Halloween Head Accessories to the Signature Store: Saw Headband, Messy Bandages and Witch's Hat",
+      "Added 3 Halloween letters: Eggy's Diary 10, 11 and 12.",
+      "Added Halloween wallpaper.",
+      "New function: change nickname and avatar in the Friends Board."
+    ]
+  },
+  {
+    "version": "v8.3.3.g",
+    "date": "2020-10-24",
+    "changes": [
+      "Added 2 new customers: Red Squirrel and Beaver Engineer",
+      "Added 2 new dishes: Parfait and Hot Dry Noodles",
+      "Major update on the store! Added new currency \"Diamond\" and Skip Ad Ticket."
+    ]
+  },
+  {
+    "version": "v8.3.0.g",
+    "date": "2020-09-29",
+    "changes": [
+      "Added 2 new Gachapon dolls and corresponding customers.",
+      "Added 1 new letter — Wounded Bear's Memory 1",
+      "Added 4 new common mementos: Acrobatic Glasses (Wishing Well), Fluffy Hair (Gachapon), Polka Dot Headscarf (Wishing Well), and Idol Support Fan (Gachapon).",
+      "Facilities in the Courtyard can be turned over.",
+      "Added new pictures to the Sketch Artist mini-game.",
+      "Mysterious Merchant has stopped selling Halloween Candies. Time of reselling to be confirmed."
+    ]
+  },
+  {
+    "version": "v8.2.0.g",
+    "date": "2020-09-15",
+    "changes": [
+      "Added anniversary related events. (Sep.18 - Sep. 30)",
+      "Added 7-day Login rewards during the anniversary event.",
+      "Added fruit-series facilities. (During the event, some of the facilities can only be obtained via anniversary gift box, and they cannot be bought with cod until the event ends.",
+      "Added fruit-series wallpapers (can be bought at Signature Store).",
+      "Added a special customer - Prince Michael. (Prince Michael is available for 3 months only and won't be listed in the Handbook.)",
+      "Added 5 new mementos, and you can get 2 of them via community redemption code.",
+      "Added 2 new letters and 1 new dish.",
+      "Recovered the fixed income of staff Yolky working part-time.",
+      "Redemption Code: happybirthday",
+      "Redemption Code(Shark Hat): 20200918",
+      "Code Validity: UTC 2020-09-18 - 2020-09-30"
+    ]
+  },
+  {
+    "version": "v8.1.0.g",
+    "date": "2020-09-04",
+    "changes": [
+      "Added the 7th new scene: Courtyard.",
+      "Added Friend visiting gameplay at Courtyard.",
+      "Added Friends Treasure Hunt gameplay.",
+      "Added new currency at Courtyard: Film.",
+      "Added booth mini-game \"Game Machine\" at Courtyard.",
+      "Replaced the display of Promotion Upgrade to the \"Speaker\" at Courtyard.",
+      "Added 4 new wearable mementos.",
+      "Added 1 new Freshly-Made Recipe: Bah Kut Teh."
+    ]
+  },
+  {
+    "version": "v7.6.1.g",
+    "date": "2020-08-11",
+    "changes": [
+      "Added new feature of inviting friends to work part-time at Buffet and Takeout delivery.",
+      "Added 1 new memento: 3HUA Pillow.",
+      "Added For Lease signs to raise the success rate of leasing booths.",
+      "Added 3 new booth owner games: Street Stall Hiring, Bowl Pudding & Stray Wild Panda.",
+      "Added 3 new booth owners: Street Stall Hiring, Summer Iced Jelly & Piggy's Crawdads."
+    ]
+  },
+  {
+    "version": "v7.5.3.g",
+    "date": "2020-07-24",
+    "changes": [
+      "Added 6 Head Accessories to the Signature Store.",
+      "Added 1 new letter.",
+      "Added 2 new mementos: Delivery Cars to the Signature Store.",
+      "Added 6 new buffet facilities.",
+      "Added new pond (Mad Afternoon Tea) and garden (Mister Hatter's Choice) storage facility.",
+      "Added 1 new letter.",
+      "Added 1 new gachapon doll: Hanfu White Bunny.",
+      "Added Summer exclusive customer: Fashionable Zebra.",
+      "Added a batch of Head Accessories to the Signature Store.",
+      "Added weather effects for different seasons.",
+      "Added 3 new freshly-made Recipes.",
+      "Added 3 new Customers (Pangolin Baby, Pangolin Mama, and Guru).",
+      "Added 1 new letter.",
+      "Added 3 new common Mementos.",
+      "Added 2 sets of indoor wallpaper to the Signature Store.",
+      "Added 5 island-series facilities for Kitchen.",
+      "Added Buffet get-together gameplay.",
+      "Added 3 Booth Owner mini-games (Japanese Cuisine, Picnicking Duck, and Flora's Ring Toss)."
+    ]
+  },
+  {
+    "version": "v7.3.5.g",
+    "date": "2020-05-29",
+    "changes": [
+      "Added 4 new booth mini-games (Old Joe, Tailor Liu, Cut Cake, Sketch Artist).",
+      "Added the Children's Day limited-time holiday event.",
+      "Added an in-game \"Help & Support\" section.",
+      "Added the new Bad Rating Fix feature in the Takeout.",
+      "Added the new Takeout Order Refresh feature .",
+      "Reduced bad ratings received when takeout items are being restocked."
+    ]
+  },
+  {
+    "version": "v7.0.7.g",
+    "date": "2020-04-28",
+    "changes": [
+      "Game optimizations and bugs fixed.",
+      "Added the 6th scene: Takeout.",
+      "Added new customer: Moon Rabbit.",
+      "Added 3 new employees (Delivery Boy Tate, Delivery Girl Kate, and Support Chef Meow).",
+      "Added a new feature to change wallpapers: Signature Store.",
+      "Added Special Facilities Garden and Fish Pond Storage.",
+      "Added sailor series facilities for Restaurant and Kitchen.",
+      "Added 5 new Buffet dishes.",
+      "Added new feature \"press and hold down to hide\" for some facilities. Pressing and holding down on certain facilities for a period can cause them to disappear temporarily. (Feature available in: Garden, Fishing Pond and Takeout.)",
+      "Lowered the price of some dishes and returned the price difference.",
+      "Added 2 new Letters.",
+      "Added 2 new Mementos."
+    ]
+  },
+  {
+    "version": "v6.6.5.g",
+    "date": "2020-03-20",
+    "changes": [
+      "Added new gameplay: collecting dolls through Gachapon (collect doll fragments to summon corresponding customers).",
+      "Added doll exhibition icon (next to the Gachapon icon).",
+      "Added new Buffet dishes.",
+      "Added two new Letters.",
+      "Added Spring limited customer: Duke Swallow.",
+      "Added mysterious customer: Dr. Puppy.",
+      "Added 3 new Mementos."
+    ]
+  },
+  {
+    "version": "v6.4.5.g",
+    "date": "2020-01-21",
+    "changes": [
+      "Added Spring Festival series facilities.",
+      "Added Spring Festival limited letters and events.",
+      "Added Spring Festival dishes.",
+      "Added Spring Festival special memento.",
+      "Added Spring Festival limited customers."
+    ]
+  },
+  {
+    "version": "v6.2.9.g",
+    "date": "2020-01-04",
+    "changes": [
+      "New login method: LINE app.",
+      "Game optimizations and bugs fixed."
+    ]
+  },
+  {
+    "version": "v6.2.4.g",
+    "date": "2019-12-17",
+    "changes": [
+      "Added new game scene: Fishing Pond.",
+      "Added Fishing and Leasing Booth gameplay.",
+      "Added new Customers.",
+      "Added new Gachapon gameplay.",
+      "Added Christmas limited events.",
+      "Added winter limited flower: snowflake.",
+      "Game optimizations and bugs fixed."
+    ]
+  },
+  {
+    "version": "v5.8.9.g",
+    "date": "2019-10-23",
+    "changes": [
+      "Added a whole new set of facilities for Halloween.",
+      "Halloween Carnival event is open.",
+      "Added new dishes.",
+      "Added new special character: Mister Roach.",
+      "Game optimizations and bugs fixed."
     ]
   }
 ]
