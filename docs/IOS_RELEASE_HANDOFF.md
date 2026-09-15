@@ -295,6 +295,43 @@ wrong about a couple of details noted in passing.
 
 ---
 
+### Carried over from two reports deleted on 15 Sep 2026
+
+`docs/next-steps.md` and `docs/performance-report.md` were written on 29 Aug,
+before this branch had ever been compiled. Almost everything in them has since
+been fixed or disproven, and both had started contradicting the code — so they
+were deleted rather than left to mislead. `docs/qa-report.md` and
+`docs/economy-report.md` are kept: the first carries a banner saying it is a
+record rather than a to-do, and the second documents where every income
+formula came from, which is still the only place that is written down.
+
+What was still true when they went, each re-verified against the code:
+
+- **`shrinkWrap: true` with `NeverScrollableScrollPhysics` inside an outer
+  scrollable** in `dishes_page.dart` and `facilities_page.dart`. It defeats
+  viewport culling, so expanding a section lays out every tile at once, and
+  the whole body sits under an `AnimatedBuilder` — one checkbox tap rebuilds
+  all of them. (`login_page.dart` also does it, over about ten widgets, which
+  does not matter.)
+- **No `cacheWidth` / `cacheHeight` on any `Image.asset`** — zero in `lib/`.
+- **`UnlockedStore` calls `notifyListeners()` from 8 places with no
+  granularity**, so one tick rebuilds every listening subtree in the app.
+  Described in the deleted perf report as the biggest remaining win, and
+  probably still right — but measure before spending days on it.
+- **`main.dart` still calls `UnlockedStore.init()` with no `extraTypes`**, so
+  the bucket list exists twice: `_defaultTypes` in the store and
+  `ProgressTypes.registerOnStartup`. Unlike in August this is now tested —
+  `progress_types_test.dart` fails if they disagree, and it did exactly that
+  when the battle-pass bucket was added on 15 Sep — but one list with one
+  owner would still be better than two lists and a test.
+- **Two open product questions**: whether equal weighting is the right
+  completion model, given facilities plus courtyard are over half the total;
+  and whether `customers.json[].mementos` should eventually be dropped, since
+  it is a denormalised mirror of 123 rows in `mementos.json` that has to be
+  reconciled on every scrape.
+
+---
+
 ### App Store Connect records — read before touching one
 
 Getting build 3 uploaded cost four failed attempts, all on the app record rather
