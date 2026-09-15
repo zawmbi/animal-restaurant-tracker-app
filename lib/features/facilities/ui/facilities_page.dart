@@ -153,14 +153,15 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                 return AnimatedBuilder(
                   animation: store,
                   builder: (context, _) {
-                    return Row(
+                    return Column(
                       children: [
-                        _ThemeRail(
-                          themes: themes,
-                          selected: _selectedTheme,
-                          onSelect: (t) => setState(() => _selectedTheme = t),
-                        ),
-                        const VerticalDivider(width: 1),
+                        if (themes.isNotEmpty)
+                          _ThemePicker(
+                            themes: themes,
+                            selected: _selectedTheme,
+                            onSelect: (t) =>
+                                setState(() => _selectedTheme = t),
+                          ),
                         Expanded(
                           child: (groups.isEmpty)
                               ? const Center(child: Text('No facilities here!'))
@@ -278,45 +279,60 @@ class _ScenesBar extends StatelessWidget {
   }
 }
 
-class _ThemeRail extends StatelessWidget {
-  const _ThemeRail({
+/// The theme filter for the current scene.
+///
+/// This was a 120pt column pinned to the left of the grid — 31% of a 390pt
+/// phone, permanently on screen. Behind it the grid had 229pt, which is less
+/// than two tiles wide however the column count is computed, so the rail was
+/// the reason the facilities grid could never widen. The rail also gave each
+/// theme name 88pt, and 29 of the Terrace scene's 60 names run past 25
+/// characters, so those wrapped to three lines and about 9 of 60 themes were
+/// visible at once.
+///
+/// As a dropdown it costs one line, shows each name in full when open, and
+/// hands 121pt of width back to the facilities. Same control the Courtyard
+/// page moved to.
+class _ThemePicker extends StatelessWidget {
+  const _ThemePicker({
     required this.themes,
     required this.selected,
     required this.onSelect,
   });
+
   final List<String> themes;
   final String? selected;
   final ValueChanged<String?> onSelect;
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 120,
-      child: Column(
+    // Switching scene clears the selection, but a value the list does not
+    // contain would assert inside DropdownButton, so fall back rather than
+    // depend on that staying true.
+    final value = selected != null && themes.contains(selected) ? selected : null;
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 0, 12, 4),
+      child: Row(
         children: [
-          ListTile(
-            dense: true,
-            title: const Text(
-              'All',
-              style: TextStyle(fontWeight: FontWeight.w600),
-            ),
-            selected: selected == null,
-            onTap: () => onSelect(null),
-          ),
-          const Divider(height: 0),
+          Text('Theme', style: Theme.of(context).textTheme.labelLarge),
+          const SizedBox(width: 12),
           Expanded(
-            child: ListView.separated(
-              itemCount: themes.length,
-              separatorBuilder: (_, __) => const Divider(height: 0),
-              itemBuilder: (context, i) {
-                final t = themes[i];
-                return ListTile(
-                  dense: true,
-                  title: Text(t),
-                  selected: selected == t,
-                  onTap: () => onSelect(t),
-                );
-              },
+            child: DropdownButton<String?>(
+              value: value,
+              isExpanded: true,
+              underline: const SizedBox.shrink(),
+              items: [
+                const DropdownMenuItem<String?>(
+                  value: null,
+                  child: Text('All'),
+                ),
+                for (final theme in themes)
+                  DropdownMenuItem<String?>(
+                    value: theme,
+                    child: Text(theme, overflow: TextOverflow.ellipsis),
+                  ),
+              ],
+              onChanged: onSelect,
             ),
           ),
         ],
@@ -361,7 +377,10 @@ class _FacilityGroupSection extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
             child: LayoutBuilder(
               builder: (context, c) {
-                final crossAxisCount = (c.maxWidth / 200).floor().clamp(1, 4);
+                // 160, not 200: this grid sits inside two levels of padding
+                // (16 from the list, 24 from the section), so it sees 350pt of
+                // a 390pt phone. At 200 that floors to 1; at 160 it is 2.
+                final crossAxisCount = (c.maxWidth / 160).floor().clamp(1, 4);
                 return GridView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
