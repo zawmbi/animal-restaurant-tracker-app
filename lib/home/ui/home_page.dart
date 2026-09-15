@@ -198,7 +198,12 @@ class _HomePageState extends State<HomePage> {
                     decoration: const BoxDecoration(
                       border: Border(top: BorderSide(color: Colors.black12)),
                     ),
-                    child: ListView.builder(
+                    // Same as the full search screen: the checkbox wrote to
+                    // the store with nothing here listening, so it only
+                    // redrew on the next keystroke.
+                    child: AnimatedBuilder(
+                      animation: store,
+                      builder: (context, _) => ListView.builder(
                       shrinkWrap: true,
                       itemCount: _suggestions.length,
                       itemBuilder: (context, i) {
@@ -261,6 +266,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         );
                       },
+                      ),
                     ),
                   ),
               ],

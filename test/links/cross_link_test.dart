@@ -182,9 +182,17 @@ void main() {
               '${unlinkable.take(4).toList()}');
     });
 
-    test("the codes marked 'unresolved' are still exactly two", () {
-      // If the data ever grows a third, it is worth looking at rather than
-      // quietly shipping another untickable gift.
+    test('the untickable gifts are only the ones we know about', () {
+      // These are codes whose gift resolves in neither the memento nor the
+      // facility registry, so their row is deliberately not tappable rather
+      // than pointed at a guess. Six name courtyard decor added after our
+      // facility data was last refreshed; SWEETLOVEAR's "Gift Teddy Bear" is
+      // genuinely ambiguous — a free courtyard item and a 9.5M terrace one
+      // share the name, so resolving it would be inventing an answer.
+      //
+      // A new one appearing means either the data went stale again or a gift
+      // name changed, and both are worth a look rather than shipping another
+      // dead checkbox.
       final unresolved = readJsonList('assets/data/redemption_codes.json')
           .where((c) => c['giftKind'] == 'unresolved')
           .map((c) => '${c['code']} -> '
@@ -193,9 +201,30 @@ void main() {
         ..sort();
 
       expect(unresolved, <String>[
+        'FOREVERYOUNG -> weather_satellite',
+        'HALLOWEENIMP -> imps_wings',
+        'LUCKYHERBAR -> mugwort_ornament',
         'MOONFESTIVAL -> osmanthus_hanging_ornament',
-        'SWEETLOVEAR -> gift_teddy_bear_2',
+        'PARTYLOADING -> dawn_sprout',
+        'SWEETLOVEAR -> gift_teddy_bear',
+        'WISHONSTAR -> floral_letter',
+        'happy61 -> lollipop_memento',
       ]);
+    });
+
+    test('currency-only codes keep a null giftKind, not "unresolved"', () {
+      // Eight codes give cod or diamonds rather than an item. The page uses
+      // the null kind to disable their checkbox; calling them unresolved
+      // would make a deliberate state look like a data failure.
+      final currency = readJsonList('assets/data/redemption_codes.json')
+          .where((c) => c['giftKind'] == null)
+          .toList();
+
+      expect(currency, hasLength(8));
+      for (final c in currency) {
+        expect(c['giftLabel'], isEmpty, reason: '${c['code']} has a gift');
+        expect(c['giftRefId'], isNull);
+      }
     });
   });
 

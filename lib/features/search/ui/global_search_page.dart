@@ -85,7 +85,13 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
           ),
           if (_loading) const LinearProgressIndicator(),
           Expanded(
-            child: ListView.separated(
+            // Ticking a box here writes to the store and nothing on this
+            // screen was listening, so the checkbox did not redraw — it read
+            // as a control that does not work, on the one path that lets you
+            // tick something without knowing which category it is in.
+            child: AnimatedBuilder(
+              animation: store,
+              builder: (context, _) => ListView.separated(
               itemCount: _hits.length,
               separatorBuilder: (_, __) => const Divider(height: 1),
               itemBuilder: (context, i) {
@@ -153,6 +159,7 @@ class _GlobalSearchPageState extends State<GlobalSearchPage> {
                   ),
                 );
               },
+              ),
             ),
           ),
         ],
