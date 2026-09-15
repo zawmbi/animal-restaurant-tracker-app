@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../data/auth_error_messages.dart';
 import '../data/auth_service.dart';
 import '../../shared/utils/legal_links.dart';
 
@@ -24,7 +25,10 @@ class _LoginPageState extends State<LoginPage> {
     super.dispose();
   }
 
-  Future<void> _run(Future<void> Function() fn) async {
+  Future<void> _run(
+    Future<void> Function() fn, {
+    String fallback = signInFallback,
+  }) async {
     setState(() {
       _busy = true;
       _error = null;
@@ -32,27 +36,38 @@ class _LoginPageState extends State<LoginPage> {
     try {
       await fn();
     } catch (e) {
-      setState(() => _error = e.toString());
+      // null means the person cancelled the sheet themselves, so the screen
+      // stays quiet rather than reporting their own tap back at them.
+      if (!mounted) return;
+      setState(() => _error = authErrorMessage(e, fallback: fallback));
     } finally {
       if (mounted) setState(() => _busy = false);
     }
   }
 
   Future<void> _submitEmail() async {
-    await _run(() async {
-      final email = _email.text.trim();
-      final password = _password.text;
+    final email = _email.text.trim();
+    final password = _password.text;
 
-      if (email.isEmpty || password.isEmpty) {
-        throw Exception('Email and password are required.');
-      }
+    // Checked here rather than thrown from inside _run, so this keeps its own
+    // wording instead of collapsing into the generic failure message.
+    if (email.isEmpty || password.isEmpty) {
+      setState(() => _error = 'Enter your email and password.');
+      return;
+    }
 
-      if (_isLogin) {
-        await AuthService.instance.signInWithEmail(email: email, password: password);
-      } else {
-        await AuthService.instance.registerWithEmail(email: email, password: password);
-      }
-    });
+    await _run(
+      () async {
+        if (_isLogin) {
+          await AuthService.instance
+              .signInWithEmail(email: email, password: password);
+        } else {
+          await AuthService.instance
+              .registerWithEmail(email: email, password: password);
+        }
+      },
+      fallback: _isLogin ? signInFallback : registerFallback,
+    );
   }
 
   Future<void> _google() async {

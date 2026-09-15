@@ -21,6 +21,17 @@ String _generateNonce([int length = 32]) {
 
 String _sha256OfString(String input) => sha256.convert(utf8.encode(input)).toString();
 
+/// Thrown when the person backed out of a sign-in sheet themselves.
+///
+/// Not a failure: they know what they just did, and the sign-in screen shows
+/// nothing rather than telling them about it. Google and Apple report a
+/// cancellation in two different shapes, so both are normalised to this.
+class AuthCancelled implements Exception {
+  const AuthCancelled();
+  @override
+  String toString() => 'Sign-in was cancelled.';
+}
+
 class AuthService {
   AuthService._();
   static final AuthService instance = AuthService._();
@@ -51,7 +62,7 @@ class AuthService {
   Future<UserCredential> signInWithGoogle() async {
     final googleUser = await GoogleSignIn().signIn();
     if (googleUser == null) {
-      throw Exception('Google sign-in was cancelled.');
+      throw const AuthCancelled();
     }
 
     final googleAuth = await googleUser.authentication;
@@ -67,13 +78,22 @@ class AuthService {
   Future<UserCredential> signInWithApple() async {
     final rawNonce = _generateNonce();
 
-    final result = await SignInWithApple.getAppleIDCredential(
-      // Email only. The `fullName` scope used to be requested here, but the
-      // returned name was never read or stored — it only cost users an extra
-      // data-sharing prompt and put a Name row on the App Store privacy label.
-      scopes: [AppleIDAuthorizationScopes.email],
-      nonce: _sha256OfString(rawNonce),
-    );
+    final AuthorizationCredentialAppleID result;
+    try {
+      result = await SignInWithApple.getAppleIDCredential(
+        // Email only. The `fullName` scope used to be requested here, but the
+        // returned name was never read or stored — it only cost users an extra
+        // data-sharing prompt and put a Name row on the App Store privacy
+        // label.
+        scopes: [AppleIDAuthorizationScopes.email],
+        nonce: _sha256OfString(rawNonce),
+      );
+    } on SignInWithAppleAuthorizationException catch (e) {
+      if (e.code == AuthorizationErrorCode.canceled) {
+        throw const AuthCancelled();
+      }
+      rethrow;
+    }
 
     final oauth = OAuthProvider('apple.com').credential(
       idToken: result.identityToken,
