@@ -14,7 +14,12 @@ import '../data/terrace_customers.dart';
 class _BankData {
   final BankStats stats;
   final List<TerraceCustomer> terrace;
-  const _BankData(this.stats, this.terrace);
+
+  /// Unowned facilities ranked by what they pay back per cod spent.
+  final List<FacilityValue> bestTip;
+  final List<FacilityValue> bestBuffet;
+
+  const _BankData(this.stats, this.terrace, this.bestTip, this.bestBuffet);
 }
 
 class BankPage extends StatefulWidget {
@@ -69,7 +74,10 @@ class _BankPageState extends State<BankPage> {
   Future<_BankData> _load() async {
     final stats = await _service.compute();
     final terrace = await TerraceCustomersRepository.instance.all();
-    return _BankData(stats, terrace);
+    final bestTip = await _service.bestValue(IncomeChannel.tipPerMinute);
+    final bestBuffet =
+        await _service.bestValue(IncomeChannel.buffetCodPerHour);
+    return _BankData(stats, terrace, bestTip, bestBuffet);
   }
 
   @override
@@ -126,6 +134,7 @@ class _BankPageState extends State<BankPage> {
               children: [
                 // Earns while the game is closed, or without you tapping.
                 _tab('passive', (context) => [
+                      _bestValueCard(context, data),
                       _tipJarCard(context, s),
                       _buffetCard(context, s),
                       _platesCard(context, s),
@@ -204,6 +213,67 @@ class _BankPageState extends State<BankPage> {
           ),
         ),
       ),
+    );
+  }
+
+  // ------------------------------------------------------------ Best value
+
+  Widget _bestValueCard(BuildContext context, _BankData data) {
+    Widget rows(String title, List<FacilityValue> list, String unit) {
+      if (list.isEmpty) {
+        return _kv(title, _plain('nothing left to buy'));
+      }
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title,
+              style: Theme.of(context)
+                  .textTheme
+                  .titleMedium
+                  ?.copyWith(fontWeight: FontWeight.w600)),
+          const SizedBox(height: 4),
+          for (final r in list)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 2),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(r.name),
+                        Text(
+                          '${r.group} · ${_fmt(r.codPrice.toDouble())} cod',
+                          style: Theme.of(context).textTheme.bodySmall,
+                        ),
+                      ],
+                    ),
+                  ),
+                  Text('+${_fmt(r.amount)}$unit'),
+                ],
+              ),
+            ),
+        ],
+      );
+    }
+
+    return _card(
+      context,
+      icon: 'assets/images/cod.png',
+      title: 'Best value to buy next',
+      children: [
+        Text(
+          'Facilities you have not ticked off, ranked by income per cod '
+          'spent. Only cod prices are ranked: a facility sold for film or '
+          'diamonds is not comparable on the same scale.',
+          style: Theme.of(context).textTheme.bodySmall,
+        ),
+        const SizedBox(height: 12),
+        rows('Into the tip jar', data.bestTip, '/min'),
+        const Divider(height: 24),
+        rows('From the buffet', data.bestBuffet, '/h'),
+      ],
     );
   }
 

@@ -162,9 +162,87 @@ class BankService {
     });
     return out.length > limit ? out.sublist(0, limit) : out;
   }
+
+  /// Unowned facilities in [channel], best value first.
+  ///
+  /// income.json knows what 2,794 facilities pay and the shards know what
+  /// 3,823 of them cost, but nothing joined the two, so "what should I buy
+  /// next" could not be answered anywhere in the app. The spread is not
+  /// subtle: across the buffet's cod-per-hour facilities the best buy returns
+  /// over 500x more per cod than the worst.
+  ///
+  /// Only cod prices are ranked. A facility sold for diamonds or film is not
+  /// comparable on the same scale, and inventing an exchange rate between
+  /// them would be making up the answer.
+  Future<List<FacilityValue>> bestValue(
+    IncomeChannel channel, {
+    int limit = 5,
+  }) async {
+    await _store.init();
+    await _income.ensureLoaded();
+    final all = await _facilities.all();
+
+    final ownedIds = <String>{};
+    for (final bucket in facilityBuckets) {
+      ownedIds.addAll(_store.ids(bucket));
+    }
+
+    final out = <FacilityValue>[];
+    for (final f in all) {
+      if (ownedIds.contains(f.id)) continue;
+
+      var cod = 0;
+      for (final price in f.price) {
+        if (price.currency == MoneyCurrency.cod) cod += price.amount;
+      }
+      if (cod <= 0) continue;
+
+      for (final e in _income.forFacility(f.id)) {
+        if (e.channel != channel) continue;
+        if (e.maxAmount <= 0) continue;
+        out.add(FacilityValue(
+          facilityId: f.id,
+          name: f.name,
+          group: f.group,
+          amount: e.maxAmount,
+          codPrice: cod,
+        ));
+      }
+    }
+
+    out.sort((a, b) {
+      final byValue = b.perCod.compareTo(a.perCod);
+      if (byValue != 0) return byValue;
+      return a.facilityId.compareTo(b.facilityId);
+    });
+    return out.length > limit ? out.sublist(0, limit) : out;
+  }
 }
 
 /// One facility's share of a channel.
+/// An unowned facility, and what it pays back per cod spent.
+class FacilityValue {
+  const FacilityValue({
+    required this.facilityId,
+    required this.name,
+    required this.group,
+    required this.amount,
+    required this.codPrice,
+  });
+
+  final String facilityId;
+  final String name;
+  final String group;
+
+  /// The facility's income in this channel, in that channel's own units.
+  final double amount;
+
+  final int codPrice;
+
+  /// Income per cod spent. The whole point of the ranking.
+  double get perCod => codPrice == 0 ? 0 : amount / codPrice;
+}
+
 class FacilityContribution {
   const FacilityContribution({
     required this.facilityId,
