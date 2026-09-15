@@ -90,30 +90,51 @@ class _LettersPageState extends State<LettersPage> {
                       ],
                     ),
                   ),
+                  // A Wrap of 257 pills sized to their own labels. Letter
+                  // names average 21 characters, so two chips rarely fit on
+                  // one 366pt row — it packed about 1.2 per row and left the
+                  // rest of each row blank. A fixed grid gets a true two
+                  // columns, and builds lazily instead of laying out all 257
+                  // chips on every keystroke and every checkbox tap.
                   Expanded(
-                    child: SingleChildScrollView(
-                      padding: const EdgeInsets.all(12),
-                      child: Wrap(
-                        spacing: 8,
-                        runSpacing: 8,
-                        children: list.map((l) {
-                          final owned =
-                              store.isUnlocked(_bucketLetter, l.id);
+                    child: LayoutBuilder(
+                      builder: (context, cons) {
+                        final crossAxisCount =
+                            (cons.maxWidth / 180).floor().clamp(1, 4);
+                        return GridView.builder(
+                          padding: const EdgeInsets.all(12),
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: crossAxisCount,
+                            crossAxisSpacing: 8,
+                            mainAxisSpacing: 8,
+                            mainAxisExtent: 56,
+                          ),
+                          itemCount: list.length,
+                          itemBuilder: (context, i) {
+                            final l = list[i];
+                            final owned =
+                                store.isUnlocked(_bucketLetter, l.id);
 
-                          return EntityChip(
-                            label: l.name,
-                            checked: owned,
-                            showCheckbox: true,
-                            fillColor: owned ? ownedFill : null,
-                            onCheckChanged: (v) =>
-                                store.setUnlocked(_bucketLetter, l.id, v),
-                            onTap: () => Navigator.of(context).push(
-                              MaterialPageRoute(
-                                  builder: (_) => LetterDetailPage(letter: l)),
-                            ),
-                          );
-                        }).toList(),
-                      ),
+                            return EntityChip(
+                              label: l.name,
+                              checked: owned,
+                              showCheckbox: true,
+                              // Names run to 50 characters; shrink to fit the
+                              // cell rather than spilling out of it.
+                              maxLines: 2,
+                              fillColor: owned ? ownedFill : null,
+                              onCheckChanged: (v) =>
+                                  store.setUnlocked(_bucketLetter, l.id, v),
+                              onTap: () => Navigator.of(context).push(
+                                MaterialPageRoute(
+                                    builder: (_) =>
+                                        LetterDetailPage(letter: l)),
+                              ),
+                            );
+                          },
+                        );
+                      },
                     ),
                   ),
                 ],

@@ -228,7 +228,7 @@ class _CourtyardPageState extends State<CourtyardPage> {
 
                           return Card(
                             margin: const EdgeInsets.symmetric(
-                              vertical: 4,
+                              vertical: 2,
                               horizontal: 4,
                             ),
                             child: InkWell(
@@ -249,10 +249,16 @@ class _CourtyardPageState extends State<CourtyardPage> {
                                   crossAxisAlignment:
                                       CrossAxisAlignment.start,
                                   children: [
-                                    const SizedBox(height: 4),
+                                    // One line, not three: the description
+                                    // is flavour text and the full thing is
+                                    // on the detail page one tap away. The
+                                    // Decor (Floor) group alone is 477 rows,
+                                    // where two extra lines is ~17 screens.
+                                    // ListTile already spaces title from
+                                    // subtitle, so no SizedBox here.
                                     Text(
                                       f.description,
-                                      maxLines: 3,
+                                      maxLines: 1,
                                       overflow: TextOverflow.ellipsis,
                                     ),
                                     if (f.requirementNote != null &&

@@ -147,7 +147,10 @@ class _StaffPageState extends State<StaffPage> {
                   Expanded(
                     child: LayoutBuilder(
                       builder: (context, cons) {
-                        final crossAxisCount = (cons.maxWidth / 200)
+                        // 180, not 200: at 200 a 390pt phone computes
+                        // (390 / 200).floor() == 1, so 16 staff took 2.3
+                        // screens. Two columns fit them on one.
+                        final crossAxisCount = (cons.maxWidth / 180)
                             .floor()
                             .clamp(1, 4);
                         return GridView.builder(

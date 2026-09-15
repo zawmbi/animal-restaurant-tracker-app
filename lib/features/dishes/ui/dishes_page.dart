@@ -257,7 +257,11 @@ class _DishesPageState extends State<DishesPage> {
             padding: const EdgeInsets.all(12),
             child: LayoutBuilder(
               builder: (context, cons) {
-                final crossAxisCount = (cons.maxWidth / 200).floor().clamp(
+                // 180, not 200: a tile holds a name and a checkbox, and
+                // at 200 the arithmetic gives (366 / 200).floor() == 1, so
+                // every phone got one column of half-empty rows. 180 gives a
+                // 390pt phone 2 columns and an iPad still gets 4.
+                final crossAxisCount = (cons.maxWidth / 180).floor().clamp(
                   1,
                   4,
                 );

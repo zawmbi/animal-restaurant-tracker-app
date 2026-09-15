@@ -299,7 +299,9 @@ class _BoothOwnersPageState extends State<BoothOwnersPage> {
               Expanded(
                 child: LayoutBuilder(
                   builder: (context, cons) {
-                    final crossAxisCount = (cons.maxWidth / 200).floor().clamp(
+                    // 180, not 200: at 200 a 390pt phone computes
+                    // (390 / 200).floor() == 1, one column for 140 tiles.
+                    final crossAxisCount = (cons.maxWidth / 180).floor().clamp(
                       1,
                       4,
                     );

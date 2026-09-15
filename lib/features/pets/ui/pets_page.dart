@@ -138,9 +138,13 @@ class _PetsPageState extends State<PetsPage> {
                         .then((_) => setState(() {})),
                     child: ListTile(
                       title: Text(p.nickname),
+                      // This string measures 39-51 characters for all 17
+                      // pets against ~34 characters of room, so at maxLines: 2
+                      // every single row wrapped and took the 88pt three-line
+                      // tile. One line puts them all back on the 72pt one.
                       subtitle: Text(
                         'Series ${p.series.join(' & ')} • ${p.hatchlingName} → ${p.matureName}',
-                        maxLines: 2,
+                        maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),
 
