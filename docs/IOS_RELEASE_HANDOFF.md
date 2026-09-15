@@ -1,6 +1,6 @@
 # iOS release handoff
 
-**Last verified:** 14 Sep 2026 (Firestore rules), 11 Sep 2026 (everything else), on
+**Last verified:** 14 Sep 2026, on
 `claude/animal-restaurant-agents-features-9n8hrx` (the privacy work and the
 game-data fixes are committed as of `160959e`).
 
@@ -98,11 +98,11 @@ d='ios/Runner/Assets.xcassets/AppIcon.appiconset'
 print([f for f in os.listdir(d) if f.endswith('.png') and Image.open(f'{d}/{f}').mode!='RGB'] or 'all clean')"
 ```
 
-**The IPA on disk is `1.0.0 (2)`,** built 3 Sep 16:43 under the correct bundle
-id with `ITSAppUsesNonExemptEncryption=False`. It is not stale in the way this
-file used to warn about — but it predates the in-app privacy links (7 Sep) and
-every game-data fix (11 Sep), so it is not the build to ship. See Outstanding
-item 4.
+**The IPA on disk is `1.0.0 (3)`,** built 14 Sep 23:26 and **uploaded to App
+Store Connect the same night**. Correct bundle id,
+`ITSAppUsesNonExemptEncryption=False`, `UIDeviceFamily = [1, 2]`. It carries the
+in-app privacy links and every game-data fix. Build 2 was overwritten in place;
+there is no longer a stale IPA to confuse anyone.
 
 ---
 
@@ -127,15 +127,62 @@ item 4.
    `lib/features/shared/utils/legal_links.dart`. Note this landed *after* the
    build 2 IPA was cut, so it is not in the binary on disk.
 
-4. **Build 3.** Build 2 exists on disk (`build/ios/ipa/`, 3 Sep, correct bundle
-   id, `1.0.0 (2)`) but predates both the privacy links and every game-data fix
-   below, so it must not be the build that ships:
-   ```bash
-   flutter build ipa --release --build-name=1.0.0 --build-number=3
-   ```
-   Signing will want the new bundle ID. If automatic provisioning fails on the
-   Sign in with Apple capability, say so — do not silently drop the entitlement
-   to get a green build.
+4. ~~**Build 3.**~~ **Done, 14 Sep 2026.** `flutter build ipa --release
+   --build-name=1.0.0 --build-number=3` archived in 5m07s, exit 0, and the
+   result uploaded to App Store Connect through Xcode Organizer. Automatic
+   signing produced a profile carrying the Sign in with Apple entitlement
+   without complaint, so the App ID has that capability enabled.
+
+   The upload returned one warning, which is **not** a problem for this
+   submission: *"MinimumOSVersion too low. This app has a MinimumOSVersion of
+   13.0. Starting in Spring 2027, all iOS apps must have a MinimumOSVersion of
+   15.0 or later."* Deadline, not a rejection. When it matters, the target is in
+   exactly one file — three occurrences of `IPHONEOS_DEPLOYMENT_TARGET = 13.0`
+   in `ios/Runner.xcodeproj/project.pbxproj`. `ios/Podfile`'s
+   `platform :ios` line is commented out, so CocoaPods inherits the project's
+   value and needs no edit. Raise all three, `pod install`, rebuild.
+
+5. **Still to do: the App Store Connect listing.** Screenshots, description,
+   keywords, category, age rating, pricing, and a **Support URL** (a required
+   field — zawmbi.com has a privacy page but no support page yet). Plus the App
+   Privacy questionnaire, whose answers are pre-written in
+   `docs/PRIVACY_APP_STORE_NOTES.md` sections 3.3 and 3.4.
+
+   `UIDeviceFamily = [1, 2]` means the build targets iPhone **and iPad**, which
+   is Flutter's default rather than a decision anyone made. App Store Connect
+   will therefore require a 13" iPad screenshot set, and a reviewer will run the
+   app on an iPad. Nothing in this repo suggests the layout has ever been looked
+   at at that width. Dropping iPad is `TARGETED_DEVICE_FAMILY = "1"` in the same
+   three configs plus a rebuild.
+
+---
+
+### App Store Connect records — read before touching one
+
+Getting build 3 uploaded cost four failed attempts, all on the app record rather
+than the build. What was learned, so nobody repeats it:
+
+**Do not let Xcode create the app record** from Distribute App. It prefills
+**Name** with the Xcode target name, `Runner`, and App Store names are globally
+unique across the entire store, so it fails with *"App Record Creation failed
+due to request containing an attribute already in use"*. The message blames the
+App Name; it is easy to misread as a bundle-id conflict. Create the record at
+**App Store Connect -> Apps -> + -> New App** instead, where the bundle id is a
+dropdown and the name is checked as you type.
+
+**Never delete an app record to start over.** A removed record keeps its bundle
+id — the id does not return to the pool — so afterwards Xcode can neither see
+the old record nor create a new one, and fails with *"App record with bundle
+identifier … was previously removed … Go to App Store Connect to restore the
+app."* Recovery is **Apps -> the ••• button beside the + -> Removed Apps ->
+Restore**. Everything wrong on a record (name, SKU, primary language, even the
+bundle id) is editable in place until the first build is uploaded, which is
+always cheaper than deleting.
+
+**Two records cannot share a bundle id.** If a stray record is holding the one
+you need, move that record to a different bundle id or delete it *before*
+setting the id on the record you are keeping — the dropdown will not offer a
+claimed id.
 
 ---
 

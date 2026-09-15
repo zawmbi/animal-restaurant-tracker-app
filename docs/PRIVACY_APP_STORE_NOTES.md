@@ -13,13 +13,26 @@ the published policy.
       GDPR/CCPA response deadlines quoted in the policy start running whether or
       not you see the message.
 - [x] **zawmbi.com is live.**
-- [x] **The policy page is live at its URL.** Verified 7 Sep 2026:
+- [x] **The policy page is live at its URL.** Verified 7 Sep 2026 and
+      re-checked 14 Sep 2026:
       <https://zawmbi.com/privacy/animal-restaurant-tracker/> returns HTTP 200
       with the policy text server-rendered into the HTML.
 - [x] **The page is publicly reachable** — no login wall, no password, no
       staging-only domain, and the content is present without JavaScript.
-- [x] **The URL is set in App Store Connect** (App Information -> Privacy Policy
-      URL).
+- [ ] **The URL is set in App Store Connect** (App Information -> Privacy Policy
+      URL). **This was ticked in error.** On 14 Sep 2026 Xcode's upload flow
+      offered to *create* the app record, which it only does when no app exists
+      for the bundle id — so there was no App Information screen to set a URL on,
+      and there still is not. Create the record first (App Store Connect -> Apps
+      -> + -> New App, bundle id `com.lindamansour.animalRestaurantTracker`),
+      then set the URL in both places listed in section 2.
+
+      Do not let Xcode create the record from the Distribute App dialog. It
+      prefills **Name** with the Xcode target name, `Runner`, and App Store names
+      are globally unique across the whole store — `Runner` is long since taken,
+      so the attempt fails with *"App Record Creation failed due to request
+      containing an attribute already in use"*. The error names the App Name, not
+      the bundle id, which reads as a bundle-id conflict if you are skimming.
 - [x] **The app links to it in two places** — the sign-in screen and Settings,
       both via `openPrivacyPolicy` in
       `lib/features/shared/utils/legal_links.dart`. Guideline 5.1.1(i) expects an
