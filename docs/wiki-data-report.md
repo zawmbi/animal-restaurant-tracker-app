@@ -321,7 +321,34 @@ They answer different questions.
 |---|---|
 | **500** | Members of the wiki's `Category:Customers`, exactly. Includes about six index pages — "Seasonal Customers", "Regular Customers", "Event Customers", "Terrace Customers", "Puff Customer", "Rose Customer" — which are hub pages, not customers. |
 | **613** | `customers.json`, which is the union of **eleven** categories: Customers, Performer, Booth Owner, Doll Figure Customers, Terrace Customers, Event Customers, Special Customers, Regulars, Flower Customer, Halloween Customers, Seasonal. |
-| **572** | 613 minus the 41 `event` customers. The arithmetic is exact, but nothing on the wiki was found stating it, so treat the match as unconfirmed. |
+| **572** | What the wiki's `Customers` page says in its opening line: *"There are currently 572 customers in the game."* It is a hand-typed sentence, and it does not match the page's own lists — see below. |
+
+### What the wiki's own page actually contains
+
+The `Customers` page transcludes nine section templates — Regular, Special,
+Seasonal, Doll Figure, Terrace, Booth Owning, Performers, Event and Battle
+Pass. So the wiki's headline number uses the **same broad definition we do**,
+booth owners and performers included; it is not the narrow
+`Category:Customers`.
+
+Counting the links in those nine templates gives 591 distinct targets, of
+which 28 are not customers at all — event hub pages, `Fishing Pond`,
+`Concert`, `Gachapon`, the `Terrace` scene, a `Category:` link, and nine
+letters that appear as unlock requirements (`Eggy's Diary 2`, `Otter's Letter
+1`, `Little Fox's Letter`, the New Zealand Journal pages). One more,
+`Gumi`, redirects to **Chef Gumi**, who is a staff member and is correctly in
+`staff.json`, not `customers.json`.
+
+That leaves **563 real customer pages on a page whose first line claims 572**.
+The sentence is maintained by hand and has drifted from the lists beneath it,
+so it is not a number to reconcile against.
+
+**We are missing none of them.** After normalising for the "(Customer)"
+disambiguation suffix (`Puff (Customer)`, `Rose (Customer)`) and the diacritic
+in `Felicity Nüwa`, every real customer on that page is in `customers.json`.
+Our 613 is a strict superset: the extra ~50 are dominated by **31
+Halloween/event customers** that live in `Category:Halloween Customers` and are
+not listed on the `Customers` page at all.
 
 The 113-row gap between 500 and 613 is mostly **76 performers**: they live in
 `Category:Performer`, which `Category:Customers` does not contain. The rest is
