@@ -1,8 +1,8 @@
 # iOS release handoff
 
-**Last verified:** 11 Sep 2026, on
-`claude/animal-restaurant-agents-features-9n8hrx` (working tree dirty — privacy
-work and the game-data fixes uncommitted).
+**Last verified:** 14 Sep 2026 (Firestore rules), 11 Sep 2026 (everything else), on
+`claude/animal-restaurant-agents-features-9n8hrx` (the privacy work and the
+game-data fixes are committed as of `160959e`).
 
 Goal: get the app onto Linda's iPhone over TestFlight, then to App Store review.
 No cable is involved at any point.
@@ -282,12 +282,16 @@ Pre-release this is cheap; after a public build it would need a migration.
 - The **old** `com.example` OAuth client was flagged by Google for deletion after
   6 months idle. Irrelevant to the new client, but do not resurrect the old ID.
 - ~~`flutter analyze` has never passed~~ — it passes clean as of 4 Sep 2026.
-- **Firestore security rules were never in this repo.** `firestore.rules` now
-  exists and is wired into `firebase.json`, but writing the file changes nothing
-  until it is deployed, and nobody has confirmed what the live console rules
-  actually say. If the project is still on test-mode rules, every user's progress
-  document is readable by any authenticated client, and those rules expire on a
-  date after which sync silently breaks. See **Privacy and data** below.
+- ~~**Firestore security rules were never in this repo**, and nobody has
+  confirmed what the live console rules say~~ — **the live rules were read
+  directly from the console on 14 Sep 2026 and they are correct.** The project
+  is *not* in test mode and never silently sat there: the starred (live) version
+  is `Jan 7, 2026 6:39 AM`, which restricts `users/{userId}` to
+  `request.auth.uid == userId`. The test-mode default below it
+  (`Jan 7, 2026 5:40 AM`, `allow read, write: if request.time < timestamp.date(2026, 2, 6)`)
+  was replaced within the hour, a month before its expiry. No user's progress
+  document has been readable by another client. See **Privacy and data** below
+  for the one remaining difference from the repo file.
 
 ## Privacy and data
 
@@ -305,18 +309,44 @@ plus `UserDefaults` reason `CA92.1`. These three must stay identical to the App
 Privacy questionnaire answers in `docs/PRIVACY_APP_STORE_NOTES.md` section 3;
 reviewers compare them.
 
-**`firestore.rules` is new and undeployed.** It restricts `users/{uid}` to
-`request.auth.uid == uid` and denies everything else. Section 11 of the published
-policy tells users this is true, so it needs to actually be deployed:
+**`firestore.rules` is deployed as of 14 Sep 2026.** The repo is now the source
+of truth: `firebase deploy --only firestore:rules` compiled and released the
+file to `cloud.firestore`. The rules it replaced already enforced the same
+isolation, so this changed nothing a user can observe — what it added is the
+explicit
 
-```bash
-firebase deploy --only firestore:rules
+```
+match /{document=**} { allow read, write: if false; }
 ```
 
-Check the live rules first at
-<https://console.firebase.google.com/project/ar-progress-tracker-1b3d8/firestore/rules>
-— if they read `allow read, write: if request.time < timestamp.date(...)`, the
-project is in test mode and this is urgent rather than routine.
+which is documentation rather than enforcement (Firestore denies by default),
+but it means a newly added collection has to be granted access deliberately
+rather than by forgetting to. Section 11 of the published policy was already
+true before this deploy and remains true after it.
+
+**Deploying needs `ljmansour02@gmail.com`, not the CLI's default account.** The
+Firebase project belongs to `ljmansour02@gmail.com`. If the CLI is
+authenticated as `thesituationmonitoring@gmail.com` — whose
+`firebase projects:list` shows only `monitr-39bcd` — the deploy dies with
+
+```
+403 … Caller does not have required permission to use project ar-progress-tracker-1b3d8
+```
+
+which reads like a missing IAM role but is really the wrong identity. Both
+accounts are registered with the CLI, so name the right one:
+
+```bash
+firebase deploy --only firestore:rules \
+  --project ar-progress-tracker-1b3d8 --account ljmansour02@gmail.com
+```
+
+`firebase login:add` cannot be run through an agent or with Claude Code's `!`
+prefix — it needs a browser handshake and fails with *"Cannot run login:add in
+non-interactive mode"*. Run it in a real terminal.
+
+Live rules at
+<https://console.firebase.google.com/project/ar-progress-tracker-1b3d8/firestore/rules>.
 
 ## Environment notes
 
