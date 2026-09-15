@@ -5,7 +5,16 @@ Regenerate `assets/data/*.json` from https://animalrestaurant.fandom.com via the
 Requires only python3 + `curl`. Pages are cached under `scripts/.cache/` (gitignored) so
 re-runs are cheap and polite to the wiki.
 
-Run order (each writes straight into `assets/data/`):
+> **Read this before trusting the run order.** Most of these do *not* write
+> into `assets/data/`. `scrape_customers.py`, `scrape_movies.py` and
+> `scrape_posters.py` write `new_customers.json`, `movies_new.json` and
+> `posters_new.json` into `scripts/.cache/`, which is gitignored; only
+> `scrape_dishes.py`, `scrape_food_truck.py` and `scrape_updates.py` write
+> into `assets/data/`. The rest need merging by hand, and nothing records
+> whether that happened. Twelve data files — including `letters.json` — have
+> no writer at all. See `docs/data-freshness-report.md`.
+
+Run order:
 
 1. `scrape_customers.py`  – customer entries from `Category:Customers`/`Performer`/`Booth Owner`/…
 2. `scrape_page_mementos.py` – per-customer `{{Memento}}` blocks (feeds `customers.json[].mementos`)
