@@ -65,10 +65,25 @@ class AnimalRestaurantApp extends StatelessWidget {
           home: const AuthBinder(child: HomePage()),
           builder: (context, child) {
             if (child == null) return const SizedBox.shrink();
+            // Held in landscape, the notch or Dynamic Island sits over the
+            // leading edge of the screen and the app had nothing anywhere
+            // insetting for it — there was not one SafeArea in lib/ — so the
+            // left of every page was quietly cut off. One horizontal inset
+            // here covers every route.
+            //
+            // Left and right only: Scaffold already pads the top for the app
+            // bar, and insetting it again would leave a band above it, while
+            // content scrolling under the home indicator is normal.
+            final safe = SafeArea(
+              top: false,
+              bottom: false,
+              child: child,
+            );
             // The bumper is mounted last so it sits over the whole app,
             // including any route pushed under it, and fades out to reveal
-            // whatever is already rendered beneath.
-            return _IntroGate(child: _GlobalHomeOverlay(child: child));
+            // whatever is already rendered beneath. It stays outside the
+            // SafeArea so it still covers the full screen.
+            return _IntroGate(child: _GlobalHomeOverlay(child: safe));
           },
         );
       },
