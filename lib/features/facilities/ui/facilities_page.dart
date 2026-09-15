@@ -1,9 +1,11 @@
+import 'package:flutter/foundation.dart' show listEquals;
 import 'package:flutter/material.dart';
 import '../../shared/widgets/check_all_button.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../../shared/json_loader.dart';
 import '../data/facilities_repository.dart';
 import '../model/facility.dart';
+import '../../shared/widgets/filter_drawer.dart';
 import '../../shared/widgets/search_field.dart';
 
 class FacilitiesPage extends StatefulWidget {
@@ -47,17 +49,50 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
         .toList();
   }
 
-  Future<List<Facility>> _loadForSelected() {
-    if (_selectedScene == FacilityArea.takeout && _showSignatureStore) {
-      return _loadSignatureStore();
+  /// Themes for the scene currently loaded.
+  ///
+  /// The app bar's filter button and the filter panel both sit above the
+  /// FutureBuilder that loads the facilities, so they cannot derive this from
+  /// the snapshot the way the grid does. It is captured when the load lands
+  /// instead.
+  List<String> _themes = const <String>[];
+
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
+  Future<List<Facility>> _loadForSelected() async {
+    final list =
+        await (_selectedScene == FacilityArea.takeout && _showSignatureStore
+            ? _loadSignatureStore()
+            : repo.byArea(_selectedScene));
+    final themes = _themesFor(list);
+    if (mounted && !listEquals(themes, _themes)) {
+      setState(() => _themes = themes);
     }
-    return repo.byArea(_selectedScene);
+    return list;
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Facilities')),
+      key: _scaffoldKey,
+      appBar: AppBar(
+        title: const Text('Facilities'),
+        actions: [
+          if (_themes.isNotEmpty)
+            FilterButton(
+              selected: _selectedTheme,
+              onPressed: () => _scaffoldKey.currentState?.openEndDrawer(),
+            ),
+        ],
+      ),
+      endDrawer: _themes.isEmpty
+          ? null
+          : FilterDrawer(
+              title: 'Theme',
+              options: _themes,
+              selected: _selectedTheme,
+              onSelect: (value) => setState(() => _selectedTheme = value),
+            ),
       body: Column(
         children: [
           SearchField(
@@ -132,7 +167,6 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                 }
 
                 final all = (snap.data ?? const <Facility>[]);
-                final themes = _themesFor(all);
 
                 final filtered = all.where((f) {
                   if (_selectedTheme != null &&
@@ -155,13 +189,6 @@ class _FacilitiesPageState extends State<FacilitiesPage> {
                   builder: (context, _) {
                     return Column(
                       children: [
-                        if (themes.isNotEmpty)
-                          _ThemePicker(
-                            themes: themes,
-                            selected: _selectedTheme,
-                            onSelect: (t) =>
-                                setState(() => _selectedTheme = t),
-                          ),
                         Expanded(
                           child: (groups.isEmpty)
                               ? const Center(child: Text('No facilities here!'))
@@ -274,68 +301,6 @@ class _ScenesBar extends StatelessWidget {
             onSelected: (_) => onSelect(scene),
           );
         },
-      ),
-    );
-  }
-}
-
-/// The theme filter for the current scene.
-///
-/// This was a 120pt column pinned to the left of the grid — 31% of a 390pt
-/// phone, permanently on screen. Behind it the grid had 229pt, which is less
-/// than two tiles wide however the column count is computed, so the rail was
-/// the reason the facilities grid could never widen. The rail also gave each
-/// theme name 88pt, and 29 of the Terrace scene's 60 names run past 25
-/// characters, so those wrapped to three lines and about 9 of 60 themes were
-/// visible at once.
-///
-/// As a dropdown it costs one line, shows each name in full when open, and
-/// hands 121pt of width back to the facilities. Same control the Courtyard
-/// page moved to.
-class _ThemePicker extends StatelessWidget {
-  const _ThemePicker({
-    required this.themes,
-    required this.selected,
-    required this.onSelect,
-  });
-
-  final List<String> themes;
-  final String? selected;
-  final ValueChanged<String?> onSelect;
-
-  @override
-  Widget build(BuildContext context) {
-    // Switching scene clears the selection, but a value the list does not
-    // contain would assert inside DropdownButton, so fall back rather than
-    // depend on that staying true.
-    final value = selected != null && themes.contains(selected) ? selected : null;
-
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 0, 12, 4),
-      child: Row(
-        children: [
-          Text('Theme', style: Theme.of(context).textTheme.labelLarge),
-          const SizedBox(width: 12),
-          Expanded(
-            child: DropdownButton<String?>(
-              value: value,
-              isExpanded: true,
-              underline: const SizedBox.shrink(),
-              items: [
-                const DropdownMenuItem<String?>(
-                  value: null,
-                  child: Text('All'),
-                ),
-                for (final theme in themes)
-                  DropdownMenuItem<String?>(
-                    value: theme,
-                    child: Text(theme, overflow: TextOverflow.ellipsis),
-                  ),
-              ],
-              onChanged: onSelect,
-            ),
-          ),
-        ],
       ),
     );
   }
