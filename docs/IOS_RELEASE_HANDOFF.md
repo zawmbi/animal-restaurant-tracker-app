@@ -162,6 +162,13 @@ there is no longer a stale IPA to confuse anyone.
    9.0-13.0, so `ios/Podfile` now raises them in `post_install`. iPhones stuck
    on iOS 13 or 14 keep build 9 and simply stop getting updates.
 
+   **Build 10 was refused for review**: it was archived with Xcode 27.1 *beta*
+   (`xcode-select` points at `/Applications/Xcode-beta.app`), and App Store
+   submissions must use a release Xcode. **Build 11** is the same code built
+   with the release `/Applications/Xcode.app` (27.0) via
+   `DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer flutter build ipa
+   --release`. Check `DTXcode` in the app's Info.plist before uploading.
+
 6. **Still to do: the App Store Connect listing.** Screenshots, description,
    keywords, category, age rating, pricing, and a **Support URL** (a required
    field — zawmbi.com has a privacy page but no support page yet). Plus the App
