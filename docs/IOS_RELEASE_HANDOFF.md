@@ -151,6 +151,12 @@ there is no longer a stale IPA to confuse anyone.
    last, so check the version in the Organizer before distributing rather
    than trusting the file's date.
 
+   **Update, 12 Oct 2026:** 1.0.0 (9) is the build that went live. The next
+   update is **1.0.1 (10)**: posters synced with Mementos, Undo on every
+   check, and performer callback tracking, all from player feedback.
+   `pubspec.yaml` now carries `1.0.1+10`, so a plain `flutter build ipa
+   --release` picks it up.
+
 6. **Still to do: the App Store Connect listing.** Screenshots, description,
    keywords, category, age rating, pricing, and a **Support URL** (a required
    field — zawmbi.com has a privacy page but no support page yet). Plus the App
