@@ -157,6 +157,11 @@ there is no longer a stale IPA to confuse anyone.
    `pubspec.yaml` now carries `1.0.1+10`, so a plain `flutter build ipa
    --release` picks it up.
 
+   Build 10 also raises the minimum iOS from 13.0 to **15.0**. Not optional:
+   Xcode 27 refuses to archive any target below 15, and several pods declared
+   9.0-13.0, so `ios/Podfile` now raises them in `post_install`. iPhones stuck
+   on iOS 13 or 14 keep build 9 and simply stop getting updates.
+
 6. **Still to do: the App Store Connect listing.** Screenshots, description,
    keywords, category, age rating, pricing, and a **Support URL** (a required
    field — zawmbi.com has a privacy page but no support page yet). Plus the App
