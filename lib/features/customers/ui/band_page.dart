@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../data/customers_repository.dart';
 import '../model/customer.dart';
+import '../../completion/data/progress_types.dart';
 import '../../shared/data/unlocked_store.dart';
 import '../../shared/widgets/check_all_button.dart';
 import 'customer_detail_page.dart';
@@ -23,6 +24,7 @@ class BandPage extends StatefulWidget {
 
 class _BandPageState extends State<BandPage> {
   static const String _bucketCustomers = 'customers';
+  static const String _bucketCallback = ProgressTypes.performerCallback;
 
   final store = UnlockedStore.instance;
   late final Future<List<Customer>> _future = _load();
@@ -60,6 +62,9 @@ class _BandPageState extends State<BandPage> {
               final owned = members
                   .where((c) => store.isUnlocked(_bucketCustomers, c.id))
                   .length;
+              final called = members
+                  .where((c) => store.isUnlocked(_bucketCallback, c.id))
+                  .length;
 
               return ListView(
                 padding: const EdgeInsets.all(16),
@@ -68,7 +73,8 @@ class _BandPageState extends State<BandPage> {
                     children: [
                       Expanded(
                         child: Text(
-                          '$owned / ${members.length} unlocked',
+                          '$owned / ${members.length} unlocked · '
+                          '$called / ${members.length} called back',
                           style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
                       ),
@@ -90,13 +96,23 @@ class _BandPageState extends State<BandPage> {
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
                               ),
-                        trailing: Checkbox(
-                          value: store.isUnlocked(_bucketCustomers, c.id),
-                          onChanged: (v) => store.setUnlocked(
-                            _bucketCustomers,
-                            c.id,
-                            v ?? false,
-                          ),
+                        trailing: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            _CallbackToggle(
+                              reached: store.isUnlocked(_bucketCallback, c.id),
+                              onChanged: (v) =>
+                                  store.setUnlocked(_bucketCallback, c.id, v),
+                            ),
+                            Checkbox(
+                              value: store.isUnlocked(_bucketCustomers, c.id),
+                              onChanged: (v) => store.setUnlocked(
+                                _bucketCustomers,
+                                c.id,
+                                v ?? false,
+                              ),
+                            ),
+                          ],
                         ),
                         onTap: () async {
                           await Navigator.push(
@@ -116,6 +132,30 @@ class _BandPageState extends State<BandPage> {
           );
         },
       ),
+    );
+  }
+}
+
+/// Marks whether a performer's callback has been reached.
+///
+/// An icon rather than a second checkbox, so the two controls on a row
+/// cannot be mistaken for each other.
+class _CallbackToggle extends StatelessWidget {
+  const _CallbackToggle({required this.reached, required this.onChanged});
+
+  final bool reached;
+  final ValueChanged<bool> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final scheme = Theme.of(context).colorScheme;
+    return IconButton(
+      tooltip: reached ? 'Callback reached' : 'Mark callback reached',
+      icon: Icon(
+        reached ? Icons.phone_callback : Icons.phone_callback_outlined,
+        color: reached ? scheme.primary : scheme.outline,
+      ),
+      onPressed: () => onChanged(!reached),
     );
   }
 }

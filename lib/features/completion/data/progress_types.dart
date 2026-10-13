@@ -40,6 +40,12 @@ class ProgressTypes {
   static const String battlePassPlayed = 'battle_pass_played';
   static const String acorn = 'acorn';
 
+  /// Performers whose callback the player has reached.
+  ///
+  /// A note to self rather than a collectible, so it is not counted in the
+  /// completion percentage.
+  static const String performerCallback = 'performer_callback';
+
   /// Which bucket a facility is tracked in, from the area it lives in.
   ///
   /// The courtyard, the concert stage and the pet yard are checked off on the
@@ -75,5 +81,6 @@ class ProgressTypes {
     battlePassPremium,
     battlePassPlayed,
     acorn,
+    performerCallback,
   ];
 }

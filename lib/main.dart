@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -5,6 +7,7 @@ import 'theme/app_theme.dart';
 import 'home/ui/home_page.dart';
 import 'package:animal_restaurant_tracker/features/timers/data/timer_service.dart';
 import 'package:animal_restaurant_tracker/features/shared/data/unlocked_store.dart';
+import 'package:animal_restaurant_tracker/features/shared/data/progress_links.dart';
 
 import 'firebase_options.dart';
 import 'package:animal_restaurant_tracker/features/auth/ui/auth_binder.dart';
@@ -14,6 +17,8 @@ import 'package:animal_restaurant_tracker/features/intro/ui/zawmbi_intro.dart';
 import 'package:animal_restaurant_tracker/features/settings/data/app_settings_controller.dart';
 
 final GlobalKey<NavigatorState> _navKey = GlobalKey<NavigatorState>();
+final GlobalKey<ScaffoldMessengerState> _messengerKey =
+    GlobalKey<ScaffoldMessengerState>();
 final ValueNotifier<int> _navTick = ValueNotifier<int>(0);
 
 //  ADD: single shared settings instance
@@ -41,6 +46,11 @@ Future<void> main() async {
 
   await localInit;
 
+  // Loads two asset files, so it runs after the first frame is on its way.
+  // Until it lands, a poster checked on one page just isn't mirrored yet;
+  // it is merged in as soon as the links register.
+  unawaited(registerProgressLinks().catchError((Object _) {}));
+
   runApp(const AnimalRestaurantApp());
 }
 
@@ -55,6 +65,7 @@ class AnimalRestaurantApp extends StatelessWidget {
       builder: (context, _) {
         return MaterialApp(
           navigatorKey: _navKey,
+          scaffoldMessengerKey: _messengerKey,
           navigatorObservers: [_OverlayNavObserver(_navTick)],
           title: 'Animal Restaurant Tracker',
           debugShowCheckedModeBanner: false,
@@ -83,7 +94,11 @@ class AnimalRestaurantApp extends StatelessWidget {
             // including any route pushed under it, and fades out to reveal
             // whatever is already rendered beneath. It stays outside the
             // SafeArea so it still covers the full screen.
-            return _IntroGate(child: _GlobalHomeOverlay(child: safe));
+            return _IntroGate(
+              child: _UndoSnackBarHost(
+                child: _GlobalHomeOverlay(child: safe),
+              ),
+            );
           },
         );
       },
@@ -192,4 +207,70 @@ class _HomeOverlayButton extends StatelessWidget {
       ),
     );
   }
+}
+
+/// Offers "Undo" after every check or uncheck, on every page.
+///
+/// Listens to [UnlockedStore.lastChange] rather than living in each page, so
+/// the 25-odd places that write progress all get it without being touched.
+class _UndoSnackBarHost extends StatefulWidget {
+  const _UndoSnackBarHost({required this.child});
+
+  final Widget child;
+
+  @override
+  State<_UndoSnackBarHost> createState() => _UndoSnackBarHostState();
+}
+
+class _UndoSnackBarHostState extends State<_UndoSnackBarHost> {
+  final UnlockedStore _store = UnlockedStore.instance;
+
+  @override
+  void initState() {
+    super.initState();
+    _store.lastChange.addListener(_onChange);
+  }
+
+  @override
+  void dispose() {
+    _store.lastChange.removeListener(_onChange);
+    super.dispose();
+  }
+
+  void _onChange() {
+    final messenger = _messengerKey.currentState;
+    if (messenger == null) return;
+    final entry = _store.lastChange.value;
+    if (entry == null) {
+      messenger.hideCurrentSnackBar();
+      return;
+    }
+
+    final n = entry.count;
+    final noun = n == 1 ? 'item' : 'items';
+    final verb = entry.wasCheck
+        ? 'Checked'
+        : entry.wasUncheck
+            ? 'Unchecked'
+            : 'Updated';
+
+    messenger
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
+          content: Text('$verb $n $noun'),
+          duration: const Duration(seconds: 3),
+          behavior: SnackBarBehavior.floating,
+          // Clear of the global home button in the bottom-right corner.
+          margin: const EdgeInsets.fromLTRB(16, 0, 88, 16),
+          action: SnackBarAction(
+            label: 'Undo',
+            onPressed: () => unawaited(_store.undoLast()),
+          ),
+        ),
+      );
+  }
+
+  @override
+  Widget build(BuildContext context) => widget.child;
 }

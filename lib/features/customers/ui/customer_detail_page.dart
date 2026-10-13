@@ -19,6 +19,7 @@ import '../../mementos/data/mementos_index.dart';
 import '../../letters/data/letters_repository.dart';
 import '../../letters/model/letter.dart';
 import '../../shared/data/unlocked_store.dart';
+import '../../completion/data/progress_types.dart';
 import '../../shared/json_loader.dart';
 import '../../shared/widgets/check_all_button.dart';
 import '../../mementos/ui/mementos_detail_page.dart';
@@ -664,6 +665,26 @@ class _CustomerDetailPageState extends State<CustomerDetailPage> {
     if (p.callbackRequirementHours != null) {
       lines.add(_section('Callback Requirement', Text('${p.callbackRequirementHours} hours')));
     }
+
+    lines.add(AnimatedBuilder(
+      animation: store,
+      builder: (context, _) {
+        final reached =
+            store.isUnlocked(ProgressTypes.performerCallback, customer.id);
+        return CheckboxListTile(
+          contentPadding: EdgeInsets.zero,
+          dense: true,
+          controlAffinity: ListTileControlAffinity.leading,
+          title: const Text('Callback reached'),
+          value: reached,
+          onChanged: (v) => store.setUnlocked(
+            ProgressTypes.performerCallback,
+            customer.id,
+            v ?? false,
+          ),
+        );
+      },
+    ));
 
     if (p.baseEarnings != null) {
       lines.add(_section(

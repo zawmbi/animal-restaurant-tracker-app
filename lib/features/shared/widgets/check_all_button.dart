@@ -84,8 +84,8 @@ class CheckAllButton extends StatefulWidget {
           title: const Text('Uncheck all?'),
           content: Text(
             'This clears $count checked $noun$where.\n\n'
-            'Nothing else you have tracked is affected, but this cannot be '
-            'undone. Are you sure?',
+            'Nothing else you have tracked is affected, and you can tap Undo '
+            'straight afterwards if you change your mind.',
           ),
           actions: [
             TextButton(

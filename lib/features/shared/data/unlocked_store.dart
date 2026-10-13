@@ -56,6 +56,7 @@ class UnlockedStore extends ChangeNotifier {
     'battle_pass_claimed',
     'battle_pass_premium',
     'battle_pass_played',
+    'performer_callback',
   ];
 
   final Map<String, Set<String>> _sets = <String, Set<String>>{};
@@ -96,6 +97,8 @@ class UnlockedStore extends ChangeNotifier {
     _debounceUpload?.cancel();
     _debounceUpload = null;
     _sets.clear();
+    _links.clear();
+    _clearUndo();
     _inited = false;
     _initFuture = null;
     _user = null;
@@ -154,6 +157,8 @@ class UnlockedStore extends ChangeNotifier {
     final types = <String>{..._defaultTypes, ..._sets.keys};
     await _loadNamespaceFromPrefs(types);
     await adoptGuestProgressIfEmpty();
+    _clearUndo();
+    await _reconcileLinks();
 
     notifyListeners();
 
@@ -199,21 +204,9 @@ class UnlockedStore extends ChangeNotifier {
   }
 
   Future<void> setUnlocked(String type, String id, bool value) async {
-    if (!_inited) {
-      await init();
-    }
-
-    _sets[type] ??= <String>{};
-    final set = _sets[type]!;
-    final changed = value ? set.add(id) : set.remove(id);
-    if (!changed) return;
-
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setStringList(_prefsKey(type), set.toList());
-    await _bumpLocalUpdatedAt(prefs);
-
-    notifyListeners();
-    _scheduleUpload();
+    await _write(<String, Map<String, bool>>{
+      type: <String, bool>{id: value},
+    });
   }
 
   Future<void> toggle(String type, String id) async {
@@ -224,24 +217,190 @@ class UnlockedStore extends ChangeNotifier {
   /// Persists and notifies a single time instead of once per id.
   Future<void> setManyUnlocked(
       String type, Iterable<String> ids, bool value) async {
+    await _write(<String, Map<String, bool>>{
+      type: <String, bool>{for (final id in ids) id: value},
+    });
+  }
+
+  /// The one write path behind [setUnlocked] and [setManyUnlocked].
+  ///
+  /// Mirrors every write onto the ids [linkIds] tied it to, and records what
+  /// actually changed so [undoLast] can put it back.
+  Future<void> _write(Map<String, Map<String, bool>> desired) async {
     if (!_inited) {
       await init();
     }
-    _sets[type] ??= <String>{};
-    final set = _sets[type]!;
-    var changed = false;
-    for (final id in ids) {
-      final c = value ? set.add(id) : set.remove(id);
-      changed = changed || c;
-    }
-    if (!changed) return;
 
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setStringList(_prefsKey(type), set.toList());
-    await _bumpLocalUpdatedAt(prefs);
+    final withLinks = <String, Map<String, bool>>{};
+    desired.forEach((type, byId) {
+      byId.forEach((id, value) {
+        (withLinks[type] ??= <String, bool>{})[id] = value;
+        for (final other in _links[_linkKey(type, id)] ?? const <_Ref>[]) {
+          (withLinks[other.type] ??= <String, bool>{})[other.id] = value;
+        }
+      });
+    });
 
+    final previous = await _apply(withLinks);
+    if (previous.isEmpty) return;
+
+    _recordUndo(previous);
     notifyListeners();
     _scheduleUpload();
+  }
+
+  /// Writes [desired] into the sets and SharedPreferences, and returns the
+  /// previous value of every id that actually changed (empty if none did).
+  /// Does not notify or upload.
+  Future<Map<String, Map<String, bool>>> _apply(
+    Map<String, Map<String, bool>> desired,
+  ) async {
+    final previous = <String, Map<String, bool>>{};
+    desired.forEach((type, byId) {
+      final set = _sets[type] ??= <String>{};
+      byId.forEach((id, value) {
+        final changed = value ? set.add(id) : set.remove(id);
+        if (changed) (previous[type] ??= <String, bool>{})[id] = !value;
+      });
+    });
+    if (previous.isEmpty) return previous;
+
+    final prefs = await SharedPreferences.getInstance();
+    for (final type in previous.keys) {
+      await prefs.setStringList(_prefsKey(type), _sets[type]!.toList());
+    }
+    await _bumpLocalUpdatedAt(prefs);
+    return previous;
+  }
+
+  // ------------------------
+  // Linked ids
+  // ------------------------
+
+  /// Ids in different buckets that are the same thing in the game, such as a
+  /// poster on the Posters page ('poster') and the same poster on the
+  /// Mementos page ('memento_collected'). Keyed both ways.
+  final Map<String, List<_Ref>> _links = <String, List<_Ref>>{};
+
+  static String _linkKey(String type, String id) => '$type\u0000$id';
+
+  /// Ties `typeA/idA` to `typeB/idB` so checking or unchecking one always does
+  /// the same to the other.
+  ///
+  /// Progress saved before the link existed is merged: if either side is
+  /// already checked, both end up checked. Linking never unchecks anything.
+  Future<void> linkIds(Iterable<(String, String, String, String)> pairs) async {
+    for (final (typeA, idA, typeB, idB) in pairs) {
+      final a = _Ref(typeA, idA);
+      final b = _Ref(typeB, idB);
+      final la = _links[_linkKey(typeA, idA)] ??= <_Ref>[];
+      final lb = _links[_linkKey(typeB, idB)] ??= <_Ref>[];
+      if (!la.contains(b)) la.add(b);
+      if (!lb.contains(a)) lb.add(a);
+    }
+    if (await _reconcileLinks()) notifyListeners();
+  }
+
+  /// Checks the unchecked side of every link whose other side is checked.
+  ///
+  /// Deliberately does not bump the local updated-at time or upload: this
+  /// runs at startup and after a cloud pull, and a bumped time would make
+  /// `_syncOnSignIn` treat this device as newer and overwrite progress made
+  /// on another device. The merged ids reach the cloud with the next real
+  /// edit, and every device merges the same way on load anyway.
+  Future<bool> _reconcileLinks() async {
+    if (!_inited || _links.isEmpty) return false;
+
+    final touched = <String>{};
+    _links.forEach((key, others) {
+      final sep = key.indexOf('\u0000');
+      final type = key.substring(0, sep);
+      final id = key.substring(sep + 1);
+      if (!isUnlocked(type, id)) return;
+      for (final o in others) {
+        if ((_sets[o.type] ??= <String>{}).add(o.id)) touched.add(o.type);
+      }
+    });
+    if (touched.isEmpty) return false;
+
+    final prefs = await SharedPreferences.getInstance();
+    for (final type in touched) {
+      await prefs.setStringList(_prefsKey(type), _sets[type]!.toList());
+    }
+    return true;
+  }
+
+  // ------------------------
+  // Undo
+  // ------------------------
+
+  static const int _undoLimit = 50;
+
+  /// Writes that land this close together are one action. A tap that also
+  /// updates dependent progress (marking a pet mature also marks it owned,
+  /// say) arrives as several writes, and undoing half of it would leave the
+  /// two disagreeing.
+  ///
+  /// Settable so a test can make every write its own entry.
+  @visibleForTesting
+  static Duration undoMergeWindow = const Duration(milliseconds: 400);
+
+  final List<UndoEntry> _undoStack = <UndoEntry>[];
+  DateTime? _lastRecordAt;
+
+  /// The newest undoable change, or null. Listen to it to offer an Undo.
+  final ValueNotifier<UndoEntry?> lastChange = ValueNotifier<UndoEntry?>(null);
+
+  bool get canUndo => _undoStack.isNotEmpty;
+
+  void _recordUndo(Map<String, Map<String, bool>> previous) {
+    final now = DateTime.now();
+    final merge = _undoStack.isNotEmpty &&
+        _lastRecordAt != null &&
+        now.difference(_lastRecordAt!) < undoMergeWindow;
+    _lastRecordAt = now;
+
+    if (merge) {
+      final top = _undoStack.removeLast();
+      final combined = <String, Map<String, bool>>{
+        for (final e in top.previous.entries)
+          e.key: Map<String, bool>.of(e.value),
+      };
+      previous.forEach((type, byId) {
+        final into = combined[type] ??= <String, bool>{};
+        // Keep the oldest value: that is what undo has to go back to.
+        byId.forEach((id, was) => into.putIfAbsent(id, () => was));
+      });
+      _undoStack.add(UndoEntry._(combined));
+    } else {
+      _undoStack.add(UndoEntry._(previous));
+      if (_undoStack.length > _undoLimit) _undoStack.removeAt(0);
+    }
+    lastChange.value = _undoStack.last;
+  }
+
+  void _clearUndo() {
+    _undoStack.clear();
+    _lastRecordAt = null;
+    lastChange.value = null;
+  }
+
+  /// Puts back whatever the most recent change did. Returns false if there
+  /// was nothing to undo.
+  Future<bool> undoLast() async {
+    if (_undoStack.isEmpty) return false;
+    final entry = _undoStack.removeLast();
+    _lastRecordAt = null;
+    lastChange.value = null;
+
+    // The entry already holds the linked ids, so this goes straight to
+    // [_apply] rather than through the link mirroring in [_write].
+    final changed = await _apply(entry.previous);
+    if (changed.isNotEmpty) {
+      notifyListeners();
+      _scheduleUpload();
+    }
+    return true;
   }
 
   int count(String type) => _sets[type]?.length ?? 0;
@@ -251,6 +410,7 @@ class UnlockedStore extends ChangeNotifier {
       await init();
     }
     _sets[type] = <String>{};
+    _clearUndo();
 
     final prefs = await SharedPreferences.getInstance();
     await prefs.setStringList(_prefsKey(type), const <String>[]);
@@ -264,6 +424,7 @@ class UnlockedStore extends ChangeNotifier {
     if (!_inited) {
       await init();
     }
+    _clearUndo();
     final prefs = await SharedPreferences.getInstance();
     for (final type in _sets.keys) {
       _sets[type] = <String>{};
@@ -417,6 +578,8 @@ class UnlockedStore extends ChangeNotifier {
     }
 
     await _bumpLocalUpdatedAt(prefs);
+    _clearUndo();
+    await _reconcileLinks();
   }
 
   Future<void> _uploadToCloud() async {
@@ -507,4 +670,44 @@ class UnlockedStore extends ChangeNotifier {
   }
 
   String _prefsKey(String type) => 'unlocked:${_ns}:$type';
+}
+
+/// One bucket + id, as the far end of a link.
+@immutable
+class _Ref {
+  const _Ref(this.type, this.id);
+  final String type;
+  final String id;
+
+  @override
+  bool operator ==(Object other) =>
+      other is _Ref && other.type == type && other.id == id;
+
+  @override
+  int get hashCode => Object.hash(type, id);
+}
+
+/// One undoable change: the value each touched id had before it.
+@immutable
+class UndoEntry {
+  const UndoEntry._(this.previous);
+
+  /// bucket -> id -> whether it was checked before the change.
+  final Map<String, Map<String, bool>> previous;
+
+  /// How many things the change touched, as the player would count them.
+  ///
+  /// The largest bucket rather than the sum, so a linked poster (one id in
+  /// 'poster', one in 'memento_collected') or a pet marked mature (mature +
+  /// owned) counts as the one tap it was.
+  int get count =>
+      previous.values.fold(0, (n, m) => m.length > n ? m.length : n);
+
+  /// True when every touched id went from unchecked to checked.
+  bool get wasCheck =>
+      previous.values.every((m) => m.values.every((was) => !was));
+
+  /// True when every touched id went from checked to unchecked.
+  bool get wasUncheck =>
+      previous.values.every((m) => m.values.every((was) => was));
 }
