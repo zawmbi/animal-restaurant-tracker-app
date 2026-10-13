@@ -120,6 +120,17 @@ not add them back later without re-reading this list:
 First release.
 ```
 
+### What's New (for version 1.0.1)
+```
+Thank you for all the feedback! This update is built from your suggestions:
+
+• Posters stay in sync: checking a poster on the Posters page now checks it in Mementos too, and the other way round.
+• Undo: every check and uncheck now shows an Undo button, so a mistap is one tap to fix.
+• Performer callbacks: mark when you've reached a performer's callback, on their page or from their band.
+
+Keep the ideas coming through Support in the app!
+```
+
 ### Copyright field
 ```
 2026 Linda Mansour
