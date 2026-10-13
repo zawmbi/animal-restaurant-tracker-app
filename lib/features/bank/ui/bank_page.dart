@@ -8,6 +8,7 @@ import '../../economy/model/economy_constants.dart';
 import '../../economy/model/income.dart';
 import '../../economy/model/money_bag.dart';
 import '../data/bank_service.dart';
+import '../../economy/data/terrace_observation_store.dart';
 import '../data/terrace_customers.dart';
 
 /// Bundles everything the bank page needs from a single async load.
@@ -69,6 +70,17 @@ class _BankPageState extends State<BankPage> {
   void initState() {
     super.initState();
     _future = _load();
+
+    // The terrace observation outlives this page now — the facility detail
+    // pages use it to turn a table's percentage into cod — so hydrate the
+    // field from what was last recorded rather than starting blank.
+    final store = TerraceObservationStore.instance;
+    store.ensureLoaded().then((_) {
+      if (!mounted || !store.hasObservation) return;
+      final text = store.codPerGather.round().toString();
+      if (_terraceCodCtrl.text == text) return;
+      setState(() => _terraceCodCtrl.text = text);
+    });
   }
 
   Future<_BankData> _load() async {
@@ -1142,7 +1154,12 @@ class _BankPageState extends State<BankPage> {
                   isDense: true,
                   border: OutlineInputBorder(),
                 ),
-                onChanged: (_) => setState(() {}),
+                onChanged: (v) {
+                  setState(() {});
+                  TerraceObservationStore.instance.setCodPerGather(
+                    (_parseInt(v) ?? 0).toDouble(),
+                  );
+                },
               ),
             ),
             const SizedBox(width: 12),
