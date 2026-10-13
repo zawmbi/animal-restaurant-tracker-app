@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../settings/data/feedback_service.dart';
 
@@ -11,8 +10,6 @@ class SupportPage extends StatefulWidget {
 }
 
 class _SupportPageState extends State<SupportPage> {
-  static final Uri _bmac = Uri.parse('https://buymeacoffee.com/zawmbi');
-
   final _feedbackCtrl = TextEditingController();
   final _contactCtrl = TextEditingController();
   bool _sendingFeedback = false;
@@ -22,18 +19,6 @@ class _SupportPageState extends State<SupportPage> {
     _feedbackCtrl.dispose();
     _contactCtrl.dispose();
     super.dispose();
-  }
-
-  Future<void> _openBuyMeACoffee() async {
-    final ok = await launchUrl(
-      _bmac,
-      mode: LaunchMode.externalApplication,
-    );
-    if (!ok && mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Could not open link.')),
-      );
-    }
   }
 
   Future<void> _submitFeedback() async {
@@ -134,29 +119,20 @@ class _SupportPageState extends State<SupportPage> {
                 ],
               ),
             ),
-          ),const SizedBox(height: 10),
-
-        Card(
-          child: ListTile(
-            isThreeLine: true,
-            title: Text(
-              'Thank you for using this app! I develop independently and choose to keep it free with no ads. '
-              'If you’d like to support development, you can do so here. Thank you <3',
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.titleMedium,
-            ),
-            subtitle: const Padding(
-              padding: EdgeInsets.only(top: 25),
-              child: Text(
-                'Support via BuyMeACoffee.com (External Link)',
-                textAlign: TextAlign.center,
-              ),
-            ),
-            trailing: const Icon(Icons.open_in_new),
-            onTap: _openBuyMeACoffee,
           ),
-        ),
 
+          const SizedBox(height: 10),
+
+          // A Buy Me a Coffee card used to sit here. Guideline 3.1.1 treats an
+          // in-app link to an outside payment mechanism as circumventing IAP,
+          // and tip-jar link-outs have been rejected under it. Removed rather
+          // than argued: the app is free with no ads either way, and a
+          // rejection costs more than the tips would have.
+          Text(
+            'This app is free, has no ads and no in-app purchases.',
+            textAlign: TextAlign.center,
+            style: Theme.of(context).textTheme.bodySmall,
+          ),
         ],
       ),
     );

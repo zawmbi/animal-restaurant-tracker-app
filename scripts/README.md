@@ -1,4 +1,13 @@
-# Wiki data scrapers
+# Scripts
+
+Mostly wiki data scrapers (below). One exception:
+
+- `prep_store_screenshots.py` — strips the alpha channel from simulator
+  screenshots so App Store Connect will accept them, and optionally resizes
+  them for a different slot. Nothing to do with the wiki. See
+  `docs/APP_STORE_LISTING.md` §4.
+
+## Wiki data scrapers
 
 Regenerate `assets/data/*.json` from https://animalrestaurant.fandom.com via the MediaWiki API.
 
